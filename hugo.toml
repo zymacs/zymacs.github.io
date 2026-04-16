@@ -7,8 +7,8 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  name = "Zymacs"
+  bio = "Zymacs's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
 
 [Params]
@@ -22,7 +22,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mainSections = ["post", "docs"]
 
 [Params.logo]
-  subtitle = "I am website." # Logo subtitle
+  subtitle = "Programming. Tinkering. Talking. More." # Logo subtitle
   image = "img/avatar.png"
 
 [Params.sidebar]

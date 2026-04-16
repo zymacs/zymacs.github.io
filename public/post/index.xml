@@ -16,6 +16,13 @@
       <description>Dumped blogger I set up a site on blogger and dumped it for a hugo design that caught my eye. I thought I could learn some css building it myself but CSS is boring so I was like, I could as well learn hugo. The best way to learn something is to play with it.</description>
     </item>
     <item>
+      <title>Installing python3 on Linux</title>
+      <link>//localhost:1313/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
+      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, here&amp;rsquo;s how to fix that;&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;For Arch, run:&#xA;sudo pacman -Syu&#xA;Fedora:&#xA;sudo dnf upgrade&#xA;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&#xA;Ubuntu</description>
+    </item>
+    <item>
       <title>Basic HTML Elements</title>
       <link>//localhost:1313/post/basic-elements/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>

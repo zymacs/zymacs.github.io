@@ -30,10 +30,17 @@
       <description></description>
     </item>
     <item>
-      <title>Installation</title>
-      <link>//localhost:1313/tags/installation/</link>
-      <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/installation/</guid>
+      <title>Python</title>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python3</title>
+      <link>//localhost:1313/tags/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python3/</guid>
       <description></description>
     </item>
     <item>
