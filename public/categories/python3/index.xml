@@ -13,7 +13,7 @@
       <link>//localhost:1313/post/installing-python3-on-linux/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
-      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, here&amp;rsquo;s how to fix that;&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;For Arch, run:&#xA;sudo pacman -Syu&#xA;Fedora:&#xA;sudo dnf upgrade&#xA;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&#xA;Ubuntu</description>
+      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade For Arch, run:&#xA;sudo pacman -Syu Fedora:&#xA;sudo dnf upgrade Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</description>
     </item>
   </channel>
 </rss>

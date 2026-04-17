@@ -6,28 +6,28 @@
     <description>Recent content in Development on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git ignore files</title>
       <link>//localhost:1313/post/git-ignore-files/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/git-ignore-files/</guid>
       <description>Git ignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
     </item>
     <item>
       <title>My first post with hugo</title>
       <link>//localhost:1313/post/my-first-post/</link>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/my-first-post/</guid>
-      <description>Dumped blogger I set up a site on blogger and dumped it for a hugo design that caught my eye. I thought I could learn some css building it myself but CSS is boring so I was like, I could as well learn hugo. The best way to learn something is to play with it.</description>
+      <description>Dumped blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
     </item>
     <item>
       <title>Installing python3 on Linux</title>
       <link>//localhost:1313/post/installing-python3-on-linux/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
-      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, here&amp;rsquo;s how to fix that;&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;For Arch, run:&#xA;sudo pacman -Syu&#xA;Fedora:&#xA;sudo dnf upgrade&#xA;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&#xA;Ubuntu</description>
+      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade For Arch, run:&#xA;sudo pacman -Syu Fedora:&#xA;sudo dnf upgrade Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</description>
     </item>
     <item>
       <title>(Hu)go Template Primer</title>

@@ -3,43 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/development/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/development/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/git/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/git/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/git-ignore-files/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/golang/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/hugo/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/intro/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/my-first-post/</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
