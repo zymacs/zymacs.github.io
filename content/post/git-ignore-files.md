@@ -1,6 +1,6 @@
 ---
 title: Git ignore files
-date: 2026-04-16
+date: 2026-04-17
 tags:
   - git
   - development

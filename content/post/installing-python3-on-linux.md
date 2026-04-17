@@ -11,7 +11,7 @@ categories:
 ---
 
 
-Python comes pre-installed on most Linux distros. But if for whichever reason it isn't installed on yours, here's how to fix that; 
+Python comes pre-installed on most Linux distros. But if for whichever reason it isn't installed on yours, we'll install it in the next section.
 
 First, let's update and upgrade your system
 
