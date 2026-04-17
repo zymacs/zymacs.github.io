@@ -6,8 +6,15 @@
     <description>Recent content in Development on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git ignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>Git ignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
+    </item>
     <item>
       <title>My first post with hugo</title>
       <link>//localhost:1313/post/my-first-post/</link>

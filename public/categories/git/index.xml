@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Zymacs</title>
+    <link>//localhost:1313/categories/git/</link>
+    <description>Recent content in Git on Zymacs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git ignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>Git ignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
+    </item>
+  </channel>
+</rss>
