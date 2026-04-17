@@ -22,6 +22,9 @@ They hold entries for all information you would like to keep untracked.
 That could be temporary files, or database files (say sqlite3 files) or something else.
 In git, they are located in the repo's base directory. They exist under the name `.gitignore`.
 Creating a new repo does not auto create a '.gitignore' file so you have to create it yourself.
+``` bash
+touch .gitignore
+```
 
 You can have multiple .gitignore files in a repo. But which 
 
@@ -41,3 +44,18 @@ has temp files ending in '~' so to match all these we would need a rule like
 *~
 ```
 This would take care for any such file any number of levels deep in the repo
+
+``` 
+# ignore all .a files
+*.a
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+# ignore all files in any directory named build
+build/
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+```
