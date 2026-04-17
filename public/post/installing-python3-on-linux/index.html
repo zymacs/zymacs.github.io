@@ -10,12 +10,9 @@
 <meta property="og:description" content="Python comes pre-installed on most Linux distros. But if for whichever reason it isn&rsquo;t installed on yours, here&rsquo;s how to fix that;
 First, let&rsquo;s update and upgrade your system
 If you are on Ubuntu, run:
-sudo apt update &amp;&amp; sudo apt upgrade
-For Arch, run:
-sudo pacman -Syu
-Fedora:
-sudo dnf upgrade
-Now let&rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)
+sudo apt update &amp;&amp; sudo apt upgrade For Arch, run:
+sudo pacman -Syu Fedora:
+sudo dnf upgrade Now let&rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)
 Ubuntu" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="//localhost:1313/post/installing-python3-on-linux/" /><meta property="article:section" content="post" />
@@ -84,21 +81,21 @@ Ubuntu" />
 			<p>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&rsquo;t installed on yours, here&rsquo;s how to fix that;</p>
 <p>First, let&rsquo;s update and upgrade your system</p>
 <p>If you are on Ubuntu, run:</p>
-<p>sudo apt update &amp;&amp; sudo apt upgrade</p>
-<p>For Arch, run:</p>
-<p>sudo pacman -Syu</p>
-<p>Fedora:</p>
-<p>sudo dnf upgrade</p>
-<p>Now let&rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</p>
+<pre tabindex="0"><code> sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre><p>For Arch, run:</p>
+<pre tabindex="0"><code>sudo pacman -Syu
+</code></pre><p>Fedora:</p>
+<pre tabindex="0"><code>sudo dnf upgrade
+</code></pre><p>Now let&rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</p>
 <p>Ubuntu</p>
-<p>sudo apt install python3 python3-pip python3-venv</p>
-<p>Arch</p>
-<p>sudo pacman -S python python-pip python-virtualenv</p>
-<p>Fedora</p>
-<p>sudo dnf install python3 python3-pip python3-virtualenv python3-devel</p>
-<p>Regardless of which distro you are running, confirm python is installed by running
-python &ndash;version</p>
-<p>If that command runs successfully (prints out what python version is installed) then you are ready to run python programs on your system.</p>
+<pre tabindex="0"><code>sudo apt install python3 python3-pip python3-venv
+</code></pre><p>Arch</p>
+<pre tabindex="0"><code>sudo pacman -S python python-pip python-virtualenv
+</code></pre><p>Fedora</p>
+<pre tabindex="0"><code>sudo dnf install python3 python3-pip python3-virtualenv python3-devel
+</code></pre><p>Regardless of which distro you are running, confirm python is installed by running</p>
+<pre tabindex="0"><code>python --version
+</code></pre><p>If that command runs successfully (prints out what python version is installed) then you are ready to run python programs on your system.</p>
 <p>Should you face any errors, it surely is the case someone has faced them before online and they got the answer posted. If that does not help, please drop your issue in the comment section and someone , including me, could provide you with assistance.</p>
 <p>Hope that helped. Happy Hacking.</p>
 
