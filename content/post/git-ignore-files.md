@@ -56,7 +56,7 @@ Anything in a folder named 'a' by implication, won't be tracked.
 
 Now how about if I only want to not track directories named 'a'. That's the second rule `a/`.
 Adding a forward slash to a name pattern tells git to ignore only matching directories, and not files.
-So to match only directories with some name pattern, you'd have to add append a forward slash to it.
+So to match only directories with some name pattern, you'd have to append a forward slash to it.
 
 Git also supports globbing patterns. For instance , the rule ,`*.ext`, ignores all files (and directories but I wonder why a directory would have that name)
 ending in `.ext` in a repo.
@@ -71,7 +71,7 @@ What if you don't some rule to be applied recursively? You could prepend the rul
 in the same location as the .gitignore file called 'a'. Appending a forward slash to this rule `/a/`  means ignoring only folders named 'a' but applying this rule only in the same folder as the '.gitignore' file.
 
 How about ignoring all files and or directories matching a certain pattern under some directory located elsewhere than in the root directory?
-That's what's applied in the rule `a/*.txt`. It ignores all files (or folders) with the names ending in `.txt` that are directly under folders named `a`/
+That's what's applied in the rule `a/*.txt`. It ignores all files (or folders) with the names ending in `.txt` that are directly under folders named `a/`.
 But there's a caveat! It only does this if the pattern's root folder , `a` for this example, is in the root directory. Say `rootdirectory/a`.
 To apply this to folders one level deep, say `rootdirectory/b/a`, it'd have to change to `*/a/*.txt`. The `*` char would match anything in the root directory (but a forward slash) then the pattern `a/*.txt`. Say,
 
@@ -98,13 +98,13 @@ a/**/*.txt
 You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.
 
 Lastly, on templates. So there's a whole lot of '.gitignore' templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
-into your `.gitignore.`. And that's a good thing. It probably saves time that'd be taken writign your own. Or helps you include patters you could have forgotten otherwise.
+into your `.gitignore.`. And that's a good thing. It probably saves time that'd be taken writign your own. Or helps you include patterns you could otherwise have forgotten.
 
 But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
-I tend to ignore. And then I have  means to auto populate every project's .gitignore with that. 
-And here's what's interesting, I ignore my `.gitignore` too! I mean I might be ignoring certain things I don't want folk to know am
-ignoring so..
+I tend to ignore. Then I have  means to auto populate every project's .gitignore from the same global file. 
+And here's what's interesting, I ignore my `.gitignore` too! I mean, I might be ignoring certain things I don't want folk to know am
+ignoring.. so..
 
-Anyways, that's a whole lot on such a small topic. And there's more at `man gitignre`.  But I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
+Anyways, that's a whole lot on such a small topic. And there's more at `man gitignore`.  But I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
 
 

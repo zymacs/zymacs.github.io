@@ -106,7 +106,7 @@ All folders named &lsquo;a&rsquo; that have files in them won&rsquo;t be tracked
 Anything in a folder named &lsquo;a&rsquo; by implication, won&rsquo;t be tracked.</p>
 <p>Now how about if I only want to not track directories named &lsquo;a&rsquo;. That&rsquo;s the second rule <code>a/</code>.
 Adding a forward slash to a name pattern tells git to ignore only matching directories, and not files.
-So to match only directories with some name pattern, you&rsquo;d have to add append a forward slash to it.</p>
+So to match only directories with some name pattern, you&rsquo;d have to append a forward slash to it.</p>
 <p>Git also supports globbing patterns. For instance , the rule ,<code>*.ext</code>, ignores all files (and directories but I wonder why a directory would have that name)
 ending in <code>.ext</code> in a repo.
 The seventh rule <code>*.[oa]</code> ignores all files endign with characters &lsquo;o&rsquo; or &lsquo;a&rsquo;. So both  <em>&rsquo;/somedir/bo.a&rsquo;</em> and <em>&lsquo;gop.o/&rsquo;</em> would have been ignored
@@ -117,7 +117,7 @@ From the sample ruleset, Git  knows to ignore all files ending in &lsquo;.ext&rs
 <p>What if you don&rsquo;t some rule to be applied recursively? You could prepend the rule with a forward slash. The rule <code>/a</code> only applies to the files and directories
 in the same location as the .gitignore file called &lsquo;a&rsquo;. Appending a forward slash to this rule <code>/a/</code>  means ignoring only folders named &lsquo;a&rsquo; but applying this rule only in the same folder as the &lsquo;.gitignore&rsquo; file.</p>
 <p>How about ignoring all files and or directories matching a certain pattern under some directory located elsewhere than in the root directory?
-That&rsquo;s what&rsquo;s applied in the rule <code>a/*.txt</code>. It ignores all files (or folders) with the names ending in <code>.txt</code> that are directly under folders named <code>a</code>/
+That&rsquo;s what&rsquo;s applied in the rule <code>a/*.txt</code>. It ignores all files (or folders) with the names ending in <code>.txt</code> that are directly under folders named <code>a/</code>.
 But there&rsquo;s a caveat! It only does this if the pattern&rsquo;s root folder , <code>a</code> for this example, is in the root directory. Say <code>rootdirectory/a</code>.
 To apply this to folders one level deep, say <code>rootdirectory/b/a</code>, it&rsquo;d have to change to <code>*/a/*.txt</code>. The <code>*</code> char would match anything in the root directory (but a forward slash) then the pattern <code>a/*.txt</code>. Say,</p>
 <pre tabindex="0"><code>rootdirectory/somedir/a/file.txt
@@ -129,12 +129,12 @@ For unrestricted depth, we&rsquo;d apply</p>
 <pre tabindex="0"><code>a/**/*.txt
 </code></pre><p>You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.</p>
 <p>Lastly, on templates. So there&rsquo;s a whole lot of &lsquo;.gitignore&rsquo; templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
-into your <code>.gitignore.</code>. And that&rsquo;s a good thing. It probably saves time that&rsquo;d be taken writign your own. Or helps you include patters you could have forgotten otherwise.</p>
+into your <code>.gitignore.</code>. And that&rsquo;s a good thing. It probably saves time that&rsquo;d be taken writign your own. Or helps you include patterns you could otherwise have forgotten.</p>
 <p>But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
-I tend to ignore. And then I have  means to auto populate every project&rsquo;s .gitignore with that.
-And here&rsquo;s what&rsquo;s interesting, I ignore my <code>.gitignore</code> too! I mean I might be ignoring certain things I don&rsquo;t want folk to know am
-ignoring so..</p>
-<p>Anyways, that&rsquo;s a whole lot on such a small topic. And there&rsquo;s more at <code>man gitignre</code>.  But I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
+I tend to ignore. Then I have  means to auto populate every project&rsquo;s .gitignore from the same global file.
+And here&rsquo;s what&rsquo;s interesting, I ignore my <code>.gitignore</code> too! I mean, I might be ignoring certain things I don&rsquo;t want folk to know am
+ignoring.. so..</p>
+<p>Anyways, that&rsquo;s a whole lot on such a small topic. And there&rsquo;s more at <code>man gitignore</code>.  But I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
 
 		</div>
 		<footer class="post__footer">
