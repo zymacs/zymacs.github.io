@@ -16,7 +16,7 @@ I set up a site on blogger (Google's blogspot) and dumped it for a Hugo design t
 I thought I could learn some css building it myself. Feel good from `doing it myself from scratch`.
 But boy is CSS boring! And I only realized this after 4 hours of centering `divs` and hunting for unclosed tags.
 
-Now the day had almost come to an end and I was feeling guilty for the waste. So to alleviate it , I decided to
+Now the day had almost come to an end and I was feeling guilty for the waste that it'd been. So to alleviate the guilt , I decided to
 setup Hugo. I mean why didn't I do this in the first place? Anyways. After some googling I got it running
 and hence this site.  It looks nice doesn't it?
 
