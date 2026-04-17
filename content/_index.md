@@ -1,1 +1,1 @@
-![Posts](posts/)
+![Posts](posts/add.png) Posts

@@ -1317,3 +1317,11 @@ textarea {
 		font-size: .6875rem;
 	}
 }
+
+
+/* custom fixes*/
+
+html.js body.body div.container.container--outer div.wrapper.flex div.primary main.main.list div.content.main__content.clearfix p img {
+    width: 20px;
+    height: 20px;
+}
