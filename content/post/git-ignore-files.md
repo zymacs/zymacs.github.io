@@ -22,40 +22,77 @@ They hold entries for all information you would like to keep untracked.
 That could be temporary files, or database files (say sqlite3 files) or something else.
 In git, they are located in the repo's base directory. They exist under the name `.gitignore`.
 Creating a new repo does not auto create a '.gitignore' file so you have to create it yourself.
+
 ``` bash
 touch .gitignore
 ```
 
-You can have multiple .gitignore files in a repo. But which 
+Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
+Also, you could have multiple .gitignore files, but let's keep that for `man gitignore`.
+Let's call the entries in a .gitignore file rules from now on.
+Here's a sample rules file that includes what I think will be the commonest usecases you'll come to need.
 
-
-Okay, so let's call these entries 'rules' from now on.
-The gitignore files tracks what files to ignore or (not ignore) based on the names of the files.
-
-Deciding what rule to use to match some name can be tricky some times. Some are easy.
-A rule to match all files with the name "dont_track" would be like
 ```
-dont_track
+a
+a/
+*.ext
+!lib.ext
+a/*.txt
+a/**/*.txt
+*.[oa]
+/a
+*/a/*.txt
+**/a/*.txt
 ```
 
-We can also use regular expressions, say to match names based on last , first , middle characters or some combination of that. Emacs for instance
-has temp files ending in '~' so to match all these we would need a rule like
-```
-*~
-```
-This would take care for any such file any number of levels deep in the repo
+Before anything, for a folder to be tracked, it should have at least a file.
+Any folder that does not have at least a file or a sub directory with one will not be tracked. This does not need any .gitignore rule to be true.
+We'll also assume the .gitignore file above is in the repo's root or base directory called `rootdirectory`.
 
+Okay, now the rules shared above.
+The first rule matches all files and directories whose name is exactly 'a'. This rule is applied recursively in the the folder `rootdirectory`.
+All folders named 'a' that have files in them won't be tracked. All files named 'a' located anywhere in the repo won't be tracked.
+Anything in a folder named 'a' by implication, won't be tracked.
+
+Now how about if I only want to not track directories named 'a'. That's the second rule `a/`.
+Adding a forward slash to a name pattern tells git to ignore only matching directories, and not files.
+So to match only directories with some name pattern, you'd have to add append a forward slash to it.
+
+Git also supports globbing patterns. For instance , the rule ,`*.ext`, ignores all files (and directories but I wonder why a directory would have that name)
+ending in `.ext` in a repo.
+The seventh rule `*.[oa]` ignores all files endign with characters 'o' or 'a'. So both  _'/somedir/bo.a'_ and _'gop.o/'_ would have been ignored
+by this rule.
+
+Now you could run into times when you want to have exceptions for your rules. And Git supports that too.
+In the fourth rule `!lib.ext`, right after `*.ext`, the '!' at the start tells git to make an exception for the file 'lib.ext' to any rule that would ignore it.
+From the sample ruleset, Git  knows to ignore all files ending in '.ext' but also to include 'lib.ext'.
+
+What if you don't some rule to be applied recursively? You could prepend the rule with a forward slash. The rule `/a` only applies to the files and directories
+in the same location as the .gitignore file called 'a'. Appending a forward slash to this rule `/a/`  means ignoring only folders named 'a' but applying this rule only in the same folder as the '.gitignore' file.
+
+How about ignoring all files and or directories matching a certain pattern under some directory located elsewhere than in the root directory?
+That's what's applied in the rule `a/*.txt`. It ignores all files (or folders) with the names ending in `.txt` that are directly under folders named `a`/
+But there's a caveat! It only does this if the pattern's root folder , `a` for this example, is in the root directory. Say `rootdirectory/a`.
+To apply this to folders one level deep, say `rootdirectory/b/a`, it'd have to change to `*/a/*.txt`. The `*` char would match anything in the root directory (but a forward slash) then the pattern `a/*.txt`. Say,
+
+```
+rootdirectory/somedir/a/file.txt
+````
+
+It however wouldn't match `rootdirectory/somedir/anotherdir/a/file.txt`.
+For unrestricted depth, we'd apply
+
+```
+**/a/*.txt
 ``` 
-# ignore all .a files
-*.a
-# but do track lib.a, even though you're ignoring .a files above
-!lib.a
-# only ignore the TODO file in the current directory, not subdir/TODO
-/TODO
-# ignore all files in any directory named build
-build/
-# ignore doc/notes.txt, but not doc/server/arch.txt
-doc/*.txt
-# ignore all .pdf files in the doc/ directory and any of its subdirectories
-doc/**/*.pdf
+
+From this we can see that when git applies all rules relative to the root directory.
+
+
+Here's another sample rule to match all files ending in `.txt` at any depth in any a directory named `a` located at the project's root
+
 ```
+a/**/*.txt
+```
+
+You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun maybe. 

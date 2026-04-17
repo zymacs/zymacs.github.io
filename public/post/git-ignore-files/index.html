@@ -83,28 +83,51 @@ That could be temporary files, or database files (say sqlite3 files) or somethin
 In git, they are located in the repo&rsquo;s base directory. They exist under the name <code>.gitignore</code>.
 Creating a new repo does not auto create a &lsquo;.gitignore&rsquo; file so you have to create it yourself.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch .gitignore
-</span></span></code></pre></div><p>You can have multiple .gitignore files in a repo. But which</p>
-<p>Okay, so let&rsquo;s call these entries &lsquo;rules&rsquo; from now on.
-The gitignore files tracks what files to ignore or (not ignore) based on the names of the files.</p>
-<p>Deciding what rule to use to match some name can be tricky some times. Some are easy.
-A rule to match all files with the name &ldquo;dont_track&rdquo; would be like</p>
-<pre tabindex="0"><code>dont_track
-</code></pre><p>We can also use regular expressions, say to match names based on last , first , middle characters or some combination of that. Emacs for instance
-has temp files ending in &lsquo;~&rsquo; so to match all these we would need a rule like</p>
-<pre tabindex="0"><code>*~
-</code></pre><p>This would take care for any such file any number of levels deep in the repo</p>
-<h1 id="ignore-all-a-files">ignore all .a files</h1>
-<p>*.a</p>
-<h1 id="but-do-track-liba-even-though-youre-ignoring-a-files-above">but do track lib.a, even though you&rsquo;re ignoring .a files above</h1>
-<p>!lib.a</p>
-<h1 id="only-ignore-the-todo-file-in-the-current-directory-not-subdirtodo">only ignore the TODO file in the current directory, not subdir/TODO</h1>
-<p>/TODO</p>
-<h1 id="ignore-all-files-in-any-directory-named-build">ignore all files in any directory named build</h1>
-<p>build/</p>
-<h1 id="ignore-docnotestxt-but-not-docserverarchtxt">ignore doc/notes.txt, but not doc/server/arch.txt</h1>
-<p>doc/*.txt</p>
-<h1 id="ignore-all-pdf-files-in-the-doc-directory-and-any-of-its-subdirectories">ignore all .pdf files in the doc/ directory and any of its subdirectories</h1>
-<p>doc/**/*.pdf</p>
+</span></span></code></pre></div><p>Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
+Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <code>man gitignore</code>.
+Let&rsquo;s call the entries in a .gitignore file rules from now on.
+Here&rsquo;s a sample rules file that includes what I think will be the commonest usecases you&rsquo;ll come to need.</p>
+<pre tabindex="0"><code>a
+a/
+*.ext
+!lib.ext
+a/*.txt
+a/**/*.txt
+*.[oa]
+/a
+*/a/*.txt
+**/a/*.txt
+</code></pre><p>Before anything, for a folder to be tracked, it should have at least a file.
+Any folder that does not have at least a file or a sub directory with one will not be tracked. This does not need any .gitignore rule to be true.
+We&rsquo;ll also assume the .gitignore file above is in the repo&rsquo;s root or base directory called <code>rootdirectory</code>.</p>
+<p>Okay, now the rules shared above.
+The first rule matches all files and directories whose name is exactly &lsquo;a&rsquo;. This rule is applied recursively in the the folder <code>rootdirectory</code>.
+All folders named &lsquo;a&rsquo; that have files in them won&rsquo;t be tracked. All files named &lsquo;a&rsquo; located anywhere in the repo won&rsquo;t be tracked.
+Anything in a folder named &lsquo;a&rsquo; by implication, won&rsquo;t be tracked.</p>
+<p>Now how about if I only want to not track directories named &lsquo;a&rsquo;. That&rsquo;s the second rule <code>a/</code>.
+Adding a forward slash to a name pattern tells git to ignore only matching directories, and not files.
+So to match only directories with some name pattern, you&rsquo;d have to add append a forward slash to it.</p>
+<p>Git also supports globbing patterns. For instance , the rule ,<code>*.ext</code>, ignores all files (and directories but I wonder why a directory would have that name)
+ending in <code>.ext</code> in a repo.
+The seventh rule <code>*.[oa]</code> ignores all files endign with characters &lsquo;o&rsquo; or &lsquo;a&rsquo;. So both  <em>&rsquo;/somedir/bo.a&rsquo;</em> and <em>&lsquo;gop.o/&rsquo;</em> would have been ignored
+by this rule.</p>
+<p>Now you could run into times when you want to have exceptions for your rules. And Git supports that too.
+In the fourth rule <code>!lib.ext</code>, right after <code>*.ext</code>, the &lsquo;!&rsquo; at the start tells git to make an exception for the file &rsquo;lib.ext&rsquo; to any rule that would ignore it.
+From the sample ruleset, Git  knows to ignore all files ending in &lsquo;.ext&rsquo; but also to include &rsquo;lib.ext&rsquo;.</p>
+<p>What if you don&rsquo;t some rule to be applied recursively? You could prepend the rule with a forward slash. The rule <code>/a</code> only applies to the files and directories
+in the same location as the .gitignore file called &lsquo;a&rsquo;. Appending a forward slash to this rule <code>/a/</code>  means ignoring only folders named &lsquo;a&rsquo; but applying this rule only in the same folder as the &lsquo;.gitignore&rsquo; file.</p>
+<p>How about ignoring all files and or directories matching a certain pattern under some directory located elsewhere than in the root directory?
+That&rsquo;s what&rsquo;s applied in the rule <code>a/*.txt</code>. It ignores all files (or folders) with the names ending in <code>.txt</code> that are directly under folders named <code>a</code>/
+But there&rsquo;s a caveat! It only does this if the pattern&rsquo;s root folder , <code>a</code> for this example, is in the root directory. Say <code>rootdirectory/a</code>.
+To apply this to folders one level deep, say <code>rootdirectory/b/a</code>, it&rsquo;d have to change to <code>*/a/*.txt</code>. The <code>*</code> char would match anything in the root directory (but a forward slash) then the pattern <code>a/*.txt</code>. Say,</p>
+<pre tabindex="0"><code>rootdirectory/somedir/a/file.txt
+</code></pre><p>It however wouldn&rsquo;t match <code>rootdirectory/somedir/anotherdir/a/file.txt</code>.
+For unrestricted depth, we&rsquo;d apply</p>
+<pre tabindex="0"><code>**/a/*.txt
+</code></pre><p>From this we can see that when git applies all rules relative to the root directory.</p>
+<p>Here&rsquo;s another sample rule to match all files ending in <code>.txt</code> at any depth in any a directory named <code>a</code> located at the project&rsquo;s root</p>
+<pre tabindex="0"><code>a/**/*.txt
+</code></pre><p>You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun maybe.</p>
 
 		</div>
 		<footer class="post__footer">
