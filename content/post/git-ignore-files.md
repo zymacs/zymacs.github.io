@@ -95,4 +95,16 @@ Here's another sample rule to match all files ending in `.txt` at any depth in a
 a/**/*.txt
 ```
 
-You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun maybe. 
+You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.
+
+Lastly, on templates. So there's a whole lot of '.gitignore' templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
+into your `.gitignore.`. And that's a good thing. It probably saves time that'd be taken writign your own. Or helps you include patters you could have forgotten otherwise.
+
+But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
+I tend to ignore. And then I have  means to auto populate every project's .gitignore with that. 
+And here's what's interesting, I ignore my `.gitignore` too! I mean I might be ignoring certain things I don't want folk to know am
+ignoring so..
+
+Anyways, that's a whole lot on such a small topic. And there's more at `man gitignre`.  But I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
+
+
