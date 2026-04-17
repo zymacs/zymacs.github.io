@@ -86,10 +86,10 @@ For unrestricted depth, we'd apply
 **/a/*.txt
 ``` 
 
-From this we can see that when git applies all rules relative to the root directory.
+From this we can see that Git applies all rules relative to the root directory.
 
 
-Here's another sample rule to match all files ending in `.txt` at any depth in any a directory named `a` located at the project's root
+Here's another sample rule to match all files ending in `.txt` at any depth in any a directory named `a` located at the project's root.
 
 ```
 a/**/*.txt
