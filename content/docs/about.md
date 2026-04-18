@@ -9,8 +9,6 @@ menu:
     weight: 4
 ---
 
-- Zymacs is me.
-
-- Zymacs is also the name of this site. It's here that I share tutorials and rumblings on all sorts of topics that interest me and
+- Zymacs is me. Zymacs is also the name of this site. On here, I share tutorials and rumblings on all sorts of topics that interest me and
   probably you as well.
 
