@@ -4,7 +4,7 @@ languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "G-HTBNB5EN4T" # Enable Google Analytics by entering your tracking id
+googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your tracking id
 
 [Params]
   description = "John Doe's Personal blog about everything" # Description of your site

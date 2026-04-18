@@ -32,6 +32,8 @@ Also, you could have multiple .gitignore files, but let's keep that for `man git
 Let's call the entries in a .gitignore file rules from now on.
 Here's a sample rules file that includes what I think will be the commonest usecases you'll come to need.
 
+### Rule's we shall look at in this article.
+
 ```
 a
 a/
@@ -47,10 +49,9 @@ a/**/*.txt
 
 Before anything, for a folder to be tracked, it should have at least a file.
 Any folder that does not have at least a file or a sub directory with one will not be tracked. This does not need any .gitignore rule to be true.
-We'll also assume the .gitignore file above is in the repo's root or base directory called `rootdirectory`.
+We'll also assume the .gitignore file above is in the repo's root or base directory.
 
-Okay, now the rules shared above.
-The first rule matches all files and directories whose name is exactly 'a'. This rule is applied recursively in the the folder `rootdirectory`.
+Okay, so first rule matches all files and directories whose name is exactly 'a'. This rule is applied recursively in the the folder `rootdirectory`.
 All folders named 'a' that have files in them won't be tracked. All files named 'a' located anywhere in the repo won't be tracked.
 Anything in a folder named 'a' by implication, won't be tracked.
 
@@ -98,13 +99,51 @@ a/**/*.txt
 You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.
 
 Lastly, on templates. So there's a whole lot of '.gitignore' templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
-into your `.gitignore.`. And that's a good thing. It probably saves time that'd be taken writign your own. Or helps you include patterns you could otherwise have forgotten.
+into your `.gitignore.`. And that's a good thing. It probably saves time that'd be taken writing your own. Or helps you include patterns you could otherwise have forgotten.
 
 But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
-I tend to ignore. Then I have  means to auto populate every project's .gitignore from the same global file. 
-And here's what's interesting, I ignore my `.gitignore` too! I mean, I might be ignoring certain things I don't want folk to know am
-ignoring.. so..
+I tend to ignore (and that could include online templates too but I haven't sourced from any online templates before.).
+Then I have  means to auto populate every project's .gitignore from the same global file. 
 
-Anyways, that's a whole lot on such a small topic. And there's more at `man gitignore`.  But I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
+And here's what's interesting, I ignore my `.gitignore` too! I mean, I might be ignoring certain things I don't want folk to know am
+ignoring.. so.. 
+
+Anyways, that's a whole lot on such a small topic. So let's have the summary. Just in case you skipped to the end.
+
+## Rules Summary (TLDR)
+
+- Recursively ignoring all files and folders whose names match some pattern `a`
+```
+a
+```
+
+
+- Recursively ignoring only folders whose names match some pattern `a`
+```
+a/
+```
+
+- Ignoring all files and folders whose names match some pattern `a` that are located in the root directory
+```
+/a
+```
+
+
+- Ignoring all files in directory named `a` that's located one level deep below the root directory say root is `/` and we want to ignore `a` in `/b/a/somefiles`.
+```
+*/a
+```
+
+
+- Ignoring all files and folders located any number of levels deep below the root directory say ignoring `a` in  `/b/c/a/somefiles`. 
+```
+**/a
+```
+
+
+
+With the building blocks and conceptual understanding from this article, I'm sure there's not much extra that you'll need. But when you do, say for nested `.gitignore` implementations, you can look at `man gitignore`.
+
+I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
 
 

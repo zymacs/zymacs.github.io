@@ -41,22 +41,7 @@ In this post we&rsquo;ll look at something you probably have never read about in
 				</div>
 		</a>
 	</div>
-		
-<nav class="menu">
-	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
-	</button>
-	<ul class="menu__list">
-		<li class="menu__item">
-			<a class="menu__link" href="/docs/about/">
-				
-				<span class="menu__text">About</span>
-				
-			</a>
-		</li>
-	</ul>
-</nav>
-
+		<div class="divider"></div>
 	</div>
 </header>
 
@@ -97,6 +82,7 @@ Creating a new repo does not auto create a &lsquo;.gitignore&rsquo; file so you 
 Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <code>man gitignore</code>.
 Let&rsquo;s call the entries in a .gitignore file rules from now on.
 Here&rsquo;s a sample rules file that includes what I think will be the commonest usecases you&rsquo;ll come to need.</p>
+<h3 id="rules-we-shall-look-at-in-this-article">Rule&rsquo;s we shall look at in this article.</h3>
 <pre tabindex="0"><code>a
 a/
 *.ext
@@ -109,9 +95,8 @@ a/**/*.txt
 **/a/*.txt
 </code></pre><p>Before anything, for a folder to be tracked, it should have at least a file.
 Any folder that does not have at least a file or a sub directory with one will not be tracked. This does not need any .gitignore rule to be true.
-We&rsquo;ll also assume the .gitignore file above is in the repo&rsquo;s root or base directory called <code>rootdirectory</code>.</p>
-<p>Okay, now the rules shared above.
-The first rule matches all files and directories whose name is exactly &lsquo;a&rsquo;. This rule is applied recursively in the the folder <code>rootdirectory</code>.
+We&rsquo;ll also assume the .gitignore file above is in the repo&rsquo;s root or base directory.</p>
+<p>Okay, so first rule matches all files and directories whose name is exactly &lsquo;a&rsquo;. This rule is applied recursively in the the folder <code>rootdirectory</code>.
 All folders named &lsquo;a&rsquo; that have files in them won&rsquo;t be tracked. All files named &lsquo;a&rsquo; located anywhere in the repo won&rsquo;t be tracked.
 Anything in a folder named &lsquo;a&rsquo; by implication, won&rsquo;t be tracked.</p>
 <p>Now how about if I only want to not track directories named &lsquo;a&rsquo;. That&rsquo;s the second rule <code>a/</code>.
@@ -139,12 +124,36 @@ For unrestricted depth, we&rsquo;d apply</p>
 <pre tabindex="0"><code>a/**/*.txt
 </code></pre><p>You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.</p>
 <p>Lastly, on templates. So there&rsquo;s a whole lot of &lsquo;.gitignore&rsquo; templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
-into your <code>.gitignore.</code>. And that&rsquo;s a good thing. It probably saves time that&rsquo;d be taken writign your own. Or helps you include patterns you could otherwise have forgotten.</p>
+into your <code>.gitignore.</code>. And that&rsquo;s a good thing. It probably saves time that&rsquo;d be taken writing your own. Or helps you include patterns you could otherwise have forgotten.</p>
 <p>But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
-I tend to ignore. Then I have  means to auto populate every project&rsquo;s .gitignore from the same global file.
-And here&rsquo;s what&rsquo;s interesting, I ignore my <code>.gitignore</code> too! I mean, I might be ignoring certain things I don&rsquo;t want folk to know am
+I tend to ignore (and that could include online templates too but I haven&rsquo;t sourced from any online templates before.).
+Then I have  means to auto populate every project&rsquo;s .gitignore from the same global file.</p>
+<p>And here&rsquo;s what&rsquo;s interesting, I ignore my <code>.gitignore</code> too! I mean, I might be ignoring certain things I don&rsquo;t want folk to know am
 ignoring.. so..</p>
-<p>Anyways, that&rsquo;s a whole lot on such a small topic. And there&rsquo;s more at <code>man gitignore</code>.  But I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
+<p>Anyways, that&rsquo;s a whole lot on such a small topic. So let&rsquo;s have the summary. Just in case you skipped to the end.</p>
+<h2 id="rules-summary-tldr">Rules Summary (TLDR)</h2>
+<ul>
+<li>Recursively ignoring all files and folders whose names match some pattern <code>a</code></li>
+</ul>
+<pre tabindex="0"><code>a
+</code></pre><ul>
+<li>Recursively ignoring only folders whose names match some pattern <code>a</code></li>
+</ul>
+<pre tabindex="0"><code>a/
+</code></pre><ul>
+<li>Ignoring all files and folders whose names match some pattern <code>a</code> that are located in the root directory</li>
+</ul>
+<pre tabindex="0"><code>/a
+</code></pre><ul>
+<li>Ignoring all files in directory named <code>a</code> that&rsquo;s located one level deep below the root directory say root is <code>/</code> and we want to ignore <code>a</code> in <code>/b/a/somefiles</code>.</li>
+</ul>
+<pre tabindex="0"><code>*/a
+</code></pre><ul>
+<li>Ignoring all files and folders located any number of levels deep below the root directory say ignoring <code>a</code> in  <code>/b/c/a/somefiles</code>.</li>
+</ul>
+<pre tabindex="0"><code>**/a
+</code></pre><p>With the building blocks and conceptual understanding from this article, I&rsquo;m sure there&rsquo;s not much extra that you&rsquo;ll need. But when you do, say for nested <code>.gitignore</code> implementations, you can look at <code>man gitignore</code>.</p>
+<p>I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -201,8 +210,8 @@ ignoring.. so..</p>
 			<li class="widget__item"><a class="widget__link" href="/post/git-ignore-files/">Git ignore files</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/my-first-post/">My first post with hugo</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/installing-python3-on-linux/">Installing python3 on Linux</a></li>
-			<li class="widget__item"><a class="widget__link" href="/docs/about/">About</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/basic-elements/">Basic HTML Elements</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/hugo-template-primer/">(Hu)go Template Primer</a></li>
 		</ul>
 	</div>
 </div>
