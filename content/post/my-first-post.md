@@ -4,10 +4,9 @@ date: 2026-04-16
 tags:
   - "intro"
   -  "hugo"
-  - "development"
+  - "blogspot"
 categories:
-  - "Development"
-  - "golang"
+  - "Random"
 ---
 
 ## Dumped blogger
@@ -19,7 +18,7 @@ But boy is CSS boring! And I only realized this after 4 hours of centering `divs
 Now the day had almost come to an end and I was feeling guilty for the waste that it'd been. So to alleviate the guilt , I decided to
 setup Hugo. I mean why didn't I do this in the first place? Anyways. After some googling I got it running
 and hence this site.  It looks nice doesn't it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I
-had content of my own. 
+add content of my own. 
 
 So I have tried to build a static site generator myself before. It's why I didn't want to pick up Hugo. But I guess everything has its time.
 I'll return to that project someday. Plus, with Hugo running my site, I  get to read about the language that's quietly becoming famous as of when am writing this; THE GO LANGUAGE.

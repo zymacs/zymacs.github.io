@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last week in code :e01 - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Last week in code :e01" />
+<meta property="og:description" content="Last week in code :e01 The beginning of a new chapter I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&rsquo;re building." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/post/last-week-in-code/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2026-04-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-04-18T00:00:00+00:00" />
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last week in code :e01</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-18T00:00:00Z">April 18, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="last-week-in-code-e01">Last week in code :e01</h1>
+<h2 id="the-beginning-of-a-new-chapter">The beginning of a new chapter</h2>
+<p>I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&rsquo;re building. You know how that is.
+So I was like, how about I create something here that&rsquo;ll be an outlet for that? So I did.
+Like many things I&rsquo;ve started, I can&rsquo;t be sure this will last. But I won&rsquo;t try to preemptively kill it either. May the Force be with it.
+This week, I&rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)</p>
+<h2 id="updates-from-me">Updates From me</h2>
+<h3 id="a-new-way-to-do-project-management-the-cascading-effect-of-small-habits">A new way to do project management: The cascading effect of small habits</h3>
+<p>Now here&rsquo;s the thing—I&rsquo;ve been moving my project management from scattered TODO lists to GitHub issues.
+And I wondered why I hadn&rsquo;t done that earlier. The whole thing is way better.
+Every time I think of an improvement, I can just add an issue. There&rsquo;s labeling too.
+And that labeling system is actually how I got my first PR.
+There&rsquo;s a lot of talk online about how to get your pull requests accepted. But I&rsquo;d never been in the reviewer position before. Never felt that side of it. All of this came from just starting to use GitHub issues properly. It&rsquo;s wild how one decision cascades.</p>
+<h3 id="cant-do-it----dont-delegate-it-non-mainstream-ai-advice">Can&rsquo;t do it &ndash; don&rsquo;t delegate it: Non-mainstream AI advice</h3>
+<p>So I beat myself up for choosing to use AI for something I didn&rsquo;t understand. In one of my projects—Dripletter for precision—I wanted to move from CLI to a web app. So I gave the whole task to Grok. Hours of prompting later, I ran the code it generated and immediately drowned in bugs. Bugs arising from concepts I didn&rsquo;t understand. The lesson hit hard: Don&rsquo;t assign AI tasks that you can&rsquo;t do yourself.
+I know, it sounds backwards. One could argue we should just stop using AI altogether. But that&rsquo;s not the point. The point is knowing the difference between delegation and abdication. AI is great when you understand what you&rsquo;re delegating. When you&rsquo;re outsourcing something you fundamentally don&rsquo;t grasp? That&rsquo;s where the pain comes from.</p>
+<h2 id="eye-catching-news-from-the-tech-space">Eye catching news from the tech space</h2>
+<p>I&rsquo;m deeply into Security and Privacy, so those topics tend to show up most frequently in my feed. The algorithm.  Here&rsquo;s some highlights from this week.</p>
+<h3 id="end-to-end-encrypted-ads-tags-security">End to end encrypted Ads [tags: security]</h3>
+<p>Meta is bringing ads to WhatsApp Status and Channels — I somehow saw this coming, even though I thought ads would never touch Meta&rsquo;s flagship messaging platform. I got a prompt asking me to opt into targeted ads, with assurances that they&rsquo;re based only on status and channels data. And that chats remain end-to-end encrypted. Make of that what you will.</p>
+<h2 id="closing-thought">Closing thought</h2>
+<p>This series is an experiment. I&rsquo;m leaning into the ramble, trusting that structure will emerge as I ship more. If you&rsquo;re reading this and thinking &ldquo;hey, I learn the same stuff every week,&rdquo; drop a note. I&rsquo;m curious what resonates.
+Next week: more from the trenches.</p>
+<h2 id="a-challenge-for-you">A challenge for you</h2>
+<p><em>Can you tell that the above post was my speech through the mouth of a GPT? Until next week.. Adios..</em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Zymacs&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/git-ignore-files/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Git ignore files</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="//localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code/">Last week in code :e01</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/git-ignore-files/">Git ignore files</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/my-first-post/">My first post with hugo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installing-python3-on-linux/">Installing python3 on Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/about/">About</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

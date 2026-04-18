@@ -1,6 +1,6 @@
-:---
+---
 title: About
-date: 2022-01-25T14:00:00.000Z
+date: 2026-01-25T14:00:00.000
 authorbox: false
 sidebar: false
 menu:

@@ -1,1 +1,1 @@
-![Posts](posts/add.png) Posts
+![Posts](posts/add.png) All Posts

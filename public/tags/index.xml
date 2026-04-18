@@ -23,6 +23,13 @@
       <description></description>
     </item>
     <item>
+      <title>Blogspot</title>
+      <link>//localhost:1313/tags/blogspot/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/blogspot/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Hugo</title>
       <link>//localhost:1313/tags/hugo/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
