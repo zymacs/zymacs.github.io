@@ -15,12 +15,5 @@
       <guid>//localhost:1313/post/my-first-post/</guid>
       <description>Dumped blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
     </item>
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>//localhost:1313/post/getting-started-with-hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at Install Hugo&#xA;Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:&#xA;Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
-    </item>
   </channel>
 </rss>

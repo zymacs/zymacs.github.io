@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last week in code :e01</title>
+      <link>//localhost:1313/post/last-week-in-code-01/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-01/</guid>
+      <description>Last week in code :e01 The beginning of a new chapter I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building.</description>
+    </item>
     <item>
       <title>Git ignore files</title>
       <link>//localhost:1313/post/git-ignore-files/</link>
@@ -28,27 +35,6 @@
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
       <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade For Arch, run:&#xA;sudo pacman -Syu Fedora:&#xA;sudo dnf upgrade Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</description>
-    </item>
-    <item>
-      <title>Basic HTML Elements</title>
-      <link>//localhost:1313/post/basic-elements/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/basic-elements/</guid>
-      <description>&lt;p&gt;The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>//localhost:1313/post/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/hugo-template-primer/</guid>
-      <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for&#xA;its template engine. It is an extremely lightweight engine that provides a very&#xA;small amount of logic. In our experience that it is just the right amount of&#xA;logic to be able to create a good static website. If you have used other&#xA;template systems from different languages or frameworks you will find a lot of&#xA;similarities in Go templates.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>//localhost:1313/post/getting-started-with-hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at Install Hugo&#xA;Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:&#xA;Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
   </channel>
 </rss>
