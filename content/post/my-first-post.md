@@ -11,7 +11,7 @@ categories:
 
 ## Dumped Google Blogger
 
-I set up a site on blogger (Google's blogspot) and dumped it for a Hugo design that caught my eye.
+I set up a site on [blogger](https://www.blogger.com/) (Google's blogspot) and dumped it for a [Hugo](https://gohugo.io/) design that caught my eye.
 I thought I could learn some css building it myself. Feel good from `doing it myself from scratch`.
 But boy is CSS boring! And I only realized this after 4 hours of centering `divs` and hunting for unclosed tags.
 
@@ -25,7 +25,7 @@ I'll return to that project someday. Plus, with Hugo running my site, I  get to 
 
 ![GOLANG](https://go.dev/blog/gopher/gopher.png)
 
-**THE GO PROGRAMMING LANGUAGE.**
+[**THE GO PROGRAMMING LANGUAGE.**](https://go.dev/)
 
 Anyways, I hope I'll stay here for a while.  Writing whatever I will be writing to whoever will be reading. You for instance.
 See you in the next one. Have fun looking around. 
