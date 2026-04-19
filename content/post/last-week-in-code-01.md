@@ -36,7 +36,7 @@ The lesson hit hard:
 
 I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely in one segment in  [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
 
-## Some of what I've been reading and watching
+## Some of what I've been writing, reading and watching
 
 ### Tech updates: Standout Articles and videos
 
@@ -45,12 +45,9 @@ I've seen myself go through the same process over and over but still wonder why 
 - [Whatsapp rolling out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
 
 
-## Closing thought
-This series is an experiment. I'm leaning into the ramble, trusting that structure will emerge as I ship more. If you're reading this and thinking "hey, I learn the same stuff every week," drop a note. I'm curious what resonates.
-See you next week. That's the plan. 
+## Closing thoughts
+This series is an experiment. I'm letting the structure naturally emerge and hoping it will solidify eventually. So, yeah. Let's see how that goes.
 
 
 ## A challenge for you
-Since this is the first of its kind let's talk about what I'll have for this section. How about a brain teaser? Say, maybe some
-math problem I get to talk about in the next post? Then a simple challenge. 
-_Can you tell how much of the above post was GPT? Until next week.. Adios.._ 
+_Can you tell how much of the above post was GPT? I should see you next week. That's the plan. .._
