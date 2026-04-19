@@ -30,14 +30,20 @@ There's a lot of talk online about how to get your pull requests accepted. But I
 ### Can't do it -- don't delegate it: Non-mainstream AI advice
 So I beat myself up, the 1000th time, for choosing to use AI for something I didn't understand. In one of my projects, a mostly CLI driven app, I wanted to move from CLI to GUI. To build a django front end. I was _feeling lazy_ and _wasn't ready to put in the time_ so I gave the whole task to Grok. *Hours* of prompting later, I ran the code it generated and almost drowned in bugs.
 Bugs arising from concepts Grok had used I that didn't understand.
-The lesson hit hard: Don't assign AI tasks that you can't do yourself. I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely in one segment in  [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
+The lesson hit hard:
+
+> Don't assign AI tasks that you can't do yourself.
+
+I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely in one segment in  [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
 
 ## Some of what I've been reading and watching
 
 ### Tech updates: Standout Articles and videos
 
-- [Claude Mythos: Fireship](https://www.youtube.com/watch?v=d3Qq-rkp_to) 
-- [Whatsapp End to end encrypted Ads: Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
+- [Claude Mythos is the OG -- Fireship](https://www.youtube.com/watch?v=d3Qq-rkp_to)
+  * [The Prime's standup testing that claim](https://www.youtube.com/watch?v=6szQxMGX5JI)
+- [Whatsapp roles out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
+
 
 ## Closing thought
 This series is an experiment. I'm leaning into the ramble, trusting that structure will emerge as I ship more. If you're reading this and thinking "hey, I learn the same stuff every week," drop a note. I'm curious what resonates.
@@ -45,4 +51,4 @@ Next week: more from the trenches.
 
 
 ## A challenge for you
-_Can you tell that the above post was my speech through the mouth of a GPT? Until next week.. Adios.._ 
+_Can you tell how much of the above post was GPT? Until next week.. Adios.._ 
