@@ -34,7 +34,7 @@ The lesson hit hard:
 
 > Don't assign AI tasks that you can't do yourself.
 
-I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely in one segment in  [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
+I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely here [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
 
 ## Some of what I've been writing, reading and watching
 
@@ -45,9 +45,6 @@ I've seen myself go through the same process over and over but still wonder why 
 - [Whatsapp rolling out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
 
 
-## Closing thoughts
-This series is an experiment. I'm letting the structure naturally emerge and hoping it will solidify eventually. So, yeah. Let's see how that goes.
-
-
 ## A challenge for you
-_Can you tell how much of the above post was GPT? I should see you next week. That's the plan. .._
+_Can you tell how much of the above post was GPT?_
+Until next week. Yes, I should see you next week. That's the plan.. _May the force be with you_
