@@ -36,7 +36,7 @@ The lesson hit hard:
 
 I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely here [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
 
-## Some of what I've been writing, reading and watching
+## Some of what I've been reading and watching
 
 ### Tech updates: Standout Articles and videos
 
