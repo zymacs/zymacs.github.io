@@ -1,5 +1,5 @@
 ---
-title: Last week in code :e01
+title: Last week in code -001-
 date: 2026-04-18
 draft: false
 tags:
@@ -8,7 +8,7 @@ categories:
   - WeeklySeries
 ---
 
-# Last week in code :e01 
+# Last week in code -001- 
 
 ## The beginning of a new chapter
 
@@ -41,14 +41,16 @@ I've seen myself go through the same process over and over but still wonder why 
 ### Tech updates: Standout Articles and videos
 
 - [Claude Mythos is the OG -- Fireship](https://www.youtube.com/watch?v=d3Qq-rkp_to)
-  * [The Prime's standup testing that claim](https://www.youtube.com/watch?v=6szQxMGX5JI)
-- [Whatsapp roles out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
+- [The Prime's standup testing that claim](https://www.youtube.com/watch?v=6szQxMGX5JI)
+- [Whatsapp rolling out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
 
 
 ## Closing thought
 This series is an experiment. I'm leaning into the ramble, trusting that structure will emerge as I ship more. If you're reading this and thinking "hey, I learn the same stuff every week," drop a note. I'm curious what resonates.
-Next week: more from the trenches.
+See you next week. That's the plan. 
 
 
 ## A challenge for you
+Since this is the first of its kind let's talk about what I'll have for this section. How about a brain teaser? Say, maybe some
+math problem I get to talk about in the next post? Then a simple challenge. 
 _Can you tell how much of the above post was GPT? Until next week.. Adios.._ 
