@@ -21,7 +21,7 @@ and hence this site.  It looks nice doesn't it? I mean, I still have to remove s
 add content of my own. 
 
 So I have tried to build a static site generator myself before. It's why I didn't want to pick up Hugo. But I guess everything has its time.
-I'll return to that project someday. Plus, with Hugo running my site, I  get to read about the language that's quietly becoming famous as of when am writing this:-
+I'll return to that project someday. Plus, with Hugo running my site, I  get to read about the language that's quietly becoming famous as of when am writing this  [_or is it>?_](https://www.tiobe.com/tiobe-index/):-
 
 ![GOLANG](https://go.dev/blog/gopher/gopher.png)
 
