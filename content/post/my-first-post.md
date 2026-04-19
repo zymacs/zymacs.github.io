@@ -9,7 +9,7 @@ categories:
   - "Random"
 ---
 
-## Dumped blogger
+## Dumped Google Blogger
 
 I set up a site on blogger (Google's blogspot) and dumped it for a Hugo design that caught my eye.
 I thought I could learn some css building it myself. Feel good from `doing it myself from scratch`.
@@ -21,7 +21,11 @@ and hence this site.  It looks nice doesn't it? I mean, I still have to remove s
 add content of my own. 
 
 So I have tried to build a static site generator myself before. It's why I didn't want to pick up Hugo. But I guess everything has its time.
-I'll return to that project someday. Plus, with Hugo running my site, I  get to read about the language that's quietly becoming famous as of when am writing this; THE GO LANGUAGE.
+I'll return to that project someday. Plus, with Hugo running my site, I  get to read about the language that's quietly becoming famous as of when am writing this:-
+
+![GOLANG](https://go.dev/blog/gopher/gopher.png)
+
+**THE GO PROGRAMMING LANGUAGE.**
 
 Anyways, I hope I'll stay here for a while.  Writing whatever I will be writing to whoever will be reading. You for instance.
 See you in the next one. Have fun looking around. 
