@@ -55,8 +55,37 @@ So there won't be outsourcing for this. This time can be given to writing code o
 
 
 
+## Success metrics **
+
+
+### How much AI
+So like all well written goals, this goal needs some well defined criteria for success. So I can know square and clear what the outcomes will be at the end: A win or a loss. I need to have some defintion of a win. All my AI usage is with remotely hosted LLMs and most of my internet consumption is on my PC. Which is a plus. I have [this extension](https://addons.mozilla.org/en-US/firefox/addon/sky-history-export/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) that exports search history. The exported data is in json format.
+It includes every url visited the timestamp for when the visit happened. There's quite a lot you can do with it. But I'm interested in analytics for how often I am using LLMs and the ones I use are: Grok, Claude, Deepseek and ChatGpt. So I will export the data on d-day and this week will have a challenge for writing a python script that given a hostname, can tell
+from exported data how many times I visited it. Success will not be binary but in range. The aim is to use AI services at most thrice a day.
+
+
+#### Grading scale
+- Super for NO AI at all during the course of the challenge.
+- Very Good for using AI once every day one average.
+- Good for using AI exactly twice to thrice every day.
+- Fair for going beyond limit by one.
+- Fail otherwiseAnd beyond that, a fail.
+
+### Time limits
+There's another extension I have installed called [LeechBlock NG](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search). It allows control for when certain urls can be accessed or blocked from access. I'm setting it up to allow access for 3 hours every day starting at 13:00 during which
+time I will have the freedom of access.
+
+## Presumptions
+
+For this to work I will have to follow my own rules. So, let's hope I will. 
+
+
 ## Closing
 
-So that's it. Just to say. Problems like these usually ain't isolated. The AI addiction problem could be related to the reels problem which could be connected to the
-youtube binging problem .. which might be related to the music addiction problem. So I'm doing somework in those areas also. But I will only share about that 5 days from now. Or I should. That's the plan. Till then. _May the force ..._
+So that's it. Just to say. Problems like these usually ain't isolated. The AI addiction problem could be related to the [Reels](https://en.wiktionary.org/wiki/reel) problem which could be connected to the YouTube binging problem .. which might be related to the music addiction problem. So I'm doing somework in those areas also.
+But I will only share about that 5 days from now. Or I should. That's the plan. Also, I did not at any one point say AI is bad. Articles on how to use AI well are available out there. But that ain't an area I have thought through well enough to have an opinion on. They all seem so much to me, most of them at least, like articles on how to healthily use cannabis.
 
+I should return with the results after the challenge, 5 days later. Till then. _May the force ..._
+
+
+_Oh, and we shall talk about the asterisks point soon, very soon_
