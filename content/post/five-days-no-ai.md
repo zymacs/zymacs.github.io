@@ -16,8 +16,7 @@ categories:
 
 I cannot say I am the heaviest user of AI since, I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.
 And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.
-So I was like, how about a simple challenge this week. **5 Days No AI**. It's interesting this ain't just me. There's quite a number out their trying the same for similar reasons.
-Here's [one](https://n-ov-one.blogspot.com/2025/10/no-ai-november.html?m=1). Some have formed [movements](https://getfreewrite.com/pages/nonotwrimo) out of this, their concern about AI on long term intrinsic human capability.
+So I was like, how about a simple challenge this week. **5 Days No AI**.
 
 ## But isn't it too extreme ?
 
