@@ -1,5 +1,5 @@
 ---
-title: Installing python3 on Linux
+title: Installing Python3 on Linux
 date: 2026-03-04
 tags:
   - "python"

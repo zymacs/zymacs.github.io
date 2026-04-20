@@ -1,5 +1,5 @@
 ---
-title: Last week in code -001-
+title: Last Week In Code -001-
 date: 2026-04-18
 draft: false
 tags:
