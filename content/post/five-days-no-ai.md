@@ -90,7 +90,7 @@ Okay, let's have the grading scale:
 
 ### Time limits
 There's another extension I have installed called [LeechBlock NG](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search). It allows control for when certain urls can be accessed or blocked from access. I'm setting it up to allow access for 3 hours every day starting at 13:00 during which
-time I will have the freedom of access.
+time I will have the freedom of access. Total usage during this period will be capped at 1 hour.
 
 ## Presumptions
 
