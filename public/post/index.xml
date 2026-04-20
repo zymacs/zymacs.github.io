@@ -9,35 +9,35 @@
     <lastBuildDate>Mon, 20 Apr 2026 12:12:03 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Five Days No Ai</title>
+      <title>5 Days No AI</title>
       <link>//localhost:1313/post/five-days-no-ai/</link>
       <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
       <guid>//localhost:1313/post/five-days-no-ai/</guid>
-      <description>Five Days No AI I cannot say I am the heaviest user of AI since I lack the stats to back that up. But I am sure anyone can tell if they are using AI too much. And that sentiment for me always arises out of concern for the downsides its having on my productivity. The effect its having on my ability to sit through a hard task. So I was like, how about a simple game this week.</description>
+      <description>5 Days No AI Why this challenge ? I cannot say I am the heaviest user of AI since I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand. And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.</description>
     </item>
     <item>
-      <title>Last week in code -001-</title>
+      <title>Last Week In Code -001-</title>
       <link>//localhost:1313/post/last-week-in-code-01/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/last-week-in-code-01/</guid>
       <description>Last week in code -001- The beginning of a new chapter I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building.</description>
     </item>
     <item>
-      <title>Git ignore files</title>
+      <title>Gitignore files</title>
       <link>//localhost:1313/post/git-ignore-files/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/git-ignore-files/</guid>
-      <description>Git ignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
+      <description>Gitignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
     </item>
     <item>
-      <title>My first post with hugo</title>
+      <title>My first post with Hugo</title>
       <link>//localhost:1313/post/my-first-post/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/my-first-post/</guid>
       <description>Dumped Google Blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
     </item>
     <item>
-      <title>Installing python3 on Linux</title>
+      <title>Installing Python3 on Linux</title>
       <link>//localhost:1313/post/installing-python3-on-linux/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
