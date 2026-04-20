@@ -61,7 +61,7 @@ So there won't be outsourcing for this. This time can be given to writing code o
 ### How much AI
 So like all well written goals, this goal needs some well defined criteria for success. So I can know square and clear what the outcomes will be at the end: A win or a loss. I need to have some defintion of a win. All my AI usage is with remotely hosted LLMs and most of my internet consumption is on my PC. Which is a plus. I have [this extension](https://addons.mozilla.org/en-US/firefox/addon/sky-history-export/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) that exports search history. The exported data is in json format.
 It includes every url visited the timestamp for when the visit happened. There's quite a lot you can do with it. But I'm interested in analytics for how often I am using LLMs and the ones I use are: Grok, Claude, Deepseek and ChatGpt. So I will export the data on d-day and this week will have a challenge for writing a python script that given a hostname, can tell
-from exported data how many times I visited it. Success will not be binary but in range. The aim is to use AI services at most thrice a day.
+from exported data how many times I visited it. Success will not be binary but in range. The aim is to use AI services at most thrice a day. My current usage frequency is .. unconstrained. Okay, the grading scale:
 
 
 #### Grading scale
@@ -76,7 +76,6 @@ There's another extension I have installed called [LeechBlock NG](https://addons
 time I will have the freedom of access.
 
 ## Presumptions
-
 For this to work I will have to follow my own rules. So, let's hope I will. 
 
 
