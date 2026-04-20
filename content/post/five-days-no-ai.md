@@ -69,7 +69,7 @@ from exported data how many times I visited it. Success will not be binary but i
 - Very Good for using AI once every day one average.
 - Good for using AI exactly twice to thrice every day.
 - Fair for going beyond limit by one.
-- Fail otherwiseAnd beyond that, a fail.
+- And beyond that; a fail.
 
 ### Time limits
 There's another extension I have installed called [LeechBlock NG](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search). It allows control for when certain urls can be accessed or blocked from access. I'm setting it up to allow access for 3 hours every day starting at 13:00 during which
