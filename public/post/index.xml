@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 12:12:03 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Five Days No Ai</title>
+      <link>//localhost:1313/post/five-days-no-ai/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:1313/post/five-days-no-ai/</guid>
+      <description>Five Days No AI I cannot say I am the heaviest user of AI since I lack the stats to back that up. But I am sure anyone can tell if they are using AI too much. And that sentiment for me always arises out of concern for the downsides its having on my productivity. The effect its having on my ability to sit through a hard task. So I was like, how about a simple game this week.</description>
+    </item>
     <item>
       <title>Last week in code -001-</title>
       <link>//localhost:1313/post/last-week-in-code-01/</link>

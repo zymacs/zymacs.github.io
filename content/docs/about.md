@@ -9,6 +9,5 @@ menu:
     weight: 4
 ---
 
-- Zymacs is me. Zymacs is also the name of this site. On here, I share tutorials and rumblings on all sorts of topics that interest me and
-  probably you as well.
+- I am a graduate of Computer Engineering from Eastern Mediterranean University. On here, I share tutorials and rumblings on all sorts of topics that interest me and probably you as well.
 

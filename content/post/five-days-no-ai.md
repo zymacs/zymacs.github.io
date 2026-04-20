@@ -1,0 +1,62 @@
+---
+title : '5 Days No AI'
+date : 2026-04-20T12:12:03+03:00
+draft : false
+tags:
+  - AI
+  - Productivity
+categories:
+  - Challenges
+---
+
+# 5 Days No AI
+
+
+## Why this challenge ?
+
+I cannot say I am the heaviest user of AI since I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.
+And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.
+So I was like, how about a simple game this week. 5 Days No AI.
+
+## But isn't it too extreme ?
+
+I mean, I have tried 1 month challenges and those didn't go so well. But this is just just Monday, Tuesday, Wednesday then.. Friday. How hard can that be?
+Well. I made that decision yesterday and I have already used Grok quite a number of times this morning. But It's still Monday so I guess I still have a chance. How am I going to do it? I mean, I won't be sharing my search history but I guess I'll share my strategy just in case someone , you for instance, ever wants to do the same.
+
+
+## How will I get what AI was giving?
+
+### 1. Validation. </br>
+Sharing every thing to get 'an opinion'.. Nope, praise. "Oh, that's so well done".
+Now it seems to me wanting validation isn't a problem. That's a human trait. The problem
+is addiction to a constant stream of an unhealthy version of it. From who? From some psycophanting AI.. Nope. That should go.
+The people I talk to will give me enough of that.
+
+### 2. Assistance w/ thinking through 'hard' problems
+After you have been using AI heavily for a while (as a crutch), your definition for hard gradually loosens. At least I think mine has been.
+The effect? More need for a 'thinking' partner. Till when its doing all the thinking while you sit their watching as its dumb partner.
+Sitting through hard challenges (coding block, error messages) solo is going to be a hard one. But I think it is a valuable skill. I had a similar experience challenging myself to debug C++ compilation errors with no stack overflow but just the CPP ref before. It was a pain.
+But it was interesting how weeks later it was just how I did things. And I easily found my way around problems after that.
+I miss that. So there won't be much outsourcing for this role. I'll resort to docs and community forums. I guess that's a step above AI reliance.
+
+### 3. Getting quick tutorials on libraries whose docs I don't want to read
+Sometimes I need to use a library but I'm not ready to read all about it all hunt for the specific part that addresses my need. But that's not the only reason I've been avoiding
+the docs. After I realised AI could give me exactly what I needed or at times a good enough summary to get the work done, I was like.. `Documentation reading -- into the trash!`.
+There's a skill in being able to find what you need from the docs. And I think if one does not use them often, they never get to the point where they can do what the AI does..
+quickly find a relevant section for their need. I do this very often with the man pages. /[whatineed] and boom! I got it and am out. So how about I invest time in becoming
+as good with the docs. I have a growing library of offline docs for the tools and libraries I use most often and I guess it's time to put those to some good use. 
+
+
+### 4. Random prompts for nothing
+You ever opened your phone not because you needed something but .. just because it was there somehow wanting to be opened.
+Something addictive about these LLM's I can't put my finger on. Some times I'm clicking the 'Claude' or 'Grok' icon, or typing that url into the search bar just because that's how
+easy it is to get them cigarettes. I decide on what I want to do with it when the prompt appears. What is that? I don't want to know. I know one thing for sure. It ain't healthy.
+So there won't be outsourcing for this. This time can be given to writing code or some other healthy endeavour.
+
+
+
+## Closing
+
+So that's it. Just to say. Problems like these usually ain't isolated. The AI addiction problem could be related to the reels problem which could be connected to the
+youtube binging problem .. which might be related to the music addiction problem. So I'm doing somework in those areas also. But I will only share about that 5 days from now. Or I should. That's the plan. Till then. _May the force ..._
+

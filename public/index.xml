@@ -6,8 +6,15 @@
     <description>Recent content on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 12:12:03 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Days No AI</title>
+      <link>//localhost:1313/post/five-days-no-ai/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:1313/post/five-days-no-ai/</guid>
+      <description>5 Days No AI Why this challenge ? I cannot say I am the heaviest user of AI since I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand. And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.</description>
+    </item>
     <item>
       <title>Last week in code -001-</title>
       <link>//localhost:1313/post/last-week-in-code-01/</link>
@@ -41,7 +48,7 @@
       <link>//localhost:1313/docs/about/</link>
       <pubDate>Sun, 25 Jan 2026 14:00:00 +0000</pubDate>
       <guid>//localhost:1313/docs/about/</guid>
-      <description> Zymacs is me. Zymacs is also the name of this site. On here, I share tutorials and rumblings on all sorts of topics that interest me and probably you as well. </description>
+      <description> I am a graduate of Computer Engineering from Eastern Mediterranean University. On here, I share tutorials and rumblings on all sorts of topics that interest me and probably you as well. </description>
     </item>
   </channel>
 </rss>
