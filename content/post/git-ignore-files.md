@@ -31,6 +31,8 @@ touch .gitignore
 ```
 
 Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
+Blank lines have no effect and can be used as separators for that reason.
+Lines starting with `#` are treated as comments.
 Also, you could have multiple .gitignore files, but let's keep that for `man gitignore`.
 Let's call the entries in a .gitignore file rules from now on.
 Here's a sample rules file that includes what I think will be the commonest usecases you'll come to need.

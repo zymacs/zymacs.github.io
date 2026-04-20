@@ -95,6 +95,8 @@ In git, they are located in the repo&rsquo;s base directory. They exist under th
 Creating a new repo does not auto create a &lsquo;.gitignore&rsquo; file so you have to create it yourself.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch .gitignore
 </span></span></code></pre></div><p>Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
+Blank lines have no effect and can be used as separators for that reason.
+Lines starting with <code>#</code> are treated as comments.
 Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <code>man gitignore</code>.
 Let&rsquo;s call the entries in a .gitignore file rules from now on.
 Here&rsquo;s a sample rules file that includes what I think will be the commonest usecases you&rsquo;ll come to need.</p>
