@@ -27,7 +27,7 @@
       <link>//localhost:1313/post/my-first-post/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/my-first-post/</guid>
-      <description>Dumped blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
+      <description>Dumped Google Blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
     </item>
     <item>
       <title>Installing python3 on Linux</title>
@@ -35,13 +35,6 @@
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
       <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade For Arch, run:&#xA;sudo pacman -Syu Fedora:&#xA;sudo dnf upgrade Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)</description>
-    </item>
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>//localhost:1313/post/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/hugo-template-primer/</guid>
-      <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for&#xA;its template engine. It is an extremely lightweight engine that provides a very&#xA;small amount of logic. In our experience that it is just the right amount of&#xA;logic to be able to create a good static website. If you have used other&#xA;template systems from different languages or frameworks you will find a lot of&#xA;similarities in Go templates.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
