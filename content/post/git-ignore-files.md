@@ -10,7 +10,7 @@ categories:
 ---
 
 
-## Git ignore files
+## Gitignore files
 
 So I've been trying to make my way through [Progit](https://git-scm.com/book/en/v2). I have accumulated a whole lot of information so far and I was afraid
 for how not so often I used it. That I was going to forget it all. 
@@ -33,7 +33,7 @@ touch .gitignore
 Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
 Blank lines have no effect and can be used as separators for that reason.
 Lines starting with `#` are treated as comments.
-Also, you could have multiple .gitignore files, but let's keep that for `man gitignore`.
+Also, you could have multiple .gitignore files, but let's keep that for [another article](https://learning-ocean.com/tutorials/git/managing-large-repositories-multiple-gitignore-files/).
 Let's call the entries in a .gitignore file rules from now on.
 Here's a sample rules file that includes what I think will be the commonest usecases you'll come to need.
 
@@ -147,7 +147,7 @@ a/
 
 
 
-With the building blocks and conceptual understanding from this article, I'm sure there's not much extra that you'll need. But when you do, say for nested `.gitignore` implementations, you can look at `man gitignore`.
+With the building blocks and conceptual understanding from this article, I'm sure there's not much extra that you'll need. But when you do, you can look at `man gitignore`.
 
 I sure do hope this helped somehow. See you in the next one and... HAPPY HACKING. 
 

@@ -7,7 +7,7 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Gitignore files" />
-<meta property="og:description" content="Git ignore files So I&rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.
+<meta property="og:description" content="Gitignore files So I&rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.
 In this post we&rsquo;ll look at something you probably have never read about in isolation, gitignore files." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="//localhost:1313/post/git-ignore-files/" /><meta property="article:section" content="post" />
@@ -83,7 +83,7 @@ In this post we&rsquo;ll look at something you probably have never read about in
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<h2 id="git-ignore-files">Git ignore files</h2>
+			<h2 id="gitignore-files">Gitignore files</h2>
 <p>So I&rsquo;ve been trying to make my way through <a href="https://git-scm.com/book/en/v2">Progit</a>. I have accumulated a whole lot of information so far and I was afraid
 for how not so often I used it. That I was going to forget it all.
 Hence my decision to share some of that with you, and with my future self.</p>
@@ -97,7 +97,7 @@ Creating a new repo does not auto create a &lsquo;.gitignore&rsquo; file so you 
 </span></span></code></pre></div><p>Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
 Blank lines have no effect and can be used as separators for that reason.
 Lines starting with <code>#</code> are treated as comments.
-Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <code>man gitignore</code>.
+Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <a href="https://learning-ocean.com/tutorials/git/managing-large-repositories-multiple-gitignore-files/">another article</a>.
 Let&rsquo;s call the entries in a .gitignore file rules from now on.
 Here&rsquo;s a sample rules file that includes what I think will be the commonest usecases you&rsquo;ll come to need.</p>
 <h3 id="rules-we-shall-look-at-in-this-article">Rule&rsquo;s we shall look at in this article.</h3>
@@ -170,7 +170,7 @@ ignoring.. so..</p>
 <li>Ignoring all files and folders located any number of levels deep below the root directory say ignoring <code>a</code> in  <code>/b/c/a/somefiles</code>.</li>
 </ul>
 <pre tabindex="0"><code>**/a
-</code></pre><p>With the building blocks and conceptual understanding from this article, I&rsquo;m sure there&rsquo;s not much extra that you&rsquo;ll need. But when you do, say for nested <code>.gitignore</code> implementations, you can look at <code>man gitignore</code>.</p>
+</code></pre><p>With the building blocks and conceptual understanding from this article, I&rsquo;m sure there&rsquo;s not much extra that you&rsquo;ll need. But when you do, you can look at <code>man gitignore</code>.</p>
 <p>I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
 
 		</div>

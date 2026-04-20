@@ -27,7 +27,7 @@
       <link>//localhost:1313/post/git-ignore-files/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/git-ignore-files/</guid>
-      <description>Git ignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
+      <description>Gitignore files So I&amp;rsquo;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.&#xA;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.</description>
     </item>
     <item>
       <title>My first post with Hugo</title>
