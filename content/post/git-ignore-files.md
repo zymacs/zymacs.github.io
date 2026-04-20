@@ -1,5 +1,5 @@
 ---
-title: Git ignore files
+title: Gitignore files
 date: 2026-04-17
 tags:
   - git
