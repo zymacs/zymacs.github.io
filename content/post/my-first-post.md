@@ -1,5 +1,5 @@
 ---
-title: My first post with hugo
+title: My first post with Hugo
 date: 2026-04-16
 tags:
   - "intro"
