@@ -34,14 +34,17 @@ The lesson hit hard:
 
 > Don't assign AI tasks that you can't do yourself.
 
-I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely here [one of his videos](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
+I've seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely  [here](https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&t=146).
 
-## Some of what I've been reading and watching
+## In other news last week
 
-### Tech updates: Standout Articles and videos
+**AI & LLMs**
 
 - [Claude Mythos is the OG -- Fireship](https://www.youtube.com/watch?v=d3Qq-rkp_to)
 - [The Prime's standup testing that claim](https://www.youtube.com/watch?v=6szQxMGX5JI)
+
+**Data Privacy & Cybersec**
+
 - [Whatsapp rolling out end to end encrypted Ads -- Whatsapp](https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav)
 
 

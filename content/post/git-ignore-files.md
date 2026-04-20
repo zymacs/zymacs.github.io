@@ -18,9 +18,10 @@ Hence my decision to share some of that with you, and with my future self.
 
 In this post we'll look at something you probably have never read about in isolation, gitignore files.
 
-## Tutorial-tone starts here
+_If you want to just look at a summary of what rules you can use for creating your files, there's one at the very end of this article_
 
-They hold entries for all information you would like to keep untracked. 
+
+Okay. Gitignore files hold entries for all information you would like to keep untracked. 
 That could be temporary files, or database files (say sqlite3 files) or something else.
 In git, they are located in the repo's base directory. They exist under the name `.gitignore`.
 Creating a new repo does not auto create a '.gitignore' file so you have to create it yourself.
