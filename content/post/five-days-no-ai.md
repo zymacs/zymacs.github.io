@@ -42,7 +42,7 @@ I miss that. So there won't be much outsourcing for this role. I'll resort to do
 ### 3. Getting quick tutorials on libraries whose docs I don't want to read
 Sometimes I need to use a library but I'm not ready to read all about it all hunt for the specific part that addresses my need. But that's not the only reason I've been avoiding
 the docs. After I realised AI could give me exactly what I needed or at times a good enough summary to get the work done, I was like.. *Documentation reading -- into the trash!*.
-There's a skill in being able to find what you need from the docs. And I think if one does not use them often, they never get to the point where they can do what the AI does..
+There's [a skill in being able to find what you need from the docs](https://medium.com/@winIrChan/reading-docs-is-a-skill-reading-docs-is-a-skill-37a826a7900a). And I think if one does not use them often, they never get to the point where they can do what the AI does..
 quickly find a relevant section for their need. I do this very often with the [man](https://en.wikipedia.org/wiki/Man_page) pages. `/[whatineed]` and boom! I got it and am out. So how about I invest time in becoming
 as good with the docs. I have a growing library of offline docs for the tools and libraries I use most often and I guess it's time to put those to some good use. 
 
