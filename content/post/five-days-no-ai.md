@@ -90,7 +90,7 @@ Okay, let's have the grading scale:
 
 ### Time limits
 There's another extension I have installed called [LeechBlock NG](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search). It allows control for when certain urls can be accessed or blocked from access. I'm setting it up to allow access for 3 hours every day starting at 13:00 during which
-time I will have the freedom of access. Total usage during this period will be capped at 1 hour.
+time I will have the freedom of access. Total yyusage during this period will be capped at 1 hour.
 
 ## Presumptions
 
@@ -99,7 +99,7 @@ For this to work I will have to follow my own rules. So, let's just hope I will.
 
 ## Closing
 
-So that's it. Just to say. Problems like these usually ain't isolated. The AI addiction problem could be related to the [reels](https://www.msn.com/en-in/health/other/spending-hours-on-reels-study-warns-of-rising-addiction-risk/ar-AA1KMn1g) problem which could be connected to the YouTube binging problem .. which might be related to the music addiction problem. So I'm doing somework in those areas also. But I will only share about that 5 days from now. Or I should. That's the plan. Also, I did not at any one point say AI is bad. Articles on how to use AI well are available out there. But that ain't an area I have thought through well enough to have an opinion on. They all seem so much to me, most of them at least, like articles on [how to healthily use cannabis](https://www.goodrx.com/health-topic/cannabis/safe-and-healthy-marijuana-use).
+So that's it. Just to say. Problems like these usually ain't isolated. The AI addiction problem could be related to the [reels](https://www.msn.com/en-in/health/other/spending-hours-on-reels-study-warns-of-rising-addiction-risk/ar-AA1KMn1g) problem which could be connected to the YouTube binging problem .. which might be related to the music addiction problem. So I'm doing somework in those areas also. But I will only share about that 5 days from now. Or I should. That's the plan. Also, I did not at any one point say AI is bad. Articles on how to use AI well are available out there. But that ain't an area I have thought through well enough to have an opinion on. They all seem so much to me, most of them at least, like articles on how to healthily use cannabis. _Yep, [there's articles on that](https://www.goodrx.com/health-topic/cannabis/safe-and-healthy-marijuana-use)_.
 
 I should return with the results after the challenge, 5 days later. Till then. _May the force ..._
 
