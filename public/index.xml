@@ -6,8 +6,15 @@
     <description>Recent content on Zymacs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 12:12:03 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a Computer?</title>
+      <link>//localhost:1313/post/what_is_a_computer/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/what_is_a_computer/</guid>
+      <description>What is a computer? While talking about what interview questions I&amp;rsquo;d been studying, I mentioned to a non technical friend how interesting it was finding questions so basic included. Why would you ask a Software Engineering graduate to define a computer? Such a waste of time right? My friend&amp;rsquo;s response was even more interesting: &amp;ldquo;What is a computer?&amp;rdquo; he posed the question to me. And there I was&amp;hellip; answering my own question.</description>
+    </item>
     <item>
       <title>5 Days No AI</title>
       <link>//localhost:1313/post/five-days-no-ai/</link>
