@@ -46,28 +46,25 @@ We could go on and on but the point is clear. All requested (click, press, etc) 
 
 Let's list the steps. The similarities. What definies a computer's actions.
 
-- Fetch
-- Decode
-- Execute
+- Fetch instruction
+- Decode instruction
+- Execute instruction
+
+_Elsewhere, you'll find this all wrapped under the `fetch-decode-execute-cycle`_
 
 So what is a computer? Its a device that fetches , decodes and executes instructions? That doesn't sound so right. Its gets too technical too early.
 How about its a device that can be programmed to respond predictably to input? I mean, someone must have written those call instructions right?
 I guesst that works. A computer is an electronic device that can be programmed or is programmed to respond predictably to input. Click to open app. Press call button to call.
 Press 3 to have 3 displayed on screen. Press equals to execute a calculation for whats on screen. etc. 
 
-When you go to wikipedia you will find a different definition. That definition is so low level and I'd like to write a few more articles before we get that deep.
-It defines a computer as an electronic device that can be programmed to carry out logical/arithmetic operations. But that gets into definition of instructions. And we don't need
+When you go to Wikipedia you will find a different definition. That definition is so low level and I'd like to write a few more articles before we get that deep.
+It defines a computer as an electronic device that can be programmed to carry out logical/arithmetic operations. But that gets into the definition of instructions. And we don't need
 that too early do we? 
 
-I should release some more articles getting into what a computer instruction is and then we can adopt the wikipedia definition. I guess this is going to be a lot of fun. I see
-myself writing about how a calculator works, how a computer remembers among other topics. But that should suffice for this one. I mentioned earlier I decided to have the definition
-stretched out as long as its been for a reason. I hope you see that reason. You appreciate the definition more now that you know how I arrived at it. Or I hope you do. 
+I should release some more articles getting into what a computer instruction is and then we can adopt the Wikipedia definition. I guess this is going to be a lot of fun. I see
+myself writing about CPUs, how a calculator works, how a computer remembers among other topics. But that should suffice for this one. I mentioned earlier I decided to have the definition stretched out as long as its been for a reason. I hope you see that reason. You appreciate the definition more now that you know how I arrived at it. Or I hope you do. 
 
 --- 
 
-I share my articles manually via social media. If you found this via a google search then.. that's so cool. But if you didn't I'm assuming you are coming from hacker news or one of my social media handles. If with anything to say or any comment to make about this article, please reach out at:
-
-
-- [Bluesky](https://bsky.app/profile/zymacs.bsky.social)
-- [Telegram](http://t.me/zymacs_1)
+I share my articles manually via social media. If you found this via a google search then.. that's so cool. But if you didn't I'm assuming you are coming from hacker news or one of my social media handles. If with anything to say or any comment to make about this article, please reach out at to me at [Bluesky](https://bsky.app/profile/zymacs.bsky.social) or on [Telegram](http://t.me/zymacs_1) .
 
