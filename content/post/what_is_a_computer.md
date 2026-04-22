@@ -54,7 +54,7 @@ Let's list the steps. The similarities. What definies a computer's actions.
 _Elsewhere, you'll find this all wrapped under the `fetch-decode-execute-cycle`_
 
 So what is a computer? Its a device that fetches , decodes and executes instructions? That doesn't sound so right. Its gets too technical too early.
-How about its a device that can be programmed to respond predictably to input? I mean, someone intending to make a computer provide that functionality must have written those call instructions right? I guess that works. A computer is an electronic device that can be programmed or is programmed to respond predictably to input. Click to open app. Press call button to call. Press 3 to have 3 displayed on screen. Press equals to execute a calculation for whats on screen. etc. 
+How about its a device that can be programmed to respond predictably to input? I mean, someone intending to make a computer provide that functionality must have written those call instructions right? I guessy that works. A computer is an electronic device that can be programmed or is programmed to respond predictably to input. Click to open app. Press call button to call. Press 3 to have 3 displayed on screen. Press equals to execute a calculation for whats on screen. etc. 
 
 When you go to Wikipedia you will find a different definition. That definition is so low level and I'd like to write a few more articles before we get that deep.
 It defines a computer as an electronic device that can be programmed to carry out logical/arithmetic operations. But that gets into the definition of instructions. And we don't need
