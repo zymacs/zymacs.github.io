@@ -1,4 +1,5 @@
 ---
+thumbnail: "img/a_computer.png"
 title: What is a Computer?
 date: 2026-04-22
 tags:
