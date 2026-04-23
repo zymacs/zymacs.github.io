@@ -1,5 +1,6 @@
 ---
 title : '5 Days No AI'
+thumbnail: "img/no_ai.jpeg"
 date : 2026-04-20T12:12:03+03:00
 draft : false
 tags:
