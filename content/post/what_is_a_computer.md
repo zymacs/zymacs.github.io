@@ -36,7 +36,7 @@ The functions listed above do look different from each other. But are they that 
 Well let's break it down. Let's discover these similarities.
 
 
-Communucation say, calling on WhatsApp involves a lot of actions. Let's look at one action. Clicking the call button to call whomever. The computer knows to respond by ringing
+Communucation, say, calling on WhatsApp involves a lot of actions. Let's look at one action. Clicking the call button to call whomever. The computer knows to respond by ringing
 the called. How does it know? Yes, there some series of instructions (for triggering the call event) whose retrieval has been tied to the call button click action.
 The computer retrieves these instructions and on their execution, the call event is triggered. Retrive instructions? That implies storage. A computer has somewhere to store its instructions. 
 
@@ -54,16 +54,14 @@ Let's list the steps. The similarities. What definies a computer's actions.
 _Elsewhere, you'll find this all wrapped under the `fetch-decode-execute-cycle`_
 
 So what is a computer? Its a device that fetches , decodes and executes instructions? That doesn't sound so right. Its gets too technical too early.
-How about its a device that can be programmed to respond predictably to input? I mean, someone must have written those call instructions right?
-I guesst that works. A computer is an electronic device that can be programmed or is programmed to respond predictably to input. Click to open app. Press call button to call.
-Press 3 to have 3 displayed on screen. Press equals to execute a calculation for whats on screen. etc. 
+How about its a device that can be programmed to respond predictably to input? I mean, someone intending to make a computer provide that functionality must have written those call instructions right? I guesst that works. A computer is an electronic device that can be programmed or is programmed to respond predictably to input. Click to open app. Press call button to call. Press 3 to have 3 displayed on screen. Press equals to execute a calculation for whats on screen. etc. 
 
 When you go to Wikipedia you will find a different definition. That definition is so low level and I'd like to write a few more articles before we get that deep.
 It defines a computer as an electronic device that can be programmed to carry out logical/arithmetic operations. But that gets into the definition of instructions. And we don't need
 that too early do we? 
 
 I should release some more articles getting into what a computer instruction is and then we can adopt the Wikipedia definition. I guess this is going to be a lot of fun. I see
-myself writing about CPUs, how a calculator works, how a computer remembers among other topics. But that should suffice for this one. I mentioned earlier I decided to have the definition stretched out as long as its been for a reason. I hope you see that reason. You appreciate the definition more now that you know how I arrived at it. Or I hope you do. 
+myself writing about CPUs, how a calculator works, how a computer remembers among other topics. But that should suffice for this one. I mentioned earlier I decided to have the definition stretched out as long as its been for a reason. I hope you see that reason. You appreciate the definition more now that you know how I arrived at it. Or I hope you do. I should hope to see you around in the next one.
 
 --- 
 
