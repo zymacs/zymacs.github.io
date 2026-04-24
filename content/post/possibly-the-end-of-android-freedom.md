@@ -1,6 +1,7 @@
 ---
 title: On the end of Android
 date: 2026-04-24
+draft: true
 tags:
   - "android"
   - "rants"

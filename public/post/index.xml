@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the end of Android</title>
+      <link>//localhost:1313/post/possibly-the-end-of-android-freedom/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/possibly-the-end-of-android-freedom/</guid>
+      <description>&lt;h1 id=&#34;on-the-end-of-android&#34;&gt;On the end of Android&lt;/h1&gt;&#xA;&lt;p&gt;Death by 100 paper cuts&lt;/p&gt;</description>
+    </item>
     <item>
       <title>On the end of Android</title>
       <link>//localhost:1313/post/the-end-of-android-is-here/</link>

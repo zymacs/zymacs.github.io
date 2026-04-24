@@ -1,7 +1,7 @@
 ---
 title: On the end of Android
 date: 2026-04-23
-draft: false
+draft: true
 tags:
   - "android"
   - "rants"
@@ -12,27 +12,19 @@ categories:
 # On the end of Android
 ## The loss of latent freedom
 
-I'm just Zymacs. This'll be the first opinionated post. I'm grategul that I get to have them read by you, these my opinions. And by all they reach.
-Ain't a famous person. I don't think anyone has to, to voice their opinion on matters they care about.
-I thought twice about posting this, then thrice, then here you are, reading this. 
+Zymacs is my name. Isn't the internet a great place! All have the freedom to voice their opinion on matters they care about. So let's talk Android.
 
-I like Computers. I like to make them do things. I like how much potential they provide for materializing ideas. I don't know if anything else provides as much potential.
-My love for freedom, freedom with my software and my tools, is the why for my device and software choices. Its why I use Android for mobile. (_I use Arch for PC BTW xD_).
-And why I would choose it again and again over iOS if, Android stayed as free as it is, with iOS as controlling and restrictive as it is.
+I use a lot of apps from F-Droid and other App stores than the PlayStore, Android's official app store.
+My camera app, my video streaming client, some tracking apps, my launcher. Only a few exceptions. Forced stock apps plus some banking apps. Anyways, I like that I have the freedom to install from a variety of sources.
 
-
-Android ain't the most flexible phone out of the box. For most, after trying to bend it to your will while staying within the maker's playground, you come to a point where the only way to crank more juice out of your it is to root it. Some phones do provide users with the freedom to do that without voiding waranty. Some a level of difficulty. Others are totally locked down.
-But as time's gone by, most have become more and more like the latter.
-
-Now I'm not deep into rooting. I can't do with my phone all that can be done with it. But still, what fun would that be? To have nothing left to learn. Plus, as I'll mention later, that's besides the point.
-
-So which parts of my Android Freedom can I afford to exercise now? One big one. I use a lot of apps from F-Droid and other App stores than Apple Play. My camera app, my
-video streaming client, some tracking apps, my launcher. But that's just one side of the story. I plan to build apps. I can't wait to add an app layer to the web apps I already have.
-Get the mobile accessibility a phone provides. And that knowledge that I can always do what I want to whenever I plan to, that's the freedom I'm talking about.
-
-Let's get philosophical for a bit. I think one feels more at freedom whe
+Still speaking of a variety of sources. On the long list of items I can't wait to check off, my learning goals, is App Development for Android. I'd like to be one of the variety. I got a lot of ideas in written, with web apps that need a mobile version. Most just personal. Some will probably be sold. But I see myself building most as a hobby. 
 
 
-It's hard to talk about such ideas as these as an unemployed person.
-I guess my parent's reaction to this post would be:
-`Get out and find a job. Whether Android is locked down or not is nonofurbiz.`
+What's my point? Well all this freedom, my biggest reason for why I use and Android and not an IPHONE (biggest for most Android Users), is about to breathe its last. 
+
+In a not so public release last year, Google announced that by date, all developers will be required to submit their ID to put app's on the playstore.
+
+Now you could respond and be like , "Just don't put your app on their". But here's where the problem is. Most of the app's i use ain't developed by PlayStore developers. And any such app is going to be innaccessible.
+
+Yes, on your phone. If you got any app that the LandLord Google has not blessed, you are losing it. 
+
