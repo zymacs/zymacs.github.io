@@ -1,36 +1,54 @@
-+++
-title = 'Last Week in Code -002-'
-date = 2026-04-23T10:56:29+03:00
-draft = false
-tag = 'LWIC'
-+++
+---
+title: Last Week In Code -002-
+date: 2026-04-23
+draft: false
+tags:
+  - lwic
+categories:
+  - WeeklySeries
+---
+
+# Last Week In Code -002-
+
+Episode 002 made it to the internet. Yay. 
+A lot's been going on in the dev space. A lot to say I have. So let's jump right in.
+
+## *Events, Lessons*
+
+### Have you heard of Hacker News Before
+_**If you haven't, please do yourself a favor and add it to your bookmarks**_
+
+But I guess you  have. I wonder what your opinions are about it. Ain't like I have never heard of it personally. I know the site hacker news. But I'd never taken time to look at what's posted on there. Honestly, I thought it was some 4chan-like forum for devs. I was not so far from the truth though. But I digresss.
+
+Since I was running an anti-AI challenge this week, I needed some replacement for the leisurely prompting I was doing with AI. HN was that. I then wondered why I no one had mentioned all it had to me earlier.
+
+Now it ain't like all is good on there. Its sure got some jerks ready to bite you for posting. But that's all internet forums for you. But I think there's quite a lot of good. First the dev articles. Most of are obviously technical. I mean, its Hacker News. I read quite a number of well written ones this week. Some AI news. Some just insights from experts.
+
+More to the same point, it seems a collection point for the lastest hottest updates in tech. I got to read release articles for GPT 5.5, GPT Image, Claude and Qwen before I saw any youtuber talk about said models. Oh Meta's keylogging practices as well. Before they pulled the update. 
 
 
-# Last Week In Code 002
+And there's still more. So I've always wondered how I'd go around pitching my product if I ever built one. For one that does not have access to so many VC sponsors and fellow dev eyeballs, this seemed like free a free goldmine for exactly that. 
 
-And that's one week down. Episode 002 made it to the internet.
-A lot's been going on in the dev space. Public dev space. My dev space too. A lot to say I have. So let's jump right in.
+Still, same point. It got a section called `SHOW HN` that it seems is dedicated to that. An easy way to collect github stars and valuable contributors.
 
-## Events and lessons
+Valuable contributors? Yes, valuable contributors. Most folk on there are really nerds. So
+if you can put up with nerds and you got a complex project. You should probably take it to HN. 
 
-### Using hacker news: Good tech articles, VC eyeballs, smart people.
-Ain't like I have never heard of it, I know the site hacker news. But I'd never taken time to
-look at what's posted on their. I honestly thought it was like some 4chan forum for devs. Well since I couldn't prompt for fun for the challenge I took on this week,  I did. And wondered why I hadn't done so earlier. Ain't like all is good on there. Its got a fair share of jerks. But I think there's quite a lot of good dev articles. Most of them technical.
+### Breaking then Dumping Ubuntu
 
-Access to the articles is only one of more that I liked about it.
-I've always wondered how I'd go around pitching my product if I ever built one so big it'd need that (for one that does not have access to so many VC sponsors and fellow dev eyeballs).
+**_And the cost for a lack of a Personal Knowledge Management System_**
 
-Well it's got this section called `SHOW HN` that it seems is dedicated to that. An easy way
-to collect github stars and contributors quick. Plus, the comment sections for the articles.
-People are really nerds. Its humbling being in a comment section and not having anything to say.
-Everyone seems to be some inventor of sorts. Won't mention how mean most of them seem to be. 
+So I can't tell what OS you use. I'm assuming you use Linux. Or, windows?
 
+I personally daily drive Linux. As for what distro, I'd been settled with Arch for years. 1.5 years precisely. And that was after a good amount of distro hopping.  But then for 'work' reasons, I switched to Ubuntu. And boy do I regret that! I've since been waiting for any reason to give me the motivation I needed to return. That wish was granted this week.
 
-### Breaking Ubuntu: The cost of for bad documentation habits.
+On rebooting my system to install the latest OS updates, I lost internet access next boot up. Now I know a fair share of networking. I didn't get frustrated. Took it as a message it was time to leave. I've been waiting I said. I don't play with networks daily. Best I do is `nmcli connection up conname`. Beyond that everything always just seems to work fine.
+So I knew attempting to fix the issue was going to cost me a moon rotation. But then installing Arch takes probably equally as long. So I packed up my data and took a whole day off to do the heavy lifting that was returning to Arch.
 
-I've for long been waiting for any reason to leave Ubuntu and return to Arch and it showed itself this week. On rebooting my system to install the latest OS updates I lost internet access. I was already hating my Ubuntu experience enough so I took a whole day off to do the heavy lifting that was switching to Arch.
+After all this time using it daily, it was really frustrating to me I had to take as much time as I did with the last installation. The last time I did was about a year ago. And I remember there was a lot of cursing and googling before I got it running. Now you might say, Just use AI. But this was during when I was not allowed to use AI as per my rules. So I stayed on path and made peace with the fact it was going to be one straining day.
 
-As with _catastrophic_ any event there was a lot to learn here. I have installed Arch before. And I think the concept here applies to problem that does not occur so often yet when it does, finding a fresh solution costs a lot of time and mental energy.
+But that was a good thing on the other side. As it is with _catastrophic_  event.
+And I think the concept here applies to problem that does not occur so often yet when it does, finding a fresh solution costs a lot of time and mental energy.
 
 There's a lot of talk about learning to find solutions online. But not so much on how to maintain those solutions . To optimize them for quick access should the problems resurface.
 
@@ -57,7 +75,7 @@ And i did. The hugo version I was using had a documented issue that wasn't going
 Now the news.
 
 
-## The News
+## In The News
 
 ### My take.
    - So I mentioned I was reading a lot of Hacker News this week? Well you don't have to be doing that to notice the pattern sweeping across major LLM companies. Every time a new version is released. Its better. Its best. And its why the internet will never be the same again.
