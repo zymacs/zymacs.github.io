@@ -9,10 +9,9 @@ menu:
     weight: 4
 ---
 
-I am a graduate of Computer Engineering from EMU in Cyprus. I like Computers. I like Linux. I like Emacs. I like Android Phones. In one sentence: *I like the freedom to do with my tools as I wish.*
-
+I am a graduate of Computer Engineering from EMU in Cyprus.
 On here, I share mostly technical knowledge from topics I've studied  and
 every once in a while, opinionated rumblings on all sorts of topics that interest me. Probably you as well.
 
-I hope you find something interesting scrolling through what I have posted.
+
 
