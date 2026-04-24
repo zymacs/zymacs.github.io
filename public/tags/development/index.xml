@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Zymacs</title>
+    <link>//localhost:1313/tags/development/</link>
+    <description>Recent content in Development on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>&lt;h1 id=&#34;gitignore-files&#34;&gt;Gitignore files&lt;/h1&gt;&#xA;&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing Python3 on Linux</title>
+      <link>//localhost:1313/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
+      <description>&lt;h1 id=&#34;installing-python3-on-linux&#34;&gt;Installing Python3 on Linux&lt;/h1&gt;&#xA;&lt;p&gt;Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&lt;/p&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s update and upgrade your system&lt;/p&gt;&#xA;&lt;p&gt;If you are on Ubuntu, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Arch, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -Syu&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fedora:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo dnf upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

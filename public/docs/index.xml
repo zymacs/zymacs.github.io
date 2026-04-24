@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Zymacs</title>
+    <link>//localhost:1313/docs/</link>
+    <description>Recent content in Documentation on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jan 2026 14:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/docs/about/</link>
+      <pubDate>Sun, 25 Jan 2026 14:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/about/</guid>
+      <description>&lt;p&gt;I am a graduate of Computer Engineering from EMU in Cyprus. I like Computers. I like Linux. I like Emacs. I like Android Phones. In one sentence: &lt;em&gt;I like the freedom to do with my tools as I wish.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;On here, I share mostly technical knowledge from topics I&amp;rsquo;ve studied  and&#xA;every once in a while, opinionated rumblings on all sorts of topics that interest me. Probably you as well.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

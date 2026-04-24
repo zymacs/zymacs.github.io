@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zymacs</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the end of Android</title>
+      <link>//localhost:1313/post/the-end-of-android-is-here/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/the-end-of-android-is-here/</guid>
+      <description>&lt;h1 id=&#34;on-the-end-of-android&#34;&gt;On the end of Android&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-loss-of-latent-freedom&#34;&gt;The loss of latent freedom&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m just Zymacs. This&amp;rsquo;ll be the first opinionated post. I&amp;rsquo;m grategul that I get to have them read by you, these my opinions. And by all they reach.&#xA;Ain&amp;rsquo;t a famous person. I don&amp;rsquo;t think anyone has to, to voice their opinion on matters they care about.&#xA;I thought twice about posting this, then thrice, then here you are, reading this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a Computer?</title>
+      <link>//localhost:1313/post/what_is_a_computer/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/what_is_a_computer/</guid>
+      <description>&lt;h1 id=&#34;what-is-a-computer&#34;&gt;What is a computer?&lt;/h1&gt;&#xA;&lt;p&gt;While talking about what interview questions I&amp;rsquo;d been studying, I  mentioned to a non technical friend how interesting it was finding questions so basic included.&#xA;Why would you ask a Software Engineering graduate to define a computer? Such a waste of time right? My friend&amp;rsquo;s response was even more interesting: &lt;em&gt;&amp;ldquo;What is a computer?&amp;rdquo;&lt;/em&gt; he posed the question to me.  And there I was&amp;hellip; answering my own question. Remember? &amp;ldquo;&lt;em&gt;Why would you ask a Soft&amp;hellip;.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5 Days No AI</title>
+      <link>//localhost:1313/post/five-days-no-ai/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:1313/post/five-days-no-ai/</guid>
+      <description>&lt;h1 id=&#34;5-days-no-ai&#34;&gt;5 Days No AI&lt;/h1&gt;&#xA;&lt;h2 id=&#34;why-this-challenge-&#34;&gt;Why this challenge ?&lt;/h2&gt;&#xA;&lt;p&gt;I cannot say I am the heaviest user of AI since, I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.&#xA;And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.&#xA;So I was like, how about a simple challenge this week. &lt;strong&gt;5 Days No AI&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code -001-</title>
+      <link>//localhost:1313/post/last-week-in-code-01/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-01/</guid>
+      <description>&lt;h1 id=&#34;last-week-in-code--001-&#34;&gt;Last week in code -001-&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-beginning-of-a-new-chapter&#34;&gt;The beginning of a new chapter&lt;/h2&gt;&#xA;&lt;p&gt;I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building. You know how that is.&#xA;So I was like, how about I create something here that&amp;rsquo;ll be an outlet for that? So I did.&#xA;Like many things I&amp;rsquo;ve started, I can&amp;rsquo;t be sure this will last. But I won&amp;rsquo;t try to preemptively kill it either. May the Force be with it.&#xA;This week, I&amp;rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>&lt;h1 id=&#34;gitignore-files&#34;&gt;Gitignore files&lt;/h1&gt;&#xA;&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My first post with Hugo</title>
+      <link>//localhost:1313/post/my-first-post/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;dumped-google-blogger&#34;&gt;Dumped Google Blogger&lt;/h1&gt;&#xA;&lt;p&gt;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;rsquo;s blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that caught my eye.&#xA;I thought I could learn some css building it myself. Feel good from &lt;code&gt;doing it myself from scratch&lt;/code&gt;.&#xA;But boy is CSS boring! And I only realized this after 4 hours of centering &lt;code&gt;divs&lt;/code&gt; and hunting for unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been. So to alleviate the guilt , I decided to&#xA;setup Hugo. I mean why didn&amp;rsquo;t I do this in the first place? Anyways. After some googling I got it running&#xA;and hence this site.  It looks nice doesn&amp;rsquo;t it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I&#xA;add content of my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing Python3 on Linux</title>
+      <link>//localhost:1313/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
+      <description>&lt;h1 id=&#34;installing-python3-on-linux&#34;&gt;Installing Python3 on Linux&lt;/h1&gt;&#xA;&lt;p&gt;Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&lt;/p&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s update and upgrade your system&lt;/p&gt;&#xA;&lt;p&gt;If you are on Ubuntu, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Arch, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -Syu&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fedora:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo dnf upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/docs/about/</link>
+      <pubDate>Sun, 25 Jan 2026 14:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/about/</guid>
+      <description>&lt;p&gt;I am a graduate of Computer Engineering from EMU in Cyprus. I like Computers. I like Linux. I like Emacs. I like Android Phones. In one sentence: &lt;em&gt;I like the freedom to do with my tools as I wish.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;On here, I share mostly technical knowledge from topics I&amp;rsquo;ve studied  and&#xA;every once in a while, opinionated rumblings on all sorts of topics that interest me. Probably you as well.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

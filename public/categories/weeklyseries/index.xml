@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WeeklySeries on Zymacs</title>
+    <link>//localhost:1313/categories/weeklyseries/</link>
+    <description>Recent content in WeeklySeries on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/weeklyseries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week In Code -001-</title>
+      <link>//localhost:1313/post/last-week-in-code-01/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-01/</guid>
+      <description>&lt;h1 id=&#34;last-week-in-code--001-&#34;&gt;Last week in code -001-&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-beginning-of-a-new-chapter&#34;&gt;The beginning of a new chapter&lt;/h2&gt;&#xA;&lt;p&gt;I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building. You know how that is.&#xA;So I was like, how about I create something here that&amp;rsquo;ll be an outlet for that? So I did.&#xA;Like many things I&amp;rsquo;ve started, I can&amp;rsquo;t be sure this will last. But I won&amp;rsquo;t try to preemptively kill it either. May the Force be with it.&#xA;This week, I&amp;rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

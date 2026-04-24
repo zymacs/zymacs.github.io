@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rants on Zymacs</title>
+    <link>//localhost:1313/tags/rants/</link>
+    <description>Recent content in Rants on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/rants/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the end of Android</title>
+      <link>//localhost:1313/post/the-end-of-android-is-here/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/the-end-of-android-is-here/</guid>
+      <description>&lt;h1 id=&#34;on-the-end-of-android&#34;&gt;On the end of Android&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-loss-of-latent-freedom&#34;&gt;The loss of latent freedom&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m just Zymacs. This&amp;rsquo;ll be the first opinionated post. I&amp;rsquo;m grategul that I get to have them read by you, these my opinions. And by all they reach.&#xA;Ain&amp;rsquo;t a famous person. I don&amp;rsquo;t think anyone has to, to voice their opinion on matters they care about.&#xA;I thought twice about posting this, then thrice, then here you are, reading this.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

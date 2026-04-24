@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Week In Code -001- - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/last-week-in-code-01/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Last Week In Code -001-">
+  <meta property="og:description" content="Last week in code -001- The beginning of a new chapter I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we’re building. You know how that is. So I was like, how about I create something here that’ll be an outlet for that? So I did. Like many things I’ve started, I can’t be sure this will last. But I won’t try to preemptively kill it either. May the Force be with it. This week, I’m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-04-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-18T00:00:00+00:00">
+    <meta property="article:tag" content="Lwic">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last Week In Code -001-</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-18T00:00:00Z">April 18, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="last-week-in-code--001-">Last week in code -001-</h1>
+<h2 id="the-beginning-of-a-new-chapter">The beginning of a new chapter</h2>
+<p>I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&rsquo;re building. You know how that is.
+So I was like, how about I create something here that&rsquo;ll be an outlet for that? So I did.
+Like many things I&rsquo;ve started, I can&rsquo;t be sure this will last. But I won&rsquo;t try to preemptively kill it either. May the Force be with it.
+This week, I&rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)</p>
+<h2 id="updates-from-me">Updates From me</h2>
+<h3 id="a-new-way-to-do-project-management">A new way to do project management</h3>
+<p>So I&rsquo;ve been moving my project management from scattered TODO lists to <a href="https://github.com/features/issues">GitHub issues</a>.
+And when I finally got used to it, I wondered why I hadn&rsquo;t done that earlier. I feel It&rsquo;s way better than what I was doing. Using a todo list that is. The ease of centralization for issue tracking being one among other reasons.
+Every time I think of an improvement, every time I notice a bug while using my apps, I can always just add an issue to their corresponding
+issue pages. And there&rsquo;s labeling too. That labeling system is actually how I got my first <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">PR</a>. If you are like how I was, not knowing much about this feature github offers, here&rsquo;s an article that could get you started. <a href="https://sifterapp.com/academy/overview/why/">click</a>.
+So as part of a larger app I had to create a <a href="https://github.com/zymacs/Tomadoro">pomodoro app</a>. I got the basics down then moved the list of all I hadn&rsquo;t added to the project&rsquo;s issues page. I labelled most of them &lsquo;good first issue&rsquo;. And next day someone sent in a PR asking to work on one of the issues.
+There&rsquo;s a lot of talk online about how to get your pull requests accepted. But I&rsquo;d never been in the reviewer position before. Never felt that side of it.</p>
+<h3 id="cant-do-it--dont-delegate-it-non-mainstream-ai-advice">Can&rsquo;t do it &ndash; don&rsquo;t delegate it: Non-mainstream AI advice</h3>
+<p>So I beat myself up, the 1000th time, for choosing to use AI for something I didn&rsquo;t understand. In one of my projects, a mostly CLI driven app, I wanted to move from CLI to GUI. To build a django front end. I was <em>feeling lazy</em> and <em>wasn&rsquo;t ready to put in the time</em> so I gave the whole task to Grok. <em>Hours</em> of prompting later, I ran the code it generated and almost drowned in bugs.
+Bugs arising from concepts Grok had used I that didn&rsquo;t understand.
+The lesson hit hard:</p>
+<blockquote>
+<p>Don&rsquo;t assign AI tasks that you can&rsquo;t do yourself.</p>
+</blockquote>
+<p>I&rsquo;ve seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely  <a href="https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&amp;t=146">here</a>.</p>
+<h2 id="in-other-news-last-week">In other news last week</h2>
+<p><strong>AI &amp; LLMs</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=d3Qq-rkp_to">Claude Mythos is the OG &ndash; Fireship</a></li>
+<li><a href="https://www.youtube.com/watch?v=6szQxMGX5JI">The Prime&rsquo;s standup testing that claim</a></li>
+</ul>
+<p><strong>Data Privacy &amp; Cybersec</strong></p>
+<ul>
+<li><a href="https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav">Whatsapp rolling out end to end encrypted Ads &ndash; Whatsapp</a></li>
+</ul>
+<h2 id="a-challenge-for-you">A challenge for you</h2>
+<p><em>Can you tell how much of the above post was GPT?</em>
+Until next week. Yes, I should see you next week. That&rsquo;s the plan.. <em>May the force be with you</em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Zymacs&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/git-ignore-files/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Gitignore files</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/five-days-no-ai/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">5 Days No AI</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="//localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/what_is_a_computer/">What is a Computer?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/five-days-no-ai/">5 Days No AI</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-01/">Last Week In Code -001-</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/git-ignore-files/">Gitignore files</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/my-first-post/">My first post with Hugo</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<script src="https://keepandroidopen.org/banner.js"></script>
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
