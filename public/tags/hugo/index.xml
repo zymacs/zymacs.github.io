@@ -4,7 +4,7 @@
     <title>Hugo on Zymacs</title>
     <link>//localhost:1313/tags/hugo/</link>
     <description>Recent content in Hugo on Zymacs</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>//localhost:1313/post/my-first-post/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/my-first-post/</guid>
-      <description>Dumped Google Blogger I set up a site on blogger (Google&amp;rsquo;s blogspot) and dumped it for a Hugo design that caught my eye. I thought I could learn some css building it myself. Feel good from doing it myself from scratch. But boy is CSS boring! And I only realized this after 4 hours of centering divs and hunting for unclosed tags.&#xA;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been.</description>
+      <description>&lt;h1 id=&#34;dumped-google-blogger&#34;&gt;Dumped Google Blogger&lt;/h1&gt;&#xA;&lt;p&gt;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;rsquo;s blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that caught my eye.&#xA;I thought I could learn some css building it myself. Feel good from &lt;code&gt;doing it myself from scratch&lt;/code&gt;.&#xA;But boy is CSS boring! And I only realized this after 4 hours of centering &lt;code&gt;divs&lt;/code&gt; and hunting for unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been. So to alleviate the guilt , I decided to&#xA;setup Hugo. I mean why didn&amp;rsquo;t I do this in the first place? Anyways. After some googling I got it running&#xA;and hence this site.  It looks nice doesn&amp;rsquo;t it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I&#xA;add content of my own.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

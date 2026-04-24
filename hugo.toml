@@ -1,10 +1,14 @@
 baseurl = "/"
 title = "Zymacs"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
+#paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your tracking id
+
+[pagination]
+  pagerSize = 10
+
 
 [Params]
   description = "John Doe's Personal blog about everything" # Description of your site
@@ -18,10 +22,12 @@ googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your 
 
 
 
-[Author]
-  name = "Zymacs"
-  bio = "Zymacs's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "img/avatar.png"
+
+
+[Params.Author]
+   name = "Zymacs"
+   bio = "Zymacs's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+   avatar = "img/avatar.png"
 
 
 [Params.logo]
