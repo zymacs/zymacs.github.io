@@ -1,7 +1,7 @@
 ---
 title: Last Week In Code -002-
 date: 2026-04-23
-draft: true
+draft: false
 tags:
   - lwic
 categories:
@@ -10,89 +10,79 @@ categories:
 
 # Last Week In Code -002-
 
-Episode 002 made it to the internet. Yay. 
-A lot's been going on in the dev space. A lot to say I have. So let's jump right in.
+It's episode 002.
 
-## *Events, Lessons*
+## Updates from Me
 
-### Have you heard of Hacker News Before
-_**If you haven't, please do yourself a favor and add it to your bookmarks**_
+### Discovering hacker news
+Last week I decided I'd be going on an AI fast. Listed what services
+AI was providing me with then tried to get alt providers.
+For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I
+chose to use that time for a better addiction. An addiction to reading tech blogs.. I've heard about [Hacker News](https://news.ycombinator.com/) before
+but I'd never read much from the website. Well I discovered its way more than I thought. Which wasn't much really.
 
-But I guess you  have. I wonder what your opinions are about it. Ain't like I have never heard of it personally. I know the site hacker news. But I'd never taken time to look at what's posted on there. Honestly, I thought it was some 4chan-like forum for devs. I was not so far from the truth though. But I digresss.
+So its a collection point for quite a number of real
+good articles, most written by technical folk. Oh, and news too, obviously. What was interesting is  I found that
+most updates made it to Hacker News before my Youtube sources made any videos on them. So its the source.. 
 
-Since I was running an anti-AI challenge this week, I needed some replacement for the leisurely prompting I was doing with AI. HN was that. I then wondered why I no one had mentioned all it had to me earlier.
+Also, there's a whole lot of real technical readers in the comment sections for the posts so its a humbling experience the realization you have a long way to go. Plus, its a good place to get contributors or .. to just collect
+valuable eyeballls for Engineering projects.
 
-Now it ain't like all is good on there. Its sure got some jerks ready to bite you for posting. But that's all internet forums for you. But I think there's quite a lot of good. First the dev articles. Most of are obviously technical. I mean, its Hacker News. I read quite a number of well written ones this week. Some AI news. Some just insights from experts.
+I can't promise to write one since my schedule ain't stable yet but I surely should make an article on just Hacker News. The good, the bad. But mostly the good. Also, thinking of adding
+a section to collect my top articles of the week to this post. I read quite a lot of them and would like to share.
 
-More to the same point, it seems a collection point for the lastest hottest updates in tech. I got to read release articles for GPT 5.5, GPT Image, Claude and Qwen before I saw any youtuber talk about said models. Oh Meta's keylogging practices as well. Before they pulled the update. 
-
-
-And there's still more. So I've always wondered how I'd go around pitching my product if I ever built one. For one that does not have access to so many VC sponsors and fellow dev eyeballs, this seemed like free a free goldmine for exactly that. 
-
-Still, same point. It got a section called `SHOW HN` that it seems is dedicated to that. An easy way to collect github stars and valuable contributors.
-
-Valuable contributors? Yes, valuable contributors. Most folk on there are really nerds. So
-if you can put up with nerds and you got a complex project. You should probably take it to HN. 
-
-### Breaking then Dumping Ubuntu
-
-**_And the cost for a lack of a Personal Knowledge Management System_**
-
-So I can't tell what OS you use. I'm assuming you use Linux. Or, windows?
-
-I personally daily drive Linux. As for what distro, I'd been settled with Arch for years. 1.5 years precisely. And that was after a good amount of distro hopping.  But then for 'work' reasons, I switched to Ubuntu. And boy do I regret that! I've since been waiting for any reason to give me the motivation I needed to return. That wish was granted this week.
-
-On rebooting my system to install the latest OS updates, I lost internet access next boot up. Now I know a fair share of networking. I didn't get frustrated. Took it as a message it was time to leave. I've been waiting I said. I don't play with networks daily. Best I do is `nmcli connection up conname`. Beyond that everything always just seems to work fine.
-So I knew attempting to fix the issue was going to cost me a moon rotation. But then installing Arch takes probably equally as long. So I packed up my data and took a whole day off to do the heavy lifting that was returning to Arch.
-
-After all this time using it daily, it was really frustrating to me I had to take as much time as I did with the last installation. The last time I did was about a year ago. And I remember there was a lot of cursing and googling before I got it running. Now you might say, Just use AI. But this was during when I was not allowed to use AI as per my rules. So I stayed on path and made peace with the fact it was going to be one straining day.
-
-But that was a good thing on the other side. As it is with _catastrophic_  event.
-And I think the concept here applies to problem that does not occur so often yet when it does, finding a fresh solution costs a lot of time and mental energy.
-
-There's a lot of talk about learning to find solutions online. But not so much on how to maintain those solutions . To optimize them for quick access should the problems resurface.
-
-I hated that i had to source articles on 'how to do this' and 'how to do that' when I'd already done that countless times before. Ain't saying you should memorize it all. But am sure you can attest to this, a solution thats in your words at arms reach takes way shorter to apply and costs way less mental energy.
-
-Oh, I know about the installer scripts but I'm sure I'll want to learn how it works soon so I opted for the manual method. Saves time in the long run.
-
-I should be writing a `how to install arch` article soon among others, just as a counter measure.
-
-### The cost of addiction to quick llm solutions: Frustration at the slightest error
-
-So as I mentioned in an earlier article, this site uses Hugo, the static site generator.
-But save for installing the theme and running (`hugo server run`) to build the site, I have no idea as to how it does what it does. Should I? There's a lot to know. And it was working fine so
-what was the reason to.
-
-But I'm learning the price of that mentality. Maybe its part of the challenges am facing for using too much AI. Or it'd been a long day fighting Arch. Anyways. I installed hugo. Simple `sudo pacman -S hugo`. CD'd into the sites folder and ran the previously mentioned command, `hugo server run`). Expecting it'd just work Iike it was on Ubuntu. Well.. Error.. I didn't even read what it was. The gibberish that was the error message made my brain scream. I ran the command again,so surprised why it wasn't working. More frustrated realizing I didnt have the option to use AI. _trust me even if I did, experience has shown how painful llms can be with linux errors_.
-
-So I tried changing a few random things. So sick after all I'd gone through installing the OS, I was going to end the day with a message 'Go back to Ubuntu'. 
-
-So I opened a brower window and was like, hmm. How about I read the error message and try to find if anyone's faced the same problem before. Yep, something that simple does not easily come to mind when you are used to things always working fine out of the box, and throwing it at LLMs.
-
-And i did. The hugo version I was using had a documented issue that wasn't going to be fixed soon. So I tried looking into how to install older versions with pacman. But that seemed so involved and i was so tired so I settled for the node version. Which after humbly sitting down and trying to understand the errors it was throwing, I got it to work. NO LLMs were used. Felt good about that.
-
-Now the news.
+So I guess some of the whys for bookmarking hacker news for a dev would be
+- Central access to real good articles from a variety of sources on a variety of important areas of Engineering. [_SHOW HN_](https://news.ycombinator.com/show)
+- Collection point good contributors. Most of the readers are technical.
+- Show point for one's projects. A good place to publicize a Startup Project.
 
 
-## In The News
+### Learning the value of documenting solutions and setups the hardway.
 
-### My take.
-   - So I mentioned I was reading a lot of Hacker News this week? Well you don't have to be doing that to notice the pattern sweeping across major LLM companies. Every time a new version is released. Its better. Its best. And its why the internet will never be the same again.
-   - Here's some new releases from just last week. Notice the pattern for yourself.
-     - GPT 5.5
-     - Qwen
-     - Claude
+So upon rebooting my system to install the latest Ubuntu OS updates, I lost my internet connection. Debugging network problems is such a pain and I have wanted to return to Arch for quite some time so I was like .. I guess its time to go back home.
 
-### AI and the AI resistance
-- Meta keylogging and screenshotting employee's work computers to make LLM's better.
-- Poison fountain, .ass subtitles and more.
+But that was its own kind of drama. I have installed Arch about twice. Last time was almost a year a go. So, you can tell why if I say I did not know my way around most of the significant parts of the process.
 
-### Insightful dev articles
-- The rules of software development
+The installation process is quite a long one even with standard steps provided online. There's some system specific bugs you run into that you will possibly never encounter till the next installation. So if doing it all manual , it could take about 6-7 hours to get a usable system.
+
+But, and I have known this, yet have not acted on it as faithfully, with well maintained notes taken for every problem encountered, the mental tall and time spent are cut down drastically. I can't count how many times I have run into problems for which I already had notes somewhere in my org roam archive, just a `C-c F` away in [Emacs](https://www.gnu.org/software/emacs/). _thats my key binding for finding a roam node btw_. How satisfying it was ripping dividends off well written old notes.
+
+I should be adding to those notes, this blog for that matter, an article on how to install emacs. Someone could use them in the future. I will be happy to have written them when this problem recurs, which they all usually do in Software.
+
+I guess the lessons from this were
+- Document the solutions to the problems you face.
+- Maintain your documentation (You will curse yourself when time comes to use it and you can't.)
+- The problems you are facing now (time waste from re hunting for solutions) will keep happening till they have a solution ( maintained notes)
+
+
+## In other news
+
+I mentioned my new addiction was [Hacker News](https://news.ycombinator.com/) earlier. I got a whole lot of real good articles and news updates I sourced from there. I will only be sharing a few. I am still thinking about how to structure this section of the publication. Software is wide and even when you consider it is, you find it is wider. So for now it'll be a list with not much commentary and not much categorization. But you can be sure that , at least for me, there was a lot to learn from these. (A lot to learn from the non-news articles that is)
+
+### Updates, Articles and Videos.
+
+#### Recent developments, hot takes and randoms
+
+##### LLM release updates
+  - [Chatgpt Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/)
+
+##### Data privacy
+  - [Meta installs keyloggers on employee's computers](https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/?utm_source=Facebook&utm_medium=Social)
+
+
+##### Figting Brain Rot and AI
+   - [College instructor turns to typewrites to curb AI-written work](https://apnews.com/article/typewriter-ai-cheating-chatgpt-cornell-ce10e1ca0f10c96f79b7d988bb56448b)
+   - [f4mi and .ass YouTube subtitles](https://www.youtube.com/watch?v=NEDFUjqA1s8) _dated_
+   - [Codemaxxing](https://www.youtube.com/watch?v=a4BxvWs9PGE) _This was fun to watch.. _
+
+### Misc.
+- [The Laws of Software Engineering](https://lawsofsoftwareengineering.com/)
+- [Do I belong in Tech Anymore?](https://ky.fyi/posts/ai-burnout)
+- [POSIWID](https://en.wikipedia.org/wiki/The_purpose_of_a_system_is_what_it_does) -- _This is worth its own article_
 
 
 
 
-That's enough for e002
-Hope to meet next week. It's in the plan. If with anything to share or any comment to put across, my socials: Bluesky, Telegram.
+---
+
+Okay, that's that for e002 for LWIC. I sure hope you learnt something and until next time, happy hacking.

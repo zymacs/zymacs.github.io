@@ -6,8 +6,15 @@
     <description>Recent content in WeeklySeries on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/weeklyseries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week In Code -002-</title>
+      <link>//localhost:1313/post/last-week-in-code-02/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-02/</guid>
+      <description>&lt;h1 id=&#34;last-week-in-code--002-&#34;&gt;Last Week In Code -002-&lt;/h1&gt;&#xA;&lt;p&gt;Yello, second episode for the series. First , Updates from Me&lt;/p&gt;&#xA;&lt;h2 id=&#34;updates-from-me&#34;&gt;Updates from Me&lt;/h2&gt;&#xA;&lt;h3 id=&#34;discovering-hacker-news&#34;&gt;Discovering hacker news&lt;/h3&gt;&#xA;&lt;p&gt;Last week I decided I&amp;rsquo;d be going on an AI fast. Listed what services&#xA;AI was providing me and tried to get alternative providers.&#xA;For the mindless AI usage, I think the underlying cause was boredom. I&#xA;chose to use that time to read. I&amp;rsquo;ve heard about Hacker News before&#xA;but I&amp;rsquo;d never read much from the website. Well I discovered its way more than I thought. Which was , not much. A collection point for quite a number of real&#xA;good articles, most written by developers. News obviously. I found that&#xA;most updates made it to Hacker News before my Youtube sources made any videos on them. Also, there&amp;rsquo;s a whole lot of real technical readers in the comment sections for the posts so its a humbling experience the realization you have a long way to go. Plus, its a good place to get contributors or .. to just collect&#xA;valuable eyeballls for Engineering projects. I can&amp;rsquo;t promise to write one since my schedule ain&amp;rsquo;t stable yet but I surely should make an article on just&#xA;Hacker News. The good, the bad. But mostly the good. Also, thinking of adding&#xA;a section to collect my top articles of the week to this post. I read quite a lot of them and would like to share.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week In Code -001-</title>
       <link>//localhost:1313/post/last-week-in-code-01/</link>
