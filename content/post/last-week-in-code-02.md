@@ -15,7 +15,7 @@ It's episode 002.
 ## Updates from Me
 
 ### Discovering hacker news
-Last week I decided I'd be going on an AI fast. Listed what services
+Last week I decided I'd be going on an [AI fast](https://zymacs.github.io/post/five-days-no-ai/). Listed what services
 AI was providing me with then tried to get alt providers.
 For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I
 chose to use that time for a better addiction. An addiction to reading tech blogs.. I've heard about [Hacker News](https://news.ycombinator.com/) before
