@@ -18,12 +18,12 @@ It's episode 002.
 Last week I decided I'd be going on an [AI fast](https://zymacs.github.io/post/five-days-no-ai/). Listed what services
 AI was providing me with then tried to get alt providers.
 For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I
-chose to use that time for a better addiction. An addiction to reading tech blogs.. I've heard about [Hacker News](https://news.ycombinator.com/) before
-but I'd never read much from the website. Well I discovered its way more than I thought. Which wasn't much really.
+chose to use that time for a better addiction. An addiction to reading tech blogs. I've heard about [Hacker News](https://news.ycombinator.com/) before
+but I'd never read much from the website. Well I discovered its way more than I thought. Which wasn't much really. But that changed this week. 
 
 So its a collection point for quite a number of real
 good articles, most written by technical folk. Oh, and news too, obviously. What was interesting is  I found that
-most updates made it to Hacker News before my Youtube sources made any videos on them. So its the source.. 
+most updates made it to Hacker News before my Youtube sources made any videos on them. So its the source..
 
 Also, there's a whole lot of real technical readers in the comment sections for the posts so its a humbling experience the realization you have a long way to go. Plus, its a good place to get contributors or .. to just collect
 valuable eyeballls for Engineering projects.
