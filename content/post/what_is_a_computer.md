@@ -1,15 +1,13 @@
 ---
 thumbnail: "img/a_computer.png"
-title: What is a Computer?
+title: But what is a Computer?
 date: 2026-04-22
 tags:
   - definitions
   - fundamentals
 categories:
   - Computers
----
-
-# What is a computer? 
+--- 
 
 While talking about what interview questions I'd been studying, I  mentioned to a non technical friend how interesting it was finding questions so basic included.
 Why would you ask a Software Engineering graduate to define a computer? Such a waste of time right? My friend's response was even more interesting: *"What is a computer?"* he posed the question to me.  And there I was... answering my own question. Remember? "_Why would you ask a Soft...._"
