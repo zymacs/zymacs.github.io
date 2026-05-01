@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Zymacs</title>
+    <link>//localhost:1313/categories/security/</link>
+    <description>Recent content in Security on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>But My Password Is Correct!: Arch Faillock</title>
+      <link>//localhost:1313/post/but-my-password-is-correct/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/but-my-password-is-correct/</guid>
+      <description>&lt;p&gt;I guess you need a quick solution. If you do, here&amp;rsquo;s one.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;su&#xA;faillock --rest&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Okay, now the narrative.&lt;/p&gt;&#xA;&lt;p&gt;I have run into this issue quite a number of times.&#xA;I enter the wrong password, say one or twice, but do give in the right one on the next attempts.&#xA;But then,  all recurring attempts are flagged as incorrect entries.&#xA;It makes you confused if someone changed your password or if the system is actually faulty.&#xA;Before learning it was part of how Arch secured accounts, it was confusing and at times had me considering re installing the OS.&#xA;the misread event they are locked out of their system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
