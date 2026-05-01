@@ -26,15 +26,8 @@ I enter the wrong password, say once or twice, but do give in the right one on t
 But then,  all recurring attempts are flagged as incorrect entries.
 It makes you confused if someone changed your password or if the system is actually faulty.
 Before learning it was part of how Arch secured accounts, it was confusing and at times had me considering re installing the OS.
-the misread event they are locked out of their system.
 
-
-Before writing this I went to  itsFOSS's forum to find a solution for this and one of those listed included ;
-_Backup your data and prepare to reinstall OS_. 
-
-But is that so?
-
-I have solved it before. But I don't know how I did. It just vanished. 
+Now I have encountered the issue before, and I solved it. But I don't know how I did. It just vanished. 
 I mean the last time I did,it was after letting the system rest for a while.
 It turns out the lockout is only for a while. 
 Probably a security mechanism against bruteforce password cracking attempts.
