@@ -22,7 +22,7 @@ faillock --rest
 Okay, now the narrative.
 
 I have run into this issue quite a number of times.
-I enter the wrong password, say one or twice, but do give in the right one on the next attempts.
+I enter the wrong password, say once or twice, but do give in the right one on the next attempts.
 But then,  all recurring attempts are flagged as incorrect entries.
 It makes you confused if someone changed your password or if the system is actually faulty.
 Before learning it was part of how Arch secured accounts, it was confusing and at times had me considering re installing the OS.
