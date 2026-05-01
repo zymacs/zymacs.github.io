@@ -30,10 +30,10 @@ Before learning it was part of how Arch secured accounts, it was confusing and a
 Now I have encountered the issue before, and I solved it. But I don't know how I did. It just vanished. 
 I mean the last time I did,it was after letting the system rest for a while.
 It turns out the lockout is only for a while. 
-Probably a security mechanism against bruteforce password cracking attempts.
-But that is not the actual solution. Access to the mechanism that's responsible for this is. And that's `faillock`.
+Its a security mechanism against bruteforce password cracking attempts.
+And the mechanism that's responsible for this is: `faillock`.
 
-So Arch has this meachanism called the faillock that's triggered when an incorrect password is entered x consecutive times.
+Faillock's triggered when an incorrect password is entered x consecutive times.
 It works with the `pam_faillock.so` PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords.
 
 ## Default Behavior

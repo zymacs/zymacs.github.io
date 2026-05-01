@@ -106,9 +106,9 @@ Before learning it was part of how Arch secured accounts, it was confusing and a
 <p>Now I have encountered the issue before, and I solved it. But I don&rsquo;t know how I did. It just vanished.
 I mean the last time I did,it was after letting the system rest for a while.
 It turns out the lockout is only for a while.
-Probably a security mechanism against bruteforce password cracking attempts.
-But that is not the actual solution. Access to the mechanism that&rsquo;s responsible for this is. And that&rsquo;s <code>faillock</code>.</p>
-<p>So Arch has this meachanism called the faillock that&rsquo;s triggered when an incorrect password is entered x consecutive times.
+Its a security mechanism against bruteforce password cracking attempts.
+And the mechanism that&rsquo;s responsible for this is: <code>faillock</code>.</p>
+<p>Faillock&rsquo;s triggered when an incorrect password is entered x consecutive times.
 It works with the <code>pam_faillock.so</code> PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords.</p>
 <h2 id="default-behavior">Default Behavior</h2>
 <p>Now default <code>faillock</code> configuration locks an account for <strong>10 minutes</strong> after <strong>3 failed login attempts</strong> within a <strong>15-minute window</strong>. Explains why after waiting for a while I was able to login.
