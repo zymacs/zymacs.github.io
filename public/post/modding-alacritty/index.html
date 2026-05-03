@@ -131,9 +131,9 @@ general.yaml</li>
 </li>
 <li>
 <p><strong>Fonts</strong> My font looks a bit like its Monospace. <code>fc-match</code> says
-its Free Sans. Modifying one of these or adding some in the same
-format will modify the terminal font I personally have no problem
-with the default font configuration.</p>
+its Free Sans. I like how my font is but it doesn&rsquo;t hurt to know how to
+change it if I ever want to.
+Modifying the following settings should do that job.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>[<span style="color:#ae81ff">font]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">size = 12.0</span>
 </span></span><span style="display:flex;"><span>
@@ -154,7 +154,7 @@ with the default font configuration.</p>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">style = &#34;Regular&#34;</span>
 </span></span></code></pre></div></li>
 <li>
-<p>You can find what fonts you have on your system by runnig</p>
+<p>You can find what fonts you have on your system by runnig:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ fc-list : family style
 </span></span></code></pre></div></li>
 </ul>
@@ -162,16 +162,15 @@ with the default font configuration.</p>
 <ul>
 <li>
 <p>I like how my terminal looks and always want to maintain that when I
-ssh into some remote server. I did not know how to, but now I do.
+ssh into some remote server. I did not know how to make that so. But now I do.
 Here's how;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>infocmp &gt; alacritty.terminfo  <span style="color:#75715e"># export Alacritty&#39;s Terminfo </span>
 </span></span><span style="display:flex;"><span>scp alacritty.terminfo user@remote-host:~/  <span style="color:#75715e"># or any other method to copy to the remote host</span>
 </span></span></code></pre></div><p>So in the above bash code, <code>Infocmp</code> is a command to get info about your terminal.
-That data is redirected the to the file alacritty.terminfo with the redirection operator <code>&gt;</code>.
+That data is redirected the to the file <em>alacritty.terminfo</em> with the redirection operator <code>&gt;</code>.
 <code>scp</code>  is then used to copy that file to the server.</p>
-<pre><code>infocmp | ssh &quot;$user@$host&quot; 'tic -x /dev/stdin'
-</code></pre>
-</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>infocmp | ssh <span style="color:#e6db74">&#34;</span>$user<span style="color:#e6db74">@</span>$host<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#39;tic -x /dev/stdin&#39;</span>
+</span></span></code></pre></div></li>
 </ul>
 <h2 id="closing">Closing</h2>
 <ul>

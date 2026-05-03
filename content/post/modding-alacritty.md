@@ -55,9 +55,9 @@ not auto create a config file.
             
 
 -   **Fonts** My font looks a bit like its Monospace. `fc-match` says
-    its Free Sans. Modifying one of these or adding some in the same
-    format will modify the terminal font I personally have no problem
-    with the default font configuration.
+    its Free Sans. I like how my font is but it doesn't hurt to know how to
+    change it if I ever want to.
+    Modifying the following settings should do that job.
 
     ``` yml
     [font]
@@ -80,7 +80,7 @@ not auto create a config file.
     style = "Regular"
     ```
 
--   You can find what fonts you have on your system by runnig
+-   You can find what fonts you have on your system by runnig:
 
     ``` bash
     $ fc-list : family style
@@ -89,7 +89,7 @@ not auto create a config file.
 ## Extras
 
 -   I like how my terminal looks and always want to maintain that when I
-    ssh into some remote server. I did not know how to, but now I do.
+    ssh into some remote server. I did not know how to make that so. But now I do.
     Here\'s how;
 
     ``` bash
@@ -99,10 +99,12 @@ not auto create a config file.
     ```
 
     So in the above bash code, `Infocmp` is a command to get info about your terminal.
-    That data is redirected the to the file alacritty.terminfo with the redirection operator `>`.
+    That data is redirected the to the file _alacritty.terminfo_ with the redirection operator `>`.
     `scp`  is then used to copy that file to the server.
 
-        infocmp | ssh "$user@$host" 'tic -x /dev/stdin'
+    ``` sh
+    infocmp | ssh "$user@$host" 'tic -x /dev/stdin'
+    ```
 
 ## Closing
 
