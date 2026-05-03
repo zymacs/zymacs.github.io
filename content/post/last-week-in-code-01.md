@@ -1,5 +1,5 @@
 ---
-title: Last Week In Code -001-
+title: Last Week In Code E001
 date: 2026-04-18
 thumbnail: "img/lwic.png"
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "But My Password Is Correct!: Arch Faillock"
+title: "Arch Faillock"
 date: 2026-05-01
 thumbnail: 'img/arch_logo.png'
 tags:

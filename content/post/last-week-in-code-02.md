@@ -1,5 +1,5 @@
 ---
-title: Last Week In Code -002-
+title: Last Week In Code E002
 date: 2026-04-23
 draft: false
 thumbnail: "img/lwic.png"
@@ -8,7 +8,6 @@ tags:
 categories:
   - WeeklySeries
 ---
-- *Discovering Hacker News*
 
 Last week I decided I'd be going on an [AI fast](https://zymacs.github.io/post/five-days-no-ai/). Listed what services
 AI was providing me with then tried to get alt providers.

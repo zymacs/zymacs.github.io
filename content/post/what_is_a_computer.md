@@ -1,6 +1,6 @@
 ---
 thumbnail: "img/a_computer.png"
-title: But what is a Computer?
+title: Defining a computer
 date: 2026-04-22
 tags:
   - definitions
