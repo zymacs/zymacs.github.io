@@ -11,8 +11,6 @@ categories:
 ---
 
 
-## And why this challenge ?
-
 I cannot say I am the heaviest user of AI since, I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.
 And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.
 So I was like, how about a simple challenge this week. **5 Days No AI**.

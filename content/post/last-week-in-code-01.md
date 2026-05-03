@@ -1,6 +1,7 @@
 ---
 title: Last Week In Code -001-
 date: 2026-04-18
+thumbnail: "img/lwic.png"
 draft: false
 tags:
   - lwic
@@ -8,9 +9,7 @@ categories:
   - WeeklySeries
 ---
 
-# Last week in code -001- 
 
-## The beginning of a new chapter
 
 I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we're building. You know how that is.
 So I was like, how about I create something here that'll be an outlet for that? So I did.

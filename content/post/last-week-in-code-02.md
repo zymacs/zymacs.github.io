@@ -2,19 +2,14 @@
 title: Last Week In Code -002-
 date: 2026-04-23
 draft: false
+thumbnail: "img/lwic.png"
 tags:
   - lwic
 categories:
   - WeeklySeries
 ---
+- *Discovering Hacker News*
 
-# Last Week In Code -002-
-
-It's episode 002.
-
-## Updates from Me
-
-### Discovering hacker news
 Last week I decided I'd be going on an [AI fast](https://zymacs.github.io/post/five-days-no-ai/). Listed what services
 AI was providing me with then tried to get alt providers.
 For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I
@@ -37,7 +32,7 @@ So I guess some of the whys for bookmarking hacker news for a dev would be
 - Show point for one's projects. A good place to publicize a Startup Project.
 
 
-### Learning the value of documenting solutions and setups the hardway.
+- *Learning the value of documenting solutions and setups the hardway.*
 
 So upon rebooting my system to install the latest Ubuntu OS updates, I lost my internet connection. Debugging network problems is such a pain and I have wanted to return to Arch for quite some time so I was like .. I guess its time to go back home.
 

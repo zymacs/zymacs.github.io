@@ -91,7 +91,7 @@ I have run into this issue quite a number of times. I enter the wrong password, 
 		
 	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/img/failed_attempts.png" alt="But My Password Is Correct!: Arch Faillock">
+		<img class="thumbnail__image" src="/img/arch_logo.png" alt="But My Password Is Correct!: Arch Faillock">
 		
 	</figure><div class="content post__content clearfix">
 			<p>I guess you need a quick solution. If you do, here&rsquo;s one.</p>
@@ -109,7 +109,8 @@ It turns out the lockout is only for a while.
 Its a security mechanism against bruteforce password cracking attempts.
 And the mechanism that&rsquo;s responsible for this is: <code>faillock</code>.</p>
 <p>Faillock&rsquo;s triggered when an incorrect password is entered x consecutive times.
-It works with the <code>pam_faillock.so</code> PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords.</p>
+It works with the <code>pam_faillock.so</code> PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords
+.</p>
 <h2 id="default-behavior">Default Behavior</h2>
 <p>Now default <code>faillock</code> configuration locks an account for <strong>10 minutes</strong> after <strong>3 failed login attempts</strong> within a <strong>15-minute window</strong>. Explains why after waiting for a while I was able to login.
 From my reading I also learnt that on some desktop environments like SDDM or hyprlock will show messages like &ldquo;The account is locked due to 3 failed logins&rdquo; or &ldquo;(10 minutes left to unlock)&rdquo; when this occurs.</p>

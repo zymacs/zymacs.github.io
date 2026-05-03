@@ -38,6 +38,9 @@
     <loc>//localhost:1313/categories/weeklyseries/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/what_is_a_computer/</loc>
+    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/categories/computers/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,9 +48,6 @@
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/fundamentals/</loc>
-    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/what_is_a_computer/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/five-days-no-ai/</loc>

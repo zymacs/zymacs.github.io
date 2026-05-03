@@ -1,5 +1,6 @@
 ---
 title: Gitignore files
+thumbnail: "img/git_icon.png"
 date: 2026-04-17
 tags:
   - git
@@ -9,8 +10,6 @@ categories:
   - Git
 ---
 
-
-# Gitignore files
 
 So I've been trying to make my way through [Progit](https://git-scm.com/book/en/v2). I have accumulated a whole lot of information so far and I was afraid
 for how not so often I used it. That I was going to forget it all. 

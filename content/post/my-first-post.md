@@ -1,5 +1,6 @@
 ---
 title: My first post with Hugo
+thumbnail: "img/hugo_icon.png"
 date: 2026-04-16
 tags:
   - "intro"
@@ -8,8 +9,6 @@ tags:
 categories:
   - "Random"
 ---
-
-# Dumped Google Blogger
 
 I set up a site on [blogger](https://www.blogger.com/) (Google's blogspot) and dumped it for a [Hugo](https://gohugo.io/) design that caught my eye.
 I thought I could learn some css building it myself. Feel good from `doing it myself from scratch`.

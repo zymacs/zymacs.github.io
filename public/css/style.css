@@ -1325,3 +1325,12 @@ html.js body.body div.container.container--outer div.wrapper.flex div.primary ma
     width: 20px;
     height: 20px;
 }
+
+
+.list__thumbnail img {
+    width: 210px;
+}
+
+.thumbnail__image {
+    max-width: 150px;
+}

@@ -1,7 +1,7 @@
 ---
 title: "But My Password Is Correct!: Arch Faillock"
 date: 2026-05-01
-thumbnail: 'img/failed_attempts.png'
+thumbnail: 'img/arch_logo.png'
 tags:
   - security
   -  arch
@@ -34,7 +34,8 @@ Its a security mechanism against bruteforce password cracking attempts.
 And the mechanism that's responsible for this is: `faillock`.
 
 Faillock's triggered when an incorrect password is entered x consecutive times.
-It works with the `pam_faillock.so` PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords.
+It works with the `pam_faillock.so` PAM module, which protects against brute-force attacks by temporarily locking user accounts after too many consecutive incorrect passwords
+.
 
 ## Default Behavior
 
