@@ -2,7 +2,7 @@
 title: 'Modding Alacritty'
 thumbnail: "img/alacritty_logo.png"
 date:  2026-05-03T20:56:47+03:00
-draft: true
+draft: false
 tags:
   - ricing
   - configs
