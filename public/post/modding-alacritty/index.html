@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modding Alacritty - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/modding-alacritty/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Modding Alacritty">
+  <meta property="og:description" content="If something in my surroundings looks too good I can&#39;t stop thinking how to make it look better. Maybe its ADHD but that&#39;s thrown around too much these days its hard to tell who&#39;s just making things up. But anyways. I looked into modding my alacritty terminal just out of curiosity. I have been using it as it was out of the box for a while. But I felt bored and thought modding it would be a good pass time.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-03T20:56:47+03:00">
+    <meta property="article:modified_time" content="2026-05-03T20:56:47+03:00">
+    <meta property="article:tag" content="Ricing">
+    <meta property="article:tag" content="Configs">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Modding Alacritty</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-03T20:56:47&#43;03:00">May 03, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/linux-setup/" rel="category">Linux-Setup</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/alacritty_logo.png" alt="Modding Alacritty">
+		
+	</figure><div class="content post__content clearfix">
+			<p>If something in my surroundings looks too good I can't stop thinking
+how to make it look better. Maybe its ADHD but that's thrown around too much these days its hard to
+tell who's just making things up. But anyways. I looked into modding my
+alacritty terminal just out of curiosity. I have been using it as it was
+out of the box for a while. But I felt bored and thought modding it would be
+a good pass time.</p>
+<p>Here's what I learnt.</p>
+<h2 id="config-location">Config location</h2>
+<p>Alacritty configs are placed at one of the following locations
+( <em>organized by order in which alacritty searches for them</em> )</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>- $XDG_CONFIG_HOME/alacritty/alacritty.toml
+</span></span><span style="display:flex;"><span>- $XDG_CONFIG_HOME/alacritty.toml
+</span></span><span style="display:flex;"><span>- $HOME/.config/alacritty/alacritty.toml
+</span></span><span style="display:flex;"><span>- $HOME/.alacritty.toml
+</span></span><span style="display:flex;"><span>- /etc/alacritty/alacritty.toml
+</span></span></code></pre></div><p>I had none so I had to create one. Turns out installing alacritty does
+not auto create a config file.</p>
+<h2 id="the-mods">The Mods</h2>
+<ul>
+<li>
+<p><strong>2 Options for theme configuration</strong></p>
+<ol>
+<li>
+<p>Paste your theme-config in a config file at one of the above
+specified locations.</p>
+</li>
+<li>
+<p>Installing a package from the AUR.</p>
+<ul>
+<li>Install alacritty-theme-git from the aur with <code>yay -S alacritty-theme-git</code>.</li>
+<li>Add path to your preferred theme to the config section
+general.yaml</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>  [<span style="color:#ae81ff">general]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">import = [&#34;/usr/share/alacritty/themes/your_theme.toml&#34;]</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p><strong>Fonts</strong> My font looks a bit like its Monospace. <code>fc-match</code> says
+its Free Sans. Modifying one of these or adding some in the same
+format will modify the terminal font I personally have no problem
+with the default font configuration.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>[<span style="color:#ae81ff">font]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">size = 12.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">font.bold]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">family = &#34;monospace&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">style = &#34;Bold&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">font.bold_italic]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">family = &#34;monospace&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">style = &#34;Bold Italic&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">font.italic]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">family = &#34;monospace&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">style = &#34;Italic&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">font.normal]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">family = &#34;monospace&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">style = &#34;Regular&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>You can find what fonts you have on your system by runnig</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ fc-list : family style
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="extras">Extras</h2>
+<ul>
+<li>
+<p>I like how my terminal looks and always want to maintain that when I
+ssh into some remote server. I did not know how to, but now I do.
+Here's how;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>infocmp &gt; alacritty.terminfo  <span style="color:#75715e"># export Alacritty&#39;s Terminfo </span>
+</span></span><span style="display:flex;"><span>scp alacritty.terminfo user@remote-host:~/  <span style="color:#75715e"># or any other method to copy to the remote host</span>
+</span></span></code></pre></div><p>So in the above bash code, <code>Infocmp</code> is a command to get info about your terminal.
+That data is redirected the to the file alacritty.terminfo with the redirection operator <code>&gt;</code>.
+<code>scp</code>  is then used to copy that file to the server.</p>
+<pre><code>infocmp | ssh &quot;$user@$host&quot; 'tic -x /dev/stdin'
+</code></pre>
+</li>
+</ul>
+<h2 id="closing">Closing</h2>
+<ul>
+<li>Well, after all that I only changed my default theme to  <code>Linux.toml</code>.
+But I sure did learn some few things about managing fonts. I hope you did
+to. <code>fc-match</code>, <code>fc-list</code> <code>tic</code> and others.</li>
+</ul>
+<h2 id="refs-and-sources">Refs and Sources</h2>
+<ul>
+<li><a href="https://wiki.archlinux.org/title/Alacritty">https://wiki.archlinux.org/title/Alacritty</a></li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ricing/" rel="tag">ricing</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/configs/" rel="tag">configs</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Zymacs&rsquo;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/but-my-password-is-correct/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Arch Faillock</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="//localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/modding-alacritty/">Modding Alacritty</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/but-my-password-is-correct/">Arch Faillock</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-02/">Last Week In Code E002</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/what_is_a_computer/">Defining a computer</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/five-days-no-ai/">5 Days No AI</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
