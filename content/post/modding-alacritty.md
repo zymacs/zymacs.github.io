@@ -2,7 +2,7 @@
 title: 'Modding Alacritty'
 thumbnail: "img/alacritty_logo.png"
 date:  2026-05-03T20:56:47+03:00
-draft: false
+draft: true
 tags:
   - ricing
   - configs
@@ -55,7 +55,8 @@ not auto create a config file.
             
 
 -   **Fonts** My font looks a bit like its Monospace. `fc-match` says
-    its Free Sans. I like how my font is but it doesn't hurt to know how to
+    its Free Sans. But [alacritty](https://alacritty.org/config-alacritty.html)'s configuration page says its `monospace regular` so I guess thats what it is.
+    I like how my font is but it doesn't hurt to know how to
     change it if I ever want to.
     Modifying the following settings should do that job.
 
@@ -109,9 +110,9 @@ not auto create a config file.
 ## Closing
 
 -   Well, after all that I only changed my default theme to  `Linux.toml`.
-    But I sure did learn some few things about managing fonts. I hope you did
-    to. `fc-match`, `fc-list` `tic` and others.
+    This post will keep getting more mod sections as I add more settings to my config. Meanwhile, you can visit alacritty's config page via the second link provided among the links below.
 
 ## Refs and Sources
 
 -   <https://wiki.archlinux.org/title/Alacritty>
+-   <https://alacritty.org/config-alacritty.html>
