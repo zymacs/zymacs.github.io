@@ -12,7 +12,7 @@ categories:
 I like self hosting but have not yet gotten a hosting service to stick to so I have to go through the whole reinstall process every time I switch operating systems.
 Yes, I run my apps on my PC.
 So I spent most of the past week setting up some applications. I set up [Navidrome](https://www.navidrome.org/) for my music server, [Firefly III](https://www.firefly-iii.org/) for financial management and [Jellyfin](https://jellyfin.org/) for managing
-my movies and tv shows collection. I also played around some with Snapcast but then learnt how much I'd have to read before I'd be able to use it like a craftsman. So I dropped it. 
+my movies and tv shows collection. I also played around some with [Snapcast](https://github.com/snapcast/snapcast) but then learnt how much I'd have to read before I'd be able to use it like a craftsman. So I dropped it. 
 
 I learnt a whole lot doing all this and would like to share  two main lessons from that. 
 
