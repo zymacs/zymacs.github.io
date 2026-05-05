@@ -98,7 +98,9 @@ alacritty terminal just out of curiosity. I have been using it as it was
 out of the box for a while. But I felt bored and thought modding it would be
 a good pass time.</p>
 <p>Here's what I learnt.</p>
-<h2 id="config-location">Config location</h2>
+<ul>
+<li><strong>Config location</strong></li>
+</ul>
 <p>Alacritty configs are placed at one of the following locations
 ( <em>organized by order in which alacritty searches for them</em> )</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>- $XDG_CONFIG_HOME/alacritty/alacritty.toml
@@ -108,33 +110,43 @@ a good pass time.</p>
 </span></span><span style="display:flex;"><span>- /etc/alacritty/alacritty.toml
 </span></span></code></pre></div><p>I had none so I had to create one. Turns out installing alacritty does
 not auto create a config file.</p>
-<h2 id="the-mods">The Mods</h2>
+<h2></h2>
 <ul>
 <li>
-<p><strong>2 Options for theme configuration</strong></p>
-<ol>
+<p><strong>Theme Configuration</strong></p>
+<ul>
 <li>
-<p>Paste your theme-config in a config file at one of the above
+<p>Method 1:  Paste your theme-config in a config file at one of the above
 specified locations.</p>
 </li>
 <li>
-<p>Installing a package from the AUR.</p>
+<p>Method 2: Installing AUR theme package.</p>
 <ul>
 <li>Install alacritty-theme-git from the aur with <code>yay -S alacritty-theme-git</code>.</li>
 <li>Add path to your preferred theme to the config section
 general.yaml</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>  [<span style="color:#ae81ff">general]</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">import = [&#34;/usr/share/alacritty/themes/your_theme.toml&#34;]</span>
-</span></span></code></pre></div></li>
-</ol>
+<pre><code> ``` yaml 
+   [general]
+   import = [&quot;/usr/share/alacritty/themes/your_theme.toml&quot;]
+</code></pre>
+<pre tabindex="0"><code></code></pre></li>
+</ul>
 </li>
 <li>
-<p><strong>Fonts</strong> My font looks a bit like its Monospace. <code>fc-match</code> says
-its Free Sans. But <a href="https://alacritty.org/config-alacritty.html">alacritty</a>&rsquo;s configuration page says its <code>monospace regular</code> so I guess thats what it is.
+<p><strong>Font configuration</strong></p>
+<ul>
+<li>
+<p>My font looks a bit like its Monospace. <code>fc-match</code> says
+its Free Sans.
+But <a href="https://alacritty.org/config-alacritty.html">alacritty</a>&rsquo;s configuration page says its <code>monospace regular</code> so I guess thats what it is.
 I like how my font is but it doesn&rsquo;t hurt to know how to
-change it if I ever want to.
-Modifying the following settings should do that job.</p>
+change it if I ever want to.</p>
+</li>
+<li>
+<p>Modifying the following settings should do that job.</p>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>[<span style="color:#ae81ff">font]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">size = 12.0</span>
 </span></span><span style="display:flex;"><span>
@@ -217,9 +229,9 @@ This post will keep getting more mod sections as I add more settings to my confi
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/but-my-password-is-correct/" rel="prev">
+		<a class="pager__link" href="/post/last-week-in-code-03/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Arch Faillock</p>
+			<p class="pager__title">Last Week in Code 003</p>
 		</a>
 	</div>
 </nav>
@@ -238,10 +250,10 @@ This post will keep getting more mod sections as I add more settings to my confi
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/post/modding-alacritty/">Modding Alacritty</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-03/">Last Week in Code 003</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/but-my-password-is-correct/">Arch Faillock</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-02/">Last Week In Code E002</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/what_is_a_computer/">Defining a computer</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/five-days-no-ai/">5 Days No AI</a></li>
 		</ul>
 	</div>
 </div>

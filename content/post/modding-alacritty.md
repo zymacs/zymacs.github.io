@@ -20,7 +20,7 @@ a good pass time.
 
 Here\'s what I learnt.
 
-## Config location
+- **Config location**
 
 Alacritty configs are placed at one of the following locations
 ( _organized by order in which alacritty searches for them_ )
@@ -36,13 +36,12 @@ Alacritty configs are placed at one of the following locations
 I had none so I had to create one. Turns out installing alacritty does
 not auto create a config file.
 
-## The Mods
+## 
 
--   **2 Options for theme configuration**
-
-    1.  Paste your theme-config in a config file at one of the above
+-   **Theme Configuration**
+    - Method 1:  Paste your theme-config in a config file at one of the above
         specified locations.
-    2.  Installing a package from the AUR.
+    - Method 2: Installing AUR theme package.
          -   Install alacritty-theme-git from the aur with `yay -S alacritty-theme-git`.
          -  Add path to your preferred theme to the config section
            general.yaml
@@ -54,11 +53,14 @@ not auto create a config file.
 	    ```
             
 
--   **Fonts** My font looks a bit like its Monospace. `fc-match` says
-    its Free Sans. But [alacritty](https://alacritty.org/config-alacritty.html)'s configuration page says its `monospace regular` so I guess thats what it is.
+-   **Font configuration**
+    - My font looks a bit like its Monospace. `fc-match` says
+    its Free Sans.
+    But [alacritty](https://alacritty.org/config-alacritty.html)'s configuration page says its `monospace regular` so I guess thats what it is.
     I like how my font is but it doesn't hurt to know how to
     change it if I ever want to.
-    Modifying the following settings should do that job.
+
+    - Modifying the following settings should do that job.
 
     ``` yml
     [font]

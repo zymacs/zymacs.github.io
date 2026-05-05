@@ -6,8 +6,15 @@
     <description>Recent content in WeeklySeries on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/weeklyseries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week in Code 003</title>
+      <link>//localhost:1313/post/last-week-in-code-03/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-03/</guid>
+      <description>&lt;p&gt;I like self hosting but have not yet gotten a hosting service to stick to so I have to go through the whole reinstall process every time I switch operating systems.&#xA;Yes, I run my apps on my PC.&#xA;So I spent most of the past week setting up some applications. I set up Navidrome for my music server, Firefly III for financial management and Jellyfin for managing&#xA;my movies and tv shows collection. I also played around some with Snapcast but then learnt how much I&amp;rsquo;d have to read before I&amp;rsquo;d be able to use it like a craftsman. So I dropped it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week In Code E002</title>
       <link>//localhost:1313/post/last-week-in-code-02/</link>

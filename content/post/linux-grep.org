@@ -1,0 +1,125 @@
+
+#+TITLE: Grep Basics
+#+DATE: 2026-05-03T04:14:54-08:00
+#+DRAFT: true
+#+AUTHOR: Zymacs
+#+TAGS[]: linux grep
+#+CATEGORIES[]: Text-manipulation
+#+WEIGHT: 10
+
+
+Here's some common grep fu.
+
+** Basics
+
+- Search for a string in a file: grep "pattern" file.txt
+  
+
+- Search recursively in a directory:
+  #+begin_src sh
+  grep -r "pattern" .
+  #+end_src
+
+- Case-insensitive search:
+  #+begin_src sh
+  grep -i "pattern" file.txt
+  #+end_src
+
+** Output Control
+- Show line numbers:
+  #+begin_src sh
+  grep -n "pattern" file.txt
+  #+end_src
+
+- Only show matching parts (not whole line):
+  #+begin_src sh
+  grep -o "pattern" file.txt
+  #+end_src
+
+- Show count of matching lines:
+  #+begin_src sh
+  grep -c "pattern" file.txt
+  #+end_src
+
+- Show filenames only:
+  #+begin_src sh
+  grep -l "pattern" *.txt
+  #+end_src
+- Treat binary files as text:
+  #+begin_src sh
+  grep -al 'pattern' *.txt
+  #+end_src
+** Patterns
+- Match whole words only:
+  #+begin_src sh
+  grep -w "pattern" file.txt
+  #+end_src
+
+- Use extended regular expressions:
+  #+begin_src sh
+  grep -E "pattern1|pattern2" file.txt
+  #+end_src
+
+- Match lines not containing pattern:
+  #+begin_src sh
+  grep -v "pattern" file.txt
+  #+end_src
+
+** Context
+- Show 2 lines before and after match:
+  #+begin_src sh
+  grep -C 2 "pattern" file.txt
+  #+end_src
+
+- Show 2 lines before match only:
+  #+begin_src sh
+  grep -B 2 "pattern" file.txt
+  #+end_src
+
+- Show 2 lines after match only:
+  #+begin_src sh
+  grep -A 2 "pattern" file.txt
+  #+end_src
+
+** Files & Directories
+- Search multiple files:
+  #+begin_src sh
+  grep "pattern" file1.txt file2.txt
+  #+end_src
+
+- Recursive search with file type filtering:
+  #+begin_src sh
+  grep --include="*.log" -r "pattern" .
+  #+end_src
+
+- Exclude files:
+  #+begin_src sh
+  grep --exclude="*.bak" -r "pattern" .
+  #+end_src
+
+** Performance
+- Only search in files (ignore directories):
+  #+begin_src sh
+  grep -r --exclude-dir="dir_name" "pattern" .
+  #+end_src
+
+- Quick search, stop after first match in each file:
+  #+begin_src sh
+  grep -m 1 "pattern" file.txt
+  #+end_src
+
+** Combining Commands
+- Pipe output to grep:
+  #+begin_src sh
+  ps aux | grep "process_name"
+  #+end_src
+
+- Combine multiple patterns (extended regex):
+  #+begin_src sh
+  grep -E "error|fail|warn" file.txt
+  #+end_src
+
+- Search and highlight matches:
+  #+begin_src sh
+  grep --color=auto "pattern" file.txt
+  #+end_src

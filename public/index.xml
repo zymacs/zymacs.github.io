@@ -16,6 +16,13 @@
       <description>&lt;p&gt;If something in my surroundings looks too good I can&#39;t stop thinking&#xA;how to make it look better. Maybe its ADHD but that&#39;s thrown around too much these days its hard to&#xA;tell who&#39;s just making things up. But anyways. I looked into modding my&#xA;alacritty terminal just out of curiosity. I have been using it as it was&#xA;out of the box for a while. But I felt bored and thought modding it would be&#xA;a good pass time.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Last Week in Code 003</title>
+      <link>//localhost:1313/post/last-week-in-code-03/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-03/</guid>
+      <description>&lt;p&gt;I like self hosting but have not yet gotten a hosting service to stick to so I have to go through the whole reinstall process every time I switch operating systems.&#xA;Yes, I run my apps on my PC.&#xA;So I spent most of the past week setting up some applications. I set up &lt;a href=&#34;https://www.navidrome.org/&#34;&gt;Navidrome&lt;/a&gt; for my music server, &lt;a href=&#34;https://www.firefly-iii.org/&#34;&gt;Firefly III&lt;/a&gt; for financial management and &lt;a href=&#34;https://jellyfin.org/&#34;&gt;Jellyfin&lt;/a&gt; for managing&#xA;my movies and tv shows collection. I also played around some with Snapcast but then learnt how much I&amp;rsquo;d have to read before I&amp;rsquo;d be able to use it like a craftsman. So I dropped it.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Arch Faillock</title>
       <link>//localhost:1313/post/but-my-password-is-correct/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
