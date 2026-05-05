@@ -55,7 +55,7 @@ Some you probably haven't learnt about yet.
 
 ### Nice reads
 - [Don't delegate understanding](https://stephango.com/understand)
-- [If you stop hiring Jeniors , your Senior Engineers will own you](https://evalcode.com/posts/if-you-stop-hiring-juniors-your-seniors-own-you/)
+- [If you stop hiring Juniors , your Senior Engineers will own you](https://evalcode.com/posts/if-you-stop-hiring-juniors-your-seniors-own-you/)
 - [Computer Language](https://archive.org/details/Computer_Language_Issue_11_1985-07_CL_Publications_US/page/18/mode/2up)
 - [AI Economics don't make sense](https://www.wheresyoured.at/ais-economics-dont-make-sense/)
 
