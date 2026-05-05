@@ -32,7 +32,7 @@ Now if you have to go through that every time you encounter the same problem (wh
 The solution? Put in the time to process the solution and store it somewhere. It will be a huge future time investment in my opinion. It's been that way for me at least. 
 
 The other thing to add to that is organization. It won't help much to come back to what you don't understand except to remind you of your own laziness.
-There's ways  to keep track of notes. Many [apps](https://www.obsibrain.com/blog/personal-knowledge-management-tools) and workflows (_[Zettlekasten](https://en.wikipedia.org/wiki/Zettelkasten) being the most popular_). I personally use Emacs with no fixed worflow yet but have not put in the time to really learn it yet. 
+There's ways  to keep track of notes. Many [apps](https://www.obsibrain.com/blog/personal-knowledge-management-tools) and workflows (_[Zettlekasten](https://en.wikipedia.org/wiki/Zettelkasten) being the most popular_). I personally use Emacs with no fixed worflow yet.
 I'm hoping these experiences will be why I get to that. 
 
 ### Find projects around which to learn new skills. 
@@ -55,7 +55,7 @@ Some you probably haven't learnt about yet.
 
 ### Nice reads
 - [Don't delegate understanding](https://stephango.com/understand)
-- [If you stop hiring Seniors , your Senior Engineers will own you](https://evalcode.com/posts/if-you-stop-hiring-juniors-your-seniors-own-you/)
+- [If you stop hiring Jeniors , your Senior Engineers will own you](https://evalcode.com/posts/if-you-stop-hiring-juniors-your-seniors-own-you/)
 - [Computer Language](https://archive.org/details/Computer_Language_Issue_11_1985-07_CL_Publications_US/page/18/mode/2up)
 - [AI Economics don't make sense](https://www.wheresyoured.at/ais-economics-dont-make-sense/)
 
