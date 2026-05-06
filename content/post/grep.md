@@ -210,7 +210,7 @@ This matches all lines starting with  either a or b, not all lines that either s
 
 How about matching all lines that have characters 'p or m' or that end with `e`? That can be done with:
 ```sh
-grep -E '[p|m,e^]' grep_text.txt
+grep -E '[p|m,e$]' grep_text.txt
 ```
 
 There's many ways to arrive at the same answer. What I provided is how I arrived at the solution and you can find your own means to with other grep options.

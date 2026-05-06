@@ -195,7 +195,7 @@ Matching a pattern at a line&rsquo;s end can be done with:</p>
 <code>grep -E ^[a|b] target.txt</code>.
 This matches all lines starting with  either a or b, not all lines that either start with <code>a</code> or have the character <code>b</code> as it was in the wrong answer example.</p>
 <p>How about matching all lines that have characters &lsquo;p or m&rsquo; or that end with <code>e</code>? That can be done with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;[p|m,e^]&#39;</span> grep_text.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;[p|m,e$]&#39;</span> grep_text.txt
 </span></span></code></pre></div><p>There&rsquo;s many ways to arrive at the same answer. What I provided is how I arrived at the solution and you can find your own means to with other grep options.</p>
 <p>We just introduced the <code>|</code> operator with regex and I mentioned earlier in the
 article there was more than one way to provide alternative matching patterns
