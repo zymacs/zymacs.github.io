@@ -117,35 +117,35 @@ say, grep_text.txt</p>
 </span></span></code></pre></div><p>We&rsquo;ll start with a simple match. The following matches all instances
 of the substring <code>bo</code> anywhere in the file <code>grep_text.txt</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep bo grep_text.txt
-</span></span></code></pre></div><p>Now the output from the previous line is not numbered. We could be interested in opening an editor at the point where the match is. To get the number
-where the match was found, we use the <code>n</code> flag.</p>
+</span></span></code></pre></div><p>Now the output from the previous line is not numbered. We could be interested in opening an editor at the point where the match is. To get the line number
+for where a match is found, we use the <code>n</code> flag.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -n bo grep_text.txt
 </span></span></code></pre></div><p>But what if we want to match all that does not conform to some defined pattern?
 Grep has means to do that, the <code>v</code> flag.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -nv bo grep_text.txt
 </span></span></code></pre></div><p>At times you could be interested in finding the number of times some
-pattern matches and nothing else, this does that. Kinda similar to what
-<code>wc -l</code> does.  Actually, running <code>grep bo grep_text.txt | wc -l</code> would produce the same output.</p>
+pattern matches and nothing else. The next operation does that. It is kind of similar to what
+<code>wc -l</code> does.  Actually, running <code>grep bo grep_text.txt | wc -l</code> would produce the same output. You can try that out for yourself to see.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c bo grep_text.txt
 </span></span></code></pre></div><p>For whichever reason you could want to have all matched text printed out. To do that you&rsquo;d pass in the <code>-o</code> flag.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -o bo grep_text.txt
 </span></span></code></pre></div><p>Now how about passing in more than one pattern? There&rsquo;s more than one way to do that, the first one is here, the next will be in the regex section later in the article.  Grep searches for all
 lines with text matching any of the supplied expressions.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -e pod -e ma grep_text.txt
-</span></span></code></pre></div><p>We&rsquo;ve so far only been matching lower text is exactly as the pattern supplied
-in case. To ignore case and have the pattern <code>bo</code> interpreted as <code>Bo</code> or <code>BO</code> would, supply the <code>-i</code> or <code>--ignore-case</code> flag.</p>
+</span></span></code></pre></div><p>That matches all lines with substrings <code>ma</code> and or <code>pod</code>.</p>
+<p>We&rsquo;ve so far done only case sensitive match operations, which is the default.
+To ignore case and have the pattern <code>bo</code> interpreted as <code>Bo</code> or <code>BO</code> would, (to performe case insensitive matches that is), we supply the <code>-i</code> or <code>--ignore-case</code> flag.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;BOB
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">boB&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>grep -i bob grep_text.txt
-</span></span></code></pre></div><p>From the grep manual, a word is substring at the end of a line preceded by a non-word constituent character or, at the end of a line followed by a non-word constituent character. Word constituent characters : letters, digits, the underscore. The following matches a word.</p>
+</span></span></code></pre></div><p>From the grep manual, a word is substring at the end of a line preceded by a non-word constituent character or, at the end of a line followed by a non-word constituent character. Word constituent characters : letters, digits, the underscore. To match a word, we&rsquo;d follow the syntax in the next command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -w match grep_text.txt 
 </span></span></code></pre></div><p>To find what text is in lines after the match you can specify the number of lines together
 with the <code>A</code> flag as in the example. That returns 2 lines after every match containing line.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -w maker grep_text.txt
 </span></span></code></pre></div><p>This works like the previous matching pattern except it returns lines appearing before the match.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -B2 -w maker grep_text.txt
-</span></span></code></pre></div><p>Now to return lines appearing around the match, that is before and after, you could combine the <code>A</code> and <code>B</code> flags as in the above example or use <code>C</code> with the number if its common for both
-<code>B</code> and <code>A</code>.</p>
+</span></span></code></pre></div><p>Now to return lines appearing around the match line, that is before and after, we could combine the <code>A</code> and <code>B</code> flags in the same command  as in the below example or use <code>C</code> with the numbers supplied to both A and B are the same.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -B2 -w maker grep_text.txt
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c2 maker grep.txt
 </span></span></code></pre></div><p><em><em>Regexp matching</em></em></p>
@@ -165,17 +165,18 @@ It could as well contain a combination of these say in the next example, which m
 </span></span></code></pre></div><p>The same effect can be achieved with</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[[</span>:alnum:<span style="color:#f92672">]]</span> grep_text.text
 </span></span></code></pre></div><p>That there, the <code>[:alnum:]</code> is a grep named class of characters.
-Others include <code>[:blank:]</code> for blank space, [:digit:] for digit, <code>[:punct:]</code> for matching
-punctuation as is in the next example.</p>
+Others include <code>[:blank:]</code> for blank space, <code>[:digit:]</code> for digit, <code>[:punct:]</code> for matching
+punctuation as is in the next example and more in the grep manual.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;;,.&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>grep -E  <span style="color:#f92672">[[</span>:punct:<span style="color:#f92672">]]</span>
-</span></span></code></pre></div><p>The next pattern matches all strings with the character <code>p</code> appearing 2 consecutive times.
+</span></span></code></pre></div><p>The next pattern matches all strings with the character <code>a</code> appearing 2 consecutive times.
 Anywhere with two consecutive <code>a</code> chars will provide a match. <code>aaa</code> will match in totality
 but the last a in <code>aaaba</code> won&rsquo;t match.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;p&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;aaabbfa&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt 
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span>+ grep_text.txt
 </span></span></code></pre></div><p>This matches all strings with the character <code>a</code> exactly one time. The <code>+</code> has no reasonable effect and could as well be dropped to have <code>grep -E 'a'{1} grep_text.txt</code>.</p>
-<p>The expression also has the same effect as <code>grep -E 'a'+ grep_text.txt</code> . (Matches <code>a</code> appearing 1 or more times consecutively). The last  two are ambiguous since its the default with a single character pattern. The same meaning can be gotten with `grep a grep_text.txt. It&rsquo;s a good means to understand how the matching happens anyways. It helps to know when to use the compexity of regex and when not to.</p>
+<p>The expression also has the same effect as <code>grep -E 'a'+ grep_text.txt</code> (<em>matches <code>a</code> appearing consecutively 1 or more times</em>). The last  two are ambiguous since its the default with a single character pattern. The same meaning can be gotten with `grep a grep_text.txt. It&rsquo;s a good means to understand how the matching happens anyways. It helps to know when to use the compexity of regex and when not to.</p>
 <p>How about matching the all strings at the start of a line? The caret symbol
 <code>^</code> is an <code>anchor</code> character used to match a line start. It has an inverse,
 &ldquo;$&rdquo; that matches the end of a line. To match all patterns that are at
@@ -188,10 +189,12 @@ a line&rsquo;s start we&rsquo;d therefore do something like:</p>
 Matching a pattern at a line&rsquo;s end can be done with:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;e$&#39;</span> grep_text.txt
 </span></span></code></pre></div><p>That&rsquo;d match all lines ending  with the char <code>e</code>.</p>
-<p>Suppose you want to match all text that starts with <code>a</code> or <code>b</code> in some file <code>target.txt. What pattern would you use for that? One might say, </code>grep -E <code>^a|b target.txt</code> but is that so? Examining that expression, here&rsquo;s an explanation for what it matches. It matches either a line starting with <code>a</code> , that <code>^a</code> that is, or , any line with the character <code>b</code>. The <code>|</code> is what&rsquo;s the <code>OR</code> operator when working with <code>grep</code> regexp. Back to the challenge. The actual answer would be
-<code>grep -E ^[a|b] target.txt</code>. This would match all lines starting with
-either a or b, not all lines that either start with <code>a</code> or have the character <code>b</code> as it was in the wrong answer example.</p>
-<p>How about matching all lines that have characters &lsquo;p or m&rsquo; or that end with <code>e</code>? That would be.</p>
+<p>Suppose you want to match all text that starts with <code>a</code> or <code>b</code> in some file <code>target.txt</code>, what pattern would you use for that? There&rsquo;s more than one way to get the right effect. Let&rsquo;s examine one wrong solution to this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">`</span>^a|b target.txt
+</span></span></code></pre></div><p>It matches either a line starting with <code>a</code> , that <code>^a</code> that is, or , any line with the character <code>b</code>. The <code>|</code> is what&rsquo;s the <code>OR</code> operator when working with <code>grep</code> regexp. Back to the challenge. A sample effective answer would have been
+<code>grep -E ^[a|b] target.txt</code>.
+This matches all lines starting with  either a or b, not all lines that either start with <code>a</code> or have the character <code>b</code> as it was in the wrong answer example.</p>
+<p>How about matching all lines that have characters &lsquo;p or m&rsquo; or that end with <code>e</code>? That can be done with:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;[p|m,e^]&#39;</span> grep_text.txt
 </span></span></code></pre></div><p>There&rsquo;s many ways to arrive at the same answer. What I provided is how I arrived at the solution and you can find your own means to with other grep options.</p>
 <p>We just introduced the <code>|</code> operator with regex and I mentioned earlier in the
@@ -205,7 +208,7 @@ For instance, this saved under any name say patterns.txt</p>
 </span></span><span style="display:flex;"><span>[p|m]
 </span></span><span style="display:flex;"><span>e[a-z]$
 </span></span></code></pre></div><p>Then use the pattern file to find matches with the <code>-f</code> flag.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -f patterns.txt grep_text
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -f patterns.txt grep_text.txt
 </span></span></code></pre></div><p>You can also add grep options to the file.</p>
 <p>Prepend the first line in <code>patterns.txt</code> with <code>-v</code> so it now looks like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>-v &#39;^[a-z]e&#39;

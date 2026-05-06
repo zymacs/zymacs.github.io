@@ -50,8 +50,8 @@ of the substring `bo` anywhere in the file `grep_text.txt`.
 grep bo grep_text.txt
 ```
 
-Now the output from the previous line is not numbered. We could be interested in opening an editor at the point where the match is. To get the number
-where the match was found, we use the `n` flag.
+Now the output from the previous line is not numbered. We could be interested in opening an editor at the point where the match is. To get the line number
+for where a match is found, we use the `n` flag.
 
 
 ```sh
@@ -65,8 +65,8 @@ grep -nv bo grep_text.txt
 ```
 
 At times you could be interested in finding the number of times some
-pattern matches and nothing else, this does that. Kinda similar to what
-`wc -l` does.  Actually, running `grep bo grep_text.txt | wc -l` would produce the same output. 
+pattern matches and nothing else. The next operation does that. It is kind of similar to what
+`wc -l` does.  Actually, running `grep bo grep_text.txt | wc -l` would produce the same output. You can try that out for yourself to see. 
 
 ```sh
 grep -c bo grep_text.txt
@@ -84,16 +84,17 @@ lines with text matching any of the supplied expressions.
 grep -e pod -e ma grep_text.txt
 
 ```
+That matches all lines with substrings `ma` and or `pod`.
 
-We've so far only been matching lower text is exactly as the pattern supplied
-in case. To ignore case and have the pattern `bo` interpreted as `Bo` or `BO` would, supply the `-i` or `--ignore-case` flag.
+We've so far done only case sensitive match operations, which is the default.
+To ignore case and have the pattern `bo` interpreted as `Bo` or `BO` would, (to performe case insensitive matches that is), we supply the `-i` or `--ignore-case` flag.
 
 ```sh
 echo "BOB
 boB" >> grep_text.txt
 grep -i bob grep_text.txt
 ```
-From the grep manual, a word is substring at the end of a line preceded by a non-word constituent character or, at the end of a line followed by a non-word constituent character. Word constituent characters : letters, digits, the underscore. The following matches a word. 
+From the grep manual, a word is substring at the end of a line preceded by a non-word constituent character or, at the end of a line followed by a non-word constituent character. Word constituent characters : letters, digits, the underscore. To match a word, we'd follow the syntax in the next command.  
 
 ```sh
 grep -w match grep_text.txt 
@@ -110,8 +111,7 @@ This works like the previous matching pattern except it returns lines appearing 
 ```sh
 grep -B2 -w maker grep_text.txt
 ```
-Now to return lines appearing around the match, that is before and after, you could combine the `A` and `B` flags as in the above example or use `C` with the number if its common for both
-`B` and `A`. 
+Now to return lines appearing around the match line, that is before and after, we could combine the `A` and `B` flags in the same command  as in the below example or use `C` with the numbers supplied to both A and B are the same.
 
 ```sh
 grep -A2 -B2 -w maker grep_text.txt
@@ -151,20 +151,21 @@ grep -E [[:alnum:]] grep_text.text
 ```
 
 That there, the `[:alnum:]` is a grep named class of characters.
-Others include `[:blank:]` for blank space, [:digit:] for digit, `[:punct:]` for matching
-punctuation as is in the next example.
+Others include `[:blank:]` for blank space, `[:digit:]` for digit, `[:punct:]` for matching
+punctuation as is in the next example and more in the grep manual.
 
 ``` sh
 echo ";,." >> grep_text.txt
 grep -E  [[:punct:]]
 ```
-The next pattern matches all strings with the character `p` appearing 2 consecutive times. 
+The next pattern matches all strings with the character `a` appearing 2 consecutive times. 
 Anywhere with two consecutive `a` chars will provide a match. `aaa` will match in totality
 but the last a in `aaaba` won't match.
 
 
 ```sh
-grep -E 'p'{2} grep_text.txt 
+echo "aaabbfa" >> grep_text.txt
+grep -E 'a'{2} grep_text.txt 
 ```
 
 
@@ -173,7 +174,7 @@ grep -E 'a'{1}+ grep_text.txt
 ```
 This matches all strings with the character `a` exactly one time. The `+` has no reasonable effect and could as well be dropped to have `grep -E 'a'{1} grep_text.txt`.
 
-The expression also has the same effect as `grep -E 'a'+ grep_text.txt` . (Matches `a` appearing 1 or more times consecutively). The last  two are ambiguous since its the default with a single character pattern. The same meaning can be gotten with `grep a grep_text.txt. It's a good means to understand how the matching happens anyways. It helps to know when to use the compexity of regex and when not to. 
+The expression also has the same effect as `grep -E 'a'+ grep_text.txt` (_matches `a` appearing consecutively 1 or more times_). The last  two are ambiguous since its the default with a single character pattern. The same meaning can be gotten with `grep a grep_text.txt. It's a good means to understand how the matching happens anyways. It helps to know when to use the compexity of regex and when not to. 
 
 How about matching the all strings at the start of a line? The caret symbol
 `^` is an `anchor` character used to match a line start. It has an inverse,
@@ -197,11 +198,17 @@ grep -E 'e$' grep_text.txt
 ```
 That'd match all lines ending  with the char `e`.
 
-Suppose you want to match all text that starts with `a` or `b` in some file `target.txt. What pattern would you use for that? One might say, `grep -E `^a|b target.txt` but is that so? Examining that expression, here's an explanation for what it matches. It matches either a line starting with `a` , that `^a` that is, or , any line with the character `b`. The `|` is what's the `OR` operator when working with `grep` regexp. Back to the challenge. The actual answer would be
-`grep -E ^[a|b] target.txt`. This would match all lines starting with
- either a or b, not all lines that either start with `a` or have the character `b` as it was in the wrong answer example.
+Suppose you want to match all text that starts with `a` or `b` in some file `target.txt`, what pattern would you use for that? There's more than one way to get the right effect. Let's examine one wrong solution to this:
 
-How about matching all lines that have characters 'p or m' or that end with `e`? That would be. 
+```sh
+grep -E `^a|b target.txt
+```
+
+It matches either a line starting with `a` , that `^a` that is, or , any line with the character `b`. The `|` is what's the `OR` operator when working with `grep` regexp. Back to the challenge. A sample effective answer would have been
+`grep -E ^[a|b] target.txt`.
+This matches all lines starting with  either a or b, not all lines that either start with `a` or have the character `b` as it was in the wrong answer example.
+
+How about matching all lines that have characters 'p or m' or that end with `e`? That can be done with:
 ```sh
 grep -E '[p|m,e^]' grep_text.txt
 ```
@@ -228,7 +235,7 @@ e[a-z]$
 Then use the pattern file to find matches with the `-f` flag. 
 
 ```sh
-grep -f patterns.txt grep_text
+grep -f patterns.txt grep_text.txt
 ```
 
 You can also add grep options to the file.
