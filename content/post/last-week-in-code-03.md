@@ -51,7 +51,7 @@ Some you probably haven't learnt about yet.
 
 
 ### News updates
-- [Copy Fail](https://github.com/theori-io/copy-fail-CVE-2026-31431)
+- [Copy Fail](https://www.youtube.com/watch?v=wQ914geKOcw)
 
 ### Nice reads
 - [Don't delegate understanding](https://stephango.com/understand)

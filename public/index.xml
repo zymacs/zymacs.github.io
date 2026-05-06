@@ -16,6 +16,13 @@
       <description>&lt;p&gt;If something in my surroundings looks too good I can&#39;t stop thinking&#xA;how to make it look better. Maybe its ADHD but that&#39;s thrown around too much these days its hard to&#xA;tell who&#39;s just making things up. But anyways. I looked into modding my&#xA;alacritty terminal just out of curiosity. I have been using it as it was&#xA;out of the box for a while. But I felt bored and thought modding it would be&#xA;a good pass time.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Grep Fu Basics</title>
+      <link>//localhost:1313/post/grep/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/grep/</guid>
+      <description>&lt;p&gt;If you have used  Linux before, you have most probably heard about Grep, Awk and Sed.&#xA;These are super useful wordsmithing  tools available on all Unix and Unix-like systems.&#xA;Learning all that each can do is an insurmountable task and I&amp;rsquo;m sure you&amp;rsquo;d stand with me on that.&#xA;But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.&#xA;In this article we&amp;rsquo;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Last Week in Code 003</title>
       <link>//localhost:1313/post/last-week-in-code-03/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>

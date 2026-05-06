@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python3 on Zymacs</title>
-    <link>//localhost:1313/categories/python3/</link>
+    <link>//localhost:43103/categories/python3/</link>
     <description>Recent content in Python3 on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/python3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:43103/categories/python3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Python3 on Linux</title>
-      <link>//localhost:1313/post/installing-python3-on-linux/</link>
+      <link>//localhost:43103/post/installing-python3-on-linux/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
+      <guid>//localhost:43103/post/installing-python3-on-linux/</guid>
       <description>&lt;p&gt;Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, we&amp;rsquo;ll install it in the next section.&lt;/p&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s update and upgrade your system&lt;/p&gt;&#xA;&lt;p&gt;If you are on Ubuntu, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Arch, run:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -Syu&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Fedora:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo dnf upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&lt;/p&gt;&#xA;&lt;p&gt;Ubuntu&lt;/p&gt;</description>
     </item>
   </channel>

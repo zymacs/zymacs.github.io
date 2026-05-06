@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text-Manipulation on Zymacs</title>
+    <link>//localhost:43103/tags/text-manipulation/</link>
+    <description>Recent content in Text-Manipulation on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:43103/tags/text-manipulation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grep Fu Basics</title>
+      <link>//localhost:43103/post/grep/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:43103/post/grep/</guid>
+      <description>&lt;p&gt;If you have used  Linux before, you have most probably heard about Grep, Awk and Sed.&#xA;These are super useful wordsmithing  tools available on all Unix and Unix-like systems.&#xA;Learning all that each can do is an insurmountable task and I&amp;rsquo;m sure you&amp;rsquo;d stand with me on that.&#xA;But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.&#xA;In this article we&amp;rsquo;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
