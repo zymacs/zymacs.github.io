@@ -23,11 +23,16 @@ googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your 
 
 
 
+[Params.socials]
+  bluesky = "https://bsky.app/profile/zymacs.bsky.social"
+  github = "https://github.com/zymacs"
+
 
 [Params.Author]
    name = "Zymacs"
-   bio = "Zymacs's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+   bio = "Programmer | Learner | Tinkerer"
    avatar = "img/avatar.png"
+   
 
 
 [Params.logo]

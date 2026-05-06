@@ -1330,3 +1330,18 @@ html.js body.body div.container.container--outer div.wrapper.flex div.primary ma
 .thumbnail__image {
     max-width: 150px;
 }
+
+.authorbox__socials  {
+    margin-top: 6px;
+}
+
+.authorbox__socials i {
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.footer__hireme-section {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
