@@ -15,7 +15,7 @@ Learning all that each can do is an insurmountable task and I'm sure you'd stand
 But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.
 In this article we'll look at one of the tools: *Grep*.
 
-Grep in full stands for `Global Regular Expression Print`. It's a text search tool that was made by Brian Kernighan, the author of the C programming language (link at the bottom). 
+Grep in full stands for `Global Regular Expression Print`. It's a text search tool that was made by Ken Thompson (in one night). Link to a story on that at the bottom.
 
 In this article we'll look at common problems you can run into that can be solved with Grep, including some regex solutions.
 I'll also attach a link to a resource that helped me understand how to use regexp at the end. 
@@ -247,14 +247,12 @@ grep -Ef patterns.txt grep_text.txt
 ```
 
 
-
-_Piping output_
-Pipelining is passing output from one program as input to the next. You could check 
+In case you don't know what is is, pipelining is passing output from one program as input to the next. You could check 
 out this [ComputerPhile video](https://www.youtube.com/watch?v=bKzonnwoR2I) on the details of that. We have looked at how to provide alternative
-patterns against which to match but have not looked at how to match all supplied patterns. Say, how to match a text that satisfies pattern A and pattern B and .. .. as many as are supplied.  That can be done with linux piping.
+patterns against which to match but have not looked at how to match all supplied patterns. Say, how to match a text that satisfies pattern A and pattern B and .. .. as many as are supplied.  That can be done with linux pipelining.
 Don't confuse the pipe operator here with the previously discussed `|` OR operation with regexp. Here's an example to match all lines that
 both start with the character `p` and end with the character `d`. 
-#### Matching text that contains all defined expressions (AND)
+
 ```sh
 grep '^p' grep_text.txt | grep 'd$'
 ```

@@ -95,7 +95,7 @@ These are super useful wordsmithing  tools available on all Unix and Unix-like s
 Learning all that each can do is an insurmountable task and I&rsquo;m sure you&rsquo;d stand with me on that.
 But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.
 In this article we&rsquo;ll look at one of the tools: <em>Grep</em>.</p>
-<p>Grep in full stands for <code>Global Regular Expression Print</code>. It&rsquo;s a text search tool that was made by Brian Kernighan, the author of the C programming language (link at the bottom).</p>
+<p>Grep in full stands for <code>Global Regular Expression Print</code>. It&rsquo;s a text search tool that was made by Ken Thompson (in one night). Link to a story on that at the bottom.</p>
 <p>In this article we&rsquo;ll look at common problems you can run into that can be solved with Grep, including some regex solutions.
 I&rsquo;ll also attach a link to a resource that helped me understand how to use regexp at the end.</p>
 <p>The general synopsis is as follows</p>
@@ -213,13 +213,11 @@ For instance, this saved under any name say patterns.txt</p>
 </span></span><span style="display:flex;"><span>e[a-z]$
 </span></span></code></pre></div><p>Now run</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -Ef patterns.txt grep_text.txt
-</span></span></code></pre></div><p><em>Piping output</em>
-Pipelining is passing output from one program as input to the next. You could check
+</span></span></code></pre></div><p>In case you don&rsquo;t know what is is, pipelining is passing output from one program as input to the next. You could check
 out this <a href="https://www.youtube.com/watch?v=bKzonnwoR2I">ComputerPhile video</a> on the details of that. We have looked at how to provide alternative
-patterns against which to match but have not looked at how to match all supplied patterns. Say, how to match a text that satisfies pattern A and pattern B and .. .. as many as are supplied.  That can be done with linux piping.
+patterns against which to match but have not looked at how to match all supplied patterns. Say, how to match a text that satisfies pattern A and pattern B and .. .. as many as are supplied.  That can be done with linux pipelining.
 Don&rsquo;t confuse the pipe operator here with the previously discussed <code>|</code> OR operation with regexp. Here&rsquo;s an example to match all lines that
 both start with the character <code>p</code> and end with the character <code>d</code>.</p>
-<h4 id="matching-text-that-contains-all-defined-expressions-and">Matching text that contains all defined expressions (AND)</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#39;^p&#39;</span> grep_text.txt | grep <span style="color:#e6db74">&#39;d$&#39;</span>
 </span></span></code></pre></div><p>That&rsquo;s more than you need for basic grep usage. There&rsquo;ll probably be times when you need to get beyond the basics and I have attached a link to the GNU manual that you can ref for that. You can
 check out <code>man grep</code> too.  Most of your usage of grep will not be as described here, with plain text that is. It&rsquo;ll usually be piping output  other  programs  (at times including grep) depending on the situation. But with what you now have, you can make your own pattern combos and do all sorts of text matching with it.</p>
