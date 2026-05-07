@@ -74,4 +74,4 @@ And that's it, the transaction is complete.
 
 In the article I used the application layer protcol `http 1.0` for demonstration but it could be any other application layer protocol say smtp, or ftp or any other.
 
-I am writing this as a means to internalize what what I'm reading about networks and also, to have notes to build upon when I learn more. If you learnt something from reading this, that's a plus for me. I will keep updating it as my knowledge of networks grows.
+I am writing this as a means to internalize what what I'm reading about networks and also, to have notes to build upon when I learn more. If you learnt something from reading this, that's a plus for me. I will keep updating it as my knowledge about computer networking grows.
