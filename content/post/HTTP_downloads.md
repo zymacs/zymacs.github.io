@@ -65,7 +65,7 @@ and data is streamed to the client over the TCP connection till its downloaded i
 
 ### Tear down phase: Connection conclusion
 ![Tear down phase: Wireshark](assets/img/3_way_end.png)
-Data transfer has come to completion without error. The server then initiates termination of the TCP connection with a two way handhshake for HTTP.
+Data transfer has come to completion without error. The server then initiates termination of the TCP connection with a three way handhshake for HTTP.
 
 It sends a FIN packet (_I am done, closing connection_) plus an ACK acknowledging the last sent SYN by the client. The client responds with a FIN and ACK too. The FIN says it's done too and the ACK acknoledges it received the FIN. The server finally sends an ACK to end the session. 
 

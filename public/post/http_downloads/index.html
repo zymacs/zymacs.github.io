@@ -129,7 +129,7 @@ The server response with the http code 200 denoting a successful request
 and data is streamed to the client over the TCP connection till its downloaded in totality.</p>
 <h3 id="tear-down-phase-connection-conclusion">Tear down phase: Connection conclusion</h3>
 <p><img src="assets/img/3_way_end.png" alt="Tear down phase: Wireshark">
-Data transfer has come to completion without error. The server then initiates termination of the TCP connection with a two way handhshake for HTTP.</p>
+Data transfer has come to completion without error. The server then initiates termination of the TCP connection with a three way handhshake for HTTP.</p>
 <p>It sends a FIN packet (<em>I am done, closing connection</em>) plus an ACK acknowledging the last sent SYN by the client. The client responds with a FIN and ACK too. The FIN says it&rsquo;s done too and the ACK acknoledges it received the FIN. The server finally sends an ACK to end the session.</p>
 <p>And that&rsquo;s it, the transaction is complete.</p>
 <p>In the article I used the application layer protcol <code>http 1.0</code> for demonstration but it could be any other application layer protocol say smtp, or ftp or any other.</p>
