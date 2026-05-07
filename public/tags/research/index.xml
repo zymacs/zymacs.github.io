@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Zymacs</title>
+    <link>//localhost:1313/tags/research/</link>
+    <description>Recent content in Research on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why smaller files take longer to download</title>
+      <link>//localhost:1313/post/why_small_files_take_long_to_download/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/why_small_files_take_long_to_download/</guid>
+      <description>&lt;p&gt;This article is going to have two children since needs some&#xA;prerequisite knowledge that would be too much to cram into&#xA;one article. I mean I could have said go read up on X then&#xA;come back but I read up on X and I could as well send you to my articles on X right?&#xA;Anyways. Say you have 1000 small files each 1kb in size, why is it that total time taken to transfer these all other factors kept constant is way more than time it takes to download a single file&#xA;that is 1000*1kb in size? Or for the other part of the article, if you have copied files between disks before, which I am sure you have, ever noticed how the speed falls when during data transfer, the&#xA;system encouters some really small size files? Its counter intutitive. I mean I&amp;rsquo;d expect smaller files to be copied over faster, and have faster download speeds also than bigger ones. But&#xA;when you understand what&amp;rsquo;s going on under the hood , you learn why it ain&amp;rsquo;t as simple as that. In this article we shall have a high&#xA;level overview, trust me there&amp;rsquo;s so much to cover we&amp;rsquo;ll have only hthat, for why this is so. Why transfers are slower for smaller files and why downloads take longer for these small files.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

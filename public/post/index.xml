@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2026 20:56:47 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP_downloads</title>
+      <link>//localhost:1313/post/http_downloads/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/http_downloads/</guid>
+      <description>&lt;p&gt;You have downloaded files before. And even if you have never, if&#xA;you are reading this , your phone just did. So anyone using the internet has consciously or not downloaded files before. But how&#xA;does that work? What happens between when you click the download&#xA;button and when the file is fully downloaded?&lt;/p&gt;&#xA;&lt;p&gt;To demonstrate that we need to first state some word definitions.&#xA;Client: Any device that is capable of obtaining data from a server.&#xA;Server: Any device that is capable of giving out information to&#xA;clients.&#xA;Download (action): Data transfer over a network from a server&#xA;to a client.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Modding Alacritty</title>
       <link>//localhost:1313/post/modding-alacritty/</link>
