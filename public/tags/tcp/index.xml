@@ -13,7 +13,7 @@
       <link>//localhost:1313/post/http_downloads/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/http_downloads/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s look at what happens when from download instantiation by some download client to&#xA;when all data is in its completeness transferred from the remote location to the downloader&amp;rsquo;s storage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;getting-a-uri-to-a-remote-resource&#34;&gt;Getting a uri to a remote resource&lt;/h2&gt;&#xA;&lt;p&gt;You have been given some link of the form &lt;code&gt;http://somesite.com:8031/file.txt&lt;/code&gt; to a remote file.&#xA;From the URL we can tell the remote file is located at / and its called &lt;code&gt;file.txt&lt;/code&gt;.&#xA;This website is on the internet. Its hosted somewhere off your system accessible via a network.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s look at what happens from download instantiation by some download client to&#xA;when all data in its completeness is transferred from the remote location to the downloader&amp;rsquo;s storage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;getting-a-uri-to-a-remote-resource&#34;&gt;Getting a uri to a remote resource&lt;/h2&gt;&#xA;&lt;p&gt;You have been given some link of the form &lt;code&gt;http://somesite.com:8031/file.txt&lt;/code&gt; to a remote file.&#xA;From the URL we can tell the remote file is located at / and its called &lt;code&gt;file.txt&lt;/code&gt;.&#xA;This website is on the internet. Its hosted somewhere off your system accessible via a network.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

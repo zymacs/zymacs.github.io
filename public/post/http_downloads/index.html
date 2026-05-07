@@ -9,7 +9,7 @@
 		<meta property="og:url" content="//localhost:1313/post/http_downloads/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="The anatomy of a download over TCP">
-  <meta property="og:description" content="Let’s look at what happens when from download instantiation by some download client to when all data is in its completeness transferred from the remote location to the downloader’s storage.
+  <meta property="og:description" content="Let’s look at what happens from download instantiation by some download client to when all data in its completeness is transferred from the remote location to the downloader’s storage.
 Getting a uri to a remote resource You have been given some link of the form http://somesite.com:8031/file.txt to a remote file. From the URL we can tell the remote file is located at / and its called file.txt. This website is on the internet. Its hosted somewhere off your system accessible via a network.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -94,8 +94,8 @@ Getting a uri to a remote resource You have been given some link of the form htt
 		<img class="thumbnail__image" src="/img/router.jpg" alt="The anatomy of a download over TCP">
 		
 	</figure><div class="content post__content clearfix">
-			<p>Let&rsquo;s look at what happens when from download instantiation by some download client to
-when all data is in its completeness transferred from the remote location to the downloader&rsquo;s storage.</p>
+			<p>Let&rsquo;s look at what happens from download instantiation by some download client to
+when all data in its completeness is transferred from the remote location to the downloader&rsquo;s storage.</p>
 <h2 id="getting-a-uri-to-a-remote-resource">Getting a uri to a remote resource</h2>
 <p>You have been given some link of the form <code>http://somesite.com:8031/file.txt</code> to a remote file.
 From the URL we can tell the remote file is located at / and its called <code>file.txt</code>.
@@ -107,7 +107,7 @@ Let&rsquo;s assume the handler app for downloads is a browser.</p>
 <p>The browser then  translates the link you were given to an IP address. An <a href="https://en.wikipedia.org/wiki/IP_address">IP address</a> is a unique ID for a node in a network, which in this case is the internet. This resolution is done via <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a>.</p>
 <h2 id="connection-initiation">Connection Initiation</h2>
 <p><img src="assets/img/connection_via_port.png" alt="Curl establishing connection via port">
-With the IP addres resolved, the process moves on to initiate
+With the IP address resolved, the process moves on to initiate
 a connection with the target host at port 8031. The connection is of a streaming type connection using
 the TCP protocol. Its over this TCP session that the download happens.
 It&rsquo;s lifecycle has three phases.</p>
@@ -117,9 +117,8 @@ It&rsquo;s lifecycle has three phases.</p>
 <p>Packets are smaller subdivisions of a larger message from a networks perspective. A SYN packet in
 the Transmission Control Protocol instantiates communication between two nodes on a network while an ACK packet
 acknoledges receipt of sent message. Okay, back to the point.</p>
-<p>The server acknowledges this SYN with an ACK packet that&rsquo;s with a number <code>a+1</code> (_i.e., I got <code>a</code>, now send <code>a+1</code>). It also sends its own SYN that&rsquo;s some random number <code>b</code>.</p>
-<p>The browser on receipt confirms it has recieved the server <code>SYN</code> with an ACK thats with value <code>b+1</code> (I got be, send b+1) if sending
-anything next.</p>
+<p>The server acknowledges this SYN with an ACK packet that&rsquo;s with a number <code>a+1</code> (_i.e., I got <code>a</code>, now send <code>a+1_). It also sends its own SYN that's some random number </code>b`.</p>
+<p>The browser on receipt confirms it has recieved the server <code>SYN</code> with an ACK thats with value <code>b+1</code> (<code>I got b, send b+1</code>) if sending anything next.</p>
 <p>Now the connection is established. So we move from the establishment phase of the connection to the transfer phase.</p>
 <h3 id="established-phase-data-transfer">Established phase: Data transfer</h3>
 <p><img src="assets/img/transfer_phase.png" alt="Established phase: Wireshark">

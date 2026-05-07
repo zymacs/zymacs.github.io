@@ -11,8 +11,8 @@ categories:
 ---
 
 
-Let's look at what happens when from download instantiation by some download client to
-when all data is in its completeness transferred from the remote location to the downloader's storage.
+Let's look at what happens from download instantiation by some download client to
+when all data in its completeness is transferred from the remote location to the downloader's storage.
 
 
 ## Getting a uri to a remote resource
@@ -33,7 +33,7 @@ The browser then  translates the link you were given to an IP address. An [IP ad
 ## Connection Initiation
 
 ![Curl establishing connection via port](assets/img/connection_via_port.png)
-With the IP addres resolved, the process moves on to initiate
+With the IP address resolved, the process moves on to initiate
 a connection with the target host at port 8031. The connection is of a streaming type connection using
 the TCP protocol. Its over this TCP session that the download happens.
 It's lifecycle has three phases.
@@ -48,10 +48,9 @@ Packets are smaller subdivisions of a larger message from a networks perspective
 the Transmission Control Protocol instantiates communication between two nodes on a network while an ACK packet
 acknoledges receipt of sent message. Okay, back to the point.  
 
-The server acknowledges this SYN with an ACK packet that's with a number `a+1` (_i.e., I got `a`, now send `a+1`). It also sends its own SYN that's some random number `b`.
+The server acknowledges this SYN with an ACK packet that's with a number `a+1` (_i.e., I got `a`, now send `a+1_). It also sends its own SYN that's some random number `b`.
 
-The browser on receipt confirms it has recieved the server `SYN` with an ACK thats with value `b+1` (I got be, send b+1) if sending
-anything next.
+The browser on receipt confirms it has recieved the server `SYN` with an ACK thats with value `b+1` (`I got b, send b+1`) if sending anything next.
 
 Now the connection is established. So we move from the establishment phase of the connection to the transfer phase. 
 
