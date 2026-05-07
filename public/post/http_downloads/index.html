@@ -10,7 +10,7 @@
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="The anatomy of a download over TCP">
   <meta property="og:description" content="Let’s look at what happens when from download instantiation by some download client to when all data is in its completeness transferred from the remote location to the downloader’s storage.
-Getting a uri to a remote resource You have been given some link of the form http://somesite.com:8000/file.txt to a remote file. From the URL we can tell the remote file is located at / and its called file.txt. This website is on the internet. Its hosted somewhere off your system accessible via a network.">
+Getting a uri to a remote resource You have been given some link of the form http://somesite.com:8031/file.txt to a remote file. From the URL we can tell the remote file is located at / and its called file.txt. This website is on the internet. Its hosted somewhere off your system accessible via a network.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
@@ -97,7 +97,7 @@ Getting a uri to a remote resource You have been given some link of the form htt
 			<p>Let&rsquo;s look at what happens when from download instantiation by some download client to
 when all data is in its completeness transferred from the remote location to the downloader&rsquo;s storage.</p>
 <h2 id="getting-a-uri-to-a-remote-resource">Getting a uri to a remote resource</h2>
-<p>You have been given some link of the form <code>http://somesite.com:8000/file.txt</code> to a remote file.
+<p>You have been given some link of the form <code>http://somesite.com:8031/file.txt</code> to a remote file.
 From the URL we can tell the remote file is located at / and its called <code>file.txt</code>.
 This website is on the internet. Its hosted somewhere off your system accessible via a network.</p>
 <p>So you open your browser or , lets say, you just click the link to instantiate the download action.
@@ -108,7 +108,7 @@ Let&rsquo;s assume the handler app for downloads is a browser.</p>
 <h2 id="connection-initiation">Connection Initiation</h2>
 <p><img src="assets/img/connection_via_port.png" alt="Curl establishing connection via port">
 With the IP addres resolved, the process moves on to initiate
-a connection with the target host at port 8000. The connection is of a streaming type connection using
+a connection with the target host at port 8031. The connection is of a streaming type connection using
 the TCP protocol. Its over this TCP session that the download happens.
 It&rsquo;s lifecycle has three phases.</p>
 <h3 id="connection-setup-phase-the-three-way-handshake-summary">Connection setup phase: The three way handshake summary</h3>

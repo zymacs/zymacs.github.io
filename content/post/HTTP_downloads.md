@@ -17,7 +17,7 @@ when all data is in its completeness transferred from the remote location to the
 
 ## Getting a uri to a remote resource
 
-You have been given some link of the form `http://somesite.com:8000/file.txt` to a remote file.
+You have been given some link of the form `http://somesite.com:8031/file.txt` to a remote file.
 From the URL we can tell the remote file is located at / and its called `file.txt`.
 This website is on the internet. Its hosted somewhere off your system accessible via a network. 
 
@@ -34,7 +34,7 @@ The browser then  translates the link you were given to an IP address. An [IP ad
 
 ![Curl establishing connection via port](assets/img/connection_via_port.png)
 With the IP addres resolved, the process moves on to initiate
-a connection with the target host at port 8000. The connection is of a streaming type connection using
+a connection with the target host at port 8031. The connection is of a streaming type connection using
 the TCP protocol. Its over this TCP session that the download happens.
 It's lifecycle has three phases.
 
