@@ -32,7 +32,7 @@ The browser then  translates the link you were given to an IP address. An [IP ad
 
 ## Connection Initiation
 
-![Curl establishing connection via port](assets/img/connection_phase.png)
+![Curl establishing connection via port](assets/img/connection_via_port.png)
 With the IP addres resolved, the process moves on to initiate
 a connection with the target host at port 8000. The connection is of a streaming type connection using
 the TCP protocol. Its over this TCP session that the download happens.
