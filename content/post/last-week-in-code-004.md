@@ -14,23 +14,26 @@ But that's not really what happened. I only wrote 3 articles.  There was some le
 _Teaching, the best way to learn_
 
 ## The Protege Effect.
-I have installed and reinstalled Arch quite a number of times but all of that was me following already written guides. When I set out to do the task my self,
-to write a guide on how to install Arch, I realized I did not know even quarter as much as I thought I did. There was this drive to be able to explain why some
-command came after the other and why some step did not have to be done in some way. I found myself reading articles on how differeant parts of the OS work that I
-don't think I'd have ever gotten the motivation to read if it wasn't for the writing task. And this phenomenon carried across all articles.
+I have installed and reinstalled Arch quite a number of times but,all of that was me following guides just for the sake of getting a working system.
+The installation process is very involved and I'd decided I'd have my own notes on it.
+So one of the days last week I set out to write a guide on how to install Arch. But then I learn't all along I wasn't understanding any of what the steps meant that I followed from old guides.
+I felt a responsibility to know what I was teaching. I found myself reading articles on how differeant parts of the OS worked that I
+don't think I'd ever have gotten the motivation to read, if it wasn't for the teaching task I had. And, I found that this responsibility to understand was
+triggered every time I needed to explain something to someone else. 
 
-I have way more drafts than what's published for that reason.  I think the only article's I let out, were the one on TCP (Which wasn't my intended article as what I intended to write about turned out
-to have needed way more reading before I'd be able to explain it in my own words). I collected scraps from my attempts to write about why downloads are slower with small files
-and zeroed on the easier alternative, [how TCP downloads work](https://zymacs.github.io/post/http_downloads/). Then for the article on [Probability](https://zymacs.github.io/post/probability_basics/), thinking about it from the lens which I did made me understand it
-more intuitively and arrive at conclusions of my own (like, all probability could be expressed in term's of Baye's theorem).
+I have way more drafts than  published articles for that reason.  The only articles I was able to publish were : one on TCP (Which wasn't my intended article as what I intended to write about turned out
+to have needed way more reading before I'd be able to explain it in my own words) and one on Probability.
 
-Now I tried to follow it up with an article on Baye's theorem
-but after 3 days of reading , and trust me it would be so unlikely I'd fail a simple question on Baye's, I realized transferring the intuitve explanation to someone else was
-way harder than I had already acknowledged it would be. I still learnt alot about what I did not know anyways. And developed better mental models for explainign to others, and to myself.
+I collected and pieced together scraps from my networks research to write about why downloads are slower with small files. That's what I intended to write about before I switched to the easier alternative, [how TCP downloads work](https://zymacs.github.io/post/http_downloads/). Then for the article on [Probability](https://zymacs.github.io/post/probability_basics/), thinking about it from the lens which I did made me understand it
+more intuitively. And, I found that I arrived at already established conclusions from independent exploration (reverse engineering formulas that is).
+_(like, all probability could be expressed in term's of Baye's theorem)_
 
-This whole task developed in me a respect for people that know how to explain technical concepts with as much ease as they seem to have. [The Organic Chem tutor](https://www.youtube.com/@TheOrganicChemistryTutor), and [Ben Eater](https://www.youtube.com/@BenEater) or any other educator on YouTube for instance.
-It also got me interested in if this was a formally recognized means to learn since it was non trivially effective in how it deepened my understanding for the topics I read about. And
-that's how I learn't about its formal name, [the protege effect](https://www.growthengineering.co.uk/protege-effect/).
+So I then tried to follow the Probability article  up with one on Baye's theorem. But,  after 3 days of reading , and trust me I know Baye's and can pass a test on it,
+I realized transferring the intuitve explanation to someone else was levels harder. I still learnt alot about what I did not know anyways. And, I developed better mental models for explainign to others, and to myself.
+
+Also, this whole task, the difficulty of it,  developed in me a respect for people that know how to explain technical concepts. That is  with as much ease as they seem to have. [The Organic Chem tutor](https://www.youtube.com/@TheOrganicChemistryTutor), and [Ben Eater](https://www.youtube.com/@BenEater) or any other educator on YouTube for instance.
+It also got me interested in if this was a formally recognized means to learn for how  non trivially effective it was  deepening my understanding for the topics I tried to teach.
+That's how I learn't about its formal name, -> [the protege effect](https://www.growthengineering.co.uk/protege-effect/).
 
 
 
