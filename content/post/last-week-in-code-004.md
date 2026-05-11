@@ -103,7 +103,7 @@ though. I should be working on that _soon_. That and the search feature.
 
 ### Random finds
 - [WebRTC for the curios (Used by ChatGPT's low latency speech service)](https://webrtcforthecurious.com/)
-- [Since you arrived (What your browser knows about you)](https://sinceyouarrived.world/)
+- [Since you arrived (What your browser knows about you)](https://sinceyouarrived.world/taken)
 
 
 As always, I hope you learnt something from this log and hope to see you around in the next one. 
