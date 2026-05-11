@@ -57,7 +57,7 @@ _Random rant on other projects I spent my time on_
 
 ## In other projects
 
-_Scripting_
+### _Scripting_
 
 Scripting. How much efficiency can be gained from the smallest of solutions and the importance of small but efficient scripts is , I think, something that's not given as much attention as it deserves.
 A script to make sure you don't commit your passwords to github. A script to clean your downloads folder. A script to deal with port assignment. A script to make sure your directory structure
@@ -75,7 +75,7 @@ AI written code and the sense of ownership. I am hoping to add another to handle
 more value than its given. Interesting as I was searching for folk online to corroborate my sentiments I found [this video](https://www.youtube.com/watch?v=aqfsoTZ4PHY) speaking along the same lines.
 
 
-_A radio server_
+### _A radio server_
 Imagine having a streaming service where you control the EPG. Or  one that could grow to have some AI agents act as DJ's but on your own music doing what you configure them to do. Well,
 I'd day that's imagining having your own broadcasting station and I made one step towards that when I set up streaming with [Snapcast](https://github.com/snapcast/snapcast) last week. I think I mentioned this somewhere among the
 docker projects in last week's episode but I probably did not link it. Here's an exposed endpoint that's always live when I am. 
