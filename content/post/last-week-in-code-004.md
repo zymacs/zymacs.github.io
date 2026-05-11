@@ -3,6 +3,8 @@ title: 'Last Week in Code 004'
 thumbnail: 'img/lwic.png'
 date: 2026-05-11T17:41:08+03:00
 draft:  false
+tags:
+ - lwic
 ---
 
 
