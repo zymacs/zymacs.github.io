@@ -88,17 +88,17 @@ though. I should be working on that _soon_. That and the search feature.
 ## In other news
 
 ### News Updates
-- [Google fraud defence is just WEI]()
-- [France moves to break encrypted messaging]()
-- [Meta's embrace of AI is making it's employee's miserable]()
+- [Google fraud defence is just WEI](https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/)
+- [France moves to break encrypted messaging](https://reclaimthenet.org/france-moves-to-break-encrypted-messaging)
+- [Meta's embrace of AI is making it's employee's miserable](https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html)
 
 ### Cool articles
-- [Three Inverse Laws of AI]()
+- [Three Inverse Laws of AI](https://susam.net/inverse-laws-of-robotics.html)
 
 
 ### Random finds
-- [WebRTC for the curios (Used by ChatGPT's low latency speech service)]()
-- [Since you arrived (What your browser knows about you)]()
+- [WebRTC for the curios (Used by ChatGPT's low latency speech service)](https://webrtcforthecurious.com/)
+- [Since you arrived (What your browser knows about you)](https://sinceyouarrived.world/)
 
 
 As always, I hope you learnt something from this log and hope to see you around in the next one. 
