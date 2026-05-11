@@ -79,7 +79,7 @@ _A radio server_
 Imagine having a streaming service where you control the EPG. Or  one that could grow to have some AI agents act as DJ's but on your own music doing what you configure them to do. Well,
 I'd day that's imagining having your own broadcasting station and I made one step towards that when I set up streaming with [Snapcast](https://github.com/snapcast/snapcast) last week. I think I mentioned this somewhere among the
 docker projects in last week's episode but I probably did not link it. Here's an exposed endpoint that's always live when I am. 
-- [indieradion](indieradio.keithnambale.com/radio.mp3)
+- [indieradio.keithnambale.com](indieradio.keithnambale.com/radio.mp3)
 
 ## Misc.
 
