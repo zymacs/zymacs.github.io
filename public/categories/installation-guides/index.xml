@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation Guides on Zymacs</title>
+    <link>//localhost:1313/categories/installation-guides/</link>
+    <description>Recent content in Installation Guides on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/installation-guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Arch</title>
+      <link>//localhost:1313/post/installing-arch/</link>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-arch/</guid>
+      <description>&lt;p&gt;So you want to install Arch? You want to &lt;em&gt;use Arch btw&lt;/em&gt;? Hehehe. Speaking from experience, you might be doing this some time again in the future so you should probably write one such article yourself.&lt;/p&gt;&#xA;&lt;p&gt;But that&amp;rsquo;s after we get through the installation.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s make some assumptions about you. You are not setting up dual boot. You already&#xA;have an Arch installation medium ready to use. You want to install Arch the manual way: no&#xA;helper scripts that is. You got stable internet connection. Most preferrably, stable wired connection over wifi.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

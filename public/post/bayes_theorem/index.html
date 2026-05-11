@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baye&#39;s Theorem - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/bayes_theorem/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Baye&#39;s Theorem">
+  <meta property="og:description" content="So what is Baye’s theorem? In a previous article I wrote about Probability and tried to cover as much as I could without relying so much on the formal representation of concepts. I would like to do that here too but it might not be as light as the Probability article was. I’ll try to make it light though.
+We have probably already covered the core concepts of it even if you don’t know what those are yet. That is, if you followed the previous article. But even if you didn’t, I presume by deciding to read about Baye’s you already have some information about probability. If you don’t, please read up on that first.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-09T00:00:00+00:00">
+    <meta property="article:tag" content="Probability">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/progress_updates/in_pipeline/">
+				
+				<span class="menu__text">In pipeline</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Baye&#39;s Theorem</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-09T00:00:00Z">May 09, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/maths/" rel="category">Maths</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/bayez.jpg" alt="Baye&#39;s Theorem">
+		
+	</figure><div class="content post__content clearfix">
+			<p>So what is Baye&rsquo;s theorem? In a previous article I wrote about Probability
+and tried to cover as much as I could without relying so much on the formal
+representation of concepts. I would like to do that here too but it might
+not be as light as the Probability article was. I&rsquo;ll try to make it light though.</p>
+<p>We have probably already covered the core concepts of it even if you don&rsquo;t know what those are
+yet. That is, if you followed the previous article.
+But even if you didn&rsquo;t, I presume by deciding to read about Baye&rsquo;s you already
+have some information about probability. If you don&rsquo;t, please read up on that first.</p>
+<p>Baye&rsquo;s theorem is a widely applicable Maths concept even far beyond mathematics. I like to think of it as how a means of updating beliefs with increased knowlegde. But let&rsquo;s discover that shall we?</p>
+<p>We have a bag. This bag has bean seeds in it. We are told that 1/4 of these beans is sick.
+And the rest, 3/4 that is, is healthy. What is the probability of , given a random
+blind picking, selecting a healthy bean? Its an easy 3/4 right? But why? If you read
+my previous article on probability you remember I mentioned every probability is contingent
+on a prior. Can you tell what the prior is in this instance? It&rsquo;s a real important
+concept to understand the rest of the article.</p>
+<p>Here, I&rsquo;ll help you out. Its the given that on picking, whatever comes out
+of the bag will be beans. That is, the statement has an embedded prior belief for the
+probability of picking beans being an absolute certainty.  P(Beans) = 1. So the 3/4 for
+healthy beans given the whole bag contains beans could be restated as 3/4 of the absolute probability that is 1, thats 3/4. 1 because its a certainty any picking will result in picking
+beans.</p>
+<p>Still don&rsquo;t get the relevance for that? Well you will after this news flash.
+So NEWS FLASH, new info: 2/3 of the bag&rsquo;s contents is peas and the balance is for beans.
+Well, a belief got squashed. We thought beans were the only seeds in the bag.
+Now we know they are but a fraction of the whole.
+Given this new information, what is the probility that on a random blind picking from <em>the bag, note that, from the bag not from the beans</em>,
+we select a healthy seed given it is a bean ; P(H|B)?</p>
+<p>Well, in the world of beans, the fraction for health is already given. It is a 3/4.</p>
+<p>Our answer now deals with the probability of getting a healthy seed given its a bean.</p>
+<p>The formal statement for that is</p>
+<pre tabindex="0"><code>P(H|B) = 3/4 
+</code></pre><p>Currently, as far as we know that is, only seeds that are healthy are the healthy beans.
+But then we get a call from the CDC that the probability for a seed in said bag being healthy
+is 0.6. Oh, another belief got squashed! Bean&rsquo;s ain&rsquo;t the only healthy seeds, there&rsquo;s other healthy seeds than beans. Now we have the same question restated. What is the probability of choosing a healthy seed given we choose a bean?</p>
+<p>How about we flip that? Probability of picking a bean given we pick a healthy seed?
+Just a swap of variables.</p>
+<p>probability of picking a bean. We could keep adding more and
+more information but that structure won&rsquo;t change much.</p>
+<p>It obviosly isn&rsquo;t. 3/4 of the whole is not beans since beans don&rsquo;t make up all the bag&rsquo;s contents but 1/3 of them. Our prior now has a prior, the probability of picking a seed.</p>
+<p>We thought all that was contained in the bag was beans and that picking from the bag was picking from beans. That it was therefore irrelevant to consider if picking would result in anything other than beans so we gave a quick 3/4. However, this new information that 2/3 of the bag&rsquo;s contents
+ain&rsquo;t beans clarified there&rsquo;s more to the bag than beans. Beans are not the whole, beans are part of a larger whole in which whole they occupy not (1) but 1/3.</p>
+<p>So now, to select a healthy bean we should also consider how likely it is that we select beans.
+Therefore, our answer shifts from 3/4 to &hellip; 3/4*1/3?</p>
+<p>We have a bag of seeds. 2/5 of the seeds are beans and the rest, that is , 3/5 is peas. Do you notice how your brain quickly reframes this as the probability for picking a bean given a random blind selection? Anyways that&rsquo;s not so relevant to our discussion. So we are also told
+1/4 of the beans have weevils while for the peas, its an eight (1/8). Let&rsquo;s restate all
+this info coz it might be hard to track in memory</p>
+<pre tabindex="0"><code>P(S) # we&#39;ll talk about this later, for now you can ignore it
+P(Beans) = 2/5
+P(Peas)  = 3/5
+</code></pre><p>Let&rsquo;s state the theorem then explain it.</p>
+<pre tabindex="0"><code>P(A|B) = (P(B|A)*P(A))/P(B)
+</code></pre><p>That is, the probability of some outcome A given some outcome B is the value of the fraction of A that is B in the whole divided by the fraction of the whole that is B. Does that <code>whole</code> and <code>fraction</code> language sound strange to you? Well I hope by the end of this article it won&rsquo;t.</p>
+<p>I am of the opinion that all probability even in its simplest form is contingent on a prior event or follows the above stated rule. Doubt me? Well let me explain.
+The common example for probability is the coin toss. It&rsquo;s usually stated in the following terms. On a fair coin toss, what is the probability of heads coming up? And the answer is a 1/2</p>
+<pre tabindex="0"><code>P(H) =  probability of heads
+P(T) =  probability of tails
+P(H) =  1/2
+</code></pre><p>But what about the given? I mean, the coin toss. It is silently baked in. Let&rsquo;s uncover it.
+The probability of a head or a tail is contingent on there being a coin toss. Without the
+coin toss, there is no heads or tails outcome. The probability of the coin toss is an
+assumed certainty of 1 with the events heads and tails being its subsets.</p>
+<p>That all probability is conditional. Here. Lets &ldquo;Bayesianize&rdquo;
+the coin toss probability. When someone asks for what the probability is  the coin will land on when a coin say, a head when its tossed, what they are really stating is the probability of a head given a coin toss. There&rsquo;s a silent whole, a total probability for tossing the coin based on which all other outcomes
+follow, including what side it will land on.</p>
+<p>So its not just P(H) is really P(H|T). The value of the probability of a head landing given a
+coin toss  and divide that by the probability of a coin toss. Thats (1/2 * 1)/1.
+Think that an over stretch?</p>
+<p>Now how do we solve for that? We get the probability of tossing a coin
+Here. Let&rsquo;s rephrase the simplest probability example , in terms
+of Bayes.
+Actually, first, let&rsquo;s look at it like it isn&rsquo;t.</p>
+<p>If you&rsquo;ve heard this so many times, just bear with it, its probably that its an effective
+example is why its that commonly used. Anyways. A bag of balls. 4 Green, 6 Blue.
+Not your usual blue and black so that&rsquo;s not so repetitive I guess.
+So the question then is: What is the probability of choosing a Green ball given a random blind picking? The answer is a simple 6/10. But did you know this is the same as the probabilty
+for choosing a Green ball given we choose a ball? That the initial is also contingent on some vent? Keep that somewhere.</p>
+<p>Let&rsquo;s go back to &rsquo;normal&rsquo; conditional probability a bit. So now let&rsquo;s rephrase the question. We are asked for the probability of choosing a Green ball given on the first picking we chose
+a Blue ball and the picking was without replacement.
+So the probability of choosing a Blue ball on the first picking is 4/10.
+When we pick again after this event, there&rsquo;s two possible
+chances, a red or a blue. The chance for the green is now 6/9 since the number of balls fell
+after picking a blue in the first round. Now the probability for this to be the path, that
+is, for the first picking to be a blue and the second a green is: 4/10*6/9.</p>
+<p><a href="https://youtu.be/OByl4RJxnKA?si=En_JpAowNkufxk4x">https://youtu.be/OByl4RJxnKA?si=En_JpAowNkufxk4x</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/probability/" rel="tag">Probability</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/probability_basics/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Probability Intuition : The Basics</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/last-week-in-code-004/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Last Week in Code 004</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/progress_updates/in_pipeline/">In pipeline</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-004/">Last Week in Code 004</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/probability_basics/">Probability Intuition : The Basics</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/http_downloads/">The anatomy of a download over TCP</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">Golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="Go">Go (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="Golang">Golang (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

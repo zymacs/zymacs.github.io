@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Zymacs</title>
+    <link>//localhost:39405/categories/</link>
+    <description>Recent content in Categories on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:39405/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maths</title>
+      <link>//localhost:39405/categories/maths/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/maths/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>//localhost:39405/categories/networking/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Setup</title>
+      <link>//localhost:39405/categories/linux-setup/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:39405/categories/linux-setup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux Tools</title>
+      <link>//localhost:39405/categories/linux-tools/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/linux-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WeeklySeries</title>
+      <link>//localhost:39405/categories/weeklyseries/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/weeklyseries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>//localhost:39405/categories/security/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computers</title>
+      <link>//localhost:39405/categories/computers/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/computers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Challenges</title>
+      <link>//localhost:39405/categories/challenges/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:39405/categories/challenges/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>//localhost:39405/categories/development/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>//localhost:39405/categories/git/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random</title>
+      <link>//localhost:39405/categories/random/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/random/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python3</title>
+      <link>//localhost:39405/categories/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/python3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>//localhost:39405/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:39405/categories/golang/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

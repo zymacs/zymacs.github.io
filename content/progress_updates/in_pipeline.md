@@ -1,0 +1,37 @@
+---
+title: 'In pipeline'
+date: 2026-05-11
+menu:
+  main:
+   name: "In Pipeline"
+   weight: 2
+draft: false
+---
+
+This section will track all articles I plan to write, what the next article is, and what progress for the books I am currently reading. 
+
+Next article
+- Baye's theorem
+
+
+Drafted articles
+
+- How to install Arch
+- Baye's theorem
+- Why copying smaller files takes longer
+- Git: All you need to know to for functional proficiency
+- Git: How the most used commands work
+- The linux file system
+- How to create a rule based folder structure enforcer script
+- YAML: All you need to know to be
+- How does auto complete work?
+- Bash: Scripting basics for functional proficiency
+- Project: Let's write an auto complete addon for bash
+
+
+Currently reading
+| Book title | Current Part | Total Parts | Last Updated |
+| --- | --- | --- | --- |
+|Progit | 22 | 42 | nil |
+|Crafting Interpreters| nil | nil | nil |
+|The C++ Programming Language| nil | nil | nil |

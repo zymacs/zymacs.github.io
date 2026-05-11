@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Zymacs</title>
+    <link>//localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Zymacs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing python3 on Linux</title>
+      <link>//localhost:1313/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-python3-on-linux/</guid>
+      <description>Python comes pre-installed on most Linux distros. But if for whichever reason it isn&amp;rsquo;t installed on yours, here&amp;rsquo;s how to fix that;&#xA;First, let&amp;rsquo;s update and upgrade your system&#xA;If you are on Ubuntu, run:&#xA;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;For Arch, run:&#xA;sudo pacman -Syu&#xA;Fedora:&#xA;sudo dnf upgrade&#xA;Now let&amp;rsquo;s install python (plus some extra packages you will most definitely eventually need when using python)&#xA;Ubuntu</description>
+    </item>
+  </channel>
+</rss>

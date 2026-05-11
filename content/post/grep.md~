@@ -1,0 +1,223 @@
+---
+title: Grep Fu Basics
+thumbnail: 'img/linux_penguin.jpg'
+date: 2026-05-03
+draft: false
+tags:
+ - 'text-manipulation'
+categories:
+ - Linux tools
+---
+
+If you have used  Linux before, you have most probably heard about Grep, Awk and Sed.
+These are super useful wordsmithing  tools available on all Unix and Unix-like systems.
+Learning all that each can do is an insurmountable task and I'm sure you'd stand with me on that.
+But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.
+In this article we'll look at one of the tools: *Grep*.
+
+Grep in full stands for `Global Regular Expression Print`. 
+
+We'll look at common problems you can run into that can be solved with grep, including some regex solutions.
+I'll also attach a link to a resource that helped me understand how to use regexp at the end. 
+
+Okay, so we'll be using this sample text for demonstration, so you can go on and write it to some file
+say, grep_text.txt
+
+``` sh
+echo "
+bottle
+pod
+maker
+plaster
+polythene
+boots
+cops" >> grep_text.txt
+```
+
+#### 1. Naive Match
+
+``` sh
+grep bo grep_text.txt
+```
+
+#### 2. Numbered Match
+
+#### 3. Negative Match
+
+#### 4. Printing number of matching files
+
+#### 5. Printing only the matched patterns
+
+#### 6. Supplying multiple patterns to match
+
+#### 7. Matching whole words (or exact matches)
+
+#### 8. Providing context in output
+
+#### 9. Providing patterns in some file
+
+_Regexp matching_
+
+So briefly on regular expressions. They are a means to 
+
+
+#### 9. Matching start of line
+
+#### 10. Matching end of line
+
+Use cases
+- naive match
+- case insensitive match
+- negative match
+- numbered match
+- printing number of matching files
+- printing number of matches in file
+- printing names of matching files
+- show only matched pattern
+- print number together with matching line text
+- simple regex
+- Matching multiple expression
+- Printing context (A, B, C)
+- Matching whole words with -w
+- Putting patterns in a file
+--- regex
+- Matching start of line
+- Matching multiple expressions
+- Matching end of line
+
+
+** Basics
+
+- Search for a string in a file: grep "pattern" file.txt
+  
+
+- Search recursively in a directory:
+  #+begin_src sh
+  grep -r "pattern" .
+  #+end_src
+
+- Case-insensitive search:
+  #+begin_src sh
+  grep -i "pattern" file.txt
+  #+end_src
+
+** Output Control
+- Show line numbers:
+  #+begin_src sh
+  grep -n "pattern" file.txt
+  #+end_src
+
+- Only show matching parts (not whole line):
+  #+begin_src sh
+  grep -o "pattern" file.txt
+  #+end_src
+
+- Show count of matching lines:
+  #+begin_src sh
+  grep -c "pattern" file.txt
+  #+end_src
+
+- Show filenames only:
+  #+begin_src sh
+  grep -l "pattern" *.txt
+  #+end_src
+- Treat binary files as text:
+  #+begin_src sh
+  grep -al 'pattern' *.txt
+  #+end_src
+** Patterns
+- Match whole words only:
+  #+begin_src sh
+  grep -w "pattern" file.txt
+  #+end_src
+
+- Use extended regular expressions:
+  #+begin_src sh
+  grep -E "pattern1|pattern2" file.txt
+  #+end_src
+
+- Match lines not containing pattern:
+  #+begin_src sh
+  grep -v "pattern" file.txt
+  #+end_src
+
+** Context
+- Show 2 lines before and after match:
+  #+begin_src sh
+  grep -C 2 "pattern" file.txt
+  #+end_src
+
+- Show 2 lines before match only:
+  #+begin_src sh
+  grep -B 2 "pattern" file.txt
+  #+end_src
+
+- Show 2 lines after match only:
+  #+begin_src sh
+  grep -A 2 "pattern" file.txt
+  #+end_src
+
+** Files & Directories
+- Search multiple files:
+  #+begin_src sh
+  grep "pattern" file1.txt file2.txt
+  #+end_src
+
+- Recursive search with file type filtering:
+  #+begin_src sh
+  grep --include="*.log" -r "pattern" .
+  #+end_src
+
+- Exclude files:
+  #+begin_src sh
+  grep --exclude="*.bak" -r "pattern" .
+  #+end_src
+
+** Performance
+- Only search in files (ignore directories):
+  #+begin_src sh
+  grep -r --exclude-dir="dir_name" "pattern" .
+  #+end_src
+
+- Quick search, stop after first match in each file:
+  #+begin_src sh
+  grep -m 1 "pattern" file.txt
+  #+end_src
+
+** Combining Commands
+- Pipe output to grep:
+  #+begin_src sh
+  ps aux | grep "process_name"
+  #+end_src
+
+- Combine multiple patterns (extended regex):
+  #+begin_src sh
+  grep -E "error|fail|warn" file.txt
+  #+end_src
+
+- Search and highlight matches:
+  #+begin_src sh
+  grep --color=auto "pattern" file.txt
+  #+end_src
+
+
+
+That's more than you need for basic grep usage. There'll probably be times when you need to get beyond the basics and I have attached a link to the GNU manual that you can ref for that. You can
+check out `man grep` too.  Most of your usage of grep will not be as described here, with plain text that is. It'll usually be piping output  other  programs  (at times including grep) depending on the situation. But with what you now have, you can make your own pattern combos and do all sorts of text matching with it. 
+
+As an extra, here's a [ComputerPhile video](https://www.youtube.com/results?search_query=brian+kernighan+grep) in which  Brian Kernighan, Grep's author, talks about how it came to be.
+
+
+I hope you learnt something. 
+
+
+- Regexp tutorial
+  - https://youtu.be/sa-TUpSx1JA?si=kTbFEqZ0MuLdBtrI
+
+- Article source refs
+  - https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux/
+  - https://man7.org/linux/man-pages/man1/grep.1.html
+  - https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux/
+
+- Bookmark worthy refs
+  - https://www.gnu.org/software/grep/manual/grep.html
