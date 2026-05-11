@@ -21,14 +21,14 @@ don't think I'd have ever gotten the motivation to read if it wasn't for the wri
 
 I have way more drafts than what's published for that reason.  I think the only article's I let out, were the one on TCP (Which wasn't my intended article as what I intended to write about turned out
 to have needed way more reading before I'd be able to explain it in my own words). I collected scraps from my attempts to write about why downloads are slower with small files
-and zeroed on the easier alternative, [how TCP downloads work](https://zymacs.github.io/post/http_downloads/). Then for the article on Probability, thinking about it from the lens which I did made me understand it
+and zeroed on the easier alternative, [how TCP downloads work](https://zymacs.github.io/post/http_downloads/). Then for the article on [Probability](https://zymacs.github.io/post/probability_basics/), thinking about it from the lens which I did made me understand it
 more intuitively and arrive at conclusions of my own (like, all probability could be expressed in term's of Baye's theorem).
 
 Now I tried to follow it up with an article on Baye's theorem
 but after 3 days of reading , and trust me it would be so unlikely I'd fail a simple question on Baye's, I realized transferring the intuitve explanation to someone else was
 way harder than I had already acknowledged it would be. I still learnt alot about what I did not know anyways. And developed better mental models for explainign to others, and to myself.
 
-This whole task developed in me a respect for people that know how to explain technical concepts with as much ease as they seem to have. The Organic Chem tutor, and Ben Eater on YouTube for instance.
+This whole task developed in me a respect for people that know how to explain technical concepts with as much ease as they seem to have. [The Organic Chem tutor](https://www.youtube.com/@TheOrganicChemistryTutor), and [Ben Eater](https://www.youtube.com/@BenEater) or any other educator on YouTube for instance.
 It also got me interested in if this was a formally recognized means to learn since it was non trivially effective in how it deepened my understanding for the topics I read about. And
 that's how I learn't about its formal name, [the protege effect](https://www.growthengineering.co.uk/protege-effect/).
 
