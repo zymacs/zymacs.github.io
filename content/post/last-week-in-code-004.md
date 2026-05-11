@@ -1,5 +1,5 @@
 ---
-title: 'Last Week in Code 004'
+title: 'Last Week in Code E004'
 thumbnail: 'img/lwic.png'
 date: 2026-05-11T17:41:08+03:00
 draft:  false
@@ -108,4 +108,14 @@ though. I should be working on that _soon_. That and the search feature.
 - [Since you arrived (What your browser knows about you)](https://sinceyouarrived.world/taken)
 
 
-As always, I hope you learnt something from this log and hope to see you around in the next one. 
+As always, I hope you learnt something from this log and hope to see you around in the next one.
+
+
+
+Still here?
+
+_Here's an extra rant. Usually I mention certain things are a problem or try to make the point certain things should be done a certain way and get this reaction that makes it feel its just me.
+Its always really reassuring whenever I search online and find exactly the issues I stated were issues expressed as so thousands of people. Sometimes finding projects built around exactly
+the same issues. Thats what the case was with PortButler. I wrote the port mgt script only to find many have been written before all having the driving frustration that I had.
+Then the more interesting one is my sentiment on the lack of appreciation for scripting. The video I linked I found after writing this article. But one could say I took some points straight
+out of that video since it was published earlier than I posted this._
