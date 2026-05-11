@@ -32,7 +32,7 @@ This whole task developed in me a respect for people that know how to explain te
 It also got me interested in if this was a formally recognized means to learn since it was non trivially effective in how it deepened my understanding for the topics I read about. And
 that's how I learn't about its formal name, [the protege effect](https://www.growthengineering.co.uk/protege-effect/).
 
-Something wrong here. 
+
 
 ## Notes as a living document.
 
