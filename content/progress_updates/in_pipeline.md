@@ -1,11 +1,6 @@
 ---
 title: 'In pipeline'
 date: 2026-05-11
-menu:
-  main:
-   name: "In Pipeline"
-   weight: 2
-draft: false
 ---
 
 This section will track all articles I plan to write, what the next article is, and what progress for the books I am currently reading. 
