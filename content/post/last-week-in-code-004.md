@@ -115,7 +115,7 @@ As always, I hope you learnt something from this log and hope to see you around 
 Still here?
 
 _Here's an extra rant. Usually I mention certain things are a problem or try to make the point certain things should be done a certain way and get this reaction that makes it feel its just me.
-Its always really reassuring whenever I search online and find exactly the issues I stated were issues expressed as so by thousands of people. Sometimes finding projects built around exactly
+Its always really reassuring whenever I search online and find exactly the issues I stated were issues expressed as so by thousands of other people I have never met. Sometimes finding projects built around exactly
 the same issues. Thats what the case was with PortButler. I wrote the port mgt script only to find many have been written before all having the same driving frustration as I did.
 Then the more interesting one is my sentiment on the lack of appreciation for scripting. The video I linked I found after writing this article. But one could say I took some points straight
 out of that video since it was published earlier than I posted this._
