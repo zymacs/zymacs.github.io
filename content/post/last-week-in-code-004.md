@@ -67,7 +67,7 @@ the developer. Or just a normal computer user, a hobbyist maybe.
 However, getting oneself to  write these small scripts is interestingly hard.
 I mean, they are easy to write but the fact that their ROI is not understood well enough makes it hard to get one to write one for themselves. Maybe there's another reason and I'd like to hear. 
 
-I have a numer I have written for myself, other's vibe-coded. 
+I have a number I have written for myself, other's vibe-coded. 
 
 One dirty but _very efficient_ script to clean my downloads folder, and another one I vibe coded to manage port assignment. Just an aside, there's always this sense of satisfaction when I get into
 my messy downloads folder and with one command, wish all the mess away. That feeling my writing energy was not wasted. I like the port assignment script too but you know how it is with
