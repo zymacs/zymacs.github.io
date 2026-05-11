@@ -33,7 +33,7 @@ I realized transferring the intuitve explanation to someone else was levels hard
 
 Also, this whole task, the difficulty of it,  developed in me a respect for people that know how to explain technical concepts. That is  with as much ease as they seem to have. [The Organic Chem tutor](https://www.youtube.com/@TheOrganicChemistryTutor), and [Ben Eater](https://www.youtube.com/@BenEater) or any other educator on YouTube for instance.
 It also got me interested in if this was a formally recognized means to learn for how  non trivially effective it was  deepening my understanding for the topics I tried to teach.
-That's how I learn't about its formal name, -> [the protege effect](https://www.growthengineering.co.uk/protege-effect/).
+That's how I learn't about its formal name, [The Protege effect](https://www.growthengineering.co.uk/protege-effect/).
 
 
 
@@ -67,11 +67,11 @@ the developer. Or just a normal computer user, a hobbyist maybe.
 However, getting oneself to  write these small scripts is interestingly hard.
 I mean, they are easy to write but the fact that their ROI is not understood well enough makes it hard to get one to write one for themselves. Maybe there's another reason and I'd like to hear. 
 
-I have a numer I have written for myself, other's vibe-coded. ,
+I have a numer I have written for myself, other's vibe-coded. 
 
 One dirty but _very efficient_ script to clean my downloads folder, and another one I vibe coded to manage port assignment. Just an aside, there's always this sense of satisfaction when I get into
 my messy downloads folder and with one command, wish all the mess away. That feeling my writing energy was not wasted. I like the port assignment script too but you know how it is with
-AI written code and the sense of ownership. I am hoping to add another to handle my git operations after I read about git hooks. But anwyways, point is, automation and scripting has way
+AI written code and the sense of ownership. I am hoping to add another to handle my git operations after I read about git hooks. There's [one](https://github.com/zymacs/PortButler) I vibe-coded with deepseek for port management last week. But anwyways, point is, automation and scripting has way
 more value than its given. Interesting as I was searching for folk online to corroborate my sentiments I found [this video](https://www.youtube.com/watch?v=aqfsoTZ4PHY) speaking along the same lines.
 
 
