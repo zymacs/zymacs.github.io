@@ -39,13 +39,15 @@ That's how I learn't about its formal name, -> [the protege effect](https://www.
 
 ## Notes as a living document.
 
-There was some sadness during all this. Some folk , after they are done with school, never get to use any of the work they studied in class. And for that reason, they never get
-to feel the consequenes of not having written and or kept good notes. I am not one of those. I have read about the importance of writing and maintaining notes from different sources
-but did not appreaciate that advice until it was 5 years late. The fields I hope to have a career in need for me to have explanatory depth for concepts spanning 4 years of school.
+There was some sadness during all this. Some folk , after they are done with school, never get to use any of the work they studied in class. And, for that reason, they never get
+to feel the consequenes of never having written and, or kept good notes.
 
-Now that ain't the annoying part. The annoying part is I studied virtually all of the 'hard' concepts I find myself going to YouTube for! I got grade A's in some of the classes.
-But what do I have to show for it? Nothing. That feeling I am doing double work and will have to for years of notes unwritten ain't a good one. I have learnt the hard way and
-that's one of the why's for this blog, and for last week's writing activity.
+I am not one of those. I have read about the importance of writing and maintaining notes from different sources
+but did not appreaciate that advice until it was 5 years late. Which is now.  The fields I hope to have a career in need for me to have explanatory depth for concepts spanning 4 years of school.
+
+Now that ain't the annoying part. The annoying part is I studied virtually all of the 'hard' concepts I find myself going to YouTube for now!
+I got grade A's in some of the classes. But what do I have to show for it? Nothing. That feeling I am doing double work and will have to for years of notes unwritten ain't a good one.
+I have learnt the hard way and that's one of the why's for this blog, and for last week's writing activity.
 
 I find that even when the first writing drafts ain't complete, I always have somethign to return to that grows as my knowledge grows. That I don't have to spend hours again going through
 some long youtube video when I already wrote notes and explained it to myself in them. Its like , you have 5 pages explaining 3 hours of content which when you read those five pages, all

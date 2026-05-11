@@ -22,6 +22,7 @@ Drafted articles
 - How does auto complete work?
 - Bash: Scripting basics for functional proficiency
 - Project: Let's write an auto complete addon for bash
+- Working with github workflows
 
 
 Currently reading
