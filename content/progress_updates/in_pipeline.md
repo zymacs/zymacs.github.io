@@ -12,18 +12,18 @@ Next article
 
 Drafted articles
 
-- How to install Arch
-- Baye's Theorem
+- Linux: How to install Arch
+- Math: Baye's Theorem
 - Why copying smaller files takes longer
 - Git: All you need to know for functional proficiency
 - Git: How the most used commands work
-- The linux file system
-- How to create a rule based folder structure enforcer script
+- Linux: The Linux File system
+- Scripting: How to create a rule based folder structure enforcer script
 - YAML: All you need to know for functional proficiency
-- How does auto complete work?
+- Math, CS: How does auto complete work?
 - Bash: Scripting basics for functional proficiency
 - Project: Let's write an auto complete addon for the BASH terminal
-- Working with Github workflows
+- Git: Working with Github workflows
 
 
 Currently reading
