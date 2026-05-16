@@ -180,7 +180,7 @@ talk about in another article.
 
 Well, a few hours after I\'d given up and made plans to learn JAVA
 android development, I did one last search on Reddit and found out about
-StayFree. I figured out how to export the data (the format was microsoft
+[StayFree](https://stayfreeapps.com/). I figured out how to export the data (the format was microsoft
 excel but conversion to csv isn\'t my problem).
 
 But before that, I tried prompting other LLMs just so in case I\'d
