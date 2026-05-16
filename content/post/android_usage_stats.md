@@ -206,7 +206,7 @@ are now meant to tell developers why some app\'s usage was throttled and
 the info they convey is more about that: app resource usage management
 and not screen time reports.
 
-The time I used for all this i 15x plus the time I thought I would and I
+The time I used for all this was 15x more than the time I thought I would and I
 did not even get to complete the project. I sure do need that public insta
 accountability it so seems. Classic dev rabbit hole.
 Anyways. I now have the data. Also, I moved android dev up my todo list
