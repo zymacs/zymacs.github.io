@@ -6,8 +6,15 @@
     <description>Recent content in Lwic on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 17:41:08 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/lwic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week in Code E004</title>
+      <link>//localhost:1313/post/last-week-in-code-004/</link>
+      <pubDate>Mon, 11 May 2026 17:41:08 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-004/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week in Code 003</title>
       <link>//localhost:1313/post/last-week-in-code-03/</link>
