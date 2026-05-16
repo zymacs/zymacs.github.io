@@ -90,12 +90,12 @@ diff output_1.txt output_2.txt
 ```
 
 Tried hunting for the answer from other sources but the few I found all
-seemed to be in ref to the old dump format which, I\'d learnt was no
+seemed to have been in ref to the old dump format which, I\'d learnt was no
 longer useful. I was so very much trying to avoid using an LLM but this
 was becoming less of an option and more of an only path.
 
 I copied one of them package lines and posted it as is in my search box.
-I use startpage btw. That did not return any results as expected.
+I use [Startpage](https://www.startpage.com/) btw. That did not return any results as expected.
 
 So I cut down the search query to only leave the \`package=packagename\`
 portion and still got the same results: nothing.
