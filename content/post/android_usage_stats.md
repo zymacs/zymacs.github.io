@@ -178,21 +178,18 @@ api?!
 Anyways,  I went on to install java and android studio. Something I hope to
 talk about in another article.
 
-Well, a few hours after I\'d given up and made plans to learn JAVA
-android development, I did one last search on Reddit and found out about
-[StayFree](https://stayfreeapps.com/). I figured out how to export the data (the format was microsoft
-excel but conversion to csv isn\'t my problem).
 
 But before that, I tried prompting other LLMs just so in case I\'d
 missed out on an easier solution than building the app myself.
 
 By other LLMs I mean Claude and Gemini. The answers they gave were no
 different from Deepseek\'s. They were as well outdated and depended on a
-\`usagestats\` format that no longer was.
+\`usagestats\` format that no longer was so I moved on with the JAVA project.
 
-I didn\'t want all this time to go to waste that i\'d spent so I googled
-for the a solution just one last time. That\'s how I got [this](https://www.reddit.com/r/AndroidQuestions/comments/1dcgg1h/looking_to_export_detailed_usage_metrics_please/) reddit
-post talking about StayFree\'s export option. And, that\'s how I got all
+
+Well, a few hours after I\'d given up and made plans to learn JAVA
+android development, I did one last search on Reddit . That\'s
+how I got [this](https://www.reddit.com/r/AndroidQuestions/comments/1dcgg1h/looking_to_export_detailed_usage_metrics_please/) reddit post talking about StayFree\'s export option. And, that\'s how I got all
 my screen time history from last year on the 9th of November. I went on
 to turn the data into csv and plan a script to combine that data with
 data I\'m collecting from my browser usage activity.
