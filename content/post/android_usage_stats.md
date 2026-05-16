@@ -146,37 +146,36 @@ straight forward.
 I still wasn\'t understanding a thing so looked at the third result from
 my search. The third result led me to [UsageStatsManager AOSP ref](https://developer.android.com/reference/android/app/usage/UsageStatsManager).
 
-This seemed to be exactly wqhat I needed. The granularity included daily
-history, weekly history, monthly and annual history intervals. Exactly
-what I needed. But I did not know how I was going to run the Java to
-extract this data from my phone without having to write an actual
-JavaAPP.
+This seemed to have been exactly what I needed. The granularity included daily
+history, weekly history, monthly and annual history intervals. But I had no clue about
+how I was going to run the Java to extract this data from my phone without
+having to write a line of JAVA.
 
-So I googled that.
-
+So I googled to find more info about this api.
 That led me to a [medium article](https://medium.com/@quiro91/show-app-usage-with-usagestatsmanager-d47294537dab) that pointed to this [github repo](https://github.com/quiro91/UsageStatsManager-Sample/).
 
 I always hate it when these android folks don\'t package the apps. But
-it happens so often that I miss out on ready made solutions. This time I
-decided to do that.
+it happens so often that I miss out on ready made solutions. I decided
+this would be the last time that happened and set out to learn basic android app packaging.
 
-But wait, I need this data in csv format. So why should I bother with
-app compilation if all I\'ll get is on mobile access. ADB can possibly
-help out now that I know the words to use for searching right? This led
+
+But wait! I need this data in csv format... Why should I bother with
+app compilation if the only access itll provide will be on mobile?
+ADB can possibly help out now that I know the words to use for searching right? This led
 me to searching for how to interface with android UsageStatsManager via
 ADB.
 
 There was no way to access the data with adb. At least none that I could
-lay my hands on. All pointed back to the unusable \`usagestats\`
+lay my hands on. All solutions I'd gotten  pointed back to the unusable \`usagestats\`
 service. I caved in and did some LLM search.
 
 I prompted Deepseek and it didn\'t get anything I did not already have.
-The packaging was now starting to seem like it was my only. I was going
+The packaging option was now starting to seem like it was my only. I was going
 to have to learn how to build and compile a simple Java application just
 so to add csv export functionality and interface with some usagestats
-api.
+api?!
 
-So I went on to install java and android studio. Something I hope to
+Anyways,  I went on to install java and android studio. Something I hope to
 talk about in another article.
 
 Well, a few hours after I\'d given up and made plans to learn JAVA
@@ -192,7 +191,7 @@ different from Deepseek\'s. They were as well outdated and depended on a
 \`usagestats\` format that no longer was.
 
 I didn\'t want all this time to go to waste that i\'d spent so I googled
-for the a solution just one last time. That\'s how I got this reddit
+for the a solution just one last time. That\'s how I got [this](https://www.reddit.com/r/AndroidQuestions/comments/1dcgg1h/looking_to_export_detailed_usage_metrics_please/) reddit
 post talking about StayFree\'s export option. And, that\'s how I got all
 my screen time history from last year on the 9th of November. I went on
 to turn the data into csv and plan a script to combine that data with
