@@ -80,7 +80,7 @@ produced this info. The \`adb dumpsys shell usagestats\` ref that is. It
 interestingly said nothing about the usagestats service. At least
 nothing I could work with. It did mention each \"service\" had a
 detailed help page but the \"usagestats\" service didn\'t. Supplying
-\`-h\` just dumpsys stats gave the same output as it did when I supplied
+\`-h\` to  dumpsys stats gave the same output as it did when I supplied
 nothing.
 
 ``` {.bash org-language="sh" results="drawer"}
