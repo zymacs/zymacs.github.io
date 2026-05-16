@@ -212,8 +212,10 @@ accountability it so seems. Classic dev rabbit hole.
 Anyways. I now have the data. Also, I moved android dev up my todo list
 and have set up the environment already. Oh, I also got to confirm in
 action the theory I\'d consumed on how search engines work. So I guess
-there\'s pluses here and there.
-
+there\'s pluses here and there. Also, notice how confident the LLM's are
+with outright false advice and how easy it was to spot it as so since
+I wasn't completely dependent on their output.
+ 
 Thanks for coming this far and as always, I hope you learnt something.
 See you when in the next one.
 
