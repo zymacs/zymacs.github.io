@@ -129,11 +129,12 @@ switched to the dorks prompt \`UsedByUsr android usagestats\' That
 returned nothing.
 
 I then switched using Startpage for a search engine to Google with the
-same query. That sent me straight to the Android Api for Usage Stats. I
-was recently reading about how browsers work and remember one part
-talking about types of browser indexers mentioning some did the work of
-indexing while others did dodged that work by piping queries to indexers
-which I think is what Start page does. Its a \`metasearch engine\`.
+same query. That sent me straight to the Android Api for Usage Stats. As
+research for another personal project, I was recently reading about
+how search engines work and remember this one part talking about types of
+browser indexers. It mentioned some did the work of
+indexing while others dodged it by outsourcing it to those that did.
+I think this is what Start page does. Its a \`metasearch engine\`.
 Anyways. Just a point to note for next time I am choosing what browser
 to use for research. Actually, reading the wikipedia page on meta search
 engines I learnt my suspicions were true. See for yourself [here](https://en.wikipedia.org/wiki/Metasearch_engine).
