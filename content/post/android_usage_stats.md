@@ -1,6 +1,6 @@
 ---
 thumbnail: "img/rabbit-hole.jpeg"
-title: Hunting for exportable android usage stats
+title: Hunting For Exportable Android Usage Stats
 date: 2026-05-15
 tags:
  - rabbit_holes

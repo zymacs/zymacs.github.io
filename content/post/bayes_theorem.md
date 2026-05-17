@@ -1,5 +1,5 @@
 ---
-title: "Baye's Theorem: An informal proof and an example."
+title: "Baye's Theorem: Informal Proof and an Example."
 thumbnail: "img/bayez.jpg"
 date: 2026-05-14
 draft: false
