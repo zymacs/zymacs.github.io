@@ -9,11 +9,18 @@
     <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hunting for exportable android usage stats</title>
+      <title>Hunting For Exportable Android Usage Stats</title>
       <link>//localhost:1313/post/android_usage_stats/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/android_usage_stats/</guid>
       <description>&lt;p&gt;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
+      <link>//localhost:1313/post/bayes_theorem/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/bayes_theorem/</guid>
+      <description>&lt;p&gt;Alright. I have tried to find the easiest way to explain Baye&amp;rsquo;s. I have watched quite a number of&#xA;videos and read quite a number of articles to suppliment what I already know and to get better&#xA;devices for delivering the explanation. At this point I  think its now just me being a perfectionist.&#xA;So I&amp;rsquo;ll teach it as best as I can get myself to: Using proofs.&lt;/p&gt;&#xA;&lt;p&gt;First let&amp;rsquo;s state it formally&lt;/p&gt;</description>
     </item>
     <item>
       <title>Last Week in Code E004</title>
@@ -21,13 +28,6 @@
       <pubDate>Mon, 11 May 2026 17:41:08 +0300</pubDate>
       <guid>//localhost:1313/post/last-week-in-code-004/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Baye&#39;s Theorem</title>
-      <link>//localhost:1313/post/bayes_theorem/</link>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/bayes_theorem/</guid>
-      <description>&lt;p&gt;Interpretation of Baye&amp;rsquo;s&lt;/p&gt;&#xA;&lt;p&gt;Alright. I have tried to find the easiest way to explain Baye&amp;rsquo;s. I have watched quite a number of&#xA;videos and read quite a number of articles to suppliment what I already know and to get better&#xA;devices for delivering the explanation. At this point I  think its now just me being a perfectionist.&#xA;So I&amp;rsquo;ll teach it as best as I can get myself to: Using proofs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Probability Intuition : The Basics</title>

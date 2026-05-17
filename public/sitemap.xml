@@ -23,25 +23,25 @@
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/bayes_theorem/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/maths/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/probability/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-004/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/lwic/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/bayes_theorem/</loc>
-    <lastmod>2026-05-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/progress_updates/in_pipeline/</loc>
     <lastmod>2026-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/progress_updates/</loc>
-    <lastmod>2026-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/maths/</loc>
-    <lastmod>2026-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/probability/</loc>
     <lastmod>2026-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/probability_basics/</loc>
