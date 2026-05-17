@@ -118,15 +118,18 @@ big on your bet, we have the following Maths
   # how about P(L|S)
   P(L|S) = P(S|L)*P(L) / P(S) = 0.2*0.6 / 0.18 = 0.67
 ```
-That means there's a 67% chance for loss, given prediction ManPitty will win, P(L|S) and a measly rough 30 for a win.
-Interesting right?
-That's a far cry from 90% certainty and would I'm sure drop that channel's popularity quick. 
+That means there's a 67% chance for loss, given prediction ManPitty will win, P(L|S), and a measly rough 30 for a win.
+Interesting right? If calling this a 90% odds channel ain't fraud, I don't know what is.
 
+There's many examples out there on how to apply discrete Baye's. I'll stop at this one. There's so many ways
+it can be applied to news stats I hope to add more when I collect them. But with that, I hope you learnt something and,
+see you in the next one. There's a lot of numbers flying around here and its likely I made an error somehow somewhere, if
+you spot one or want to talk about any of what's on here please reach out to me via my BluesSky or Email linked down in
+the footer section. 
 
+And if you want to consume more info on Baye's, here's some cool sources I found online.
 
-
-
-
-
-
-https://youtu.be/OByl4RJxnKA?si=En_JpAowNkufxk4x
+### Sources
+- [Wikipedia article on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+- [Vertasium video on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+- [LessWrong's Eliezer on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
