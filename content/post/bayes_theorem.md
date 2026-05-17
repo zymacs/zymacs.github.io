@@ -131,7 +131,7 @@ If you want to consume more info on Baye's, here's some cool sources I found onl
 
 ### Sources for more reading.
 - [Wikipedia article on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
-- [Vertasium video on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+- [Vertasium video on Baye's](https://www.youtube.com/watch?v=R13BD8qKeTg)
 - [LessWrong's Eliezer on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
 
 
