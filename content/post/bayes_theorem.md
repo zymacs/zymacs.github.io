@@ -130,9 +130,9 @@ the footer section._
 If you want to consume more info on Baye's, here's some cool sources I found online.
 
 ### Sources for more reading.
-- [Wikipedia article on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+- [Wikipedia article on Baye's](https://en.wikipedia.org/wiki/Bayes%27_theorem)
 - [Vertasium video on Baye's](https://www.youtube.com/watch?v=R13BD8qKeTg)
-- [LessWrong's Eliezer on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+- [LessWrong's Eliezer on Baye's](https://www.lesswrong.com/posts/XTXWPQSEgoMkAupKt/an-intuitive-explanation-of-bayes-s-theorem)
 
 
 ### Baye's in the news , Baye's in practice
