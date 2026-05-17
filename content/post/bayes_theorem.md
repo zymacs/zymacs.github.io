@@ -138,5 +138,6 @@ If you want to consume more info on Baye's, here's some cool sources I found onl
 ### Baye's in the news , Baye's in practice
 - [Simpson's paradox](https://adambear.me/post/2025-08-05-statistics-in-court/#fn2)
 - [Courts fighting Bayesian reasoning](https://www.theguardian.com/law/2011/oct/02/formula-justice-bayes-theorem-miscarriage)
+- [Random piece on cancer stats](https://www.math.kth.se/matstat/gru/godis/test.htm)
 
 There's so many applications for Baye's in the news I hope to add more to those I'll list below when I collect them. But with that, I hope you learnt something and, see you in the next one.
