@@ -120,17 +120,23 @@ That means there's a 67% chance for loss, given prediction ManPitty will win, P(
 And for a win, its a measly 30%!
 Interesting right? If this ain't fraud then I don't know what is.
 
-There's many examples out there on how to apply discrete Baye's. I'll stop at this one. There's so many ways
-it can be applied to news stats I hope to add more when I collect them. But with that, I hope you learnt something and,
-see you in the next one.
+Well that's one example and I guess itll cut it. Coming up with these on my own ain't the easiest task. 
+
 
 _There's a lot of numbers flying around here and its likely I made an error somehow somewhere, if
 you spot one or want to talk about any of what's on here please reach out to me via my BluesSky or Email linked down in
 the footer section._
 
-And if you want to consume more info on Baye's, here's some cool sources I found online.
+If you want to consume more info on Baye's, here's some cool sources I found online.
 
-### Sources
+### Sources for more reading.
 - [Wikipedia article on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
 - [Vertasium video on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
 - [LessWrong's Eliezer on Baye's](https://youtu.be/OByl4nKA?si=En_JpAowNkufxk4x)
+
+
+### Baye's in the news , Baye's in practice
+- [Simpson's paradox](https://adambear.me/post/2025-08-05-statistics-in-court/#fn2)
+- [Courts fighting Bayesian reasoning](https://www.theguardian.com/law/2011/oct/02/formula-justice-bayes-theorem-miscarriage)
+
+There's so many applications for Baye's in the news I hope to add more to those I'll list below when I collect them. But with that, I hope you learnt something and, see you in the next one.
