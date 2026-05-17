@@ -101,8 +101,8 @@ being right about a ManPity win prediction. Not any other kind. We'll have to do
 ManPity's statistical chances for winning this particular style of match are at a 0.4.
 That puts the probability for loss at a 0.6. Also, looking at more statistics,
 the numbers for how often SureOdds has been right about a ManPity win given it actually won stand at
-a 0.15. Given these statistics, calculating the actual chances you shall get back
-big on your bet, we have the following Maths
+a 0.15. And those that about it predicting a win when ManPitty actually lost stand at 0.2.
+Given the numbers, let's keep that 90% to the side and establish SureOdds actual credibility. 
 
 ```
   # our data
@@ -118,8 +118,9 @@ big on your bet, we have the following Maths
   # how about P(L|S)
   P(L|S) = P(S|L)*P(L) / P(S) = 0.2*0.6 / 0.18 = 0.67
 ```
-That means there's a 67% chance for loss, given prediction ManPitty will win, P(L|S), and a measly rough 30 for a win.
-Interesting right? If calling this a 90% odds channel ain't fraud, I don't know what is.
+That means there's a 67% chance for loss, given prediction ManPitty will win, P(L|S)!
+And for a win, its a measly 30%!
+Interesting right? If this ain't fraud then I don't know what is.
 
 There's many examples out there on how to apply discrete Baye's. I'll stop at this one. There's so many ways
 it can be applied to news stats I hope to add more when I collect them. But with that, I hope you learnt something and,
