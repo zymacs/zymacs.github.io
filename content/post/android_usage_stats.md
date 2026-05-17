@@ -184,7 +184,7 @@ missed out on an easier solution than building the app myself.
 
 By other LLMs I mean Claude and Gemini. The answers they gave were no
 different from Deepseek\'s. They were as well outdated and depended on a
-\`usagestats\` format that no longer was so I moved on with the JAVA project.
+`usagestats` format that no longer was so I moved on with the JAVA project.
 
 
 Well, a few hours after I\'d given up and made plans to learn JAVA

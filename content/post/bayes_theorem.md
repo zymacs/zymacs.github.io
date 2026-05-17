@@ -1,145 +1,130 @@
 ---
 title: "Baye's Theorem"
 thumbnail: "img/bayez.jpg"
-date: 2026-05-09
-draft: true
+date: 2026-05-14
+draft: false
 tags:
   - Probability
 categories:
   - Maths
 ---
 
-So what is Baye's theorem? In a previous article I wrote about Probability
-and tried to cover as much as I could without relying so much on the formal
-representation of concepts. I would like to do that here too but it might
-not be as light as the Probability article was. I'll try to make it light though.
 
-We have probably already covered the core concepts of it even if you don't know what those are
-yet. That is, if you followed the previous article.
-But even if you didn't, I presume by deciding to read about Baye's you already
-have some information about probability. If you don't, please read up on that first. 
+Interpretation of Baye's
 
-Baye's theorem is a widely applicable Maths concept even far beyond mathematics. I like to think of it as how a means of updating beliefs with increased knowlegde. But let's discover that shall we?
+Alright. I have tried to find the easiest way to explain Baye's. I have watched quite a number of
+videos and read quite a number of articles to suppliment what I already know and to get better
+devices for delivering the explanation. At this point I  think its now just me being a perfectionist.
+So I'll teach it as best as I can get myself to: Using proofs.
 
-We have a bag. This bag has bean seeds in it. We are told that 1/4 of these beans is sick.
-And the rest, 3/4 that is, is healthy. What is the probability of , given a random
-blind picking, selecting a healthy bean? Its an easy 3/4 right? But why? If you read
-my previous article on probability you remember I mentioned every probability is contingent
-on a prior. Can you tell what the prior is in this instance? It's a real important
-concept to understand the rest of the article.
+First let's state it formally
 
-Here, I'll help you out. Its the given that on picking, whatever comes out
-of the bag will be beans. That is, the statement has an embedded prior belief for the
-probability of picking beans being an absolute certainty.  P(Beans) = 1. So the 3/4 for
-healthy beans given the whole bag contains beans could be restated as 3/4 of the absolute probability that is 1, thats 3/4. 1 because its a certainty any picking will result in picking
-beans.
-
-
-Still don't get the relevance for that? Well you will after this news flash.
-So NEWS FLASH, new info: 2/3 of the bag's contents is peas and the balance is for beans.
-Well, a belief got squashed. We thought beans were the only seeds in the bag.
-Now we know they are but a fraction of the whole.
-Given this new information, what is the probility that on a random blind picking from _the bag, note that, from the bag not from the beans_,
-we select a healthy seed given it is a bean ; P(H|B)?
-
-Well, in the world of beans, the fraction for health is already given. It is a 3/4.
-
-Our answer now deals with the probability of getting a healthy seed given its a bean. 
-
-The formal statement for that is
 ```
-P(H|B) = 3/4 
+P(A | B)     = (P(B | A) x P(A))/P(B)
 ```
 
 
+Where P(A|B) means the probability of event A happening given event B has happened.
+In other words, in B's world, what is the probability of A happening.
 
-Currently, as far as we know that is, only seeds that are healthy are the healthy beans.
-But then we get a call from the CDC that the probability for a seed in said bag being healthy
-is 0.6. Oh, another belief got squashed! Bean's ain't the only healthy seeds, there's other healthy seeds than beans. Now we have the same question restated. What is the probability of choosing a healthy seed given we choose a bean?
+Now let's derive it.
 
+The point is clearer with a venn diagram. Say we have two circles A and B.
+A has 5 elements and B 6. The intersection has 2 elements. The probability of
+event A given the sample space (which is all elements in both A and B) is 5/9.
+Wait where does the 9 come from? A has 5 elements, some of which include B's (from the intersection).
+So to get the total number of unique elements with A and B combined, we add the elements
+in A only, those in the intersection then  those in B only. Those in A  only are (5-2) which is 3, those in B only are (6-2)
+which is 4, adding the 2 from the intersection brings us to 9.
 
-How about we flip that? Probability of picking a bean given we pick a healthy seed?
-Just a swap of variables. 
+So P(A) = 5/9. P(B) is obviously 6/9. P(AnB) which is the intersection or number of elements in both A and B is 2/9.
 
-probability of picking a bean. We could keep adding more and
-more information but that structure won't change much. 
+Now how about P(A|B)? We have already defined this to mean the probability of A in B's world or the chances of
+A happening given B having happened. In a venn diagram we would zoom in to assume only that which was in B is what
+existed and our total number of elements was the total number of elements in B. Our P(A|B) would then be
+tne number of elements in B that are also in A out of the B world sample space which is the number of elements in B.
+That would have been Num elements in (AnB) out of Num elements in (B).
 
-It obviosly isn't. 3/4 of the whole is not beans since beans don't make up all the bag's contents but 1/3 of them. Our prior now has a prior, the probability of picking a seed.
+P(A|B) would therefore have been 2/6.
+Why over 6 not 9? We are in B's world. P(A|B) means, in a world were the bound's are B's bounds, what are the chances
+of A? Just like it was in the given sample space of 9 where the bounds are all elements in A and B and P(A) was actually
+`P(A| sample space = num elements in both B and A =  9)` , here we have `P(A | sample space  = num_elements in B =  6)`.
 
-We thought all that was contained in the bag was beans and that picking from the bag was picking from beans. That it was therefore irrelevant to consider if picking would result in anything other than beans so we gave a quick 3/4. However, this new information that 2/3 of the bag's contents
-ain't beans clarified there's more to the bag than beans. Beans are not the whole, beans are part of a larger whole in which whole they occupy not (1) but 1/3.
-
-So now, to select a healthy bean we should also consider how likely it is that we select beans.
-Therefore, our answer shifts from 3/4 to ... 3/4*1/3?
-
-
-
-
-We have a bag of seeds. 2/5 of the seeds are beans and the rest, that is , 3/5 is peas. Do you notice how your brain quickly reframes this as the probability for picking a bean given a random blind selection? Anyways that's not so relevant to our discussion. So we are also told
-1/4 of the beans have weevils while for the peas, its an eight (1/8). Let's restate all
-this info coz it might be hard to track in memory
-
-```
-P(S) # we'll talk about this later, for now you can ignore it
-P(Beans) = 2/5
-P(Peas)  = 3/5
-```
-
-
-Let's state the theorem then explain it.
+But word B is subdivided into 2. The elements that belong to B only and those that appear both in B and in A.
+What's in the other world? What are the chances for B only? Thats a simple 1-2/6. The whole is world B.
+If one part is 2/6 then the balance can be easily inferred from subtracting the known part from the whole.
+P(B only | B) is 4/6.
 
 ```
-P(A|B) = (P(B|A)*P(A))/P(B)
+  P(B | B) = P(AnB | B) + P(B only | B) -- eq1
+  P(A|B)  = num(AnB)/num(B)             -- eq1.1
+
+  P(A | A) = P(AnB | A)+ P(A only | A)  -- eq2
+  P(B|A) = num(AnB)/num(A)              -- eq2.1
 ```
 
-That is, the probability of some outcome A given some outcome B is the value of the fraction of A that is B in the whole divided by the fraction of the whole that is B. Does that `whole` and `fraction` language sound strange to you? Well I hope by the end of this article it won't.
+Notice the intersection is shared across both P(A|B) and P(B|A).
 
-
-
-
-
-
-I am of the opinion that all probability even in its simplest form is contingent on a prior event or follows the above stated rule. Doubt me? Well let me explain.
-The common example for probability is the coin toss. It's usually stated in the following terms. On a fair coin toss, what is the probability of heads coming up? And the answer is a 1/2
+It seems to me like we could use P(A|B) to get P(B|A). Since P(B|A) is `num(AnB)/sum(A)` and and multiplying P(A|B) by num(B)
+would give us num(AnB), a component of P(B|A)'s numerator.  The same could be said of P(B|A).
+Multiplying P(B|A) by num(A) would give us num(AnB). In otherwords, num(AnB) is either P(A|B)*P(B) or P(B|A)*P(A).
+Based on that we can rewrite the above statements to have:
 
 ```
-P(H) =  probability of heads
-P(T) =  probability of tails
-P(H) =  1/2
+  P(B|A) = (P(A|B) * num (B))/ num(A)
+  P(A|B) = (P(B|A) * num (A))/ num(B)
 ```
 
-But what about the given? I mean, the coin toss. It is silently baked in. Let's uncover it.
-The probability of a head or a tail is contingent on there being a coin toss. Without the
-coin toss, there is no heads or tails outcome. The probability of the coin toss is an
-assumed certainty of 1 with the events heads and tails being its subsets. 
+But the theorem got P(B) and P(A) not num(A) and num(B). That ain't no prob. In the world of all elements in A and B,
+the number of elements in the sample space for P(A) and P(B) are the same. So if P(A) is 5/9 and P(B) is 6/9, dividing
+P(A) by P(B) is equivalent to dividing the number of A elements with the number of   B elements. The denominators
+cancel out. So the last two expressions could be re written as
 
-That all probability is conditional. Here. Lets "Bayesianize"
-the coin toss probability. When someone asks for what the probability is  the coin will land on when a coin say, a head when its tossed, what they are really stating is the probability of a head given a coin toss. There's a silent whole, a total probability for tossing the coin based on which all other outcomes
-follow, including what side it will land on.
+```
+  P(B|A) = (P(A|B) * P(B))/ P(A)
+  P(A|B) = (P(B|A) * P(A))/ P(B)
+```
 
-So its not just P(H) is really P(H|T). The value of the probability of a head landing given a
-coin toss  and divide that by the probability of a coin toss. Thats (1/2 * 1)/1.
-Think that an over stretch?
+Now that the conceptual ground is laid, let's use the theorem.
 
-Now how do we solve for that? We get the probability of tossing a coin 
-Here. Let's rephrase the simplest probability example , in terms
-of Bayes. 
-Actually, first, let's look at it like it isn't.
+We have a popular Telegram channel called SureOdds that provides `sure odds` for soccer matches.
+This channel is right about its predictions 90% of the times. You want
+to place your bet on ManPity's match for tomorrow and sure odds said it'd
+win this match. Would you bet a win or a loss for ManPity?
+
+I'm guessing you'd place your bet on ManPity winning since SureOdds said it
+would and, its right a huge `90%` of the times. So there's a 90% chance ManPity
+will win, right? Well.. not really. 
+
+The stats we are given are useless for our usecase. We are interested in the probability of SureOdds
+being right about a ManPity win prediction. Not any other kind. We'll have to do some math to figure that out.
+ManPity's statistical chances for winning this particular style of match are at a 0.4.
+That puts the probability for loss at a 0.6. Also, looking at more statistics,
+the numbers for how often SureOdds has been right about a ManPity win given it actually won stand at
+a 0.15. Given these statistics, calculating the actual chances you shall get back
+big on your bet, we have the following Maths
+
+```
+  # our data
+ 
+  P(W)   = Probability of ManPity winning = 0.4
+  P(L)   = Probability of ManPity lossing = 0.6
+  P(S|W) = Probability of SureOdds predicting a win given ManPity actually won (from past stats) = 0.15
+  P(S|L) = Probability of SureOdds predicting a win given ManPity actually lost (from past stats) = 0.2
+  P(S) = P(S|W) * P(W) + P(S|L) * P(L) # predict win and pity wins OR predict win and pity loses = 0.15*0.4 + 0.2*0.6 = 0.18
+  P(W|S) = What we need = Probability ManPity shall win given SureOdds said it will = (P(S|W)*P(W))/P(S)
+         = (0.15*0.4)/0.18
+	 = 0.3
+  # how about P(L|S)
+  P(L|S) = P(S|L)*P(L) / P(S) = 0.2*0.6 / 0.18 = 0.67
+```
+That means there's a 67% chance for loss, given prediction ManPitty will win, P(L|S) and a measly rough 30 for a win.
+Interesting right?
+That's a far cry from 90% certainty and would I'm sure drop that channel's popularity quick. 
 
 
-If you've heard this so many times, just bear with it, its probably that its an effective
-example is why its that commonly used. Anyways. A bag of balls. 4 Green, 6 Blue.
-Not your usual blue and black so that's not so repetitive I guess.
-So the question then is: What is the probability of choosing a Green ball given a random blind picking? The answer is a simple 6/10. But did you know this is the same as the probabilty
-for choosing a Green ball given we choose a ball? That the initial is also contingent on some vent? Keep that somewhere.
 
-Let's go back to 'normal' conditional probability a bit. So now let's rephrase the question. We are asked for the probability of choosing a Green ball given on the first picking we chose
-a Blue ball and the picking was without replacement.
-So the probability of choosing a Blue ball on the first picking is 4/10.
-When we pick again after this event, there's two possible
-chances, a red or a blue. The chance for the green is now 6/9 since the number of balls fell
-after picking a blue in the first round. Now the probability for this to be the path, that
-is, for the first picking to be a blue and the second a green is: 4/10*6/9. 
+
 
 
 

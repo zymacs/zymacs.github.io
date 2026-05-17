@@ -6,12 +6,12 @@
     <description>Recent content in Rabbit_holes on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/rabbit_holes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hunting for exportable android usage stats</title>
       <link>//localhost:1313/post/android_usage_stats/</link>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/android_usage_stats/</guid>
       <description>&lt;p&gt;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
     </item>

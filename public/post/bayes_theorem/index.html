@@ -9,13 +9,13 @@
 		<meta property="og:url" content="//localhost:1313/post/bayes_theorem/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="Baye&#39;s Theorem">
-  <meta property="og:description" content="So what is Baye’s theorem? In a previous article I wrote about Probability and tried to cover as much as I could without relying so much on the formal representation of concepts. I would like to do that here too but it might not be as light as the Probability article was. I’ll try to make it light though.
-We have probably already covered the core concepts of it even if you don’t know what those are yet. That is, if you followed the previous article. But even if you didn’t, I presume by deciding to read about Baye’s you already have some information about probability. If you don’t, please read up on that first.">
+  <meta property="og:description" content="Interpretation of Baye’s
+Alright. I have tried to find the easiest way to explain Baye’s. I have watched quite a number of videos and read quite a number of articles to suppliment what I already know and to get better devices for delivering the explanation. At this point I think its now just me being a perfectionist. So I’ll teach it as best as I can get myself to: Using proofs.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-05-09T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-05-09T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-05-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-14T00:00:00+00:00">
     <meta property="article:tag" content="Probability">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,16 +62,16 @@ We have probably already covered the core concepts of it even if you don’t kno
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/progress_updates/in_pipeline/">
+			<a class="menu__link" href="/docs/about/">
 				
-				<span class="menu__text">In pipeline</span>
+				<span class="menu__text">About</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/docs/about/">
+			<a class="menu__link" href="/progress_updates/">
 				
-				<span class="menu__text">About</span>
+				<span class="menu__text">In Pipeline</span>
 				
 			</a>
 		</li>
@@ -90,7 +90,7 @@ We have probably already covered the core concepts of it even if you don’t kno
 			<h1 class="post__title">Baye&#39;s Theorem</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-09T00:00:00Z">May 09, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/maths/" rel="category">Maths</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-14T00:00:00Z">May 14, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/maths/" rel="category">Maths</a>
 	</span>
 </div></div>
 		</header>
@@ -100,88 +100,85 @@ We have probably already covered the core concepts of it even if you don’t kno
 		<img class="thumbnail__image" src="/img/bayez.jpg" alt="Baye&#39;s Theorem">
 		
 	</figure><div class="content post__content clearfix">
-			<p>So what is Baye&rsquo;s theorem? In a previous article I wrote about Probability
-and tried to cover as much as I could without relying so much on the formal
-representation of concepts. I would like to do that here too but it might
-not be as light as the Probability article was. I&rsquo;ll try to make it light though.</p>
-<p>We have probably already covered the core concepts of it even if you don&rsquo;t know what those are
-yet. That is, if you followed the previous article.
-But even if you didn&rsquo;t, I presume by deciding to read about Baye&rsquo;s you already
-have some information about probability. If you don&rsquo;t, please read up on that first.</p>
-<p>Baye&rsquo;s theorem is a widely applicable Maths concept even far beyond mathematics. I like to think of it as how a means of updating beliefs with increased knowlegde. But let&rsquo;s discover that shall we?</p>
-<p>We have a bag. This bag has bean seeds in it. We are told that 1/4 of these beans is sick.
-And the rest, 3/4 that is, is healthy. What is the probability of , given a random
-blind picking, selecting a healthy bean? Its an easy 3/4 right? But why? If you read
-my previous article on probability you remember I mentioned every probability is contingent
-on a prior. Can you tell what the prior is in this instance? It&rsquo;s a real important
-concept to understand the rest of the article.</p>
-<p>Here, I&rsquo;ll help you out. Its the given that on picking, whatever comes out
-of the bag will be beans. That is, the statement has an embedded prior belief for the
-probability of picking beans being an absolute certainty.  P(Beans) = 1. So the 3/4 for
-healthy beans given the whole bag contains beans could be restated as 3/4 of the absolute probability that is 1, thats 3/4. 1 because its a certainty any picking will result in picking
-beans.</p>
-<p>Still don&rsquo;t get the relevance for that? Well you will after this news flash.
-So NEWS FLASH, new info: 2/3 of the bag&rsquo;s contents is peas and the balance is for beans.
-Well, a belief got squashed. We thought beans were the only seeds in the bag.
-Now we know they are but a fraction of the whole.
-Given this new information, what is the probility that on a random blind picking from <em>the bag, note that, from the bag not from the beans</em>,
-we select a healthy seed given it is a bean ; P(H|B)?</p>
-<p>Well, in the world of beans, the fraction for health is already given. It is a 3/4.</p>
-<p>Our answer now deals with the probability of getting a healthy seed given its a bean.</p>
-<p>The formal statement for that is</p>
-<pre tabindex="0"><code>P(H|B) = 3/4 
-</code></pre><p>Currently, as far as we know that is, only seeds that are healthy are the healthy beans.
-But then we get a call from the CDC that the probability for a seed in said bag being healthy
-is 0.6. Oh, another belief got squashed! Bean&rsquo;s ain&rsquo;t the only healthy seeds, there&rsquo;s other healthy seeds than beans. Now we have the same question restated. What is the probability of choosing a healthy seed given we choose a bean?</p>
-<p>How about we flip that? Probability of picking a bean given we pick a healthy seed?
-Just a swap of variables.</p>
-<p>probability of picking a bean. We could keep adding more and
-more information but that structure won&rsquo;t change much.</p>
-<p>It obviosly isn&rsquo;t. 3/4 of the whole is not beans since beans don&rsquo;t make up all the bag&rsquo;s contents but 1/3 of them. Our prior now has a prior, the probability of picking a seed.</p>
-<p>We thought all that was contained in the bag was beans and that picking from the bag was picking from beans. That it was therefore irrelevant to consider if picking would result in anything other than beans so we gave a quick 3/4. However, this new information that 2/3 of the bag&rsquo;s contents
-ain&rsquo;t beans clarified there&rsquo;s more to the bag than beans. Beans are not the whole, beans are part of a larger whole in which whole they occupy not (1) but 1/3.</p>
-<p>So now, to select a healthy bean we should also consider how likely it is that we select beans.
-Therefore, our answer shifts from 3/4 to &hellip; 3/4*1/3?</p>
-<p>We have a bag of seeds. 2/5 of the seeds are beans and the rest, that is , 3/5 is peas. Do you notice how your brain quickly reframes this as the probability for picking a bean given a random blind selection? Anyways that&rsquo;s not so relevant to our discussion. So we are also told
-1/4 of the beans have weevils while for the peas, its an eight (1/8). Let&rsquo;s restate all
-this info coz it might be hard to track in memory</p>
-<pre tabindex="0"><code>P(S) # we&#39;ll talk about this later, for now you can ignore it
-P(Beans) = 2/5
-P(Peas)  = 3/5
-</code></pre><p>Let&rsquo;s state the theorem then explain it.</p>
-<pre tabindex="0"><code>P(A|B) = (P(B|A)*P(A))/P(B)
-</code></pre><p>That is, the probability of some outcome A given some outcome B is the value of the fraction of A that is B in the whole divided by the fraction of the whole that is B. Does that <code>whole</code> and <code>fraction</code> language sound strange to you? Well I hope by the end of this article it won&rsquo;t.</p>
-<p>I am of the opinion that all probability even in its simplest form is contingent on a prior event or follows the above stated rule. Doubt me? Well let me explain.
-The common example for probability is the coin toss. It&rsquo;s usually stated in the following terms. On a fair coin toss, what is the probability of heads coming up? And the answer is a 1/2</p>
-<pre tabindex="0"><code>P(H) =  probability of heads
-P(T) =  probability of tails
-P(H) =  1/2
-</code></pre><p>But what about the given? I mean, the coin toss. It is silently baked in. Let&rsquo;s uncover it.
-The probability of a head or a tail is contingent on there being a coin toss. Without the
-coin toss, there is no heads or tails outcome. The probability of the coin toss is an
-assumed certainty of 1 with the events heads and tails being its subsets.</p>
-<p>That all probability is conditional. Here. Lets &ldquo;Bayesianize&rdquo;
-the coin toss probability. When someone asks for what the probability is  the coin will land on when a coin say, a head when its tossed, what they are really stating is the probability of a head given a coin toss. There&rsquo;s a silent whole, a total probability for tossing the coin based on which all other outcomes
-follow, including what side it will land on.</p>
-<p>So its not just P(H) is really P(H|T). The value of the probability of a head landing given a
-coin toss  and divide that by the probability of a coin toss. Thats (1/2 * 1)/1.
-Think that an over stretch?</p>
-<p>Now how do we solve for that? We get the probability of tossing a coin
-Here. Let&rsquo;s rephrase the simplest probability example , in terms
-of Bayes.
-Actually, first, let&rsquo;s look at it like it isn&rsquo;t.</p>
-<p>If you&rsquo;ve heard this so many times, just bear with it, its probably that its an effective
-example is why its that commonly used. Anyways. A bag of balls. 4 Green, 6 Blue.
-Not your usual blue and black so that&rsquo;s not so repetitive I guess.
-So the question then is: What is the probability of choosing a Green ball given a random blind picking? The answer is a simple 6/10. But did you know this is the same as the probabilty
-for choosing a Green ball given we choose a ball? That the initial is also contingent on some vent? Keep that somewhere.</p>
-<p>Let&rsquo;s go back to &rsquo;normal&rsquo; conditional probability a bit. So now let&rsquo;s rephrase the question. We are asked for the probability of choosing a Green ball given on the first picking we chose
-a Blue ball and the picking was without replacement.
-So the probability of choosing a Blue ball on the first picking is 4/10.
-When we pick again after this event, there&rsquo;s two possible
-chances, a red or a blue. The chance for the green is now 6/9 since the number of balls fell
-after picking a blue in the first round. Now the probability for this to be the path, that
-is, for the first picking to be a blue and the second a green is: 4/10*6/9.</p>
+			<p>Interpretation of Baye&rsquo;s</p>
+<p>Alright. I have tried to find the easiest way to explain Baye&rsquo;s. I have watched quite a number of
+videos and read quite a number of articles to suppliment what I already know and to get better
+devices for delivering the explanation. At this point I  think its now just me being a perfectionist.
+So I&rsquo;ll teach it as best as I can get myself to: Using proofs.</p>
+<p>First let&rsquo;s state it formally</p>
+<pre tabindex="0"><code>P(A | B)     = (P(B | A) x P(A))/P(B)
+</code></pre><p>Where P(A|B) means the probability of event A happening given event B has happened.
+In other words, in B&rsquo;s world, what is the probability of A happening.</p>
+<p>Now let&rsquo;s derive it.</p>
+<p>The point is clearer with a venn diagram. Say we have two circles A and B.
+A has 5 elements and B 6. The intersection has 2 elements. The probability of
+event A given the sample space (which is all elements in both A and B) is 5/9.
+Wait where does the 9 come from? A has 5 elements, some of which include B&rsquo;s (from the intersection).
+So to get the total number of unique elements with A and B combined, we add the elements
+in A only, those in the intersection then  those in B only. Those in A  only are (5-2) which is 3, those in B only are (6-2)
+which is 4, adding the 2 from the intersection brings us to 9.</p>
+<p>So P(A) = 5/9. P(B) is obviously 6/9. P(AnB) which is the intersection or number of elements in both A and B is 2/9.</p>
+<p>Now how about P(A|B)? We have already defined this to mean the probability of A in B&rsquo;s world or the chances of
+A happening given B having happened. In a venn diagram we would zoom in to assume only that which was in B is what
+existed and our total number of elements was the total number of elements in B. Our P(A|B) would then be
+tne number of elements in B that are also in A out of the B world sample space which is the number of elements in B.
+That would have been Num elements in (AnB) out of Num elements in (B).</p>
+<p>P(A|B) would therefore have been 2/6.
+Why over 6 not 9? We are in B&rsquo;s world. P(A|B) means, in a world were the bound&rsquo;s are B&rsquo;s bounds, what are the chances
+of A? Just like it was in the given sample space of 9 where the bounds are all elements in A and B and P(A) was actually
+<code>P(A| sample space = num elements in both B and A =  9)</code> , here we have <code>P(A | sample space  = num_elements in B =  6)</code>.</p>
+<p>But word B is subdivided into 2. The elements that belong to B only and those that appear both in B and in A.
+What&rsquo;s in the other world? What are the chances for B only? Thats a simple 1-2/6. The whole is world B.
+If one part is 2/6 then the balance can be easily inferred from subtracting the known part from the whole.
+P(B only | B) is 4/6.</p>
+<pre tabindex="0"><code>  P(B | B) = P(AnB | B) + P(B only | B) -- eq1
+  P(A|B)  = num(AnB)/num(B)             -- eq1.1
+
+  P(A | A) = P(AnB | A)+ P(A only | A)  -- eq2
+  P(B|A) = num(AnB)/num(A)              -- eq2.1
+</code></pre><p>Notice the intersection is shared across both P(A|B) and P(B|A).</p>
+<p>It seems to me like we could use P(A|B) to get P(B|A). Since P(B|A) is <code>num(AnB)/sum(A)</code> and and multiplying P(A|B) by num(B)
+would give us num(AnB), a component of P(B|A)&rsquo;s numerator.  The same could be said of P(B|A).
+Multiplying P(B|A) by num(A) would give us num(AnB). In otherwords, num(AnB) is either P(A|B)*P(B) or P(B|A)*P(A).
+Based on that we can rewrite the above statements to have:</p>
+<pre tabindex="0"><code>  P(B|A) = (P(A|B) * num (B))/ num(A)
+  P(A|B) = (P(B|A) * num (A))/ num(B)
+</code></pre><p>But the theorem got P(B) and P(A) not num(A) and num(B). That ain&rsquo;t no prob. In the world of all elements in A and B,
+the number of elements in the sample space for P(A) and P(B) are the same. So if P(A) is 5/9 and P(B) is 6/9, dividing
+P(A) by P(B) is equivalent to dividing the number of A elements with the number of   B elements. The denominators
+cancel out. So the last two expressions could be re written as</p>
+<pre tabindex="0"><code>  P(B|A) = (P(A|B) * P(B))/ P(A)
+  P(A|B) = (P(B|A) * P(A))/ P(B)
+</code></pre><p>Now that the conceptual ground is laid, let&rsquo;s use the theorem.</p>
+<p>We have a popular Telegram channel called SureOdds that provides <code>sure odds</code> for soccer matches.
+This channel is right about its predictions 90% of the times. You want
+to place your bet on ManPity&rsquo;s match for tomorrow and sure odds said it&rsquo;d
+win this match. Would you bet a win or a loss for ManPity?</p>
+<p>I&rsquo;m guessing you&rsquo;d place your bet on ManPity winning since SureOdds said it
+would and, its right a huge <code>90%</code> of the times. So there&rsquo;s a 90% chance ManPity
+will win, right? Well.. not really.</p>
+<p>The stats we are given are useless for our usecase. We are interested in the probability of SureOdds
+being right about a ManPity win prediction. Not any other kind. We&rsquo;ll have to do some math to figure that out.
+ManPity&rsquo;s statistical chances for winning this particular style of match are at a 0.4.
+That puts the probability for loss at a 0.6. Also, looking at more statistics,
+the numbers for how often SureOdds has been right about a ManPity win given it actually won stand at
+a 0.15. Given these statistics, calculating the actual chances you shall get back
+big on your bet, we have the following Maths</p>
+<pre tabindex="0"><code>  # our data
+ 
+  P(W)   = Probability of ManPity winning = 0.4
+  P(L)   = Probability of ManPity lossing = 0.6
+  P(S|W) = Probability of SureOdds predicting a win given ManPity actually won (from past stats) = 0.15
+  P(S|L) = Probability of SureOdds predicting a win given ManPity actually lost (from past stats) = 0.2
+  P(S) = P(S|W) * P(W) + P(S|L) * P(L) # predict win and pity wins OR predict win and pity loses = 0.15*0.4 + 0.2*0.6 = 0.18
+  P(W|S) = What we need = Probability ManPity shall win given SureOdds said it will = (P(S|W)*P(W))/P(S)
+         = (0.15*0.4)/0.18
+	 = 0.3
+  # how about P(L|S)
+  P(L|S) = P(S|L)*P(L) / P(S) = 0.2*0.6 / 0.18 = 0.67
+</code></pre><p>That means there&rsquo;s a 67% chance for loss, given prediction ManPitty will win, P(L|S) and a measly rough 30 for a win.
+Interesting right?
+That&rsquo;s a far cry from 90% certainty and would I&rsquo;m sure drop that channel&rsquo;s popularity quick.</p>
 <p><a href="https://youtu.be/OByl4RJxnKA?si=En_JpAowNkufxk4x">https://youtu.be/OByl4RJxnKA?si=En_JpAowNkufxk4x</a></p>
 
 		</div>
@@ -218,15 +215,15 @@ is, for the first picking to be a blue and the second a green is: 4/10*6/9.</p>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/probability_basics/" rel="prev">
+		<a class="pager__link" href="/post/last-week-in-code-004/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Probability Intuition : The Basics</p>
+			<p class="pager__title">Last Week in Code E004</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/last-week-in-code-004/" rel="next">
+		<a class="pager__link" href="/post/android_usage_stats/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Last Week in Code 004</p>
+			<p class="pager__title">Hunting for exportable android usage stats</p>
 		</a>
 	</div>
 </nav>
@@ -244,11 +241,11 @@ is, for the first picking to be a blue and the second a green is: 4/10*6/9.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/progress_updates/in_pipeline/">In pipeline</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-004/">Last Week in Code 004</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting for exportable android usage stats</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-004/">Last Week in Code E004</a></li>
+			<li class="widget__item"><a class="widget__link" href="/progress_updates/in_pipeline/">In pipeline</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/probability_basics/">Probability Intuition : The Basics</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/http_downloads/">The anatomy of a download over TCP</a></li>
 		</ul>
 	</div>
 </div>
@@ -302,11 +299,12 @@ is, for the first picking to be a blue and the second a green is: 4/10*6/9.</p>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>

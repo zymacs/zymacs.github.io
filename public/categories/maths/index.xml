@@ -6,8 +6,15 @@
     <description>Recent content in Maths on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Baye&#39;s Theorem</title>
+      <link>//localhost:1313/post/bayes_theorem/</link>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/bayes_theorem/</guid>
+      <description>&lt;p&gt;Interpretation of Baye&amp;rsquo;s&lt;/p&gt;&#xA;&lt;p&gt;Alright. I have tried to find the easiest way to explain Baye&amp;rsquo;s. I have watched quite a number of&#xA;videos and read quite a number of articles to suppliment what I already know and to get better&#xA;devices for delivering the explanation. At this point I  think its now just me being a perfectionist.&#xA;So I&amp;rsquo;ll teach it as best as I can get myself to: Using proofs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Probability Intuition : The Basics</title>
       <link>//localhost:1313/post/probability_basics/</link>
