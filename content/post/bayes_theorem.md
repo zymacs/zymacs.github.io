@@ -48,7 +48,7 @@ Why over 6 not 9? We are in B's world. P(A|B) means, in a world were the bound's
 of A? Just like it was in the given sample space of 9 where the bounds are all elements in A and B and P(A) was actually
 `P(A| sample space = num elements in both B and A =  9)` , here we have `P(A | sample space  = num_elements in B =  6)`.
 
-But word B is subdivided into 2. The elements that belong to B only and those that appear both in B and in A.
+But world B is subdivided into 2: The elements that belong to B only and those that appear both in B and in A.
 What's in the other world? What are the chances for B only? Thats a simple 1-2/6. The whole is world B.
 If one part is 2/6 then the balance can be easily inferred from subtracting the known part from the whole.
 P(B only | B) is 4/6.
