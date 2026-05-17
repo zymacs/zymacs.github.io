@@ -1,5 +1,5 @@
 ---
-title: "Baye's Theorem"
+title: "Baye's Theorem: An informal proof and an example."
 thumbnail: "img/bayez.jpg"
 date: 2026-05-14
 draft: false
@@ -10,7 +10,7 @@ categories:
 ---
 
 
-Interpretation of Baye's
+Trying to understand Baye's with a proof and an example.
 
 Alright. I have tried to find the easiest way to explain Baye's. I have watched quite a number of
 videos and read quite a number of articles to suppliment what I already know and to get better
