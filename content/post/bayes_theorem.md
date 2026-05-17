@@ -10,8 +10,6 @@ categories:
 ---
 
 
-Trying to understand Baye's with a proof and an example.
-
 Alright. I have tried to find the easiest way to explain Baye's. I have watched quite a number of
 videos and read quite a number of articles to suppliment what I already know and to get better
 devices for delivering the explanation. At this point I  think its now just me being a perfectionist.
