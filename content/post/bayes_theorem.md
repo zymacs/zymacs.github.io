@@ -123,7 +123,7 @@ Interesting right? If this ain't fraud then I don't know what is.
 Well that's one example and I guess itll cut it. Coming up with these on my own ain't the easiest task. 
 
 
-_There's a lot of numbers flying around here and its likely I made an error somehow somewhere, if
+_There's a lot of numbers flying around here and its likely I made an error somehow somewhere. If
 you spot one or want to talk about any of what's on here please reach out to me via my BluesSky or Email linked down in
 the footer section._
 
