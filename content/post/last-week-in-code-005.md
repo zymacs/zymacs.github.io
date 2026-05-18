@@ -69,7 +69,7 @@ There's parts of Software Engineering or just messing with Computers that are co
 but, I'd put bug hunting and learning new libraries or even worse, useless languages at the top of the list.
 
 I found it way easier going through a whole day figuring out if I needed to learn JAVA to fix this solution writing an article the whole time it happened. That
-article is linked right here if you are inclined to read it.
+article is linked [right here](https://zymacs.github.io/post/android_usage_stats/) .
 
 Interesting how I randomly stumbled upon a great solution like this one. I addedit to my list of "what to do when debugging is going to take so long"
 solutions. 
