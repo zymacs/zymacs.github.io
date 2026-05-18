@@ -3,6 +3,10 @@ title: 'Last Week in Code E005'
 thumbnail: 'img/lwic.png'
 date: 2026-05-18T22:49:48+03:00
 draft: false
+tags:
+ - lwic
+categories
+ - weeklyseries
 ---
 
 It's LWIC E005! Cool. So I was AFK for a huge proportion of last week.
