@@ -76,7 +76,8 @@ solutions.
 
 
 
-_Thats it for this one I guess. Onto the next section._
+_Thats it for this one I guess. I have been thinking of an extra weekly
+like this one. But one that's mostly technical jargon speak. I thought I'd mention that so the thought does not die. Anyways, I'll see how things go but I plan to add something. Meanwhile, onto the next section._
 
 ### In the news
 - [Mind where you download apps from](https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/)
