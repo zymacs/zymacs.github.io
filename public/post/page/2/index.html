@@ -271,6 +271,80 @@ you are reading right now.</p>
 </ol>
 <p>Corresponding pseudo commands:</p>
 	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/post/spam_filter_python/" rel="bookmark">
+			
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Statquest on naive baye&rsquo;s with a spam filter: <a href="https://youtu.be/O2L2Uv9pdDA?si=uOAkMW1ziPisc9r">https://youtu.be/O2L2Uv9pdDA?si=uOAkMW1ziPisc9r</a>_
+Claude on How Naive Spam filters work: <a href="https://claude.ai/share/5aeeb035-d75a-4e2a-8693-9dca283aa354">https://claude.ai/share/5aeeb035-d75a-4e2a-8693-9dca283aa354</a>
+Spam filter in python notebook: <a href="https://www.youtube.com/watch?v=2sXAYoPIz3A">https://www.youtube.com/watch?v=2sXAYoPIz3A</a></p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/post/dd_disk_destroyer/" rel="bookmark">
+			DD Linux
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>The disk distroyer (DD)
+Operates directly on raw btes of file, partition or disk.</p>
+<p>Uses</p>
+<ul>
+<li>Creating bootable drives
+dd if=/dev/sda of=/tmp/storage # transferred all thats in disk sda to storage # cool for cloning environments.
+<h1 id="no-need-for-count-if-you-want-to-copy-all-thats-in-source-to-destination">no need for count if you want to copy all thats in source to destination.</h1>
+</li>
+<li>Backing up linux disks</li>
+<li>Creating large blank files</li>
+<li>Creating a swap file
+dd if=/dev/zero of=/tmp/swapfile bs=2048 count=500 # 1000 blocks of 2048 bytes to create 2 Gigs</li>
+<li>Wiping by writing zeros
+dd if=/dev/zero of=/dev/sdX bs=16M</li>
+<li>Wiping by writing random data
+dd if=/dev/urandom of=/dev/sdX bs=16M</li>
+<li>Backup master boot record
+dd if=/dev/sda of=mbr_backup.bin bs=512 count=1</li>
+<li>Copy files, partitions or whole disks across networks or on the same computer.</li>
+<li>Common options
+-skip=num # ignore num blocks at start of input or source
+-seek=num # ignore first num blocks at start of output or destination
+-conv=a,b,c
+<ul>
+<li>noerror: continue on error
+dd if=/dev/sdd of=/dev/sda conv=noerror</li>
+<li>sync: pad every input block with /null char to match input block size</li>
+<li>ascii, ebcdic, ibm: handle conversions between ascii , ebcic and ibm encodings</li>
+<li>sparse: seek other than write null bytes to save space.</li>
+<li>lcase,ucase: upper case to lower case and vice versa
+dd if=input.txt of=output.txt conv=ucase</li>
+<li>excl: fail if output file already exists to prevent accidental overrites.
+-status=
+-iflag/oflag=
+-ibd/obs= # spearating input block size from output block size</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Sources</li>
+</ul>
+<ul>
+<li>Savvynik on DD:  <a href="https://www.youtube.com/watch?v=KAuiHFbFE_o">https://www.youtube.com/watch?v=KAuiHFbFE_o</a></li>
+<li>CodeLucky on DD: <a href="https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U">https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U</a></li>
+<li>Wikipedia article: <a href="https://en.wikipedia.org/wiki/Dd_(Unix)">https://en.wikipedia.org/wiki/Dd_(Unix)</a></li>
+</ul>
+<p>Forks</p>
+	</div>
 </article>
 </main>
 
@@ -350,6 +424,7 @@ you are reading right now.</p>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux-core-utils/" title="Linux-Core-Utils">Linux-Core-Utils (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>

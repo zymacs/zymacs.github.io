@@ -187,5 +187,11 @@
   </url><url>
     <loc>//localhost:1313/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/spam_filter_python/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/dd_disk_destroyer/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/linux-core-utils/</loc>
   </url>
 </urlset>

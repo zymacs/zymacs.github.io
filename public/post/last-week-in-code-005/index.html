@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Week in Code E005 - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/last-week-in-code-005/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Last Week in Code E005">
+  <meta property="og:description" content="It’s LWIC E005! Cool. So I was AFK for a huge proportion of last week. But for the later half of it (which was Thursay up until Sunday), I spent most of my time learning Bash scripting among other things. And as usual, there is always experiences to share. Not so much though since I only had half a week. But enough to have somethign to share I guess.
+The Elevated Confidence From Documenting Understanding I eventually got to write an article on Baye’s theorem. It is a simple one as, that was my aim: to make things simple. Most of the lessons from this task, I mentioned in last week’s update. But I think there’s parts of the experience that I hadn’t felt fully yet. I’ll share those.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-18T22:49:48+03:00">
+    <meta property="article:modified_time" content="2026-05-18T22:49:48+03:00">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/progress_updates/">
+				
+				<span class="menu__text">In Pipeline</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last Week in Code E005</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-18T22:49:48&#43;03:00">May 18, 2026</time></div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/lwic.png" alt="Last Week in Code E005">
+		
+	</figure><div class="content post__content clearfix">
+			<p>It&rsquo;s LWIC E005! Cool. So I was AFK for a huge proportion of last week.
+But for the later half of it (which was Thursay up until Sunday), I spent
+most of my time learning Bash scripting among other things. And as usual, there is always experiences to share. Not so much though since I only had half a week. But enough to have somethign to share I guess.</p>
+<h3 id="the-elevated-confidence-from-documenting-understanding">The Elevated Confidence From Documenting Understanding</h3>
+<p>I eventually got to write an article on Baye&rsquo;s theorem. It is a simple one
+as, that was my aim: to make things simple. Most of the lessons from this task,
+I mentioned in last week&rsquo;s update. But I think there&rsquo;s parts of the experience that I hadn&rsquo;t felt fully yet. I&rsquo;ll share those.</p>
+<p>Learning something is one thing. Knowing that you understand something and, that you have the proof that you can teach that something, is different.</p>
+<p>I mean, I am only at basic level for most of what I try to teach (more on that later), but if someone were to ask me about Probability or Baye&rsquo;s or anything and  I&rsquo;d written about it, I&rsquo;d  feel a unique level of confidence answering the question with: &ldquo;I actually have an article on that&rdquo;.</p>
+<h3 id="learning-widens-horizons">Learning Widen&rsquo;s Horizons</h3>
+<h4 id="the-memory-example"><em>The Memory Example</em></h4>
+<p>I have made it a culture of mine for how much gains its gotten me, to keep notes
+from my reading. I was, for most of Sunday, making notes on Computer Memory. I,
+from earlier lessons, was trying to boost attention by reading the matter like I
+was going to write an article on it. What led me here though? I mentioned
+in an earlier article I had it planned to write an Arch Installation guide.</p>
+<p>The list of things I set aside to understand before that is all presumptive of
+me understading bootloaders, ROM, BIOS, bootstrapping and booting (which I learnt are the same thing). And it feels really frustrating moving forward with a
+learning pursuit well knowing you don&rsquo;t understand the foundations enough to not mind. I was like, well, I guess I won&rsquo;t only go as deep as what the commands mean, Ill have to understand what what the commands means means. So I installed
+the wikipedia app on my phone and rabbit holed some articles on Computer Memory.</p>
+<p>What was interesting is most of this was stuff I was already familiar with. Stuff that was , when I first encountered it in class, super boring. But now here
+I was wishing I&rsquo;d kept those notes. I guess its the goals for reading since then that&rsquo;ve changed. But anyways. Even when I did not read everything, (since I
+was not prepping to make memory from vacuum tubes), I found it disproportionately easier going through the articles I was reading after. Mentioning BIOS or
+kernel code, or Bootloaders did not give me migraines any longer. Or, say, as
+severly as it was. But then there was a similar experience I noticed with ML.</p>
+<h4 id="the-ml-example"><em>The ML Example</em></h4>
+<p>Machine Learning is a subject thats an amalgam of a whole lot of different areas
+of Computer Science and Math. There&rsquo;s a lot of different fields in ML. All these areas however seem to depend on a common set of prerequisite subjects. Some of those being Probability, Calculus and Linear Algebra. And that, I think, is biggest hurdle or hindrance to getting into practical ML (not library bro ML). There&rsquo;s a lot of non trivial prerequisite basic knowledge required before you can do anything useful.</p>
+<p>But, when you learn the prerequisites, even as you master a small subsection
+of them, the number of things you can do multiplies almost exponentially. And
+all these are cool things. Fun new things to learn. Exciting complex projects
+to build. I just got through Probability and Bayes and guess what that unlocks?
+For me, its exciting I can now build a spam filter without scikit learn if I want to, I can easily understand K-means clusttering, I can build a simple
+next word prediction algo and I can now easily get through an n-gram model clas.</p>
+<p>After learning matrices, the number of things I can do will continue to increaseWhen I grasp Calculus and Linear Algebra, even worse. But I guess you get the point.</p>
+<h4 id="the-point-i-am-trying-to-make"><em>The point I am trying to make</em></h4>
+<p>For any subject, you never learn the big things before you do the smaller things. And when you are done with the smaller things, the next level becomes the new smaller things. There however seems to be no last level. But at some level, the learning ain&rsquo;t as much work as it is when grasping the utter basics, say, learning at level 0. So at this stage, further learning happens as the knowledge is used.</p>
+<p>Most of this is just me doing armed chair psychology from personal experience so take it with a kg of salt.  However, there&rsquo;s a whole lot of  actual formal termliterature to backup my claims. Look up literature on cognitive load theory and why the basics feel, relative to all that comes after, disproportionately hard if you are interested in going down that rabbit hole.</p>
+<h3 id="make-it-fun-by-documenting-it">Make it fun by documenting it</h3>
+<p>I am running some accountability challenge on instagram and I needed to get
+some screen time stats from my android phone. But there&rsquo;s something about this whole thing that I think was worth sharing. Well that&rsquo;s actually what I want to share, that I documented something that seemed mundane.</p>
+<p>There&rsquo;s parts of Software Engineering or just messing with Computers that are cool. Then there&rsquo;s parts that are so boring some find themselves quitting the field for how intense the boredom can be. The list is probably longer than this
+but, I&rsquo;d put bug hunting and learning new libraries or even worse, useless languages at the top of the list.</p>
+<p>I found it way easier going through a whole day figuring out if I needed to learn JAVA to fix this solution writing an article the whole time it happened. That
+article is linked right here if you are inclined to read it.</p>
+<p>Interesting how I randomly stumbled upon a great solution like this one. I addedit to my list of &ldquo;what to do when debugging is going to take so long&rdquo;
+solutions.</p>
+<p><em>Thats it for this one I guess. Onto the next section.</em></p>
+<h3 id="in-the-news">In the news</h3>
+<ul>
+<li><a href="https://macdailynews.com/2026/05/15/u-s-doj-demands-apple-and-google-unmask-over-100000-users-of-popular-car-tinkering-app-in-emissions-crackdown/">Mind where you download apps from</a></li>
+</ul>
+<h3 id="cool-articles">Cool Articles</h3>
+<ul>
+<li><a href="https://daringfireball.net/2026/05/ai_is_technology_not_a_product">AI is a technology, not a product</a></li>
+<li><a href="https://addyosmani.com/blog/dont-outsource-learning/">Don&rsquo;t delegate your learning</a></li>
+</ul>
+<h3 id="random-finds">Random finds</h3>
+<ul>
+<li><a href="https://build-your-own.org/">Build your own</a></li>
+<li><a href="https://internals-for-interns.com/posts/linux-kernel-startup/">Linux Kernel Startup</a></li>
+</ul>
+<p>As always ,  I hope you learnt something.</p>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/android_usage_stats/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Hunting For Exportable Android Usage Stats</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-005/">Last Week in Code E005</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-004/">Last Week in Code E004</a></li>
+			<li class="widget__item"><a class="widget__link" href="/progress_updates/in_pipeline/">In pipeline</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">Golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="Go">Go (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="Golang">Golang (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux-core-utils/" title="Linux-Core-Utils">Linux-Core-Utils (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
