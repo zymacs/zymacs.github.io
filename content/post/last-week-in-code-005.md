@@ -6,8 +6,8 @@ draft: false
 ---
 
 It's LWIC E005! Cool. So I was AFK for a huge proportion of last week.
-But for the later half of it (which was Thursay up until Sunday), I spent
-most of my time learning Bash scripting among other things. And as usual, there is always experiences to share. Not so much though since I only had half a week. But enough to have somethign to share I guess. 
+But for the later half of it (which was Thursday up until Sunday), I spent
+most of my time reading and making notes with not so much programming. And as usual, there is always experiences to share. Not so much though since I only had half a week. 
 
 ### The Elevated Confidence From Documenting Understanding
 I eventually got to write an article on Baye's theorem. It is a simple one
