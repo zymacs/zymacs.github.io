@@ -3,24 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/why_so_unfocused/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/random/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/rant/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/selfhelp/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/interview-prep/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/quant-finance/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/screwy_pirates/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-005/</loc>
+    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/lwic/</loc>
+    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/weeklyseries/</loc>
+    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/android_usage_stats/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/rabbit_holes/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/random/</loc>
-    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/bayes_theorem/</loc>
@@ -33,9 +63,6 @@
     <lastmod>2026-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-004/</loc>
-    <lastmod>2026-05-11T17:41:08+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/lwic/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/progress_updates/in_pipeline/</loc>
@@ -81,9 +108,6 @@
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/text-manipulation/</loc>
-    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/weeklyseries/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/arch/</loc>
@@ -188,10 +212,8 @@
     <loc>//localhost:1313/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-003/</loc>
+  </url><url>
     <loc>//localhost:1313/post/spam_filter_python/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/dd_disk_destroyer/</loc>
-  </url><url>
-    <loc>//localhost:1313/tags/linux-core-utils/</loc>
   </url>
 </urlset>

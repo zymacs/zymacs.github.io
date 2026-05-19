@@ -6,8 +6,22 @@
     <description>Recent content on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 22:49:48 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 21:00:27 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An attempt to focus</title>
+      <link>//localhost:1313/post/why_so_unfocused/</link>
+      <pubDate>Tue, 19 May 2026 21:00:27 +0300</pubDate>
+      <guid>//localhost:1313/post/why_so_unfocused/</guid>
+      <description>&lt;p&gt;If you  look around my blog you will see a lot of articles. Not so many&#xA;but year, many in some sense.&lt;/p&gt;&#xA;&lt;p&gt;The problem.&lt;/p&gt;&#xA;&lt;p&gt;Many topics. Its hard to tell what I am into. If you asked me, I would&amp;rsquo;t&#xA;really have a ready made answer. Actually, now that I think of what&#xA;answer I&amp;rsquo;d have for the question, one comes to mind: I want it all.&lt;/p&gt;&#xA;&lt;p&gt;But then I have a &amp;ldquo;Hire Me&amp;rdquo; button in the footer. &amp;ldquo;Hire Me&amp;rdquo; for&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Screwy Pirates Q1</title>
+      <link>//localhost:1313/post/screwy_pirates/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/post/screwy_pirates/</guid>
+      <description>&lt;p&gt;This is the firs post am making in this series. For all the posts in the series,&#xA;I plan to share my solutions to the problems in the book &amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo; by Zhou Xinfeg. The first&#xA;set of problems is brain teasers so let&amp;rsquo;s get to the first one.&lt;/p&gt;&#xA;&lt;h3 id=&#34;screwy-pirates-problem-statement&#34;&gt;Screwy Pirates Problem Statement.&lt;/h3&gt;&#xA;&lt;p&gt;Five pirates looted a chest of 100 gold coins.&#xA;They agreed on the following method to divide the loot.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week in Code E005</title>
       <link>//localhost:1313/post/last-week-in-code-005/</link>
@@ -161,13 +175,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/spam_filter_python/</guid>
       <description>&lt;p&gt;Statquest on naive baye&amp;rsquo;s with a spam filter: &lt;a href=&#34;https://youtu.be/O2L2Uv9pdDA?si=uOAkMW1ziPisc9r&#34;&gt;https://youtu.be/O2L2Uv9pdDA?si=uOAkMW1ziPisc9r&lt;/a&gt;_&#xA;Claude on How Naive Spam filters work: &lt;a href=&#34;https://claude.ai/share/5aeeb035-d75a-4e2a-8693-9dca283aa354&#34;&gt;https://claude.ai/share/5aeeb035-d75a-4e2a-8693-9dca283aa354&lt;/a&gt;&#xA;Spam filter in python notebook: &lt;a href=&#34;https://www.youtube.com/watch?v=2sXAYoPIz3A&#34;&gt;https://www.youtube.com/watch?v=2sXAYoPIz3A&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DD Linux</title>
-      <link>//localhost:1313/post/dd_disk_destroyer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/dd_disk_destroyer/</guid>
-      <description>&lt;p&gt;The disk distroyer (DD)&#xA;Operates directly on raw btes of file, partition or disk.&lt;/p&gt;&#xA;&lt;p&gt;Uses&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Creating bootable drives&#xA;dd if=/dev/sda of=/tmp/storage # transferred all thats in disk sda to storage # cool for cloning environments.&#xA;&lt;h1 id=&#34;no-need-for-count-if-you-want-to-copy-all-thats-in-source-to-destination&#34;&gt;no need for count if you want to copy all thats in source to destination.&lt;/h1&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Backing up linux disks&lt;/li&gt;&#xA;&lt;li&gt;Creating large blank files&lt;/li&gt;&#xA;&lt;li&gt;Creating a swap file&#xA;dd if=/dev/zero of=/tmp/swapfile bs=2048 count=500 # 1000 blocks of 2048 bytes to create 2 Gigs&lt;/li&gt;&#xA;&lt;li&gt;Wiping by writing zeros&#xA;dd if=/dev/zero of=/dev/sdX bs=16M&lt;/li&gt;&#xA;&lt;li&gt;Wiping by writing random data&#xA;dd if=/dev/urandom of=/dev/sdX bs=16M&lt;/li&gt;&#xA;&lt;li&gt;Backup master boot record&#xA;dd if=/dev/sda of=mbr_backup.bin bs=512 count=1&lt;/li&gt;&#xA;&lt;li&gt;Copy files, partitions or whole disks across networks or on the same computer.&lt;/li&gt;&#xA;&lt;li&gt;Common options&#xA;-skip=num # ignore num blocks at start of input or source&#xA;-seek=num # ignore first num blocks at start of output or destination&#xA;-conv=a,b,c&#xA;&lt;ul&gt;&#xA;&lt;li&gt;noerror: continue on error&#xA;dd if=/dev/sdd of=/dev/sda conv=noerror&lt;/li&gt;&#xA;&lt;li&gt;sync: pad every input block with /null char to match input block size&lt;/li&gt;&#xA;&lt;li&gt;ascii, ebcdic, ibm: handle conversions between ascii , ebcic and ibm encodings&lt;/li&gt;&#xA;&lt;li&gt;sparse: seek other than write null bytes to save space.&lt;/li&gt;&#xA;&lt;li&gt;lcase,ucase: upper case to lower case and vice versa&#xA;dd if=input.txt of=output.txt conv=ucase&lt;/li&gt;&#xA;&lt;li&gt;excl: fail if output file already exists to prevent accidental overrites.&#xA;-status=&#xA;-iflag/oflag=&#xA;-ibd/obs= # spearating input block size from output block size&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Savvynik on DD:  &lt;a href=&#34;https://www.youtube.com/watch?v=KAuiHFbFE_o&#34;&gt;https://www.youtube.com/watch?v=KAuiHFbFE_o&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;CodeLucky on DD: &lt;a href=&#34;https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U&#34;&gt;https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Wikipedia article: &lt;a href=&#34;https://en.wikipedia.org/wiki/Dd_(Unix)&#34;&gt;https://en.wikipedia.org/wiki/Dd_(Unix)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Forks&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

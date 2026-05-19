@@ -46,8 +46,7 @@ But then, when you learn the prerequisites, even as you master a small subsectio
 all these are cool things. Fun new things to learn. Exciting complex projects
 to build. I just got through Probability and Bayes and guess what that unlocks?
 
-For me, its exciting I can now build a spam filter without scikit learn if I want to, I can easily understand K-means clusttering, I can build a simple
-next word prediction algo and I can quickly understand [n-gram models](https://en.wikipedia.org/wiki/Word_n-gram_language_model) only from reading an article.
+For me, its exciting I can now build a spam filter without scikit learn if I want to, understand parts of K-means clusterring. I can build a simple next word prediction algo and I can quickly understand [n-gram models](https://en.wikipedia.org/wiki/Word_n-gram_language_model) only from reading an article.
 
 After learning matrices, the number of things I can do will continue to increase. When I grasp Calculus and Linear Algebra, it'll be even worse.
 But I guess you get the point. 

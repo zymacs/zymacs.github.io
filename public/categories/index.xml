@@ -6,13 +6,41 @@
     <description>Recent content in Categories on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 21:00:27 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random</title>
       <link>//localhost:1313/categories/random/</link>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 May 2026 21:00:27 +0300</pubDate>
       <guid>//localhost:1313/categories/random/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rant</title>
+      <link>//localhost:1313/categories/rant/</link>
+      <pubDate>Tue, 19 May 2026 21:00:27 +0300</pubDate>
+      <guid>//localhost:1313/categories/rant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interview Prep</title>
+      <link>//localhost:1313/categories/interview-prep/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/categories/interview-prep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quant Finance</title>
+      <link>//localhost:1313/categories/quant-finance/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/categories/quant-finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WeeklySeries</title>
+      <link>//localhost:1313/categories/weeklyseries/</link>
+      <pubDate>Mon, 18 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/categories/weeklyseries/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +69,6 @@
       <link>//localhost:1313/categories/linux-tools/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/categories/linux-tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WeeklySeries</title>
-      <link>//localhost:1313/categories/weeklyseries/</link>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/categories/weeklyseries/</guid>
       <description></description>
     </item>
     <item>

@@ -2,6 +2,7 @@
 title: DD Linux
 tags:
  - linux-core-utils
+draft: true
 ---
 
 

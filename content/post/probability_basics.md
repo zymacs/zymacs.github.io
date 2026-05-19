@@ -181,6 +181,13 @@ We picked red out in the previous event so the number of sixes remained intact.
 That's why. Examine that tree some more and itll make sense.
 
 
+Think of it this way. If you have to bet on 10 things happening consecutively. Its highly likely you might
+get the first bet right. Not absolutely but, relative to getting two in a row at least. It would not make
+sense even outside math to assume it'd be more likely to be right about three outcomes from a random event in
+a row than about 1.
+
+Here's another intuitive explanation/example. You have 5 rounds of poker to play.  You bet on winning them all, the chances you win the first 2 should obviously be higher than those that you win the first 4. The chance that you win the first one is highest here obviously. 
+
 Okay, that's a whole lot for a single article I think. I should keep the rest for the next one. Which I am not sure when it will be out
 but hope to have it out. I am writing all these in preparation to hopefully explain neural networks. So I dream to write about
 Matrices, Probability, Baye's, Simple N-gram models and all before that happens. Let's see how it goes.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geometry on Zymacs</title>
+    <link>//localhost:1313/tags/geometry/</link>
+    <description>Recent content in Geometry on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2026 11:44:04 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Cos</title>
+      <link>//localhost:1313/post/what_is_cos/</link>
+      <pubDate>Tue, 19 May 2026 11:44:04 +0300</pubDate>
+      <guid>//localhost:1313/post/what_is_cos/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

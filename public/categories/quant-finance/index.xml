@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quant Finance on Zymacs</title>
+    <link>//localhost:1313/categories/quant-finance/</link>
+    <description>Recent content in Quant Finance on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2026 19:48:27 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/quant-finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Screwy Pirates Q1</title>
+      <link>//localhost:1313/post/screwy_pirates/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/post/screwy_pirates/</guid>
+      <description>&lt;p&gt;This is the firs post am making in this series. For all the posts in the series,&#xA;I plan to share my solutions to the problems in the book &amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo; by Zhou Xinfeg. The first&#xA;set of problems is brain teasers so let&amp;rsquo;s get to the first one.&lt;/p&gt;&#xA;&lt;h3 id=&#34;screwy-pirates-problem-statement&#34;&gt;Screwy Pirates Problem Statement.&lt;/h3&gt;&#xA;&lt;p&gt;Five pirates looted a chest of 100 gold coins.&#xA;They agreed on the following method to divide the loot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trig on Zymacs</title>
+    <link>//localhost:1313/tags/trig/</link>
+    <description>Recent content in Trig on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2026 10:30:04 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/trig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Cos</title>
+      <link>//localhost:1313/post/what_is_cos/</link>
+      <pubDate>Tue, 19 May 2026 10:30:04 +0300</pubDate>
+      <guid>//localhost:1313/post/what_is_cos/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Similar posts: What is Sin, What is PI, Why is the Pythogrean Theorem what it is?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Why would anyone want to know what Cos is? If you are asking that question?&#xA;If you are asking that question then ask yourself why you clicked the link.&#xA;Curiosity right?  Well that ain&amp;rsquo;t why I wrote this. But it partly is.&lt;/p&gt;&#xA;&lt;p&gt;PI: The constant that is the ratio for any circle&amp;rsquo;s circumference to its&#xA;diameter. Try it out. Make a perfect circle however you will. It can be any&#xA;size. Get its circumference and divide that by its diameter. The result&#xA;will be the same regardless of what the circle radius will be.&#xA;The scale factor relating change in diameter with change in circumference&#xA;is a constant , PI.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

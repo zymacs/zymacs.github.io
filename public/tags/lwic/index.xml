@@ -6,8 +6,15 @@
     <description>Recent content in Lwic on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2026 17:41:08 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 22:49:48 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/lwic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week in Code E005</title>
+      <link>//localhost:1313/post/last-week-in-code-005/</link>
+      <pubDate>Mon, 18 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-005/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s LWIC E005! Cool. So I was AFK for a huge proportion of last week.&#xA;But for the later half of it (which was Thursday up until Sunday), I spent&#xA;most of my time reading and making notes with not so much programming. And as usual, there is always experiences to share. Not so much though since I only had half a week.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-elevated-confidence-from-documenting-understanding&#34;&gt;The Elevated Confidence From Documenting Understanding&lt;/h3&gt;&#xA;&lt;p&gt;I eventually got to write an article on &lt;a href=&#34;post/bayes_theorem/&#34;&gt;Baye&amp;rsquo;s theorem&lt;/a&gt;. It was a simple one as, that was my aim: to make a seemingly hard to understand topic simple. Most of the lessons from this task, I mentioned in last week&amp;rsquo;s update. But I think there&amp;rsquo;s parts of the experience that I hadn&amp;rsquo;t felt fully yet. I&amp;rsquo;ll share what I learnt from those.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week in Code E004</title>
       <link>//localhost:1313/post/last-week-in-code-004/</link>
