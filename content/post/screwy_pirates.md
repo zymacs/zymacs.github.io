@@ -114,7 +114,7 @@ the nth pirate will always propose to give the (n-2)th pirate and (n-4)th pirate
 
 
 
-Alright. I guess I have to work on formal representations. That was a hard one to formalize. 
+Alright. I guess I have to work on generalizations. That was a hard one to generalize. 
 
 
 

@@ -6,8 +6,15 @@
     <description>Recent content in Brain_teasers on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 15:09:36 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 15:49:44 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/brain_teasers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q3 BT: River Crossing</title>
+      <link>//localhost:1313/post/river_crossing/</link>
+      <pubDate>Wed, 20 May 2026 15:49:44 +0300</pubDate>
+      <guid>//localhost:1313/post/river_crossing/</guid>
+      <description>&lt;p&gt;Question 3 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Four people, A, B, C and D need to get across a river. The only way to cross the river is&#xA;by an old bridge, which holds at most 2 people at a time. Being dark, they can&amp;rsquo;t cross the&#xA;bridge without a torch, of which they only have one. So each pair can only walk at the&#xA;speed of the slower person. They need to get all of them across to the other side as&#xA;quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C&#xA;takes 2 minutes; and D takes 1 minute.&#xA;What is the minimum time to get all of them across to the other side?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Q2 BT: Tiger and Sheep</title>
       <link>//localhost:1313/post/tiger_and_sheep/</link>
