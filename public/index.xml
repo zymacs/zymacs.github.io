@@ -6,8 +6,15 @@
     <description>Recent content on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 21:00:27 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 11:34:11 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What the hell!</title>
+      <link>//localhost:1313/quotes_and_excerpts/what_the_hell/</link>
+      <pubDate>Wed, 20 May 2026 11:34:11 +0300</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
+      <description>&lt;p&gt;On streaks and making good decisions.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Click&lt;/a&gt; for details.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>An attempt to focus</title>
       <link>//localhost:1313/post/why_so_unfocused/</link>
@@ -49,13 +56,6 @@
       <pubDate>Mon, 11 May 2026 17:41:08 +0300</pubDate>
       <guid>//localhost:1313/post/last-week-in-code-004/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>In pipeline</title>
-      <link>//localhost:1313/progress_updates/in_pipeline/</link>
-      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/progress_updates/in_pipeline/</guid>
-      <description>&lt;p&gt;This section will track all articles I plan to write, what the next article is, and what progress for the books I am currently reading.&lt;/p&gt;&#xA;&lt;h3 id=&#34;next-article&#34;&gt;Next article&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linux: How to install Arch&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;drafted-articles&#34;&gt;Drafted articles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Why copying smaller files takes longer&lt;/li&gt;&#xA;&lt;li&gt;Git: All you need to know for functional proficiency&lt;/li&gt;&#xA;&lt;li&gt;Git: How the most used commands work&lt;/li&gt;&#xA;&lt;li&gt;Linux: The Linux File system&lt;/li&gt;&#xA;&lt;li&gt;Scripting: How to create a rule based folder structure enforcer script&lt;/li&gt;&#xA;&lt;li&gt;YAML: All you need to know for functional proficiency&lt;/li&gt;&#xA;&lt;li&gt;Math, CS: How auto complete works. A simple n-gram model.&lt;/li&gt;&#xA;&lt;li&gt;Bash: Scripting basics for functional proficiency&lt;/li&gt;&#xA;&lt;li&gt;Project: Let&amp;rsquo;s write an auto complete addon for the BASH terminal&lt;/li&gt;&#xA;&lt;li&gt;Git: Working with Github workflows&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;currently-reading&#34;&gt;Currently reading&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Book title&lt;/th&gt;&#xA;          &lt;th&gt;Current Part&lt;/th&gt;&#xA;          &lt;th&gt;Total Parts&lt;/th&gt;&#xA;          &lt;th&gt;Last Updated&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Progit&lt;/td&gt;&#xA;          &lt;td&gt;22&lt;/td&gt;&#xA;          &lt;td&gt;42&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Crafting Interpreters&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;The C++ Programming Language&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;          &lt;td&gt;nil&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
     </item>
     <item>
       <title>Probability Intuition : The Basics</title>

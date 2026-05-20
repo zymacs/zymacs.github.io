@@ -43,12 +43,12 @@ html {
 
 body {
 	margin: 0;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	font-size: .875rem;
-	line-height: 1.6;
+	font-family: "Book Antiqua", Palatino, "EB Garamond", serif;
+	font-size: 19px;
+	line-height: 1.5625;
 	word-wrap: break-word;
 	background: #f7f7f7;
+	color: #252525;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -192,9 +192,9 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+/** a:hover {
 	color: #e22d30;
-}
+} **/
 
 hr {
 	margin: 0 0 20px;

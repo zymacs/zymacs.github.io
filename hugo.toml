@@ -11,14 +11,14 @@ googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your 
 
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
+  description = "Zymac's  Personal blog on Programming and Random Tinkering Persuits Plus More." # Description of your site
   opengraph = true
   twitter_cards = false
   readmore = false # Show "Read more" button in list if true
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
-  mainSections = ["post", "docs", "progress_updates"]
+  mainSections = ["post", "docs"]
 
 
 

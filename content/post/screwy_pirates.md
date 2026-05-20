@@ -1,4 +1,5 @@
 ---
+thumbnail: "img/OIP.jpg"
 title: 'Screwy Pirates Q1'
 date: 2026-05-19T19:48:27+03:00
 draft: false

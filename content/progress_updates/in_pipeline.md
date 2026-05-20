@@ -1,7 +1,8 @@
 ---
-title: 'In pipeline'
-date: 2026-05-09
-draft: false
+title: 'Upcoming articles'
+date: 2026-05-20
+draft: true
+pager: false
 ---
 
 This section will track all articles I plan to write, what the next article is, and what progress for the books I am currently reading. 

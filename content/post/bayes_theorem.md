@@ -1,6 +1,6 @@
 ---
 title: "Baye's Theorem: Informal Proof and an Example."
-thumbnail: "img/bayez.jpg"
+thumbnail: "img/probability.jpg"
 date: 2026-05-14
 draft: false
 tags:
