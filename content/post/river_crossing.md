@@ -102,11 +102,13 @@ A crosses with E and F. That's 30 minutes.
 A comes back. That's 31 minutes.
 A takes the last person across; D. That's 35 minutes.   
 
-It seems like there's a pattern.
+Its starting to look like there's a pattern.
 
 But is that correct? Notice how for the mid 7 routes we go against the rule we stated earlier in the "trick".
-We sent out a slow pair (I and J) or (F and H) or any other, with a faster person (A) at the expense of having saved time
-should we have sent the pairs with the next in rank for slowest to them. Let's correct that. 
+We sent out a slow pair (I and J), with a faster person (A) at the expense time
+we could have saved if we'd sent the slow pairs with the person next in rank for slowest to them.
+
+Let's correct that. 
 
 Again: A, B, C across. That's 3 minutes.
 A comes back. That's 4 minutes.

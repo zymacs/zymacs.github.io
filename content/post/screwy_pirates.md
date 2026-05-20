@@ -13,8 +13,7 @@ categories:
 
 This is the first post am making in this series. For all the posts in the series,
 I plan to share my solutions to the problems in the book ["A Practical
-Guide to Quantitative Finance Interviews"](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662) by Zhou Xinfeg. The first
-set of problems is brain teasers so let's get to the first one.
+Guide to Quantitative Finance Interviews"](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662) by Zhou Xinfeg. The first set of problems is brain teasers. Let's solve it.
 
 
 ### Screwy Pirates Problem Statement.
@@ -98,19 +97,17 @@ _Formalizing the pattern_
 
 If we have 2 pirates on board, the most senior takes all.
 
-If we have 3 pirates on board, the least gets one , the most senior gets the balance
-and the second gets none.
+If we have 3 pirates on board, the least gets one coin and the most senior gets the balance.
+The second gets none.
 
-If we have n>3 pirates on board, and n is even, the nth pirate being the most senior;
-the nth pirate divides (n/2)-1 of the  coins equally among (n/2)-1 pirates choosing pirates
-using the series n-2i i starting at 1 and ending at (n/2)-1. The rest
-they take.
+If we have n>3 pirates on board and n is even, the nth pirate being the most senior;
+the nth pirate will divide (n/2)-1 of the  coins equally among (n/2)-1 pirates choosing pirates
+using the series n-2i where  i starts at 1 and ends at (n/2)-1. The rest
+they of the coins they will take.
 
-If its the previous scenario but n is odd, the most senior pirate or nth pirate divides equally
-ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before sequence:
-n-2i for i starting at 1 and ending at ceil(n/2)
-if we have n>2 pirates on board and 
-the nth pirate will always propose to give the (n-2)th pirate and (n-4)th pirates 
+If its the previous scenario but n is odd, the most senior pirate or nth pirate will divide equally
+ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before:
+n-2i with starting at  1 and ending at ceil(n/2).
 
 
 

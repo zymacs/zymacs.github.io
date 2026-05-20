@@ -9,7 +9,7 @@
 		<meta property="og:url" content="//localhost:1313/post/screwy_pirates/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="Q1 BT: Screwy Pirates">
-  <meta property="og:description" content="This is the first post am making in this series. For all the posts in the series, I plan to share my solutions to the problems in the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg. The first set of problems is brain teasers so let’s get to the first one.
+  <meta property="og:description" content="This is the first post am making in this series. For all the posts in the series, I plan to share my solutions to the problems in the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg. The first set of problems is brain teasers. Let’s solve it.
 Screwy Pirates Problem Statement. Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates, they agree on the following method to divide the loot: The most senior pirate will propose a distribution of the coins. All pirates, including the most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case) accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be fed to shark and the process starts over with the next most senior pirate … The process is repeated until a plan is approved. You can assume that all pirates are perfectly rational: they want to stay alive first and to get as much gold as possible second. Finally, being blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice between otherwise equal outcomes. How will the gold coins be divided in the end?">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -109,8 +109,7 @@ Screwy Pirates Problem Statement. Five pirates looted a chest full of 100 gold c
 	</figure><div class="content post__content clearfix">
 			<p>This is the first post am making in this series. For all the posts in the series,
 I plan to share my solutions to the problems in the book <a href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662">&ldquo;A Practical
-Guide to Quantitative Finance Interviews&rdquo;</a> by Zhou Xinfeg. The first
-set of problems is brain teasers so let&rsquo;s get to the first one.</p>
+Guide to Quantitative Finance Interviews&rdquo;</a> by Zhou Xinfeg. The first set of problems is brain teasers. Let&rsquo;s solve it.</p>
 <h3 id="screwy-pirates-problem-statement">Screwy Pirates Problem Statement.</h3>
 <blockquote>
 <blockquote>
@@ -172,17 +171,15 @@ make a vote that ensures that happens. They will support the most senior pirates
 <p>The Senior will keep the remaining 98.</p>
 <p><em>Formalizing the pattern</em></p>
 <p>If we have 2 pirates on board, the most senior takes all.</p>
-<p>If we have 3 pirates on board, the least gets one , the most senior gets the balance
-and the second gets none.</p>
-<p>If we have n&gt;3 pirates on board, and n is even, the nth pirate being the most senior;
-the nth pirate divides (n/2)-1 of the  coins equally among (n/2)-1 pirates choosing pirates
-using the series n-2i i starting at 1 and ending at (n/2)-1. The rest
-they take.</p>
-<p>If its the previous scenario but n is odd, the most senior pirate or nth pirate divides equally
-ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before sequence:
-n-2i for i starting at 1 and ending at ceil(n/2)
-if we have n&gt;2 pirates on board and
-the nth pirate will always propose to give the (n-2)th pirate and (n-4)th pirates</p>
+<p>If we have 3 pirates on board, the least gets one coin and the most senior gets the balance.
+The second gets none.</p>
+<p>If we have n&gt;3 pirates on board and n is even, the nth pirate being the most senior;
+the nth pirate will divide (n/2)-1 of the  coins equally among (n/2)-1 pirates choosing pirates
+using the series n-2i where  i starts at 1 and ends at (n/2)-1. The rest
+they of the coins they will take.</p>
+<p>If its the previous scenario but n is odd, the most senior pirate or nth pirate will divide equally
+ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before:
+n-2i with starting at  1 and ending at ceil(n/2).</p>
 <p>Alright. I guess I have to work on generalizations. That was a hard one to generalize.</p>
 <p>With that, see you in the next one.</p>
 
