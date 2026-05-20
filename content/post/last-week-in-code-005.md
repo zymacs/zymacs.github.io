@@ -20,7 +20,7 @@ Learning something is one thing. Knowing that you understand something and, that
 
 I am only at basic level for most of what I try to teach (more on that later), but if someone were to ask me about Probability or Baye's or anything and  I'd written about it, I'd  feel a unique level of confidence answering the question with: "I actually have an article on that".
 
-### Learning Widen's Horizons
+### Learning Widens Horizons
 
 #### _The Memory Example_
 I have made it a culture of mine for how much gains its gotten me, to keep notes
