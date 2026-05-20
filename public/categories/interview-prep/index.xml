@@ -6,8 +6,15 @@
     <description>Recent content in Interview Prep on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 19:48:27 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 15:09:36 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/interview-prep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q2 BT: Tiger and Sheep</title>
+      <link>//localhost:1313/post/tiger_and_sheep/</link>
+      <pubDate>Wed, 20 May 2026 15:09:36 +0300</pubDate>
+      <guid>//localhost:1313/post/tiger_and_sheep/</guid>
+      <description>&lt;p&gt;Brain teaser number two from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;question-statement&#34;&gt;Question statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;One hundred tigers and one sheep are put on a magic island that only has grass. Tigers&#xA;can eat grass, but they would rather eat sheep. Assume:&#xA;&lt;strong&gt;(A). Each time only one tiger can eat one sheep, and that tiger itself will become a sheep after it eat&#xA;the sheep.&lt;/strong&gt;&#xA;&lt;strong&gt;(B). All tigers are smart and perfectly rational and they want to survive. So will the sheep be&#xA;eaten?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Q1 BT: Screwy Pirates</title>
       <link>//localhost:1313/post/screwy_pirates/</link>
