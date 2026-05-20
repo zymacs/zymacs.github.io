@@ -14,7 +14,7 @@ But for the later half of it (which was Thursday up until Sunday), I spent
 most of my time reading and making notes with not so much programming. And as usual, there is always experiences to share. Not so much though since I only had half a week. 
 
 ### The Elevated Confidence From Documenting Understanding
-I eventually got to write an article on [Baye's theorem](post/bayes_theorem/). It was a simple one as, that was my aim: to make a seemingly hard to understand topic simple. Most of the lessons from this task, I mentioned in last week's update. But I think there's parts of the experience that I hadn't felt fully yet. I'll share what I learnt from those.
+I eventually got to write an article on [Baye's theorem](/post/bayes_theorem/). It was a simple one as, that was my aim: to make a seemingly hard to understand topic simple. Most of the lessons from this task, I mentioned in last week's update. But I think there's parts of the experience that I hadn't felt fully yet. I'll share what I learnt from those.
 
 Learning something is one thing. Knowing that you understand something and, that you have the proof you can teach it is, different.
 
