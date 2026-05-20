@@ -94,7 +94,7 @@ A, B, C, D, E, F, G, H, I, J
 
 We could first get A, B, C across. That's 3 minutes.
 A comes back. That's 4 minutes.
-A crosses with D and I and J, thats 14 minutes.
+A crosses with I and J, thats 14 minutes.
 A comes back. That's 15 minutes.
 A crosses with G and H. Thats 23 minutes.
 A comes back. That's 24 minutes.
