@@ -6,6 +6,7 @@ tags:
 categories:
  - rant
  - random
+draft: true
 ---
 
 If you  look around my blog you will see a lot of articles. Not so many

@@ -11,31 +11,13 @@
     <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
     <lastmod>2026-05-20T11:34:11+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/progress_updates/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/why_so_unfocused/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-19T21:00:27+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/random/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/rant/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/selfhelp/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/interview-prep/</loc>
@@ -45,6 +27,9 @@
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/screwy_pirates/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-005/</loc>
@@ -60,6 +45,9 @@
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/rabbit_holes/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/random/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/bayes_theorem/</loc>
@@ -218,5 +206,11 @@
     <loc>//localhost:1313/post/last-week-in-code-003/</loc>
   </url><url>
     <loc>//localhost:1313/post/spam_filter_python/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/selfhelp/</loc>
+  </url><url>
+    <loc>//localhost:1313/progress_updates/</loc>
   </url>
 </urlset>
