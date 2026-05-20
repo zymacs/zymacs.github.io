@@ -11,12 +11,6 @@
     <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
     <lastmod>2026-05-20T11:34:11+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/progress_updates/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-19T21:00:27+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
@@ -24,6 +18,9 @@
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/interview-prep/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
@@ -176,38 +173,28 @@
     <loc>//localhost:1313/post/my-first-post/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/python/</loc>
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/python3/</loc>
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/python3/</loc>
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/docs/about/</loc>
+    <loc>//localhost:1313/bio/about/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/</loc>
+    <loc>//localhost:1313/bio/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/getting-started-with-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-003/</loc>
   </url><url>
-    <loc>//localhost:1313/post/spam_filter_python/</loc>
+    <loc>//localhost:1313/docs/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/go/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/golang/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/golang/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/python3/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/python3/</loc>
+  </url><url>
+    <loc>//localhost:1313/progress_updates/</loc>
   </url>
 </urlset>

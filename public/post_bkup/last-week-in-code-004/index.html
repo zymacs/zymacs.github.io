@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Week in Code E004 - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/last-week-in-code-004/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Last Week in Code E004">
+  <meta property="og:description" content="It’s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing. I thought I had quite a lot to write about and that I was going to produce as much. But that’s not really what happened. I only wrote 3 articles. There was some lessons to learn from that still. And I’ll share those.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-11T17:41:08+03:00">
+    <meta property="article:modified_time" content="2026-05-11T17:41:08+03:00">
+    <meta property="article:tag" content="Lwic">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/progress_updates/">
+				
+				<span class="menu__text">Pipeline</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/quotes_and_excerpts/">
+				
+				<span class="menu__text">Quotes &amp; Excerpts</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last Week in Code E004</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-11T17:41:08&#43;03:00">May 11, 2026</time></div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/lwic.png" alt="Last Week in Code E004">
+		
+	</figure><div class="content post__content clearfix">
+			<p>It&rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.
+I thought I had quite a lot to write about and that I was going to produce as much.
+But that&rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&rsquo;ll share those.</p>
+<p><em>Teaching, the best way to learn</em></p>
+<h2 id="the-protege-effect">The Protege Effect.</h2>
+<p>I have installed and reinstalled Arch quite a number of times but,all of that was me following guides just for the sake of getting a working system.
+The installation process is very involved and I&rsquo;d decided I&rsquo;d have my own notes on it.
+So one of the days last week I set out to write a guide on how to install Arch. But then I learn&rsquo;t all along I wasn&rsquo;t understanding any of what the steps meant that I followed from old guides.
+I felt a responsibility to know what I was teaching. I found myself reading articles on how differeant parts of the OS worked that I
+don&rsquo;t think I&rsquo;d ever have gotten the motivation to read, if it wasn&rsquo;t for the teaching task I had. And, I found that this responsibility to understand was
+triggered every time I needed to explain something to someone else.</p>
+<p>I have way more drafts than  published articles for that reason.  The only articles I was able to publish were : one on TCP (Which wasn&rsquo;t my intended article as what I intended to write about turned out
+to have needed way more reading before I&rsquo;d be able to explain it in my own words) and one on Probability.</p>
+<p>I collected and pieced together scraps from my networks research to write about why downloads are slower with small files. That&rsquo;s what I intended to write about before I switched to the easier alternative, <a href="https://zymacs.github.io/post/http_downloads/">how TCP downloads work</a>. Then for the article on <a href="https://zymacs.github.io/post/probability_basics/">Probability</a>, thinking about it from the lens which I did made me understand it
+more intuitively. And, I found that I arrived at already established conclusions from independent exploration (reverse engineering formulas that is).
+<em>(like, all probability could be expressed in term&rsquo;s of Baye&rsquo;s theorem)</em></p>
+<p>So I then tried to follow the Probability article  up with one on Baye&rsquo;s theorem. But,  after 3 days of reading , and trust me I know Baye&rsquo;s and can pass a test on it,
+I realized transferring the intuitve explanation to someone else was levels harder. I still learnt alot about what I did not know anyways. And, I developed better mental models for explainign to others, and to myself.</p>
+<p>Also, this whole task, the difficulty of it,  developed in me a respect for people that know how to explain technical concepts. That is  with as much ease as they seem to have. <a href="https://www.youtube.com/@TheOrganicChemistryTutor">The Organic Chem tutor</a>, and <a href="https://www.youtube.com/@BenEater">Ben Eater</a> or any other educator on YouTube for instance.
+It also got me interested in if this was a formally recognized means to learn for how  non trivially effective it was  deepening my understanding for the topics I tried to teach.
+That&rsquo;s how I learn&rsquo;t about its formal name, <a href="https://www.growthengineering.co.uk/protege-effect/">The Protege effect</a>.</p>
+<h2 id="notes-as-a-living-document">Notes as a living document.</h2>
+<p>There was some sadness during all this. Some folk , after they are done with school, never get to use any of the work they studied in class. And, for that reason, they never get
+to feel the consequenes of never having written and, or kept good notes.</p>
+<p>I am not one of those. I have read about the importance of writing and maintaining notes from different sources
+but did not appreaciate that advice until it was 5 years late. Which is now.  The fields I hope to have a career in need for me to have explanatory depth for concepts spanning 4 years of school.</p>
+<p>Now that ain&rsquo;t the annoying part. The annoying part is I studied virtually all of the &lsquo;hard&rsquo; concepts I find myself going to YouTube for now!
+I got grade A&rsquo;s in some of the classes. But what do I have to show for it? Nothing. That feeling I am doing double work and will have to for years of notes unwritten ain&rsquo;t a good one.
+I have learnt the hard way and that&rsquo;s one of the why&rsquo;s for this blog, and for last week&rsquo;s writing activity.</p>
+<p>I find that even when the first writing drafts ain&rsquo;t complete, I always have somethign to return to that grows as my knowledge grows. That I don&rsquo;t have to spend hours again going through
+some long youtube video when I already wrote notes and explained it to myself in them. Its like , you have 5 pages explaining 3 hours of content which when you read those five pages, all
+the locked memories fromw when you consumed the 3 hours of content are retrieved to working memory.</p>
+<p><em>Random rant on other projects I spent my time on</em></p>
+<h2 id="in-other-projects">In other projects</h2>
+<h3 id="scripting"><em>Scripting</em></h3>
+<p>Scripting. How much efficiency can be gained from the smallest of solutions and the importance of small but efficient scripts is , I think, something that&rsquo;s not given as much attention as it deserves.
+A script to make sure you don&rsquo;t commit your passwords to github. A script to clean your downloads folder. A script to deal with port assignment. A script to make sure your directory structure
+is uniform across all your computers and ensure it stays as defined. All these are small &ldquo;unimportant&rdquo; but frustrating problems devs face which, at least for me, compound into major discomfort for
+the developer. Or just a normal computer user, a hobbyist maybe.</p>
+<p>However, getting oneself to  write these small scripts is interestingly hard.
+I mean, they are easy to write but the fact that their ROI is not understood well enough makes it hard to get one to write one for themselves. Maybe there&rsquo;s another reason and I&rsquo;d like to hear.</p>
+<p>I have a number I have written for myself, other&rsquo;s vibe-coded.</p>
+<p>One dirty but <em>very efficient</em> script to clean my downloads folder, and another one I vibe coded to manage port assignment. Just an aside, there&rsquo;s always this sense of satisfaction when I get into
+my messy downloads folder and with one command, wish all the mess away. That feeling my writing energy was not wasted. I like the port assignment script too but you know how it is with
+AI written code and the sense of ownership. I am hoping to add another to handle my git operations after I read about git hooks. There&rsquo;s <a href="https://github.com/zymacs/PortButler">one</a> I vibe-coded with deepseek for port management last week. But anwyways, point is, automation and scripting has way
+more value than its given. Interesting as I was searching for folk online to corroborate my sentiments I found <a href="https://www.youtube.com/watch?v=aqfsoTZ4PHY">this video</a> speaking along the same lines.</p>
+<h3 id="a-radio-server"><em>A radio server</em></h3>
+<p>Imagine having a streaming service where you control the EPG. Or  one that could grow to have some AI agents act as DJ&rsquo;s but on your own music doing what you configure them to do. Well,
+I&rsquo;d day that&rsquo;s imagining having your own broadcasting station and I made one step towards that when I set up streaming with <a href="https://www.azuracast.com/">AzuraCast</a> last week. I think I mentioned this somewhere among the
+docker projects in last week&rsquo;s episode but I probably did not link it. Here&rsquo;s an exposed endpoint that&rsquo;s always live when I am.</p>
+<ul>
+<li><a href="https://indieradio.keithnambale.com/radio.mp3">Indie Radio</a></li>
+</ul>
+<h2 id="misc">Misc.</h2>
+<p>I talked about having too many drafted articles. More on that problem. I think I am going to have to put up a section on what drafts I got in my drafts folder and what article I am working on.
+It&rsquo;ll probably help keep me from drifting and also, send notice what article is coming next. You have probably seen that section &ldquo;In-the-pipeline&rdquo;.</p>
+<p>Also, I messed around with my &lsquo;baseURL&rsquo; settings and messed up the font-awesome configuration for the social icons. But , the usual problem, I did not record how I set them up. The icons still work
+though. I should be working on that <em>soon</em>. That and the search feature.</p>
+<h2 id="in-other-news">In other news</h2>
+<h3 id="news-updates">News Updates</h3>
+<ul>
+<li><a href="https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/">Google fraud defence is just WEI</a></li>
+<li><a href="https://reclaimthenet.org/france-moves-to-break-encrypted-messaging">France moves to break encrypted messaging</a></li>
+<li><a href="https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html">Meta&rsquo;s embrace of AI is making it&rsquo;s employee&rsquo;s miserable</a></li>
+</ul>
+<h3 id="cool-articles">Cool articles</h3>
+<ul>
+<li><a href="https://susam.net/inverse-laws-of-robotics.html">Three Inverse Laws of AI</a></li>
+</ul>
+<h3 id="random-finds">Random finds</h3>
+<ul>
+<li><a href="https://webrtcforthecurious.com/">WebRTC for the curios (Used by ChatGPT&rsquo;s low latency speech service)</a></li>
+<li><a href="https://sinceyouarrived.world/taken">Since you arrived (What your browser knows about you)</a></li>
+</ul>
+<p>As always, I hope you learnt something from this log and hope to see you around in the next one.</p>
+<p>Still here?</p>
+<p><em>Here&rsquo;s an extra rant. Usually I mention certain things are a problem or try to make the point certain things should be done a certain way and get this reaction that makes it feel its just me.
+Its always really reassuring whenever I search online and find exactly the issues I stated were issues expressed as so by thousands of other people I have never met. Sometimes finding projects built around exactly
+the same issues. Thats what the case was with PortButler. I wrote the port mgt script only to find many have been written before all having the same driving frustration as I did.
+Then the more interesting one is my sentiment on the lack of appreciation for scripting. The video I linked on scripting  I found after I was through with writing this article. But one could say I took some points straight
+out of that video since it was published earlier than I posted this. Or, the protege effect. I thought it was just me, this feeling I had there was something special about teaching it should be
+a studied phenomenon, only to learn it was. I guess what I am trying to say is, you can trust that I am a valuable independent thinker of sorts if you wonder who the hell I am. Trying to get me some credibility points is all :)</em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/probability_basics/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Probability Intuition : The Basics</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/bayes_theorem/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Baye&#39;s Theorem: Informal Proof and an Example.</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/why_so_unfocused/">An attempt to focus</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/screwy_pirates/">Screwy Pirates Q1</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-005/">Last Week in Code E005</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/golang/">Golang</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/rant/">Rant</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="Go">Go (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="Golang">Golang (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/selfhelp/" title="Selfhelp">Selfhelp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

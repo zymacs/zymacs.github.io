@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Why smaller files take longer to download - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/why_small_files_take_long_to_download/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Why smaller files take longer to download">
+  <meta property="og:description" content="This article is going to have two children since needs some prerequisite knowledge that would be too much to cram into one article. I mean I could have said go read up on X from someone else then come back but I read up on X and I could as well send you to my articles on X right? Anyways. Say you have 1000 small files each 1kb in size, why is it that total time taken to transfer these all other factors kept constant is way more than time it takes to download a single file that is 1000*1kb in size? Or for the other part of the article, if you have copied files between disks before, which I am sure you have, ever noticed how the speed falls when during data transfer, the system encouters some really small size files? Its counter intutitive. I mean I’d expect smaller files to be copied over faster, and have faster download speeds also than bigger ones. But when you understand what’s going on under the hood , you learn why it ain’t as simple as that. In this article we shall have a high level overview, trust me there’s so much to cover we’ll have only hthat, for why this is so. Why transfers are slower for smaller files and why downloads take longer for these small files.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-06T00:00:00+00:00">
+    <meta property="article:tag" content="Tcp">
+    <meta property="article:tag" content="Why_type">
+    <meta property="article:tag" content="Research">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/docs/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Why smaller files take longer to download</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-06T00:00:00Z">May 06, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/networks/" rel="category">Networks</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/router.jpg" alt="Why smaller files take longer to download">
+		
+	</figure><div class="content post__content clearfix">
+			<p>This article is going to have two children since needs some
+prerequisite knowledge that would be too much to cram into
+one article. I mean I could have said go read up on X from someone else then
+come back but I read up on X and I could as well send you to my articles on X right?
+Anyways. Say you have 1000 small files each 1kb in size, why is it that total time taken to transfer these all other factors kept constant is way more than time it takes to download a single file
+that is 1000*1kb in size? Or for the other part of the article, if you have copied files between disks before, which I am sure you have, ever noticed how the speed falls when during data transfer, the
+system encouters some really small size files? Its counter intutitive. I mean I&rsquo;d expect smaller files to be copied over faster, and have faster download speeds also than bigger ones. But
+when you understand what&rsquo;s going on under the hood , you learn why it ain&rsquo;t as simple as that. In this article we shall have a high
+level overview, trust me there&rsquo;s so much to cover we&rsquo;ll have only hthat, for why this is so. Why transfers are slower for smaller files and why downloads take longer for these small files.</p>
+<p>Now first, head over to this article for some theory on what happens when you click the download button.</p>
+<p>You have downloaded files before. And even if you have never, if
+you are reading this , your phone just did. So anyone using the internet has consciously or not downloaded files before. But how
+does that work? What happens between when you click the download
+button and when the file is fully downloaded?</p>
+<p>To demonstrate that we need to first state some word definitions.
+Client: Any device that is capable of obtaining data from a server.
+Server: Any device that is capable of giving out information to
+clients.
+Download (action): Data transfer over a network from a server
+to a client.</p>
+<h2 id="getting-an-uri-to-a-remote-resource">Getting an uri to a remote resource</h2>
+<p>You have been given some link of the form `<a href="http://randomsite.com/file.txt">http://randomsite.com/file.txt</a> to a remote file and you want to some file hosted on randomsite.com. The remote file is file.txt.
+The website is &lsquo;on the internet&rsquo; but all that means is it&rsquo;s hosted on some computer beyond your local network.</p>
+<p>So you open your browser or , lets say you just click the
+link to instantiate the download. Let&rsquo;s assume the handler app is a browser.</p>
+<h2 id="address-translation">Address translation</h2>
+<p>The browser then  translates the link you were given , say, randomsite.com
+to an IP address, a unique ID for the target site (randomsite.com)on the internet.</p>
+<h2 id="connection-initiation">Connection Initiation</h2>
+<p>With the IP addres resolved, the process moves on to initiate
+a connection with the target host at say port 8000 for https.
+The connection is a TCP type connection. And here&rsquo;s how that works.</p>
+<h3 id="the-three-way-handshake-summary">The three way handshake summary</h3>
+<p>Your client, say the browser, sends a SYN packet with some number <code>a</code> to the server to request connection establishment and waits for a response.
+Packets are smaller subdivisions of a larger message from a networks perspective. A SYN packet in
+the Transmission Control Protocol instantiates communication between two nodes on a network while an ACK packet
+acknoledges receipt of sent message. More about TCP packets here. Anyways.
+The server acknowledges this SYN with an ACK packet that&rsquo;s with a number <code>a+1</code> (that is, I got a, now send a+1)
+It also sends its own SYN that&rsquo;s some random number <code>b</code>.<br>
+The browser on receipt confirms it has recieved the server <code>SYN</code> with an ACK thats with value <code>b+1</code> (I got be, send b+1) if sending
+anything next. Now the connection is established.
+So we move from the establishment phase of the connection to the transfer phase.</p>
+<h3 id="data-transfer">Data transfer</h3>
+<p>The browser sends an HTTP Get to the server requesting for the target
+resource (over established TCP connection), in this case <code>file.txt</code>.
+The server response with an HTTP response code 200, together with the requested data.</p>
+<h2 id="connection-conclusion">Connection conclusion</h2>
+<p>Data transfer has come to completion without error, the server then initiates termination the tcp connection with
+a two way handhshake for http (yes, we&rsquo;ll use http for simplicity).
+It sends FIN packet (I am done, closing connection) plus an ACK acknowledging the last send SYN.
+The client responds with a FIN and ACK too. The FIN says it&rsquo;s done too and the ACK acknoledges it received the FIN.</p>
+<p>That&rsquo;s an overview for what&rsquo;s going on behind the scenes for each connection that&rsquo;s made to download a file.</p>
+<p>So when you click download. The underlying application logic
+sends out a request for the resource you want to access to
+the server. The process follows something of this kind.</p>
+<p>Then over to this one for an overview on how the copy process
+works on a computer.</p>
+<p>What can we learn from this?</p>
+<p>As a layman, outside developer work, there&rsquo;s something to learn about how to have faster data transfers. If you have a folder with 1000 small files that you would like moved over to some other disk (not another folder since that works differently), archive them (archive them, not compress, yes , the two are different) and move the archive over. It will be a whole lot faster.</p>
+<p>If you are downloading files over the internet and have means to control in what format information is sent over to you from the server side, opt into having it sent to you as one blob other than as tiny split up files.</p>
+<p>As someone making websites, there&rsquo;s a lot to learn as well since for large sites, there&rsquo;s a whole lot of &lsquo;smaller files&rsquo; that have to be downloaded to the User&rsquo;s client to have the site functional. To reduce the overhead and give the user a seamless browser experience, it helps to among other things &hellip;</p>
+<p>What happens when you download a file over a network?</p>
+<p>TCP/IP
+Bandwidth
+Throughput
+Network Congestion
+MTU
+The OSI model and names of data at every level: frame, packet, etc</p>
+<h2 id="live-experiment">Live experiment</h2>
+<p>Next article: Why copying small files takes longer than copying one file of same size as total for all
+small files&rsquo;</p>
+<p>Refs I consumed for this article:</p>
+<ul>
+<li><a href="https://with.raidrive.com/t/very-slow-download-speed-with-small-files/3423/4'">https://with.raidrive.com/t/very-slow-download-speed-with-small-files/3423/4'</a></li>
+<li><a href="https://serverfault.com/questions/9742/which-is-faster-and-why-transferring-several-small-files-or-few-large-files">https://serverfault.com/questions/9742/which-is-faster-and-why-transferring-several-small-files-or-few-large-files</a></li>
+<li><a href="https://www.youtube.com/watch?v=4UZIwM7tnVk">https://www.youtube.com/watch?v=4UZIwM7tnVk</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Download">https://en.wikipedia.org/wiki/Download</a></li>
+<li><a href="https://medium.com/@olalekanamoo128/throughput-bandwidth-iops-and-latency-understanding-file-transfer-over-a-network-186392e29b58">https://medium.com/@olalekanamoo128/throughput-bandwidth-iops-and-latency-understanding-file-transfer-over-a-network-186392e29b58</a></li>
+<li><a href="https://aws.amazon.com/what-is/latency/">https://aws.amazon.com/what-is/latency/</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work</a></li>
+<li><a href="https://www.youtube.com/watch?v=F27PLin3TV0">https://www.youtube.com/watch?v=F27PLin3TV0</a></li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc9293.html">https://www.rfc-editor.org/rfc/rfc9293.html</a></li>
+<li><a href="https://osqa-ask.wireshark.org/questions/17156/large-rtt-or-packets-lost-factorswhich-affects-tcp-performance-most/">https://osqa-ask.wireshark.org/questions/17156/large-rtt-or-packets-lost-factorswhich-affects-tcp-performance-most/</a></li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/tcp/" rel="tag">tcp</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/why_type/" rel="tag">why_type</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/research/" rel="tag">research</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/modding-alacritty/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Modding Alacritty</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="//localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/why_small_files_take_long_to_download/">Why smaller files take longer to download</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/modding-alacritty/">Modding Alacritty</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/grep/">Grep Fu Basics</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-03/">Last Week in Code 003</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/but-my-password-is-correct/">Arch Faillock</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networks/">Networks</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/research/" title="Research">Research</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/why_type/" title="Why_type">Why_type</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
