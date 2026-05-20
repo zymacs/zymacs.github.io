@@ -106,7 +106,7 @@ the nth pirate divides (n/2)-1 of the  coins equally among (n/2)-1 pirates choos
 using the series n-2i i starting at 1 and ending at (n/2)-1. The rest
 they take.
 
-if its the previous scenario but n is odd, the most senior pirate or nth pirate divides equally
+If its the previous scenario but n is odd, the most senior pirate or nth pirate divides equally
 ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before sequence:
 n-2i for i starting at 1 and ending at ceil(n/2)
 if we have n>2 pirates on board and 
