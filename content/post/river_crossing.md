@@ -119,7 +119,9 @@ A comes back. That's 31 minutes.
 A takes the last person across; B. That's 33 minutes.   
 
 
+That's lower than 35. The generalizations we made to help but, there's probably means to get a lower answer.
+
+If you liked that one you might also like this [numberphile video](https://www.youtube.com/watch?v=ZCVAGb1ee8A).
+
 Anyways, that's it for this one. 
-
-
 
