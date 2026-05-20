@@ -61,7 +61,7 @@ _4 tigers, 1 sheep_
 The sheep will stay alive. All tigers will be afraid of becoming the sheep that will certainly
 be eaten as per the reasons stated in the 3 tigers, 1 sheep scenario.
 
-_the pattern_
+_The pattern_
 
 Whenever there's an even number of tigers, the sheep is safe. Otherwise, the sheep gets eaten.
 
