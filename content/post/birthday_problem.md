@@ -1,6 +1,6 @@
 ---
 title: 'Q4 BT: Birthday Problem'
-thumbnail: 'OIP.jpg'
+thumbnail: 'img/OIP.jpg'
 date: 2026-05-20T18:12:54+03:00
 draft: false
 tags:
@@ -49,9 +49,9 @@ You are watching all this play out,  how can you infer from it  what the actual 
 ### Solution and explanation
 
 
-D claim's C does not know the date and neither does D.
+D claims C does not know the date and neither does D.
 That means, whatever date it is, it ain't one with Months June or December. If it were, D would have
-immediately seen it with the unique December 2nd and June 7th.
+immediately seen it among the unique dates December 2nd and June 7th.
 
 Since C now claims, on D's announcement, that they've figured out
 the date. C knows the dates list has shrunk to dates with months September and March.

@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/interview-prep/</loc>
     <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/brain_teasers/</loc>
-    <lastmod>2026-05-20T15:49:44+03:00</lastmod>
+    <loc>//localhost:1313/post/birthday_problem/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-20T15:49:44+03:00</lastmod>
+    <loc>//localhost:1313/categories/qaunt-finance/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/interview-prep/</loc>
-    <lastmod>2026-05-20T15:49:44+03:00</lastmod>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/river_crossing/</loc>
     <lastmod>2026-05-20T15:49:44+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
-    <lastmod>2026-05-20T15:49:44+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-20T15:49:44+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/tiger_and_sheep/</loc>
