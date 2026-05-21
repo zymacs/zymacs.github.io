@@ -6,21 +6,20 @@
     <description>Recent content in Quotes and Excerpts on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 11:34:11 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/quotes_and_excerpts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What the hell!</title>
-      <link>//localhost:1313/quotes_and_excerpts/what_the_hell/</link>
-      <pubDate>Wed, 20 May 2026 11:34:11 +0300</pubDate>
-      <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
-      <description>&lt;p&gt;On streaks and making good decisions.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next bad one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Click&lt;/a&gt; for details.&lt;/p&gt;</description>
-    </item>
     <item>
       <title></title>
       <link>//localhost:1313/quotes_and_excerpts/engineer_creativity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/quotes_and_excerpts/engineer_creativity/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The cost of software&#xA;maintenance increases with the square of&#xA;the programmer’s creativity.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Robert D Bliss&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;The cost of software&#xA;maintenance increases with the square of&#xA;the programmer’s creativity.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&amp;ndash; &lt;em&gt;&lt;strong&gt;Robert D Bliss&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/what_the_hell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next bad one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

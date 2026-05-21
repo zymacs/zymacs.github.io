@@ -3,19 +3,19 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Q3 BT: River Crossing - Zymacs</title>
+	<title>Q5 BT: Card_game - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:url" content="//localhost:1313/post/river_crossing/">
+		<meta property="og:url" content="//localhost:1313/post/card_game/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Q3 BT: River Crossing">
-  <meta property="og:description" content="Question 3 from the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg.
-Four people, A, B, C and D need to get across a river. The only way to cross the river is by an old bridge, which holds at most 2 people at a time. Being dark, they can’t cross the bridge without a torch, of which they only have one. So each pair can only walk at the speed of the slower person. They need to get all of them across to the other side as quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C takes 2 minutes; and D takes 1 minute. What is the minimum time to get all of them across to the other side?">
+  <meta property="og:title" content="Q5 BT: Card_game">
+  <meta property="og:description" content="Question 5 from the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg.
+Card Game Problem Statement A casino offers a card game using a normal deck of 52 cards. The rule is that you turn over two cards each time. For each pair, if both are black, they go to the dealer’s pile; if both are red, they go to your pile; if one black and one red, they are discarded. The process is repeated until you two go through all 52 cards. If you have more cards in your pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to negotiate the price you want to pay for the game. How much would you be willing to pay to play this game?">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-05-20T15:49:44+03:00">
-    <meta property="article:modified_time" content="2026-05-20T15:49:44+03:00">
+    <meta property="article:published_time" content="2026-05-21T15:43:01+03:00">
+    <meta property="article:modified_time" content="2026-05-21T15:43:01+03:00">
     <meta property="article:tag" content="Brain_teasers">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,115 +101,117 @@ Four people, A, B, C and D need to get across a river. The only way to cross the
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Q3 BT: River Crossing</h1>
+			<h1 class="post__title">Q5 BT: Card_game</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-20T15:49:44&#43;03:00">May 20, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/quant-finance/" rel="category">Quant Finance</a>, <a class="meta__link" href="/categories/interview-prep/" rel="category">Interview Prep</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-21T15:43:01&#43;03:00">May 21, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/quant-finance/" rel="category">Quant Finance</a>, <a class="meta__link" href="/categories/interview-prep/" rel="category">Interview Prep</a>
 	</span>
 </div></div>
 		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/OIP.jpg" alt="Q3 BT: River Crossing">
-		
-	</figure><div class="content post__content clearfix">
-			<p>Question 3 from  the book <a href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662">&ldquo;A Practical
+		<div class="content post__content clearfix">
+			<p>Question 5 from  the book <a href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662">&ldquo;A Practical
 Guide to Quantitative Finance Interviews&rdquo;</a> by Zhou Xinfeg.</p>
+<h3 id="card-game-problem-statement">Card Game Problem Statement</h3>
 <blockquote>
 <blockquote>
 <blockquote>
 </blockquote>
 </blockquote>
-<p>Four people, A, B, C and D need to get across a river. The only way to cross the river is
-by an old bridge, which holds at most 2 people at a time. Being dark, they can&rsquo;t cross the
-bridge without a torch, of which they only have one. So each pair can only walk at the
-speed of the slower person. They need to get all of them across to the other side as
-quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C
-takes 2 minutes; and D takes 1 minute.
-What is the minimum time to get all of them across to the other side?</p>
+<p>A casino offers a card game using a normal deck of 52 cards. The rule is that you turn
+over two cards each time. For each pair, if both are black, they go to the dealer&rsquo;s pile; if
+both are red, they go to your pile; if one black and one red, they are discarded. The
+process is repeated until you two go through all 52 cards. If you have more cards in your
+pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to
+negotiate the price you want to pay for the game. How much would you be willing to
+pay to play this game?</p>
 <blockquote>
 <blockquote>
 </blockquote>
 </blockquote>
 </blockquote>
-<h3 id="information-summary">Information summary</h3>
+<h3 id="info-processing">Info processing</h3>
+<p>Card count is 52.</p>
+<p>2 cards picked each time.</p>
+<p>Both are black, dealer&rsquo;s pile.</p>
+<p>Both are red, your pile.</p>
+<p>One red, one black, discard hand.</p>
+<h3 id="solution-and-explanation">Solution and Explanation</h3>
+<p>Bring the number down to 10. Is there any one way to deal the cards so you win?
+There is none! The game always ends in a draw and your opponent wins.</p>
+<p>10 cards (5r, 5b)</p>
 <ul>
-<li>Total head count:  4.</li>
-<li>Max cross load:  2.</li>
-<li>Torch count: 1</li>
+<li>2b      :  (5r, 3b)</li>
+<li>2r      :  (3r, 3b)</li>
+<li>1b 1r:  :  (2r, 2b)</li>
+<li>2b      :  (3r, 0b)</li>
+<li>2r</li>
 </ul>
-<h3 id="speed-ranking">Speed ranking</h3>
-<ul>
-<li>A : 10 minutes</li>
-<li>B : 5  minutes</li>
-<li>C : 2  minutes</li>
-<li>D : 1  minute</li>
-</ul>
-<h3 id="assumptions">Assumptions</h3>
-<ul>
-<li>None significant to be made.</li>
-</ul>
-<h3 id="solution-and-explanation">Solution and explanation</h3>
-<p>D goes with A, that&rsquo;s 10 minutes.
-D brings back the torch. That&rsquo;s 11 minutes.
-D goes back with B. That&rsquo;s 16 minutes.
-D comes back, 17 mintes,  and takes the last route across the bridge with C, 19  minutes.</p>
-<p>How about if we group the two slowest people together?
-Ah, that would raise total time too fast.
-A goes with B, that&rsquo;s 10 minutes.
-B returns, thats 15 minutes.
-B goes with C, that&rsquo;s 17 minutes.. Not feasible.</p>
-<p>C goes with D , thats 2 minutes.
-D returns, thats, 3 minutes.
-D goes with A, that&rsquo;s 13 minutes.
-C returns, that&rsquo;s 15 miunutes.
-C goes with B, that&rsquo;s 20&hellip; woof..</p>
-<p>C goes with D, 2 minutes.
-C returns, 4 minutes.
-A goes with B, 14 minutes.
-D returns, 15 minutes.
-D goes with C, 17 minutes.. that&rsquo;s probably as low as we can get.</p>
-<h3 id="the-trick">The trick.</h3>
-<p>If the two slowest people cross first, we&rsquo;ll incur a tripple time expenditure for the faster of the two. In the solution attempt, when we sent A across with B, we
-had to deal with B&rsquo;s return and repeat sojourn across the bridge.</p>
-<p>If a faster person moves with the slowest person, we waste time that would have been saved if that slowest person crossed with someone that
-was next in ranking for slowest.</p>
-<p>So we find means to get the slowest two out together without incurring the tripple waste described earlier. We make sure a faster person is
-already across waiting to return for whoever will be left when the slow pair makes it out.</p>
-<p>We send out the fastest two first, say C and D, let one of them return, send out the slow pair. Send the faster person back for their
-fast counter part. Just like we did for the strategy that yielded 17 minutes.</p>
-<p>Now how do we generalize this solution so it works with arbitrary max crossing limits and any total number of people crossing? I haven&rsquo;t figured that out yet
-or if it can be done.</p>
-<p>But we could try with an example of 10. That&rsquo;s people A through J. A is the fastest, crossing in 1 minute. J the slowest taking 10 minutes to cross.
-The bridge can hold up to 3 at a time.  There is 1 torch. Question: Min time to get everyone across.</p>
-<p>A, B, C, D, E, F, G, H, I, J</p>
-<p>We could first get A, B, C across. That&rsquo;s 3 minutes.
-A comes back. That&rsquo;s 4 minutes.
-A crosses with I and J, thats 14 minutes.
-A comes back. That&rsquo;s 15 minutes.
-A crosses with G and H. Thats 23 minutes.
-A comes back. That&rsquo;s 24 minutes.
-A crosses with E and F. That&rsquo;s 30 minutes.
-A comes back. That&rsquo;s 31 minutes.
-A takes the last person across; D. That&rsquo;s 35 minutes.</p>
-<p>Its starting to look like there&rsquo;s a pattern.</p>
-<p>But is that correct? Notice how for the mid 7 routes we go against the rule we stated earlier in the &ldquo;trick&rdquo;.
-We sent out a slow pair (I and J), with a faster person (A) at the expense time
-we could have saved if we&rsquo;d sent the slow pairs with the person next in rank for slowest to them.</p>
-<p>Let&rsquo;s correct that.</p>
-<p>Again: A, B, C across. That&rsquo;s 3 minutes.
-A comes back. That&rsquo;s 4 minutes.
-H crosses with I and J, thats 14 minutes.
-B comes back. That&rsquo;s 16 minutes.
-E  crosses with F and G. Thats 23 minutes.
-C comes back. That&rsquo;s 26 minutes.
-A crosses with C and D. That&rsquo;s 30 minutes. *
-A comes back. That&rsquo;s 31 minutes.
-A takes the last person across; B. That&rsquo;s 33 minutes.</p>
-<p>That&rsquo;s lower than 35. The generalizations we made to help but, there&rsquo;s probably means to get a lower answer.</p>
-<p>If you liked that one you might also like this <a href="https://www.youtube.com/watch?v=ZCVAGb1ee8A">numberphile video</a>.</p>
-<p>Anyways, that&rsquo;s it for this one.</p>
+<p>Black: 4
+Red: 4
+Draw: ..
+You lose</p>
+<p>How about if for all pickings, the pairs a single color</p>
+<p>Total Card count: 10 cards (5r, 5b)</p>
+<table>
+  <thead>
+      <tr>
+          <th>Picking Round</th>
+          <th>Black picked</th>
+          <th>Red picked</th>
+          <th>Red left</th>
+          <th>Black left</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>5</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>5</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>4</td>
+          <td>4</td>
+          <td>nil</td>
+          <td>nil</td>
+      </tr>
+  </tbody>
+</table>
+<p>Total for black is a 4, total for red is a 4. It&rsquo;ll always be that way regardless of the deck size, if
+there&rsquo;s an equal number of each of black and red.</p>
+<p>This is a rigged game. There&rsquo;s always an equal number of red and black pairs.
+The game will always draw. house always wins. I would not play it.</p>
+<p>That&rsquo;s it for this one.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -245,14 +247,8 @@ A takes the last person across; B. That&rsquo;s 33 minutes.</p>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/tiger_and_sheep/" rel="prev">
+		<a class="pager__link" href="/post/birthday_problem/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Q2 BT: Tiger and Sheep</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/birthday_problem/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
 			<p class="pager__title">Q4 BT: Birthday Problem</p>
 		</a>
 	</div>
@@ -271,11 +267,11 @@ A takes the last person across; B. That&rsquo;s 33 minutes.</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card_game</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/tiger_and_sheep/">Q2 BT: Tiger and Sheep</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/screwy_pirates/">Q1 BT: Screwy Pirates</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-005/">Last Week in Code E005</a></li>
 		</ul>
 	</div>
 </div>
@@ -318,7 +314,7 @@ A takes the last person across; B. That&rsquo;s 33 minutes.</p>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>

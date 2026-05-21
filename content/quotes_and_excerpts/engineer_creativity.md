@@ -1,7 +1,7 @@
 >>>
-> The cost of software
+> _The cost of software
 > maintenance increases with the square of
-> the programmer’s creativity.
+> the programmer’s creativity._
 >>>
 
-_Robert D Bliss_
+-- _**Robert D Bliss**_
