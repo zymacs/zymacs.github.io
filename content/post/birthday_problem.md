@@ -6,7 +6,7 @@ draft: false
 tags:
  - brain_teasers
 categories:
- - Qaunt Finance
+ - Quant Finance
  - Interview Prep
 ---
 
