@@ -3,7 +3,7 @@ title: Upcoming Articles
 menu:
   main:
    name: "Upcoming Articles"
-   weight: 2
+   weight: 3
 draft: false
 pager: false
 ---
