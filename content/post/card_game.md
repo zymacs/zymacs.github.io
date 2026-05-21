@@ -1,5 +1,5 @@
 ---
-title: 'Q5 BT: Card_game'
+title: 'Q5 BT: Card Game'
 thumbnail: 'img/OIP.jpg'
 date: 2026-05-21T15:43:01+03:00
 draft: false
