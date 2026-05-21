@@ -74,7 +74,7 @@ Total for black is a 4, total for red is a 4. It'll always be that way regardles
 there's an equal number of each of black and red.
 
 This is a rigged game. There's always an equal number of red and black pairs.
-The game will always draw. house always wins. I would not play it.
+The game will always draw. The house always wins. I would not play it.
 
 
 That's it for this one.
