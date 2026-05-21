@@ -169,5 +169,12 @@
       <guid>//localhost:1313/post/last-week-in-code-003/</guid>
       <description></description>
     </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/engineer_creativity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/engineer_creativity/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The cost of software&#xA;maintenance increases with the square of&#xA;the programmer’s creativity.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Robert D Bliss&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

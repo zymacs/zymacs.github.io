@@ -269,7 +269,7 @@ grep '^p' grep_text.txt | grep 'd$'
 That's more than you need for basic grep usage. There'll probably be times when you need to get beyond the basics and I have attached a link to the GNU manual that you can ref for that. You can
 check out `man grep` too.  Most of your usage of grep will not be as described here, with plain text that is. It'll usually be piping output  other  programs  (at times including grep) depending on the situation. But with what you now have, you can make your own pattern combos and do all sorts of text matching with it. 
 
-As an extra, here's a [ComputerPhile video](https://www.youtube.com/results?search_query=brian+kernighan+grep) in which  Brian Kernighan, Grep's author, talks about how it came to be.
+As an extra, here's a [ComputerPhile video](https://www.youtube.com/results?search_query=brian+kernighan+grep) in which  Brian Kernighan of the C programming language and AWK talks about how it came to be.
 
 
 I hope you learnt something. 
