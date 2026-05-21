@@ -1,5 +1,3 @@
-
-
 >>>
 > The cost of software
 > maintenance increases with the square of
