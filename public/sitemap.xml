@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/interview-prep/</loc>
     <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/brain_teasers/</loc>
-    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/interview-prep/</loc>
-    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/birthday_problem/</loc>
-    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+    <loc>//localhost:1313/post/card_game/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
-    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/birthday_problem/</loc>
     <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/river_crossing/</loc>
@@ -31,12 +34,6 @@
   </url><url>
     <loc>//localhost:1313/post/tiger_and_sheep/</loc>
     <lastmod>2026-05-20T15:09:36+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/</loc>
-    <lastmod>2026-05-20T11:34:11+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
-    <lastmod>2026-05-20T11:34:11+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/progress_updates/</loc>
     <lastmod>2026-05-20T00:00:00+00:00</lastmod>
@@ -195,6 +192,10 @@
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/engineer_creativity/</loc>
   </url><url>
+    <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
+  </url><url>
     <loc>//localhost:1313/docs/</loc>
+  </url><url>
+    <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url>
 </urlset>

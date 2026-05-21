@@ -6,8 +6,15 @@
     <description>Recent content in Interview Prep on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 18:12:54 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 15:43:01 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/interview-prep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q5 BT: Card_game</title>
+      <link>//localhost:1313/post/card_game/</link>
+      <pubDate>Thu, 21 May 2026 15:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/card_game/</guid>
+      <description>&lt;p&gt;Question 5 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;card-game-problem-statement&#34;&gt;Card Game Problem Statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A casino offers a card game using a normal deck of 52 cards. The rule is that you turn&#xA;over two cards each time. For each pair, if both are black, they go to the dealer&amp;rsquo;s pile; if&#xA;both are red, they go to your pile; if one black and one red, they are discarded. The&#xA;process is repeated until you two go through all 52 cards. If you have more cards in your&#xA;pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to&#xA;negotiate the price you want to pay for the game. How much would you be willing to&#xA;pay to play this game?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Q4 BT: Birthday Problem</title>
       <link>//localhost:1313/post/birthday_problem/</link>

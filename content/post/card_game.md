@@ -1,5 +1,6 @@
 ---
 title: 'Q5 BT: Card_game'
+thumbnail: 'img/OIP.jpg'
 date: 2026-05-21T15:43:01+03:00
 draft: false
 tags:
@@ -56,7 +57,7 @@ Red: 4
 Draw: ..
 You lose
 
-How about if for all pickings, the pairs a single color
+How about if for all pickings, the pair picked is a single color till all of that color is exhausted from the deck?
 
 Total Card count: 10 cards (5r, 5b)
 |Picking Round | Black picked |  Red picked | Red left | Black left | 

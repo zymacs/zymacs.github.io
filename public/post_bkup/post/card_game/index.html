@@ -3,19 +3,20 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Last Week In Code E001 - Zymacs</title>
+	<title>Q5 BT: Card_game - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:url" content="//localhost:1313/post/last-week-in-code-01/">
+		<meta property="og:url" content="//localhost:1313/post/card_game/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Last Week In Code E001">
-  <meta property="og:description" content="I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we’re building. You know how that is. So I was like, how about I create something here that’ll be an outlet for that? So I did. Like many things I’ve started, I can’t be sure this will last. But I won’t try to preemptively kill it either. May the Force be with it. This week, I’m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)">
+  <meta property="og:title" content="Q5 BT: Card_game">
+  <meta property="og:description" content="Question 5 from the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg.
+Card Game Problem Statement A casino offers a card game using a normal deck of 52 cards. The rule is that you turn over two cards each time. For each pair, if both are black, they go to the dealer’s pile; if both are red, they go to your pile; if one black and one red, they are discarded. The process is repeated until you two go through all 52 cards. If you have more cards in your pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to negotiate the price you want to pay for the game. How much would you be willing to pay to play this game?">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-04-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-04-18T00:00:00+00:00">
-    <meta property="article:tag" content="Lwic">
+    <meta property="article:published_time" content="2026-05-21T15:43:01+03:00">
+    <meta property="article:modified_time" content="2026-05-21T15:43:01+03:00">
+    <meta property="article:tag" content="Brain_teasers">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -100,52 +101,117 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Last Week In Code E001</h1>
+			<h1 class="post__title">Q5 BT: Card_game</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-18T00:00:00Z">April 18, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-21T15:43:01&#43;03:00">May 21, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/quant-finance/" rel="category">Quant Finance</a>, <a class="meta__link" href="/categories/interview-prep/" rel="category">Interview Prep</a>
 	</span>
 </div></div>
 		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/lwic.png" alt="Last Week In Code E001">
-		
-	</figure><div class="content post__content clearfix">
-			<p>I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&rsquo;re building. You know how that is.
-So I was like, how about I create something here that&rsquo;ll be an outlet for that? So I did.
-Like many things I&rsquo;ve started, I can&rsquo;t be sure this will last. But I won&rsquo;t try to preemptively kill it either. May the Force be with it.
-This week, I&rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)</p>
-<h2 id="updates-from-me">Updates From me</h2>
-<h3 id="a-new-way-to-do-project-management">A new way to do project management</h3>
-<p>So I&rsquo;ve been moving my project management from scattered TODO lists to <a href="https://github.com/features/issues">GitHub issues</a>.
-And when I finally got used to it, I wondered why I hadn&rsquo;t done that earlier. I feel It&rsquo;s way better than what I was doing. Using a todo list that is. The ease of centralization for issue tracking being one among other reasons.
-Every time I think of an improvement, every time I notice a bug while using my apps, I can always just add an issue to their corresponding
-issue pages. And there&rsquo;s labeling too. That labeling system is actually how I got my first <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">PR</a>. If you are like how I was, not knowing much about this feature github offers, here&rsquo;s an article that could get you started. <a href="https://sifterapp.com/academy/overview/why/">click</a>.
-So as part of a larger app I had to create a <a href="https://github.com/zymacs/Tomadoro">pomodoro app</a>. I got the basics down then moved the list of all I hadn&rsquo;t added to the project&rsquo;s issues page. I labelled most of them &lsquo;good first issue&rsquo;. And next day someone sent in a PR asking to work on one of the issues.
-There&rsquo;s a lot of talk online about how to get your pull requests accepted. But I&rsquo;d never been in the reviewer position before. Never felt that side of it.</p>
-<h3 id="cant-do-it--dont-delegate-it-non-mainstream-ai-advice">Can&rsquo;t do it &ndash; don&rsquo;t delegate it: Non-mainstream AI advice</h3>
-<p>So I beat myself up, the 1000th time, for choosing to use AI for something I didn&rsquo;t understand. In one of my projects, a mostly CLI driven app, I wanted to move from CLI to GUI. To build a django front end. I was <em>feeling lazy</em> and <em>wasn&rsquo;t ready to put in the time</em> so I gave the whole task to Grok. <em>Hours</em> of prompting later, I ran the code it generated and almost drowned in bugs.
-Bugs arising from concepts Grok had used I that didn&rsquo;t understand.
-The lesson hit hard:</p>
+		<div class="content post__content clearfix">
+			<p>Question 5 from  the book <a href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662">&ldquo;A Practical
+Guide to Quantitative Finance Interviews&rdquo;</a> by Zhou Xinfeg.</p>
+<h3 id="card-game-problem-statement">Card Game Problem Statement</h3>
 <blockquote>
-<p>Don&rsquo;t assign AI tasks that you can&rsquo;t do yourself.</p>
+<blockquote>
+<blockquote>
 </blockquote>
-<p>I&rsquo;ve seen myself go through the same process over and over but still wonder why I keep coming back. A youtuber (Brodie Robertson) sums up my point nicely  <a href="https://youtu.be/HRsdi7YJ8dI?si=q5xmIodwJF-GZ1FN&amp;t=146">here</a>.</p>
-<h2 id="in-other-news-last-week">In other news last week</h2>
-<p><strong>AI &amp; LLMs</strong></p>
+</blockquote>
+<p>A casino offers a card game using a normal deck of 52 cards. The rule is that you turn
+over two cards each time. For each pair, if both are black, they go to the dealer&rsquo;s pile; if
+both are red, they go to your pile; if one black and one red, they are discarded. The
+process is repeated until you two go through all 52 cards. If you have more cards in your
+pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to
+negotiate the price you want to pay for the game. How much would you be willing to
+pay to play this game?</p>
+<blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="info-processing">Info processing</h3>
+<p>Card count is 52.</p>
+<p>2 cards picked each time.</p>
+<p>Both are black, dealer&rsquo;s pile.</p>
+<p>Both are red, your pile.</p>
+<p>One red, one black, discard hand.</p>
+<h3 id="solution-and-explanation">Solution and Explanation</h3>
+<p>Bring the number down to 10. Is there any one way to deal the cards so you win?
+There is none! The game always ends in a draw and your opponent wins.</p>
+<p>10 cards (5r, 5b)</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=d3Qq-rkp_to">Claude Mythos is the OG &ndash; Fireship</a></li>
-<li><a href="https://www.youtube.com/watch?v=6szQxMGX5JI">The Prime&rsquo;s standup testing that claim</a></li>
+<li>2b      :  (5r, 3b)</li>
+<li>2r      :  (3r, 3b)</li>
+<li>1b 1r:  :  (2r, 2b)</li>
+<li>2b      :  (3r, 0b)</li>
+<li>2r</li>
 </ul>
-<p><strong>Data Privacy &amp; Cybersec</strong></p>
-<ul>
-<li><a href="https://faq.whatsapp.com/337473702666585/?helpref=hc_fnav">Whatsapp rolling out end to end encrypted Ads &ndash; Whatsapp</a></li>
-</ul>
-<h2 id="a-challenge-for-you">A challenge for you</h2>
-<p><em>Can you tell how much of the above post was GPT?</em>
-Until next week. Yes, I should see you next week. That&rsquo;s the plan.. <em>May the force be with you</em></p>
+<p>Black: 4
+Red: 4
+Draw: ..
+You lose</p>
+<p>How about if for all pickings, the pairs a single color</p>
+<p>Total Card count: 10 cards (5r, 5b)</p>
+<table>
+  <thead>
+      <tr>
+          <th>Picking Round</th>
+          <th>Black picked</th>
+          <th>Red picked</th>
+          <th>Red left</th>
+          <th>Black left</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>5</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>5</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>0</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>4</td>
+          <td>4</td>
+          <td>nil</td>
+          <td>nil</td>
+      </tr>
+  </tbody>
+</table>
+<p>Total for black is a 4, total for red is a 4. It&rsquo;ll always be that way regardless of the deck size, if
+there&rsquo;s an equal number of each of black and red.</p>
+<p>This is a rigged game. There&rsquo;s always an equal number of red and black pairs.
+The game will always draw. house always wins. I would not play it.</p>
+<p>That&rsquo;s it for this one.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -154,7 +220,7 @@ Until next week. Yes, I should see you next week. That&rsquo;s the plan.. <em>Ma
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+			<a class="tags__link btn" href="/tags/brain_teasers/" rel="tag">brain_teasers</a>
 		</li>
 	</ul>
 </div>
@@ -181,15 +247,9 @@ Until next week. Yes, I should see you next week. That&rsquo;s the plan.. <em>Ma
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/git-ignore-files/" rel="prev">
+		<a class="pager__link" href="/post/birthday_problem/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Gitignore files</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/five-days-no-ai/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">5 Days No AI</p>
+			<p class="pager__title">Q4 BT: Birthday Problem</p>
 		</a>
 	</div>
 </nav>
