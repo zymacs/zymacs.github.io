@@ -10,12 +10,12 @@ categories:
 ---
 
 If you have used  Linux before, you have most probably heard about Grep, Awk and Sed.
-These are super useful wordsmithing  tools available on all Unix and Unix-like systems.
+These are super useful text manipulation  tools available on all Unix and Unix-like systems.
 Learning all that each can do is an insurmountable task and I'm sure you'd stand with me on that.
 But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.
 In this article we'll look at one of the tools: *Grep*.
 
-Grep in full stands for `Global Regular Expression Print`. It's a text search tool that was made by Ken Thompson (in one night). Link to a story on that at the bottom.
+Grep in full stands for `Global Regular Expression`. It's a text search tool that was made by Ken Thompson (in one night). Link to a story on that at the bottom.
 
 In this article we'll look at common problems you can run into that can be solved with Grep, including some regex solutions.
 I'll also attach a link to a resource that helped me understand how to use regexp at the end. 
