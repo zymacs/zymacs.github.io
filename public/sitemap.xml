@@ -202,13 +202,13 @@
   </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
+    <loc>//localhost:1313/rants/my_software_choices/</loc>
+  </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
-  </url><url>
-    <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>
     <loc>//localhost:1313/categories/scripting/</loc>
   </url><url>

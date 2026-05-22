@@ -1,5 +1,5 @@
 ---
-title: "Ranting: My Computing Environment"
+title: "My Computing Environment & My Software Choices"
 thumbnail: "img/terminal.png"
 draft: false
 pager: false
@@ -9,10 +9,28 @@ categories:
  - random
 ---
 
-This'll be a long rant about what OS I use, what software choices I've made and the some brief reasoning
-for those. A second draft that I decided to make live for reasons I mention at the end of the article.
+This'll be a long mostly unstructured monologue about what OS I use, what software choices I've made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article. First on using Arch then onto software choices.
 
-So I use Linux. Arch Linux. And for a window manager, I use i3. 
+So I use Linux. Arch Linux. And for a window manager; i3. 
+
+Now I did't start here. I went through the common natural evolution of the Linux User. 
+
+In my first Linux days, I had a fare share of distro hopping and the dopamine hit that provides. I honestly at times reinstalled operating systems just for the same reason one would grab a  beer to alleviate depression.
+
+I hopped from Ubuntu onto Mint then to Kali, to Parrot, the list is endless. I'd say I tried virtually all distros that were real popular then. I reached a point where I ran out of 'new ones' to try out and went back to older ones. Thought it'd be that way for ever. It so seems to be that way for some. But not until I installed Arch.
+
+The installation process with Arch was really involved. For all the Unix-like and Unix Operating Systems
+I've installed, none was as involved as Arch. FreeBSD was a bit non-conventional but it did not give me a hard time. Oh, I sure will add something to this piece about FreeBSD but I guess that'll be later. 
+
+
+People have different reasons for using Linux. Some are looking for a means to rebel against Windows. Those
+don't usually last so long. Others have it forced on them for work. But that's rare. Any such work should
+only deploy enthusiasts in my OP. But then for others, when we get to say Arch, .. Gentoo , BSD and the new
+OG : GUIX, the reasons change. I installed Arch just because everyone on youtube said it was cool. But then
+I learnt why I was actually pulled to linux in general after I did.
+
+
+-- to add new paragraphs here.
 
 Why Arch not Ubuntu? Control hunger and hatred for bloat, The Peace ...
 Plus, I sure do hate that  '.snap' folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can't explain. And why i3? I hate bloat, I hate mice and I'd like to learn to work with my keyboard.
@@ -29,7 +47,7 @@ I've had with it. I can't mention all that's good about it but suffice it to say
 of learning  (yes, it requires a significant amount of learning), you'd become a FOSS advocate and never turn
 back.
 
-I've not  seen any editor yet, unless a derivative of emacs, that allows running more than one language in the same file. Did I call it an editor? Mistake. It also supports internet browsing, music playing , project management, the best mgt tooling aroung git: Magit. And if there's
+I've not  seen any editor yet, unless a derivative of emacs, that allows running more than one language in the same file. Oh I called it an editor again..my mistake. It also supports internet browsing, music playing , project management, the best mgt tooling aroung git: Magit. And if there's
 anything you want it to do that ain't built yet, learn Elisp and you'll have it.
 
 Plus, with all the power it provides, its baffling that its totally yours to modify. And to resell. 
