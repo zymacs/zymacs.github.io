@@ -178,6 +178,13 @@
     </item>
     <item>
       <title></title>
+      <link>//localhost:1313/project_writeups/cleaning_duplicates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project_writeups/cleaning_duplicates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>//localhost:1313/quotes_and_excerpts/engineer_creativity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/quotes_and_excerpts/engineer_creativity/</guid>
@@ -189,6 +196,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next bad one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ranting: My Computing Environment</title>
+      <link>//localhost:1313/rants/my_software_choices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rants/my_software_choices/</guid>
+      <description>&lt;p&gt;This&amp;rsquo;ll be a long rant about what OS I use, what software choices I&amp;rsquo;ve made and the some brief reasoning&#xA;for those. A second draft that I decided to make live for reasons I mention at the end of the article.&lt;/p&gt;&#xA;&lt;p&gt;So I use Linux. Arch Linux. And for a window manager, I use i3.&lt;/p&gt;&#xA;&lt;p&gt;Why Arch not Ubuntu? Control hunger and hatred for bloat, The Peace &amp;hellip;&#xA;Plus, I sure do hate that  &amp;lsquo;.snap&amp;rsquo; folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can&amp;rsquo;t explain. And why i3? I hate bloat, I hate mice and I&amp;rsquo;d like to learn to work with my keyboard.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

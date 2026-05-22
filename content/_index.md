@@ -8,4 +8,4 @@ draft: false
 pager: false
 ---
 
-![Posts](posts/add.png) All Posts
+![Posts](/img/add.png) All Posts

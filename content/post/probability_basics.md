@@ -143,7 +143,7 @@ in the previous event we placed a red ball out, the number of reds has fallen to
 So the probability is a 3/9. Calculating what the probability of choosing a blue ball is given we chose blue in round 1 follows the same concept. It'll be a 5/9.
 It helps to visualize these probabilities as a tree and I have attached an image of one below.
 
-![Probability tree for 10 ball problem](assets/img/ptree.png)
+![Probability tree for 10 ball problem](ptree.png)
 
 _Add to the first ball that **P(Picking a Ball)** is 1. The probability of picking a ball is 1. I think it makes it easier to understand the rest
 of the tree._

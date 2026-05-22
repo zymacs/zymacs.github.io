@@ -6,10 +6,17 @@
     <description>Recent content in Brain_teasers on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 15:43:01 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 19:43:01 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/brain_teasers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Q5 BT: Card_game</title>
+      <title>Q6 BT: Burning Ropes</title>
+      <link>//localhost:1313/post/burning_ropes/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/burning_ropes/</guid>
+      <description>&lt;p&gt;Question 6 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You have two ropes, each of which takes I hour to burn. But either rope has different&#xA;densities at different points, so there&amp;rsquo;s no guarantee of consistency in the time it takes&#xA;different sections within the rope to bum. How do you use these two ropes to measure 45&#xA;minutes?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;solution-and-explanation&#34;&gt;Solution and explanation&lt;/h3&gt;&#xA;&lt;p&gt;Get one of the ropes and burn it at either end and the second one end. It will take 30 minutes to burn up the first one.&#xA;At this instance the second will still be left with 30 minutes to burn out. Immediately burn the other end of the second rope.&#xA;This will halve the 30 minutes left to 15. Add 15 for this last half of the second rope to 30 for burning the first rope&#xA;and half one of the second rope and you have 45 minutes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q5 BT: Card Game</title>
       <link>//localhost:1313/post/card_game/</link>
       <pubDate>Thu, 21 May 2026 15:43:01 +0300</pubDate>
       <guid>//localhost:1313/post/card_game/</guid>

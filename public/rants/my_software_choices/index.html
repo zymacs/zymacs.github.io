@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ranting: My Computing Environment - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/rants/my_software_choices/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Ranting: My Computing Environment">
+  <meta property="og:description" content="This’ll be a long rant about what OS I use, what software choices I’ve made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article.
+So I use Linux. Arch Linux. And for a window manager, I use i3.
+Why Arch not Ubuntu? Control hunger and hatred for bloat, The Peace … Plus, I sure do hate that ‘.snap’ folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can’t explain. And why i3? I hate bloat, I hate mice and I’d like to learn to work with my keyboard.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="rants">
+    <meta property="article:tag" content="Rant">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/project_writeups/">
+				
+				<span class="menu__text">Coding Walkthroughs</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/misc./">
+				
+				<span class="menu__text">Upcoming Articles</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/quotes_and_excerpts/">
+				
+				<span class="menu__text">Quotes &amp; Excerpts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Ranting: My Computing Environment</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/random/" rel="category">Random</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/terminal.png" alt="Ranting: My Computing Environment">
+		
+	</figure><div class="content post__content clearfix">
+			<p>This&rsquo;ll be a long rant about what OS I use, what software choices I&rsquo;ve made and the some brief reasoning
+for those. A second draft that I decided to make live for reasons I mention at the end of the article.</p>
+<p>So I use Linux. Arch Linux. And for a window manager, I use i3.</p>
+<p>Why Arch not Ubuntu? Control hunger and hatred for bloat, The Peace &hellip;
+Plus, I sure do hate that  &lsquo;.snap&rsquo; folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can&rsquo;t explain. And why i3? I hate bloat, I hate mice and I&rsquo;d like to learn to work with my keyboard.</p>
+<p>I have intentionally chosen to leave the installation mostly bare. There&rsquo;s  no service to handle notifications. The wallpaper is non existent. No lock screen.  There is no File Manager. The core utils are a more than sufficient replacement. Its mostly all configs and terminal commands.</p>
+<p>There&rsquo;s not a lot of clicking and dragging. A few instances when using my browser.
+I actually wish there was none. You know, that tends to kill flow. If you use the terminal for long, you&rsquo;d relate to the reluctance to do any operation that&rsquo;ll take your hands away from your keyboard I am sure.</p>
+<p>For editing, I use Emacs. Well calling Emacs an editor is such an insult. And I ain&rsquo;t trying to do that.
+I sure know what it can do. I&rsquo;d say, I&rsquo;ve only scratched 0.5% of it for the 7 to so months of shallow usage
+I&rsquo;ve had with it. I can&rsquo;t mention all that&rsquo;s good about it but suffice it to say, past some level
+of learning  (yes, it requires a significant amount of learning), you&rsquo;d become a FOSS advocate and never turn
+back.</p>
+<p>I&rsquo;ve not  seen any editor yet, unless a derivative of emacs, that allows running more than one language in the same file. Did I call it an editor? Mistake. It also supports internet browsing, music playing , project management, the best mgt tooling aroung git: Magit. And if there&rsquo;s
+anything you want it to do that ain&rsquo;t built yet, learn Elisp and you&rsquo;ll have it.</p>
+<p>Plus, with all the power it provides, its baffling that its totally yours to modify. And to resell.
+See the GNU licence.</p>
+<p>A  huge percentage of my PC usage is editing files so you can bet if my PC is open, its open too.
+That, my terminal and my browser.</p>
+<p>Speaking of browsers. My browser works more than just a means to access files on remote servers.
+I started out wanting to &ldquo;live in the terminal&rdquo;: Use MPV for media playback, ranger for file management,
+just avoid the GUI as much as I could.</p>
+<p>But that&rsquo;s changed to the browser as I&rsquo;ve gotten more and more into self hosting. I&rsquo;ve for long wanted to have unified access to all my media consumption activity for analytics and AI project ideas and,
+having a browser centric means for media consumption really solves that problem.</p>
+<p>Plus, with the oncoming world id drama, I don&rsquo;t think there&rsquo;s ever been a better time than now for someone to learn to self host.</p>
+<p>My browser plays my videos (Jellyfin) , handles pdf reading, views my photos (Immich), plays my music (Navidrome, AzuraCast). The list of things is endless. There&rsquo;s these days a containerised version for almost any app you could think of.</p>
+<p>On what browser it is, its firefox. But I like Librewolf better. I think it ain&rsquo;t so much about the browser being 100% spy proof but about the perception its trying to be. Firefox seems to be failing at providing that perception
+of recent. Now I could write an article as long just talking about my browser&rsquo;s extensions but I&rsquo;ll try to keep
+it brief.</p>
+<p>I wish I had a self hosted password management solution (yes, that has its downsides. but what doesn&rsquo;t?). But what
+I have is better than, for my definition of better that is, the Google Pass alternative. I now use Bitwarden. Its closer to my ideal perception of privacy than any alternative I can currently get myself to access.</p>
+<p>I think the only problem I currently have with it is that I need internet access to get in. I tried the self hosted solution before I opted for the freemium version after I found out how super involved the setup was.  I&rsquo;ll come back to that later when I settle I&rsquo;m sure. But for now, password management related issues never register on
+my radar.</p>
+<p>It generates passwords and provides safe storage for them. That&rsquo;s like basic stuff all
+password managers do. It checks leak databases to ensure the passwords you use have not been exposed in some recent leak. You know how on most websites you have to fill in all these bio data forms? It
+keeps entries for that your data and auto fills that in when those forms pop up.</p>
+<p>And it can keep more. It supports user defined entries. The premium version also supports document storage. So you could maybe keep your CV or whichever other document at hand.</p>
+<p>Hand on red hot coal, I had this idea exactly as its built out by Bitwarden  for a unified bio data and secrets manager. But you know how when you try to build something then you learn why those more capable than you opted to use a ready made solution? I guess thats what happened. Its a project I haven&rsquo;t taken off
+my list though. If the self hosted version does not provide these features when I set it up I will consider
+reviving the project.</p>
+<p>I don&rsquo;t consume any ads. And I use the internet. Thats so rare these days. Unless its apps like instagram
+where there hasn&rsquo;t been made yet a way around them, I wonder why anyone still finds it normal fighting
+through endless redirects to strange websites just so to read a 5 paragraph article. For this service, I
+use ublock origin. Chrome only supports the lite version but if you want to use ublock origin you could as
+well install librewolf, or , at least better than Chrome, firefox.</p>
+<p>I usually like to keep local copies of certain website pages for offline reference among other reasons. I initially used to use weptopdf for that but have since found it frustrating all the steps involved to get that working. I mean it ain&rsquo;t many but if there&rsquo;s a means to have fewer steps then whoever provides those means makes webpdf feel slow. I use Single File for that now. I don&rsquo;t always want the pages I save turned to pdf anyways. It keeps them in their original form: html and css.</p>
+<p>I don&rsquo;t get it why websites today expect readers to read with bright light beaming straight at their eyes.
+Why isn&rsquo;t dark mode the default mode I still wonder. For ensuring that is while I browse the internet, I use
+darkreader. It automatically, for as long as it is switched on, provides dark mode even for pages that
+don&rsquo;t have it built in. It sometimes gets things wrong but very rarely. I honestly can&rsquo;t remember when that
+last happened to me.</p>
+<p>Some extras.</p>
+<p>There&rsquo;s certain websites as I build some variant of a local internet that I&rsquo;d like to have a deep copy of.
+An archive if you may. For that, I use httrack.</p>
+<p>This article is a half ready draft that I decided I&rsquo;d publish and make better while its live so you
+can hope its going to go through a lot of changes. If you are reading the earliest version of this
+then I&rsquo;m sure you did not find any links to the software I mentioned. I find that I see my mistakes
+more clearly when I read my site after its live than when its only available on localhost. I haven&rsquo;t figured
+out why that is yet.</p>
+<p>But anyways. That was a long monologue. A strange way to suggest some software but I hope you picked something.
+I wish this blog had a comment section and I will make that wish come true soon. But for now, my BlueSky or my Email will do. Please don&rsquo;t hesitate to reachout if with any comments or any suggestions regards you think I
+might be interested in. IN THE NEXT ONE..</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/rant/" rel="tag">rant</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/burning_ropes/">Q6 BT: Burning Ropes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card Game</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/tiger_and_sheep/">Q2 BT: Tiger and Sheep</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

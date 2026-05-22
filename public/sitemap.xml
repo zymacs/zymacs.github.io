@@ -3,27 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/interview-prep/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/card_game/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <loc>//localhost:1313/post/burning_ropes/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
-    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/card_game/</loc>
     <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/birthday_problem/</loc>
@@ -34,9 +37,6 @@
   </url><url>
     <loc>//localhost:1313/post/tiger_and_sheep/</loc>
     <lastmod>2026-05-20T15:09:36+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/progress_updates/</loc>
-    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/screwy_pirates/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
@@ -190,12 +190,30 @@
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-003/</loc>
   </url><url>
+    <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
+  </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/engineer_creativity/</loc>
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
   </url><url>
+    <loc>//localhost:1313/rants/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/algorithms/</loc>
+  </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
+    <loc>//localhost:1313/project_writeups/</loc>
+  </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/rants/my_software_choices/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/scripting/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/smi/</loc>
+  </url><url>
+    <loc>//localhost:1313/misc./</loc>
   </url>
 </urlset>
