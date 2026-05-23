@@ -22,5 +22,12 @@
       <guid>//localhost:1313/post/my-first-post/</guid>
       <description>&lt;p&gt;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;rsquo;s blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that caught my eye.&#xA;I thought I could learn some css building it myself. Feel good from &lt;code&gt;doing it myself from scratch&lt;/code&gt;.&#xA;But boy is CSS boring! And I only realized this after 4 hours of centering &lt;code&gt;divs&lt;/code&gt; and hunting for unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been. So to alleviate the guilt , I decided to&#xA;setup Hugo. I mean why didn&amp;rsquo;t I do this in the first place? Anyways. After some googling I got it running&#xA;and hence this site.  It looks nice doesn&amp;rsquo;t it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I&#xA;add content of my own.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>My Computing Environment &amp; My Software Choices</title>
+      <link>//localhost:1313/rants/my_software_choices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rants/my_software_choices/</guid>
+      <description>&lt;p&gt;This&amp;rsquo;ll be a long mostly unstructured monologue about what OS I use, what software choices I&amp;rsquo;ve made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article. First on using Arch then onto software choices.&lt;/p&gt;&#xA;&lt;p&gt;So I use Linux. Arch Linux. And for a window manager; i3.&lt;/p&gt;&#xA;&lt;p&gt;Now I did&amp;rsquo;t start here. I went through the common natural evolution of the Linux User.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

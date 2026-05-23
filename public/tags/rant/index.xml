@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="//localhost:1313/tags/rant/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Brief Non-Tech Tour Around My System</title>
-      <link>//localhost:1313/project_writeups/dupe_cleaner/</link>
+      <title>My Computing Environment &amp; My Software Choices</title>
+      <link>//localhost:1313/rants/my_software_choices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project_writeups/dupe_cleaner/</guid>
-      <description>&lt;p&gt;I use Linux. Arch Linux. And for a window manager, I use i3.&lt;/p&gt;&#xA;&lt;p&gt;The Peace &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;I have intentionally chosen to leave the installation mostly bare. There&amp;rsquo;s  no service to handle notifications. The wallpaper is non existent. No lock screen.  There is no File Manager. The core utils are a more than sufficient replacement. Its mostly all configs and terminal commands.&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s mostly not a lot of clicking and dragging. Maybe except for a few instances when using my browser.&#xA;I actually wish there was none. That tends to kill flow. If you use the terminal for long you&amp;rsquo;d relate to the reluctance to do any operation that&amp;rsquo;ll take your hands away from your keyboard.&lt;/p&gt;</description>
+      <guid>//localhost:1313/rants/my_software_choices/</guid>
+      <description>&lt;p&gt;This&amp;rsquo;ll be a long mostly unstructured monologue about what OS I use, what software choices I&amp;rsquo;ve made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article. First on using Arch then onto software choices.&lt;/p&gt;&#xA;&lt;p&gt;So I use Linux. Arch Linux. And for a window manager; i3.&lt;/p&gt;&#xA;&lt;p&gt;Now I did&amp;rsquo;t start here. I went through the common natural evolution of the Linux User.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

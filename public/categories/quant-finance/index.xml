@@ -6,8 +6,15 @@
     <description>Recent content in Quant Finance on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 19:43:01 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 15:43:01 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/quant-finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q7 BT: Defective Ball</title>
+      <link>//localhost:1313/post/defective_ball/</link>
+      <pubDate>Sat, 23 May 2026 15:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/defective_ball/</guid>
+      <description>&lt;p&gt;Question 7 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; b Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You have 12 identical balls. One of the balls is heavier OR lighter than the rest (you&#xA;don&amp;rsquo;t know which). Using just a balance that can only show you which side of the tray is&#xA;heavier, how can you determine which ball is the defective one with 3 measurements?3&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>Q6 BT: Burning Ropes</title>
       <link>//localhost:1313/post/burning_ropes/</link>
