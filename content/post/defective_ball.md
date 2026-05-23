@@ -2,7 +2,7 @@
 title: 'Q7 BT: Defective Ball'
 thumbnail: 'img/OIP.jpg'
 date: 2026-05-23T15:43:01+03:00
-draft: false
+draft: true
 tags:
  - brain_teasers
 categories:

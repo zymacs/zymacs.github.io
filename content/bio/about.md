@@ -16,5 +16,16 @@ To talk about anything related to what I post on here or whatever else, please d
 [zymacs@zmail.com](mailto:0nkzhmhoq@mozmail.com)  or via [BlueSky](https://bsky.app/profile/zymacs.bsky.social).
 
 
+---
+
+### Site Map
+
+- Home
+- Project Series and Walkthroughs
+- Quotes and Excerpts
+- Non fiction Book Summaries
+- Research
+- Cheatsheets
+- CV
 
 
