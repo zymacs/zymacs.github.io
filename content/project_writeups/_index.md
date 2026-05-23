@@ -1,9 +1,9 @@
 ---
-title: Problem Solving Writeups
+title: Project Walkthroughs
 description: Walking through my problem solving building projects both small (scripts) and big.
 menu:
   main:
-   name: Coding Walkthroughs
+   name: Project Walkthroughs
    weight: 2
 draft: false
 pager: false

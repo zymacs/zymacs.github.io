@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 BT: Screwy Pirates - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/screwy_pirates/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Q1 BT: Screwy Pirates">
+  <meta property="og:description" content="This is the first post am making in this series. For all the posts in the series, I plan to share my solutions to the problems in the book “A Practical Guide to Quantitative Finance Interviews” by Zhou Xinfeg. The first set of problems is brain teasers. Let’s solve it.
+Screwy Pirates Problem Statement. Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates, they agree on the following method to divide the loot: The most senior pirate will propose a distribution of the coins. All pirates, including the most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case) accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be fed to shark and the process starts over with the next most senior pirate … The process is repeated until a plan is approved. You can assume that all pirates are perfectly rational: they want to stay alive first and to get as much gold as possible second. Finally, being blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice between otherwise equal outcomes. How will the gold coins be divided in the end?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-19T19:48:27+03:00">
+    <meta property="article:modified_time" content="2026-05-19T19:48:27+03:00">
+    <meta property="article:tag" content="Brain_teasers">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/project_writeups/">
+				
+				<span class="menu__text">Coding Walkthroughs</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/misc./">
+				
+				<span class="menu__text">Upcoming Articles</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/quotes_and_excerpts/">
+				
+				<span class="menu__text">Quotes &amp; Excerpts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Q1 BT: Screwy Pirates</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-19T19:48:27&#43;03:00">May 19, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/quant-finance/" rel="category">Quant Finance</a>, <a class="meta__link" href="/categories/interview-prep/" rel="category">Interview Prep</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/OIP.jpg" alt="Q1 BT: Screwy Pirates">
+		
+	</figure><div class="content post__content clearfix">
+			<p>This is the first post am making in this series. For all the posts in the series,
+I plan to share my solutions to the problems in the book <a href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662">&ldquo;A Practical
+Guide to Quantitative Finance Interviews&rdquo;</a> by Zhou Xinfeg. The first set of problems is brain teasers. Let&rsquo;s solve it.</p>
+<h3 id="screwy-pirates-problem-statement">Screwy Pirates Problem Statement.</h3>
+<blockquote>
+<blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+<p>Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates,
+they agree on the following method to divide the loot:
+The most senior pirate will propose a distribution of the coins. All pirates, including the
+most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case)
+accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be
+fed to shark and the process starts over with the next most senior pirate &hellip; The process is
+repeated until a plan is approved. You can assume that all pirates are perfectly rational:
+they want to stay alive first and to get as much gold as possible second. Finally, being
+blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice
+between otherwise equal outcomes.
+How will the gold coins be divided in the end?</p>
+<blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="assumptions">Assumptions</h3>
+<p>Not one pirate is at the same rank as the other. Ranks go  from least to highest with one pirate
+at each.</p>
+<p>Pirate number one is the highest ranking pirate and so on until pirate number last, the
+least ranking.</p>
+<p>Its a democracy. The pirate needs to always have their proposal winning by 50% to survive being ousted.</p>
+<p>All pirates assume their pirate mates as rational and as ruthless as they themselves are.</p>
+<h3 id="solution-and-explanation">Solution and explanation.</h3>
+<p><em>2 pirates</em></p>
+<p>Lets bring the total number of pirates down to two. If the rules stay the same, what would be
+the remaining number of gold coins after voting? They will all be taken by the Senior. Why?
+The Senior gets to decide what the dividing criteria is and since there&rsquo;s only two pirates on
+board, there&rsquo;s no threat to the Senior&rsquo;s life (an event that can only occur if the Senior&rsquo;s proposal
+is outvoted) and his win is guaranteed. The Senior therefore optimizes for
+maximum profit. The Senior takes all the 100 coins.</p>
+<p><em>3 pirates</em></p>
+<p>Okay, leveling up to three pirates.  If we have three pirates, with one obviously a Senior,
+the Senior will have to strategize to win the vote with a 2/3 for their proposition. Since all
+are rational pirates with a preference to their own lives over money other factors kept constant,
+yet brutal enough to kill for money if they won&rsquo;t be killed, the Senior will propose to
+keep 99 coins and give the third pirate a single coin. Why the third not the second?</p>
+<p>If the Senior proposes to give the one coin to the second , or, second ranking pirate to him, the second will vote against this senior since they know that by so doing they will get the Seniority rank and come next voting, get all the coins (as we demonstrated in the example with 2 pirates before).</p>
+<p>Also, the third pirate or least in rank at this instance, will gladly vote against the Second pirate
+since they would otherwise get nothing when the Second pirate becomes the new senior.</p>
+<p><em>4 pirates</em></p>
+<p>The most senior pirate now needs two people on his side for a democratic win. He will obviously vote
+for himself. He should therefore win over one head to his proposal&rsquo;s side.
+From the previous example we know that the third
+pirate get&rsquo;s to win by making a proposal that denys the second any coin for the explained reasons. The Senior pirate therefore makes a proposal that gives this pirate a single coin. He keeps the rest for himself.He does this because the second ranking pirate,  would otherwise not have gotten any money. And this
+pirate would prefer a proposal that makes it so that won&rsquo;t happen.</p>
+<p><em>5 pirates</em></p>
+<p>Okay, now for the number stated in the question. The most senior pirate now needs 3/5 votes
+for a democratic win. What proposal to make and why?</p>
+<p>Again, this pirate will vote for himself so his task is to get two extra voters.
+The most senior pirate here will propose to give the least ranking and 3rd ranking pirates a coin each. These would otherwise, again, as described in the previous scenario, have gotten nothing. So they will glady
+make a vote that ensures that happens. They will support the most senior pirates proposal.</p>
+<p>The Senior will keep the remaining 98.</p>
+<p><em>Formalizing the pattern</em></p>
+<p>If we have 2 pirates on board, the most senior takes all.</p>
+<p>If we have 3 pirates on board, the least gets one coin and the most senior gets the balance.
+The second gets none.</p>
+<p>If we have n&gt;3 pirates on board and n is even, the nth pirate being the most senior;
+the nth pirate will divide (n/2)-1 of the  coins equally among (n/2)-1 pirates choosing pirates
+using the series n-2i where  i starts at 1 and ends at (n/2)-1. The rest
+they of the coins they will take.</p>
+<p>If its the previous scenario but n is odd, the most senior pirate or nth pirate will divide equally
+ceil(n/2) of the coins among ceil(n/2) pirates choosing based on the same sequence from before:
+n-2i with starting at  1 and ending at ceil(n/2).</p>
+<p>Alright. I guess I have to work on generalizations. That was a hard one to generalize.</p>
+<p>With that, see you in the next one.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/brain_teasers/" rel="tag">brain_teasers</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/last-week-in-code-005/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Last Week in Code E005</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/tiger_and_sheep/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Q2 BT: Tiger and Sheep</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/burning_ropes/">Q6 BT: Burning Ropes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card Game</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/tiger_and_sheep/">Q2 BT: Tiger and Sheep</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

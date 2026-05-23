@@ -1,4 +1,5 @@
-{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
+{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#1a7a77") -}}
+
 
 {{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
 {{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
@@ -11,6 +12,10 @@
 *::after {
 	box-sizing: border-box;
 }
+
+
+/* -- #e22d30  --> */
+
 
 article,
 aside,
@@ -274,7 +279,7 @@ code {
 
 code {
 	padding: 0 5px;
-	color: #c33;
+	color: #1a7a; /* c33 */
 }
 
 pre {
@@ -358,6 +363,8 @@ dt,
 dd {
 	display: list-item;
 }
+
+/*https://codepen.io/mykwei/pen/djOPqz*/
 
 dt {
 	font-weight: bold;
@@ -704,7 +711,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .content ul {
-	list-style: square;
+	list-style: circle; /*square*/
 }
 
 .content ol {

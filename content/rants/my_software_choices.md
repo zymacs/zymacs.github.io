@@ -15,7 +15,7 @@ So I use Linux. Arch Linux. And for a window manager; i3.
 
 Now I did't start here. I went through the common natural evolution of the Linux User. 
 
-In my first Linux days, I had a fare share of distro hopping and the dopamine hit that provides. I honestly at times reinstalled operating systems just for the same reason one would grab a  beer to alleviate depression.
+In my first Linux days, I had a fare share of [distro hopping](https://www.youtube.com/watch?v=OZeCN_DdqaM) and the dopamine hit that provides. I honestly at times reinstalled operating systems just for the same reason one would grab a  beer to alleviate depression.
 
 I hopped from Ubuntu onto Mint then to Kali, to Parrot, the list is endless. I'd say I tried virtually all distros that were real popular then. I reached a point where I ran out of 'new ones' to try out and went back to older ones. Thought it'd be that way for ever. It so seems to be that way for some. But not until I installed Arch.
 
@@ -43,7 +43,7 @@ I learnt why I was actually pulled to linux in general after I did.
 -- to add new paragraphs here.
 
 Why Arch not Ubuntu? Control hunger and hatred for bloat, The Peace ...
-Plus, I sure do hate that  '.snap' folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can't explain. And why i3? I hate bloat, I hate mice and I'd like to learn to work with my keyboard.
+Plus, I sure do hate that  '.snap' folder in the Ubuntu home directory. It makes the directory look disproportionately off in ways I can't explain. And why i3? I hate bloat, I'd like to learn to work with my keyboard. I have debian on my tab though. Ain't about to change that ever. Blame it on microsoft. 
 
 
 I have intentionally chosen to leave the installation mostly bare. There's  no service to handle notifications. The wallpaper is non existent. No lock screen.  There is no File Manager. The core utils are a more than sufficient replacement. Its mostly all configs and terminal commands. 
@@ -57,11 +57,27 @@ I've had with it. I can't mention all that's good about it but suffice it to say
 of learning  (yes, it requires a significant amount of learning), you'd become a FOSS advocate and never turn
 back.
 
+
+My experience with FREE BSD
+
+I like Arch, I cant say BSD is better than Arch. Both are good in their own respect.
+Still growing and I think as I do I will be more capable of putting in words what I mean by that.
+But, BSD is indeed its own world.
+I like how it incentivises self reliance. It does that like no other OS I have used before.
+It does so in a way that evokes a feel you can't ignore. I guess the only reason i left it is a lack of a community online to relate with while i was in. I definitely have a PC lying around with FREEBSD on it when I have the means. Or just have months where I daily drive FREEBSD for the feeling of independence.
+I didn't like doas though. Sudo just feels more powerful.
+
+
+You will definitely enjoy [this one](https://youtu.be/7Adl1BTCwoY?si=5TJSbrakx9-tdwI-) on linux users.
+Or even [better](https://www.youtube.com/watch?v=lE4UXdJSJM4) .
+
+
+
 I've not  seen any editor yet, unless a derivative of emacs, that allows running more than one language in the same file. Oh I called it an editor again..my mistake. It also supports internet browsing, music playing , project management, the best mgt tooling aroung git: Magit. And if there's
 anything you want it to do that ain't built yet, learn Elisp and you'll have it.
 
 Plus, with all the power it provides, its baffling that its totally yours to modify. And to resell. 
-See the GNU licence.  
+See the GNU licence.  _[Dancing in the GNU Light](https://youtu.be/lE4UXdJSJM4?si=uaYH5lwoCFScLnoe&t=144)_.
 
 A  huge percentage of my PC usage is editing files so you can bet if my PC is open, its open too.
 That, my terminal and my browser. 
