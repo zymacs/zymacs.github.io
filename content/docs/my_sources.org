@@ -8,14 +8,14 @@ title: My Sources
 
 * Uni Grade courses (OCWs)
 + MIT Open courseware
-  - [[https://ocw.mit.edu/][Website]]
-  - [[https://www.youtube.com/@mitocw][Youtube]]
+  - [[https://ocw.mit.edu/][MIT Website]]
+  - [[https://www.youtube.com/@mitocw][MIT Youtube]]
 + METU Open courseware
-  - [[https://ocw.metu.edu.tr/][Website]]
-  - [[https://www.youtube.com/@METUOpenCourseWare][Youtube]]
+  - [[https://ocw.metu.edu.tr/][METU Website]]
+  - [[https://www.youtube.com/@METUOpenCourseWare][METU Youtube]]
 + Stanford Open courseware
-  - [[https://online.stanford.edu/free-courses][Website]]
-  - [[https://www.youtube.com/@stanfordonline][Youtube]]
+  - [[https://online.stanford.edu/free-courses][Stanford Website]]
+  - [[https://www.youtube.com/@stanfordonline][Standford Online Youtube]]
 
   
 * Eng Challenges and competition
@@ -42,7 +42,7 @@ title: My Sources
    - [[https://wiki.archlinux.org/title/Main_page][Arch Wiki]]
 ** Web Dev
   - [[https://developer.mozilla.org/en-US/][MDN Docs]]
-  - [[https://www.w3schools.com][https://www.w3schools.com]]
+  - [[https://www.w3schools.com][W3Schools]]
 ** OS DEV
   - [[https://wiki.osdev.org/Introduction][OS Dev Wiki]]
   - [[https://pages.cs.wisc.edu/~remzi/OSTEP/][Operating Systems: Three Easy Steps]]
@@ -77,17 +77,17 @@ title: My Sources
 
   
 * Refcards (AKA cheatsheets)
-- Magit  : https://docs.magit.vc/magit-refcard.pdf
-- Git    : https://git-scm.com/cheat-sheet
-- Emacs  : https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
-- SQL    : https://www.w3schools.com/sql/sql_quickref.asp
+- [[https://docs.magit.vc/magit-refcard.pdf][Magit]]
+- [[https://git-scm.com/cheat-sheet][Git]]
+- [[https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf][Emacs]]
+- [[https://www.w3schools.com/sql/sql_quickref.asp][SQL]]
 - Linux  : __ online refs dont have much I use (will create a custom refcard)
-- Docker : https://docs.docker.com/get-started/docker_cheatsheet.pdf
-- Awk    : https://quickref.me/awk.html
-- Sed    : https://quickref.me/sed.html
-- Grep   : https://quickref.me/grep
-- Tex    : https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf
-- Others : https://quickref.me/
+- [[https://docs.docker.com/get-started/docker_cheatsheet.pdf][Docker]]
+- [[https://quickref.me/awk.html][Awk]]
+- [[https://quickref.me/sed.html][Sed]]
+- [[https://quickref.me/grep][Grep]]
+- [[https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf][Tex]]
+- [[https://quickref.me/][More..]]
   
 
   
@@ -96,10 +96,10 @@ title: My Sources
 ** Computer Sci General
    - [[https://www.youtube.com/@Computerphile][ComputerPhile]]
 ** Algorithms and Data Structures
-    - Abdul Bari
-    - Jenny IT
+    - [[https://www.youtube.com/@abdul_bari][Abdul Bari]]
+    - [[https://www.youtube.com/@JennyslecturesCSIT][Jenny IT]]
 ** Recreational Programming
-   - Tsoding Daily
+   - [[https://www.youtube.com/@TsodingDaily][Tsoding Daily]]
 ** System Design Internals
    - [[https://www.youtube.com/@AsliEngineering][Arpitt Bharayani]]
    - [[https://www.youtube.com/@pragmaticengineer][The Pragmatic Engineer]]
@@ -134,32 +134,32 @@ title: My Sources
       
 ** Politics
    - The Corbett Report
-     - [[https://corbettreport.com][Main site]]
-     - [[https://substack.com/@corbettreport][Substack]]
-     - [[https://www.youtube.com/@corbettreport][Youtube]]
+     - [[https://corbettreport.com][Corbett Report Website]]
+     - [[https://substack.com/@corbettreport][Corbett Report Substack]]
+     - [[https://www.youtube.com/@corbettreport][Corbett Report Youtube]]
    - Whitney Alyse Webb
      - [[https://unlimitedhangout.com/][Unlimited Hangouts]]
 
 ** Finance
  - [[https://www.mrmoneymustache.com/][Mr Money Mustache]]
  - Odd Lots
-   - [[https://www.bloomberg.com/OddLots][Website]]
-   - [[https://www.youtube.com/@BloombergPodcasts/search?query=odd%20lots][Youtube]]
+   - [[https://www.bloomberg.com/OddLots][Odd Lots Bloomberg Website]]
+   - [[https://www.youtube.com/@BloombergPodcasts/search?query=odd%20lots][Odd Lots Bloomberg Podcasts Youtube]]
  - Patrick Boyle
-   - [[https://www.onfinance.org/][Website]]
-   - [[https://www.youtube.com/@PBoyle][Youtube]]
+   - [[https://www.onfinance.org/][On Finance Website]]
+   - [[https://www.youtube.com/@PBoyle][Patrick Boyle Youtube]]
  - Accounting stuff
-   - [[https://www.youtube.com/@AccountingStuff][Youtube]]
+   - [[https://www.youtube.com/@AccountingStuff][Accounting Stuff Youtube]]
 ** Notable libre media surfing websites
 + 1337x.to
-+ The internet archive
-+ Project Gutenburg
++ [[https://archive.org/][The internet archive]]
++ [[https://www.gutenberg.org/][Project Gutenburg]]
 + Z-lib
-+ Wikipedia 
++ [[https://www.wikipedia.org/][Wikipedia]]
 
 ** Embedded electronics
-- Artful Bytes: https://www.youtube.com/@artfulbytes
-- LiveOverflow: https://www.youtube.com/@LiveOverflow
+- [[https://www.youtube.com/@artfulbytes][Artful Bytes]]
+- [[https://www.youtube.com/@LiveOverflow][LiveOverflow]]
 
 
 * Cons and Podcasts
@@ -172,28 +172,9 @@ title: My Sources
 - [[https://open.spotify.com/show/3UhsI7s4bkH1FcMZI5u9iD][Tech Won't Save Us]]
 
 
-
-* Preliminary Source schema
-#+begin_src json
- {sources: {resource_name:{
-    sites:{
-      sitename:{
-        media_types:[],
-        is_primary:"",
-        hosting_platform:""
-     }
-    },
-    personalities:{},
-    tags:[],
-    primary_category:""
- }}}
-
-#+end_src
-
-
 * Software 
 ** Managed self hosting
-  - Pikapods: https://www.pikapods.com/apps
+  - [[https://www.pikapods.com/apps][Pikapods]]
 ** Secure and productive browsing
    + Extensions
      - Ublock origin
@@ -214,47 +195,46 @@ title: My Sources
 
 ** Archival software
   - Ktorrent
-  - YTDLP
+  - [[https://github.com/yt-dlp/yt-dlp][YTDLP]]
   - Httrack
-  - Webtopdf
+  - [[https://webtopdf.com/][Webtopdf]]
 ** Social
  - IRC
-   - channels
-     - freenode
-     - libera
+   - [[https://irssi.org/][irssi]]
  - Email
-   - tutanota
+   - [[https://tuta.com/][tutanota]]
  - Contact management
    - Monica
  - Multi platform orchestration
    - Matrix  
 
 ** Syncing and backup
-  - Syncthing
+  - [[https://syncthing.net/][Syncthing]]
 
 ** Photography (both linux and android)
 *** Editing
-  - Snapseed
+  - [[https://play.google.com/store/apps/details?id=com.niksoftware.snapseed&hl=en][Snapseed]]
   - Gimp
 *** Gallery
-  - Immich
-  - A+ gallery
+  - [[https://immich.app/][Immich Server And Client]]
+  - [[https://www.aplus.gallery/][A+ gallery]]
 
 ** Vault and secret storage
   - Bitwarden app and authenticator
 
 ** UI/UX
   - Launcher
-    - Nova launcher mod or bought
+    - [[https://novalauncher.com/][Nova launcher mod or bought]]
   - Keyboard
-    - Futo keyboard w/ futo voice input
+    - [[https://keyboard.futo.org/][Futo Keyboard]]
+    - [[https://voiceinput.futo.org/][Futo voice input]]
       
 ** Mail Client
-  - Thunderbird
-  - K9 mail
+  - [[https://www.thunderbird.net/en-US/][Thunderbird]]
+  - [[https://k9mail.app/][K9 mail]]
 
 ** Alt App stores
-  - Fdroid
+  - [[https://f-droid.org/en/][Fdroid]]
 
 ** File mgt
   - Xplore
@@ -262,18 +242,18 @@ title: My Sources
   
 ** Media play
   - Video and Audio Players
-    - VLC android
-    - Symfomium android
-    - Jellyfin Linux
-    - Navidrome Linux
+    - Media Play Back Video and Audio: [[https://www.videolan.org/][VLC]]
+    - Navidrome Mobile Client: [[https://symfonium.app/][Symfomium]]
+    - TV Shows and Movies: [[https://jellyfin.org/][Jellyfin]]
+    - Music: [[https://www.navidrome.org/][Navidrome]]
   - PDF Readers
-    - Readera android
+    - [[https://readera.org/][Readera]]
   - Bluetooth managers
   - Youtube clients
-    - NewPipe
-    - Grayjay
+    - [[https://newpipe.net/][NewPipe]]
+    - [[https://grayjay.app/][GrayJay]]
   - Podcast clients
-    - Pocketcasts
+    - [[https://pocketcasts.com/][Pocketcasts]]
 
 
 
