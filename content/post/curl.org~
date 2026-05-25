@@ -1,0 +1,64 @@
+I recently had to test an api with a popular app called
+[[https://www.postman.com/][PostMan]] but did not like that it kept
+reminding me how limited the freemium version was. Not to mention the
+unsolicited "AI assistance" features. So I set out to make some notes on
+a free and possibly better alternative: [[https://curl.se/][Curl]] .
+This is an early version of those notes.
+
+I'll only focus on the
+[[https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview][http
+protocol]] for this article (and will consider add notes for others when
+my need for using curl with them arises) but I'm sure that's for most,
+all they ever get to use with curl.
+
+So what is curl?
+
+It's a very old (26 years as of when I am writing this) popular cli tool
+for network data transfer by Daniel Stenberg.
+
+All its file-transfer functionality is powered by an underlying library
+called libcurl.
+
+The 'c' in Curl is for 'client' since it is a client side tool and the
+URL is because its a tool for 'downloading and uploading data with a
+url'. Okay, enough trivia.
+
+Curl comes preinstalled on most linux distros but if it ain't installed
+you can install it using your distro's package manager. I am running
+Arch so that would be:
+
+#+begin_src sh
+pacman -S curl
+#+end_src
+
+Since its rebelling against PostMan that birthed this article, we'll
+focus on what PostMan's free tier offers. Trust me, itll be enough to
+handle most usecases you will run into for curl.
+
+Okay, so let's do all that PostMan's free tier can do , but without
+PostMan.
+
+Get, Post, Put, Patch, Delete, Head, Options.
+
+Authenticated requests - JWT, Oauth 1 and 2, API Key, Digest Auth, Basic
+Auth
+
+Also, we'll need some api service we are going to use for practice.
+
+A list of PostMan features we'll cover
+
+Pycurl
+
+*** References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+| No. | Source          | Type  | Title                                                                           |
+|-----+-----------------+-------+---------------------------------------------------------------------------------|
+| 1.  | Hackersploit    | Video | [[https://www.youtube.com/watch?v=Xy7fDxz39FM][Curl Fundamentals]]              |
+| 2   | Daniel Stenberg | PDF   | [[https://daniel.haxx.se/everything-curl/everything-curl.pdf][Everything Curl]] |
+
+*** HTTP Curl Refcard
+:PROPERTIES:
+:CUSTOM_ID: http-curl-refcard
+:END:

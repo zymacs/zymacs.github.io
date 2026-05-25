@@ -1,0 +1,34 @@
+---
+title: My Media Sources
+---
+
+
+
+- A Public Collection Point For My Sources.
+- Currently not assorted. 
+
+** Science and Tech
+
+  
+| Name                   | Youtube                | Website      | Brief Info                                |
+|------------------------+------------------------+--------------+-------------------------------------------|
+| Tsoding                | [[  https://www.youtube.com/@TsodingDaily][Tsoding Daily]]          |              | Leisurely coding                          |
+| Bootdev                | [[https://www.youtube.com/@bootdotdev][Boot Dev]]               |              | Deep Courses                              |
+| SystemCrafters         | [[https://www.youtube.com/@SystemCrafters][SystemCrafters]]         |              | FOSS workflow setup (emacs, scheme, guix) |
+| MIT OpenCourseWare     | [[https://www.youtube.com/@mitocw][MIT OCW]]                |              | Uni Grade Courses                         |
+| METU OpenCourseWare    | [[https://www.youtube.com/@METUOpenCourseWare][METU OCW]]               |              | Uni Grade Courses                         |
+| Coray Schafer          | [[https://www.youtube.com/@coreyms][Coray Shafer]]           |              | Cool Tutorials                            |
+| Hacker News            |                        | [[https://news.ycombinator.com/][HN]]           | News                                      |
+| The Register           |                        | [[https://www.theregister.com/][The Register]] | News                                      |
+| Freecode camp          |                        | [[https://www.freecodecamp.org/][FCC]]          | Tutorials on everything                   |
+| MDN Docs               |                        | [[https://developer.mozilla.org/en-US/][MDN]]          | Well written docs                         |
+| Arpitt Bhayani         | [[https://www.youtube.com/@AsliEngineering][Arpit Bhayani]]          |              | How popular s/w technologies work         |
+| Technology Connections | [[https://www.youtube.com/@TechnologyConnections][Technology Connections]] |              | How old h/w tech works                    |
+| Abdul Bari             | [[https://www.youtube.com/@abdul_bari][Abdul Bari]]             |              | Real good algorithms tutorials            |
+|                        |                        |              |                                           |
+
+
+
+
+
+

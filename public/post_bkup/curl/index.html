@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curl: A Better PostMan - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/curl/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Curl: A Better PostMan">
+  <meta property="og:description" content="I recently had to test an api with a popular app called PostMan but did not like that it kept reminding me how limited the freemium version was. Not to mention the unsolicited &#34;AI assistance&#34; features. So I set out to make some notes on a free and possibly better alternative: Curl . This is an early version of those notes.
+I&#39;ll only focus on the http protocol for this article (and will consider add notes for others when my need for using curl with them arises) but I&#39;m sure that&#39;s for most, all they ever get to use with curl.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-22T15:43:01+03:00">
+    <meta property="article:modified_time" content="2026-05-22T15:43:01+03:00">
+    <meta property="article:tag" content="Tooling">
+    <meta property="article:tag" content="Http">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/project_writeups/">
+				
+				<span class="menu__text">Project Walkthroughs</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/misc./">
+				
+				<span class="menu__text">Upcoming Articles</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/quotes_and_excerpts/">
+				
+				<span class="menu__text">Quotes &amp; Excerpts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Curl: A Better PostMan</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-22T15:43:01&#43;03:00">May 22, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/linux-utils/" rel="category">Linux Utils</a>, <a class="meta__link" href="/categories/networking/" rel="category">Networking</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/curl.png" alt="Curl: A Better PostMan">
+		
+	</figure><div class="content post__content clearfix">
+			
+<p>
+I recently had to test an api with a popular app called
+<a href="https://www.postman.com/">PostMan</a> but did not like that it kept
+reminding me how limited the freemium version was. Not to mention the
+unsolicited &#34;AI assistance&#34; features. So I set out to make some notes on
+a free and possibly better alternative: <a href="https://curl.se/">Curl</a> .
+This is an early version of those notes.</p>
+<p>
+I&#39;ll only focus on the
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview">http
+protocol</a> for this article (and will consider add notes for others when
+my need for using curl with them arises) but I&#39;m sure that&#39;s for most,
+all they ever get to use with curl.</p>
+<p>
+So what is curl?</p>
+<p>
+It&#39;s a very old (26 years as of when I am writing this) popular cli tool
+for network data transfer by Daniel Stenberg.</p>
+<p>
+All its file-transfer functionality is powered by an underlying library
+called libcurl.</p>
+<p>
+The &#39;c&#39; in Curl is for &#39;client&#39; since it is a client side tool and the
+URL is because its a tool for &#39;downloading and uploading data with a
+url&#39;. Okay, enough trivia.</p>
+<p>
+Curl comes preinstalled on most linux distros but if it ain&#39;t installed
+you can install it using your distro&#39;s package manager. I am running
+Arch so that would be:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pacman -S curl</span></span></code></pre></div>
+</div>
+<p>
+Since its rebelling against PostMan that birthed this article, we&#39;ll
+focus on what PostMan&#39;s free tier offers. Trust me, itll be enough to
+handle most usecases you will run into for curl.</p>
+<p>
+Okay, so let&#39;s do all that PostMan&#39;s free tier can do , but without
+PostMan.</p>
+<p>
+Get, Post, Put, Patch, Delete, Head, Options.</p>
+<p>
+Authenticated requests - JWT, Oauth 1 and 2, API Key, Digest Auth, Basic
+Auth</p>
+<p>
+Also, we&#39;ll need some api service we are going to use for practice.</p>
+<p>
+A list of PostMan features we&#39;ll cover</p>
+<p>
+Pycurl</p>
+<div id="outline-container-references" class="outline-4">
+<h4 id="references">
+References
+</h4>
+<div id="outline-text-references" class="outline-text-4">
+<table>
+<thead>
+<tr>
+<th class="align-right">No.</th>
+<th>Source</th>
+<th>Type</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="align-right">1.</td>
+<td>Hackersploit</td>
+<td>Video</td>
+<td><a href="https://www.youtube.com/watch?v=Xy7fDxz39FM">Curl Fundamentals</a></td>
+</tr>
+<tr>
+<td class="align-right">2</td>
+<td>Daniel Stenberg</td>
+<td>PDF</td>
+<td><a href="https://daniel.haxx.se/everything-curl/everything-curl.pdf">Everything Curl</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-http-curl-refcard" class="outline-4">
+<h4 id="http-curl-refcard">
+HTTP Curl Refcard
+</h4>
+</div>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/tooling/" rel="tag">tooling</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/http/" rel="tag">http</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/burning_ropes/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Q6 BT: Burning Ropes</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/curl/">Curl: A Better PostMan</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/burning_ropes/">Q6 BT: Burning Ropes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card Game</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-utils/">Linux Utils</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tooling/" title="Tooling">Tooling (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

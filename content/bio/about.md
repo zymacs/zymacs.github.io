@@ -23,8 +23,10 @@ To talk about anything related to what I post on here or whatever else, please d
 - Home
 - Project Series and Walkthroughs
 - Quotes and Excerpts
-- Non fiction Book Summaries
+- Non-fiction Book Summaries
+- Finance
 - Research
+- Living Notes
 - Cheatsheets
 - CV
 
