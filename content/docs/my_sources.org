@@ -1,0 +1,281 @@
+---
+title: My Sources
+---
+
+
+
+** *MEDIA ROLODEX* 
+
+* Uni Grade courses (OCWs)
++ MIT Open courseware
+  - [[https://ocw.mit.edu/][Website]]
+  - [[https://www.youtube.com/@mitocw][Youtube]]
++ METU Open courseware
+  - [[https://ocw.metu.edu.tr/][Website]]
+  - [[https://www.youtube.com/@METUOpenCourseWare][Youtube]]
++ Stanford Open courseware
+  - [[https://online.stanford.edu/free-courses][Website]]
+  - [[https://www.youtube.com/@stanfordonline][Youtube]]
+
+  
+* Eng Challenges and competition
+** Algorithms
+ - [[https://cses.fi/][CSES]]
+ - [[https://leetcode.com/][Leetcode]]
+ - [[https://codeforces.com/][Code Forces]]
+** Linux and hacking
+ - [[https://overthewire.org/wargames/bandit/][Over the wire]]
+ - [[https://www.linuxfromscratch.org/][Linux from scratch]]
+ - [[https://www.hackthebox.com/][Hack the box]]
+  
+** Math and Logic
+   - [[https://projecteuler.net/][Project Euler]]
+   - Books
+     - [[https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552][50 Probability Questions]]
+     - Alcuin's "Problems to sharpen the young" (search online)
+     - [[https://asset.quant-wiki.com/pdf/%E9%87%8F%E5%8C%96%E7%BB%BF%E7%9A%AE%E4%B9%A6.pdf][A practical guide to quant finance interviews]]
+
+
+* Online Docs and Learning Resources
+** Linux
+   - [[https://docs.freebsd.org/en/books/handbook/][FreeBSD Handbook]]
+   - [[https://wiki.archlinux.org/title/Main_page][Arch Wiki]]
+** Web Dev
+  - [[https://developer.mozilla.org/en-US/][MDN Docs]]
+  - [[https://www.w3schools.com][https://www.w3schools.com]]
+** OS DEV
+  - [[https://wiki.osdev.org/Introduction][OS Dev Wiki]]
+  - [[https://pages.cs.wisc.edu/~remzi/OSTEP/][Operating Systems: Three Easy Steps]]
+** CPP
+  - [[https://cppreference.com/][CPP reference]]
+** SQL
+  - [[https://www.postgresql.org/docs/current/][Postgres]]
+  - [[https://mariadb.com/docs][Mariadb]]
+** Emacs lisp
+  - [[https://www.gnu.org/software/emacs/manual/html_mono/elisp.html][Elisp]]
+  
+** Specs and white papers
+**** Research Papers
+  - [[https://arxiv.org/][Arxiv]]
+  - [[https://dl.acm.org/][ACM digital lib]]
+**** RFC Specs
+  - [[https://www.rfc-editor.org/][RFC specs]]
+
+** Docker
+  - [[https://www.freecodecamp.org/news/the-docker-handbook/][The Docker Handbook]]
+  
+** Writing and Language
+  - Youtube Resource:  [[https://www.youtube.com/@WritingwithAndrew][Writing with Andrew]] !(not so relevant)
+  - Books
+    - [[https://daoyuan14.github.io/elos.pdf][Elements of Style By William Strunk Jr.]]
+
+
+
+* Top Reads (Must Read Recommendations from online sources)
+- [[https://web.mit.edu/6.001/6.037/sicp.pdf][SCIP]] (The Wizard Book for CS)
+- 
+
+  
+* Refcards (AKA cheatsheets)
+- Magit  : https://docs.magit.vc/magit-refcard.pdf
+- Git    : https://git-scm.com/cheat-sheet
+- Emacs  : https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
+- SQL    : https://www.w3schools.com/sql/sql_quickref.asp
+- Linux  : __ online refs dont have much I use (will create a custom refcard)
+- Docker : https://docs.docker.com/get-started/docker_cheatsheet.pdf
+- Awk    : https://quickref.me/awk.html
+- Sed    : https://quickref.me/sed.html
+- Grep   : https://quickref.me/grep
+- Tex    : https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf
+- Others : https://quickref.me/
+  
+
+  
+
+* Internet info personaities and voices (and sites) 
+** Computer Sci General
+   - [[https://www.youtube.com/@Computerphile][ComputerPhile]]
+** Algorithms and Data Structures
+    - Abdul Bari
+    - Jenny IT
+** Recreational Programming
+   - Tsoding Daily
+** System Design Internals
+   - [[https://www.youtube.com/@AsliEngineering][Arpitt Bharayani]]
+   - [[https://www.youtube.com/@pragmaticengineer][The Pragmatic Engineer]]
+** Tech News
+  - [[https://news.ycombinator.com/][Hacker News]]
+  - [[https://www.theregister.com/][The Register]]
+** Math
+   - [[https://www.youtube.com/@numberphile][Numberphile]]
+   - [[https://www.youtube.com/@TheRandomProfessor][The Random Professor]]
+** Religion
+*** Christianity orgs
+     - [[https://www.youtube.com/@GBNTV][GBN]]
+     - [[https://apologeticspress.org/][Apologetics Press]]
+     - [[https://www.youtube.com/@wvbs][World Video Bible School]]
+** Self Help
+*** Habit Change
+  - James Clear
+    - [[https://jamesclear.com/articles][Articles]]
+*** Learning how to learn
+  - Scott Young
+    - [[https://www.youtube.com/@ScottHYoungVid][Youtube]]
+    - [[https://www.scotthyoung.com/][Articles]]
+
+*** Philosophy and Stoicism
+  - The Daily Stoic By Ryan Holiday
+    - [[https://dailystoic.com/][Website]]
+    - [[https://podcasts.apple.com/us/podcast/the-daily-stoic/id1430315931][Podcast]]
+  - [[https://archive.org/download/SenecaOnTheShortnessOfLife/Seneca%20on%20the%20Shortness%20of%20Life.pdf][Seneca on the shortness of life]]
+
+** Pyschology orgs
+    - [[https://scottbarrykaufman.com/podcast/][The psychology podcast]]
+      
+** Politics
+   - The Corbett Report
+     - [[https://corbettreport.com][Main site]]
+     - [[https://substack.com/@corbettreport][Substack]]
+     - [[https://www.youtube.com/@corbettreport][Youtube]]
+   - Whitney Alyse Webb
+     - [[https://unlimitedhangout.com/][Unlimited Hangouts]]
+
+** Finance
+ - [[https://www.mrmoneymustache.com/][Mr Money Mustache]]
+ - Odd Lots
+   - [[https://www.bloomberg.com/OddLots][Website]]
+   - [[https://www.youtube.com/@BloombergPodcasts/search?query=odd%20lots][Youtube]]
+ - Patrick Boyle
+   - [[https://www.onfinance.org/][Website]]
+   - [[https://www.youtube.com/@PBoyle][Youtube]]
+ - Accounting stuff
+   - [[https://www.youtube.com/@AccountingStuff][Youtube]]
+** Notable libre media surfing websites
++ 1337x.to
++ The internet archive
++ Project Gutenburg
++ Z-lib
++ Wikipedia 
+
+** Embedded electronics
+- Artful Bytes: https://www.youtube.com/@artfulbytes
+- LiveOverflow: https://www.youtube.com/@LiveOverflow
+
+
+* Cons and Podcasts
+** Cons
+- [[https://www.youtube.com/@CppCon][CPP Con]]
+- [[https://www.youtube.com/@PyConUS][PyCon US]]
+- [[https://www.youtube.com/@EmacsConf/][EmacsConf]]
+- [[https://www.youtube.com/@DEFCONConference][Defcon]]
+** Podcasts
+- [[https://open.spotify.com/show/3UhsI7s4bkH1FcMZI5u9iD][Tech Won't Save Us]]
+
+
+
+* Preliminary Source schema
+#+begin_src json
+ {sources: {resource_name:{
+    sites:{
+      sitename:{
+        media_types:[],
+        is_primary:"",
+        hosting_platform:""
+     }
+    },
+    personalities:{},
+    tags:[],
+    primary_category:""
+ }}}
+
+#+end_src
+
+
+* Software 
+** Managed self hosting
+  - Pikapods: https://www.pikapods.com/apps
+** Secure and productive browsing
+   + Extensions
+     - Ublock origin
+     - Unhook
+     - Dark reader
+     - LeechNG
+     - Search engine
+       - Startpage
+   + Browsing software
+     - Librewolf
+     - Firefox**
+     - 1DM+ mod for android
+     - Tor
+   + Proxying software
+     - Simple proxy
+     - Tor
+
+
+** Archival software
+  - Ktorrent
+  - YTDLP
+  - Httrack
+  - Webtopdf
+** Social
+ - IRC
+   - channels
+     - freenode
+     - libera
+ - Email
+   - tutanota
+ - Contact management
+   - Monica
+ - Multi platform orchestration
+   - Matrix  
+
+** Syncing and backup
+  - Syncthing
+
+** Photography (both linux and android)
+*** Editing
+  - Snapseed
+  - Gimp
+*** Gallery
+  - Immich
+  - A+ gallery
+
+** Vault and secret storage
+  - Bitwarden app and authenticator
+
+** UI/UX
+  - Launcher
+    - Nova launcher mod or bought
+  - Keyboard
+    - Futo keyboard w/ futo voice input
+      
+** Mail Client
+  - Thunderbird
+  - K9 mail
+
+** Alt App stores
+  - Fdroid
+
+** File mgt
+  - Xplore
+  - Zarchiver
+  
+** Media play
+  - Video and Audio Players
+    - VLC android
+    - Symfomium android
+    - Jellyfin Linux
+    - Navidrome Linux
+  - PDF Readers
+    - Readera android
+  - Bluetooth managers
+  - Youtube clients
+    - NewPipe
+    - Grayjay
+  - Podcast clients
+    - Pocketcasts
+
+
+
+
+
