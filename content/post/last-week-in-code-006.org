@@ -22,7 +22,7 @@ authoring_date:
 
   Its a lot. Its disconnected. It will be sauce for distinct articles I hope to post in the future. But, I hope there's something to learn. 
 
-  **Documentation as Infrastructure**
+  **Documentation as Infrastructure: Discovered from the trenches**
 
   I am making a habit of documenting the process I take when installing new software for
   how unique situations turn out to be for me Vs what online guides imply they'll turn out like. Sometimes the guide
@@ -55,7 +55,7 @@ authoring_date:
   But I guess my point in one sentence is. Writing and maintaining guides is a documented good practice.
   Its the basis for "infrastructure as code". And, that I discovered that from first principles. More about that [[https://youtu.be/zWw2wuiKd5o?si=ZiNnVtMoh4jFIs2f][here]].
 
-**A real good use of AI**
+**AI IMO is useless, unless its used for these two things**
 
 
   Documentation aside, onto AI. I don't own a company or do anything that would need for me to be constantly rushing towards producing more and more code.
@@ -93,7 +93,7 @@ authoring_date:
   
 
 
-**A rant on media consumption**
+**Control your sources, or lose your mind: A rant on media consumption**
 
 
    I also did some thinking about my consumption. My media consumption that is. 
@@ -108,8 +108,8 @@ authoring_date:
    me was not anywhere as useful as I thought. At least not enough to give YouTube the importance it has in my mind.
 
    And that sentiment I found to be as true for Youtube as it was for any other online platform I frequented for "updates".
-   I have since been consuming less and less even from people I follow. Most of what is on there seems to be opinions about opinions and most not actionable.
-   You know the type of content you consume and 5 minutes later you'd watch it like it was new. (You'd forget you'd consumed it already).
+   I have since been consuming less and less even from people I follow. Most of what is on there seems to be opinions about opinions about previous opinions. Most of which aren't contain
+   no actionable advice. You know, the type of content you consume and 5 minutes later you watch it like it its new. (You  forget you consumed it already).
    I don't think its healthy to indundate oneself with random opinion 24/7.
 
    Trying to train my brain to be more intentional about what I consume. A source driven consumption pipeline. 
@@ -119,7 +119,14 @@ authoring_date:
    There's never been a  better time to do that than now anyways. A lot of fakes online. Non follow based recommendations. ETC.
    More about that [[https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&t=471][here]].
 
+**Don't wait till its perfect to publish it: On evergreen notes**
+  I was searching  online to find if anyone had done added a notes section anywhere on their site like I was planning to when I learnt about the ever green notes idea.
+  Its basically notes that grow with you. Looking at it from the perspective of online articles (since my articles are an extension of my notes), its articles that
+  keep getting updates as I learn more.
 
+  Well, what is worth sharing about that? A lot of people intending to write have quite a load of drafts that never make it to the internet. And something about that, can be to blame
+  for why for some, nothing ever does. I'm of the opinion, based on this evergreen notes insight, that publishing one's half ready notes would make it more likely they have "ready"
+  notes to post as articles in the future. There, to me at least, is more push to edit what's public than what I have locally stored in the drafts folder. 
    
 **The future of this site: The medium for thought can be thought's major constraint**
 
@@ -127,7 +134,7 @@ authoring_date:
   One last thought I'd like to log in this one is on my writing journey. Or, my recollection of it.
   Where I started and my plans for the future. 
   
-  I moved from writing on  whatsapp to doing so on substack then onto Blogger and now I am here on Github.
+  I moved from writing on  whatsapp to doing so on substack then onto Blogger and now here I am on Github.
  
   Moving from each platform was triggerd by some major challenge.
   From whatsapp it was the lack of access to old posts and lack of acess to a wider number of 'interested' people.
