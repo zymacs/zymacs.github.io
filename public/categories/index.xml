@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2026 19:43:01 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 22:49:48 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WeeklySeries</title>
+      <link>//localhost:1313/categories/weeklyseries/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/categories/weeklyseries/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Interview Prep</title>
       <link>//localhost:1313/categories/interview-prep/</link>
@@ -20,13 +27,6 @@
       <link>//localhost:1313/categories/quant-finance/</link>
       <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
       <guid>//localhost:1313/categories/quant-finance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WeeklySeries</title>
-      <link>//localhost:1313/categories/weeklyseries/</link>
-      <pubDate>Mon, 18 May 2026 22:49:48 +0300</pubDate>
-      <guid>//localhost:1313/categories/weeklyseries/</guid>
       <description></description>
     </item>
     <item>

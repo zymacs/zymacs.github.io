@@ -4,7 +4,7 @@ menu:
   main:
    name: "Upcoming Articles"
    weight: 3
-draft: false
+draft: true
 pager: false
 ---
 

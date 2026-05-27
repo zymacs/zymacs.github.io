@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/brain_teasers/</loc>
-    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
+    <loc>//localhost:1313/tags/bdated/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/digital_garden/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-006/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/lwic/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/weeklyseries/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/interview-prep/</loc>
@@ -21,9 +39,6 @@
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
-    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/card_game/</loc>
@@ -45,12 +60,6 @@
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-005/</loc>
-    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/lwic/</loc>
-    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/weeklyseries/</loc>
     <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/android_usage_stats/</loc>
@@ -208,6 +217,8 @@
     <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
+  </url><url>
+    <loc>//localhost:1313/notes/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
