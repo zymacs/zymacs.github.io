@@ -26,13 +26,14 @@ authoring_date:
 
   I am making a habit of documenting the process I take when installing new software for
   how unique situations turn out to be for me Vs what online guides imply they'll turn out like. Sometimes the guide
-  is written based on a system that isn't the one you are running.
-  Or maybe there have been a lot of system changes since the guide was last updated. Or maybe you run into errors
+  is written based on a system that isn't the one I am running.
+  Or maybe there have been a lot of system changes since the guide was last updated. Or maybe I run into errors
   that the guide does not document how they are to be fixed or what to do to avoid them.
 
-  And for that, I  have been thinking more deeply about guides and how this whole guide writing thing can evolve.
-  I know its an obscure thing to think about but boy do I like thinking. But it was not for nothing.
-  Interestingly from this, I discovered for myself an already existing modus operandi called "Infrastructure as code".
+  And for that or for whichevrer other reason, I  have been thinking more deeply about guides and
+  how this whole guide writing thing can evolve. I know its an obscure thing to think about but boy do I like thinking.
+
+  Its how I discovered the official name for what I was driving to: "Infrastructure as code".
 
  _The thought that led to this_
   
@@ -118,7 +119,7 @@ authoring_date:
    Its hard but its worth it and with time I am sure it will become my normal.
 
    There's never been a  better time to do that than now anyways. A lot of fakes online. Non follow based recommendations. ETC.
-   More about that [[https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&t=471][here]].
+   More about that topic [[https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&t=471][here]] and [[https://thebestworstcase.substack.com/p/dont-subscribe-so-casually][here]].
 
 **Don't wait till its perfect to publish it: A rant on evergreen notes**
 
@@ -160,7 +161,7 @@ authoring_date:
 
 - [[https://askhndigests.com/blog/force-engagement-user-delight-free-services][Forced Vs Organic engagement]]
   - Context :: I recently had to quit PostMan after I noticed it had also jumped onto the "sign-in to get in" and "intelligent assistant" wagon. Its a phenomenon I have been seeing across
-    different applications. The constant annoying coercive push for anyone using a freemium model to, on these apps, cross to premium for the "so many cool features" they are missing out on. 
+    different applications. The constant annoying coercive push for any freemium user to, on these apps, cross to premium for the "so many cool features" they are missing out on. 
 - [[https://dl.acm.org/doi/10.1145/361011.361061][The Unix Time Sharing System]]
 
 * Random Finds
