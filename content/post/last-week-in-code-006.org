@@ -142,14 +142,18 @@ authoring_date:
  
   Each migration was triggerd by some major challenge.
   From whatsapp it was the lack of access to old posts and lack of acess to a wider number of 'interested' people.
-  From Substack it was the tight competition incentive
-  From Blogger it was the feeling I did not own my writing. It was authored and kept on google servers by design.
+  From Substack it was the tight competition incentive that took away from free writing. (for me at least)
+  From Blogger it was the feeling I did not own my writing. It was authored and kept on Google servers by design and
+  I needed some architecture that had ownership built in.
   
-  On Github, all the infrastructure problems seemed to have been fixed. Until I noticed another one. I think this'll be the last one.
+  On Github, all the infrastructure problems seemed to have been fixed. Until recently when I noticed another one.
+  I hope it'll be the last one. Don't want to be doing massive changes for ever.
   I am using Hugo, a static site generator. And using the mainroad theme for the styling.
   I would like to have a site that mirrors the kind of expression I'd like to have online, and not stiffle it.
-  I looked online and found this [[https://gwern.net][Gwern.net]].  I have added some sections to the blog with the aim of
-  making that dream come without a full rebuild but it now seems that's the only way I'll have what I want.
+  I looked online for what that would possibly look like and found this very thoughtfully designed site: [[https://gwern.net][Gwern.net]].
+  Its a lot of work building that am sure so I was like I could add some sections to the blog and solve the problem.
+
+  But it now seems that's the only way I'll have what I want, taking on the [[https://gwern.net][gwern.net]] project.
 
   I thought I'd throw that out there was well. 
   The platform is no longer the problem. The site structre I hope, is the last writing infrastructure
