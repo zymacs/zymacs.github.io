@@ -8,7 +8,7 @@ tags:
  - bdated
  - digital_garden
 categories:
- - weeklyseries
+ - WeeklySeries
 authoring_date:
  - 2026-05-27
 ---
