@@ -52,7 +52,7 @@ authoring_date:
   predictable turned out to have been what led to documented standards.
    
   But I guess my point in one sentence is. Writing and maintaining guides is a documented good practice.
-  Its the basis for "infrastructure as code". And, that I discovered that from first principles. 
+  Its the basis for "infrastructure as code". And, that I discovered that from first principles. More about that [[https://youtu.be/zWw2wuiKd5o?si=ZiNnVtMoh4jFIs2f][here]].
 
 **A real good use of AI**
 
@@ -96,7 +96,7 @@ authoring_date:
    I also did some thinking about my consumption. My media consumption that is. 
  
    I have had written down a list of sources I find myself always returning to.
-   Sources whose value I vetted myself. I recently decided to upload a copy of those to my site together with other information.
+   Sources whose value I vetted myself. I recently decided to upload [[https://zymacs.github.io/docs/my_sources][a copy of those]] to my site together with other information.
    I did that for how easy it is for me to revisit most of what I put on this site. Also, as a means to easily share with
    whoever will find it. I am already liking the effects of that.
 
@@ -119,7 +119,8 @@ authoring_date:
 
    
 **The future of this site: The medium for thought can be thought's major constraint**
-  Now briefly on my writing journey.
+  One last thought I'd like to log in this one is on my writing journey. Or, my recollection of it.
+  Where I started and my plans for the future. 
   
   I moved from writing on  whatsapp to doing so on substack then onto Blogger and now I am here on Github.
  
@@ -136,7 +137,7 @@ authoring_date:
 
   I thought I'd throw that out there was well. 
   The platform is no longer the problem. The site structre I hope, is the last writing infrastructure
-  problem I will have to solve. 
+  problem I will have to solve. Maybe until I augment my posts with podcasting. 
 
 
 
