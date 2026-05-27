@@ -1,0 +1,10 @@
+---
+title: Notes
+authorbox: false
+sidebar: false
+menu:
+  main:
+    name: Notes
+    weight: 4
+pager: false
+---

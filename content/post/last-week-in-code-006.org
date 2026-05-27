@@ -159,6 +159,8 @@ authoring_date:
 * Cool articles and videos
 
 - [[https://askhndigests.com/blog/force-engagement-user-delight-free-services][Forced Vs Organic engagement]]
+  - Context :: I recently had to quit PostMan after I noticed it had also jumped onto the "sign-in to get in" and "intelligent assistant" wagon. Its a phenomenon I have been seeing across
+    different applications. The constant annoying coercive push for anyone using a freemium model to, on these apps, cross to premium for the "so many cool features" they are missing out on. 
 - [[https://dl.acm.org/doi/10.1145/361011.361061][The Unix Time Sharing System]]
 
 * Random Finds
