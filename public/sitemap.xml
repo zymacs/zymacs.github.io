@@ -2,31 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/tags/brain_teasers/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/interview-prep/</loc>
     <lastmod>2026-05-23T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-23T15:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/defective_ball/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/quant-finance/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
+    <loc>//localhost:1313/categories/interview-prep/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/burning_ropes/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/quant-finance/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/card_game/</loc>
@@ -194,6 +191,8 @@
     <loc>//localhost:1313/bio/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/misc./source_index/</loc>
+  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-003/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
@@ -207,6 +206,8 @@
     <loc>//localhost:1313/docs/</loc>
   </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
+  </url><url>
+    <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Week in Code E006 - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/post/last-week-in-code-006/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Last Week in Code E006">
+  <meta property="og:description" content="Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I sunk into setting up mediawiki. I am preparing to change locations. I am not so sure about my new location&#39;s internet efficiency or its affordability. So I think I will so much need to have local access to critical information sources. As usual, the whole process and other small tasks I did teach me certain things I&#39;d like to share.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-25T22:49:48+03:00">
+    <meta property="article:modified_time" content="2026-05-25T22:49:48+03:00">
+    <meta property="article:tag" content="Lwic">
+    <meta property="article:tag" content="Bdated">
+    <meta property="article:tag" content="Digital_garden">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/project_writeups/">
+				
+				<span class="menu__text">Project Walkthroughs</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/misc./">
+				
+				<span class="menu__text">Upcoming Articles</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/quotes_and_excerpts/">
+				
+				<span class="menu__text">Quotes &amp; Excerpts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/bio/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last Week in Code E006</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-25T22:49:48&#43;03:00">May 25, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/lwic.png" alt="Last Week in Code E006">
+		
+	</figure><div class="content post__content clearfix">
+			
+<p>
+  Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I
+  sunk into setting up mediawiki. I am preparing to change locations. I am not so sure about my new location&#39;s internet
+  efficiency or its affordability.
+  So I think I will so much need to have   local access to critical information sources. As usual, the whole process and other small tasks I did
+  teach me certain things I&#39;d like to share.</p>
+<p>
+  Its a lot. Its disconnected. It will be sauce for distinct articles I hope to post in the future. But, I hope there&#39;s something to learn. </p>
+<p>
+  <strong><strong>Documentation as Infrastructure</strong></strong></p>
+<p>
+  I am making a habit of documenting the process I take when installing new software for
+  how unique situations turn out to be for me Vs what online guides imply they&#39;ll turn out like. Sometimes the guide
+  is written based on a system that isn&#39;t the one you are running.
+  Or maybe there have been a lot of system changes since the guide was last updated. Or maybe you run into errors
+  that the guide does not document how they are to be fixed or what to do to avoid them.</p>
+<p>
+  And for that, I  have been thinking more deeply about guides and how this whole guide writing thing can evolve.
+  I know its an obscure thing to think about but boy do I like thinking. But it was not for nothing.
+  Interestingly from this, I discovered for myself an already existing modus operandi called &#34;Infrastructure as code&#34;.</p>
+<p>
+ <span style="text-decoration: underline;">The thought that led to this</span></p>
+<p>
+  I noticed how easy it was for me to fix issues I had written solutions for.
+  The more well written a solution was, the better. I also noticed how easy it was to go through software installations
+  I had written guides for. Both written by me and scrapped from the internet.
+  Also, I noticed sometimes the guides I had missed out on some steps and whenever they did, (a benefit I would never get
+  from relying on online guides), I went online and read about what
+  was missing then returned the processed info to update my guide.</p>
+<p>
+  So I was like, &#34;By the way, did you know, since I use this guide very often&#34; – (thinking about some guide I used a lot) –  &#34;I could turn it into
+  a script.&#34;</p>
+<p>
+  Then that led to the aha momemnt or something of the sort.   &#34;Ohh, so that&#39;s how those Arch installation scripts come to be!&#34;
+  I mean I understand why it could be hard to infect
+  you with the excitement I had about this small discovery but it was reassuring. What seemed
+  to me to have been  random self directed efforts to make software installation efficient and
+  predictable turned out to have been what led to documented standards.</p>
+<p>
+  But I guess my point in one sentence is. Writing and maintaining guides is a documented good practice.
+  Its the basis for &#34;infrastructure as code&#34;. And, that I discovered that from first principles. </p>
+<p>
+<strong><strong>A real good use of AI</strong></strong></p>
+<p>
+  Documentation aside, onto AI. I don&#39;t own a company or do anything that would need for me to be constantly rushing towards producing more and more code.
+  For that, I like that I can afford to not use Generative AI. For most of what Youtube Videos claim it makes easy at least.
+  That is, generative AI not just AI. I mean, as a learner, it
+  so seems theres not any use for AI I can put a finger on.</p>
+<p>
+  One could say, GenAI is good at explaining because it rephrases
+  things in terms you as an individual understand and to that I&#39;d say, I always hate it when it pretends it knows more than
+  it does about me. I get way better answers from it when its not piping my convo history into its answer production process.</p>
+<p>
+  Another could say it produces code fast and my response would be, I said that already, I want to learn and not to produce
+  code first. Or how about quick error correction. I would say, for the most part, I can use stack overflow. It takes time
+  but still (emphasis on the gains from the learning processs and what speed can come say, years down the line).</p>
+<p>
+  Reading error messages. I am not doing a lot of CPP now but while I did (during a Computer Security Course) I subjected myself
+  to 2 months of pain. Reading GCC errors, learning how to use GDB. It was hard in the beginning but at some point I could not
+  remember the last time I felt frustrated about a compilation error. My brain had caught up to the pattern. I&#39;d argue this applies
+  across all sorts of error messages. I mean its all anecdotal and I wish it wasn&#39;t but I&#39;m sure you can find corroborating articles
+  echoing the same sentiment online. </p>
+<p>
+  But , there are actual services AI provides which before it was as accessible as it is today, it was hard to get access to.
+  You know when you understand what you want to say but just can&#39;t find the industry terminology for it? You just know what it
+  is but to convey this info to someone else or to , yourself , find corroborating articles online, you need precise terminology?
+  That is, at least as per my reading, tacit knowledge.</p>
+<p>
+  I don&#39;t think there has ever been a time before AI when one could dump
+  some fuzzy writeup for what they think in a search box and get results precisely pointing to what they were trying to say.
+  Search engines without AI ain&#39;t built to handle that. Even those with semantic search enabled. But with AI, if you can
+  explain what you think you want to say, it will almost always clarify what you mean and give you terms you can use to then
+  continue your research with a search engine. </p>
+<p>
+  Another use case is documentation. There&#39;s a site called deepwiki that I&#39;ll link in the cool finds section that does a real good
+  job of introducing the reader to a code base for how articulate it is about explaining what&#39;s going on in some messy repo of code.</p>
+<p>
+<strong><strong>A rant on media consumption</strong></strong>
+   I also did some thinking about my consumption. My media consumption that is. </p>
+<p>
+   I have had written down a list of sources I find myself always returning to.
+   Sources whose value I vetted myself. I recently decided to upload a copy of those to my site together with other information.
+   I did that for how easy it is for me to revisit most of what I put on this site. Also, as a means to easily share with
+   whoever will find it. I am already liking the effects of that.</p>
+<p>
+   The internet , for me at least, does not feel like it has my best interests in mind. It probably once did. But a quick run
+   through youtube while I was giving thought to my internet consumption, questioning if I really needed Youtube as much as I thought I did, had me noticing most of what was being shown to
+   me was not anywhere as useful as I thought. At least not enough to give YouTube the importance it has in my mind.</p>
+<p>
+   And that sentiment I found to be as true for Youtube as it was for any other online platform I frequented for &#34;updates&#34;.
+   I have since been consuming less and less even from people I follow. Most of what is on there seems to be opinions about opinions and most not actionable.
+   You know the type of content you consume and 5 minutes later you&#39;d watch it like it was new. (You&#39;d forget you&#39;d consumed it already).
+   I don&#39;t think its healthy to indundate oneself with random opinion 24/7.</p>
+<p>
+   Trying to train my brain to be more intentional about what I consume. A source driven consumption pipeline. 
+   Consulting my sources for any thing I need info about and expaning the source list when none of the sources can provide a valid response. 
+   Its hard but its worth it and with time I am sure it will become my normal.</p>
+<p>
+   There&#39;s never been a  better time to do that than now anyways. A lot of fakes online. Non follow based recommendations. ETC.
+   More about that <a href="https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&amp;t=471">here</a>.</p>
+<p>
+<strong><strong>The future of this site: The medium for thought can be thought&#39;s major constraint</strong></strong>
+  Now briefly on my writing journey.</p>
+<p>
+  I moved from writing on  whatsapp to doing so on substack then onto Blogger and now I am here on Github.</p>
+<p>
+  Moving from each platform was triggerd by some major challenge.
+  From whatsapp it was the lack of access to old posts and lack of acess to a wider number of &#39;interested&#39; people.
+  From Substack it was the tight competition incentive
+  From Blogger it was the feeling I did not own my writing as it was authored plus, stayed on their servers.</p>
+<p>
+  On Github, all the infrastructure problems seemed to have been fixed. Until I noticed another one. I think this&#39;ll be the last one.
+  I am using Hugo, a static site generator. And using the mainroad theme for the styling.
+  I would like to have a site that mirrors the kind of expression I&#39;d like to have online, and not stiffle it.
+  I looked online and found this <a href="https://gwern.net">Gwern.net</a>.  I have added some sections to the blog with the aim of
+  making that dream come without a full rebuild but it now seems that&#39;s the only way I&#39;ll have what I want.</p>
+<p>
+  I thought I&#39;d throw that out there was well. 
+  The platform is no longer the problem. The site structre I hope, is the last writing infrastructure
+  problem I will have to solve. </p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Cool articles and videos
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<ul>
+<li><a href="https://askhndigests.com/blog/force-engagement-user-delight-free-services">Forced Vs Organic engagement</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/361011.361061">The Unix Time Sharing System</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Random Finds
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<ul>
+<li><a href="https://deepwiki.com/">Deepwiki</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/insight-track-your-time-online/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search">Insight - Track and Optimize Your Time Online (Online time tracker)</a></li>
+</ul>
+<p>
+This post was definitely not like any of the old ones but I sure hope you still learnt something. </p>
+</div>
+</div>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/bdated/" rel="tag">bdated</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/digital_garden/" rel="tag">digital_garden</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/burning_ropes/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Q6 BT: Burning Ropes</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week in Code E006</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/burning_ropes/">Q6 BT: Burning Ropes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card Game</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/security/">Security</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> Curriculam Vitae  </span>
+			<span class="footer__hireme-section"><a> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

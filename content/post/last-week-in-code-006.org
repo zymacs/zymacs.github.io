@@ -1,0 +1,154 @@
+---
+title: 'Last Week in Code E006'
+thumbnail: 'img/lwic.png'
+date: 2026-05-25T22:49:48+03:00
+draft: false
+tags:
+ - lwic
+ - bdated
+ - digital_garden
+categories:
+ - weeklyseries
+authoring_date:
+ - 2026-05-27
+---
+
+  Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I
+  sunk into setting up mediawiki. I am preparing to change locations. I am not so sure about my new location's internet
+  efficiency or its affordability.
+  So I think I will so much need to have   local access to critical information sources. As usual, the whole process and other small tasks I did
+  teach me certain things I'd like to share.
+
+  Its a lot. Its disconnected. It will be sauce for distinct articles I hope to post in the future. But, I hope there's something to learn. 
+
+  **Documentation as Infrastructure**
+
+  I am making a habit of documenting the process I take when installing new software for
+  how unique situations turn out to be for me Vs what online guides imply they'll turn out like. Sometimes the guide
+  is written based on a system that isn't the one you are running.
+  Or maybe there have been a lot of system changes since the guide was last updated. Or maybe you run into errors
+  that the guide does not document how they are to be fixed or what to do to avoid them.
+
+  And for that, I  have been thinking more deeply about guides and how this whole guide writing thing can evolve.
+  I know its an obscure thing to think about but boy do I like thinking. But it was not for nothing.
+  Interestingly from this, I discovered for myself an already existing modus operandi called "Infrastructure as code".
+
+ _The thought that led to this_
+  
+  I noticed how easy it was for me to fix issues I had written solutions for.
+  The more well written a solution was, the better. I also noticed how easy it was to go through software installations
+  I had written guides for. Both written by me and scrapped from the internet.
+  Also, I noticed sometimes the guides I had missed out on some steps and whenever they did, (a benefit I would never get
+  from relying on online guides), I went online and read about what
+  was missing then returned the processed info to update my guide.
+
+  So I was like, "By the way, did you know, since I use this guide very often" -- (thinking about some guide I used a lot) --  "I could turn it into
+  a script."
+
+  Then that led to the aha momemnt or something of the sort.   "Ohh, so that's how those Arch installation scripts come to be!"
+  I mean I understand why it could be hard to infect
+  you with the excitement I had about this small discovery but it was reassuring. What seemed
+  to me to have been  random self directed efforts to make software installation efficient and
+  predictable turned out to have been what led to documented standards.
+   
+  But I guess my point in one sentence is. Writing and maintaining guides is a documented good practice.
+  Its the basis for "infrastructure as code". And, that I discovered that from first principles. 
+
+**A real good use of AI**
+
+
+  Documentation aside, onto AI. I don't own a company or do anything that would need for me to be constantly rushing towards producing more and more code.
+  For that, I like that I can afford to not use Generative AI. For most of what Youtube Videos claim it makes easy at least.
+  That is, generative AI not just AI. I mean, as a learner, it
+  so seems theres not any use for AI I can put a finger on.
+
+  One could say, GenAI is good at explaining because it rephrases
+  things in terms you as an individual understand and to that I'd say, I always hate it when it pretends it knows more than
+  it does about me. I get way better answers from it when its not piping my convo history into its answer production process.
+
+  Another could say it produces code fast and my response would be, I said that already, I want to learn and not to produce
+  code first. Or how about quick error correction. I would say, for the most part, I can use stack overflow. It takes time
+  but still (emphasis on the gains from the learning processs and what speed can come say, years down the line).
+
+  Reading error messages. I am not doing a lot of CPP now but while I did (during a Computer Security Course) I subjected myself
+  to 2 months of pain. Reading GCC errors, learning how to use GDB. It was hard in the beginning but at some point I could not
+  remember the last time I felt frustrated about a compilation error. My brain had caught up to the pattern. I'd argue this applies
+  across all sorts of error messages. I mean its all anecdotal and I wish it wasn't but I'm sure you can find corroborating articles
+  echoing the same sentiment online. 
+
+  But , there are actual services AI provides which before it was as accessible as it is today, it was hard to get access to.
+  You know when you understand what you want to say but just can't find the industry terminology for it? You just know what it
+  is but to convey this info to someone else or to , yourself , find corroborating articles online, you need precise terminology?
+  That is, at least as per my reading, tacit knowledge.
+
+  I don't think there has ever been a time before AI when one could dump
+  some fuzzy writeup for what they think in a search box and get results precisely pointing to what they were trying to say.
+  Search engines without AI ain't built to handle that. Even those with semantic search enabled. But with AI, if you can
+  explain what you think you want to say, it will almost always clarify what you mean and give you terms you can use to then
+  continue your research with a search engine. 
+
+  Another use case is documentation. There's a site called deepwiki that I'll link in the cool finds section that does a real good
+  job of introducing the reader to a code base for how articulate it is about explaining what's going on in some messy repo of code.
+  
+
+
+**A rant on media consumption**
+   I also did some thinking about my consumption. My media consumption that is. 
+ 
+   I have had written down a list of sources I find myself always returning to.
+   Sources whose value I vetted myself. I recently decided to upload a copy of those to my site together with other information.
+   I did that for how easy it is for me to revisit most of what I put on this site. Also, as a means to easily share with
+   whoever will find it. I am already liking the effects of that.
+
+   The internet , for me at least, does not feel like it has my best interests in mind. It probably once did. But a quick run
+   through youtube while I was giving thought to my internet consumption, questioning if I really needed Youtube as much as I thought I did, had me noticing most of what was being shown to
+   me was not anywhere as useful as I thought. At least not enough to give YouTube the importance it has in my mind.
+
+   And that sentiment I found to be as true for Youtube as it was for any other online platform I frequented for "updates".
+   I have since been consuming less and less even from people I follow. Most of what is on there seems to be opinions about opinions and most not actionable.
+   You know the type of content you consume and 5 minutes later you'd watch it like it was new. (You'd forget you'd consumed it already).
+   I don't think its healthy to indundate oneself with random opinion 24/7.
+
+   Trying to train my brain to be more intentional about what I consume. A source driven consumption pipeline. 
+   Consulting my sources for any thing I need info about and expaning the source list when none of the sources can provide a valid response. 
+   Its hard but its worth it and with time I am sure it will become my normal.
+
+   There's never been a  better time to do that than now anyways. A lot of fakes online. Non follow based recommendations. ETC.
+   More about that [[https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&t=471][here]].
+
+
+   
+**The future of this site: The medium for thought can be thought's major constraint**
+  Now briefly on my writing journey.
+  
+  I moved from writing on  whatsapp to doing so on substack then onto Blogger and now I am here on Github.
+ 
+  Moving from each platform was triggerd by some major challenge.
+  From whatsapp it was the lack of access to old posts and lack of acess to a wider number of 'interested' people.
+  From Substack it was the tight competition incentive
+  From Blogger it was the feeling I did not own my writing as it was authored plus, stayed on their servers.
+  
+  On Github, all the infrastructure problems seemed to have been fixed. Until I noticed another one. I think this'll be the last one.
+  I am using Hugo, a static site generator. And using the mainroad theme for the styling.
+  I would like to have a site that mirrors the kind of expression I'd like to have online, and not stiffle it.
+  I looked online and found this [[https://gwern.net][Gwern.net]].  I have added some sections to the blog with the aim of
+  making that dream come without a full rebuild but it now seems that's the only way I'll have what I want.
+
+  I thought I'd throw that out there was well. 
+  The platform is no longer the problem. The site structre I hope, is the last writing infrastructure
+  problem I will have to solve. 
+
+
+
+* Cool articles and videos
+
+- [[https://askhndigests.com/blog/force-engagement-user-delight-free-services][Forced Vs Organic engagement]]
+- [[https://dl.acm.org/doi/10.1145/361011.361061][The Unix Time Sharing System]]
+
+* Random Finds
+
+- [[https://deepwiki.com/][Deepwiki]]
+- [[https://addons.mozilla.org/en-US/firefox/addon/insight-track-your-time-online/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][Insight - Track and Optimize Your Time Online (Online time tracker)]]
+
+
+This post was definitely not like any of the old ones but I sure hope you still learnt something. 

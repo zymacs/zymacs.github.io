@@ -1,0 +1,134 @@
+---
+title: 'Last Week in Code E006'
+thumbnail: 'img/lwic.png'
+date: 2026-05-25T22:49:48+03:00
+draft: false
+tags:
+ - lwic
+ - bdated
+categories:
+ - weeklyseries
+authoring_date:
+ - 2026-05-27
+---
+
+
+
+  **Documentation as Infrastructure**
+
+  I am making a habit of documenting the process I take when installing new software for
+  how unique situations turn out to be for me Vs what online guides say. Sometimes the guide
+  is written based on a system that isn't the one you are running.
+  Or maybe there have been a lot of system changes since the guide was last updated. Or maybe you run into errors
+  that the guide does not document how they are to be fixed or what to do to avoid them.
+
+  And for that, I  have been thinking more deeply about guides and how this whole guide writing thing can evolve.
+  I know its an obscure thing to think about but boy do I like thinking. But it was not for nothing.
+  Interestingly I had discovered for myself an already existing modus operandi called "Infrastructure as code"
+  So the train of thought that naturally led me to that industry term.
+
+  I noticed how easy it was for me to fix issues I had written solutions for.
+  The more well written a solution, the better. I also noticed how easy it was to go through software installations
+  I had written guides for. Both written by me and from the internet.
+  Also, I noticed sometimes the guides I had missed out on some steps and whenever I did, I went online and read about what
+  was missing then returned the processed info to update my guide.
+  I was like, by the way, did you know, since I use this guide very often (about some guide I used a lot), I could turn it into
+  a script.
+
+  Then that led to the aha momemnt or somethign of the sort .. :
+  "Ohh, so that's how those arch installation scripts come to be" I mean I understand why it could be hard to infect
+  you with the excitement I had about this small discovery but it was reassuring of what seemed
+  to me to be random self directed efforts to make software installation efficient and
+  predictable.
+   
+  But I guess my point in one sentence is. Writing and maintaining guides is a documented good practice.
+  Its the basis for "infrastructure as code". And, that I discovered that from first principles. 
+
+**A real good use of AI**
+
+
+  I don't own a company or do anything that would need for me to be constantly rushing towards producing more and more code.
+  For that, I like that I can afford to not use Generative AI. That is, generative AI not just AI. I mean, as a learner, it
+  so seems theres not any use for AI I can put a finger on.
+
+  One could say, GenAI is good at explaining because it rephrases
+  things in terms you as an individual understand and to that I'd say, I always hate it when it pretends it knows more than
+  it does about me. I get way better answers from it when its not piping my convo history into its answer production process.
+
+  Another could say it produces code fast and my response would be, I said that already, I want to learn and not to produce
+  code first. Or how about quick error correction. I would say, for the most part, I can use stack overflow. It takes time
+  but still (emphasis on the gains from the learning processs and what speed can come say, years down the line).
+
+  Reading error messages. I am not doing a lot of CPP now but while I did (during a Computer Security Course) I subjected myself
+  to 2 months of pain. Reading GCC errors, learning how to use GDB. It was hard in the beginning but at some point I could not
+  remember the last time I felt frustrated about a compilation error. My brain had caught up to the pattern. I'd argue this applies
+  across all sorts of error messages. I mean its all anecdotal and I wish it wasn't but I'm sure you can find corroborating articles
+  echoing the same sentiment online. 
+
+  But , there are actual services AI provides which before it was as accessible as it is today, it was hard to get.
+  You know when you understand what you want to say but just can't find the industry terminology for it? You just know what it
+  is but to convey this info to someone else or to , yourself , find corroborating articles online, you need precise terminology?
+  That is, at least as per my reading, tacit knowledge. I don't think there has ever been a time before AI when one could dump
+  some fuzzy writeup for what they think in a search box and get results precisely pointing to what they are trying to say.
+  Search engines without AI ain't built to handle that. Even those with semantic search enabled. But with AI, if you can
+  explain what you think you want to say, it will almost always clarify what you mean and give you terms you can use to then
+  continue your research with a search engine.
+
+  Another use case is documentation. There's a site called deepwiki that I'll link in the cool finds section that does a real good
+  job of introducing the reader to a code base for how articulate it is about explaining what's going on in some messy repo of code.
+  
+
+
+**The medium for thought can be thought's major constraint**
+
+
+  When I started this blog I thought I only wanted to talk about tech. But I have for long wanted to have some form of internet
+  home that is storage for all kinds of thoughts. Tech, Philosophy, Religion. Everything that I find I need to write about. But
+  as I have become more conscious of that, I have also of how limited the current structure for this site is. I am adding
+  sections to it as you can see. Changing font type and line spacing , changing coloring and what not. But it seems there's
+  limits to how much small tweaks I can do. The home page is a listing of tech posts. But I wish it was a listing of all
+  the site had to offer yet without giving unfocused vibes. Fish mixed with sand mixed with leaves type of feeling. I
+  guess this site is not meant for the kind of writing I'd like to have. The structure is limiting my thought expression to
+  what it can accomodate as a result.
+
+  I would like to as it evolves have something more like [[https://gwern.net][Gwern.net]] 
+  
+ - limiting to how my brain works.
+ - I am more than software development and code. I have opinions on a whole lot of things.
+ - Rebuild this site or a new one with my mind's architecture in mind
+
+* A note on productivity
+ 
+
+** A case against content consumption
+  - Wasn't consuming much news the previous week. I have a note on that too. After doing some reflection, and I am optimistic you will come to the same conclusion as I did when you do, there's
+   not much difference today between consumption of youtube-op-eds and tiktok consumption. Even when content consumed could probably not be dancing videos, or cat videos. Even when it could
+   be about tech. Most of what am getting in my feed is opinions about opinions and takes on real obscure things which after I have learnt about them I never get to put the knowledge to any
+   use. That's assuming I even remember what I consumed. I have started putting in, and have been thinking about this for long, conserted effort to narrow consumption to sources I have
+   tested to have more signal than noise. That's rare on the internet these days. If you look at the news section for e001 or others , e002 you realise how irrelevant it now feels.  I mean
+   maybe to have something to talk about with friends, one would give time to constan news updates. Also, I'm sure you've probably heard the 'dead internet theory' term thrown around. Or, you
+   have seen how platforms that used to provide personalised content now seem to skew recommendations towards what you are currently interested in or even worse, what's trending. I looked
+   through my subscriptions list and there's a whole lot of channels on there that I haven't gotten an update from (active channels) that have however been active.
+   As for hacker news, I still go there every now and then and when I do, I find some good articles.
+   
+   I have had a list of sources I find myself always returning to. Sources I found real useful the times when I used them or sources I just use often for one reason or another. I
+   recently decided to upload a copy of those to my site together with other information. I did that for how easy it is for me to revisit most of what I put on this site. Also, for
+   whoever will find it. I am already liking how it is going. The internet , for me at least, does not feel like it has my best interests in mind. It probably once did. But a quick run
+   through youtube while I was giving thought to my internet consumption, questioning if I really needed Youtube as much as I thought I did, I noticed most of what was being shown to
+   me was things I could do without. And that sentiment I found to be as true for youtube as it was for any other online platform I frequented for "updates". I guess my subconscious
+   had already noticed this and its why I moved to upload my sources. I have since been consuming less and less even from people I followed. Most of what is on there is opinions and
+   I don't think its healthy to indundate oneself with random opinion 24/7. Trying to train my brain to be more intentional about what I consume (its mostly been whatever the feed
+   puts out or whatever the content producer puts out). Its hard but its worth it and with time I am sure it will become my normal. 
+   Interesting, and real reassuring (I am not crazy type reassuring), the CEO of some fintech company , Conti, echo's the exact same sentiments. I guess I am onto something here. 
+
+Not based on subs but based on whats popping or whatever the algorithm's definition for that is, at least mostly https://youtu.be/y0N9fD3rFaw?si=AulKhTRhkLcY2SvG&t=471
+
+* Cool articles and videos
+  - https://www.youtube.com/watch?v=y0N9fD3rFaw
+
+
+* Random Finds
+  - Deepwiki
+  - https://askhndigests.com/blog/force-engagement-user-delight-free-services
+  - Insight - Track and Optimize Your Time Online (Online time tracker)
+
