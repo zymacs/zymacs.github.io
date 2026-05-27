@@ -73,7 +73,6 @@ title: My Sources
 
 * Top Reads (Must Read Recommendations from online sources)
 - [[https://web.mit.edu/6.001/6.037/sicp.pdf][SCIP]] (The Wizard Book for CS)
-- 
 
   
 * Refcards (AKA cheatsheets)
@@ -81,7 +80,6 @@ title: My Sources
 - [[https://git-scm.com/cheat-sheet][Git]]
 - [[https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf][Emacs]]
 - [[https://www.w3schools.com/sql/sql_quickref.asp][SQL]]
-- Linux  : __ online refs dont have much I use (will create a custom refcard)
 - [[https://docs.docker.com/get-started/docker_cheatsheet.pdf][Docker]]
 - [[https://quickref.me/awk.html][Awk]]
 - [[https://quickref.me/sed.html][Sed]]
@@ -181,11 +179,12 @@ title: My Sources
      - Unhook
      - Dark reader
      - LeechNG
+     - [[https://addons.mozilla.org/en-US/firefox/addon/insight-track-your-time-online/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][Insight - Track and Optimize Your Time Online (Online time tracker)]]
      - Search engine
        - Startpage
    + Browsing software
      - Librewolf
-     - Firefox**
+     - Firefox
      - 1DM+ mod for android
      - Tor
    + Proxying software
