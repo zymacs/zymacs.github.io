@@ -142,7 +142,7 @@ authoring_date:
   Moving from each platform was triggerd by some major challenge.
   From whatsapp it was the lack of access to old posts and lack of acess to a wider number of 'interested' people.
   From Substack it was the tight competition incentive
-  From Blogger it was the feeling I did not own my writing as it was authored plus, stayed on their servers.
+  From Blogger it was the feeling I did not own my writing. It was authored and kept on google servers by design.
   
   On Github, all the infrastructure problems seemed to have been fixed. Until I noticed another one. I think this'll be the last one.
   I am using Hugo, a static site generator. And using the mainroad theme for the styling.
