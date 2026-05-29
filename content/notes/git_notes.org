@@ -1,6 +1,10 @@
 ---
 title: GIT
 thumbnail: 'img/git_icon.png'
+tags:
+ - git
+categories:
+ - Development
 ---
 
 The following is a collection of notes I took from reading the book on Git, [[https://git-scm.com/book/en/v2][Progit]].
@@ -887,7 +891,7 @@ git remote add <shortname> <url>
   - If there's no copy of the branch on the remote repo yet,it will be created during the push.
     #+begin_src
     git push origin serverfix
-    # serverfix remote is  internally expanded to : refs/heads/serverfix:refs/heads/serverfix
+    # serverfix remote is  internally expanded to : refs/heads/serverfix:refs/remotes/serverfix
     # Use my serverfix and update remote's serverfix
     # another way to get the same work done would be
     git push origin serverfix:serverfix
