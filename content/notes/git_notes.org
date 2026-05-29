@@ -3,7 +3,7 @@ title: GIT
 ---
 
 The following is a collection of notes I took from reading the book on Git, [[https://git-scm.com/book/en/v2][Progit]].
-Its a page I am still growing. /(I got enough of the book to use Git and have for long not updated the page)/.
+Its a page I am still growing. /(I got enough of the book to use Git with reasonable ease and have for long not updated the page)/.
 I am still sure it can be a good starting point or reference for most of the basics and more.
 I also include links to articles from Atlassian that I used for deep dives where
 I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter
@@ -28,16 +28,25 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 *** 2. Version control with databases
   + One file has multiple instances of it stored in some databases (Local version control)
     + Examples
-      - [[https://www.gnu.org/software/rcs/][RCS]]: (Revision control system)
+      - [[https://en.wikipedia.org/wiki/Revision_Control_System][RCS]]: (Revision control system)
         - Successor to Source Code Control System
         - Keeps diffs or patch sets (Or the small changes in files, as they change)
-      -   Restores files by combining these diffs
+        - Restores files by combining these diffs
+	- How it works and why it ain't cool (or any VCS like it)
+	  #+begin_src sh
+	  1. User A locks the file – Before editing
+	  2. User A runs a command (e.g., co -l file.txt) to “check out” the file with a lock.
+	  3. RCS marks the file as locked by User A in the repository.
+	  4. User B tries to check out the same file
+	  5. If User B attempts to edit the same file (with co -l), RCS will display an error message like:
+	      co: error: revision 1.3 already locked by user A
+	  6. User B must wait – User B cannot make changes until User A finishes and checks the file back in (unlocking it).
+	  #+end_src
   + Problems with this approach
     - Only one user can work on a file at a time
-
-
+        
 *** 3. Central version control systems
-  * Arised from the need to collaborate between developers.
+  * Arised from the need to collaborate between developers (beyond what was then currently supported).
     - Examples
       - CVS, Subversion, Perforce
     - How it works
@@ -53,11 +62,11 @@ git internals and how the core commands work on the inside. /(The [[https://git-
       - Dev's only have the latest updates.
 
 *** 4. Distributed VCS (DVCS)
-  - All problems from the previous version control methods led to this
+  + All problems from the previous version control methods led to this as the solution.
     - Single point of failure issues. (CVCS)
     - Network dependency for most operations.
     - Slow operations arising from network dependency.
-  - How DVCS is different.
+  + How DVCS is different.
     - Clients mirror a repo's full history and not just the latest snapshots or versions of files.
     - Every clone is a full backup of the server data.
     - The system as it is designed allows for hierachical models impossible in vcs's previously mentioned.
@@ -70,7 +79,7 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 	       ↑           ↑
        [Dev Repo A]    [Dev Repo B]       ← individual contributors
       #+end_src
-  - Examples of DVCS
+  + Examples of DVCS
     * [[https://git-scm.com/][Git]]
     * [[https://www.mercurial-scm.org/][Mercurial]]
     * [[https://darcs.net/][Darcs]]
@@ -107,12 +116,12 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 
 - Git checksums everything with /SHA-1/ before it is stored.
 - Any change will therefore be known.
-- It is hard to do anything that is oneway or not undoable as all actions are recorded in a database.
+- It is hard to do anything that is oneway or not undoable as all actions are recorded in the repo database.
 - Virtually all changes can be thought of to be reversible.
 
 
 
-** The three git state files
+** The three Git state files
 1. Modified
    - Changed but not yet committed to the database.
 2. Staged
@@ -338,8 +347,8 @@ git internals and how the core commands work on the inside. /(The [[https://git-
  git diff --staged # comparing whats staged with what's commited (or whats in local repo)
  #+end_src
 
-- There's more about the git diff command right [[https://www.atlassian.com/git/tutorials/saving-changes/git-diff][here.]]
-  - Topics touched in the article include but ain't limited:
+- There's more about the /git diff/ command right [[https://www.atlassian.com/git/tutorials/saving-changes/git-diff][here.]]
+  - Topics touched upon in the linked article include but ain't limited:
      - Comparison of pdf files
      - Comparison against other indices than the local repo and staging area
      - Configuration of converters for different forms of binary files
@@ -486,8 +495,9 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 
 - More on the topic [[https://www.atlassian.com/git/tutorials/undoing-changes][Atlassian: Undoing changes]].
 
+
 ** Working with remotes
-- A git project remote :: A wersion of a Git project stored at some uri than the local repo.
+- A Git Remote :: A wersion of a Git project stored at some uri than the local repo.
   - This does not necesarrily have to be a remote server off one's machine.
   - It could be on some different location on the machine the project is hosted on. 
 
@@ -505,7 +515,7 @@ git internals and how the core commands work on the inside. /(The [[https://git-
   
 
 
-*** Adding new remotes
+*** Adding new remotes to a project repo
 #+begin_src
 git remote add <shortname> <url>
 #+end_src
@@ -517,7 +527,7 @@ git remote add <shortname> <url>
 
 **** On the fetch command.
       - It pulls but does not merge downloaded data with local data. (More on merging in the next section)
-      - 'git pull' on the other hand auto merges after downloading changes for a local
+      - /'git pull'/ on the other hand auto merges after downloading changes for a local
         branch set to track some on a remote repository.
       - Git fetch  gives warning if the 'pull.rebase' (automerge handle) is not configured (More on rebasing
         in later sections)
@@ -530,7 +540,7 @@ git remote add <shortname> <url>
   #+begin_src sh
   git push <remote_name: often origin> <branch to push>
   # This  works only if pusher has write access on remote.
-  # if branch to push does not exist on target remote, it will be created. 
+  # if branch to push does not exist on target remote, it will be created then written to.
 
   #+end_src
   
@@ -665,36 +675,28 @@ git remote add <shortname> <url>
 ** Git branching
 
 *** What happens on branch creation?
-   - A new pointer in .git/refs/heads is created. It points to current the commit.
+   - A new pointer in .git/refs/heads is created. It points to current the commit. It's the branch displayed
+     when the command 'git branch' is run. 
      #+begin_src sh
-       git branch branchname
+       git branch 
      #+end_src
 
-   - No commit's yet so no concept of a branch since a branch is simply a pointer to a commit checkum, a snapshot in the project history.
+   - If no commits at all have been made in a repo, there's no concept of a branch since
+     a branch is simply a pointer to a commit checkum, a snapshot in the project history.
 
-   - HEAD ref still points to nothing.
+   - The `HEAD` ref still points to nothing that is.
 
    - Switching branches
-     - git switch branchname # git checkout - b branchname (to create and switch)
-       # moves HEAD pointer to branchname if any commits've been made yet.
-   - Git log usually only displays activity from current commit point backwards.
-     - git log --all # --all to see it all.
-
-   - While on a branch, branching off, making some changes, branching back
-     then making some changes when back leading to a diversion in commit history
      #+begin_src sh
-       touch file1.txt
-       git init . # on branch master
-       echo 'some' >> file1.txt
-       git commit -a -m 'initial commit'
-       git switch -c someotherbranch
-       echo 'another change' >> file1.txt
-       git commit -a -m 'some other branch commit'
-       git checkout master
-       git log --oneline --decorate --graph --all
+      git switch branchname
+      # The above only works if the branch 'branchname' exists. To create one if it does not, use.
+      git checkout - b branchname
+      #OR
+      git switch -c branchname
      #+end_src
-
-   - Commits are 41 chars long: 40 chars for the sha-1 hash and a n/ char
+   - This action moves HEAD pointer to `branchname`.
+   - Git log usually only displays activity from current commit point backwards.
+   - Commits are 41 chars long: 40 chars for the sha-1 hash and a /n\// char
      #+begin_src sh
        ls .git/objects/e1 | wc -c # where e1 is the first 2 chars of the commit
      #+end_src
@@ -706,6 +708,7 @@ git remote add <shortname> <url>
 ***  Merging and deleting branches
 **** A brief intro
     - Merging is aligning one branch's current state with another branch's so they are both on the same page.
+      - Reconciling forked histories like one article puts it. 
     - Merging in Git is done with the git merge command.
      #+begin_src sh
      # in branch to receive merge
@@ -715,154 +718,228 @@ git remote add <shortname> <url>
 
 **** Merge types
     + A fast forward merge means the two merged branches had a common latest
-      commit. There was no divergent work.
-    + The divergent merge (merge by recursive strategy)
+      commit. There was no divergent work. One branch is basically only behind the other like 5 is behind 10)
+    + The divergent merge (merge by recursive strategy Or 3-way merge). Example below.
+      
+     #+begin_src sh :results drawer
+       touch file1.txt
+       git init . # on branch master
+       echo 'some' > file1.txt
+       git commit -a -m 'initial commit'
+       git switch -c someotherbranch
+       echo 'another change' > file1.txt
+       git commit -a -m 'some other branch commit'
+       git checkout master
+       git log --oneline --decorate --graph --all
+     #+end_src
+     
       - Git gets common parent for both branches
       - Git gets each branch's tip
       - The three are merged
       - A merge commit is created (new common tip)
 **** Merge conflicts
-      - Changing some part of the same file on two different branches then requesting
+      - These result from changing some common part of the same file differently on two different branches then requesting
 	a merge.
-      - Open conflicting file and fix conflicts
-	- Each branch's contribution to change is shown, HEAD's starts after the lines <<, with the other other after >>>
-	- contributions are separated by ===
-      - Choose one side of the equals `===` boundary or combine, then delete markers ("<<<, >>>, `===..`")
-      - A merge commit can be cancelled by deleting the file `.git/MERGE_HEAD` file.
+      - Interpritting merge file syntax
+	- Each branch's contribution to change in a file is shown with unique symbols.
+	- "HEAD" indicates where the current branch's changes start.
+	  - That includes all lines after head prepended with <<
+	- The current branch's changes for each section are closed of with a line of '==' dashes.
+	- What comes after is the 'other' branch's changes for the same secion.
+	- They are prepended with ` >>>`
+      - To resolve the conflict, you delete all the separation indicators and choose
+	from the different changes what should remain in the merge commit. 
+      - A merge commit conflict resolution  can be cancelled by deleting the file `.git/MERGE_HEAD` and fixing the branches
+	to make it so come next commit a merge conflict resolve is not triggered.
 
+***** Some common merge and branch related commands
+   
+    + See last commit on each branch
+      #+begin_src sh
+       git branch -v
+      #+end_src
+    + See merged branches
+      #+begin_src sh
+      git branch --merged # ignore unmerged branches
+      git branch --no-merged # show unmerged branches
+      git branch -D branchname # delete unmerged branch , -d is for normal deletion
+      git branch --no-merged branchname # include branches that aint merged into branchname
+     #+end_src
 
-    - Seeing last commit on each branch
-      - git branch -v
+    + Branch renaming
+       - Locally renaming branch
+	 #+begin_src sh
+         git branch --move bad-branch-name new-branch-name
+	 #+end_src
+       - Pushing name change to remote (its like creating a new branch then setting it as default tracker)
+	 #+begin_src sh
+         git push --set-upstream remote_name new-branch-name
+	 #+end_src
+       - Deleting old branch from remote
+	 #+begin_src sh
+	 git push origin --delete bad-branch-name
+	 #+end_src
 
-    - Seeing merged branches
-      - git branch --merged # ignore unmerged branches
-	git branch --no-merged # show unmerged branches
-	git branch -D branchname # delete unmerged branch , -d is for normal deletion
-	git branch --no-merged branchname # include branches that aint merged into branchname
-
-     - Branch renaming
-       # Locally renaming branch
-       - git branch --move bad-branch-name new-branch-name
-       # Pushing name change to remote (its like creating a new branch then setting it as default tracker)
-       - git push --set-upstream remote_name new-branch-name
-       # Deleting old branch from remote
-       - git push origin --delete bad-branch-name
-       # Protip: Careful renaming main/master/mainline branch
-       # Can break build scripts.
-       # Renaming: git branch --move oldname newname
-       # Pushing change: git push [origin] --set-upstream remote_name newname
-       # some intermediary actions:
-       # adjust build.release scripts, update refs to old branch in docs
-       # close or merge any PR targetting old branch
-       #                 git push origin --delete oldname
-     - Viewing all branches, both local and remote
-       - git branch --all
+       - Renaming branch
+	 #+begin_src sh
+          git branch --move oldname newname
+         # Pushing change:
+          git push [origin] --set-upstream remote_name newname
+         # some intermediary actions after taking this action
+         # adjust build.release scripts, update refs to old branch in docs
+         # close or merge any PR targetting old branch
+         # RUN: git push origin --delete oldname
+	 #+end_src
+	 
+    - Viewing all branches, both local and remote
+      #+begin_src sh
+        git branch --all
+      #+end_src
 
 
 *** Branching workflows
+- A project can have more than one branch running in parallel.
+- Classification for the branch types is mainly based on how long it takes until work from the branches
+  is merged into the main branch or , until they are killed.
+- Different branches can be used for different development stages.
+    * One branch for stable code (sources from the dev branch)
+    * One for development (sources from the topics branches)
+    * One for topics (the most short lived branches)
+    * One for pu (proposals)
+- The stable branches (well tested and finally merged into main code) are 'further down' in commit history line while
+    the 'bleeding edge'(latest updates) is further up.
 
-- *Long running branches*
-  - Different branches can be used for different development stages.
-    - One branch for stable code (sources from dev branch)
-    - One for development (sources from topics)
-    - One for topics (short lived branches)
-    - One for pu (proposals)
-  - The stable branches are 'further down' in commit history line while
-    the 'bleeding edge' is further up.
 
+- *The Long running branches*
+  - Some project features can't ship incrementally so work in these branches is accumulated over
+    weeks or months.
+  - The diffs for these branches are large by the time they merge.
+  - There's for that reason high probability for merge conflicts. (for the huge divergence from main)
+  - A case for long running branches [[https://www.atlassian.com/blog/development/prospering-with-long-lived-git-branches][here]].
 
-  - *Topic branches*
-    - Useful for quick fixes
+- *Topic branches*
+    - These are useful for quick fixes
     - A developer creates the branch, works on feature, tests it, then deletes the topic on merging changes
       into main branch. (or dumping the changes).
+    - They are also called feature branches.
     - See pg 85 of the book Progit for a  visual demo.
+    - More details on these branches from [[https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow][here]].
 
-- *Remote branches*
-  - Remote branches :: References in remote repositories.
-    - Viewing all remote references
-      - git ls-remote remote_short_name
-      # or
-      - git remote show remote_name
- - Remote tracking branches :: References to the state of remote branches.
-   - They are immovable local references updated by git on network activity.
-   - Bookmarks reflecting state of remote repo.
-   - Name format :: <remote>/<branch>
-   - What happens when you clone a repo with the branch master.
-     Git creates you a master branch and renames the server as origin
-     Git brings commit history for master to local and stores that under
-     origin.
-     Both the Head for origin/master and your master's head point to the
-     same commit initially.
-     This reflection of remote references for the master branch is pointed
-     to by origin/master
-     We have two masters then.
+*** More on remote branches
+  - Remote branches :: They are basically references stored in remote repositories.
+    - Viewing all remote references can be done with:
+      #+begin_src  sh
+      git ls-remote remote_short_name
+      #or
+      git remote show remote_name
+      #+end_src
+	
+ - Remote tracking branches :: They are references to the state of remote branches but stored on the local repo.
+   - They are immovable local references updated by git on network activity. /git fetch/ that is.
+   - Their name format :: <remote>/<branch>
+
+ - What happens when you clone a remoterepo with the branch master?
+   -  Git creates for you a master branch and stores the ref to the server that's the source under the remote name 'origin'.
+   -  Git brings commit history for master to local and stores that under `origin`.
+   -  Both the /`HEAD`/ for /`origin/master`/ (the remote tracking branch) and your master's /HEAD/ point to the
+     same commit at this instant.
+   -  We then have two masters then.
      - Your master
+       #+begin_src sh
+	 cd .git
+	 cat HEAD # outputs /refs/heads/master
+       #+end_src
      - Origin/master: A remote tracking branch
-     On any remote change( say you push something to remote/master) or someone else does,
-      - The next pull will update origin/master to reflect the changes.
-     Changing default remote name on clone from `origin` can be done with
-     - git clone -o local_remote_name
-       - tracking branches will then be under local_remote_name/..
+       #+begin_src sh
+	 ls /refs/remotes/origin # contains an entry for master
+       #+end_src
+   - On any remote change( say you push something to remote/master) or someone else does,
+     the next pull will update origin/master to reflect the changes.
+   - Changing default remote name on clone from `origin` can be done with
+     #+begin_src sh
+      git clone -o local_remote_name
+     #+end_src
+    - Remote tracking branches will then be under local_remote_name/branch_name (say: origin/master)
 
 
-  - Remote synchronization
-    - git fetch <remote>
+  - Doing remote synchronization for remote tracking branches
+    #+begin_src sh
+      git fetch <remote>
       # git fetch local_remote_name
-      - This evaluates the server local_remote_name points to and
-	fetches any new data from it then updates local refs.
+      #This evaluates the server local_remote_name points to and
+      # fetches any new data from it then updates local refs.
+    #+end_src
 
-  - Adding remotes
-    - git remote add remote_name remote_url
-      - Sets a local tracking branch under remote_name
+  - Adding remotes to a repo
+    #+begin_src sh
+    git remote add remote_name remote_url
+    #Sets a local tracking branch under remote_name for the remote at  url: remote_url
+    #+end_src
+     
 
 
 
 
 *** Pushing branches
 
-- Pushing local branch to remote (assuming there's a remote version already)
-  - If it ain't created,it will be created.
-  - git push origin serverfix
-    # serverfix expanded to : refs/heads/serverfix:refs/heads/serverfix
+- Pushing local branch to remote
+  - If there's no copy of the branch on the remote repo yet,it will be created during the push.
+    #+begin_src
+    git push origin serverfix
+    # serverfix remote is  internally expanded to : refs/heads/serverfix:refs/heads/serverfix
     # Use my serverfix and update remote's serverfix
-  - OR: git push origin serverfix:serverfix
-  - Synopsis: git push origin localsourcebranch:remotedestinationbranch
+    # another way to get the same work done would be
+    git push origin serverfix:serverfix
+    #+end_src
+    
+  - The push command's synopsis is therefore: /`git push origin localsourcebranch:remotedestinationbranch`/.
 
   - Fetching a remote with branches not locally available does not
     auto create locally editable versions of them, only remote tracking
-    branches.
+    branches. Remote tracking branches can be referenced via the syntax /remotename/branch-name/ on local repo.
 
- - Checking out a remote-tracking branch auto creates a local tracking
+ - Checking out a remote-tracking branch automatically creates a local tracking
    branch. (an upstream branch is what the remote tracking branch is
    to the branch checked out of it.)
-   - git checkout -b serverfix origin/serverfix
-   - OR: git checkout serverfix
+   #+begin_src sh
+   git checkout -b serverfix origin/serverfix
+   #OR: git checkout serverfix
+   #+end_src
 
 
 *** Tracking branches
- - Local branches in direct relation to remote branch.
-   - Git auto deduces where to fetch or pull from and what to merge.
+ - When git is dealing with local branches in direct relation to some remote branch,
+   Git automatically deduces the origin for pulling and pushing.
 
 
- - Manually setting upstreams
-   - git branch -u origin/upstreambranchname
+ - Manually setting upstreams (default origins for pull and push that is)
+   #+begin_src
+    git branch -u origin/upstreambranchname
      # sets branch head's pointing to to track upstreambranchname
+   #+end_src
+   
+ - Short hand with upstreams
+     - @{u} means: upstream
+     #+begin_src sh
+       git merge @{u} # Merge upstream changes into tracking branch
+     #+end_src
+     
+ - See tracking information based off last fetch action
+    #+begin_src
+     git fetch --all; git branch -vv
+    #+end_src
+    
+ - Fetching does not merge downloaded changes with tracking branches, pulling tries to.
+   /git pull/ is essentially a combination of a /git fetch/ and /git merge/.
 
-   - Short hand with upstreams
-     - @{u} for upstream
-       # git merge @{u} # to merge upstream changes into tracking branch
-
-   Seeing tracking information based off last fetch action
-   - git fetch --all; git branch -vv
-
-   Fetching does not merge downloaded changes with tracking branches, pulling tries to.
-   It is essentially a combo of a fetch and a merge.
-
-   Deleting remote branches
+ - Deleting remote branches
+   #+begin_src sh
    git push remotename --delete branchname
-   - Actual removal is done by 'garbage collector'
-   - Only pointer is removed by above action.
-
+   #+end_src
+   - Some notes on deletion
+    - Actual removal is done by 'garbage collector'.
+    - Only the pointer to the branch is removed by above action.
+    - /This sounds like reference counting type of garbage collection... interesting./
 
 
 ** Git Rebasing
@@ -871,59 +948,59 @@ git remote add <shortname> <url>
 - It is  alternative to  the `git merge` command.
 - Rebasing is taking all changes that happened in one branch and replaying them on top of another
   another branch.
-- Branch base is commit at which the branch in question broke off its parent (see previous notes for what parent means).
+- A branch's base is the commit at which the branch in question broke off its parent. (at the point of the  branch's creation)
 - Changing that commit, branching point commit that is,  to some other commit (that is another branch's tip)
   is called "rebasing".
-- Changing branch's base:
-  - Rebasing is changing the base of your branch from one commit to another making it
-    appear as if you'd created your branch from a different commit.
-- Allows for a cleaner git history line.A linear history.
-- Find more about git rebasing from this  [[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase][Atlassian article]].
+- Rebasing is changing the base of your branch from one commit to another making it
+   appear as if you'd created your branch from a different commit.
+- It allows for a cleaner git history line.A linear history.
+
 
 
 *** A textual example for git rebasing
-- With three branches, two sharing histories, in need of one of the two to rebase onto third
+- With two branches A and B, with the second branch splitting into two : B and C,
+  And in need of switching C's base branch from B to A
 - Rebasing synopsis
   #+begin_src sh
-   git rebase  --onto third what_to_skip what_to_rebase
+    git rebase  --onto third what_to_skip what_to_rebase
+    # for the above example
+    git rebase --onto A B C
   #+end_src
-- Rebasing arbitrary branch
+- Rebasing arbitrary branches
  #+begin_src sh
-   git rebase basebranch topicbranch
+   git rebase basebranch topicbranch # moves topicbranch's base to basebranch's tip
  #+end_src
   
-- After a successul rebase, the merge is a fast forward type merge. (see previous notes on merging to
+- After a successul rebase, the merge between the rebase base branch and the new tip  is a fast forward
+  type merge.
+  (see previous notes on merging to
   know what a fast forward merge is).
 
  
 *** Some guidlines  when rebasing.
   - Do not rebase commits that exist outside your repo and that people may have based
-   on your work.
+    on your work. It can lead to really messy effects when your team mates pull the work in.
   - Rebase local changes before pushing to clean up your work. But never rebase
-  anything that you've pushed somewhere'
-  - Rebase when you rebase
-    When someone hard pushes changes that overwrite work you have based your owrk on.
-    You rebase your work on top of theirs. (the now new work).
-    #+begin_src sh
-     git rebase rogue_team/branch Vs git pull
-    #+end_src
-    Git calculates the checksum that is based upon only the patch each commit introduces.
-    It is called a patch-id.
-    Git
-    - Determines what's unique to current branch (after rogue branch did deletion)
-    - Determine's what's not a merge commit from whats unique to current branch
-    - Determine what has not been written into target branch (all that aint rebased yet from above)
-    - Apply these commits to rogue/master
+    anything that you've pushed somewhere.
 
     #+begin_src sh
       git pull --rebase (to fetch and rebase vs fetch and merge)
-      git config --global pull.rebase true # to default to rebase combos vs merge combos
+      git config --global pull.rebase true # to default to rebasing on bull vs the default that is merging
     #+end_src
 
-    
+- Find more about git rebasing from this  [[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase][Atlassian article]].    
 *** Git Merge vs Git Rebase
   - Merging shows a truer history for a project's evolution.
   - Rebasing provides means for having a cleaner git history.
-  - Never rebase anything you have pushed somewhere.
 
-    
+
+   
+- Find more about git rebasing from this  [[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase][Atlassian article]].
+
+
+
+** References: past, current and future
+- [[https://git-scm.com/book/en/v2][Progit]]
+- [[https://gitperf.com/][High performance Git]]
+- [[https://shop.jcoglan.com/building-git/][Building Git]]
+- Atlassian Articles on Git  

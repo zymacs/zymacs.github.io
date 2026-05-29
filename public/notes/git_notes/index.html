@@ -9,7 +9,7 @@
 		<meta property="og:url" content="//localhost:1313/notes/git_notes/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="GIT">
-  <meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page). I am still sure it can be a good starting point or reference for most of the basics and more. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on git internals and how the core commands work on the inside. (The plumbing commands that is).">
+  <meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git with reasonable ease and have for long not updated the page). I am still sure it can be a good starting point or reference for most of the basics and more. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on git internals and how the core commands work on the inside. (The plumbing commands that is).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -111,7 +111,7 @@
 			
 <p>
 The following is a collection of notes I took from reading the book on Git, <a href="https://git-scm.com/book/en/v2">Progit</a>.
-Its a page I am still growing. <em>(I got enough of the book to use Git and have for long not updated the page)</em>.
+Its a page I am still growing. <em>(I got enough of the book to use Git with reasonable ease and have for long not updated the page)</em>.
 I am still sure it can be a good starting point or reference for most of the basics and more.
 I also include links to articles from Atlassian that I used for deep dives where
 I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter
@@ -169,21 +169,37 @@ The different kinds of version control
 <p>Examples</p>
 <ul>
 <li>
-<p><a href="https://www.gnu.org/software/rcs/">RCS</a>: (Revision control system)</p>
+<p><a href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a>: (Revision control system)</p>
 <ul>
 <li>Successor to Source Code Control System</li>
 <li>Keeps diffs or patch sets (Or the small changes in files, as they change)</li>
-</ul>
-</li>
 <li>Restores files by combining these diffs</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>How it works and why it ain&#39;t cool (or any VCS like it)</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>1. User A locks the file – Before editing
+</span></span><span style="display:flex;"><span>2. User A runs a command <span style="color:#f92672">(</span>e.g., co -l file.txt<span style="color:#f92672">)</span> to “check out” the file with a lock.
+</span></span><span style="display:flex;"><span>3. RCS marks the file as locked by User A in the repository.
+</span></span><span style="display:flex;"><span>4. User B tries to check out the same file
+</span></span><span style="display:flex;"><span>5. If User B attempts to edit the same file <span style="color:#f92672">(</span>with co -l<span style="color:#f92672">)</span>, RCS will display an error message like:
+</span></span><span style="display:flex;"><span>    co: error: revision 1.3 already locked by user A
+</span></span><span style="display:flex;"><span>6. User B must wait – User B cannot make changes <span style="color:#66d9ef">until</span> User A finishes and checks the file back in <span style="color:#f92672">(</span>unlocking it<span style="color:#f92672">)</span>.</span></span></code></pre></div>
+</div>
+<ul>
 <li>
 <p>Problems with this approach</p>
 <ul>
 <li>Only one user can work on a file at a time</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -196,7 +212,7 @@ The different kinds of version control
 <div id="outline-text-headline-6" class="outline-text-4">
 <ul>
 <li>
-<p>Arised from the need to collaborate between developers.</p>
+<p>Arised from the need to collaborate between developers (beyond what was then currently supported).</p>
 <ul>
 <li>
 <p>Examples</p>
@@ -241,7 +257,7 @@ The different kinds of version control
 <div id="outline-text-headline-7" class="outline-text-4">
 <ul>
 <li>
-<p>All problems from the previous version control methods led to this</p>
+<p>All problems from the previous version control methods led to this as the solution.</p>
 <ul>
 <li>Single point of failure issues. (CVCS)</li>
 <li>Network dependency for most operations.</li>
@@ -351,7 +367,7 @@ Integrity
 <ul>
 <li>Git checksums everything with <em>SHA-1</em> before it is stored.</li>
 <li>Any change will therefore be known.</li>
-<li>It is hard to do anything that is oneway or not undoable as all actions are recorded in a database.</li>
+<li>It is hard to do anything that is oneway or not undoable as all actions are recorded in the repo database.</li>
 <li>Virtually all changes can be thought of to be reversible.</li>
 </ul>
 </div>
@@ -360,7 +376,7 @@ Integrity
 </div>
 <div id="outline-container-headline-12" class="outline-3">
 <h3 id="headline-12">
-The three git state files
+The three Git state files
 </h3>
 <div id="outline-text-headline-12" class="outline-text-3">
 <ol>
@@ -807,10 +823,10 @@ by symbol &#39;+&#39;, 8 lines have been extracted.</li>
 </div>
 </li>
 <li>
-<p>There&#39;s more about the git diff command right <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-diff">here.</a></p>
+<p>There&#39;s more about the <em>git diff</em> command right <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-diff">here.</a></p>
 <ul>
 <li>
-<p>Topics touched in the article include but ain&#39;t limited:</p>
+<p>Topics touched upon in the linked article include but ain&#39;t limited:</p>
 <ul>
 <li>Comparison of pdf files</li>
 <li>Comparison against other indices than the local repo and staging area</li>
@@ -1027,7 +1043,7 @@ Working with remotes
 <div id="outline-text-headline-40" class="outline-text-3">
 <dl>
 <dt>
-A git project remote
+A Git Remote
 </dt>
 <dd>
 <p>A wersion of a Git project stored at some uri than the local repo.</p>
@@ -1060,7 +1076,7 @@ Showing remotes
 </div>
 <div id="outline-container-headline-42" class="outline-4">
 <h4 id="headline-42">
-Adding new remotes
+Adding new remotes to a project repo
 </h4>
 <div id="outline-text-headline-42" class="outline-text-4">
 <div class="src src-text">
@@ -1083,7 +1099,7 @@ On the fetch command.
 <div id="outline-text-headline-44" class="outline-text-5">
 <ul>
 <li>It pulls but does not merge downloaded data with local data. (More on merging in the next section)</li>
-<li>&#39;git pull&#39; on the other hand auto merges after downloading changes for a local
+<li><em>&#39;git pull&#39;</em> on the other hand auto merges after downloading changes for a local
 branch set to track some on a remote repository.</li>
 <li>Git fetch  gives warning if the &#39;pull.rebase&#39; (automerge handle) is not configured (More on rebasing
 in later sections)</li>
@@ -1104,7 +1120,7 @@ Pushing changes to Upstream
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push &lt;remote_name: often origin&gt; &lt;branch to push&gt;
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># This  works only if pusher has write access on remote.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># if branch to push does not exist on target remote, it will be created.</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># if branch to push does not exist on target remote, it will be created then written to.</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -1335,44 +1351,29 @@ What happens on branch creation?
 <div id="outline-text-headline-53" class="outline-text-4">
 <ul>
 <li>
-<p>A new pointer in .git/refs/heads is created. It points to current the commit.</p>
+<p>A new pointer in .git/refs/heads is created. It points to current the commit. It&#39;s the branch displayed
+when the command &#39;git branch&#39; is run. </p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch branchname</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch</span></span></code></pre></div>
 </div>
 </li>
-<li>No commit&#39;s yet so no concept of a branch since a branch is simply a pointer to a commit checkum, a snapshot in the project history.</li>
-<li>HEAD ref still points to nothing.</li>
+<li>If no commits at all have been made in a repo, there&#39;s no concept of a branch since
+a branch is simply a pointer to a commit checkum, a snapshot in the project history.</li>
+<li>The `HEAD` ref still points to nothing that is.</li>
 <li>
 <p>Switching branches</p>
-<ul>
-<li>
-<p>git switch branchname # git checkout - b branchname (to create and switch)</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Git log usually only displays activity from current commit point backwards.</p>
-<ul>
-<li>git log –all # –all to see it all.</li>
-</ul>
-</li>
-<li>
-<p>While on a branch, branching off, making some changes, branching back
-then making some changes when back leading to a diversion in commit history</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1.txt
-</span></span><span style="display:flex;"><span>  git init . <span style="color:#75715e"># on branch master</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;some&#39;</span> &gt;&gt; file1.txt
-</span></span><span style="display:flex;"><span>  git commit -a -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
-</span></span><span style="display:flex;"><span>  git switch -c someotherbranch
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;another change&#39;</span> &gt;&gt; file1.txt
-</span></span><span style="display:flex;"><span>  git commit -a -m <span style="color:#e6db74">&#39;some other branch commit&#39;</span>
-</span></span><span style="display:flex;"><span>  git checkout master
-</span></span><span style="display:flex;"><span>  git log --oneline --decorate --graph --all</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git switch branchname
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># The above only works if the branch &#39;branchname&#39; exists. To create one if it does not, use.</span>
+</span></span><span style="display:flex;"><span> git checkout - b branchname
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">#OR</span>
+</span></span><span style="display:flex;"><span> git switch -c branchname</span></span></code></pre></div>
 </div>
 </li>
+<li>This action moves HEAD pointer to `branchname`.</li>
+<li>Git log usually only displays activity from current commit point backwards.</li>
 <li>
-<p>Commits are 41 chars long: 40 chars for the sha-1 hash and a n/ char</p>
+<p>Commits are 41 chars long: 40 chars for the sha-1 hash and a <em>n\/</em> char</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  ls .git/objects/e1 | wc -c <span style="color:#75715e"># where e1 is the first 2 chars of the commit</span></span></span></code></pre></div>
 </div>
@@ -1395,7 +1396,12 @@ A brief intro
 </h5>
 <div id="outline-text-headline-55" class="outline-text-5">
 <ul>
-<li>Merging is aligning one branch&#39;s current state with another branch&#39;s so they are both on the same page.</li>
+<li>
+<p>Merging is aligning one branch&#39;s current state with another branch&#39;s so they are both on the same page.</p>
+<ul>
+<li>Reconciling forked histories like one article puts it. </li>
+</ul>
+</li>
 <li>
 <p>Merging in Git is done with the git merge command.</p>
 <div class="src src-sh">
@@ -1414,9 +1420,20 @@ Merge types
 <div id="outline-text-headline-56" class="outline-text-5">
 <ul>
 <li>A fast forward merge means the two merged branches had a common latest
-commit. There was no divergent work.</li>
+commit. There was no divergent work. One branch is basically only behind the other like 5 is behind 10)</li>
 <li>
-<p>The divergent merge (merge by recursive strategy)</p>
+<p>The divergent merge (merge by recursive strategy Or 3-way merge). Example below.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1.txt
+</span></span><span style="display:flex;"><span>  git init . <span style="color:#75715e"># on branch master</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;some&#39;</span> &gt; file1.txt
+</span></span><span style="display:flex;"><span>  git commit -a -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
+</span></span><span style="display:flex;"><span>  git switch -c someotherbranch
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;another change&#39;</span> &gt; file1.txt
+</span></span><span style="display:flex;"><span>  git commit -a -m <span style="color:#e6db74">&#39;some other branch commit&#39;</span>
+</span></span><span style="display:flex;"><span>  git checkout master
+</span></span><span style="display:flex;"><span>  git log --oneline --decorate --graph --all</span></span></code></pre></div>
+</div>
 <ul>
 <li>Git gets common parent for both branches</li>
 <li>Git gets each branch&#39;s tip</li>
@@ -1433,115 +1450,168 @@ Merge conflicts
 </h5>
 <div id="outline-text-headline-57" class="outline-text-5">
 <ul>
-<li>Changing some part of the same file on two different branches then requesting</li>
+<li>These result from changing some common part of the same file differently on two different branches then requesting</li>
 </ul>
 <p>a merge.</p>
 <ul>
-<li>Open conflicting file and fix conflicts</li>
+<li>Interpritting merge file syntax</li>
 </ul>
 <ul>
-<li>Each branch&#39;s contribution to change is shown, HEAD&#39;s starts after the lines &lt;&lt;, with the other other after &gt;&gt;&gt;</li>
+<li>Each branch&#39;s contribution to change in a file is shown with unique symbols.</li>
 <li>
-<p>contributions are separated by <code class="verbatim">=</code></p>
+<p>&#34;HEAD&#34; indicates where the current branch&#39;s changes start.</p>
 <ul>
-<li>Choose one side of the equals `===` boundary or combine, then delete markers (&#34;&lt;&lt;&lt;, &gt;&gt;&gt;, `===..`&#34;)</li>
-<li>A merge commit can be cancelled by deleting the file `.git/MERGE_HEAD` file.</li>
+<li>That includes all lines after head prepended with &lt;&lt;</li>
+</ul>
+</li>
+<li>The current branch&#39;s changes for each section are closed of with a line of &#39;==&#39; dashes.</li>
+<li>What comes after is the &#39;other&#39; branch&#39;s changes for the same secion.</li>
+<li>
+<p>They are prepended with ` &gt;&gt;&gt;`</p>
+<ul>
+<li>To resolve the conflict, you delete all the separation indicators and choose</li>
 </ul>
 </li>
 </ul>
+<p>from the different changes what should remain in the merge commit. </p>
+<ul>
+<li>A merge commit conflict resolution  can be cancelled by deleting the file `.git/MERGE_HEAD` and fixing the branches</li>
+</ul>
+<p>to make it so come next commit a merge conflict resolve is not triggered.</p>
+<div id="outline-container-headline-58" class="outline-6">
+<h6 id="headline-58">
+Some common merge and branch related commands
+</h6>
+<div id="outline-text-headline-58" class="outline-text-6">
 <ul>
 <li>
-<p>Seeing last commit on each branch</p>
-<ul>
-<li>git branch -v</li>
-</ul>
+<p>See last commit on each branch</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git branch -v</span></span></code></pre></div>
+</div>
 </li>
 <li>
-<p>Seeing merged branches</p>
-<ul>
-<li>git branch –merged # ignore unmerged branches</li>
-</ul>
+<p>See merged branches</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch --merged <span style="color:#75715e"># ignore unmerged branches</span>
+</span></span><span style="display:flex;"><span>git branch --no-merged <span style="color:#75715e"># show unmerged branches</span>
+</span></span><span style="display:flex;"><span>git branch -D branchname <span style="color:#75715e"># delete unmerged branch , -d is for normal deletion</span>
+</span></span><span style="display:flex;"><span>git branch --no-merged branchname <span style="color:#75715e"># include branches that aint merged into branchname</span></span></span></code></pre></div>
+</div>
 </li>
-</ul>
-<p>git branch –no-merged # show unmerged branches
- git branch -D branchname # delete unmerged branch , -d is for normal deletion
- git branch –no-merged branchname # include branches that aint merged into branchname</p>
-<ul>
 <li>
 <p>Branch renaming</p>
 <ul>
-<li>git branch –move bad-branch-name new-branch-name</li>
-</ul>
-<ul>
-<li>git push –set-upstream remote_name new-branch-name</li>
-</ul>
-<ul>
-<li>git push origin –delete bad-branch-name</li>
+<li>Locally renaming branch</li>
 </ul>
 </li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git branch --move bad-branch-name new-branch-name</span></span></code></pre></div>
+</div>
+<ul>
+<li>Pushing name change to remote (its like creating a new branch then setting it as default tracker)</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git push --set-upstream remote_name new-branch-name</span></span></code></pre></div>
+</div>
+<ul>
+<li>Deleting old branch from remote</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete bad-branch-name</span></span></code></pre></div>
+</div>
+<ul>
+<li>Renaming branch</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>        git branch --move oldname newname
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e"># Pushing change:</span>
+</span></span><span style="display:flex;"><span>        git push <span style="color:#f92672">[</span>origin<span style="color:#f92672">]</span> --set-upstream remote_name newname
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e"># some intermediary actions after taking this action</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e"># adjust build.release scripts, update refs to old branch in docs</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e"># close or merge any PR targetting old branch</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e"># RUN: git push origin --delete oldname</span></span></span></code></pre></div>
+</div>
+<ul>
 <li>
 <p>Viewing all branches, both local and remote</p>
-<ul>
-<li>git branch –all</li>
-</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch --all</span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-58" class="outline-4">
-<h4 id="headline-58">
+</div>
+</div>
+<div id="outline-container-headline-59" class="outline-4">
+<h4 id="headline-59">
 Branching workflows
 </h4>
-<div id="outline-text-headline-58" class="outline-text-4">
+<div id="outline-text-headline-59" class="outline-text-4">
 <ul>
-<li>
-<p><strong>Long running branches</strong></p>
-<ul>
+<li>A project can have more than one branch running in parallel.</li>
+<li>Classification for the branch types is mainly based on how long it takes until work from the branches
+is merged into the main branch or , until they are killed.</li>
 <li>
 <p>Different branches can be used for different development stages.</p>
 <ul>
-<li>One branch for stable code (sources from dev branch)</li>
-<li>One for development (sources from topics)</li>
-<li>One for topics (short lived branches)</li>
+<li>One branch for stable code (sources from the dev branch)</li>
+<li>One for development (sources from the topics branches)</li>
+<li>One for topics (the most short lived branches)</li>
 <li>One for pu (proposals)</li>
 </ul>
 </li>
-<li>The stable branches are &#39;further down&#39; in commit history line while
-the &#39;bleeding edge&#39; is further up.</li>
-</ul>
-</li>
+<li>The stable branches (well tested and finally merged into main code) are &#39;further down&#39; in commit history line while
+  the &#39;bleeding edge&#39;(latest updates) is further up.</li>
 </ul>
 <ul>
+<li>
+<p><strong>The Long running branches</strong></p>
+<ul>
+<li>Some project features can&#39;t ship incrementally so work in these branches is accumulated over
+weeks or months.</li>
+<li>The diffs for these branches are large by the time they merge.</li>
+<li>There&#39;s for that reason high probability for merge conflicts. (for the huge divergence from main)</li>
+<li>A case for long running branches <a href="https://www.atlassian.com/blog/development/prospering-with-long-lived-git-branches">here</a>.</li>
+</ul>
+</li>
 <li>
 <p><strong>Topic branches</strong></p>
 <ul>
-<li>Useful for quick fixes</li>
+<li>These are useful for quick fixes</li>
 <li>A developer creates the branch, works on feature, tests it, then deletes the topic on merging changes
 into main branch. (or dumping the changes).</li>
+<li>They are also called feature branches.</li>
 <li>See pg 85 of the book Progit for a  visual demo.</li>
+<li>More details on these branches from <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">here</a>.</li>
 </ul>
 </li>
 </ul>
-<ul>
-<li>
-<p><strong>Remote branches</strong></p>
+</div>
+</div>
+<div id="outline-container-headline-60" class="outline-4">
+<h4 id="headline-60">
+More on remote branches
+</h4>
+<div id="outline-text-headline-60" class="outline-text-4">
 <dl>
 <dt>
 Remote branches
 </dt>
 <dd>
-<p>References in remote repositories.</p>
+<p>They are basically references stored in remote repositories.</p>
 <ul>
 <li>
-<p>Viewing all remote references</p>
-<ul>
-<li>git ls-remote remote_short_name</li>
-</ul>
-<ul>
-<li>git remote show remote_name</li>
-</ul>
+<p>Viewing all remote references can be done with:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-remote remote_short_name
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#or</span>
+</span></span><span style="display:flex;"><span>git remote show remote_name</span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </dd>
@@ -1551,148 +1621,161 @@ Remote branches
 Remote tracking branches
 </dt>
 <dd>
-<p>References to the state of remote branches.</p>
+<p>They are references to the state of remote branches but stored on the local repo.</p>
 <ul>
-<li>They are immovable local references updated by git on network activity.</li>
-<li>Bookmarks reflecting state of remote repo.</li>
-<li>Name format :: &lt;remote&gt;/&lt;branch&gt;</li>
+<li>They are immovable local references updated by git on network activity. <em>git fetch</em> that is.</li>
+<li>Their name format :: &lt;remote&gt;/&lt;branch&gt;</li>
+</ul>
+</dd>
+<dt>
+?
+</dt>
+<dd>
+<p>What happens when you clone a remoterepo with the branch master?</p>
+<ul>
+<li>Git creates for you a master branch and stores the ref to the server that&#39;s the source under the remote name &#39;origin&#39;.</li>
+<li>Git brings commit history for master to local and stores that under `origin`.</li>
+<li>Both the <em>`HEAD`</em> for <em>`origin/master`</em> (the remote tracking branch) and your master&#39;s <em>HEAD</em> point to the
+same commit at this instant.</li>
 <li>
-<p>What happens when you clone a repo with the branch master.
-Git creates you a master branch and renames the server as origin
-Git brings commit history for master to local and stores that under
-origin.
-Both the Head for origin/master and your master&#39;s head point to the
-same commit initially.
-This reflection of remote references for the master branch is pointed
-to by origin/master
-We have two masters then.</p>
-<ul>
-<li>Your master</li>
-<li>Origin/master: A remote tracking branch</li>
-</ul>
-<p>On any remote change( say you push something to remote/master) or someone else does,</p>
-<ul>
-<li>The next pull will update origin/master to reflect the changes.</li>
-</ul>
-<p>Changing default remote name on clone from `origin` can be done with</p>
+<p>We then have two masters then.</p>
 <ul>
 <li>
-<p>git clone -o local_remote_name</p>
-<ul>
-<li>tracking branches will then be under local_remote_name/..</li>
+<p>Your master</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd .git
+</span></span><span style="display:flex;"><span>cat HEAD <span style="color:#75715e"># outputs /refs/heads/master</span></span></span></code></pre></div>
+</div>
+</li>
+<li>
+<p>Origin/master: A remote tracking branch</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls /refs/remotes/origin <span style="color:#75715e"># contains an entry for master</span></span></span></code></pre></div>
+</div>
+</li>
 </ul>
 </li>
+<li>On any remote change( say you push something to remote/master) or someone else does,
+the next pull will update origin/master to reflect the changes.</li>
+<li>
+<p>Changing default remote name on clone from `origin` can be done with</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git clone -o local_remote_name</span></span></code></pre></div>
+</div>
+<ul>
+<li>Remote tracking branches will then be under local_remote_name/branch_name (say: origin/master)</li>
 </ul>
 </li>
 </ul>
 </dd>
 </dl>
-</li>
-</ul>
 <ul>
 <li>
-<p>Remote synchronization</p>
-<ul>
-<li>
-<p>git fetch &lt;remote&gt;</p>
-<ul>
-<li>This evaluates the server local_remote_name points to and</li>
-</ul>
+<p>Doing remote synchronization for remote tracking branches</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git fetch &lt;remote&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># git fetch local_remote_name</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#This evaluates the server local_remote_name points to and</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># fetches any new data from it then updates local refs.</span></span></span></code></pre></div>
+</div>
 </li>
-</ul>
-</li>
-</ul>
-<p>fetches any new data from it then updates local refs.</p>
-<ul>
 <li>
-<p>Adding remotes</p>
-<ul>
-<li>
-<p>git remote add remote_name remote_url</p>
-<ul>
-<li>Sets a local tracking branch under remote_name</li>
-</ul>
-</li>
-</ul>
+<p>Adding remotes to a repo</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add remote_name remote_url
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Sets a local tracking branch under remote_name for the remote at  url: remote_url</span></span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-59" class="outline-4">
-<h4 id="headline-59">
+<div id="outline-container-headline-61" class="outline-4">
+<h4 id="headline-61">
 Pushing branches
 </h4>
-<div id="outline-text-headline-59" class="outline-text-4">
+<div id="outline-text-headline-61" class="outline-text-4">
 <ul>
 <li>
-<p>Pushing local branch to remote (assuming there&#39;s a remote version already)</p>
+<p>Pushing local branch to remote</p>
 <ul>
-<li>If it ain&#39;t created,it will be created.</li>
 <li>
-<p>git push origin serverfix</p>
+<p>If there&#39;s no copy of the branch on the remote repo yet,it will be created during the push.</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin serverfix
+</span></span><span style="display:flex;"><span># serverfix remote is  internally expanded to : refs/heads/serverfix:refs/heads/serverfix
+</span></span><span style="display:flex;"><span># Use my serverfix and update remote&#39;s serverfix
+</span></span><span style="display:flex;"><span># another way to get the same work done would be
+</span></span><span style="display:flex;"><span>git push origin serverfix:serverfix</span></span></code></pre></div>
+</div>
 </li>
-<li>OR: git push origin serverfix:serverfix</li>
-<li>Synopsis: git push origin localsourcebranch:remotedestinationbranch</li>
+<li>The push command&#39;s synopsis is therefore: <em>`git push origin localsourcebranch:remotedestinationbranch`</em>.</li>
 <li>Fetching a remote with branches not locally available does not
 auto create locally editable versions of them, only remote tracking
-branches.</li>
+branches. Remote tracking branches can be referenced via the syntax <em>remotename/branch-name</em> on local repo.</li>
 </ul>
 <ul>
 <li>
-<p>Checking out a remote-tracking branch auto creates a local tracking
+<p>Checking out a remote-tracking branch automatically creates a local tracking
 branch. (an upstream branch is what the remote tracking branch is
 to the branch checked out of it.)</p>
-<ul>
-<li>git checkout -b serverfix origin/serverfix</li>
-<li>OR: git checkout serverfix</li>
-</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b serverfix origin/serverfix
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#OR: git checkout serverfix</span></span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-60" class="outline-4">
-<h4 id="headline-60">
+<div id="outline-container-headline-62" class="outline-4">
+<h4 id="headline-62">
 Tracking branches
 </h4>
-<div id="outline-text-headline-60" class="outline-text-4">
+<div id="outline-text-headline-62" class="outline-text-4">
 <ul>
-<li>
-<p>Local branches in direct relation to remote branch.</p>
-<ul>
-<li>Git auto deduces where to fetch or pull from and what to merge.</li>
-</ul>
-</li>
+<li>When git is dealing with local branches in direct relation to some remote branch,
+Git automatically deduces the origin for pulling and pushing.</li>
 </ul>
 <ul>
 <li>
-<p>Manually setting upstreams</p>
-<ul>
-<li>
-<p>git branch -u origin/upstreambranchname</p>
+<p>Manually setting upstreams (default origins for pull and push that is)</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git branch -u origin/upstreambranchname
+</span></span><span style="display:flex;"><span>  # sets branch head&#39;s pointing to to track upstreambranchname</span></span></code></pre></div>
+</div>
 </li>
 <li>
 <p>Short hand with upstreams</p>
 <ul>
+<li>@{u} means: upstream</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git merge @<span style="color:#f92672">{</span>u<span style="color:#f92672">}</span> <span style="color:#75715e"># Merge upstream changes into tracking branch</span></span></span></code></pre></div>
+</div>
+</li>
 <li>
-<p>@{u} for upstream</p>
+<p>See tracking information based off last fetch action</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git fetch --all; git branch -vv</span></span></code></pre></div>
+</div>
 </li>
-</ul>
-</li>
-</ul>
-<p>Seeing tracking information based off last fetch action</p>
+<li>Fetching does not merge downloaded changes with tracking branches, pulling tries to.
+<em>git pull</em> is essentially a combination of a <em>git fetch</em> and <em>git merge</em>.</li>
+<li>
+<p>Deleting remote branches</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push remotename --delete branchname</span></span></code></pre></div>
+</div>
 <ul>
-<li>git fetch –all; git branch -vv</li>
-</ul>
-<p>Fetching does not merge downloaded changes with tracking branches, pulling tries to.
-It is essentially a combo of a fetch and a merge.</p>
-<p>
-Deleting remote branches
-git push remotename –delete branchname</p>
+<li>
+<p>Some notes on deletion</p>
 <ul>
-<li>Actual removal is done by &#39;garbage collector&#39;</li>
-<li>Only pointer is removed by above action.</li>
+<li>Actual removal is done by &#39;garbage collector&#39;.</li>
+<li>Only the pointer to the branch is removed by above action.</li>
+<li><em>This sounds like reference counting type of garbage collection… interesting.</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1700,107 +1783,107 @@ git push remotename –delete branchname</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-61" class="outline-3">
-<h3 id="headline-61">
+<div id="outline-container-headline-63" class="outline-3">
+<h3 id="headline-63">
 Git Rebasing
 </h3>
-<div id="outline-text-headline-61" class="outline-text-3">
-<div id="outline-container-headline-62" class="outline-4">
-<h4 id="headline-62">
+<div id="outline-text-headline-63" class="outline-text-3">
+<div id="outline-container-headline-64" class="outline-4">
+<h4 id="headline-64">
 A brief summary on rebasing
 </h4>
-<div id="outline-text-headline-62" class="outline-text-4">
+<div id="outline-text-headline-64" class="outline-text-4">
 <ul>
 <li>It is  alternative to  the `git merge` command.</li>
 <li>Rebasing is taking all changes that happened in one branch and replaying them on top of another
 another branch.</li>
-<li>Branch base is commit at which the branch in question broke off its parent (see previous notes for what parent means).</li>
+<li>A branch&#39;s base is the commit at which the branch in question broke off its parent. (at the point of the  branch&#39;s creation)</li>
 <li>Changing that commit, branching point commit that is,  to some other commit (that is another branch&#39;s tip)
 is called &#34;rebasing&#34;.</li>
-<li>
-<p>Changing branch&#39;s base:</p>
-<ul>
 <li>Rebasing is changing the base of your branch from one commit to another making it
-appear as if you&#39;d created your branch from a different commit.</li>
-</ul>
-</li>
-<li>Allows for a cleaner git history line.A linear history.</li>
-<li>Find more about git rebasing from this  <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">Atlassian article</a>.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-63" class="outline-4">
-<h4 id="headline-63">
-A textual example for git rebasing
-</h4>
-<div id="outline-text-headline-63" class="outline-text-4">
-<ul>
-<li>With three branches, two sharing histories, in need of one of the two to rebase onto third</li>
-<li>
-<p>Rebasing synopsis</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git rebase  --onto third what_to_skip what_to_rebase</span></span></code></pre></div>
-</div>
-</li>
-<li>
-<p>Rebasing arbitrary branch</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase basebranch topicbranch</span></span></code></pre></div>
-</div>
-</li>
-<li>After a successul rebase, the merge is a fast forward type merge. (see previous notes on merging to
-know what a fast forward merge is).</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-64" class="outline-4">
-<h4 id="headline-64">
-Some guidlines  when rebasing.
-</h4>
-<div id="outline-text-headline-64" class="outline-text-4">
-<ul>
-<li>Do not rebase commits that exist outside your repo and that people may have based
-on your work.</li>
-<li>Rebase local changes before pushing to clean up your work. But never rebase</li>
-</ul>
-<p>anything that you&#39;ve pushed somewhere&#39;</p>
-<ul>
-<li>
-<p>Rebase when you rebase
-When someone hard pushes changes that overwrite work you have based your owrk on.
-You rebase your work on top of theirs. (the now new work).</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git rebase rogue_team/branch Vs git pull</span></span></code></pre></div>
-</div>
-<p>Git calculates the checksum that is based upon only the patch each commit introduces.
-It is called a patch-id.
-Git</p>
-<ul>
-<li>Determines what&#39;s unique to current branch (after rogue branch did deletion)</li>
-<li>Determine&#39;s what&#39;s not a merge commit from whats unique to current branch</li>
-<li>Determine what has not been written into target branch (all that aint rebased yet from above)</li>
-<li>Apply these commits to rogue/master</li>
-</ul>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git pull --rebase <span style="color:#f92672">(</span>to fetch and rebase vs fetch and merge<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  git config --global pull.rebase true <span style="color:#75715e"># to default to rebase combos vs merge combos</span></span></span></code></pre></div>
-</div>
-</li>
+ appear as if you&#39;d created your branch from a different commit.</li>
+<li>It allows for a cleaner git history line.A linear history.</li>
 </ul>
 </div>
 </div>
 <div id="outline-container-headline-65" class="outline-4">
 <h4 id="headline-65">
-Git Merge vs Git Rebase
+A textual example for git rebasing
 </h4>
 <div id="outline-text-headline-65" class="outline-text-4">
 <ul>
-<li>Merging shows a truer history for a project&#39;s evolution.</li>
-<li>Rebasing provides means for having a cleaner git history.</li>
-<li>Never rebase anything you have pushed somewhere.</li>
+<li>With two branches A and B, with the second branch splitting into two : B and C,
+And in need of switching C&#39;s base branch from B to A</li>
+<li>
+<p>Rebasing synopsis</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase  --onto third what_to_skip what_to_rebase
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># for the above example</span>
+</span></span><span style="display:flex;"><span>  git rebase --onto A B C</span></span></code></pre></div>
+</div>
+</li>
+<li>
+<p>Rebasing arbitrary branches</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase basebranch topicbranch <span style="color:#75715e"># moves topicbranch&#39;s base to basebranch&#39;s tip</span></span></span></code></pre></div>
+</div>
+</li>
+<li>After a successul rebase, the merge between the rebase base branch and the new tip  is a fast forward
+type merge.
+(see previous notes on merging to
+know what a fast forward merge is).</li>
 </ul>
 </div>
 </div>
+<div id="outline-container-headline-66" class="outline-4">
+<h4 id="headline-66">
+Some guidlines  when rebasing.
+</h4>
+<div id="outline-text-headline-66" class="outline-text-4">
+<ul>
+<li>Do not rebase commits that exist outside your repo and that people may have based
+on your work. It can lead to really messy effects when your team mates pull the work in.</li>
+<li>
+<p>Rebase local changes before pushing to clean up your work. But never rebase
+anything that you&#39;ve pushed somewhere.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git pull --rebase <span style="color:#f92672">(</span>to fetch and rebase vs fetch and merge<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  git config --global pull.rebase true <span style="color:#75715e"># to default to rebasing on bull vs the default that is merging</span></span></span></code></pre></div>
+</div>
+</li>
+</ul>
+<ul>
+<li>Find more about git rebasing from this  <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">Atlassian article</a>.    </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-67" class="outline-4">
+<h4 id="headline-67">
+Git Merge vs Git Rebase
+</h4>
+<div id="outline-text-headline-67" class="outline-text-4">
+<ul>
+<li>Merging shows a truer history for a project&#39;s evolution.</li>
+<li>Rebasing provides means for having a cleaner git history.</li>
+</ul>
+<ul>
+<li>Find more about git rebasing from this  <a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">Atlassian article</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-68" class="outline-3">
+<h3 id="headline-68">
+References: past, current and future
+</h3>
+<div id="outline-text-headline-68" class="outline-text-3">
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">Progit</a></li>
+<li><a href="https://gitperf.com/">High performance Git</a></li>
+<li><a href="https://shop.jcoglan.com/building-git/">Building Git</a></li>
+<li>Atlassian Articles on Git  </li>
+</ul>
 </div>
 </div>
 </div>
