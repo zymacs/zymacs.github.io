@@ -205,11 +205,17 @@
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/engineer_creativity/</loc>
   </url><url>
+    <loc>//localhost:1313/quotes_and_excerpts/self_supporting/</loc>
+  </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
   </url><url>
     <loc>//localhost:1313/rants/</loc>
   </url><url>
+    <loc>//localhost:1313/rants/on_user_trust_and_design/</loc>
+  </url><url>
     <loc>//localhost:1313/docs/</loc>
+  </url><url>
+    <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>

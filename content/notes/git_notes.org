@@ -1,0 +1,941 @@
+---
+title: GIT
+---
+
+* VCS: Version Control System: GIT (intro)
+
+** Why The need for version control
+- Recovering old versions with ease
+  - Peace when new versions get messed up or get lost
+  - Easily switch between versions
+
+** Kinds of version control
+
+*** Manually Copying copies of a file across multiple locations
+  + Problems
+    - Forgetting what version is in what location.
+    - The burden of choosing a naming system and maintaining it.
+    - Overwriting files copied to some folder for version control.
+
+
+*** Version control with databases
+- One file has multiple instances of it stored in some databases (Local version control)
+  - Examples
+    - [[https://www.gnu.org/software/rcs/][RCS]]: (Revision control system)
+     - Successor to Source Code Control System
+     - Keeps diffs or patch sets (Or the small changes in files, as they change)
+     - Restores files by combining these diffs
+  - Downsides
+    - Only one user can work on a file at a time
+
+*** Central version control systems
+  - Arised from the need to collaborate between developers.
+    - Examples
+      - CVS, Subversion, Perforce
+    - How it works
+      - A single server with multiple devs connected each checking in and out.
+   - Problems
+     - Single point of failure (Power problems affect all)
+     - Disk problems affect all past history
+       - Only what devs have locally is kept intact.
+       - Dev's only have the latest updates.
+
+*** Distributed VCS (DVCS)
+  - Clients mirror a repo's full history and not just the latest snapshots or versions of files.
+  - Every clone is a full backup of the server data.
+  - The system as it is designed allows for hierachical models impossible in vcs's previously mentioned.
+  - Examples
+    * Git
+    * Mercurial
+    * Darcs
+
+** A short history of Git
+- Linux kernel updates initially passed around as patches and archived files.
+- Initial VCS: A proprietary DVCS called Bitkeeper. (2002)
+- 2005: Withdrawal of Bitkeeper free licence. Linus births Git.
+- Linus' reasons for Git:
+  - Speed, Simple design, Distributed fully, Support for complex projects like The linux kernel,
+    Support for linear development
+
+** Differences between Git and other VCSs.
+
+*** File storage
+
+- Others store data as changes to base files over time. The changes are called deltas.
+  - There's 3 files a,b,c.
+    - Version one could be a change in file a.
+    - Version two could be a change in files b and c.
+- Git thinks of version control as snapshot storage
+  - A change triggers a storage of new state
+  - A commit without a change has git skipping generation of state and pointing to already existing such state
+  - If we have files a, b, c in Version  0
+    - Version 1 could be a change in a. So we have New state for a, then pointers to Version 0 state for files b and c
+    - Version 2 could be a change in b and c. So we have new state for b and c, then pointers to version 1 for a
+
+- Git stores it all locally unlike DCVS and CVS
+  - Others cant commit changes or even make any (Perforce)
+
+*** Integrity
+
+- Git checksums everything before it is stored. Any change will be known. SHA-1 is used for this.
+- It is hard to do anything that is oneway or not undoable as all actions are recorded in a database.
+
+** The three git state files
+1. Modified
+   - Changed but not yet committed to the database.
+2. Staged
+   - Marked a modified file as candidate for the next commit snapshot.
+3. Committed
+   - Safely stored in git database. Ready for next push.
+
+** Three main sections of a git project
+1. The working directory
+   - Single checkout of one version of the project pulled from the git repo (or database)
+2. The staging area
+   - Where staged data lives
+   - Comes from working area through staging
+3. The .git directory or Repository
+   - Where committed data lives (objects and metadata)
+   - Comes from staging area through commits
+
+** Git configuration
+  * /etc/gitconfig : all users
+  * ~/.gitconfig OR .config/git/config: user specific
+    1. Written to using the --global flag with the git config command.
+       #+begin_src sh
+	 git config --global ...
+       #+end_src
+  * .git/config: repo specific
+    - Writtent to using the  --local flag with the git config command.
+  * For viewing settings origins
+    - git config --list --show-origin
+
+*** Identity configs
+  #+begin_src sh
+    git config --global user.name ...
+    git config --global user.email ...
+  #+end_src
+
+*** Editor configs
+  #+begin_src sh
+     git config --global core.editor vim
+  #+end_src
+
+*** Default initial branch for repos
+   #+begin_src sh
+     git config --global init.defaultBranch branch_name
+   #+end_src
+
+*** Listing settings
+  #+begin_src sh
+   - git config --list
+  #+end_src
+
+*** Finding rogue config values origins
+  #+begin_src sh
+  git config --show-origin config_value.autoUpdate
+  #+end_src
+
+*** Getting help
+  #+begin_src sh
+   git help _subcommand_for_which_you_need_help_
+   git _command_ -h # for summrized help
+  #+end_src
+
+
+* Git Basics
+- Stores data as series of snapshots. (not a series of changesets/deltas like other vcs).
+- Staging file creates checksum (SHA-1) for each, stores version in local repo as blobs,
+  adds blob checksum to staging area.
+- On commit, git stores commit object with pointer to staged created snapshot
+  - It checksums each subdir
+  - stores dirs as commit tree in local repo
+  - creates commit object
+- The commit object
+  - master written to .git/refs/heads (or whatever name the committing branch)
+  - Commit object contains pointer to root project tree (a hash, and a hash)
+  - Commit object contains author email, name and pointers to commits before it
+  - Initial commits have no parents
+  - Normal commits have 1 parent
+  - Merge commits have multiple
+
+#+begin_src sh
+  touch file1 file2 file3
+  git add .
+  git commit -m 'initial commit'
+  # this puts 5 files .git/objects
+  # one for each file, one for the commit, one for the root directory hash/checksum
+#+end_src
+
+** Repo creation
+   - 2 ways
+     * Creating a local dir and turning it into a repo
+       #+begin_src
+	 cd dir_that_will_be_repo_name
+	 git init
+       #+end_src
+       - Initializing version control and tracking files
+	 #+begin_src sh
+	   git add *.c # assuming all files are .c files
+	   git add LICENSE # assuming you have a licence file
+	   git commit -m 'commit_message'
+	 #+end_src
+     * Cloning a repo from some other location
+       #+begin_src sh
+	 git clone repo_url # creates a dir with the cloned repo name and initializes a .git dir then pulls data from url to dir
+	 # to clone into a different dir
+	 git clone repo_url desired_dir_name
+       #+end_src
+     * Supported protocols for cloning 
+       - git://
+       - user@server:...:/reponame
+       - https://
+
+** Recording changes to repo
+- Tracked files: files git knows about. (unmodified, modified, staged)
+- Untracked files: Any file that was not in the last snapshot.
+- Committed files are marked as unmodified files.
+- Unmodified files can be moved to the untracked state.
+- Check file status with : git status
+  #+begin_src sh
+    git status # run in a repo
+  #+end_src
+  Output shows any untracked files (not in the .gitignore file) or tells if the tree is clean (no new modifications, everything commited)
+  Also tells what branch is currently active
+- Add files to tracked status with the `git add` command.
+  #+begin_src sh # staging command
+    git add filename # this will eliminate the file from the list of untracked files in the repo listed when git status is run. it will be included in the next commit.
+  #+end_src
+
+- A modification to a tracked file is recorded as an unstaged change that can be staged with `git add file-name`.
+- Changes to staged files have them marked both as staged and unstaged.
+  - Its changes that are staged not files hence this makes sense.
+- A more simplified version of status is achievable with `git status -s`. Below is explanation for this command's
+  output:
+  - ?? : New files not yet tracked
+  - M  : Modified tracked files (Modified twice is shown with 2 M's) (added then modified before a commit)
+  - A  : New files in staging area
+
+** Ignoring files
+- Glob pattern syntax
+  #+begin_src txt
+    .a*
+    !lib.a # even if ignoring .a files, make this an exception
+    /TODO # ignore TODO file in current dir not subdir/TODO
+    build/ # ignore files in dir named build
+    doc/*.txt # ignore all .txt files directly under doc/
+    doc/**/*.pdf # ignore all pdf files in dir and subdirs for doc/
+  #+end_src
+
+  - Asterisk matches anything except a slash
+  - Escape char is '\'
+
+- Sample .gitignore files can be found at: [[https://github.com/github/gitignore][git: gitignore]]
+
+- Nested .gitignore files only apply in directories where they are found.
+- More about this from 'man gitignore'
+- I also have an article written on this area of git that you can find [[https://zymacs.github.io/post/git-ignore-files/][here]].
+  
+** Extra info
+
+- For configs with keys defined more than once, git uses the last value for each unique key it sees.
+
+- Config precedence has already been defined in earlier sections.
+
+- Viewing staged and unstaged changes
+ #+begin_src sh
+  git status
+ #+end_src
+
+- Viewing what's changed but not yet staged
+ #+begin_src sh
+   git diff # Compares what's in working directory with what's in staging area.
+ #+end_src
+
+- Interpretation of the output from the `git diff` command. (wrapped in hashtags)
+   - Git first determines what files were passed to diff
+   - It then tells what symbols are for changes for what files ? [ne demek?]
+   - then it shows something like: @@ -34,6 +34,8 @@
+     - Meaning: from line 34 in the file whose changes are denoted by symbol '-'
+       , 6 lines have been extracted .. and from file whose changes are denoted
+       by symbol '+', 8 lines have been extracted.
+
+- Viewing staged changes ready for next commit (these are in staging area)
+ #+begin_src sh
+ git diff --staged # comparing whats staged with what's commited (or whats in local repo)
+ #+end_src
+
+- There's more about the git diff command right [[https://www.atlassian.com/git/tutorials/saving-changes/git-diff][here.]] Topics mentioned include but ain't limited to:
+  - Comparison of pdf files
+  - Comparison against other indices than the local repo and staging area
+  - Configuration of converters for different forms of binary files
+    + pdfs with text2conv
+    + images with exiv2
+  - Comparing branches with the `..` operator.
+  - Briefly on the `...` operator
+  - Comparing two files to a third or two branches (their heads) to a third
+
+
+** Removing files
+
+- Removing files from git is removing them from Git's staging area.
+  #+begin_src sh
+    rm projects.md # assuming projects.md was new to staging area 
+    git status # will show the removal 'change' is unstaged
+    git rm projects.md # remove from staging area. (stage removal of file from repo: happens on next commit)
+  #+end_src
+
+- Removing a staged file by force
+  #+begin_src sh
+    git rm -f file_name # deletes file from local too (ignores if there was any uncommited changes relating
+    to the file).
+    git rm --cached file_name # deletes file only from git, file still appears under untracked
+  #+end_src
+
+- Globbing syntax during removal
+  #+begin_src sh
+    git rm log/\*.log # git does its own filename expansion, so that backslash behind the "*"
+    # escapes shell expansion
+    # passes * as is to the git command
+    git rm \*~ # same concept, remove all ending in ~
+  #+end_src
+
+
+** Renaming files
+ #+begin_src sh
+   git mv README.md README
+   # equivalent to
+   mv REAME.md README
+   git rm README.md
+   git add README
+ #+end_src
+
+
+** Viewing commit history
+
+#+begin_src sh
+  git log # in a repo to show commit history from last commit (at top) downwards
+  # lines of output are: commit hash, commit author, commit date, commit message, space
+#+end_src
+
+
+*** Some common git log options
+
+- Showing difference introduced with -p and limiting entries displayed with -n
+
+#+begin_src sh :results drawer
+  git log -p -2 # limit to 2 lines of output
+#+end_src
+
+#+RESULTS:
+
+- Seeing abbreviated stats for each commit
+  #+begin_src sh
+    git log --stat
+  #+end_src
+
+
+- The pretty option
+  #+begin_src sh
+    git log --pretty=oneline
+    git long --pretty=format:"%h - %an, %ar : %s" # hash, author name, avg age relative, subject or commit message
+  #+end_src
+  + More pretty specifiers available at.. pg43 progit
+
++ Combining one line with graph
+  #+begin_src sh
+    git log --pretty=format:"%h %s" --graph
+    # branch merge graph, history of commits with hashes and subjects
+  #+end_src
+
+  + More options
+    #+begin_src sh
+      -p, --stat, --shortstat, --name-only, --name-status, --abbrev-commit, --relative-date
+      --graph, --oneline, --pretty (oneline, short, full, fuller)
+    #+end_src
+
+  + Limiting log output
+    - git log --since=2.weeks # date can follow the format: "2008-01-15" or "2 years 1 day 3 minutes ago"
+      - An alternative time specification flag can be '--until', '--after'
+    - More granular matching available with '--grep , --all-match' and others like '--author, --committer'
+
+  + Git pick axe (see what changes happened related to some string)
+    - git log -S string
+
+  + Viewing only changes that affected some folder's files
+    - git log -- path/to/file
+
+  - Sample command
+    - git log pretty="%h - %s" --author='name' --since='' --before='' --no-merges -- t/
+   # no merges skips merge commits as they don't provide any useful info.
+
+
+** Undoing things
+
+*** Committing and forgetting something behind
+
+- git commit --ammed # takes staging area and uses that for replacing latest commit
+  # changes only commit message if staging area and last commit have no diffs
+  # git diff --staged returns nothing that is.
+  #+begin_src sh
+    git commit -m 'initial commit'
+    git add forgotten file
+    git commit --amend # ends up with 1 commt replacing previous one
+    # helps clean out useless commit messages 'opps last commit'
+    # pro tip: Don't force push ammends. Only ammend local commits
+  #+end_src
+
+
+*** Unstaging staged file
+ #+begin_src sh
+   git add *
+   git status
+   git reset HEAD file_that_should_be_reset # git restore --staged filename
+ #+end_src
+
+
+*** Unmodifying modified files
+#+begin_src sh
+  git checkout -- filename # git restore filename
+  git status # above command replaces filename from latest commit version or from the staging area
+#+end_src
+
+
+** Working with remotes
+- Version of project stored at some uri than the local repo
+  - could be off drive on the internet, on local drive, etc
+
+
+*** Showing remotes
+- git remote
+   - Outputs name of any remotes if any
+
+- git remote -v
+  - Outputs urls git has in store for usage when reading and writing to remote
+
+
+*** Adding new remotes
+
+- git remote add <shortname> <url>
+
+
+*** Getting all info on remotes that ain't  in local repo
+- git fetch remote
+  # it pulls but does not merge downloaded data with local data.
+  # 'git pull' auto merges after downloading changes for a local branch set to track some on a remote rep
+  # It gives warning if 'pull.rebase' (automerge handle) is not configured
+  # This can be configured with : git config --global pull.rebase true (to auto merge on pull)
+
+
+*** Pushing to upstream
+  # synposis:  git push <remote> <branch to push>
+- git push origin master # works only if pusher has write access, if branch to push does not
+  exist on target remote, it will be created. 
+
+
+*** Seeing more info about a remote
+- git remote show <remotename> # ignore last param to get more detailed info on all remotes
+
+
+*** Renaming and removing remotes
+ - git remote rename original new # Changes auto propagate across ** More clarification needed
+ - git remote remove paul # Deletes remote paul
+
+
+** Git tagging
+
+*** Quick summary
+
+- listing existing tags
+  - git tag
+
+- listing tags matching some pattern
+  - git tag -l 'v1.8.5.*' # -l or --list mandatory for wildcard tag search
+
+
+*** Tag creation
+
+- Tag types and their properties
+  * Lightweight tags
+    + Do not change
+    + Are like branches
+    + Are pointers to specific commits
+  * Annotated tags
+    + Stored as full objects in git db.
+    + They are checksummed.
+    + Components
+      - tagger name, email, date
+      - tagging message
+
+- *Annotated tags*
+  - Creation
+    #+begin_src sh
+     git tag -a v1.4 -m 'my version 1.4' # if msg unspecified, editor spawned to collect it.
+     git tag # will list v1.4 among tags
+    #+end_src
+
+- *Lightweight tags*
+  - Strucuture: Basically the commit's checksum
+  - Creation
+    - git tag v1.4-lw # no -a or -s
+
+
+- *Tagging by commit hash*
+  #+begin_src sh
+    git log --pretty=oneline
+    git tag -a v1.2 shorthashfromprevcommand
+  #+end_src
+
+
+- *Tag sharing*
+  - Need explicit sharing means (aint shared along with objects in git push)
+  - Syntax: git push origin <tagname>
+  - Pushing multiple
+    - git push origin --tags
+  - Pushing ony annotated tags
+    - git push <remote> --follow-tags
+
+- *Tag deletion*
+  - git tag -d v1.4-lw # not removed from remote
+  - deleting from remote in 2 methods
+    1. git push origin :refs/tags/v1.4-lw
+    2. git push origin --delete <tagname>
+
+- *Tag checkout*
+  - git checkout <tagname> # puts one in detached state (not on any branch)
+    - Any changes made and committed wont go no where
+      - will only be reachable by the exact commit hash
+
+  - git checkout -b version_name v2.0.2
+    # creates branch called version_name , placed at commit pointed to by v2.0.2
+
+
+** Git aliases
+- A means to shorten commonly used but painstakingly long git commands
+
+#+begin_src sh
+  git config --global alias.co checkout
+  git config --global alias.br branch
+  git config --global alias.ci commit
+  git config --global alias.st status
+#+end_src
+
+- Some of Git's inbuilt aliases
+#+begin_src sh
+  git config --global alias.unstage 'reset HEAD --'
+  # the two below are one in the same
+  git unstage fileA
+  git reset HEAD -- fileA
+  # another
+  git config global alias.last 'log -1 HEAD'
+  # git last now runs: git log -1 HEAD
+
+  # aliasing external commands
+  git config --global alias.visual '!gitk' # notice the `!`
+
+#+end_src
+
+
+
+** Git branching
+
+*** What happens on branch creation?
+   - A new pointer in .git/refs/heads is created. Points to current commit.
+     #+begin_src sh
+       git branch branchname
+     #+end_src
+
+   - No commit's yet so no concept of a branch since a branch is simply a pointer to a commit checkum, a snapshot in the project history.
+
+   - HEAD ref still points to nothing.
+
+   - Switching branches
+     - git switch branchname # git checkout - b branchname (to create and switch)
+       # moves HEAD pointer to branchname if any commits've been made yet.
+   - Git log usually only displays activity from current commit point backwards.
+     - git log --all # --all to see it all.
+
+   - While on a branch, branching off, making some changes, branching back
+     then making some changes when back leading to a diversion in commit history
+     #+begin_src sh
+       touch file1.txt
+       git init . # on branch master
+       echo 'some' >> file1.txt
+       git commit -a -m 'initial commit'
+       git switch -c someotherbranch
+       echo 'another change' >> file1.txt
+       git commit -a -m 'some other branch commit'
+       git checkout master
+       git log --oneline --decorate --graph --all
+     #+end_src
+
+   - Commits are 41 chars long: 40 chars for the sha-1 hash and a n/ char
+     #+begin_src sh
+       ls .git/objects/e1 | wc -c # where e1 is the first 2 chars of the commit
+     #+end_src
+
+    - When you switch to a branch, git resets wdir to look like it did the last
+      commit tht happened on that branch.
+
+
+***  Merging and deleting branches
+    - Merging is with the git merge command
+     # in branch to receive merge
+      git merge branch_whose_changes_to_pull_in
+
+    - A fast forward merge means the two merged branches had a common latest
+      commit. There was no divergent work.
+
+    - Deleting branches
+      - git branch -d hotfix
+
+    - The divergent merge (merge by recursive strategy)
+      - Git gets common parent for both branches
+      - Git gets each branch's tip
+      - The three are merged
+      - A merge commit is created (new common tip)
+
+    - Merge conflicts
+      - Changing some part of the same file on two different branches then requesting
+	a merge.
+      - Open conflicting file and fix conflicts
+	- Each branch's contribution to change is shown, HEAD's starts after the lines <<, with the other other after >>>
+	- contributions are separated by ===
+      - Choose one side of the equals `===` boundary or combine, then delete markers ("<<<, >>>, `===..`")
+      - A merge commit can be cancelled by deleting the file `.git/MERGE_HEAD` file.
+
+
+    - Seeing last commit on each branch
+      - git branch -v
+
+    - Seeing merged branches
+      - git branch --merged # ignore unmerged branches
+	git branch --no-merged # show unmerged branches
+	git branch -D branchname # delete unmerged branch , -d is for normal deletion
+	git branch --no-merged branchname # include branches that aint merged into branchname
+
+     - Branch renaming
+       # Locally renaming branch
+       - git branch --move bad-branch-name new-branch-name
+       # Pushing name change to remote (its like creating a new branch then setting it as default tracker)
+       - git push --set-upstream remote_name new-branch-name
+       # Deleting old branch from remote
+       - git push origin --delete bad-branch-name
+       # Protip: Careful renaming main/master/mainline branch
+       # Can break build scripts.
+       # Renaming: git branch --move oldname newname
+       # Pushing change: git push [origin] --set-upstream remote_name newname
+       # some intermediary actions:
+       # adjust build.release scripts, update refs to old branch in docs
+       # close or merge any PR targetting old branch
+       #                 git push origin --delete oldname
+     - Viewing all branches, both local and remote
+       - git branch --all
+
+
+*** Branching workflows
+
+- *Long running branches*
+  - Different branches can be used for different development stages.
+    - One branch for stable code (sources from dev branch)
+    - One for development (sources from topics)
+    - One for topics (short lived branches)
+    - One for pu (proposals)
+  - The stable branches are 'further down' in commit history line while
+    the 'bleeding edge' is further up.
+
+
+  - *Topic branches*
+    - Useful for quick fixes
+    - A developer creates the branch, works on feature, tests it, then deletes the topic on merging changes
+      into main branch. (or dumping the changes).
+    - See pg 85 of the book Progit for a  visual demo.
+
+- *Remote branches*
+  - Remote branches :: References in remote repositories.
+    - Viewing all remote references
+      - git ls-remote remote_short_name
+      # or
+      - git remote show remote_name
+ - Remote tracking branches :: References to the state of remote branches.
+   - They are immovable local references updated by git on network activity.
+   - Bookmarks reflecting state of remote repo.
+   - Name format :: <remote>/<branch>
+   - What happens when you clone a repo with the branch master.
+     Git creates you a master branch and renames the server as origin
+     Git brings commit history for master to local and stores that under
+     origin.
+     Both the Head for origin/master and your master's head point to the
+     same commit initially.
+     This reflection of remote references for the master branch is pointed
+     to by origin/master
+     We have two masters then.
+     - Your master
+     - Origin/master: A remote tracking branch
+     On any remote change( say you push something to remote/master) or someone else does,
+      - The next pull will update origin/master to reflect the changes.
+     Changing default remote name on clone from `origin` can be done with
+     - git clone -o local_remote_name
+       - tracking branches will then be under local_remote_name/..
+
+
+  - Remote synchronization
+    - git fetch <remote>
+      # git fetch local_remote_name
+      - This evaluates the server local_remote_name points to and
+	fetches any new data from it then updates local refs.
+
+  - Adding remotes
+    - git remote add remote_name remote_url
+      - Sets a local tracking branch under remote_name
+
+
+
+
+*** Pushing branches
+
+- Pushing local branch to remote (assuming there's a remote version already)
+  - If it ain't created,it will be created.
+  - git push origin serverfix
+    # serverfix expanded to : refs/heads/serverfix:refs/heads/serverfix
+    # Use my serverfix and update remote's serverfix
+  - OR: git push origin serverfix:serverfix
+  - Synopsis: git push origin localsourcebranch:remotedestinationbranch
+
+  - Fetching a remote with branches not locally available does not
+    auto create locally editable versions of them, only remote tracking
+    branches.
+
+ - Checking out a remote-tracking branch auto creates a local tracking
+   branch. (an upstream branch is what the remote tracking branch is
+   to the branch checked out of it.)
+   - git checkout -b serverfix origin/serverfix
+   - OR: git checkout serverfix
+
+
+*** Tracking branches
+ - Local branches in direct relation to remote branch.
+   - Git auto deduces where to fetch or pull from and what to merge.
+
+
+ - Manually setting upstreams
+   - git branch -u origin/upstreambranchname
+     # sets branch head's pointing to to track upstreambranchname
+
+   - Short hand with upstreams
+     - @{u} for upstream
+       # git merge @{u} # to merge upstream changes into tracking branch
+
+   Seeing tracking information based off last fetch action
+   - git fetch --all; git branch -vv
+
+   Fetching does not merge downloaded changes with tracking branches, pulling tries to.
+   It is essentially a combo of a fetch and a merge.
+
+   Deleting remote branches
+   git push remotename --delete branchname
+   - Actual removal is done by 'garbage collector'
+   - Only pointer is removed by above action.
+
+
+
+** Git Rebasing
+
+*** A brief summary on rebasing
+- It is  alternative to  the `git merge` command.
+- Rebasing is taking all changes that happened in one branch and replaying them on top of another
+  another branch.
+- Branch base is commit at which the branch in question broke off its parent (see previous notes for what parent means).
+- Changing that commit, branching point commit that is,  to some other commit (that is another branch's tip)
+  is called "rebasing".
+- Changing branch's base:
+  - Rebasing is changing the base of your branch from one commit to another making it
+    appear as if you'd created your branch from a different commit.
+- Allows for a cleaner git history line.A linear history.
+- Find more about git rebasing from this  [[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase][Atlassian article]].
+
+
+*** A textual example for git rebasing
+- With three branches, two sharing histories, in need of one of the two to rebase onto third
+- Rebasing synopsis
+  #+begin_src sh
+   git rebase  --onto third what_to_skip what_to_rebase
+  #+end_src
+- Rebasing arbitrary branch
+ #+begin_src sh
+   git rebase basebranch topicbranch
+ #+end_src
+  
+- After a successul rebase, the merge is a fast forward type merge. (see previous notes on merging to
+  know what a fast forward merge is).
+
+ 
+*** Some guidlines  when rebasing.
+  - Do not rebase commits that exist outside your repo and that people may have based
+   on your work.
+  - Rebase local changes before pushing to clean up your work. But never rebase
+  anything that you've pushed somewhere'
+  - Rebase when you rebase
+    When someone hard pushes changes that overwrite work you have based your owrk on.
+    You rebase your work on top of theirs. (the now new work).
+    #+begin_src sh
+     git rebase rogue_team/branch Vs git pull
+    #+end_src
+    Git calculates the checksum that is based upon only the patch each commit introduces.
+    It is called a patch-id.
+    Git
+    - Determines what's unique to current branch (after rogue branch did deletion)
+    - Determine's what's not a merge commit from whats unique to current branch
+    - Determine what has not been written into target branch (all that aint rebased yet from above)
+    - Apply these commits to rogue/master
+
+    #+begin_src sh
+      git pull --rebase (to fetch and rebase vs fetch and merge)
+      git config --global pull.rebase true # to default to rebase combos vs merge combos
+    #+end_src
+
+    
+*** Git Merge vs Git Rebase
+  - Merging shows a truer history for a project's evolution.
+  - Rebasing provides means for having a cleaner git history.
+  - Never rebase anything you have pushed somewhere.
+
+    
+** Git on the server
+- So collaborators can access project data when you are offline.
+  
+- *Choices to be made when running a server*
+  - What protocols to use
+  - Choosing between self hosting and using a managed server
+
+- A bare repo :: A git repo with no working directory. It contains the same as is in the `.git` dir.
+
+
+*** The Four Git protocols
+- Local
+- HTTP
+- SSH (Secure Shell)
+- Git
+
+- *The Local Protocol*
+  - Most basic.
+  - Remote repo is on the same host at a different dir location.
+  - Used in availability of shared FS, say NFS mounts. (or same PC wc is problematic)
+  - File paths are used as urls for cloning repos
+    #+begin_src sh
+      git clone /srv/git/project.git # git does an actual file copy or use hardlinks for access
+      # OR 
+      git clone file:///srv/git/project.git # git fires up its network tools for this (not efficient)
+    #+end_src
+
+  - Adding local repo to existing git project
+    #+begin_src sh
+      git remote add local_proj /srv/git/project.git
+    #+end_src
+
+  - *Pros*
+    - Simple, use existing file perms and network access.
+    - Easy setup if shared FS already available.
+      - Simply a shared folder in shared NFS
+    - Getting another users work can be as simple as `git pull /home/john/project`.
+      - This skips the network overhead of john pushing to server then you pulling from server.
+
+  - *Cons*
+    - Difficult initial setup
+    - Difficulty to setup multiple location access than network access based Git.
+    - Repos on NFS are slower than repos over SSH on the same server.
+    - No protection of repo against accidental damage
+
+- *HTTP Protocols*
+  - Simple read only version availale before v 1.6.6
+  - SSH like version introduced with 1.6.6 plus (Aka Smart HTTP Protocol)
+
+  - *Smart HTTP*
+    - Similar to SSH or Git protocol but over HTTPs ports
+    - Can use various HTTP auth mechanisms.
+    - Easier on user than SSH for previous line (username/pass) style logins are norm.
+      - No need to deal with SSH keys.
+    - Can be setup to serve anonymously like `git://`
+    - A single url can be used for many purposes
+      - viewing repo, cloning repo, pushing to repo, authenticating into repo
+
+  - *Dumb HTTP*
+    - Client default when git server does not respond with Git HTTP smart service.
+    - Expects bare repo to be served like normal files from web server.
+    - Simple to setup
+      - Put bare repo in HTTP document root.
+      - Setup post-update hook.
+      - DONE
+    #+begin_src sh
+      cd /var/www/htdocs/
+      git clone --bare /path/to/git_project gitproject.git
+      # could as well use git init --bare
+      # cp -Rf my_project/.git gitproject.git
+      cd gitproject.git
+      mv hooks/post-update.sample hooks/post-update
+      chmod a+x hooks/post-update # all have execute perms
+      # post update hook runs command: git update-server-info
+      # its run when the server receives a push , or when it does a clone
+      # git clone https://example.com/gitproject.git
+    #+end_src
+
+  - 2 options
+    - Read/write Smart http server
+    - Read only access for the dumb server
+
+    - *Pros (Smart HTTP)*
+      - Simplicity:
+        - One url for all actions.
+        - Username/password based auth
+      - Readonly limiting allowed
+      - Clients can be set to use specific signed SSL certs.
+
+    - *The cons*
+      - Setup trickier than SSH for server side.
+      - No other significant advantage others have beyond this.
+
+      - TO GET over auth hurdles for http
+	- Credential caching tools: Keychain (macOS), Cred Mger (Windows)
+
+- *The SSH Protocol*
+  - Convenient for the ubiquitous nature of ssh on servers.
+  - Includes secure authentication baked in.
+  #+begin_src sh
+    git clone ssh://[user@]server/project.git
+    #OR
+    git clone [user@]server:project.git # default username is current one
+  #+end_src
+  - *Pros*
+    - Easy setup
+    - Security (Auth and Encryption)
+    - Efficient in its data compaction actions
+
+  - *Cons*
+    - No anonymous users allowed in.
+     - Even readonly access requires ssh perms
+    - With readonly files to provide, 2 protocols must be setup
+      - One for read access , other for read only accesss.
+
+- *The Git Protocol*
+  - Special daemon comes prepacked with Git.
+  - Listens on port 9418, provides ssh like service.
+    - No auth or cryptography
+  - Usage needs creation of `git-daemon-export-ok` file.
+    - Daemon won't serve a repo without this file.
+  - No pushing over this protocol.
+    - For security reasons, as if enabled, anyone would be
+      able to push.
+  - All allowed to pull.
+
+  - *Pros*
+    - Fastest network transfer protocol for git.
+    - Best for serving large files that require no auth and encryption.
+      - SSH without auth and encryption is what it is.
+  - *Cons*
+    - Cloning over git can lead to arbitrary code execution vulns,
+      its not recommended.
+      - Data trasnferred can be polluted at router level.
+      - Same vuln applies to cloning http:// repos.
+      - SSh would only be susceptible to this attack if you accept wrong
+	ssh key fingerprint.
+

@@ -1,0 +1,41 @@
+---
+note: random
+---
+
+
+** From the Unix Philosophy Page
+
+#+BEGIN_QUOTE
+
+/.. When your tools shape your work, you feel friction instantly and you fix it./
+
+#+END_QUOTE
+
+---
+
+#+BEGIN_QUOTE
+
+/.. Constraint is not a hardship. It is a design instrument./
+
+#+END_QUOTE
+
+---
+
+#+BEGIN_QUOTE
+/.. Iteration is the real productivity engine. When you can change something and
+see the result quickly, you learn what works./
+#+END_QUOTE
+
+
+---
+
+#+BEGIN_QUOTE
+/Keep the system small enough to understand./
+#+END_QUOTE
+
+---
+
+#+BEGIN_QUOTE
+/Let programs stay replaceable. The future you can't predict arrives anyway. Parts
+that can be swapped out survice change./
+#+END_QUOTE

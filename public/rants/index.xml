@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="//localhost:1313/rants/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>//localhost:1313/rants/on_user_trust_and_design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rants/on_user_trust_and_design/</guid>
+      <description>&lt;p&gt;&#xA;Forced sign in&#xA;Useless forced features: AI assistance&#xA;Constant reminder the user is missing out (in HUGE CAPS)&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Speaking from the perspective of an annoyed consumer. &lt;/p&gt;&#xA;&lt;p&gt;&#xA;The effect&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I am being manipulated to think I want the &amp;#39;cool features&amp;#39;.&lt;/li&gt;&#xA;&lt;li&gt;I am being manipulated to think I am missing out.&lt;/li&gt;&#xA;&lt;li&gt;I find ways around the disturbance or leave the platform.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The good side to not doing so&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Long run, users like you for your value. Freemium users eventually convert to&#xA;loyal subscribers.&lt;/li&gt;&#xA;&lt;li&gt;If they don&amp;#39;t, they do word of mouth advertising for your product. &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Compromise&#xA;Stayfree. It forced users to opt into &amp;#39;anonymous&amp;#39; data collection or bounce off the platform.&#xA;I bounced when it did but had to recently return after I learnt the only means to get&#xA;what I needed practically was with its &amp;#39;free&amp;#39; services. &lt;/p&gt;</description>
+    </item>
+    <item>
       <title>My Computing Environment &amp; My Software Choices</title>
       <link>//localhost:1313/rants/my_software_choices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
