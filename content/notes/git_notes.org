@@ -904,7 +904,7 @@ git remote add <shortname> <url>
     branches. Remote tracking branches can be referenced via the syntax /remotename/branch-name/ on local repo.
 
  - Checking out a remote-tracking branch automatically creates a local tracking
-   branch. (an upstream branch is what the remote tracking branch is
+   branch. (An upstream branch is what the remote tracking branch is
    to the branch checked out of it.)
    #+begin_src sh
    git checkout -b serverfix origin/serverfix
@@ -942,9 +942,9 @@ git remote add <shortname> <url>
    git push remotename --delete branchname
    #+end_src
    - Some notes on deletion
-    - Actual removal is done by 'garbage collector'.
+    - Actual removal is done by the 'garbage collector'.
     - Only the pointer to the branch is removed by above action.
-    - /This sounds like reference counting type of garbage collection... interesting./
+    - /This sounds like [[https://en.wikipedia.org/wiki/Reference_counting][reference counting]] type of garbage collection... interesting./
 
 
 ** Git Rebasing

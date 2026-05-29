@@ -1724,7 +1724,7 @@ branches. Remote tracking branches can be referenced via the syntax <em>remotena
 <ul>
 <li>
 <p>Checking out a remote-tracking branch automatically creates a local tracking
-branch. (an upstream branch is what the remote tracking branch is
+branch. (An upstream branch is what the remote tracking branch is
 to the branch checked out of it.)</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b serverfix origin/serverfix
@@ -1779,9 +1779,9 @@ Git automatically deduces the origin for pulling and pushing.</li>
 <li>
 <p>Some notes on deletion</p>
 <ul>
-<li>Actual removal is done by &#39;garbage collector&#39;.</li>
+<li>Actual removal is done by the &#39;garbage collector&#39;.</li>
 <li>Only the pointer to the branch is removed by above action.</li>
-<li><em>This sounds like reference counting type of garbage collection… interesting.</em></li>
+<li><em>This sounds like <a href="https://en.wikipedia.org/wiki/Reference_counting">reference counting</a> type of garbage collection… interesting.</em></li>
 </ul>
 </li>
 </ul>
