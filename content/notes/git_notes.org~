@@ -2,11 +2,6 @@
 title: GIT
 ---
 
-The following is a collection of notes I took from reading the book on Git, [[https://git-scm.com/book/en/v2][Progit]].
-Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page) but it sure is a lot and I am sure you
-will have more than you need to become functionally proficient. I also include links to articles from Atlassian that I used for deep dives where
-I felt I needed more explanation. Hope this helps. 
-
 * VCS: Version Control System: GIT (intro)
 
 ** Why The need for version control
