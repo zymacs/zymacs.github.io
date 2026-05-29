@@ -701,7 +701,7 @@ More on Git file types
 </span></span><span style="display:flex;"><span>  git rm --cached -r directory
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># to prevent retracking</span>
 </span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;filename&#39;</span> &gt;&gt; .gititnore
-</span></span><span style="display:flex;"><span>  git add .gititnore
+</span></span><span style="display:flex;"><span>  git add .gitignore
 </span></span><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;stop tracking filename&#39;</span></span></span></code></pre></div>
 </div>
 </li>
@@ -928,7 +928,7 @@ Some common git log options
 <p>The pretty option: prettify output as per arguments passed to the –pretty flag</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
-</span></span><span style="display:flex;"><span>  git long --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h - %an, %ar : %s&#34;</span> <span style="color:#75715e"># hash, author name, avg age relative, subject or commit message</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h - %an, %ar : %s&#34;</span> <span style="color:#75715e"># hash, author name, avg age relative, subject or commit message</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>More pretty specifiers available at.. pg43 progit</li>
@@ -996,7 +996,7 @@ When you commit but forget something behind
 <div id="outline-text-headline-37" class="outline-text-4">
 <ul>
 <li>
-<p>git commit –ammed # takes staging area and uses that for replacing latest commit</p>
+<p>git commit –amed # takes staging area and uses that for replacing latest commit</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
 </span></span><span style="display:flex;"><span>  git add forgotten file

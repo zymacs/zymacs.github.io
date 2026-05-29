@@ -270,7 +270,7 @@ git internals and how the core commands work on the inside. /(The [[https://git-
     git rm --cached -r directory
     # to prevent retracking
     echo 'filename' >> .gititnore
-    git add .gititnore
+    git add .gitignore
     git commit -m 'stop tracking filename'
   #+end_src
 - File status can be checked with the command 'git status'.
@@ -421,7 +421,7 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 - The pretty option: prettify output as per arguments passed to the --pretty flag
   #+begin_src sh
     git log --pretty=oneline
-    git long --pretty=format:"%h - %an, %ar : %s" # hash, author name, avg age relative, subject or commit message
+    git log --pretty=format:"%h - %an, %ar : %s" # hash, author name, avg age relative, subject or commit message
   #+end_src
   + More pretty specifiers available at.. pg43 progit
 
@@ -466,7 +466,7 @@ git internals and how the core commands work on the inside. /(The [[https://git-
 
 *** When you commit but forget something behind
 
-- git commit --ammed # takes staging area and uses that for replacing latest commit
+- git commit --amed # takes staging area and uses that for replacing latest commit
   # changes only commit message if staging area and last commit have no diffs
   # git diff --staged returns nothing that is.
   #+begin_src sh
