@@ -12,7 +12,7 @@
       <link>//localhost:1313/notes/git_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/notes/git_notes/</guid>
-      <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page) but it sure is a lot and I am sure you&#xA;will have more than you need to become functionally proficient. I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. &lt;/p&gt;</description>
+      <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. &lt;em&gt;(I got enough of the book to use Git and have for long not updated the page)&lt;/em&gt;.&#xA;I am still sure it can be a good starting point or reference for most of the basics and more.&#xA;I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter&#xA;of the book Progit. I haven&amp;#39;t added notes for it yet but it sure is an interesting read. It&amp;#39;s on&#xA;git internals and how the core commands work on the inside. &lt;em&gt;(The &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain&#34;&gt;plumbing commands&lt;/a&gt; that is)&lt;/em&gt;. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
 		<meta property="og:url" content="//localhost:1313/notes/git_notes/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="GIT">
-  <meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page) but it sure is a lot and I am sure you will have more than you need to become functionally proficient. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps.">
+  <meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page). I am still sure it can be a good starting point or reference for most of the basics and more. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on git internals and how the core commands work on the inside. (The plumbing commands that is).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
@@ -111,9 +111,12 @@
 			
 <p>
 The following is a collection of notes I took from reading the book on Git, <a href="https://git-scm.com/book/en/v2">Progit</a>.
-Its a page I am still growing. (I got enough of the book to use Git and have for long not updated the page) but it sure is a lot and I am sure you
-will have more than you need to become functionally proficient. I also include links to articles from Atlassian that I used for deep dives where
-I felt I needed more explanation. Hope this helps. </p>
+Its a page I am still growing. <em>(I got enough of the book to use Git and have for long not updated the page)</em>.
+I am still sure it can be a good starting point or reference for most of the basics and more.
+I also include links to articles from Atlassian that I used for deep dives where
+I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter
+of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on
+git internals and how the core commands work on the inside. <em>(The <a href="https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain">plumbing commands</a> that is)</em>. </p>
 <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 VCS: Version Control System: GIT (intro)
@@ -121,35 +124,31 @@ VCS: Version Control System: GIT (intro)
 <div id="outline-text-headline-1" class="outline-text-2">
 <div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
-Why The need for version control
+Why the need for version control?
 </h3>
 <div id="outline-text-headline-2" class="outline-text-3">
 <ul>
-<li>
-<p>Recovering old versions with ease</p>
-<ul>
+<li>Recovering old versions with ease</li>
 <li>Peace when new versions get messed up or get lost</li>
-<li>Easily switch between versions</li>
-</ul>
-</li>
+<li>Freedom to easily switch between multiple versions of the same document</li>
 </ul>
 </div>
 </div>
 <div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
-Kinds of version control
+The different kinds of version control
 </h3>
 <div id="outline-text-headline-3" class="outline-text-3">
 <div id="outline-container-headline-4" class="outline-4">
 <h4 id="headline-4">
-Manually Copying copies of a file across multiple locations
+1. Manually Copying copies of a file across multiple locations
 </h4>
 <div id="outline-text-headline-4" class="outline-text-4">
 <ul>
 <li>
-<p>Problems</p>
+<p>Problems with this approach</p>
 <ul>
-<li>Forgetting what version is in what location.</li>
+<li>Forgetting what version is in what file system location.</li>
 <li>The burden of choosing a naming system and maintaining it.</li>
 <li>Overwriting files copied to some folder for version control.</li>
 </ul>
@@ -159,7 +158,7 @@ Manually Copying copies of a file across multiple locations
 </div>
 <div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
-Version control with databases
+2. Version control with databases
 </h4>
 <div id="outline-text-headline-5" class="outline-text-4">
 <ul>
@@ -174,17 +173,17 @@ Version control with databases
 <ul>
 <li>Successor to Source Code Control System</li>
 <li>Keeps diffs or patch sets (Or the small changes in files, as they change)</li>
+</ul>
+</li>
 <li>Restores files by combining these diffs</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>Downsides</p>
+<p>Problems with this approach</p>
 <ul>
 <li>Only one user can work on a file at a time</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -192,7 +191,7 @@ Version control with databases
 </div>
 <div id="outline-container-headline-6" class="outline-4">
 <h4 id="headline-6">
-Central version control systems
+3. Central version control systems
 </h4>
 <div id="outline-text-headline-6" class="outline-text-4">
 <ul>
@@ -208,22 +207,26 @@ Central version control systems
 <li>
 <p>How it works</p>
 <ul>
-<li>A single server with multiple devs connected each checking in and out.</li>
+<li>Its basically a single server with multiple devs connected each checking in and out.</li>
+<li>Each dev only has the latest version of whatever work is being worked on.</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> As in:  git clone --depth <span style="color:#ae81ff">1</span> &lt;url&gt;</span></span></code></pre></div>
+</div>
 <ul>
 <li>
-<p>Problems</p>
+<p>Problems with this approach</p>
 <ul>
-<li>Single point of failure (Power problems affect all)</li>
+<li>The server is a single point of failure (Power problems affect all)</li>
 <li>
 <p>Disk problems affect all past history</p>
 <ul>
-<li>Only what devs have locally is kept intact.</li>
+<li>Only what devs have locally is kept intact (which isn&#39;t all there is about the project).</li>
 <li>Dev&#39;s only have the latest updates.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -233,19 +236,45 @@ Central version control systems
 </div>
 <div id="outline-container-headline-7" class="outline-4">
 <h4 id="headline-7">
-Distributed VCS (DVCS)
+4. Distributed VCS (DVCS)
 </h4>
 <div id="outline-text-headline-7" class="outline-text-4">
 <ul>
+<li>
+<p>All problems from the previous version control methods led to this</p>
+<ul>
+<li>Single point of failure issues. (CVCS)</li>
+<li>Network dependency for most operations.</li>
+<li>Slow operations arising from network dependency.</li>
+</ul>
+</li>
+<li>
+<p>How DVCS is different.</p>
+<ul>
 <li>Clients mirror a repo&#39;s full history and not just the latest snapshots or versions of files.</li>
 <li>Every clone is a full backup of the server data.</li>
-<li>The system as it is designed allows for hierachical models impossible in vcs&#39;s previously mentioned.</li>
 <li>
-<p>Examples</p>
+<p>The system as it is designed allows for hierachical models impossible in vcs&#39;s previously mentioned.</p>
 <ul>
-<li>Git</li>
-<li>Mercurial</li>
-<li>Darcs</li>
+<li>Explained and demonstrated later in the book when talking about <a href="https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows">Workflows</a>.</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> <span style="color:#75715e"># an example of this is the lieutenant workflow used by the linux kernel</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>Blessed/Main Repo<span style="color:#f92672">]</span>        ← <span style="color:#e6db74">&#34;truth&#34;</span> / official release
+</span></span><span style="display:flex;"><span> ↑
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>Integration Repo<span style="color:#f92672">]</span>          ← lieutenants merge &amp; verify
+</span></span><span style="display:flex;"><span>  ↑           ↑
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>Dev Repo A<span style="color:#f92672">]</span>    <span style="color:#f92672">[</span>Dev Repo B<span style="color:#f92672">]</span>       ← individual contributors</span></span></code></pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>Examples of DVCS</p>
+<ul>
+<li><a href="https://git-scm.com/">Git</a></li>
+<li><a href="https://www.mercurial-scm.org/">Mercurial</a></li>
+<li><a href="https://darcs.net/">Darcs</a></li>
 </ul>
 </li>
 </ul>
@@ -255,18 +284,18 @@ Distributed VCS (DVCS)
 </div>
 <div id="outline-container-headline-8" class="outline-3">
 <h3 id="headline-8">
-A short history of Git
+Git&#39;s origins
 </h3>
 <div id="outline-text-headline-8" class="outline-text-3">
 <ul>
-<li>Linux kernel updates initially passed around as patches and archived files.</li>
-<li>Initial VCS: A proprietary DVCS called Bitkeeper. (2002)</li>
-<li>2005: Withdrawal of Bitkeeper free licence. Linus births Git.</li>
+<li>Linus Torvalds <a href="https://www.theregister.com/offbeat/2005/04/14/torvalds-knifes-tridgell/623500">got frustrated</a> with the proprietary VCS that was Bitkeeper.</li>
+<li>Bitkeeper accused Linus of misconduct and code theft.</li>
+<li>Linus already hated how things were going with Bitkeeper.</li>
+<li>He sat down this once and ten days later, Git was born.</li>
 <li>
-<p>Linus&#39; reasons for Git:</p>
+<p>More about the details of this can be found here: </p>
 <ul>
-<li>Speed, Simple design, Distributed fully, Support for complex projects like The linux kernel,
-Support for linear development</li>
+<li><a href="https://www.youtube.com/watch?v=sCr_gb8rdEI">Two decades of Git: A circular square type interview (Linus interviewed by Microsoft??)</a></li>
 </ul>
 </li>
 </ul>
@@ -287,7 +316,7 @@ File storage
 <p>Others store data as changes to base files over time. The changes are called deltas.</p>
 <ul>
 <li>
-<p>There&#39;s 3 files a,b,c.</p>
+<p>For instance, there&#39;s 3 files a,b,c.</p>
 <ul>
 <li>Version one could be a change in file a.</li>
 <li>Version two could be a change in files b and c.</li>
@@ -296,7 +325,7 @@ File storage
 </ul>
 </li>
 <li>
-<p>Git thinks of version control as snapshot storage</p>
+<p>Git thinks of version control as snapshot storage.</p>
 <ul>
 <li>A change triggers a storage of new state</li>
 <li>A commit without a change has git skipping generation of state and pointing to already existing such state</li>
@@ -309,12 +338,8 @@ File storage
 </li>
 </ul>
 </li>
-<li>
-<p>Git stores it all locally unlike DCVS and CVS</p>
-<ul>
-<li>Others cant commit changes or even make any (Perforce)</li>
-</ul>
-</li>
+<li>Git stores it all locally so a user can commit changes as often as they want even without
+internet connection unlike  CVS like Perforce. (They talk about that <a href="https://www.perforce.com/blog/vcs/what-is-version-control#types-of-version-control-systems">here</a>.)</li>
 </ul>
 </div>
 </div>
@@ -324,8 +349,10 @@ Integrity
 </h4>
 <div id="outline-text-headline-11" class="outline-text-4">
 <ul>
-<li>Git checksums everything before it is stored. Any change will be known. SHA-1 is used for this.</li>
+<li>Git checksums everything with <em>SHA-1</em> before it is stored.</li>
+<li>Any change will therefore be known.</li>
 <li>It is hard to do anything that is oneway or not undoable as all actions are recorded in a database.</li>
+<li>Virtually all changes can be thought of to be reversible.</li>
 </ul>
 </div>
 </div>
@@ -374,7 +401,7 @@ Three main sections of a git project
 <p>The staging area</p>
 <ul>
 <li>Where staged data lives</li>
-<li>Comes from working area through staging</li>
+<li>It comes from working area through staging</li>
 </ul>
 </li>
 <li>
@@ -392,88 +419,121 @@ Three main sections of a git project
 Git configuration
 </h3>
 <div id="outline-text-headline-14" class="outline-text-3">
+<div id="outline-container-headline-15" class="outline-4">
+<h4 id="headline-15">
+A brief summary on git configs
+</h4>
+<div id="outline-text-headline-15" class="outline-text-4">
 <ul>
-<li>/etc/gitconfig : all users</li>
 <li>
-<p>~/.gitconfig OR .config/git/config: user specific</p>
+<p>There&#39;s different configs for Git that can exist on a single system.</p>
+<dl>
+<dt>
+/etc/gitconfig
+</dt>
+<dd>This applies to all  users</dd>
+<dt>
+~/.gitconfig OR .config/git/config
+</dt>
+<dd>
+<p>This is user specific.</p>
 <ol>
-<li>
-<p>Written to using the –global flag with the git config command.</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global ...</span></span></code></pre></div>
-</div>
-</li>
+<li>Written to using the –global flag with the git config command.</li>
 </ol>
-</li>
-<li>
-<p>.git/config: repo specific</p>
+</dd>
+</dl>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global ...</span></span></code></pre></div>
+</div>
+<dl>
+<dt>
+.git/config
+</dt>
+<dd>
+<p>This one is repo specific.</p>
 <ul>
 <li>Writtent to using the  –local flag with the git config command.</li>
 </ul>
+</dd>
+</dl>
 </li>
 <li>
 <p>For viewing settings origins</p>
-<ul>
-<li>git config –list –show-origin</li>
-</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list --show-origin</span></span></code></pre></div>
+</div>
 </li>
 </ul>
-<div id="outline-container-headline-15" class="outline-4">
-<h4 id="headline-15">
-Identity configs
+<ul>
+<li>For configs with keys defined more than once, git uses the last value for each unique key it sees.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-4">
+<h4 id="headline-16">
+Some config related Git commands
 </h4>
-<div id="outline-text-headline-15" class="outline-text-4">
+<div id="outline-text-headline-16" class="outline-text-4">
+<div id="outline-container-headline-17" class="outline-5">
+<h5 id="headline-17">
+Identity configs
+</h5>
+<div id="outline-text-headline-17" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global user.name ...
 </span></span><span style="display:flex;"><span>  git config --global user.email ...</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-16" class="outline-4">
-<h4 id="headline-16">
+<div id="outline-container-headline-18" class="outline-5">
+<h5 id="headline-18">
 Editor configs
-</h4>
-<div id="outline-text-headline-16" class="outline-text-4">
+</h5>
+<div id="outline-text-headline-18" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   git config --global core.editor vim</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-17" class="outline-4">
-<h4 id="headline-17">
+<div id="outline-container-headline-19" class="outline-5">
+<h5 id="headline-19">
 Default initial branch for repos
-</h4>
-<div id="outline-text-headline-17" class="outline-text-4">
+</h5>
+<div id="outline-text-headline-19" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global init.defaultBranch branch_name</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-18" class="outline-4">
-<h4 id="headline-18">
+<div id="outline-container-headline-20" class="outline-5">
+<h5 id="headline-20">
 Listing settings
-</h4>
-<div id="outline-text-headline-18" class="outline-text-4">
+</h5>
+<div id="outline-text-headline-20" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> - git config --list</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-19" class="outline-4">
-<h4 id="headline-19">
+<div id="outline-container-headline-21" class="outline-5">
+<h5 id="headline-21">
 Finding rogue config values origins
-</h4>
-<div id="outline-text-headline-19" class="outline-text-4">
+</h5>
+<div id="outline-text-headline-21" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --show-origin config_value.autoUpdate</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-20" class="outline-4">
-<h4 id="headline-20">
-Getting help
-</h4>
-<div id="outline-text-headline-20" class="outline-text-4">
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-3">
+<h3 id="headline-22">
+Getting help with git
+</h3>
+<div id="outline-text-headline-22" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git help _subcommand_for_which_you_need_help_
 </span></span><span style="display:flex;"><span> git _command_ -h <span style="color:#75715e"># for summrized help</span></span></span></code></pre></div>
@@ -482,34 +542,60 @@ Getting help
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="outline-container-headline-21" class="outline-2">
-<h2 id="headline-21">
+<div id="outline-container-headline-23" class="outline-2">
+<h2 id="headline-23">
 Git Basics
 </h2>
-<div id="outline-text-headline-21" class="outline-text-2">
+<div id="outline-text-headline-23" class="outline-text-2">
+<div id="outline-container-headline-24" class="outline-3">
+<h3 id="headline-24">
+Briefly on how Git works
+</h3>
+<div id="outline-text-headline-24" class="outline-text-3">
 <ul>
-<li>Stores data as series of snapshots. (not a series of changesets/deltas like other vcs).</li>
-<li>Staging file creates checksum (SHA-1) for each, stores version in local repo as blobs,
-adds blob checksum to staging area.</li>
+<li>Git stores data as series of snapshots. (not a series of changesets/deltas like other vcs).</li>
 <li>
-<p>On commit, git stores commit object with pointer to staged created snapshot</p>
+<p>Staging a file does the following:</p>
 <ul>
-<li>It checksums each subdir</li>
-<li>stores dirs as commit tree in local repo</li>
-<li>creates commit object</li>
+<li>It  creates checksum <em>(SHA-1)</em> for each snapshot.</li>
+<li>It stores version in local repo as blobs.</li>
+<li>It adds the blob checksum to staging area.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-3">
+<h3 id="headline-25">
+On Git Commits
+</h3>
+<div id="outline-text-headline-25" class="outline-text-3">
+<ul>
+<li>
+<p>A commit command does the following:</p>
+<ul>
+<li>It stores commit object with pointer to staged created snapshot.</li>
+<li>It checksums each subdirectory in the commit.</li>
+<li>It stores the directories as commit tree in local repo.</li>
+<li>It creates commit object.</li>
 </ul>
 </li>
 <li>
-<p>The commit object</p>
+<p>On the structure of the commit object</p>
 <ul>
-<li>master written to .git/refs/heads (or whatever name the committing branch)</li>
-<li>Commit object contains pointer to root project tree (a hash, and a hash)</li>
-<li>Commit object contains author email, name and pointers to commits before it</li>
+<li>Right after the first commit, `master` (or whichever name for the active branch) is written to .git/refs/heads</li>
+<li>
+<p>Commit object contains</p>
+<ul>
+<li>A pointer to root project tree (a hash, and another hash)</li>
+<li>The commit author email, name and pointers to commits before it</li>
+</ul>
+</li>
+</ul>
+<ul>
 <li>Initial commits have no parents</li>
 <li>Normal commits have 1 parent</li>
-<li>Merge commits have multiple</li>
+<li>Merge commits have multiple parents</li>
 </ul>
 </li>
 </ul>
@@ -520,44 +606,39 @@ adds blob checksum to staging area.</li>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># this puts 5 files .git/objects</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># one for each file, one for the commit, one for the root directory hash/checksum</span></span></span></code></pre></div>
 </div>
-<div id="outline-container-headline-22" class="outline-3">
-<h3 id="headline-22">
-Repo creation
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-3">
+<h3 id="headline-26">
+On repository creation
 </h3>
-<div id="outline-text-headline-22" class="outline-text-3">
+<div id="outline-text-headline-26" class="outline-text-3">
 <ul>
 <li>
-<p>2 ways</p>
+<p>There&#39;s two ways to create a repository</p>
 <ul>
 <li>
-<p>Creating a local dir and turning it into a repo</p>
-<div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd dir_that_will_be_repo_name
-</span></span><span style="display:flex;"><span>git init</span></span></code></pre></div>
-</div>
-<ul>
-<li>Initializing version control and tracking files</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Creating a local directory and turning it into a repo</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add *.c <span style="color:#75715e"># assuming all files are .c files</span>
-</span></span><span style="display:flex;"><span>  git add LICENSE <span style="color:#75715e"># assuming you have a licence file</span>
-</span></span><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;commit_message&#39;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd dir_that_will_be_repo_name
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>  git add *.c <span style="color:#75715e"># assuming all files are .c files</span>
+</span></span><span style="display:flex;"><span>git add LICENSE <span style="color:#75715e"># assuming you have a licence file</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#39;commit_message&#39;</span></span></span></code></pre></div>
 </div>
-<ul>
+</li>
 <li>
 <p>Cloning a repo from some other location</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone repo_url <span style="color:#75715e"># creates a dir with the cloned repo name and initializes a .git dir then pulls data from url to dir</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># to clone into a different dir</span>
-</span></span><span style="display:flex;"><span>git clone repo_url desired_dir_name</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>  git clone repo_url desired_dir_name</span></span></code></pre></div>
 </div>
 </li>
+</ul>
+</li>
 <li>
-<p>Supported protocols for cloning </p>
+<p>Supported protocols for cloning include:</p>
 <ul>
 <li>git://</li>
 <li>user@server:…:/reponame</li>
@@ -567,31 +648,69 @@ Repo creation
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-23" class="outline-3">
-<h3 id="headline-23">
-Recording changes to repo
+<div id="outline-container-headline-27" class="outline-3">
+<h3 id="headline-27">
+Recording changes to repository
 </h3>
-<div id="outline-text-headline-23" class="outline-text-3">
-<ul>
-<li>Tracked files: files git knows about. (unmodified, modified, staged)</li>
-<li>Untracked files: Any file that was not in the last snapshot.</li>
-<li>Committed files are marked as unmodified files.</li>
-<li>Unmodified files can be moved to the untracked state.</li>
-<li>
-<p>Check file status with : git status</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git status <span style="color:#75715e"># run in a repo</span></span></span></code></pre></div>
+<div id="outline-text-headline-27" class="outline-text-3">
+<div id="outline-container-headline-28" class="outline-4">
+<h4 id="headline-28">
+The different types of files in git 
+</h4>
+<div id="outline-text-headline-28" class="outline-text-4">
+<dl>
+<dt>
+Tracked files
+</dt>
+<dd>Files that Git knows about. (unmodified, modified, staged)</dd>
+<dt>
+Untracked files
+</dt>
+<dd>Any file that was not in the last snapshot.</dd>
+</dl>
 </div>
-<p>Output shows any untracked files (not in the .gitignore file) or tells if the tree is clean (no new modifications, everything commited)
-Also tells what branch is currently active</p>
+</div>
+<div id="outline-container-headline-29" class="outline-4">
+<h4 id="headline-29">
+More on Git file types
+</h4>
+<div id="outline-text-headline-29" class="outline-text-4">
+<ul>
+<li>Committed files are marked as unmodified files (after the commit action).</li>
+<li>
+<p>Unmodified files can be moved to the untracked state.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm --cached &lt;file&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># for recursive removal</span>
+</span></span><span style="display:flex;"><span>  git rm --cached -r directory
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># to prevent retracking</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;filename&#39;</span> &gt;&gt; .gititnore
+</span></span><span style="display:flex;"><span>  git add .gititnore
+</span></span><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;stop tracking filename&#39;</span></span></span></code></pre></div>
+</div>
 </li>
 <li>
-<p>Add files to tracked status with the `git add` command.</p>
+<p>File status can be checked with the command &#39;git status&#39;.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git status <span style="color:#75715e"># run in a repo</span></span></span></code></pre></div>
+</div>
+<ul>
+<li>The output shows any untracked files (not in the .gitignore file) or tells if the tree is clean (no new modifications, everything commited)</li>
+<li>It also tells what branch is currently active</li>
+</ul>
+</li>
+<li>
+<p>Files can be added to tracked status with the `git add` command.</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add filename <span style="color:#75715e"># this will eliminate the file from the list of untracked files in the repo listed when git status is run. it will be included in the next commit.</span></span></span></code></pre></div>
 </div>
 </li>
-<li>A modification to a tracked file is recorded as an unstaged change that can be staged with `git add file-name`.</li>
+<li>
+<p>A modification to a tracked file is recorded as an unstaged change that can be staged with:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add file-name</span></span></code></pre></div>
+</div>
+</li>
 <li>
 <p>Changes to staged files have them marked both as staged and unstaged.</p>
 <ul>
@@ -601,23 +720,28 @@ Also tells what branch is currently active</p>
 <li>
 <p>A more simplified version of status is achievable with `git status -s`. Below is explanation for this command&#39;s
 output:</p>
-<ul>
-<li>?? : New files not yet tracked</li>
-<li>M  : Modified tracked files (Modified twice is shown with 2 M&#39;s) (added then modified before a commit)</li>
-<li>A  : New files in staging area</li>
-</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>- ?? : New files not yet tracked
+</span></span><span style="display:flex;"><span>- M  : Modified tracked files <span style="color:#f92672">(</span>Modified twice is shown with <span style="color:#ae81ff">2</span> M<span style="color:#960050;background-color:#1e0010">&#39;</span>s<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>added <span style="color:#66d9ef">then</span> modified before a commit<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>- A  : New files in staging area</span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-24" class="outline-3">
-<h3 id="headline-24">
-Ignoring files
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-3">
+<h3 id="headline-30">
+Ignoring files in Git
 </h3>
-<div id="outline-text-headline-24" class="outline-text-3">
+<div id="outline-text-headline-30" class="outline-text-3">
 <ul>
+<li>Not all files in a project need to be tracked by Git.</li>
+<li>One way Git ensures this is using the .gitignore file.</li>
+<li>The syntax for ignoring files in the .gitignore files is somewhat like `regex`. Its the glob pattern syntax.</li>
 <li>
-<p>Glob pattern syntax</p>
+<p>A sample .gitignore file can look like so.</p>
 <div class="src src-txt">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>  .a*
 </span></span><span style="display:flex;"><span>  !lib.a # even if ignoring .a files, make this an exception
@@ -627,25 +751,27 @@ Ignoring files
 </span></span><span style="display:flex;"><span>  doc/**/*.pdf # ignore all pdf files in dir and subdirs for doc/</span></span></code></pre></div>
 </div>
 <ul>
+<li>
+<p>In the above file</p>
+<ul>
 <li>Asterisk matches anything except a slash</li>
 <li>Escape char is &#39;\&#39;</li>
 </ul>
 </li>
-<li>Sample .gitignore files can be found at: <a href="https://github.com/github/gitignore">git: gitignore</a></li>
+</ul>
+</li>
+<li>Sample .gitignore files can be found  <a href="https://github.com/github/gitignore">here</a>.</li>
 <li>Nested .gitignore files only apply in directories where they are found.</li>
-<li>More about this from &#39;man gitignore&#39;</li>
 <li>I also have an article written on this area of git that you can find <a href="https://zymacs.github.io/post/git-ignore-files/">here</a>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-25" class="outline-3">
-<h3 id="headline-25">
-Extra info
+<div id="outline-container-headline-31" class="outline-3">
+<h3 id="headline-31">
+Working with staged files and file changes
 </h3>
-<div id="outline-text-headline-25" class="outline-text-3">
+<div id="outline-text-headline-31" class="outline-text-3">
 <ul>
-<li>For configs with keys defined more than once, git uses the last value for each unique key it sees.</li>
-<li>Config precedence has already been defined in earlier sections.</li>
 <li>
 <p>Viewing staged and unstaged changes</p>
 <div class="src src-sh">
@@ -661,10 +787,11 @@ Extra info
 <li>
 <p>Interpretation of the output from the `git diff` command. (wrapped in hashtags)</p>
 <ul>
-<li>Git first determines what files were passed to diff</li>
-<li>It then tells what symbols are for changes for what files ? [ne demek?]</li>
+<li>Git first determines what files were passed to the diff command.</li>
+<li>It then tells what symbols changed in each of the files and the differences between the changes
+in each are determined.</li>
 <li>
-<p>then it shows something like: @@ -34,6 +34,8 @@</p>
+<p>It then outputs something like: @@ -34,6 +34,8 @@</p>
 <ul>
 <li>Meaning: from line 34 in the file whose changes are denoted by symbol &#39;-&#39;
 , 6 lines have been extracted .. and from file whose changes are denoted
@@ -680,7 +807,10 @@ by symbol &#39;+&#39;, 8 lines have been extracted.</li>
 </div>
 </li>
 <li>
-<p>There&#39;s more about the git diff command right <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-diff">here.</a> Topics mentioned include but ain&#39;t limited to:</p>
+<p>There&#39;s more about the git diff command right <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-diff">here.</a></p>
+<ul>
+<li>
+<p>Topics touched in the article include but ain&#39;t limited:</p>
 <ul>
 <li>Comparison of pdf files</li>
 <li>Comparison against other indices than the local repo and staging area</li>
@@ -697,13 +827,15 @@ by symbol &#39;+&#39;, 8 lines have been extracted.</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-headline-26" class="outline-3">
-<h3 id="headline-26">
-Removing files
+<div id="outline-container-headline-32" class="outline-3">
+<h3 id="headline-32">
+Removing files from Git
 </h3>
-<div id="outline-text-headline-26" class="outline-text-3">
+<div id="outline-text-headline-32" class="outline-text-3">
 <ul>
 <li>
 <p>Removing files from git is removing them from Git&#39;s staging area.</p>
@@ -722,7 +854,7 @@ Removing files
 </div>
 </li>
 <li>
-<p>Globbing syntax during removal</p>
+<p>Dealing with Git&#39;s special  globbing syntax quirks during removal</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm log/<span style="color:#ae81ff">\*</span>.log <span style="color:#75715e"># git does its own filename expansion, so that backslash behind the &#34;*&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># escapes shell expansion</span>
@@ -733,43 +865,43 @@ Removing files
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-27" class="outline-3">
-<h3 id="headline-27">
-Renaming files
+<div id="outline-container-headline-33" class="outline-3">
+<h3 id="headline-33">
+Renaming files in Git.
 </h3>
-<div id="outline-text-headline-27" class="outline-text-3">
+<div id="outline-text-headline-33" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git mv README.md README
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># equivalent to</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># equivalent to the 3 commands below</span>
 </span></span><span style="display:flex;"><span>  mv REAME.md README
 </span></span><span style="display:flex;"><span>  git rm README.md
 </span></span><span style="display:flex;"><span>  git add README</span></span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-28" class="outline-3">
-<h3 id="headline-28">
-Viewing commit history
+<div id="outline-container-headline-34" class="outline-3">
+<h3 id="headline-34">
+Viewing Git commit history
 </h3>
-<div id="outline-text-headline-28" class="outline-text-3">
+<div id="outline-text-headline-34" class="outline-text-3">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log <span style="color:#75715e"># in a repo to show commit history from last commit (at top) downwards</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># lines of output are: commit hash, commit author, commit date, commit message, space</span></span></span></code></pre></div>
 </div>
-<div id="outline-container-headline-29" class="outline-4">
-<h4 id="headline-29">
+<div id="outline-container-headline-35" class="outline-4">
+<h4 id="headline-35">
 Some common git log options
 </h4>
-<div id="outline-text-headline-29" class="outline-text-4">
+<div id="outline-text-headline-35" class="outline-text-4">
 <ul>
-<li>Showing difference introduced with -p and limiting entries displayed with -n</li>
+<li>Show difference introduced with -p and limiting entries displayed with -n</li>
 </ul>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log -p -2 <span style="color:#75715e"># limit to 2 lines of output</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>
-<p>Seeing abbreviated stats for each commit</p>
+<p>See abbreviated stats for each commit</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --stat</span></span></code></pre></div>
 </div>
@@ -777,7 +909,7 @@ Some common git log options
 </ul>
 <ul>
 <li>
-<p>The pretty option</p>
+<p>The pretty option: prettify output as per arguments passed to the –pretty flag</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
 </span></span><span style="display:flex;"><span>  git long --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h - %an, %ar : %s&#34;</span> <span style="color:#75715e"># hash, author name, avg age relative, subject or commit message</span></span></span></code></pre></div>
@@ -787,7 +919,7 @@ Some common git log options
 </ul>
 </li>
 <li>
-<p>Combining one line with graph</p>
+<p>Combine single line output with graph</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h %s&#34;</span> --graph
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># branch merge graph, history of commits with hashes and subjects</span></span></span></code></pre></div>
@@ -796,40 +928,39 @@ Some common git log options
 <li>
 <p>More options</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  -p, --stat, --shortstat, --name-only, --name-status, --abbrev-commit, --relative-date
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  - -p  --stat, --shortstat, --name-only, --name-status, --abbrev-commit, --relative-date
 </span></span><span style="display:flex;"><span>  --graph, --oneline, --pretty <span style="color:#f92672">(</span>oneline, short, full, fuller<span style="color:#f92672">)</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
-<p>Limiting log output</p>
-<ul>
-<li>
-<p>git log –since=2.weeks # date can follow the format: &#34;2008-01-15&#34; or &#34;2 years 1 day 3 minutes ago&#34;</p>
+<p>Limit log output by date</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log --since<span style="color:#f92672">=</span>2.weeks <span style="color:#75715e"># date can follow the format: &#34;2008-01-15&#34; or &#34;2 years 1 day 3 minutes ago&#34;</span></span></span></code></pre></div>
+</div>
 <ul>
 <li>An alternative time specification flag can be &#39;–until&#39;, &#39;–after&#39;</li>
-</ul>
-</li>
 <li>More granular matching available with &#39;–grep , –all-match&#39; and others like &#39;–author, –committer&#39;</li>
+<li>Git&#39;s pick axe (see what changes happened related to some string)</li>
 </ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log -S string</span></span></code></pre></div>
+</div>
 </li>
 <li>
-<p>Git pick axe (see what changes happened related to some string)</p>
-<ul>
-<li>git log -S string</li>
-</ul>
+<p>View only changes that affected some folder&#39;s files</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git log -- path/to/file</span></span></code></pre></div>
+</div>
 </li>
 <li>
-<p>Viewing only changes that affected some folder&#39;s files</p>
+<p>Sample complex logging command (there&#39;s notes on git command aliases down below if the length feels overwhelming).</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git log pretty=&#34;%h - %s&#34; --author=&#39;name&#39; --since=&#39;&#39; --before=&#39;&#39; --no-merges -- t/</span></span></code></pre></div>
+</div>
+</li>
+</ul>
 <ul>
-<li>git log – path/to/file</li>
-</ul>
-</li>
-<li>
-<p>Sample command</p>
-<ul>
-<li>git log pretty=&#34;%h - %s&#34; –author=&#39;name&#39; –since=&#39;&#39; –before=&#39;&#39; –no-merges – t/</li>
-</ul>
-</li>
+<li>More on git logging <a href="https://www.atlassian.com/git/tutorials/git-log">here</a>.</li>
 </ul>
 </li>
 </ul>
@@ -837,16 +968,16 @@ Some common git log options
 </div>
 </div>
 </div>
-<div id="outline-container-headline-30" class="outline-3">
-<h3 id="headline-30">
-Undoing things
+<div id="outline-container-headline-36" class="outline-3">
+<h3 id="headline-36">
+Undoing things in Git
 </h3>
-<div id="outline-text-headline-30" class="outline-text-3">
-<div id="outline-container-headline-31" class="outline-4">
-<h4 id="headline-31">
-Committing and forgetting something behind
+<div id="outline-text-headline-36" class="outline-text-3">
+<div id="outline-container-headline-37" class="outline-4">
+<h4 id="headline-37">
+When you commit but forget something behind
 </h4>
-<div id="outline-text-headline-31" class="outline-text-4">
+<div id="outline-text-headline-37" class="outline-text-4">
 <ul>
 <li>
 <p>git commit –ammed # takes staging area and uses that for replacing latest commit</p>
@@ -861,11 +992,11 @@ Committing and forgetting something behind
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-32" class="outline-4">
-<h4 id="headline-32">
-Unstaging staged file
+<div id="outline-container-headline-38" class="outline-4">
+<h4 id="headline-38">
+When wanting to unstage some file
 </h4>
-<div id="outline-text-headline-32" class="outline-text-4">
+<div id="outline-text-headline-38" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add *
 </span></span><span style="display:flex;"><span>  git status
@@ -873,140 +1004,169 @@ Unstaging staged file
 </div>
 </div>
 </div>
-<div id="outline-container-headline-33" class="outline-4">
-<h4 id="headline-33">
-Unmodifying modified files
+<div id="outline-container-headline-39" class="outline-4">
+<h4 id="headline-39">
+When &#39;unmodifying&#39; modified files.
 </h4>
-<div id="outline-text-headline-33" class="outline-text-4">
+<div id="outline-text-headline-39" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git checkout -- filename <span style="color:#75715e"># git restore filename</span>
 </span></span><span style="display:flex;"><span>  git status <span style="color:#75715e"># above command replaces filename from latest commit version or from the staging area</span></span></span></code></pre></div>
 </div>
+<ul>
+<li>More on the topic <a href="https://www.atlassian.com/git/tutorials/undoing-changes">Atlassian: Undoing changes</a>.</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-34" class="outline-3">
-<h3 id="headline-34">
+<div id="outline-container-headline-40" class="outline-3">
+<h3 id="headline-40">
 Working with remotes
 </h3>
-<div id="outline-text-headline-34" class="outline-text-3">
+<div id="outline-text-headline-40" class="outline-text-3">
+<dl>
+<dt>
+A git project remote
+</dt>
+<dd>
+<p>A wersion of a Git project stored at some uri than the local repo.</p>
 <ul>
-<li>
-<p>Version of project stored at some uri than the local repo</p>
-<ul>
-<li>could be off drive on the internet, on local drive, etc</li>
+<li>This does not necesarrily have to be a remote server off one&#39;s machine.</li>
+<li>It could be on some different location on the machine the project is hosted on. </li>
 </ul>
-</li>
-</ul>
-<div id="outline-container-headline-35" class="outline-4">
-<h4 id="headline-35">
+</dd>
+</dl>
+<div id="outline-container-headline-41" class="outline-4">
+<h4 id="headline-41">
 Showing remotes
 </h4>
-<div id="outline-text-headline-35" class="outline-text-4">
+<div id="outline-text-headline-41" class="outline-text-4">
 <ul>
 <li>
-<p>git remote</p>
-<ul>
-<li>Outputs name of any remotes if any</li>
-</ul>
+<p>Displaying remote names</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote</span></span></code></pre></div>
+</div>
 </li>
 <li>
-<p>git remote -v</p>
-<ul>
-<li>Outputs urls git has in store for usage when reading and writing to remote</li>
-</ul>
-</li>
-</ul>
+<p>Displaying each available remote&#39;s urls</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div>
 </div>
-</div>
-<div id="outline-container-headline-36" class="outline-4">
-<h4 id="headline-36">
-Adding new remotes
-</h4>
-<div id="outline-text-headline-36" class="outline-text-4">
-<ul>
-<li>git remote add &lt;shortname&gt; &lt;url&gt;</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-37" class="outline-4">
-<h4 id="headline-37">
-Getting all info on remotes that ain&#39;t  in local repo
-</h4>
-<div id="outline-text-headline-37" class="outline-text-4">
-<ul>
-<li>
-<p>git fetch remote</p>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-38" class="outline-4">
-<h4 id="headline-38">
-Pushing to upstream
-</h4>
-<div id="outline-text-headline-38" class="outline-text-4">
-<ul>
-<li>git push origin master # works only if pusher has write access, if branch to push does not
-exist on target remote, it will be created. </li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-39" class="outline-4">
-<h4 id="headline-39">
-Seeing more info about a remote
-</h4>
-<div id="outline-text-headline-39" class="outline-text-4">
-<ul>
-<li>git remote show &lt;remotename&gt; # ignore last param to get more detailed info on all remotes</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-40" class="outline-4">
-<h4 id="headline-40">
-Renaming and removing remotes
-</h4>
-<div id="outline-text-headline-40" class="outline-text-4">
-<ul>
-<li>git remote rename original new # Changes auto propagate across ** More clarification needed</li>
-<li>git remote remove paul # Deletes remote paul</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-41" class="outline-3">
-<h3 id="headline-41">
-Git tagging
-</h3>
-<div id="outline-text-headline-41" class="outline-text-3">
 <div id="outline-container-headline-42" class="outline-4">
 <h4 id="headline-42">
-Quick summary
+Adding new remotes
 </h4>
 <div id="outline-text-headline-42" class="outline-text-4">
-<ul>
-<li>
-<p>listing existing tags</p>
-<ul>
-<li>git tag</li>
-</ul>
-</li>
-<li>
-<p>listing tags matching some pattern</p>
-<ul>
-<li>git tag -l &#39;v1.8.5.*&#39; # -l or –list mandatory for wildcard tag search</li>
-</ul>
-</li>
-</ul>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote add &lt;shortname&gt; &lt;url&gt;</span></span></code></pre></div>
+</div>
 </div>
 </div>
 <div id="outline-container-headline-43" class="outline-4">
 <h4 id="headline-43">
-Tag creation
+Getting all info on remotes that ain&#39;t  in local repo
 </h4>
 <div id="outline-text-headline-43" class="outline-text-4">
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git fetch remote</span></span></code></pre></div>
+</div>
+<div id="outline-container-headline-44" class="outline-5">
+<h5 id="headline-44">
+On the fetch command.
+</h5>
+<div id="outline-text-headline-44" class="outline-text-5">
+<ul>
+<li>It pulls but does not merge downloaded data with local data. (More on merging in the next section)</li>
+<li>&#39;git pull&#39; on the other hand auto merges after downloading changes for a local
+branch set to track some on a remote repository.</li>
+<li>Git fetch  gives warning if the &#39;pull.rebase&#39; (automerge handle) is not configured (More on rebasing
+in later sections)</li>
+<li>This can be configured with :</li>
+</ul>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --global pull.rebase true <span style="color:#f92672">(</span>to auto merge on pull<span style="color:#f92672">)</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-45" class="outline-4">
+<h4 id="headline-45">
+Pushing changes to Upstream
+</h4>
+<div id="outline-text-headline-45" class="outline-text-4">
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push &lt;remote_name: often origin&gt; &lt;branch to push&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This  works only if pusher has write access on remote.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># if branch to push does not exist on target remote, it will be created.</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-46" class="outline-4">
+<h4 id="headline-46">
+Seeing more info about a remote
+</h4>
+<div id="outline-text-headline-46" class="outline-text-4">
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote show &lt;remotename&gt; <span style="color:#75715e"># ignore last param to get more detailed info on all remotes</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-47" class="outline-4">
+<h4 id="headline-47">
+Renaming and removing remotes
+</h4>
+<div id="outline-text-headline-47" class="outline-text-4">
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote rename original new <span style="color:#75715e"># Changes auto propagate across repos (local and others)</span>
+</span></span><span style="display:flex;"><span> git remote remove paul <span style="color:#75715e"># Deletes remote paul</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-48" class="outline-3">
+<h3 id="headline-48">
+Git tagging
+</h3>
+<div id="outline-text-headline-48" class="outline-text-3">
+<ul>
+<li>Tagging can and is used for version control.</li>
+<li>Other than mark where some version starts with the commit hash (which is humanly unreadable, Git provides
+the means for a human readable means for versioning).</li>
+</ul>
+<div id="outline-container-headline-49" class="outline-4">
+<h4 id="headline-49">
+A quick summary on tagging
+</h4>
+<div id="outline-text-headline-49" class="outline-text-4">
+<ul>
+<li>
+<p>listing existing tags</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag</span></span></code></pre></div>
+</div>
+</li>
+<li>
+<p>listing tags matching some pattern</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag -l &#39;v1.8.5.*&#39; # -l or --list mandatory for wildcard tag search</span></span></code></pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-50" class="outline-4">
+<h4 id="headline-50">
+Tag creation
+</h4>
+<div id="outline-text-headline-50" class="outline-text-4">
 <ul>
 <li>
 <p>Tag types and their properties</p>
@@ -1022,10 +1182,10 @@ Tag creation
 <li>
 <p>Annotated tags</p>
 <ul>
-<li>Stored as full objects in git db.</li>
+<li>Stored as full objects in the  git db (more about this in the git internals section).</li>
 <li>They are checksummed.</li>
 <li>
-<p>Components</p>
+<p>Components of a git tag:</p>
 <ul>
 <li>tagger name, email, date</li>
 <li>tagging message</li>
@@ -1063,6 +1223,11 @@ Tag creation
 <ul>
 <li>
 <p><strong>Tagging by commit hash</strong></p>
+<ul>
+<li>Tagging is usually done while some version is being released.</li>
+<li>However, if one remembers to tag a version after they are way passed the commit that marked
+the version&#39;s end, the commit&#39;s hash can be used.</li>
+</ul>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
 </span></span><span style="display:flex;"><span>  git tag -a v1.2 shorthashfromprevcommand</span></span></code></pre></div>
@@ -1073,28 +1238,30 @@ Tag creation
 <li>
 <p><strong>Tag sharing</strong></p>
 <ul>
-<li>Need explicit sharing means (aint shared along with objects in git push)</li>
-<li>Syntax: git push origin &lt;tagname&gt;</li>
+<li>Git defines explicit means for sharing tags. (aint shared along with objects in git push)</li>
+<li>Syntax: `git push origin &lt;tagname&gt;`</li>
 <li>
-<p>Pushing multiple</p>
-<ul>
-<li>git push origin –tags</li>
-</ul>
+<p>Pushing multiple tags</p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin --tags</span></span></code></pre></div>
+</div>
 </li>
 <li>
 <p>Pushing ony annotated tags</p>
-<ul>
-<li>git push &lt;remote&gt; –follow-tags</li>
-</ul>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git push &lt;remote&gt; --follow-tags</span></span></code></pre></div>
+</div>
 </li>
 </ul>
 </li>
 <li>
 <p><strong>Tag deletion</strong></p>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git tag -d v1.4-lw # not removed from remote</span></span></code></pre></div>
+</div>
 <ul>
-<li>git tag -d v1.4-lw # not removed from remote</li>
 <li>
-<p>deleting from remote in 2 methods</p>
+<p>Deleting from remote can be done in 2 ways</p>
 <ol>
 <li>git push origin :refs/tags/v1.4-lw</li>
 <li>git push origin –delete &lt;tagname&gt;</li>
@@ -1106,33 +1273,32 @@ Tag creation
 <p><strong>Tag checkout</strong></p>
 <ul>
 <li>
-<p>git checkout &lt;tagname&gt; # puts one in detached state (not on any branch)</p>
+<p>git checkout &lt;tagname&gt; # puts one in detached state (A state in which they are not on any branch)</p>
 <ul>
-<li>
-<p>Any changes made and committed wont go no where</p>
-<ul>
-<li>will only be reachable by the exact commit hash</li>
+<li>Any changes made and committed wont go no where</li>
+<li>Changes made here will only be reachable by the exact commit hash for the change</li>
+<li>A solution to that is naming a branch during checkout.</li>
+</ul>
+<div class="src src-text">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git checkout -b version_name v2.0.2
+</span></span><span style="display:flex;"><span># creates branch called version_name , placed at commit pointed to by v2.0.2</span></span></code></pre></div>
+</div>
+</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p>git checkout -b version_name v2.0.2</p>
-</li>
-</ul>
-</li>
+<li>More details on tagging right <a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag">here</a>.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-44" class="outline-3">
-<h3 id="headline-44">
+<div id="outline-container-headline-51" class="outline-3">
+<h3 id="headline-51">
 Git aliases
 </h3>
-<div id="outline-text-headline-44" class="outline-text-3">
+<div id="outline-text-headline-51" class="outline-text-3">
 <ul>
-<li>A means to shorten commonly used but painstakingly long git commands</li>
+<li>Git aliasing is a  means to shorten commonly used but painstakingly long git commands</li>
 </ul>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global alias.co checkout
@@ -1157,19 +1323,19 @@ Git aliases
 </div>
 </div>
 </div>
-<div id="outline-container-headline-45" class="outline-3">
-<h3 id="headline-45">
+<div id="outline-container-headline-52" class="outline-3">
+<h3 id="headline-52">
 Git branching
 </h3>
-<div id="outline-text-headline-45" class="outline-text-3">
-<div id="outline-container-headline-46" class="outline-4">
-<h4 id="headline-46">
+<div id="outline-text-headline-52" class="outline-text-3">
+<div id="outline-container-headline-53" class="outline-4">
+<h4 id="headline-53">
 What happens on branch creation?
 </h4>
-<div id="outline-text-headline-46" class="outline-text-4">
+<div id="outline-text-headline-53" class="outline-text-4">
 <ul>
 <li>
-<p>A new pointer in .git/refs/heads is created. Points to current commit.</p>
+<p>A new pointer in .git/refs/heads is created. It points to current the commit.</p>
 <div class="src src-sh">
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch branchname</span></span></code></pre></div>
 </div>
@@ -1218,24 +1384,37 @@ commit tht happened on that branch.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-47" class="outline-4">
-<h4 id="headline-47">
+<div id="outline-container-headline-54" class="outline-4">
+<h4 id="headline-54">
 Merging and deleting branches
 </h4>
-<div id="outline-text-headline-47" class="outline-text-4">
+<div id="outline-text-headline-54" class="outline-text-4">
+<div id="outline-container-headline-55" class="outline-5">
+<h5 id="headline-55">
+A brief intro
+</h5>
+<div id="outline-text-headline-55" class="outline-text-5">
 <ul>
+<li>Merging is aligning one branch&#39;s current state with another branch&#39;s so they are both on the same page.</li>
 <li>
-<p>Merging is with the git merge command</p>
-<p>git merge branch_whose_changes_to_pull_in</p>
+<p>Merging in Git is done with the git merge command.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># in branch to receive merge</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> git merge branch_whose_changes_to_pull_in</span></span></code></pre></div>
+</div>
 </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-56" class="outline-5">
+<h5 id="headline-56">
+Merge types
+</h5>
+<div id="outline-text-headline-56" class="outline-text-5">
+<ul>
 <li>A fast forward merge means the two merged branches had a common latest
 commit. There was no divergent work.</li>
-<li>
-<p>Deleting branches</p>
-<ul>
-<li>git branch -d hotfix</li>
-</ul>
-</li>
 <li>
 <p>The divergent merge (merge by recursive strategy)</p>
 <ul>
@@ -1245,12 +1424,16 @@ commit. There was no divergent work.</li>
 <li>A merge commit is created (new common tip)</li>
 </ul>
 </li>
-<li>
-<p>Merge conflicts</p>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-57" class="outline-5">
+<h5 id="headline-57">
+Merge conflicts
+</h5>
+<div id="outline-text-headline-57" class="outline-text-5">
 <ul>
 <li>Changing some part of the same file on two different branches then requesting</li>
-</ul>
-</li>
 </ul>
 <p>a merge.</p>
 <ul>
@@ -1305,11 +1488,13 @@ commit. There was no divergent work.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-48" class="outline-4">
-<h4 id="headline-48">
+</div>
+</div>
+<div id="outline-container-headline-58" class="outline-4">
+<h4 id="headline-58">
 Branching workflows
 </h4>
-<div id="outline-text-headline-48" class="outline-text-4">
+<div id="outline-text-headline-58" class="outline-text-4">
 <ul>
 <li>
 <p><strong>Long running branches</strong></p>
@@ -1433,11 +1618,11 @@ We have two masters then.</p>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-49" class="outline-4">
-<h4 id="headline-49">
+<div id="outline-container-headline-59" class="outline-4">
+<h4 id="headline-59">
 Pushing branches
 </h4>
-<div id="outline-text-headline-49" class="outline-text-4">
+<div id="outline-text-headline-59" class="outline-text-4">
 <ul>
 <li>
 <p>Pushing local branch to remote (assuming there&#39;s a remote version already)</p>
@@ -1467,11 +1652,11 @@ to the branch checked out of it.)</p>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-50" class="outline-4">
-<h4 id="headline-50">
+<div id="outline-container-headline-60" class="outline-4">
+<h4 id="headline-60">
 Tracking branches
 </h4>
-<div id="outline-text-headline-50" class="outline-text-4">
+<div id="outline-text-headline-60" class="outline-text-4">
 <ul>
 <li>
 <p>Local branches in direct relation to remote branch.</p>
@@ -1515,16 +1700,16 @@ git push remotename –delete branchname</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-51" class="outline-3">
-<h3 id="headline-51">
+<div id="outline-container-headline-61" class="outline-3">
+<h3 id="headline-61">
 Git Rebasing
 </h3>
-<div id="outline-text-headline-51" class="outline-text-3">
-<div id="outline-container-headline-52" class="outline-4">
-<h4 id="headline-52">
+<div id="outline-text-headline-61" class="outline-text-3">
+<div id="outline-container-headline-62" class="outline-4">
+<h4 id="headline-62">
 A brief summary on rebasing
 </h4>
-<div id="outline-text-headline-52" class="outline-text-4">
+<div id="outline-text-headline-62" class="outline-text-4">
 <ul>
 <li>It is  alternative to  the `git merge` command.</li>
 <li>Rebasing is taking all changes that happened in one branch and replaying them on top of another
@@ -1544,11 +1729,11 @@ appear as if you&#39;d created your branch from a different commit.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-53" class="outline-4">
-<h4 id="headline-53">
+<div id="outline-container-headline-63" class="outline-4">
+<h4 id="headline-63">
 A textual example for git rebasing
 </h4>
-<div id="outline-text-headline-53" class="outline-text-4">
+<div id="outline-text-headline-63" class="outline-text-4">
 <ul>
 <li>With three branches, two sharing histories, in need of one of the two to rebase onto third</li>
 <li>
@@ -1568,11 +1753,11 @@ know what a fast forward merge is).</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-54" class="outline-4">
-<h4 id="headline-54">
+<div id="outline-container-headline-64" class="outline-4">
+<h4 id="headline-64">
 Some guidlines  when rebasing.
 </h4>
-<div id="outline-text-headline-54" class="outline-text-4">
+<div id="outline-text-headline-64" class="outline-text-4">
 <ul>
 <li>Do not rebase commits that exist outside your repo and that people may have based
 on your work.</li>
@@ -1604,273 +1789,15 @@ Git</p>
 </ul>
 </div>
 </div>
-<div id="outline-container-headline-55" class="outline-4">
-<h4 id="headline-55">
+<div id="outline-container-headline-65" class="outline-4">
+<h4 id="headline-65">
 Git Merge vs Git Rebase
 </h4>
-<div id="outline-text-headline-55" class="outline-text-4">
+<div id="outline-text-headline-65" class="outline-text-4">
 <ul>
 <li>Merging shows a truer history for a project&#39;s evolution.</li>
 <li>Rebasing provides means for having a cleaner git history.</li>
 <li>Never rebase anything you have pushed somewhere.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-56" class="outline-3">
-<h3 id="headline-56">
-Git on the server
-</h3>
-<div id="outline-text-headline-56" class="outline-text-3">
-<ul>
-<li>So collaborators can access project data when you are offline.</li>
-<li>
-<p><strong>Choices to be made when running a server</strong></p>
-<ul>
-<li>What protocols to use</li>
-<li>Choosing between self hosting and using a managed server</li>
-</ul>
-</li>
-<li>A bare repo :: A git repo with no working directory. It contains the same as is in the `.git` dir.</li>
-</ul>
-<div id="outline-container-headline-57" class="outline-4">
-<h4 id="headline-57">
-The Four Git protocols
-</h4>
-<div id="outline-text-headline-57" class="outline-text-4">
-<ul>
-<li>Local</li>
-<li>HTTP</li>
-<li>SSH (Secure Shell)</li>
-<li>Git</li>
-<li>
-<p><strong>The Local Protocol</strong></p>
-<ul>
-<li>Most basic.</li>
-<li>Remote repo is on the same host at a different dir location.</li>
-<li>Used in availability of shared FS, say NFS mounts. (or same PC wc is problematic)</li>
-<li>
-<p>File paths are used as urls for cloning repos</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git clone /srv/git/project.git <span style="color:#75715e"># git does an actual file copy or use hardlinks for access</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># OR </span>
-</span></span><span style="display:flex;"><span>  git clone file:///srv/git/project.git <span style="color:#75715e"># git fires up its network tools for this (not efficient)</span></span></span></code></pre></div>
-</div>
-</li>
-<li>
-<p>Adding local repo to existing git project</p>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git remote add local_proj /srv/git/project.git</span></span></code></pre></div>
-</div>
-</li>
-<li>
-<p><strong>Pros</strong></p>
-<ul>
-<li>Simple, use existing file perms and network access.</li>
-<li>
-<p>Easy setup if shared FS already available.</p>
-<ul>
-<li>Simply a shared folder in shared NFS</li>
-</ul>
-</li>
-<li>
-<p>Getting another users work can be as simple as `git pull /home/john/project`.</p>
-<ul>
-<li>This skips the network overhead of john pushing to server then you pulling from server.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Cons</strong></p>
-<ul>
-<li>Difficult initial setup</li>
-<li>Difficulty to setup multiple location access than network access based Git.</li>
-<li>Repos on NFS are slower than repos over SSH on the same server.</li>
-<li>No protection of repo against accidental damage</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>HTTP Protocols</strong></p>
-<ul>
-<li>Simple read only version availale before v 1.6.6</li>
-<li>SSH like version introduced with 1.6.6 plus (Aka Smart HTTP Protocol)</li>
-<li>
-<p><strong>Smart HTTP</strong></p>
-<ul>
-<li>Similar to SSH or Git protocol but over HTTPs ports</li>
-<li>Can use various HTTP auth mechanisms.</li>
-<li>
-<p>Easier on user than SSH for previous line (username/pass) style logins are norm.</p>
-<ul>
-<li>No need to deal with SSH keys.</li>
-</ul>
-</li>
-<li>Can be setup to serve anonymously like `git://`</li>
-<li>
-<p>A single url can be used for many purposes</p>
-<ul>
-<li>viewing repo, cloning repo, pushing to repo, authenticating into repo</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Dumb HTTP</strong></p>
-<ul>
-<li>Client default when git server does not respond with Git HTTP smart service.</li>
-<li>Expects bare repo to be served like normal files from web server.</li>
-<li>
-<p>Simple to setup</p>
-<ul>
-<li>Put bare repo in HTTP document root.</li>
-<li>Setup post-update hook.</li>
-<li>DONE</li>
-</ul>
-</li>
-</ul>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  cd /var/www/htdocs/
-</span></span><span style="display:flex;"><span>  git clone --bare /path/to/git_project gitproject.git
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># could as well use git init --bare</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># cp -Rf my_project/.git gitproject.git</span>
-</span></span><span style="display:flex;"><span>  cd gitproject.git
-</span></span><span style="display:flex;"><span>  mv hooks/post-update.sample hooks/post-update
-</span></span><span style="display:flex;"><span>  chmod a+x hooks/post-update <span style="color:#75715e"># all have execute perms</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># post update hook runs command: git update-server-info</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># its run when the server receives a push , or when it does a clone</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># git clone https://example.com/gitproject.git</span></span></span></code></pre></div>
-</div>
-</li>
-<li>
-<p>2 options</p>
-<ul>
-<li>Read/write Smart http server</li>
-<li>Read only access for the dumb server</li>
-<li>
-<p><strong>Pros (Smart HTTP)</strong></p>
-<ul>
-<li>
-<p>Simplicity:</p>
-<ul>
-<li>One url for all actions.</li>
-<li>Username/password based auth</li>
-</ul>
-</li>
-<li>Readonly limiting allowed</li>
-<li>Clients can be set to use specific signed SSL certs.</li>
-</ul>
-</li>
-<li>
-<p><strong>The cons</strong></p>
-<ul>
-<li>Setup trickier than SSH for server side.</li>
-<li>No other significant advantage others have beyond this.</li>
-<li>TO GET over auth hurdles for http</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Credential caching tools: Keychain (macOS), Cred Mger (Windows)</li>
-</ul>
-</li>
-<li>
-<p><strong>The SSH Protocol</strong></p>
-<ul>
-<li>Convenient for the ubiquitous nature of ssh on servers.</li>
-<li>Includes secure authentication baked in.</li>
-</ul>
-<div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git clone ssh://<span style="color:#f92672">[</span>user@<span style="color:#f92672">]</span>server/project.git
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#OR</span>
-</span></span><span style="display:flex;"><span>  git clone <span style="color:#f92672">[</span>user@<span style="color:#f92672">]</span>server:project.git <span style="color:#75715e"># default username is current one</span></span></span></code></pre></div>
-</div>
-<ul>
-<li>
-<p><strong>Pros</strong></p>
-<ul>
-<li>Easy setup</li>
-<li>Security (Auth and Encryption)</li>
-<li>Efficient in its data compaction actions</li>
-</ul>
-</li>
-<li>
-<p><strong>Cons</strong></p>
-<ul>
-<li>
-<p>No anonymous users allowed in.</p>
-<ul>
-<li>Even readonly access requires ssh perms</li>
-</ul>
-</li>
-<li>
-<p>With readonly files to provide, 2 protocols must be setup</p>
-<ul>
-<li>One for read access , other for read only accesss.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>The Git Protocol</strong></p>
-<ul>
-<li>Special daemon comes prepacked with Git.</li>
-<li>
-<p>Listens on port 9418, provides ssh like service.</p>
-<ul>
-<li>No auth or cryptography</li>
-</ul>
-</li>
-<li>
-<p>Usage needs creation of `git-daemon-export-ok` file.</p>
-<ul>
-<li>Daemon won&#39;t serve a repo without this file.</li>
-</ul>
-</li>
-<li>
-<p>No pushing over this protocol.</p>
-<ul>
-<li>For security reasons, as if enabled, anyone would be
-able to push.</li>
-</ul>
-</li>
-<li>All allowed to pull.</li>
-<li>
-<p><strong>Pros</strong></p>
-<ul>
-<li>Fastest network transfer protocol for git.</li>
-<li>
-<p>Best for serving large files that require no auth and encryption.</p>
-<ul>
-<li>SSH without auth and encryption is what it is.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Cons</strong></p>
-<ul>
-<li>
-<p>Cloning over git can lead to arbitrary code execution vulns,
-its not recommended.</p>
-<ul>
-<li>Data trasnferred can be polluted at router level.</li>
-<li>Same vuln applies to cloning http:// repos.</li>
-<li>SSh would only be susceptible to this attack if you accept wrong</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>ssh key fingerprint.</p>
-</li>
 </ul>
 </div>
 </div>
