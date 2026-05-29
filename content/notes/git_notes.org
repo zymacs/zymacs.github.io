@@ -1,5 +1,6 @@
 ---
 title: GIT
+thumbnail: 'img/git_icon.png'
 ---
 
 The following is a collection of notes I took from reading the book on Git, [[https://git-scm.com/book/en/v2][Progit]].
