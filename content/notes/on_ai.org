@@ -1,0 +1,60 @@
+---
+thumbnail: 'img/ai.png'
+title: Thoughts on Control in the Age of AI
+draft: true
+tags:
+ - essays
+---
+
+I have a lot of personal opinion on AI. Most of it shaped around my experience using LLMS. I
+think AI is not LLMs. I think the conflation of the term AI and LLMs is non trivial. But that's
+just one of the points about which I'd like to keep notes in this document. Other areas include
+how thoughts on if we need LLMs, how to outsource to humble tools what is said to be
+only accomplishable with LLMs. How to stay as in control as someone using a CLI when using tools
+that are LLM like, opinions on why LLMs are sold as they are and anything I find of interest in relation to this
+topic.
+
+** Definitions
+- What is AI
+
+
+- What is an LLM
+
+
+**  LLMs are AI. AI is not LLMs. On the importance of the difference
+Sure if you ask most today about AI, the first thought that'll come to mind is ChatGPT. And that ain't 
+just non-technical folk for whom it would be understandable. They most likely only got to interface
+with AI on the advent of LLMs. This applies to a lot of technical people too. I conflate the terms
+very often as well personally. 
+
+*** From the CLI to the GUI to LLMs
+
+** Current usecases
+*** Opinion validation via chat
+I don't like that I do but right now it seems it could as well be classified as an addiction I have. 
+
+*** Finding human sites corroborating some opinion
+They do it so simply. I am looking into means to get the same effect built directly into my search engine.
+
+
+*** Understanding how llm's work
+A lot of times I ask LLMs , for the services I get from them, how they are able to arrive at the solution.
+I do this so to know what I need to build to slowly move towards 0 LLM usage. 
+
+
+
+** Future sections
+- Should it be regulation or avoidance?
+- On the importance of curating sources
+  - Everything is fake... until proven not. A reputable pre-ai source is a good remedy
+- Why learn awk, sed, grep, jq?
+- Is freedom from LLMs only for the technical?
+- Why learn google dorks?
+- Gale's effect: Critical thinking about info regards a field in which one is a profession Vs relative reluctance
+to mind if info is correct otherwise.
+- Are LLMs being made worse for the money (increase how much time it takes to get to the elusive perfect answer)
+- AI and the death of the apprentice
+- The death of the craftsman
+- What about image generation and AI podcasts?
+- Its bigger , its better, its more advanced.. but aren't you already doing fine?
+  - On defining enough
