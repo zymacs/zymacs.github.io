@@ -15,12 +15,5 @@
       <guid>//localhost:1313/notes/git_notes/</guid>
       <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. &lt;em&gt;(I got enough of the book to use Git with reasonable ease and have for long not updated the page)&lt;/em&gt;.&#xA;I am still sure it can be a good starting point or reference for most of the basics and more.&#xA;I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter&#xA;of the book Progit. I haven&amp;#39;t added notes for it yet but it sure is an interesting read. It&amp;#39;s on&#xA;git internals and how the core commands work on the inside. &lt;em&gt;(The &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain&#34;&gt;plumbing commands&lt;/a&gt; that is)&lt;/em&gt;. &lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Thoughts on Control in the Age of AI</title>
-      <link>//localhost:1313/notes/on_ai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/notes/on_ai/</guid>
-      <description>&lt;p&gt;&#xA;I have a lot of personal opinion on AI. Most of it shaped around my experience using LLMS. I&#xA;think AI is not LLMs. I think the conflation of the term AI and LLMs is non trivial. But that&amp;#39;s&#xA;just one of the points about which I&amp;#39;d like to keep notes in this document. Other areas include&#xA;how thoughts on if we need LLMs, how to outsource to humble tools what is said to be&#xA;only accomplishable with LLMs. How to stay as in control as someone using a CLI when using tools&#xA;that are LLM like, opinions on why LLMs are sold as they are and anything I find of interest in relation to this&#xA;topic.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

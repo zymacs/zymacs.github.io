@@ -1,6 +1,7 @@
 ---
 thumbnail: 'img/ai.png'
 title: Thoughts on Control in the Age of AI
+draft: true
 tags:
  - essays
 ---
