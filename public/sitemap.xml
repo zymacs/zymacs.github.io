@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/</loc>
+    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/search_engines/</loc>
+    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/unix_core_utils/</loc>
+    <lastmod>2026-05-30T14:31:57+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/bdated/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
@@ -9,9 +21,6 @@
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/digital_garden/</loc>
-    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-006/</loc>
@@ -215,18 +224,20 @@
   </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/essays/</loc>
+  </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
-    <loc>//localhost:1313/notes/</loc>
-  </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/notes/on_ai/</loc>
   </url>
 </urlset>

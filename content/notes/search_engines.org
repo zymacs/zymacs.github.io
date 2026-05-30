@@ -1,0 +1,37 @@
+---
+title: "Search engines"
+date: 2026-05-30T15:26:50+03:00
+draft: true
+---
+
+* Prerequisite knowledge
+
+** Storage structure
+- 512 bytes of memory a block
+- Disks and sectors
+- Seeking and sp
+
+
+
+** Algorithms
+
+*** Binary search
+
+*** M-way search
+
+
+** B+ trees
+
+
+
+
+** On B+ Trees
+
+
+** M-way Search Trees
+
+** On Indexing
+
+
+** On Semantic Search
+

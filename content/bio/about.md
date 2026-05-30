@@ -28,6 +28,6 @@ To talk about anything related to what I post on here or whatever else, please d
 - Research
 - Living Notes
 - Cheatsheets
-- CV
+- [CV](/bio/cv/)
 
 
