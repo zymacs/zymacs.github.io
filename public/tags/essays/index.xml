@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on Zymacs</title>
+    <link>//localhost:1313/tags/essays/</link>
+    <description>Recent content in Essays on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Control in the Age of AI</title>
+      <link>//localhost:1313/notes/on_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/notes/on_ai/</guid>
+      <description>&lt;p&gt;&#xA;I have a lot of personal opinion on AI. Most of it shaped around my experience using LLMS. I&#xA;think AI is not LLMs. I think the conflation of the term AI and LLMs is non trivial. But that&amp;#39;s&#xA;just one of the points about which I&amp;#39;d like to keep notes in this document. Other areas include&#xA;how thoughts on if we need LLMs, how to outsource to humble tools what is said to be&#xA;only accomplishable with LLMs. How to stay as in control as someone using a CLI when using tools&#xA;that are LLM like, opinions on why LLMs are sold as they are and anything I find of interest in relation to this&#xA;topic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
