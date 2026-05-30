@@ -8,12 +8,6 @@
     <loc>//localhost:1313/notes/</loc>
     <lastmod>2026-05-30T15:26:50+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/notes/search_engines/</loc>
-    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/notes/unix_core_utils/</loc>
-    <lastmod>2026-05-30T14:31:57+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/bdated/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
@@ -222,9 +216,9 @@
   </url><url>
     <loc>//localhost:1313/rants/on_user_trust_and_design/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/</loc>
+    <loc>//localhost:1313/bio/cv/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/essays/</loc>
+    <loc>//localhost:1313/docs/</loc>
   </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
@@ -237,7 +231,5 @@
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
-  </url><url>
-    <loc>//localhost:1313/notes/on_ai/</loc>
   </url>
 </urlset>
