@@ -215,6 +215,8 @@
   </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/essays/</loc>
+  </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
@@ -228,5 +230,7 @@
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/notes/on_ai/</loc>
   </url>
 </urlset>
