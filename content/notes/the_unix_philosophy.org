@@ -1,0 +1,6 @@
+---
+title: "The_unix_philosophy"
+date: 2026-05-30T14:22:25+03:00
+draft: true
+---
+
