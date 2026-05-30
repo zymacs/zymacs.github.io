@@ -1,0 +1,6 @@
+---
+title: "Shell_scripting"
+date: 2026-05-30T15:20:47+03:00
+draft: true
+---
+

@@ -1,6 +1,75 @@
 ---
 title: "Unix_core_utils"
 date: 2026-05-30T14:31:57+03:00
-draft: true
+draft: false
 ---
 
+
+An attempt at creating a reference for all the linux utils I use the most (plus more commands)
+Type control-f and you will probably get a hit. 
+
+
+
+* User management
+
+
+
+* Output filtering utils
+- jq
+- pr
+
+
+* Time mgt
+- datectl
+- mdate
+
+
+
+* File mgt
+** File creation and modification
+- touch
+- mdate
+- mktemp 
+  - for creating temporary files
+
+* Search utils
+
+** Finding files
+- find
+- fzf
+- finder
+
+
+** Listing files
+*** ls
+- Showing it all
+- Hiding some files
+
+** Finding text
+- grep
+- awk
+
+
+* Networking utils
+- nmcli
+
+
+* Others (not yet classified)
+- ps
+- alias
+- printf
+- calendar
+- dd
+- wc
+- sort
+- sha commands
+- compression utils: tar, xz
+
+
+* links to other pages
+- debugging utils
+  - gdb debugger
+- network management utils
+  - wireshark
+  - tshark
+  - firewall mgt utils
