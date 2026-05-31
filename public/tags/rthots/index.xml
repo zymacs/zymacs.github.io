@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rthots on Zymacs</title>
+    <link>//localhost:1313/tags/rthots/</link>
+    <description>Recent content in Rthots on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/rthots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A hash function for meaning?</title>
+      <link>//localhost:1313/rthots/idea_hash/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rthots/idea_hash/</guid>
+      <description>&lt;p&gt;&#xA;If you have been writing code for a while then I am sure you &#xA;are familiar with this common developer experience: Startup on some project&#xA;with all loads of excitement then…. forget it exists quarter way before&#xA;you are there (if you have any defined progression anyway), just &#xA;so to jump onto the then more exciting project.. or.. move on to sth else.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I personally had to clean out a folder of many such half complete projects last week.  &#xA;But one thing I noted, and I am sure with this you too are familiar.. there were,&#xA;multiple instances of the same idea for a good number of the project folders. &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

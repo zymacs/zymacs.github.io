@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WeeklySeries on Zymacs</title>
+    <link>//localhost:1313/categories/weeklyseries/</link>
+    <description>Recent content in WeeklySeries on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2026 22:49:48 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/weeklyseries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week in Code E006</title>
+      <link>//localhost:1313/post/last-week-in-code-006/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-006/</guid>
+      <description>&lt;p&gt;&#xA;  Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I&#xA;  sunk into setting up mediawiki. I did some interview prep type questions also and I uploaded some of the solutions. But that wasn&amp;#39;t as serious as the archival tasks.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  I am preparing to change locations. I am not so sure about my new location&amp;#39;s internet efficiency or its affordability.&#xA;  So I think I will so much need to have   local access to critical information sources. As usual, the whole process and other small tasks I did&#xA;  taught me certain things I&amp;#39;d like to record right here, for sharing and future reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code E005</title>
+      <link>//localhost:1313/post/last-week-in-code-005/</link>
+      <pubDate>Mon, 18 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-005/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s LWIC E005! Cool. So I was AFK for a huge proportion of last week.&#xA;But for the later half of it (which was Thursday up until Sunday), I spent&#xA;most of my time reading and making notes with not so much programming. And as usual, there is always experiences to share. Not so much though since I only had half a week.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-elevated-confidence-from-documenting-understanding&#34;&gt;The Elevated Confidence From Documenting Understanding&lt;/h3&gt;&#xA;&lt;p&gt;I eventually got to write an article on &lt;a href=&#34;//localhost:1313/post/bayes_theorem/&#34;&gt;Baye&amp;rsquo;s theorem&lt;/a&gt;. It was a simple one as, that was my aim: to make a seemingly hard to understand topic simple. Most of the lessons from this task, I mentioned in last week&amp;rsquo;s update. But I think there&amp;rsquo;s parts of the experience that I hadn&amp;rsquo;t felt fully yet. I&amp;rsquo;ll share what I learnt from those.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code E004</title>
+      <link>//localhost:1313/post/last-week-in-code-004/</link>
+      <pubDate>Mon, 11 May 2026 17:41:08 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-004/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code 003</title>
+      <link>//localhost:1313/post/last-week-in-code-03/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-03/</guid>
+      <description>&lt;p&gt;I like self hosting but have not yet gotten a hosting service to stick to so I have to go through the whole reinstall process every time I switch operating systems.&#xA;Yes, I run my apps on my PC.&#xA;So I spent most of the past week setting up some applications. I set up &lt;a href=&#34;https://www.navidrome.org/&#34;&gt;Navidrome&lt;/a&gt; for my music server, &lt;a href=&#34;https://www.firefly-iii.org/&#34;&gt;Firefly III&lt;/a&gt; for financial management and &lt;a href=&#34;https://jellyfin.org/&#34;&gt;Jellyfin&lt;/a&gt; for managing&#xA;my movies and tv shows collection. I also played around some with &lt;a href=&#34;https://github.com/snapcast/snapcast&#34;&gt;Snapcast&lt;/a&gt; but then learnt how much I&amp;rsquo;d have to read before I&amp;rsquo;d be able to use it like a craftsman. So I dropped it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E002</title>
+      <link>//localhost:1313/post/last-week-in-code-02/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-02/</guid>
+      <description>&lt;p&gt;Last week I decided I&amp;rsquo;d be going on an &lt;a href=&#34;https://zymacs.github.io/post/five-days-no-ai/&#34;&gt;AI fast&lt;/a&gt;. Listed what services&#xA;AI was providing me with then tried to get alt providers.&#xA;For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I&#xA;chose to use that time for a better addiction. An addiction to reading tech blogs. I&amp;rsquo;ve heard about &lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; before&#xA;but I&amp;rsquo;d never read much from the website. Well I discovered its way more than I thought. Which wasn&amp;rsquo;t much really. But that changed this week.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E001</title>
+      <link>//localhost:1313/post/last-week-in-code-01/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-01/</guid>
+      <description>&lt;p&gt;I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building. You know how that is.&#xA;So I was like, how about I create something here that&amp;rsquo;ll be an outlet for that? So I did.&#xA;Like many things I&amp;rsquo;ve started, I can&amp;rsquo;t be sure this will last. But I won&amp;rsquo;t try to preemptively kill it either. May the Force be with it.&#xA;This week, I&amp;rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

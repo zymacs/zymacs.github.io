@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quotes and Excerpts on Zymacs</title>
+    <link>//localhost:1313/quotes_and_excerpts/</link>
+    <description>Recent content in Quotes and Excerpts on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/quotes_and_excerpts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/engineer_creativity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/engineer_creativity/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;The cost of software&#xA;maintenance increases with the square of&#xA;the programmer’s creativity.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&amp;ndash; &lt;em&gt;&lt;strong&gt;Robert D Bliss&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/self_supporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/self_supporting/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;From the Unix Philosophy Page&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;.. When your tools shape your work, you feel friction instantly and you fix it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;.. Constraint is not a hardship. It is a design instrument.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;.. Iteration is the real productivity engine. When you can change something and&#xA;see the result quickly, you learn what works.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Keep the system small enough to understand.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Let programs stay replaceable. The future you can&amp;#39;t predict arrives anyway. Parts&#xA;that can be swapped out survice change.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/what_the_hell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next bad one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

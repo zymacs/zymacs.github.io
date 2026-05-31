@@ -1,0 +1,6 @@
+---
+title: "Operating_systems"
+date: 2026-05-31T10:28:48+03:00
+draft: true
+---
+
