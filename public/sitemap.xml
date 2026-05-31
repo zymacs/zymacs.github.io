@@ -2,11 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
+    <loc>//localhost:1313/rthots/idea_hash/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/notes/</loc>
-    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/rthots/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/rthots/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/bdated/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
@@ -24,9 +33,6 @@
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/weeklyseries/</loc>
@@ -220,6 +226,8 @@
   </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/essays/</loc>
+  </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
     <loc>//localhost:1313/post/installing-arch/</loc>
@@ -230,12 +238,14 @@
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
+    <loc>//localhost:1313/notes/</loc>
+  </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
   </url><url>
-    <loc>//localhost:1313/rthots/</loc>
-  </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/rthot/</loc>
   </url>
 </urlset>
