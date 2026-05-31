@@ -50,5 +50,12 @@
       <guid>//localhost:1313/post/last-week-in-code-01/</guid>
       <description>&lt;p&gt;I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building. You know how that is.&#xA;So I was like, how about I create something here that&amp;rsquo;ll be an outlet for that? So I did.&#xA;Like many things I&amp;rsquo;ve started, I can&amp;rsquo;t be sure this will last. But I won&amp;rsquo;t try to preemptively kill it either. May the Force be with it.&#xA;This week, I&amp;rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Last Week In Code 007</title>
+      <link>//localhost:1313/post/last-week-in-code-007/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-007/</guid>
+      <description>&lt;p&gt;&#xA;E007… Yaay. That&amp;#39;s 7 weeks old. Frikin 49 days.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;There&amp;#39;s a joy in watching sth grow as you nature it from one line idea to project.&#xA;Seen that happen in a whole lot of projects I&amp;#39;ve taken on. (Hard to stick to projects but its been a consistent&#xA;feeling for those I&amp;#39;ve stuck with). Recently took time off to build an app I have had in my projects folder for &#xA;ages (under different names). Built teh complete version.. felt overwhelmed.. then built a real simple does&#xA;one thing version.. and added onto that to graduallly have what I have now.  (getting kinda the same feeling with &#xA;this site, with compouding knowlege… more on that in a bit)&#xA;Have heard of the unix philosophy and its one of those things I am reading about now. Its rather been hard&#xA;to adopt. But I think theres something about the efficiency of this that is Unix philosophy&#xA;Speaking of wc. &lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

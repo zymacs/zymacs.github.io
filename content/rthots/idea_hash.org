@@ -1,0 +1,96 @@
+---
+title: SHA1(Idea)
+tags:
+ - rthots
+category:
+ - Development
+---
+
+date: 30.05.2026 
+
+You know the half eaten apple problem that's common
+in the engineer or dev field? I'm sure you do. Start a project
+with all excitement then.... forget it exists quarter way before
+you are there (if you have any defined progression anyway), just 
+so to jump onto the then more exciting project.. 
+Or sometimes you just quit (pause it for later) because life got in the way.
+
+I personally had to clean out a folder of such half complete projects last week.  
+But one thing I noted, and I am sure with this you are familiar.. there were, it seemed, 
+multiple instances of the same idea for a good number of the project folders. 
+
+For instance I have for long wanted to build a local search engine
+but for whichever reason have never gotten through with it. So
+I have one Project named Local Search, another named
+MyWideWeb then the latest I created was called local internet.
+
+
+Its like, sure there are things you set out to build then later genuinely lose
+interest .. but then for others, you find it interesting how you keep returning 
+to them. But my point.. being, you start afresh wondering if you'd ever started
+the project before  (if you do at all), or out of failure to find the name
+under which you had the project the last time you thought of it.
+
+A hypothetical solution,
+
+So in the end, you have a folder of projects under different names. Around 30 or so.. but 
+in actuality, there's only around 14 ideas. Each has a clone under a different name.. 
+
+The problem?
+
+How do you generate a sha1 for an idea as it were.. See if it was a regular file, say a music file
+and you had a folder with duplicates.. a simple sha1 script with python could pull out the duplicates 
+easy. But ... Can we have a sha1 for ideas...
+
+I mean, maybe I am constraining my thoughts to sha1 which only works for what it works for.. but
+what is the solution then to this so common problem. Without it, I am sure there would be 
+more continuity and less restarts for projects. So I think that is a reason enough for there 
+to be at least some solution.. 
+
+Can you think of any? How can an idea be hashed.. How do i made it so a project i created and forgot about 3 years back,
+when i come back to the same projects folder with a 'new idea' , the system can auto point to the location for the old copy
+of that idea? Without having AI go through my stuff.
+
+
+.... 
+
+So after doing some reading and thinking. See, in a separate article I wrote about the danger in conflating AI
+with LLMs and pointed to how people are jumping ship on all AI can do just because of LLMs (without knowing it)
+Well I just proved as a victim how much that is a problem. I have no problem with learning cosine similarity 
+math and doing some clustering projects do rank project similarity.. The problem I have however is LLMs.
+
+Anyhow. Speaking of cosine similarity. That aside. How does sha1 work without getting all technical about it?
+It generates a unique hash for a file based on its content not its meaning. Names usually convey meaning or some 
+part of it. Does the brain use sha-1 for noticing what is similar to something else? Nope it doen't ... but 
+its pretty good at telling 'local search engine' == 'my own internet' == 'google on localhost'.. 
+
+On learning this the next question i had to ask is if this had been implemented at all in CS. Which it has. sematic
+search finds hits for a query not based on exact matches but on meaning. The idea behind semantic search is 
+cosine similarity. Okay, now I am onto something.. We are getting closer to a hypothetical sha-1 for meaning.
+
+
+
+
+It's like, even when having too many incomplete projects can 
+point to a lack of consistency, interesting how certain idea projects
+persisted while I was 
+
+For example , for my case, I found there was certain ideas, over the course of a whole 4-5 years or so that have persisted and reincarnated in all different ways. 
+
+A sample: I have for long wanted to build a local search engine
+but for whichever reason have never gotten through with it. So
+I have one Project named Local Search, another named
+MyWideWeb then the latest I created was called local internet.
+
+Now it ain't like every time i cloned the idea later after killing 
+the project of in the past, I had completely no memory of having 
+ever tried to build it. I mean, often that was the case, but 
+at times I kinda felt I had tried something similar before, but
+just couldn't remember what folder name I'd used then. 
+
+It's like, ideas, when a project is starting out, for the ones
+i had at least, are usually too big to be compressed into a name
+which after 3 years away from the project you would recall what
+you wanted to build just by looking at the project folder's name.
+
+

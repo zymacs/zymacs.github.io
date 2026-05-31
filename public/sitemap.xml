@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
+    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/notes/</loc>
-    <lastmod>2026-05-30T15:26:50+03:00</lastmod>
+    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/bdated/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
@@ -222,6 +222,10 @@
   </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
+    <loc>//localhost:1313/post/installing-arch/</loc>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-007/</loc>
+  </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
@@ -229,6 +233,8 @@
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
     <loc>//localhost:1313/quotes_and_excerpts/</loc>
+  </url><url>
+    <loc>//localhost:1313/rthots/</loc>
   </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
   </url>
