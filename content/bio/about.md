@@ -6,7 +6,7 @@ sidebar: false
 menu:
   main:
     name: About
-    weight: 6
+    weight: 7
 ---
 
 I am a Computer Engineering graduate. I like to learn about Computers and make them do things.  

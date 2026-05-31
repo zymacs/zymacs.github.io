@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Zymacs</title>
+    <link>//localhost:1313/categories/development/</link>
+    <description>Recent content in Development on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GIT</title>
+      <link>//localhost:1313/notes/git_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/notes/git_notes/</guid>
+      <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. &lt;em&gt;(I got enough of the book to use Git with reasonable ease and have for long not updated the page)&lt;/em&gt;.&#xA;I am still sure it can be a good starting point or reference for most of the basics and more.&#xA;I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter&#xA;of the book Progit. I haven&amp;#39;t added notes for it yet but it sure is an interesting read. It&amp;#39;s on&#xA;git internals and how the core commands work on the inside. &lt;em&gt;(The &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain&#34;&gt;plumbing commands&lt;/a&gt; that is)&lt;/em&gt;. &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
