@@ -1,0 +1,51 @@
+---
+title: Last Week In Code 007
+tags:
+ - lwic
+category:
+ - WeeklySeries
+---
+
+E007... Yaay. That's 7 weeks old. Frikin 49 days.
+
+
+There's a joy in watching sth grow as you nature it from one line idea to project.
+Seen that happen in a whole lot of projects I've taken on. (Hard to stick to projects but its been a consistent
+feeling for those I've stuck with). Recently took time off to build an app I have had in my projects folder for 
+ages (under different names). Built teh complete version.. felt overwhelmed.. then built a real simple does
+one thing version.. and added onto that to graduallly have what I have now.  (getting kinda the same feeling with 
+this site, with compouding knowlege... more on that in a bit)
+Have heard of the unix philosophy and its one of those things I am reading about now. Its rather been hard
+to adopt. But I think theres something about the efficiency of this that is Unix philosophy
+Speaking of wc. 
+
+On space between thought to idea
+- I use firefly 
+- Now I use a ledger file , the script i mentioned i wrote. 
+
+- The Problem of Transfer
+Anyhow, you heard about the problem of transfer? You know the guy that breaks locks at work for a living..
+But has door of similar make at home... wc, they don't know how to unlock the door? 
+
+Or how about the programmer that uses Git for version control daily for their coding .. but while doing 
+writing work, wonders how they are going to be able to show one version of a post online while they keep
+one offline (serving both from the same storage point).
+
+If you aint catchin my drift yet, here's another one. Student back in class learns the sum of counting numbers
+formula.. then back home he is given a task.. "Johny, those 100 chicken in the barn, they all got number tags.. 1 to 100.. i think
+each will get as many shots as its tag number.. go buy all the shots.." Uses a calculator?
+
+- A random thought.
+Notes to to-be Undergrad CS students. 
+
+In the news:
+
+So age verification is coming for wikipedia? 
+https://www.theregister.com/security/2025/08/11/wikipedia-host-loses-challenge-to-online-safety-act-regs/334404
+
+The Kettle
+- Ads are coming to AI
+
+
+
+As always, I hope you learnt something. Hope to see you around in e008.
