@@ -1,0 +1,405 @@
+
+* 1. FILE & DIRECTORY NAVIGATION Basics
+** File Basics
+   - ls       :: List files and directories
+   - ls -l    :: Long listing format (permissions, owner, size, date)
+   - ls -a    :: Show hidden files (starting with a dot)
+   - ls -lh   :: Human-readable sizes (e.g., 4K, 23M)
+   - pwd      :: Print working directory
+** Directory Navigation
+   - cd <dir> :: Change directory to <dir>
+   - cd ..    :: Go up one directory level
+   - cd ~     :: Go to home directory
+   - cd -     :: Go to previous directory
+** File Management
+   - mkdir <dir> :: Create a new directory
+   - rmdir <dir> :: Remove empty directory
+
+* 2. VIEWING & FILTERING FILE CONTENT
+** File Content Viewers
+   - cat <file>       :: Display entire file content
+   - less <file>      :: View file page by page (scrollable, press 'q' to quit)
+   - more <file>      :: View file (scroll scroll forward only)
+   - head <file>      :: Show first 10 lines
+   - head -n 20 <file>:: Show first 20 lines
+   - tail <file>      :: Show last 10 lines
+   - tail -n 20 <file>:: Show last 20 lines
+   - tail -f <file>   :: Follow file updates in real-time (live log tracing)
+   - nl <file>        :: Number all lines
+** Content Statistics
+   - wc <file>    :: Count lines, words, and bytes
+   - wc -l <file> :: Count lines only
+   - wc -w <file> :: Count words only
+   - wc -c <file> :: Count bytes only
+** File Information
+   - stat <file>      :: Show detailed file statistics and metadata
+   - file <file>      :: Determine file/data type
+   - tree <dir>       :: Show directory tree structure layout
+   - ls -R <dir>      :: List files recursively
+   - realpath <file>  :: Show full absolute path
+** Text Filtering & Search (grep, awk, sed)
+   - grep "pattern" <file>       :: Search specific pattern in a file
+   - grep -i "pattern" <file>    :: Ignore case sensitive details
+   - grep -r "pattern" <dir>     :: Search recursively across directory paths
+   - grep -n "pattern" <file>    :: Show line numbers alongside results
+   - grep -v "pattern" <file>    :: Invert match (exclude lines matching pattern)
+   - awk '{print $1}' <file>     :: Print first column of text data
+   - awk -F: '{print $1}' /etc/passwd :: Use ":" as field delimiter
+   - sed -n '1,5p' <file>         :: Print lines 1 to 5 specifically
+   - sed 's/old/new/g' <file>     :: Replace all instances of 'old' with 'new'
+   - cut -d: -f1 <file>           :: Cut columns using custom delimiters
+   - sort <file>                  :: Sort text lines
+   - uniq <file>                  :: Remove duplicate duplicate lines
+   - uniq -c <file>               :: Count duplicate lines
+   - tr 'a-z' 'A-Z' <file>        :: Convert text strings from lowercase to UPPERCASE
+
+* 3. PROCESS & SYSTEM MANAGEMENT
+** Process Management
+   - ps          :: Show current active process shell instances
+   - ps aux      :: All running processes across the active system (detailed layout)
+   - ps -ef      :: Full system process format listing
+   - top         :: Real-time interactive process monitor
+   - htop        :: Enhanced interactive process viewer (highly readable)
+   - pstree      :: Display processes organized as a visual branch tree
+   - pgrep <name>:: Find process ID by its string name
+   - pidof <name>:: Show PID of specific running process
+   - kill <PID>  :: Terminate process gracefully using ID
+   - kill -9 <PID>:: Force kill a stubborn process instantly
+   - killall <name>:: Kill all active processes belonging to a named software
+   - nice -n 10 <cmd> :: Run command with a lower or specific assigned priority
+   - renice 5 <PID>   :: Change active priority behavior on a live PID
+** System Information
+   - uname -a    :: Print all core system architectures and kernel info
+   - uname -r    :: Output kernel release details
+   - hostname    :: Display or set system host name
+   - hostname -I :: Display local network IP addresses of host
+   - whoami      :: Show current active user identity
+   - id          :: Print real user and group IDs
+   - date        :: Show or configure system date/time parameters
+   - cal         :: Display an terminal calendar layout
+   - w           :: See who is logged in and what they are currently doing
+   - last        :: Show history of last user logins
+   - lastlog     :: Display last login timestamp statistics per user accounts
+   - uptime      :: Check how long the host machine has been running continuously
+   - lscpu       :: View complete CPU technical info specifications
+   - lsmem       :: View system hardware memory layout segments
+   - dmidecode   :: Dump system hardware info from BIOS tables
+   - dmesg       :: Print out kernel ring buffer log errors/messages
+** Hardware Metrics
+   - lspi        :: List PCI devices
+   - lsusb       :: List USB hardware devices
+   - lshw        :: Detailed list summary of hardware configs
+
+* 4. DISK USAGE & FILESYSTEM
+   - df -h       :: Check disk space available across partitions (human-readable)
+   - du -sh <dir>:: Show summary size of a specific directory folder path
+   - du -h --max-depth=1 :: Size of immediate subdirectory trees below target
+   - ncdu <dir>  :: Interactive disk usage terminal analyzer interface (requires installation)
+   - mount       :: View mounted filesystems on the server
+   - lsblk -f    :: Block devices list structure including specific layout mappings
+   - blkid       :: Fetch individual block device attribute tags (UUIDs, types)
+
+* 5. JOB CONTROL
+  Manage foreground/background shell operational jobs.
+  - command & :: Run any given command in the background immediately
+  - jobs      :: List all active background job status states
+  - fg %1     :: Bring background job number 1 back to the foreground
+  - bg %1     :: Resume suspended job number 1 running in the background
+  - Ctrl + Z  :: Suspend current active foreground operational process
+  - Ctrl + C  :: Terminate current active foreground process
+  - kill %1   :: Kill background job number 1
+  - disown %1 :: Remove background job number 1 from active shell oversight
+
+* 6. REDIRECTION MASTERY & PIPES
+  Control standard input/output/error tracking paths ($0, $1, $2).
+  - command > file       :: Overwrite output to file destination
+  - command >> file      :: Append output to file destination
+  - command 2> error.log :: Redirect standard error messages to file
+  - command 2>> err.log  :: Append error messages to log target
+  - command &> all.log   :: Redirect BOTH standard output and error output to file
+  - command < input.txt  :: Input contents of file into command sequence
+  - command << EOF       :: Here Document structure interface
+  - command1 | command2  :: Pipe connection: sends standard output of 1 as input to 2
+
+* 7. SERVICE MANAGEMENT (systemd)
+  - systemctl list-units --type=service :: List all active systemd system services
+  - systemctl status <service>          :: Check real-time service operation status
+  - systemctl start <service>           :: Start service sequence instantly
+  - systemctl stop <service>            :: Stop service execution loops
+  - systemctl restart <service>         :: Restart service execution logs
+  - systemctl reload <service>          :: Reload internal configurations without stopping service
+  - systemctl enable <service>          :: Enable service autostart protocols during boot sequences
+  - systemctl disable <service>         :: Disable service autostart triggers
+  - systemctl is-enabled <service>      :: Verify if system service autostart flag is active
+  - journalctl -u <service>             :: View logs generated by a specific service
+  - journalctl -xe                      :: View recent system log errors with context hints
+
+* 8. NETWORKING & CONNECTIVITY
+  - ip a             :: Show all network interface details and IP addresses
+  - ip r             :: Print system routing tables
+  - ss -tulnp        :: List active listening ports and active sockets connections
+  - netstat -tulnp   :: Legacy utility variant to see open server ports
+  - lsof -i          :: List open network files and connection parameters
+  - lsof -i :80      :: Discover what service profile is running on network port 80
+  - ping <host>      :: Test network end-to-end connectivity via ICMP packets
+  - traceroute <host>:: Trace structural network node path hops to destination
+  - curl -I <url>    :: Fetch HTTP header data details from target domain
+  - wget <url>       :: Download file direct from the web
+  - dig <domain>     :: Query structural DNS lookup details
+  - nslookup <domain>:: Alternative DNS validation lookup resource
+  - nmap localhost   :: Scan active local network open port registries
+  - nmap -p 1-1000 <host> :: Scan port range 1 to 1000 on target IP
+  - scp <file> user@host:/path :: Copy files securely over SSH channels
+
+* 9. USER & GROUP PERMISSIONS BASICS
+** Users
+   - whoami           :: Show current user account session identity
+   - id               :: Show user & group ID numbers (UID / GID)
+   - users            :: List logged in system users
+   - finger <user>    :: View detailed tracking statistics of target user account
+   - adduser <name>   :: Add a new user profile securely (Debian/Ubuntu native helper)
+   - useradd <name>   :: Add a low-level new user account standard utility
+   - useradd -m -s /bin/bash <user> :: Create a user with home directory and bash shell configuration
+   - passwd <user>    :: Update or assign account password keys
+   - deluser <name>   :: Delete user accounts (Debian/Ubuntu)
+   - userdel <name>   :: Remove user profile records (RHEL/CentOS)
+** Groups
+   - groups           :: Show group attachments for the active logged user
+   - groups <user>    :: Check specific group mapping permissions of target user
+   - groupadd <group> :: Create a new distinct group profile
+   - groupadd -g <gid> <group> :: Create group with an explicit GID assignment
+   - groupmod -n <newname> <group> :: Rename existing system group name
+   - groupdel <group> :: Delete system group profile safely
+   - usermod -aG <group> <user> :: Append a target user safely into a specific auxiliary group
+   - usermod -s /bin/zsh <user>  :: Alter a target user's default execution shell profile
+   - gpasswd -d <user> <group>  :: Remove a specific target user from group access mappings
+   - newgrp <group>   :: Temporarily switch primary active group setting assignment
+   - getent group <group> :: Show specific group structure entry list
+** Account File Storage Records
+   - /etc/passwd      :: Format reference: =username:x:UID:GID:comment:home:shell=
+
+* 10. FILE PERMISSIONS (rwx) & OWNERSHIP
+** Understanding Formats
+   - File Types: =-[regular file]=, =d[directory]=, =l[symbolic link]=
+   - Triad Blocks: =Owner (u)=, =Group (g)=, =Others (o)=, =All (a)=
+   - Value Keys: =r = 4 (read)=, =w = 2 (write)=, =x = 1 (execute)=, =- = 0 (no permission)=
+** Numeric Mapping Examples
+   - 755 :: =rwxr-xr-x= (Full owner control, read/execute access for others)
+   - 644 :: =rw-r----= (Read/Write owner privileges, read-only balance)
+   - 700 :: =rwx------= (Full owner control isolated from everyone else)
+** Change Permissions (chmod)
+   - chmod u+x <file>   :: Add execute permission parameter to owner
+   - chmod g+w <file>   :: Add write permission tracking to group
+   - chmod o-r <file>   :: Remove read permissions from others
+   - chmod a+r <file>   :: Add read permissions to everyone globally
+   - chmod go=r <file>  :: Hard-set group and others to read-only access
+   - chmod 755 <file>   :: Explicitly apply 755 permissions
+   - chmod -R 755 <dir> :: Recursively change nested directory permissions layout
+** Change Ownership (chown / chgrp)
+   - chown <user> <file>          :: Reassign owner of a file
+   - chown <user>:<group> <file>  :: Reassign both user owner and group owner targets simultaneously
+   - chown -R <user>:<group> <dir>:: Recursively cascade ownership over target directory trees
+   - chgrp <group> <file>         :: Reassign file group parameter
+   - chown --reference=<file1> <file2> :: Duplicate permission mappings from file1 onto file2
+** Special Bits Configuration
+   - SetUID (4)     :: Executed with target file owner level privilege access. Syntax: =chmod u+s <file>=
+   - SetGID (2)     :: Executed with directory/group assigned rights. Syntax: =chmod g+s <dir>=
+   - Sticky Bit (1) :: Only file owners can erase files in target folder. Syntax: =chmod +t <dir>=
+** Umask Configs
+   - Default security masks for establishing fresh filesystem entries.
+   - Files Calculation: =666 - umask = permissions=
+   - Directories Calc: =777 - umask = permissions=
+   - 022 (Standard mask) -> Files: 644, Dirs: 755
+   - 077 (High restriction) -> Files: 600, Dirs: 700
+
+* 11. AUTOMATE TASKS: CRON TASKS SCHEDULER
+** Syntax
+   Format mapping fields: =* * * * * command=
+   - Field 1: Minute (0-59)
+   - Field 2: Hour (0-23)
+   - Field 3: Day of month (1-31)
+   - Field 4: Month (1-12)
+   - Field 5: Day of week (0-7, where 0 and 7 indicate Sunday)
+** Commands
+   - crontab -e :: Edit or configure current user cron registry file
+   - crontab -l :: List active schedule tracking automation items
+   - crontab -r :: Wipe out all schedule configurations for active user
+** Execution Example
+   =0 2 * * * /home/alice/backup.sh= (Triggers daily backup routines at exactly 2:00 AM)
+
+* 12. ARCHIVE & COMPRESSION TOOLS
+** Tar Archiver (.tar)
+   - tar -cvf archive.tar <files> :: Create an uncompressed tape archive
+   - tar -xvf archive.tar         :: Extract contents of an archive file container
+   - tar -tf archive.tar          :: List archive inventory manifest without full extraction
+   - tar -rf archive.tar <file>   :: Append files onto existing target archive container
+   - tar -uf archive.tar <file>   :: Update archive by including only newer files
+   - tar --delete -f archive.tar <file> :: Remove specified components from within archive container
+   - tar -C /path -xvf archive.tar:: Extract contents into an explicit destination folder path
+** Gzip Compression (.gz)
+   - gzip file.txt          :: Compress file instantly (wipes original element)
+   - gzip -k file.txt       :: Compress file while retaining the original reference copy
+   - gzip -d file.txt.gz    :: Decompress target gzip module
+   - gunzip file.txt.gz     :: Decompress utility alternative
+   - zcat file.txt.gz       :: Output contents of compressed archive directly to screen
+   - zgrep "text" file.gz   :: Filter content strings directly inside zipped files
+** Bzip2 Compression (.bz2)
+   - bzip2 file.txt         :: Compress file into bz2 infrastructure format (slower but smaller)
+   - bzip2 -k file.txt      :: Compress file while retaining original copy 
+   - bunzip2 file.txt.bz2   :: Decompress target bz2 format
+   - bzcat file.txt.bz2     :: View text content strings directly from bz2 zipped environments
+   - bzgrep "text" file.bz2 :: Search contents inside bz2 zipped architecture modules
+** Zip / Unzip Utility
+   - zip file.zip file1 file2       :: Create zip package container
+   - zip -r dir.zip folder/        :: Recursively zip comprehensive directory structures
+   - unzip file.zip                 :: Extract standard zip architecture contents
+   - unzip -l file.zip              :: List directory manifest inside zipped structures
+   - zip -r -p secure.zip folder/   :: Generate encryption password protection on target zip file
+   - unzip -d /path/ file.zip       :: Extract standard zip file directly to target destination path
+** Combined Tar Compression Best Practices
+   - tar -czvf archive.tar.gz <dir> :: Create compressed GZIP archive bundle
+   - tar -xzvf archive.tar.gz       :: Extract compressed GZIP archive container structure
+   - tar -cjvf archive.tar.bz2 <dir>:: Create compressed BZIP2 archive bundle
+   - tar -xjvf archive.tar.bz2      :: Extract compressed BZIP2 archive container structure
+   - tar -cJvf archive.tar.xz <dir> :: Create highly-compressed XZ format archive bundle
+   - tar -xJvf archive.tar.xz       :: Extract compressed XZ archive container structure
+
+* 13. PACKAGE MANAGEMENT & FIREWALL (Debian/Ubuntu)
+** APT Package Manager
+   - sudo apt update             :: Synchronize package index repository manifests
+   - sudo apt upgrade            :: Update installed packages to newest safe configurations
+   - sudo apt install <package>  :: Download and set up specific software application components
+   - sudo apt remove <package>   :: Remove a target package tool while retaining custom user configs
+   - sudo apt purge <package>    :: Completely scrub package files and configurations from system
+   - sudo apt autoremove         :: Automatically eliminate orphan dependency tools no longer required
+   - apt search <keyword>        :: Scan database files for tracking specific package keywords
+   - apt show <package>          :: Display explicit information/dependency metrics for software 
+** Uncomplicated Firewall (UFW)
+   - sudo ufw status             :: Check current firewall active routing rules
+   - sudo ufw enable             :: Toggle firewall operational state to ACTIVE
+   - sudo ufw disable            :: Toggle firewall operational state to DISABLED
+   - sudo ufw allow 22           :: Open network incoming port 22 access (SSH profile)
+   - sudo ufw allow 80/tcp       :: Open incoming port 80 strictly over TCP protocol (HTTP)
+   - sudo ufw allow from 192.168.1.10 :: Permit inbound traffic originating from a specific target IP
+   - sudo ufw deny 23            :: Ban incoming connection traffic attempting port 23 access (Telnet)
+   - sudo ufw delete allow 22    :: Tear down active firewall rule permitting port 22 entry
+
+* 14. SHELL SCRIPTING FUNDAMENTALS
+** Core Concepts
+   - Shebang Line     :: =#!/bin/bash= (First file line; tells system which interpreter to execute script)
+   - Script Execution :: Make executable using =chmod +x script.sh=, then initiate with =./script.sh=
+** Input & Read Management
+   - read name                  :: Accept standard keyboard string input into variable '$name'
+   - read -p "Enter Age: " age  :: Prompt interactive user with string message during input sequence
+   - read n1 n2 n3              :: Gather multiple distinct data variables in sequence via single step
+** Variables Manipulation
+   - Rules :: No spaces allowed around assignments (e.g., =msg="Hello"= is valid; =msg = "Hello"= fails)
+   - Reference Usage :: Access variable values by prefixing string with dollar symbol identifier: =$msg=
+** Command Substitution
+   Capture execution outputs directly inside functional operational parameters.
+   - Example 1 :: =date_=$(date)=
+   - Example 2 :: =lines=$(wc -l < file.txt)=
+** Arithmetic Actions
+   Perform math parameters using structural =$(( ))= wrapping syntax wrappers. No internal spacing required.
+   - Example :: =sum=$((a + b))=
+** Positional & Command Arguments
+   - $0 :: File name identity of execution script
+   - $1 :: First argument input parameter fed to script engine
+   - $2 :: Second argument input parameter fed to script engine
+   - $# :: Integer metric totaling number of arguments supplied to script interface
+   - $@ :: Array string mapping capturing all argument parameters supplied to script interface
+   - shift :: Move positional arguments leftward by one structural index slot ($2 becomes $1)
+** Script Debugging & Safety Directives
+   - set -e        :: Halt execution sequence instantly if any script command reports error failures
+   - set -u        :: Treat unmapped unassigned variables as explicit structural code errors
+   - set -o pipefail :: Intercept and report errors tracking mid-stream inside pipe connections
+   - trap 'echo error' ERR :: Event listener wrapper to trigger alert routines during error faults
+   - $?            :: Output exit check status state flag monitored from the last executed statement
+** Conditionals Syntax Block
+   Always retain isolated spaces inside evaluation square brackets context layout structures: =[ ]=.
+   - Evaluators :: =-eq= (equal), =-ne= (not equal), =-gt= (greater than), =-lt= (less than)
+   - String Flags :: === (equal strings), =!= (not equal strings)
+#+BEGIN_SRC bash
+if [ "$1" -eq 0 ]; then
+    echo "Zero"
+elif [ "$1" -gt 0 ]; then
+    echo "Positive"
+else
+    echo "Negative"
+fi
+#+END_SRC
+** Loops Control Loops
+*** For Loops
+#+BEGIN_SRC bash
+for i in 1 2 3 4 5; do
+    echo "Number: $i"
+done
+
+for file in *.txt; do
+    echo "File: $file"
+done
+#+END_SRC
+*** While Loops
+#+BEGIN_SRC bash
+count=1
+while [ $count -le 5 ]; do
+    echo "Count: $count"
+    count=$((count+1))
+done
+#+END_SRC
+*** Until Loops
+#+BEGIN_SRC bash
+n=1
+until [ $n -gt 5 ]; do
+    echo "N: $n"
+    n=$((n+1))
+done
+#+END_SRC
+** Advanced Shell Scripting Features
+*** Functions
+#+BEGIN_SRC bash
+greet() {
+    echo "Hello, $1!"
+}
+greet "Alice"
+#+END_SRC
+*** Arrays
+    - Declare :: =fruits=(apple banana cherry)=
+    - Element Access :: =echo ${fruits[0]}=
+    - Extract All :: =echo ${fruits[@]}=
+    - Array Length :: =echo ${#fruits[@]}=
+    - Array Iteration ::
+#+BEGIN_SRC bash
+for fruit in "${fruits[@]}"; do
+    echo "Fruit: $fruit"
+done
+#+END_SRC
+*** File Test Operators
+    - -e <file> :: Check if target item file path actually exists
+    - -f <file> :: Verify if target element is a regular file item structure
+    - -d <file> :: Verify if target element is an established directory path
+    - -r <file> :: Confirm if target item permissions support read actions
+    - -w <file> :: Confirm if target item permissions support write actions
+    - -x <file> :: Confirm if target item permissions support execute actions
+    - -s <file> :: Check if file exists and contains data (Size > 0)
+
+* 15. MISCELLANEOUS UTILITIES & SHORTCUTS
+** Command Utilities
+   - echo "text"       :: Print string text onto standard console output
+   - alias ll='ls -l'  :: Set custom alias shortcut configurations
+   - clear             :: Wipe terminal view window cleanly
+   - history           :: Render record inventory listing of previously entered shell statements
+   - history -c        :: Clear terminal history tracking buffer logs
+   - man <command>     :: Open comprehensive user manual documentation for command software
+   - which <command>   :: Output precise directory executable pathway map for program binary
+   - whereis <command> :: Discover binary, source files, and user manual documentation paths
+   - bc                :: Interactive basic calculator command prompt environment
+** Terminal Key Combinations
+   - Ctrl + A :: Relocate text cursor positioning directly to start of command line
+   - Ctrl + E :: Relocate text cursor positioning directly to end of command line
+   - Ctrl + U :: Erase entire line input tracking back from current cursor position
+   - Ctrl + K :: Cut all line content trailing forward from current cursor location
+   - Ctrl + W :: Delete last word immediately preceding text cursor positioning
+   - Ctrl + R :: Initiate backward interactive history search pattern tracker
+   - Ctrl + L :: Clear standard screen layout interface views
+   - Ctrl + D :: Exit current terminal session environment loop / Log out
