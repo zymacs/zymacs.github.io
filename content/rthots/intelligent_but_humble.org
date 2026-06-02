@@ -53,8 +53,8 @@ that you are sure you have but just don't have the means to explain."
 /Non-ai results | Query: Articles on .../
 [[non-ai_results.png]]
 
-The non  AI results were mostly irrelevant. I was getting mostly links to articles
-on the Danny Krugger Effect. It seems the AI summarizer is mostly decoupled
+The non  AI results were relatively irrelevant. I was getting a lot of links to articles
+on the Dunning-Krugger Effect. It seems the AI summarizer is  decoupled
 from the ordinary search engine. I mean, it immediately deciphered I was looking for 
 "articles on tacit knowledge".  Still, replacing the query
 with the right key words "Articles on tacit knowledge" returned
