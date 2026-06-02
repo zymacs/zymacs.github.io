@@ -101,9 +101,4 @@ to tell how vague a query feels. I am however sure someone that's already
 studied all thats needed would implement this in a weekend.
 
 
-
-/ Something about this feels like auto-correct. The part that replaces 
- the circumlocuted phrase with the right key words that is.. just saying.
- But anyways. Its always fun to think out loud.. off to the next thought./
-
-
+Alright.. that's it for this one.. 

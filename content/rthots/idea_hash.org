@@ -1,5 +1,6 @@
 ---
 title: A hash function for meaning?
+thumbnail: 'img/sha1.png'
 tags:
  - rthots
 category:
