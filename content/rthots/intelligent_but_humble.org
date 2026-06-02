@@ -46,11 +46,22 @@ to return valid results without reliance on middleman translation.
 But how about this query: "Articles on that kind of knowledge 
 that you are sure you have but just don't have the means to explain."
 
-The non  AI results were super irrelevant. I was getting mostly links to articles
+/AI results | Query: Articles on that kind of .../
+[[ai_results.png]]
+
+
+/Non-ai results | Query: Articles on .../
+[[non-ai_results.png]]
+
+The non  AI results were mostly irrelevant. I was getting mostly links to articles
 on the Danny Krugger Effect. It seems the AI summarizer is mostly decoupled
 from the ordinary search engine. I mean, it immediately deciphered I was looking for 
-"articles on tacit knowledge". 
+"articles on tacit knowledge".  Still, replacing the query
+with the right key words "Articles on tacit knowledge" returned
+the best results.
 
+/Query: articles on tacit knowledge/
+[[best_results.png]]
 
 What I need.
 
