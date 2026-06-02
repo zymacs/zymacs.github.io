@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Zymacs</title>
+    <link>//localhost:1313/tags/probability/</link>
+    <description>Recent content in Probability on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
+      <link>//localhost:1313/post/bayes_theorem/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/bayes_theorem/</guid>
+      <description>&lt;p&gt;Alright. I have tried to find the easiest way to explain Baye&amp;rsquo;s. I have watched quite a number of&#xA;videos and read quite a number of articles to suppliment what I already know and to get better&#xA;devices for delivering the explanation. At this point I  think its now just me being a perfectionist.&#xA;So I&amp;rsquo;ll teach it as best as I can get myself to: Using proofs.&lt;/p&gt;&#xA;&lt;p&gt;First let&amp;rsquo;s state it formally&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability Intuition : The Basics</title>
+      <link>//localhost:1313/post/probability_basics/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/probability_basics/</guid>
+      <description>&lt;p&gt;How likely it is that some outcome will be the outcome given some event. That is what probability is.&#xA;Its a ratio. Given an event, there&amp;rsquo;s many possible outcomes. The probability of some outcome being&#xA;the outcome that happens is a ratio of how much of the outcome is represented in total outcomes to the total number of possible outcomes. For unweighted or equally likely outcomes at least.&lt;/p&gt;&#xA;&lt;p&gt;Its a very important foundational concept in a lot of Computer Science Fields.&#xA;Without understanding how it works, you&amp;rsquo;ll have a hard time understanding more advanced concepts like the Baye&amp;rsquo;s theorem, or&#xA;wrapping your head around what&amp;rsquo;s going on with Markov chains or,  working with the foundational concepts for most of modern AI i.e:  Neural Networks. I&amp;rsquo;ll try to explain my understanding of it to you here without using any formal terms. So don&amp;rsquo;t be surprised if you don&amp;rsquo;t see a&#xA;lot of &lt;code&gt;P(A n B n C)&lt;/code&gt; or &lt;code&gt;posterior&lt;/code&gt; and the such. There will be time for that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
