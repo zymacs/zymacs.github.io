@@ -1,5 +1,5 @@
 ---
-title: "Auto correct for circumlocution: AI translation w/out LLM chats"
+title: "Browsers that understand like LLMs?"
 thumbnail: "img/ai.png"
 date: 2026-06-02T10:10:06+03:00
 draft: false
@@ -60,7 +60,7 @@ from the ordinary search engine. I mean, it immediately deciphered I was looking
 with the right key words "Articles on tacit knowledge" returned
 the best results.
 
-/Query: articles on tacit knowledge/
+/Query: tacit knowledge/
 [[best_results.png]]
 
 What I need.
