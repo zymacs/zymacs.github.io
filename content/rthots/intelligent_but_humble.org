@@ -1,5 +1,5 @@
 ---
-title: "Browsers that understand like LLMs?"
+title: "Intelligent keyword generation. Nothing more."
 thumbnail: "img/ai.png"
 date: 2026-06-02T10:10:06+03:00
 draft: false
@@ -121,7 +121,7 @@ On how the 'needs to be translated' mechanism would be implemented.
 I guess I will leave
 that for another thinking session. But I think it would be fun implementing that. 
 It probably wouldn't even need to use LLMs. I am thinking maybe spacy. Some means
-to tell how vague a query feels. I am however sure someone that's already
+to tell how vague a query is. I am however sure someone that's already
 studied all thats needed would implement this in a weekend.
 
 
