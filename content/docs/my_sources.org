@@ -106,6 +106,7 @@ title: My Sources
 ** Tech News
   - [[https://news.ycombinator.com/][Hacker News]]
   - [[https://www.theregister.com/][The Register]]
+  - [[https://www.fastcompany.com/technology][Fast Company]]
 ** Math
    - [[https://www.youtube.com/@numberphile][Numberphile]]
    - [[https://www.youtube.com/@TheRandomProfessor][The Random Professor]]
