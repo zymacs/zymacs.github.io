@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brain_teasers on Zymacs</title>
+    <link>//localhost:1313/tags/brain_teasers/</link>
+    <description>Recent content in Brain_teasers on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2026 19:43:01 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/brain_teasers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q6 BT: Burning Ropes</title>
+      <link>//localhost:1313/post/burning_ropes/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/burning_ropes/</guid>
+      <description>&lt;p&gt;Question 6 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You have two ropes, each of which takes I hour to burn. But either rope has different&#xA;densities at different points, so there&amp;rsquo;s no guarantee of consistency in the time it takes&#xA;different sections within the rope to bum. How do you use these two ropes to measure 45&#xA;minutes?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;solution-and-explanation&#34;&gt;Solution and explanation&lt;/h3&gt;&#xA;&lt;p&gt;Get one of the ropes and burn it at either end and the second one end. It will take 30 minutes to burn up the first one.&#xA;At this instance the second will still be left with 30 minutes to burn out. Immediately burn the other end of the second rope.&#xA;This will halve the 30 minutes left to 15. Add 15 for this last half of the second rope to 30 for burning the first rope&#xA;and half one of the second rope and you have 45 minutes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q5 BT: Card Game</title>
+      <link>//localhost:1313/post/card_game/</link>
+      <pubDate>Thu, 21 May 2026 15:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/card_game/</guid>
+      <description>&lt;p&gt;Question 5 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;card-game-problem-statement&#34;&gt;Card Game Problem Statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A casino offers a card game using a normal deck of 52 cards. The rule is that you turn&#xA;over two cards each time. For each pair, if both are black, they go to the dealer&amp;rsquo;s pile; if&#xA;both are red, they go to your pile; if one black and one red, they are discarded. The&#xA;process is repeated until you two go through all 52 cards. If you have more cards in your&#xA;pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to&#xA;negotiate the price you want to pay for the game. How much would you be willing to&#xA;pay to play this game?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q4 BT: Birthday Problem</title>
+      <link>//localhost:1313/post/birthday_problem/</link>
+      <pubDate>Wed, 20 May 2026 18:12:54 +0300</pubDate>
+      <guid>//localhost:1313/post/birthday_problem/</guid>
+      <description>&lt;p&gt;Question 4 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You and your colleagues know that your boss A&amp;rsquo;s birthday is one of the following 10&#xA;dates:&#xA;Mar 4, Mar 5, Mar 8,&#xA;Jun 4, Jun 7,&#xA;Sep 1, Sep 5,&#xA;Dec 1, Dec 2, Dec 8.&#xA;&lt;strong&gt;A&lt;/strong&gt; told you only the month of his birthday, and told your colleague C only the day. After&#xA;that, you first said: &amp;ldquo;I don&amp;rsquo;t know A&amp;rsquo;s birthday; C doesn&amp;rsquo;t know it either.&amp;rdquo; After hearing&#xA;what you said, C replied: &amp;ldquo;I didn&amp;rsquo;t know A&amp;rsquo;s birthday, but now I know it.&amp;rdquo; You smiled&#xA;and said: &amp;ldquo;Now I know it, too.&amp;rdquo; After looking at the 10 dates and hearing your comments,&#xA;your administrative assistant wrote down A&amp;rsquo;s birthday without asking any questions. So&#xA;what did the assistant write?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q3 BT: River Crossing</title>
+      <link>//localhost:1313/post/river_crossing/</link>
+      <pubDate>Wed, 20 May 2026 15:49:44 +0300</pubDate>
+      <guid>//localhost:1313/post/river_crossing/</guid>
+      <description>&lt;p&gt;Question 3 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Four people, A, B, C and D need to get across a river. The only way to cross the river is&#xA;by an old bridge, which holds at most 2 people at a time. Being dark, they can&amp;rsquo;t cross the&#xA;bridge without a torch, of which they only have one. So each pair can only walk at the&#xA;speed of the slower person. They need to get all of them across to the other side as&#xA;quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C&#xA;takes 2 minutes; and D takes 1 minute.&#xA;What is the minimum time to get all of them across to the other side?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q2 BT: Tiger and Sheep</title>
+      <link>//localhost:1313/post/tiger_and_sheep/</link>
+      <pubDate>Wed, 20 May 2026 15:09:36 +0300</pubDate>
+      <guid>//localhost:1313/post/tiger_and_sheep/</guid>
+      <description>&lt;p&gt;Brain teaser number two from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;question-statement&#34;&gt;Question statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;One hundred tigers and one sheep are put on a magic island that only has grass. Tigers&#xA;can eat grass, but they would rather eat sheep. Assume:&#xA;&lt;strong&gt;(A). Each time only one tiger can eat one sheep, and that tiger itself will become a sheep after it eat&#xA;the sheep.&lt;/strong&gt;&#xA;&lt;strong&gt;(B). All tigers are smart and perfectly rational and they want to survive. So will the sheep be&#xA;eaten?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q1 BT: Screwy Pirates</title>
+      <link>//localhost:1313/post/screwy_pirates/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/post/screwy_pirates/</guid>
+      <description>&lt;p&gt;This is the first post am making in this series. For all the posts in the series,&#xA;I plan to share my solutions to the problems in the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg. The first set of problems is brain teasers. Let&amp;rsquo;s solve it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;screwy-pirates-problem-statement&#34;&gt;Screwy Pirates Problem Statement.&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates,&#xA;they agree on the following method to divide the loot:&#xA;The most senior pirate will propose a distribution of the coins. All pirates, including the&#xA;most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case)&#xA;accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be&#xA;fed to shark and the process starts over with the next most senior pirate &amp;hellip; The process is&#xA;repeated until a plan is approved. You can assume that all pirates are perfectly rational:&#xA;they want to stay alive first and to get as much gold as possible second. Finally, being&#xA;blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice&#xA;between otherwise equal outcomes.&#xA;How will the gold coins be divided in the end?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,9 @@
+---
+title: Photos
+description: Public gallery
+menu:
+  main:
+   name: "Gallery"
+   weight: 7
+draft: true
+---

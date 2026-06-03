@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Zymacs</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Home on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A hash function for meaning?</title>
+      <link>//localhost:1313/rthots/idea_hash/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rthots/idea_hash/</guid>
+      <description>&lt;p&gt;&#xA;If you have been writing code for a while then I am sure you &#xA;are familiar with this common developer experience: Startup on some project&#xA;with all loads of excitement then…. forget it exists quarter way before&#xA;you are there (if you have any defined progression anyway), just &#xA;so to jump onto the then more exciting project.. or.. move on to sth else.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I personally had to clean out a folder of many such half complete projects last week.  &#xA;But one thing I noted, and I am sure with this you too are familiar.. there were,&#xA;multiple instances of the same idea for a good number of the project folders. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code E006</title>
+      <link>//localhost:1313/post/last-week-in-code-006/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-006/</guid>
+      <description>&lt;p&gt;&#xA;  Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I&#xA;  sunk into setting up mediawiki. I did some interview prep type questions also and I uploaded some of the solutions. But that wasn&amp;#39;t as serious as the archival tasks.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  I am preparing to change locations. I am not so sure about my new location&amp;#39;s internet efficiency or its affordability.&#xA;  So I think I will so much need to have   local access to critical information sources. As usual, the whole process and other small tasks I did&#xA;  taught me certain things I&amp;#39;d like to record right here, for sharing and future reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q6 BT: Burning Ropes</title>
+      <link>//localhost:1313/post/burning_ropes/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/burning_ropes/</guid>
+      <description>&lt;p&gt;Question 6 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You have two ropes, each of which takes I hour to burn. But either rope has different&#xA;densities at different points, so there&amp;rsquo;s no guarantee of consistency in the time it takes&#xA;different sections within the rope to bum. How do you use these two ropes to measure 45&#xA;minutes?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;solution-and-explanation&#34;&gt;Solution and explanation&lt;/h3&gt;&#xA;&lt;p&gt;Get one of the ropes and burn it at either end and the second one end. It will take 30 minutes to burn up the first one.&#xA;At this instance the second will still be left with 30 minutes to burn out. Immediately burn the other end of the second rope.&#xA;This will halve the 30 minutes left to 15. Add 15 for this last half of the second rope to 30 for burning the first rope&#xA;and half one of the second rope and you have 45 minutes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q5 BT: Card Game</title>
+      <link>//localhost:1313/post/card_game/</link>
+      <pubDate>Thu, 21 May 2026 15:43:01 +0300</pubDate>
+      <guid>//localhost:1313/post/card_game/</guid>
+      <description>&lt;p&gt;Question 5 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;card-game-problem-statement&#34;&gt;Card Game Problem Statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;A casino offers a card game using a normal deck of 52 cards. The rule is that you turn&#xA;over two cards each time. For each pair, if both are black, they go to the dealer&amp;rsquo;s pile; if&#xA;both are red, they go to your pile; if one black and one red, they are discarded. The&#xA;process is repeated until you two go through all 52 cards. If you have more cards in your&#xA;pile, you win $100; otherwise (including ties) you get nothing. The casino allows you to&#xA;negotiate the price you want to pay for the game. How much would you be willing to&#xA;pay to play this game?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q4 BT: Birthday Problem</title>
+      <link>//localhost:1313/post/birthday_problem/</link>
+      <pubDate>Wed, 20 May 2026 18:12:54 +0300</pubDate>
+      <guid>//localhost:1313/post/birthday_problem/</guid>
+      <description>&lt;p&gt;Question 4 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;You and your colleagues know that your boss A&amp;rsquo;s birthday is one of the following 10&#xA;dates:&#xA;Mar 4, Mar 5, Mar 8,&#xA;Jun 4, Jun 7,&#xA;Sep 1, Sep 5,&#xA;Dec 1, Dec 2, Dec 8.&#xA;&lt;strong&gt;A&lt;/strong&gt; told you only the month of his birthday, and told your colleague C only the day. After&#xA;that, you first said: &amp;ldquo;I don&amp;rsquo;t know A&amp;rsquo;s birthday; C doesn&amp;rsquo;t know it either.&amp;rdquo; After hearing&#xA;what you said, C replied: &amp;ldquo;I didn&amp;rsquo;t know A&amp;rsquo;s birthday, but now I know it.&amp;rdquo; You smiled&#xA;and said: &amp;ldquo;Now I know it, too.&amp;rdquo; After looking at the 10 dates and hearing your comments,&#xA;your administrative assistant wrote down A&amp;rsquo;s birthday without asking any questions. So&#xA;what did the assistant write?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q3 BT: River Crossing</title>
+      <link>//localhost:1313/post/river_crossing/</link>
+      <pubDate>Wed, 20 May 2026 15:49:44 +0300</pubDate>
+      <guid>//localhost:1313/post/river_crossing/</guid>
+      <description>&lt;p&gt;Question 3 from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Four people, A, B, C and D need to get across a river. The only way to cross the river is&#xA;by an old bridge, which holds at most 2 people at a time. Being dark, they can&amp;rsquo;t cross the&#xA;bridge without a torch, of which they only have one. So each pair can only walk at the&#xA;speed of the slower person. They need to get all of them across to the other side as&#xA;quickly as possible. A is the slowest and takes 10 minutes to cross; B takes 5 minutes; C&#xA;takes 2 minutes; and D takes 1 minute.&#xA;What is the minimum time to get all of them across to the other side?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q2 BT: Tiger and Sheep</title>
+      <link>//localhost:1313/post/tiger_and_sheep/</link>
+      <pubDate>Wed, 20 May 2026 15:09:36 +0300</pubDate>
+      <guid>//localhost:1313/post/tiger_and_sheep/</guid>
+      <description>&lt;p&gt;Brain teaser number two from  the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg.&lt;/p&gt;&#xA;&lt;h3 id=&#34;question-statement&#34;&gt;Question statement&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;One hundred tigers and one sheep are put on a magic island that only has grass. Tigers&#xA;can eat grass, but they would rather eat sheep. Assume:&#xA;&lt;strong&gt;(A). Each time only one tiger can eat one sheep, and that tiger itself will become a sheep after it eat&#xA;the sheep.&lt;/strong&gt;&#xA;&lt;strong&gt;(B). All tigers are smart and perfectly rational and they want to survive. So will the sheep be&#xA;eaten?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Q1 BT: Screwy Pirates</title>
+      <link>//localhost:1313/post/screwy_pirates/</link>
+      <pubDate>Tue, 19 May 2026 19:48:27 +0300</pubDate>
+      <guid>//localhost:1313/post/screwy_pirates/</guid>
+      <description>&lt;p&gt;This is the first post am making in this series. For all the posts in the series,&#xA;I plan to share my solutions to the problems in the book &lt;a href=&#34;https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662&#34;&gt;&amp;ldquo;A Practical&#xA;Guide to Quantitative Finance Interviews&amp;rdquo;&lt;/a&gt; by Zhou Xinfeg. The first set of problems is brain teasers. Let&amp;rsquo;s solve it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;screwy-pirates-problem-statement&#34;&gt;Screwy Pirates Problem Statement.&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates,&#xA;they agree on the following method to divide the loot:&#xA;The most senior pirate will propose a distribution of the coins. All pirates, including the&#xA;most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case)&#xA;accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be&#xA;fed to shark and the process starts over with the next most senior pirate &amp;hellip; The process is&#xA;repeated until a plan is approved. You can assume that all pirates are perfectly rational:&#xA;they want to stay alive first and to get as much gold as possible second. Finally, being&#xA;blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice&#xA;between otherwise equal outcomes.&#xA;How will the gold coins be divided in the end?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code E005</title>
+      <link>//localhost:1313/post/last-week-in-code-005/</link>
+      <pubDate>Mon, 18 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-005/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s LWIC E005! Cool. So I was AFK for a huge proportion of last week.&#xA;But for the later half of it (which was Thursday up until Sunday), I spent&#xA;most of my time reading and making notes with not so much programming. And as usual, there is always experiences to share. Not so much though since I only had half a week.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-elevated-confidence-from-documenting-understanding&#34;&gt;The Elevated Confidence From Documenting Understanding&lt;/h3&gt;&#xA;&lt;p&gt;I eventually got to write an article on &lt;a href=&#34;//localhost:1313/post/bayes_theorem/&#34;&gt;Baye&amp;rsquo;s theorem&lt;/a&gt;. It was a simple one as, that was my aim: to make a seemingly hard to understand topic simple. Most of the lessons from this task, I mentioned in last week&amp;rsquo;s update. But I think there&amp;rsquo;s parts of the experience that I hadn&amp;rsquo;t felt fully yet. I&amp;rsquo;ll share what I learnt from those.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hunting For Exportable Android Usage Stats</title>
+      <link>//localhost:1313/post/android_usage_stats/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/android_usage_stats/</guid>
+      <description>&lt;p&gt;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
+      <link>//localhost:1313/post/bayes_theorem/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/bayes_theorem/</guid>
+      <description>&lt;p&gt;Alright. I have tried to find the easiest way to explain Baye&amp;rsquo;s. I have watched quite a number of&#xA;videos and read quite a number of articles to suppliment what I already know and to get better&#xA;devices for delivering the explanation. At this point I  think its now just me being a perfectionist.&#xA;So I&amp;rsquo;ll teach it as best as I can get myself to: Using proofs.&lt;/p&gt;&#xA;&lt;p&gt;First let&amp;rsquo;s state it formally&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code E004</title>
+      <link>//localhost:1313/post/last-week-in-code-004/</link>
+      <pubDate>Mon, 11 May 2026 17:41:08 +0300</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-004/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability Intuition : The Basics</title>
+      <link>//localhost:1313/post/probability_basics/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/probability_basics/</guid>
+      <description>&lt;p&gt;How likely it is that some outcome will be the outcome given some event. That is what probability is.&#xA;Its a ratio. Given an event, there&amp;rsquo;s many possible outcomes. The probability of some outcome being&#xA;the outcome that happens is a ratio of how much of the outcome is represented in total outcomes to the total number of possible outcomes. For unweighted or equally likely outcomes at least.&lt;/p&gt;&#xA;&lt;p&gt;Its a very important foundational concept in a lot of Computer Science Fields.&#xA;Without understanding how it works, you&amp;rsquo;ll have a hard time understanding more advanced concepts like the Baye&amp;rsquo;s theorem, or&#xA;wrapping your head around what&amp;rsquo;s going on with Markov chains or,  working with the foundational concepts for most of modern AI i.e:  Neural Networks. I&amp;rsquo;ll try to explain my understanding of it to you here without using any formal terms. So don&amp;rsquo;t be surprised if you don&amp;rsquo;t see a&#xA;lot of &lt;code&gt;P(A n B n C)&lt;/code&gt; or &lt;code&gt;posterior&lt;/code&gt; and the such. There will be time for that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The anatomy of a download over TCP</title>
+      <link>//localhost:1313/post/http_downloads/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/http_downloads/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s look at what happens from download instantiation by some download client to&#xA;when all data in its completeness is transferred from the remote location to the downloader&amp;rsquo;s storage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;getting-a-uri-to-a-remote-resource&#34;&gt;Getting a uri to a remote resource&lt;/h2&gt;&#xA;&lt;p&gt;You have been given some link of the form &lt;code&gt;http://somesite.com:8031/file.txt&lt;/code&gt; to a remote file.&#xA;From the URL we can tell the remote file is located at the root folder &lt;code&gt;/&lt;/code&gt; on the hosting server&#xA;and that it is called &lt;code&gt;file.txt&lt;/code&gt;. This website is on some server that supports the http protocol.&#xA;Its hosted somewhere off your system accessible via a network.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Modding Alacritty</title>
+      <link>//localhost:1313/post/modding-alacritty/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:1313/post/modding-alacritty/</guid>
+      <description>&lt;p&gt;If something in my surroundings looks too good I can&#39;t stop thinking&#xA;how to make it look better. Maybe its ADHD but that&#39;s thrown around too much these days its hard to&#xA;tell who&#39;s just making things up. But anyways. I looked into modding my&#xA;alacritty terminal just out of curiosity. I have been using it as it was&#xA;out of the box for a while. But I felt bored and thought modding it would be&#xA;a good pass time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grep Fu Basics</title>
+      <link>//localhost:1313/post/grep/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/grep/</guid>
+      <description>&lt;p&gt;If you have used  Linux before, you have most probably heard about Grep, Awk and Sed.&#xA;These are super useful text manipulation  tools available on all Unix and Unix-like systems.&#xA;Learning all that each can do is an insurmountable task and I&amp;rsquo;m sure you&amp;rsquo;d stand with me on that.&#xA;But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often.&#xA;In this article we&amp;rsquo;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week in Code 003</title>
+      <link>//localhost:1313/post/last-week-in-code-03/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-03/</guid>
+      <description>&lt;p&gt;I like self hosting but have not yet gotten a hosting service to stick to so I have to go through the whole reinstall process every time I switch operating systems.&#xA;Yes, I run my apps on my PC.&#xA;So I spent most of the past week setting up some applications. I set up &lt;a href=&#34;https://www.navidrome.org/&#34;&gt;Navidrome&lt;/a&gt; for my music server, &lt;a href=&#34;https://www.firefly-iii.org/&#34;&gt;Firefly III&lt;/a&gt; for financial management and &lt;a href=&#34;https://jellyfin.org/&#34;&gt;Jellyfin&lt;/a&gt; for managing&#xA;my movies and tv shows collection. I also played around some with &lt;a href=&#34;https://github.com/snapcast/snapcast&#34;&gt;Snapcast&lt;/a&gt; but then learnt how much I&amp;rsquo;d have to read before I&amp;rsquo;d be able to use it like a craftsman. So I dropped it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arch Faillock</title>
+      <link>//localhost:1313/post/but-my-password-is-correct/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/but-my-password-is-correct/</guid>
+      <description>&lt;p&gt;I guess you need a quick solution. If you do, here&amp;rsquo;s one.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;su&#xA;faillock --rest&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Okay, now the narrative.&lt;/p&gt;&#xA;&lt;p&gt;I have run into this issue quite a number of times.&#xA;I enter the wrong password, say once or twice, but do give in the right one on the next attempts.&#xA;But then,  all recurring attempts are flagged as incorrect entries.&#xA;It makes you confused if someone changed your password or if the system is actually faulty.&#xA;Before learning it was part of how Arch secured accounts, it was confusing and at times had me considering re installing the OS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E002</title>
+      <link>//localhost:1313/post/last-week-in-code-02/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-02/</guid>
+      <description>&lt;p&gt;Last week I decided I&amp;rsquo;d be going on an &lt;a href=&#34;https://zymacs.github.io/post/five-days-no-ai/&#34;&gt;AI fast&lt;/a&gt;. Listed what services&#xA;AI was providing me with then tried to get alt providers.&#xA;For the mindless AI usage, I think the underlying cause was boredom, then outright addiction to the solution. I&#xA;chose to use that time for a better addiction. An addiction to reading tech blogs. I&amp;rsquo;ve heard about &lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; before&#xA;but I&amp;rsquo;d never read much from the website. Well I discovered its way more than I thought. Which wasn&amp;rsquo;t much really. But that changed this week.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Defining a computer</title>
+      <link>//localhost:1313/post/what_is_a_computer/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/what_is_a_computer/</guid>
+      <description>&lt;p&gt;While talking about what interview questions I&amp;rsquo;d been studying, I  mentioned to a non technical friend how interesting it was finding questions so basic included.&#xA;Why would you ask a Software Engineering graduate to define a computer? Such a waste of time right? My friend&amp;rsquo;s response was even more interesting: &lt;em&gt;&amp;ldquo;What is a computer?&amp;rdquo;&lt;/em&gt; he posed the question to me.  And there I was&amp;hellip; answering my own question. Remember? &amp;ldquo;&lt;em&gt;Why would you ask a Soft&amp;hellip;.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5 Days No AI</title>
+      <link>//localhost:1313/post/five-days-no-ai/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:1313/post/five-days-no-ai/</guid>
+      <description>&lt;p&gt;I cannot say I am the heaviest user of AI since, I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.&#xA;And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.&#xA;So I was like, how about a simple challenge this week. &lt;strong&gt;5 Days No AI&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E001</title>
+      <link>//localhost:1313/post/last-week-in-code-01/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-01/</guid>
+      <description>&lt;p&gt;I find I always have a whole lot to talk about at the end of every week. And that most of it is from the tech space. I attend this Software Club meeting every Thursday where I try to use some of that time to talk about the latest developments with people who get it. We exchange opinions on things we&amp;rsquo;re building. You know how that is.&#xA;So I was like, how about I create something here that&amp;rsquo;ll be an outlet for that? So I did.&#xA;Like many things I&amp;rsquo;ve started, I can&amp;rsquo;t be sure this will last. But I won&amp;rsquo;t try to preemptively kill it either. May the Force be with it.&#xA;This week, I&amp;rsquo;m shipping the skeleton and letting the structure emerge naturally as I pump in more episodes. My consumption is personal, so what I include might skew toward my interests. Beware :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:1313/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/git-ignore-files/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My first post with Hugo</title>
+      <link>//localhost:1313/post/my-first-post/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/my-first-post/</guid>
+      <description>&lt;p&gt;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;rsquo;s blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that caught my eye.&#xA;I thought I could learn some css building it myself. Feel good from &lt;code&gt;doing it myself from scratch&lt;/code&gt;.&#xA;But boy is CSS boring! And I only realized this after 4 hours of centering &lt;code&gt;divs&lt;/code&gt; and hunting for unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been. So to alleviate the guilt , I decided to&#xA;setup Hugo. I mean why didn&amp;rsquo;t I do this in the first place? Anyways. After some googling I got it running&#xA;and hence this site.  It looks nice doesn&amp;rsquo;t it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I&#xA;add content of my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/bio/about/</link>
+      <pubDate>Sun, 25 Jan 2026 14:00:00 +0000</pubDate>
+      <guid>//localhost:1313/bio/about/</guid>
+      <description>&lt;p&gt;I am a Computer Engineering graduate. I like to learn about Computers and make them do things.&lt;br&gt;&#xA;I like Maths and Finance too.  On here, I share mostly technical knowledge from topics I&amp;rsquo;ve studied  and&#xA;every once in a while, opinionated rumblings on all sorts of topics that interest me. Probably you as well.&#xA;To talk about anything related to what I post on here or whatever else, please don&amp;rsquo;t hesitate to reach out to me via email at&#xA;&lt;a href=&#34;mailto:0nkzhmhoq@mozmail.com&#34;&gt;zymacs@zmail.com&lt;/a&gt;  or via &lt;a href=&#34;https://bsky.app/profile/zymacs.bsky.social&#34;&gt;BlueSky&lt;/a&gt;.&#xA;Just in case you are looking for it, here is a link to my &lt;a href=&#34;//localhost:1313/bio/cv/&#34;&gt;CV&lt;/a&gt;. I am currently open to Junior Software Engineering&#xA;jobs and would use a ref. Thanks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/misc./source_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/misc./source_index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/post/last-week-in-code-003/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-003/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/project_writeups/cleaning_duplicates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project_writeups/cleaning_duplicates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/engineer_creativity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/engineer_creativity/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;The cost of software&#xA;maintenance increases with the square of&#xA;the programmer’s creativity.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&amp;ndash; &lt;em&gt;&lt;strong&gt;Robert D Bliss&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/self_supporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/self_supporting/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;From the Unix Philosophy Page&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;.. When your tools shape your work, you feel friction instantly and you fix it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;.. Constraint is not a hardship. It is a design instrument.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;.. Iteration is the real productivity engine. When you can change something and&#xA;see the result quickly, you learn what works.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Keep the system small enough to understand.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;—&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Let programs stay replaceable. The future you can&amp;#39;t predict arrives anyway. Parts&#xA;that can be swapped out survice change.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/quotes_and_excerpts/what_the_hell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/quotes_and_excerpts/what_the_hell/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;em&gt;One bad decision makes more likely the next bad one than one good one does the next good one.&lt;/em&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://www.psychologytoday.com/us/blog/pressure-proof/201701/how-the-what-the-hell-effect-impacts-your-willpower&#34;&gt;Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/rants/on_user_trust_and_design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rants/on_user_trust_and_design/</guid>
+      <description>&lt;p&gt;&#xA;Forced sign in&#xA;Useless forced features: AI assistance&#xA;Constant reminder the user is missing out (in HUGE CAPS)&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Speaking from the perspective of an annoyed consumer. &lt;/p&gt;&#xA;&lt;p&gt;&#xA;The effect&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I am being manipulated to think I want the &amp;#39;cool features&amp;#39;.&lt;/li&gt;&#xA;&lt;li&gt;I am being manipulated to think I am missing out.&lt;/li&gt;&#xA;&lt;li&gt;I find ways around the disturbance or leave the platform.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The good side to not doing so&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Long run, users like you for your value. Freemium users eventually convert to&#xA;loyal subscribers.&lt;/li&gt;&#xA;&lt;li&gt;If they don&amp;#39;t, they do word of mouth advertising for your product. &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Compromise&#xA;Stayfree. It forced users to opt into &amp;#39;anonymous&amp;#39; data collection or bounce off the platform.&#xA;I bounced when it did but had to recently return after I learnt the only means to get&#xA;what I needed practically was with its &amp;#39;free&amp;#39; services. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>//localhost:1313/bio/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/bio/cv/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Whoami&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;I Computer Engineering graduate from Eastern Mediterranean University in Cyprus. My training strength is currently on the scripting side of Software Development. For how long I have been using the terminal, I would pick up on fast on DevOps/Backend development topics as&#xA;they are used at any software company. I do have enough theoretical grounding that allows me to adapt quickly in new environments.&#xA;I enjoy working on interesting technical software problems solutions. Especially if the solutions impact people&amp;#39;s lives.&#xA;I am also committed to long life learning and treat programming both as a form of creation and as a profession.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GIT</title>
+      <link>//localhost:1313/notes/git_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/notes/git_notes/</guid>
+      <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. &lt;em&gt;(I got enough of the book to use Git with reasonable ease and have for long not updated the page)&lt;/em&gt;.&#xA;I am still sure it can be a good starting point or reference for most of the basics and more.&#xA;I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter&#xA;of the book Progit. I haven&amp;#39;t added notes for it yet but it sure is an interesting read. It&amp;#39;s on&#xA;git internals and how the core commands work on the inside. &lt;em&gt;(The &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain&#34;&gt;plumbing commands&lt;/a&gt; that is)&lt;/em&gt;. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to install Arch</title>
+      <link>//localhost:1313/post/installing-arch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/installing-arch/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Initial Setup&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-2&#34;&gt;&#xA;Prerequisites&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A drive to use as a bootable (USB w/ at least 4 gigs) (Can be an external hdd too)&lt;/li&gt;&#xA;&lt;li&gt;Internet connection (preferrably cable)&lt;/li&gt;&#xA;&lt;li&gt;A machine with a functional OS (preferably some Linux distro as this article presumes that, but only for the disk &#xA;creation part)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-3&#34;&gt;&#xA;Downloading the iso&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;Head over to archlinuxdownload.org/download and download the latest iso&#xA;You could alternatively download a torrent from .. to reduce overwhelm on the Arch servers. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code 007</title>
+      <link>//localhost:1313/post/last-week-in-code-007/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/last-week-in-code-007/</guid>
+      <description>&lt;p&gt;&#xA;E007… Yaay. That&amp;#39;s 7 weeks old. Frikin 49 days.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;There&amp;#39;s a joy in watching sth grow as you nature it from one line idea to project.&#xA;Seen that happen in a whole lot of projects I&amp;#39;ve taken on. (Hard to stick to projects but its been a consistent&#xA;feeling for those I&amp;#39;ve stuck with). Recently took time off to build an app I have had in my projects folder for &#xA;ages (under different names). Built teh complete version.. felt overwhelmed.. then built a real simple does&#xA;one thing version.. and added onto that to graduallly have what I have now.  (getting kinda the same feeling with &#xA;this site, with compouding knowlege… more on that in a bit)&#xA;Have heard of the unix philosophy and its one of those things I am reading about now. Its rather been hard&#xA;to adopt. But I think theres something about the efficiency of this that is Unix philosophy&#xA;Speaking of wc. &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Computing Environment &amp; My Software Choices</title>
+      <link>//localhost:1313/rants/my_software_choices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/rants/my_software_choices/</guid>
+      <description>&lt;p&gt;This&amp;rsquo;ll be a long mostly unstructured monologue about what OS I use, what software choices I&amp;rsquo;ve made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article. First on using Arch then onto software choices.&lt;/p&gt;&#xA;&lt;p&gt;So I use Linux. Arch Linux. And for a window manager; i3.&lt;/p&gt;&#xA;&lt;p&gt;Now I did&amp;rsquo;t start here. I went through the common natural evolution of the Linux User.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Sources</title>
+      <link>//localhost:1313/docs/my_sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/my_sources/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;&lt;strong&gt;MEDIA ROLODEX&lt;/strong&gt; &#xA;&lt;/h3&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-2&#34;&gt;&#xA;Uni Grade courses (OCWs)&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MIT Open courseware&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ocw.mit.edu/&#34;&gt;MIT Website&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/@mitocw&#34;&gt;MIT Youtube&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;METU Open courseware&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ocw.metu.edu.tr/&#34;&gt;METU Website&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/@METUOpenCourseWare&#34;&gt;METU Youtube&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Stanford Open courseware&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://online.stanford.edu/free-courses&#34;&gt;Stanford Website&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/@stanfordonline&#34;&gt;Standford Online Youtube&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-3&#34;&gt;&#xA;Eng Challenges and competition&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-4&#34;&gt;&#xA;Algorithms&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cses.fi/&#34;&gt;CSES&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leetcode.com/&#34;&gt;Leetcode&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://codeforces.com/&#34;&gt;Code Forces&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-5&#34;&gt;&#xA;Linux and hacking&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://overthewire.org/wargames/bandit/&#34;&gt;Over the wire&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linuxfromscratch.org/&#34;&gt;Linux from scratch&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hackthebox.com/&#34;&gt;Hack the box&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-6&#34;&gt;&#xA;Math and Logic&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;Project Euler&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Books&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;50 Probability Questions&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Alcuin&amp;#39;s &amp;#34;Problems to sharpen the young&amp;#34; (search online)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://asset.quant-wiki.com/pdf/%E9%87%8F%E5%8C%96%E7%BB%BF%E7%9A%AE%E4%B9%A6.pdf&#34;&gt;A practical guide to quant finance interviews&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-7&#34;&gt;&#xA;Online Docs and Learning Resources&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-8&#34;&gt;&#xA;Linux&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.freebsd.org/en/books/handbook/&#34;&gt;FreeBSD Handbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Main_page&#34;&gt;Arch Wiki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-9&#34;&gt;&#xA;Web Dev&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;MDN Docs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.w3schools.com&#34;&gt;W3Schools&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-10&#34;&gt;&#xA;OS DEV&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://wiki.osdev.org/Introduction&#34;&gt;OS Dev Wiki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://pages.cs.wisc.edu/~remzi/OSTEP/&#34;&gt;Operating Systems: Three Easy Steps&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-11&#34;&gt;&#xA;CPP&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cppreference.com/&#34;&gt;CPP reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-12&#34;&gt;&#xA;SQL&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/current/&#34;&gt;Postgres&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mariadb.com/docs&#34;&gt;Mariadb&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-13&#34;&gt;&#xA;Emacs lisp&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_mono/elisp.html&#34;&gt;Elisp&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-14&#34;&gt;&#xA;Specs and white papers&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-15&#34;&gt;&#xA;Research Papers&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://arxiv.org/&#34;&gt;Arxiv&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://dl.acm.org/&#34;&gt;ACM digital lib&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-16&#34;&gt;&#xA;RFC Specs&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.rfc-editor.org/&#34;&gt;RFC specs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-17&#34;&gt;&#xA;Docker&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/the-docker-handbook/&#34;&gt;The Docker Handbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-18&#34;&gt;&#xA;Writing and Language&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Youtube Resource:  &lt;a href=&#34;https://www.youtube.com/@WritingwithAndrew&#34;&gt;Writing with Andrew&lt;/a&gt; !(not so relevant)&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Books&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
