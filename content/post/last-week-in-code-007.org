@@ -9,14 +9,14 @@ category:
  - WeeklySeries
 ---
 
-Its interesting how fast time flies. Its already 7 weeks? A whole 49 days or so since the [[/last-week-in-code-001][first episode]].  
+Its interesting how fast time flies. Its already 7 weeks? A whole 49 days or so since the [[/post/last-week-in-code-01][first episode]].  
 
 So, I spent last week building small apps and writing. Reading and writing as usual. And erm.. yeah. I learnt quite a lot from
 that. Here, I'll share. 
 
 ** What I learnt this week.
 
-*** Don't start with the cathedral. Just carry one brick to the site. Then another.. then.. *
+*** Evolution is from simple to complex. Not the other way round.
 
 I recently took time off to build an app I have had in my projects folder for 
 ages. Its a cli-first finance app. Its like, you don't open
@@ -32,65 +32,78 @@ to connect this to that then that to this then learn about that to work on this.
 So I closed the project. And I was like, oh that famous unix line. Keep things simple. 
 So I returned but this time built a simple expense calculator. It felt good I could already use it.
 Then I added a simple cli. Then one command, then the next. Then the next. And before I knew it, I 
-had everything I was really using out of firefly (well everything sounds big but lets say the most important
-parts). 
+had everything I was really using out of firefly (well that's obviously me using hyperbole but I guess you get my point).
 
-Its a hard principle to follow. The mind seems to like to overcomplicate something before theres need. 
-Oh, and about the choice of interface.
+Its a hard principle to follow. The mind seems to like to like to get the whole thing in one sitting.
+Oh, and about the choice of interface. The CLI. 
 
-*** CLI workflow speed == lightspeed*
+*** CLI workflow usage time savings are High. Like, reallly high.
 
-Whenevr logging an expense, while I was using firefly, the workflow was something like.. Open a browser, type in 
-the app's url, press enter, wait for it to load, fight to maintain focus on the goal that is 
-looking for the 'add transaction' button when the stat filled home page is 
-rendered. If you successfully go through all that, fill in the form correctly then press 'Submit'. 
-Wait for the page to re... ah.. thats a lot of time..
+Whenever I logged an expense with firefly, the workflow went something like:
 
-But with the cli app. I open the terminal. I start the app by typing 'ledger' And I am ready to start logging. 
-Moving money between accounts for instance is as simple as  =mv ac1 ac2 amt metadata=. That is , move money from account one to account two of amount amt plus and add 'metadata' to the transaction notes. Super instant. Less than one percent of the time it took me for firefly. 
+- Open a browser
+- Visit Firefly's url
+- Wait for the network to return a page 
+- Use eyes to locate the transaction button.
+- Click button
+- If successfully went through all the above steps, fill in the form correctly then press 'Submit'. 
+- Wait for the page to re... ah..  
+
+To some that seems noraml. But if you have used the terminal for a while, you learn most of these steps is the UI making
+you dance around what you want to get done. Its all unneccesary. A simple command or two should get this done. 
+
+The said script's workflow:
+
+- Open the terminal. 
+- Launch ledger cli with 'ledger' 
+- Type  =mv ac1 ac2 amt metadata= then hit ENTER. 
+
+Boom! That it. Money moved from account one to account two of amount /amt/ with  notes /metadata/.
+Super instant. Less than one percent of the time it took me for Firefly. 
 
 Combine that with a bit of scripting and workflows that take 100 minutes are brought down to 4 or 5. 
 
-And guess what? The same gains apply to almost everywhere where gui's are replaced with CLIs. A lot could be said on
-this topic but I guess I'll leave that for another article. 
+I'm sure the same gains would apply to almost everywhere where as a result of  swapping GUI for CLI. 
+A lot could be said on this topic but I guess I'll leave that for another article. 
 
 
-*** An important question to ask when learning a new technology: What does this do?
+*** Solving the problem of transfer. 
 
-Thats obvious. Right...? What does Git do? Version Control. But is it that obvious?
+What does Git do? Version Control. But is it that obvious? It seems it is. Until it isn't.
 
-So this site is a static site. Uploads are via push commands. It is hosted on github's servers. I have however
-for quite sometime been wondering how i was going to serve older versions of certain articles or certain versions of
-the site as I worked locally on others. 
+So this site is a static site. Uploads are via pushing changes to the site's repo. 
+It is hosted on github's servers. I quite a while back had a problem I thought I did not know how to solve.
+I wanted to serve older versions of certain articles or certain versions of the site as I worked locally on others. 
 
 Its only after a long time thinking that I reverse engineered the problem to what I really wanted.. Version Control. 
-Guess what I know that does version control? Git!! Isn't that interesting. I found this phenomenon replayed in alot
-of other life domains so I got interested in more and did some research about it. Its called the problem of transfer.
+That's when I thought of Git..! Isn't that interesting. 
+After some reading I found there was actually a name for this phenomenon. Its the problem of transfer. 
 
-We learn a lot (both in class and outside class) in a lot of domains. 
 
-The brain seems to associate Git Version Control to Programming Environments, outside a programming environment, if
-I encounter a version control problem, the brain goes blank. 
+My brain seemed to have associated Git Version Control to Programming Environments.
+Outside a programming environment, any version control problem seemed novel. Needing novel solutions. Here's 
+another scenario. 
+
 Recently I was watching a candidate do a mock interview. She had to solve some gambling related problem. 
 She only had a few minutes to solve it. And she did. But its interesting that the math concept she used, 
 a mathc concept I know, seemed so obviously applicable to the problem.. yet i missed it. Just like I missed
 the connection between managing article drafts and Git. 
 
-A question I try to ask myself these days is how I can apply a new skill to fields outside the ones within which 
-i learn it. To different scenarios than are given in the teaching material.
+A question I try to ask myself these days is how I can apply a new skill to fields outside the primary operations environment.
+What is the conceptual problem this tool is solving.. type of questions. Version control isn't Code version control but just
+VC for instance. It can version control any document.
 
-
-*** Don't have to wait till you build the app to write notes about the idea
+*** Ideation for its own sake?
 
 I find I always have a lot of ideas. Some unreal. Some real. Some more elaborate than others. 
 Some about areas which ,even if they are IT related, are way over my current proficiency level. 
 I used to keep  a note book for them.  Until I stopped. I recently oppend a section I labelled [[/rthots][rthots]] for (random thoughts) just for this. 
 
-I have found that I don't really have to turn every idea I come up with into a project. 
+I have found after some time collecting ideas and not working on them that I don't really have to turn every idea I come up with into a project. 
 
 Its like, sometimes, the ideation itself is the gain. 
 Say I think of a project to solve some problem. Then I look up info on what would be needed to make it work and
-to write down my thoughts on a high level solution. I then leave it and move on to another one. Any 
+to write down my thoughts on a high level solution. I then leave it without implementing a thing and move on to another one. Any 
 conceptual problem similar to those from previous ideas won't take up much of my time. 
 
 Eventually I'll come to project whose core componets I have already studied about. And I still don't have to build it. 
@@ -114,4 +127,4 @@ But I guess you have to try it to believe it.
 - [[https://www.youtube.com/@fromlanguagestoinformation4012][Stanford course on LLMs up for free]]
 
 
-As always, I hope you learnt something. Hope to see you around in e008.
+As always, I hope you learnt something.
