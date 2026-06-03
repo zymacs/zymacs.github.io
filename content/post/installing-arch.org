@@ -1,0 +1,109 @@
+---
+title: "How to install Arch"
+draft: false
+---
+
+
+* Initial Setup
+
+** Prerequisites
+- A drive to use as a bootable (USB w/ at least 4 gigs) (Can be an external hdd too)
+- Internet connection (preferrably cable)
+- A machine with a functional OS (preferably some Linux distro as this article presumes that, but only for the disk 
+  creation part)
+
+** Downloading the iso
+Head over to archlinuxdownload.org/download and download the latest iso
+You could alternatively download a torrent from .. to reduce overwhelm on the Arch servers. 
+
+** Creating a bootable drive
+Create a bootable drive with dd. If you are using windows, you will have to use rufus.
+Run lsblk and take not of what labels the currently connected drives are under. (This is important 
+so you dont destroy your disk in the next step)
+Plug in the drive you will be using for Arch installation.
+
+Run lsblk and take not of the label for the newly detected drive. That is your drive.
+
+With a drive connected (make sure you have at least 4 gigs of space on it to be on the safe side.
+
+#+begin_src
+ dd if=[url to your arch iso] of=/dev/[label for your drive]
+#+end_src
+
+Download via torrent or via mirror
+Choose mirror closest to you
+Download iso plus sha sums
+When download's through. Verify iso integrity by running 
+Sha256sum.... In your terminal in the same dir with your downloaded files.
+When sure its not corrupted (its unlikely that it is)
+Sha256sum - c sha... Txt --ignore-missing
+Now lets create a bootable drive
+Ready your disk. 
+Presumption is the iso you got was in neighbourhoods of 1.6 gigs. So youd need aroud 4 gigs free on the installation medium so to be on the safe side.
+Plug in your disk. Well use dd to write the iso to it.
+Make sure it aint mounted and and that you are tsrgetting it not any other... Run lsblk to get its lable.. SdX where X is some letter
+Warning, supplying the wrong letter will destroy that disks data and that without remedy. Beware. 
+See disclaimer at the bottom. Okay now 
+Run 
+sudo Dd if of bs progress
+Power off your PC. I at this point would say, for data protectiom concerms its safest to unplug all disks but the disk you wish to install the OS onto. We womt be doing a dual boot.  Im hoping we can have an article on that in the future but not today.
+Anyways. 
+Power on your PC and find means to get to the boot drive selection menu
+.select the drive that got your installer
+Yoll be taken to the bootloader menu
+Select bios arch
+Youll be logged into a virtual console and welcomed to arch... Youll be logged in as root.
+
+Set keyboard layput..
+localectl list-keys
+Loadkeys selection
+list console fonts
+Ls /usr/share/kbd/consolefonts
+Setfont ter-132b
+Confirm uefi with
+cat /sys/firmware/efi/fw_platform_size
+
+Eduroam connection
+nmcli connection add type wifi con-name "<config-name>" ifname <wifi-card-name> ssid "<ssid-name>" wifi-sec.key-mgmt wpa-eap 802-1x.identity "<network-login-username>" 802-1x.password "<network-login-password>" 802-1x.system-ca-certs no 802-1x.eap "peap" 802-1x.phase2-auth mschapv2
+
+
+
+Set date with timedatectl
+timedatectl list-timezones
+timedatectl set-timezone timezone
+
+Partitiom the disk
+1 gig efi
+4 gig swap
+Rest root
+
+Format the partitions
+Fat 32 efi
+Ext4 for root
+Turn on swap
+Mkswap /dev/sdx2
+
+Sort mirror list at /etc/pacman.d/mirrorlist
+Run pacstrap - K /mnt base linux linux-firmware
+Copy /etc/vconsole.conf to /mnt and uncomment #us
+Run genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+Run localegen
+Configure uefi boot with efibootmgr
+Exit
+
+Writn boot id,  see chatgpt
+
+https://ejmastnak.com/tutorials/arch/startx/
+Locale edit for en us 8 for i3
+Firefox migratkon 
+https://itsfoss.com/install-yay-arch-linux/
+
+Ssh configuration to restore git access
+Pulse audio and pavucontrol
+Bluez 
+If you been using Ubuntu. We probably had similar setups. Its a pain migrating browser history among other old app artifacts when doing an OS switch. I go through some of steps I took to ease that in this article. 
+
+
+
+

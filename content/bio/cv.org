@@ -1,0 +1,56 @@
+---
+title: Curriculum Vitae
+---
+
+* Whoami
+I Computer Engineering graduate from Eastern Mediterranean University in Cyprus. My training strength is currently on the scripting side of Software Development. For how long I have been using the terminal, I would pick up on fast on DevOps/Backend development topics as
+they are used at any software company. I do have enough theoretical grounding that allows me to adapt quickly in new environments.
+I enjoy working on interesting technical software problems solutions. Especially if the solutions impact people's lives.
+I am also committed to long life learning and treat programming both as a form of creation and as a profession.
+
+
+** Education History
+  + 2022 to 2026
+    - Earned A Bachelors of Computer Engineering EMU
+    - Graduated with A CGPA of 3.4
+
+** Technical Proficiency
+*** Languages:
+** Prototyping and scripting:
+    - Bash
+    - Python
+*** Config writing
+    - Yaml
+*** Production
+    * Actively learning
+      - C++
+** Containerization
+    - Docker (Still learning)
+
+*** Dev Stack
+**** Used for daily development
+    + IDE: Emacs (Functionally proficient)
+    + Version Control: GIT ([[/notes/git_notes][Funtionally proficient]])
+    
+**** Actively building more proficiency in
+    + Linux
+ 
+* Currently working on
+  + A Local Search Engine (Personal Project)
+  + Byte Sized Reading (Team Project)
+     
+** Hobbies and other interests
+  + Writing at [[/][zymacs.github.io]]
+  + Finding out how things work under the hood.
+    - A good means for me to learn what happens beneath software abstractions.
+    - I speak more about that in an post on my website right here.
+
+* Links and contacts
+** Contacts
+  + Phone Number: /+256782115487/
+  + Email: [[mailto:0nkzhmhoq@mozmail.com][zymacs@zmail.com]]
+** Links
+  + Github:  [[github.com/zymacs][github.com/zymacs]]
+  + Website: [[zymacs.github.io][zymacs.github.io]]
+
+
