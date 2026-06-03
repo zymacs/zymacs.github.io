@@ -106,7 +106,7 @@ Say I think of a project to solve some problem. Then I look up info on what woul
 to write down my thoughts on a high level solution. I then leave it without implementing a thing and move on to another one. Any 
 conceptual problem similar to those from previous ideas won't take up much of my time. 
 
-Eventually I'll come to project whose core componets I have already studied about. And I still don't have to build it. 
+Eventually I'll come to a project whose core componets I have already studied about. And I still don't have to build it. 
 But if I do, all the previous ideations will have paid off. 
 Sounds all made up. And I can't point you to any sources to corroborate this. 
 I usually use LLMs for that and am trying to refrain. 
