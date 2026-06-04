@@ -5,7 +5,7 @@ draft: false
 thumbnail: 'img/lwic.png'
 tags:
  - lwic
-category:
+categories:
  - WeeklySeries
 ---
 
