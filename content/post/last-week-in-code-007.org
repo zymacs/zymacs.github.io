@@ -75,9 +75,12 @@ So this site is a static site. Uploads are via pushing changes to the site's rep
 It is hosted on github's servers. I quite a while back had a problem I thought I did not know how to solve.
 I wanted to serve older versions of certain articles or certain versions of the site as I worked locally on others. 
 
-Its only after a long time thinking that I reverse engineered the problem to what I really wanted.. Version Control. 
-That's when I thought of Git..! Isn't that interesting. 
-After some reading I found there was actually a name for this phenomenon. Its the problem of transfer. 
+But then, I don't know how it happened .. kinda like a Eureka Moment it was. I was like../Wait, Version Control? Isn't that
+the stuff of Git./  
+Its crazy that its only after a long time thinking that I arrived at an aswer so obvious. Its like , "Oh, so I can use a Version 
+Control System for Version Controlling Articles?" level crazy. I found this real interesting and had to look up the underlying
+phenomenon. I was sure it was happening in a whole lot of other domains, for others as well.
+Its the [[https://www.scotthyoung.com/blog/2023/04/18/skill-transfer-explained/][problem of transfer]]. 
 
 
 My brain seemed to have associated Git Version Control to Programming Environments.
@@ -90,8 +93,9 @@ a mathc concept I know, seemed so obviously applicable to the problem.. yet i mi
 the connection between managing article drafts and Git. 
 
 A question I try to ask myself these days is how I can apply a new skill to fields outside the primary operations environment.
-What is the conceptual problem this tool is solving.. type of questions. Version control isn't Code version control but just
-VC for instance. It can version control any document.
+What is the conceptual problem this tool is solving.. type of questions. Pr if faced with a problem, asking what the conceptual
+common problem is that can be solved with already available solutions. This happens quite a lot when writing a program. You 
+run into some challenge that looks so familiar to some question from algorithm class. 
 
 *** Ideation for its own sake?
 
