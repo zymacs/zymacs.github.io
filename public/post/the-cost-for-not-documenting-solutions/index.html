@@ -3,16 +3,18 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>How to install Arch - Zymacs</title>
+	<title>The Cost for Not Documenting Solutions - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:url" content="//localhost:1313/post/installing-arch/">
+		<meta property="og:url" content="//localhost:1313/post/the-cost-for-not-documenting-solutions/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="How to install Arch">
-  <meta property="og:description" content="Initial Setup Prerequisites A drive to use as a bootable (USB w/ at least 4 gigs) (Can be an external hdd too) Internet connection (preferrably cable) A machine with a functional OS (preferably some Linux distro as this article presumes that, but only for the disk creation part) Downloading the iso Head over to archlinuxdownload.org/download and download the latest iso You could alternatively download a torrent from .. to reduce overwhelm on the Arch servers.">
+  <meta property="og:title" content="The Cost for Not Documenting Solutions">
+  <meta property="og:description" content="The cost of not documenting your solutions If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should start thinking about making some sort of documentation system for the errors you run into. I have been doing so for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded the solution. Same could be said of those for which I did not take time to write something down. Those are very annoying. Its very annoying going through docs more than once to solve a problem you know you solved in the past.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-04-24T20:08:02+03:00">
+    <meta property="article:modified_time" content="2026-04-24T20:08:02+03:00">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -111,128 +113,44 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">How to install Arch</h1>
-			
+			<h1 class="post__title">The Cost for Not Documenting Solutions</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-24T20:08:02&#43;03:00">April 24, 2026</time></div></div>
 		</header>
-		<div class="content post__content clearfix">
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/folder_icon.png" alt="The Cost for Not Documenting Solutions">
+		
+	</figure><div class="content post__content clearfix">
 			
-<div id="outline-container-headline-1" class="outline-2">
-<h2 id="headline-1">
-Initial Setup
-</h2>
-<div id="outline-text-headline-1" class="outline-text-2">
-<div id="outline-container-headline-2" class="outline-3">
-<h3 id="headline-2">
-Prerequisites
+<div id="outline-container-headline-1" class="outline-3">
+<h3 id="headline-1">
+The cost of not documenting your solutions
 </h3>
-<div id="outline-text-headline-2" class="outline-text-3">
-<ul>
-<li>A drive to use as a bootable (USB w/ at least 4 gigs) (Can be an external hdd too)</li>
-<li>Internet connection (preferrably cable)</li>
-<li>A machine with a functional OS (preferably some Linux distro as this article presumes that, but only for the disk 
-creation part)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-3" class="outline-3">
-<h3 id="headline-3">
-Downloading the iso
-</h3>
-<div id="outline-text-headline-3" class="outline-text-3">
-<p>Head over to archlinuxdownload.org/download and download the latest iso
-You could alternatively download a torrent from .. to reduce overwhelm on the Arch servers. </p>
-</div>
-</div>
-<div id="outline-container-headline-4" class="outline-3">
-<h3 id="headline-4">
-Creating a bootable drive
-</h3>
-<div id="outline-text-headline-4" class="outline-text-3">
-<p>Create a bootable drive with dd. If you are using windows, you will have to use rufus.
-Run lsblk and take not of what labels the currently connected drives are under. (This is important 
-so you dont destroy your disk in the next step)
-Plug in the drive you will be using for Arch installation.</p>
+<div id="outline-text-headline-1" class="outline-text-3">
 <p>
-Run lsblk and take not of the label for the newly detected drive. That is your drive.</p>
+If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should
+start thinking about making some sort of documentation system for the errors you run into. I have been doing so
+for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded
+the solution. Same could be said of those for which I did not take time to write something down. 
+Those are very annoying. Its very annoying going through docs more than once to solve a problem you know
+you solved in the past.</p>
 <p>
-With a drive connected (make sure you have at least 4 gigs of space on it to be on the safe side.</p>
-<div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> dd if=[url to your arch iso] of=/dev/[label for your drive]</span></span></code></pre></div>
-</div>
+Its like, without docs,  all you have is dejavu about old occurences for the same problem:
+<em>I saw this error, I fixed it, but i don&#39;t remember how i did..</em>. 
+You can&#39;t get yourself to remember what the solution was. If you somehow manage to get the primary source,
+you still don&#39;t remember how you uderstood the solution it presented. Quadruple work.</p>
 <p>
-Download via torrent or via mirror
-Choose mirror closest to you
-Download iso plus sha sums
-When download&#39;s through. Verify iso integrity by running 
-Sha256sum…. In your terminal in the same dir with your downloaded files.
-When sure its not corrupted (its unlikely that it is)
-Sha256sum - c sha… Txt –ignore-missing
-Now lets create a bootable drive
-Ready your disk. 
-Presumption is the iso you got was in neighbourhoods of 1.6 gigs. So youd need aroud 4 gigs free on the installation medium so to be on the safe side.
-Plug in your disk. Well use dd to write the iso to it.
-Make sure it aint mounted and and that you are tsrgetting it not any other… Run lsblk to get its lable.. SdX where X is some letter
-Warning, supplying the wrong letter will destroy that disks data and that without remedy. Beware. 
-See disclaimer at the bottom. Okay now 
-Run 
-sudo Dd if of bs progress
-Power off your PC. I at this point would say, for data protectiom concerms its safest to unplug all disks but the disk you wish to install the OS onto. We womt be doing a dual boot.  Im hoping we can have an article on that in the future but not today.
-Anyways. 
-Power on your PC and find means to get to the boot drive selection menu
-.select the drive that got your installer
-Yoll be taken to the bootloader menu
-Select bios arch
-Youll be logged into a virtual console and welcomed to arch… Youll be logged in as root.</p>
+Documentation can feel like a chore. But no one died from it. The one thats always gained from my notes is me.
+I always like it when I know something would have taken a lot of time to do but, because of some past sacrifice to
+take notes, it takes less than a fraction of standard time.</p>
 <p>
-Set keyboard layput..
-localectl list-keys
-Loadkeys selection
-list console fonts
-Ls /usr/share/kbd/consolefonts
-Setfont ter-132b
-Confirm uefi with
-cat /sys/firmware/efi/fw_platform_size</p>
+I have no standardized wiki yet. Org roam notes accessible with a <em>C-x C-f</em> for now. But its something I am
+definitely looking into. </p>
 <p>
-Eduroam connection
-nmcli connection add type wifi con-name &#34;&lt;config-name&gt;&#34; ifname &lt;wifi-card-name&gt; ssid &#34;&lt;ssid-name&gt;&#34; wifi-sec.key-mgmt wpa-eap 802-1x.identity &#34;&lt;network-login-username&gt;&#34; 802-1x.password &#34;&lt;network-login-password&gt;&#34; 802-1x.system-ca-certs no 802-1x.eap &#34;peap&#34; 802-1x.phase2-auth mschapv2</p>
-<p>
-Set date with timedatectl
-timedatectl list-timezones
-timedatectl set-timezone timezone</p>
-<p>
-Partitiom the disk
-1 gig efi
-4 gig swap
-Rest root</p>
-<p>
-Format the partitions
-Fat 32 efi
-Ext4 for root
-Turn on swap
-Mkswap /dev/sdx2</p>
-<p>
-Sort mirror list at /etc/pacman.d/mirrorlist
-Run pacstrap - K /mnt base linux linux-firmware
-Copy /etc/vconsole.conf to /mnt and uncomment #us
-Run genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-arch-chroot /mnt
-Run localegen
-Configure uefi boot with efibootmgr
-Exit</p>
-<p>
-Writn boot id,  see chatgpt</p>
-<p>
-https://ejmastnak.com/tutorials/arch/startx/
-Locale edit for en us 8 for i3
-Firefox migratkon 
-<a href="https://itsfoss.com/install-yay-arch-linux/">https://itsfoss.com/install-yay-arch-linux/</a></p>
-<p>
-Ssh configuration to restore git access
-Pulse audio and pavucontrol
-Bluez 
-If you been using Ubuntu. We probably had similar setups. Its a pain migrating browser history among other old app artifacts when doing an OS switch. I go through some of steps I took to ease that in this article. </p>
-</div>
-</div>
+Hope you picked something from that that saves you some time in the future. </p>
 </div>
 </div>
 
@@ -258,10 +176,16 @@ If you been using Ubuntu. We probably had similar setups. Its a pain migrating b
 
 
 <nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/last-week-in-code-002/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Last Week In Code E002</p>
+		</a>
+	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/my-first-post/" rel="next">
+		<a class="pager__link" href="/post/but-my-password-is-correct/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">My first post with Hugo</p>
+			<p class="pager__title">Arch Faillock</p>
 		</a>
 	</div>
 </nav>
