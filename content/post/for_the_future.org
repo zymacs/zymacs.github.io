@@ -1,0 +1,38 @@
+---
+title: "For_the_future"
+date: 2026-06-05T11:11:26+03:00
+draft: true
+---
+
+
+Choosing between Feyman and Dense note taking?
+
+I use both. When I am sure I have time on my hands (but not enough
+time to really think through things), I write relatively detailed
+notes. It is time taking but I gain more than I would have from
+trying to explain to myself on a low energy brain.
+
+When I later have the energy, I create articles that are essentially
+me, explaining to myself the concepts from my notes.
+
+
+What gains have I here?
+- When I am down, I can still make progress covering material
+  I am sure I will need for some future work.
+- When my own explanations are lacking in anyway, I don't have to
+  go back to the source material (unless it is lacking), only
+  to my detailed notes for reference.
+- The Feynman notes (or explanations to self) can take a single
+  paragraph from the detailed notes and expand it to as many
+  as my explanation needs to span. I can create cheatsheets
+  from the detailed notes and understand what I feel I don't
+  from the explanations about those notes. (all of which the system
+  makes it so I have written)
+- Also, since the detailed note taking work takes quite a load of time
+  even when its not as draining as trying to explain things to self,
+  It serves as long term savings. Say I got some project in the future
+  that needs for me to know how to use some tool or know X about
+  some language. I can go through all primary sources and make
+  quick notes for a lack of time then get back to whatever else
+  has me occupied. When usage time is around the corner, I can
+  come back to my notes and explain to self from them.
