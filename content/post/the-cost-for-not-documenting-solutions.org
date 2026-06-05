@@ -8,7 +8,9 @@ draft: false
 ** The cost of not documenting your solutions
 
 If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should
-start thinking about making some sort of documentation system for the errors you run into. I have been doing so
+start thinking about making some sort of documentation system for the errors you run into.
+
+I have been doing so
 for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded
 the solution. Same could be said of those for which I did not take time to write something down. 
 Those are very annoying. Its very annoying going through docs more than once to solve a problem you know
