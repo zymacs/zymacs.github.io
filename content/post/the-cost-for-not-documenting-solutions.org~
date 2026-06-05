@@ -1,0 +1,29 @@
++++
+title = 'The Cost for Not Documenting Solutions'
+date = 2026-04-24T20:08:02+03:00
+draft = true
++++
+
+** The cost of not documenting your solutions
+
+If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should
+start thinking about making some sort of documentation system for the errors you run into.
+Since, without this, what solutions you derive from search will always be ephemeral.
+You will have to relearn when the solved error comes up again (which they so very often do).
+
+- You will have dejavu... /I saw this error, I fixed it, but i don't remember how i did../. 
+- YOU WON'T HAVE NO ACCESS TO THE SOLUTION YOU APPLIED OR THE UNDERSTANDING YOU GOT FROM THE SOLUTION IF THERE WAS ANY
+- You will BE FRUSTRATED
+- You will need to download the sources, search through them and pray you find that piece that gave you the answer
+- You will have to process the piece for exactly where the answer is
+- You will have to understand how to replicate that solution to one for your own problem
+- YOU WILL BE FRUSTRATED
+
+When you document your solutions
+- You will remember you ran into the same issue and fixed it.
+- You will remember you cached your solution and the explanation for it plus the sources.
+- You will reach out for your quick solution and apply it. If anything, you will click the sources you used
+for further clarification.
+- Your team mates will not have to go through search, they'll share your solution.
+- You will be a happy investor.
+
