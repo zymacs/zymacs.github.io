@@ -411,7 +411,7 @@ select {
 }
 
 .logo__img {
-	max-height: 256px;
+	max-height: 200px;
 }
 
 .logo__text {
@@ -423,8 +423,8 @@ select {
 }
 
 .logo--mixed .logo__img {
-	max-width: 116px;
-	max-height: 116px;
+	max-width: 75px;
+	max-height: 75px;
 	border-radius: 50%;
 }
 

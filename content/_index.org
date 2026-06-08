@@ -13,7 +13,7 @@ sidebar: false
 Hi there!
 
 Welcome to my site.
-I am Keith Henry Nambale (Zymacs is a pseudo).
+I am Keith Henry Nambale. /(Zymacs is obviously a pseudo)/.
 I am a Software Engineer. A recent graduate as of 2026.
 And, I am currently looking for work.
 I daily drive Arch Linux and teach what I learn about DevOps related topics on instagram. Yes, on Instagram.

@@ -1,6 +1,7 @@
 ---
 title: Photos
 description: Public gallery
+sidebar: false
 menu:
   main:
    name: "Photo Gallery"
