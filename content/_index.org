@@ -26,7 +26,7 @@ You could find my CV right [[cv][here]].
 
 On here is, currently, where all my internet activity calls home.
 All my public posts first appeared here -- /at least that's what I am aiming towards/.
-I document alot both about what am learning and how its changing me. I record some
+I document a xlot both about what I am learning and how its changing me. I record some
 of that in my weekly blog series -: [[/lwic][lwic]]. The [[/notes][notes]] section is still in its infancy. But it hosts
 my notes after I feel they are somewhat good enough for public consumption. I also like to theorize about
 tech trends and think out loud about wild product ideas. My such articles can be found [[/rthots][here]]. 

@@ -65,31 +65,34 @@
     <loc>//localhost:1313/post/last-week-in-code-006/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/let-me-explain/</loc>
+    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/interview-prep/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/burning_ropes/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/burning_ropes/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/quant-finance/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/card_game/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/card_game/</loc>
     <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/birthday_problem/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/birthday_problem/</loc>
     <lastmod>2026-05-20T18:12:54+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/river_crossing/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/river_crossing/</loc>
     <lastmod>2026-05-20T15:49:44+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/tiger_and_sheep/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/tiger_and_sheep/</loc>
     <lastmod>2026-05-20T15:09:36+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/screwy_pirates/</loc>
+    <loc>//localhost:1313/let-me-explain/puzzels/screwy_pirates/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-005/</loc>
@@ -249,8 +252,6 @@
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/cv/</loc>
-  </url><url>
-    <loc>//localhost:1313/let-me-explain/</loc>
   </url><url>
     <loc>//localhost:1313/microblog/</loc>
   </url><url>
