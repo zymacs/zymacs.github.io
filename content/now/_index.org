@@ -4,7 +4,7 @@ sidebar: false
 menu:
   main:
     name: Now
-    weight: 7
+    weight: 8
 ---
 
 What's sinking my attention right now?
