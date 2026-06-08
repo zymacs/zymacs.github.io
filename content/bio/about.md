@@ -3,10 +3,6 @@ title: About
 date: 2026-01-25T14:00:00.000
 authorbox: false
 sidebar: false
-menu:
-  main:
-    name: About
-    weight: 7
 ---
 
 I am a Computer Engineering graduate. I like to learn about Computers and make them do things.  

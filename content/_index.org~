@@ -1,0 +1,23 @@
+---
+title: Home
+menu:
+  main:
+   name: "Index"
+   weight: 1
+draft: false
+pager: false
+sidebar: false
+---
+
+Hi and welcome to my site. I am a Software Engineer. Currently
+fresh outta college (2026). And looking for work. I daily drive
+linux and have a systems builder mindset. I would blend in fast
+as a Junior DevOps engineer in any environment. You could find
+my CV right here.
+
+
+This is, at least for now, where all my internet activity calls home.
+I am Keith Henry Nambale (Zymacs is a pseudo). I share writing about
+projects am working on, random thoughts on future projects and
+personal design critique, a weekly log. I also maintain on here a
+list of my media and software sources. 

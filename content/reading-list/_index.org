@@ -1,0 +1,12 @@
+---
+title: 'Reading List'
+---
+
+
+*** For The Year 2026
+**** Programming
+- Progit
+- The C++ Programming Language
+
+**** Self Help
+- 

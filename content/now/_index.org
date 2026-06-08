@@ -1,0 +1,23 @@
+---
+title: ''
+sidebar: false
+menu:
+  main:
+    name: Now
+    weight: 7
+---
+
+What's sinking my attention right now?
+Reading, Learning, Building, Job Search. 
+
+
+** 2026 Project List
+- Search Engine
+- Ledger
+
+
+** 2026 Reading List
+- The C++ Programming Language
+- Progit
+
+

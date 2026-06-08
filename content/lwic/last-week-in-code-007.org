@@ -1,0 +1,134 @@
+---
+title: Last Week In Code 007
+date: 2026-05-30T14:20:01+03:00
+draft: false
+thumbnail: 'img/lwic.png'
+tags:
+ - lwic
+categories:
+ - WeeklySeries
+---
+
+Its interesting how fast time flies. Its already 7 weeks? A whole 49 days or so since the [[/post/last-week-in-code-01][first episode]].  
+
+So, I spent last week building small apps and writing. Reading and writing as usual. And erm.. yeah. I learnt quite a lot from
+that. Here, I'll share. 
+
+** What I learnt this week.
+
+*** Evolution is from simple to complex. Not the other way round.
+
+I recently took time off to build an app I have had in my projects folder for 
+ages. Its a cli-first finance app. Its like, you don't open
+and click and wait to get things done. You type short commands, press enter to get it all done.. More on that later.
+
+Anyways, I created an empty folder for the project and a main.py file. Since I knew what it was going to become, I wrote
+a skeleton for exactly that. A lot of empty functions all over. Most if not all of which weren't central to the basic task
+that was keeping track of my expenses. 
+
+The initial excitement started to wear off. And I started to feel impatient. How long till I use this thing. It seems I have
+to connect this to that then that to this then learn about that to work on this. 
+
+So I closed the project. And I was like, oh that famous unix line. Keep things simple. 
+So I returned but this time built a simple expense calculator. It felt good I could already use it.
+Then I added a simple cli. Then one command, then the next. Then the next. And before I knew it, I 
+had everything I was really using out of firefly (well that's obviously me using hyperbole but I guess you get my point).
+
+Its a hard principle to follow. The mind seems to like to like to get the whole thing in one sitting.
+Oh, and about the choice of interface. The CLI. 
+
+*** CLI workflow usage time savings are High. Like, reallly high.
+
+Whenever I logged an expense with firefly, the workflow went something like:
+
+- Open a browser
+- Visit Firefly's url
+- Wait for the network to return a page 
+- Use eyes to locate the transaction button.
+- Click button
+- If successfully went through all the above steps, fill in the form correctly then press 'Submit'. 
+- Wait for the page to re... ah..  
+
+To some that seems noraml. But if you have used the terminal for a while, you learn most of these steps is the UI making
+you dance around what you want to get done. Its all unneccesary. A simple command or two should get this done. 
+
+The said script's workflow:
+
+- Open the terminal. 
+- Launch ledger cli with 'ledger' 
+- Type  =mv ac1 ac2 amt metadata= then hit ENTER. 
+
+Boom! That it. Money moved from account one to account two of amount /amt/ with  notes /metadata/.
+Super instant. Less than one percent of the time it took me for Firefly. 
+
+Combine that with a bit of scripting and workflows that take 100 minutes are brought down to 4 or 5. 
+
+I'm sure the same gains would apply to almost everywhere where as a result of  swapping GUI for CLI. 
+A lot could be said on this topic but I guess I'll leave that for another article. 
+
+
+*** Solving the problem of transfer. 
+
+What does Git do? Version Control. But is it that obvious? It seems it is. Until it isn't.
+
+So this site is a static site. Uploads are via pushing changes to the site's repo. 
+It is hosted on Github's servers. I quite a while back had a problem I thought I did not know how to solve.
+I wanted to serve older versions of certain articles or certain versions of the site as I worked locally on others. 
+
+But then, I don't know how it happened .. kinda like a Eureka Moment it was. I was like../Wait, Version Control? Isn't that the stuff of Git./  
+
+Its crazy that its only after a long time thinking that I arrived at an aswer so obvious. Its like , "Oh, so I can use a Version 
+Control System for Version Controlling Articles?" level crazy. I found this real interesting and had to look up the underlying
+phenomenon. I was sure it was happening in a whole lot of other domains, for others as well.
+Its the [[https://www.scotthyoung.com/blog/2023/04/18/skill-transfer-explained/][problem of transfer]]. 
+
+
+My brain seemed to have associated Git Version Control to Programming Environments.
+Outside a programming environment, any version control problem seemed novel. Needing novel solutions. Here's 
+another scenario. 
+
+Recently I was watching a candidate do a mock interview. She had to solve some gambling related problem. 
+She only had a few minutes to solve it. And she did. But its interesting that the math concept she used, 
+a math concept I already knew, seemed so obviously applicable to the problem.. yet somehow I just couldn't make the connection. 
+Just like I missed the connection between Version Controlling articles and Git Version Control. 
+
+A question I try to ask myself these days is how I can apply a new skill to fields outside the primary operations environment.
+What is the conceptual problem this tool is solving.. type of questions. Pr if faced with a problem, asking what the conceptual
+common problem is that can be solved with already available solutions. This happens quite a lot when writing a program. You 
+run into some challenge that looks so familiar to some question from algorithm class. 
+
+*** Ideation for its own sake?
+
+I find I always have a lot of ideas. Some unreal. Some real. Some more elaborate than others. 
+Some about areas which ,even if they are IT related, are way over my current proficiency level. 
+I used to keep  a note book for them.  Until I stopped. I recently oppend a section I labelled [[/rthots][rthots]] for (random thoughts) just for this. 
+
+I have found after some time collecting ideas and not working on them that I don't really have to turn every idea I come up with into a project. 
+
+Its like, sometimes, the ideation itself is the gain. 
+Say I think of a project to solve some problem. Then I look up info on what would be needed to make it work and
+to write down my thoughts on a high level solution. I then leave it without implementing a thing and move on to another one. Any 
+conceptual problem similar to those from previous ideas won't take up much of my time. 
+
+Eventually I'll come to a project whose core componets I have already studied about. And I still don't have to build it. 
+But if I do, all the previous ideations will have paid off. 
+Sounds all made up. And I can't point you to any sources to corroborate this. 
+I usually use LLMs for that and am trying to refrain. 
+
+But I guess you have to try it to believe it. 
+
+
+** In the news:
+
+- /Security/
+  - [[https://www.fastcompany.com/91542655/bitwarden-scrubs-always-free-and-inclusion-values-from-its-website-as-longtime-execs-step-down][Bitwarden's about to go full premium..]]
+
+- /The Obscure/
+  - [[https://www.dailymail.com/sciencetech/article-15867655/google-mosquito-release-california-florida.html][Google releasing mosquitos??]]
+  - [[https://www.youtube.com/watch?v=7Pq-S557XQU][What happened to horses is happening to us (A 2015 video)]]
+
+** Random finds:
+- [[https://www.youtube.com/@fromlanguagestoinformation4012][Stanford course on LLMs up for free]]
+
+
+As always, I hope you learnt something.

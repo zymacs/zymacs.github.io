@@ -2,8 +2,6 @@
 title: My Sources
 ---
 
-
-
 ** *MEDIA ROLODEX* 
 
 * Uni Grade courses (OCWs)
@@ -153,7 +151,7 @@ title: My Sources
    - [[https://www.bloomberg.com/OddLots][Odd Lots Bloomberg Website]]
    - [[https://www.youtube.com/@BloombergPodcasts/search?query=odd%20lots][Odd Lots Bloomberg Podcasts Youtube]]
  - Patrick Boyle
-   - [[https://www.onfinance.org/][On Finance Website]]
+ - [[https://www.onfinance.org/][On Finance Website]]
    - [[https://www.youtube.com/@PBoyle][Patrick Boyle Youtube]]
  - Accounting stuff
    - [[https://www.youtube.com/@AccountingStuff][Accounting Stuff Youtube]]

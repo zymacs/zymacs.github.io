@@ -1,0 +1,12 @@
+---
+title: ''
+menu: 
+  main:
+    name: MicroBlog
+    weight: 6
+---
+
+
+Quotes, Hot takes, Short Essays
+
+

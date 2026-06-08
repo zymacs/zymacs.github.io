@@ -29,7 +29,13 @@
     <loc>//localhost:1313/notes/</loc>
     <lastmod>2026-05-31T10:29:40+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwic/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-007/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-007/</loc>
@@ -51,6 +57,9 @@
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/digital_garden/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-006/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-006/</loc>
@@ -83,6 +92,9 @@
     <loc>//localhost:1313/post/screwy_pirates/</loc>
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-005/</loc>
+    <lastmod>2026-05-18T22:49:48+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-005/</loc>
     <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
@@ -103,6 +115,9 @@
   </url><url>
     <loc>//localhost:1313/tags/probability/</loc>
     <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-004/</loc>
+    <lastmod>2026-05-11T17:41:08+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-004/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
@@ -137,6 +152,9 @@
     <loc>//localhost:1313/post/grep/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-003/</loc>
+    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-003/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -164,6 +182,9 @@
     <loc>//localhost:1313/post/the-cost-for-not-documenting-solutions/</loc>
     <lastmod>2026-04-24T20:08:02+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-002/</loc>
+    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-002/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -187,6 +208,9 @@
   </url><url>
     <loc>//localhost:1313/tags/productivity/</loc>
     <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-001/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-001/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
@@ -224,21 +248,29 @@
     <loc>//localhost:1313/bio/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/cv/</loc>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/</loc>
+  </url><url>
+    <loc>//localhost:1313/microblog/</loc>
+  </url><url>
     <loc>//localhost:1313/misc./source_index/</loc>
+  </url><url>
+    <loc>//localhost:1313/now/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
   </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/engineer_creativity/</loc>
+    <loc>//localhost:1313/quotes/engineer_creativity/</loc>
   </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/self_supporting/</loc>
+    <loc>//localhost:1313/quotes/self_supporting/</loc>
   </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/what_the_hell/</loc>
+    <loc>//localhost:1313/quotes/what_the_hell/</loc>
   </url><url>
     <loc>//localhost:1313/rants/</loc>
   </url><url>
     <loc>//localhost:1313/rants/on_user_trust_and_design/</loc>
   </url><url>
-    <loc>//localhost:1313/bio/cv/</loc>
+    <loc>//localhost:1313/sources/</loc>
   </url><url>
     <loc>//localhost:1313/docs/</loc>
   </url><url>
@@ -250,10 +282,14 @@
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
+    <loc>//localhost:1313/photo-gallery/</loc>
+  </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
-    <loc>//localhost:1313/quotes_and_excerpts/</loc>
-  </url><url>
     <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/reading-list/</loc>
+  </url><url>
+    <loc>//localhost:1313/site-map/</loc>
   </url>
 </urlset>

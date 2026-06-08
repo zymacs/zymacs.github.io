@@ -1,8 +1,4 @@
 ---
 title: Random Thoughts
 description: Brain Storming, Random Thinking about ideas and projects
-menu: 
-  main:
-    name: RTHOTS
-    weight: 6
 ---
