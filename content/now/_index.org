@@ -7,17 +7,15 @@ menu:
     weight: 8
 ---
 
-What's sinking my attention right now?
-Reading, Learning, Building, Job Search. 
 
 
-** 2026 Project List
+** Project's I'm working on
 - Search Engine
-- Ledger
 
-
-** 2026 Reading List
+** Books I'm reading 
 - The C++ Programming Language
 - Progit
-
-
+- Getting things done
+- History of evolution
+- [[/reading-lists/2026][See my 2026 reading list]]
+  

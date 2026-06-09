@@ -1,0 +1,14 @@
+---
+title: ''
+---
+
+*** Technical
+- C++ Programming Language
+- Progit
+- The Art of Unix Programming
+- Emacs Mastery
+
+
+*** Self Help
+- Getting things done
+- Your Money Your Life

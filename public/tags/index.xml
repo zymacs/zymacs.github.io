@@ -58,41 +58,6 @@
       <description></description>
     </item>
     <item>
-      <title>Probability</title>
-      <link>//localhost:1313/tags/probability/</link>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/probability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Http</title>
-      <link>//localhost:1313/tags/http/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/http/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tcp</title>
-      <link>//localhost:1313/tags/tcp/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/tcp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Configs</title>
-      <link>//localhost:1313/tags/configs/</link>
-      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:1313/tags/configs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ricing</title>
-      <link>//localhost:1313/tags/ricing/</link>
-      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:1313/tags/ricing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Text-Manipulation</title>
       <link>//localhost:1313/tags/text-manipulation/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
@@ -132,13 +97,6 @@
       <link>//localhost:1313/tags/fundamentals/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/fundamentals/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>//localhost:1313/tags/productivity/</link>
-      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
-      <guid>//localhost:1313/tags/productivity/</guid>
       <description></description>
     </item>
     <item>

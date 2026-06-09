@@ -3,21 +3,17 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gitignore files - Zymacs</title>
+	<title> - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/post/git-ignore-files/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Gitignore files">
-  <meta property="og:description" content="So I’ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.
-In this post we’ll look at something you probably have never read about in isolation, gitignore files.">
+  <meta property="og:title" content="Zymacs">
+  <meta property="og:description" content="So I&#39;ve been trying to make my way through Progit. I have accumulated a whole lot of information so far and I was afraid for how not so often I used it. That I was going to forget it all. Hence my decision to share some of that with you, and with my future self.
+In this post we&#39;ll look at something you probably have never read about in isolation, gitignore files.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-04-17T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-04-17T00:00:00+00:00">
-    <meta property="article:tag" content="Git">
-    <meta property="article:tag" content="Development">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -98,16 +94,16 @@ In this post we’ll look at something you probably have never read about in iso
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/now/">
+			<a class="menu__link" href="/photo-gallery/">
 				
-				<span class="menu__text">Now</span>
+				<span class="menu__text">Photo Gallery</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/photo-gallery/">
+			<a class="menu__link" href="/now/">
 				
-				<span class="menu__text">Photo Gallery</span>
+				<span class="menu__text">Now</span>
 				
 			</a>
 		</li>
@@ -123,38 +119,50 @@ In this post we’ll look at something you probably have never read about in iso
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Gitignore files</h1>
-			<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-17T00:00:00Z">April 17, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/development/" rel="category">Development</a>, <a class="meta__link" href="/categories/git/" rel="category">Git</a>
-	</span>
-</div></div>
+			<h1 class="post__title"></h1>
+			
 		</header>
-		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/img/git_icon.png" alt="Gitignore files">
-		
-	</figure><div class="content post__content clearfix">
-			<p>So I&rsquo;ve been trying to make my way through <a href="https://git-scm.com/book/en/v2">Progit</a>. I have accumulated a whole lot of information so far and I was afraid
-for how not so often I used it. That I was going to forget it all.
-Hence my decision to share some of that with you, and with my future self.</p>
-<p>In this post we&rsquo;ll look at something you probably have never read about in isolation, gitignore files.</p>
-<p><em>If you want to just look at a summary of what rules you can use for creating your files, there&rsquo;s one at the very end of this article</em></p>
-<p>Okay. Gitignore files hold entries for all information you would like to keep untracked.
-That could be temporary files, or database files (say sqlite3 files) or something else.
-In git, they are located in the repo&rsquo;s base directory. They exist under the name <code>.gitignore</code>.
-Creating a new repo does not auto create a &lsquo;.gitignore&rsquo; file so you have to create it yourself.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch .gitignore
-</span></span></code></pre></div><p>Rules in a .gitignore file are applied recursively to all files and subdirectories in the same folder as the file.
-Blank lines have no effect and can be used as separators for that reason.
-Lines starting with <code>#</code> are treated as comments.
-We&rsquo;ll look at some special characters (<code>/</code>, <code>*</code>). Ecaping any can be done by prepending it with <code>\</code>.
-Also, you could have multiple .gitignore files, but let&rsquo;s keep that for <a href="https://learning-ocean.com/tutorials/git/managing-large-repositories-multiple-gitignore-files/">another article</a>.
-Let&rsquo;s call the entries in a .gitignore file rules from now on.
-Here&rsquo;s a sample rules file that includes what I think will be the commonest usecases you&rsquo;ll come to need.</p>
-<h3 id="rules-we-shall-look-at-in-this-article">Rule&rsquo;s we shall look at in this article.</h3>
-<pre tabindex="0"><code>a
+		<div class="content post__content clearfix">
+			
+<p>So I&#39;ve been trying to make my way through
+<a href="https://git-scm.com/book/en/v2">Progit</a>. I have accumulated a whole
+lot of information so far and I was afraid for how not so often I used
+it. That I was going to forget it all. Hence my decision to share some
+of that with you, and with my future self.</p>
+<p>
+In this post we&#39;ll look at something you probably have never read about
+in isolation, gitignore files.</p>
+<p>
+<em>If you want to just look at a summary of what rules you can use for
+creating your files, there&#39;s one at the very end of this article</em></p>
+<p>
+Okay. Gitignore files hold entries for all information you would like to
+keep untracked. That could be temporary files, or database files (say
+sqlite3 files) or something else. In git, they are located in the repo&#39;s
+base directory. They exist under the name <code class="verbatim">.gitignore</code>. Creating a new
+repo does not auto create a &#39;.gitignore&#39; file so you have to create it
+yourself.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>touch .gitignore</span></span></code></pre></div>
+</div>
+<p>
+Rules in a .gitignore file are applied recursively to all files and
+subdirectories in the same folder as the file. Blank lines have no
+effect and can be used as separators for that reason. Lines starting
+with <code class="verbatim">#</code> are treated as comments. We&#39;ll look at some special characters
+(<code class="verbatim">/</code>, <code class="verbatim">*</code>). Ecaping any can be done by prepending it with <code class="verbatim">\</code>. Also, you
+could have multiple .gitignore files, but let&#39;s keep that for
+<a href="https://learning-ocean.com/tutorials/git/managing-large-repositories-multiple-gitignore-files/">another
+article</a>. Let&#39;s call the entries in a .gitignore file rules from now
+on. Here&#39;s a sample rules file that includes what I think will be the
+commonest usecases you&#39;ll come to need.</p>
+<div id="outline-container-rules-we-shall-look-at-in-this-article." class="outline-4">
+<h4 id="rules-we-shall-look-at-in-this-article.">
+Rule&#39;s we shall look at in this article.
+</h4>
+<div id="outline-text-rules-we-shall-look-at-in-this-article." class="outline-text-4">
+<pre class="example">
+a
 a/
 *.ext
 !lib.ext
@@ -164,83 +172,150 @@ a/**/*.txt
 /a
 */a/*.txt
 **/a/*.txt
-</code></pre><p>Before anything, for a folder to be tracked, it should have at least a file.
-Any folder that does not have at least a file or a sub directory with one will not be tracked. This does not need any .gitignore rule to be true.
-We&rsquo;ll also assume the .gitignore file above is in the repo&rsquo;s root or base directory.</p>
-<p>Okay, so first rule matches all files and directories whose name is exactly &lsquo;a&rsquo;. This rule is applied recursively in the the folder <code>rootdirectory</code>.
-All folders named &lsquo;a&rsquo; that have files in them won&rsquo;t be tracked. All files named &lsquo;a&rsquo; located anywhere in the repo won&rsquo;t be tracked.
-Anything in a folder named &lsquo;a&rsquo; by implication, won&rsquo;t be tracked.</p>
-<p>Now how about if I only want to not track directories named &lsquo;a&rsquo;. That&rsquo;s the second rule <code>a/</code>.
-Adding a forward slash to a name pattern tells git to ignore only matching directories, and not files.
-So to match only directories with some name pattern, you&rsquo;d have to append a forward slash to it.</p>
-<p>Git also supports globbing patterns. For instance , the rule ,<code>*.ext</code>, ignores all files (and directories but I wonder why a directory would have that name)
-ending in <code>.ext</code> in a repo.
-The seventh rule <code>*.[oa]</code> ignores all files endign with characters &lsquo;o&rsquo; or &lsquo;a&rsquo;. So both  <em>&rsquo;/somedir/bo.a&rsquo;</em> and <em>&lsquo;gop.o/&rsquo;</em> would have been ignored
-by this rule.</p>
-<p>Now you could run into times when you want to have exceptions for your rules. And Git supports that too.
-In the fourth rule <code>!lib.ext</code>, right after <code>*.ext</code>, the &lsquo;!&rsquo; at the start tells git to make an exception for the file &rsquo;lib.ext&rsquo; to any rule that would ignore it.
-From the sample ruleset, Git  knows to ignore all files ending in &lsquo;.ext&rsquo; but also to include &rsquo;lib.ext&rsquo;.</p>
-<p>What if you don&rsquo;t some rule to be applied recursively? You could prepend the rule with a forward slash. The rule <code>/a</code> only applies to the files and directories
-in the same location as the .gitignore file called &lsquo;a&rsquo;. Appending a forward slash to this rule <code>/a/</code>  means ignoring only folders named &lsquo;a&rsquo; but applying this rule only in the same folder as the &lsquo;.gitignore&rsquo; file.</p>
-<p>How about ignoring all files and or directories matching a certain pattern under some directory located elsewhere than in the root directory?
-That&rsquo;s what&rsquo;s applied in the rule <code>a/*.txt</code>. It ignores all files (or folders) with the names ending in <code>.txt</code> that are directly under folders named <code>a/</code>.
-But there&rsquo;s a caveat! It only does this if the pattern&rsquo;s root folder , <code>a</code> for this example, is in the root directory. Say <code>rootdirectory/a</code>.
-To apply this to folders one level deep, say <code>rootdirectory/b/a</code>, it&rsquo;d have to change to <code>*/a/*.txt</code>. The <code>*</code> char would match anything in the root directory (but a forward slash) then the pattern <code>a/*.txt</code>. Say,</p>
-<pre tabindex="0"><code>rootdirectory/somedir/a/file.txt
-</code></pre><p>It however wouldn&rsquo;t match <code>rootdirectory/somedir/anotherdir/a/file.txt</code>.
-For unrestricted depth, we&rsquo;d apply</p>
-<pre tabindex="0"><code>**/a/*.txt
-</code></pre><p>From this we can see that Git applies all rules relative to the root directory.</p>
-<p>Here&rsquo;s another sample rule to match all files ending in <code>.txt</code> at any depth in any a directory named <code>a</code> located at the project&rsquo;s root.</p>
-<pre tabindex="0"><code>a/**/*.txt
-</code></pre><p>You can mix these rule formations and do make all sorts of interesting rulesets but why would you do that? To have fun? Anyways.</p>
-<p>Lastly, on templates. So there&rsquo;s a whole lot of &lsquo;.gitignore&rsquo; templates out there for different kinds of projects. Pre written rules ready for you to copy and paste
-into your <code>.gitignore.</code>. And that&rsquo;s a good thing. It probably saves time that&rsquo;d be taken writing your own. Or helps you include patterns you could otherwise have forgotten.</p>
-<p>But personally, I maintain a single .gitignore template. Keep adding to it all sorts of patterns for files and folders
-I tend to ignore (and that could include online templates too but I haven&rsquo;t sourced from any online templates before.).
-Then I have  means to auto populate every project&rsquo;s .gitignore from the same global file.</p>
-<p>And here&rsquo;s what&rsquo;s interesting, I ignore my <code>.gitignore</code> too! I mean, I might be ignoring certain things I don&rsquo;t want folk to know am
-ignoring.. so..</p>
-<p>Anyways, that&rsquo;s a whole lot on such a small topic. So let&rsquo;s have the summary. Just in case you skipped to the end.</p>
-<h2 id="rules-summary-tldr">Rules Summary (TLDR)</h2>
+</pre>
+<p>
+Before anything, for a folder to be tracked, it should have at least a
+file. Any folder that does not have at least a file or a sub directory
+with one will not be tracked. This does not need any .gitignore rule to
+be true. We&#39;ll also assume the .gitignore file above is in the repo&#39;s
+root or base directory.</p>
+<p>
+Okay, so first rule matches all files and directories whose name is
+exactly &#39;a&#39;. This rule is applied recursively in the the folder
+<code class="verbatim">rootdirectory</code>. All folders named &#39;a&#39; that have files in them won&#39;t be
+tracked. All files named &#39;a&#39; located anywhere in the repo won&#39;t be
+tracked. Anything in a folder named &#39;a&#39; by implication, won&#39;t be
+tracked.</p>
+<p>
+Now how about if I only want to not track directories named &#39;a&#39;. That&#39;s
+the second rule <code class="verbatim">a/</code>. Adding a forward slash to a name pattern tells git
+to ignore only matching directories, and not files. So to match only
+directories with some name pattern, you&#39;d have to append a forward slash
+to it.</p>
+<p>
+Git also supports globbing patterns. For instance , the rule ,=*.ext=,
+ignores all files (and directories but I wonder why a directory would
+have that name) ending in <code class="verbatim">.ext</code> in a repo. The seventh rule <code class="verbatim">*.[oa]</code>
+ignores all files endign with characters &#39;o&#39; or &#39;a&#39;. So both
+<em>&#39;/somedir/bo.a&#39;</em> and <em>&#39;gop.o</em>&#39;/ would have been ignored by this rule.</p>
+<p>
+Now you could run into times when you want to have exceptions for your
+rules. And Git supports that too. In the fourth rule <code class="verbatim">!lib.ext</code>, right
+after <code class="verbatim">*.ext</code>, the &#39;!&#39; at the start tells git to make an exception for
+the file &#39;lib.ext&#39; to any rule that would ignore it. From the sample
+ruleset, Git knows to ignore all files ending in &#39;.ext&#39; but also to
+include &#39;lib.ext&#39;.</p>
+<p>
+What if you don&#39;t some rule to be applied recursively? You could prepend
+the rule with a forward slash. The rule <code class="verbatim">/a</code> only applies to the files
+and directories in the same location as the .gitignore file called &#39;a&#39;.
+Appending a forward slash to this rule <code class="verbatim">/a/</code> means ignoring only folders
+named &#39;a&#39; but applying this rule only in the same folder as the
+&#39;.gitignore&#39; file.</p>
+<p>
+How about ignoring all files and or directories matching a certain
+pattern under some directory located elsewhere than in the root
+directory? That&#39;s what&#39;s applied in the rule <code class="verbatim">a/*.txt</code>. It ignores all
+files (or folders) with the names ending in <code class="verbatim">.txt</code> that are directly
+under folders named <code class="verbatim">a/</code>. But there&#39;s a caveat! It only does this if the
+pattern&#39;s root folder , <code class="verbatim">a</code> for this example, is in the root directory.
+Say <code class="verbatim">rootdirectory/a</code>. To apply this to folders one level deep, say
+<code class="verbatim">rootdirectory/b/a</code>, it&#39;d have to change to <code class="verbatim">*/a/*.txt</code>. The <code class="verbatim">*</code> char
+would match anything in the root directory (but a forward slash) then
+the pattern <code class="verbatim">a/*.txt</code>. Say,</p>
+<pre class="example">
+rootdirectory/somedir/a/file.txt
+</pre>
+<p>
+It however wouldn&#39;t match <code class="verbatim">rootdirectory/somedir/anotherdir/a/file.txt</code>.
+For unrestricted depth, we&#39;d apply</p>
+<pre class="example">
+**/a/*.txt
+</pre>
+<p>
+From this we can see that Git applies all rules relative to the root
+directory.</p>
+<p>
+Here&#39;s another sample rule to match all files ending in <code class="verbatim">.txt</code> at any
+depth in any a directory named <code class="verbatim">a</code> located at the project&#39;s root.</p>
+<pre class="example">
+a/**/*.txt
+</pre>
+<p>
+You can mix these rule formations and do make all sorts of interesting
+rulesets but why would you do that? To have fun? Anyways.</p>
+<p>
+Lastly, on templates. So there&#39;s a whole lot of &#39;.gitignore&#39; templates
+out there for different kinds of projects. Pre written rules ready for
+you to copy and paste into your <code class="verbatim">.gitignore.</code>. And that&#39;s a good thing.
+It probably saves time that&#39;d be taken writing your own. Or helps you
+include patterns you could otherwise have forgotten.</p>
+<p>
+But personally, I maintain a single .gitignore template. Keep adding to
+it all sorts of patterns for files and folders I tend to ignore (and
+that could include online templates too but I haven&#39;t sourced from any
+online templates before.). Then I have means to auto populate every
+project&#39;s .gitignore from the same global file.</p>
+<p>
+And here&#39;s what&#39;s interesting, I ignore my <code class="verbatim">.gitignore</code> too! I mean, I
+might be ignoring certain things I don&#39;t want folk to know am ignoring..
+so..</p>
+<p>
+Anyways, that&#39;s a whole lot on such a small topic. So let&#39;s have the
+summary. Just in case you skipped to the end.</p>
+</div>
+</div>
+<div id="outline-container-rules-summary-tldr" class="outline-3">
+<h3 id="rules-summary-tldr">
+Rules Summary (TLDR)
+</h3>
+<div id="outline-text-rules-summary-tldr" class="outline-text-3">
 <ul>
-<li>Recursively ignoring all files and folders whose names match some pattern <code>a</code></li>
+<li>Recursively ignoring all files and folders whose names match some
+pattern <code class="verbatim">a</code></li>
 </ul>
-<pre tabindex="0"><code>a
-</code></pre><ul>
-<li>Recursively ignoring only folders whose names match some pattern <code>a</code></li>
+<pre class="example">
+a
+</pre>
+<ul>
+<li>Recursively ignoring only folders whose names match some pattern <code class="verbatim">a</code></li>
 </ul>
-<pre tabindex="0"><code>a/
-</code></pre><ul>
-<li>Ignoring all files and folders whose names match some pattern <code>a</code> that are located in the root directory</li>
+<pre class="example">
+a/
+</pre>
+<ul>
+<li>Ignoring all files and folders whose names match some pattern <code class="verbatim">a</code> that
+are located in the root directory</li>
 </ul>
-<pre tabindex="0"><code>/a
-</code></pre><ul>
-<li>Ignoring all files in directory named <code>a</code> that&rsquo;s located one level deep below the root directory say root is <code>/</code> and we want to ignore <code>a</code> in <code>/b/a/somefiles</code>.</li>
+<pre class="example">
+/a
+</pre>
+<ul>
+<li>Ignoring all files in directory named <code class="verbatim">a</code> that&#39;s located one level
+deep below the root directory say root is <code class="verbatim">/</code> and we want to ignore
+<code class="verbatim">a</code> in <code class="verbatim">/b/a/somefiles</code>.</li>
 </ul>
-<pre tabindex="0"><code>*/a
-</code></pre><ul>
-<li>Ignoring all files and folders located any number of levels deep below the root directory say ignoring <code>a</code> in  <code>/b/c/a/somefiles</code>.</li>
+<pre class="example">
+*/a
+</pre>
+<ul>
+<li>Ignoring all files and folders located any number of levels deep below
+the root directory say ignoring <code class="verbatim">a</code> in <code class="verbatim">/b/c/a/somefiles</code>.</li>
 </ul>
-<pre tabindex="0"><code>**/a
-</code></pre><p>With the building blocks and conceptual understanding from this article, I&rsquo;m sure there&rsquo;s not much extra that you&rsquo;ll need. But when you do, you can look at <code>man gitignore</code>.</p>
-<p>I sure do hope this helped somehow. See you in the next one and&hellip; HAPPY HACKING.</p>
+<pre class="example">
+**/a
+</pre>
+<p>
+With the building blocks and conceptual understanding from this article,
+I&#39;m sure there&#39;s not much extra that you&#39;ll need. But when you do, you
+can look at <code class="verbatim">man gitignore</code>.</p>
+<p>
+I sure do hope this helped somehow. See you in the next one and… HAPPY
+HACKING.</p>
+</div>
+</div>
 
 		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/git/" rel="tag">git</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/development/" rel="tag">development</a>
-		</li>
-	</ul>
-</div>
-		</footer>
 	</article>
 </main>
 
@@ -263,15 +338,15 @@ ignoring.. so..</p>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/my-first-post/" rel="prev">
+		<a class="pager__link" href="/post/http_downloads/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">My first post with Hugo</p>
+			<p class="pager__title"></p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/last-week-in-code-001/" rel="next">
+		<a class="pager__link" href="/post/getting-started-with-hugo/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Last Week In Code E001</p>
+			<p class="pager__title"></p>
 		</a>
 	</div>
 </nav>
@@ -291,9 +366,9 @@ ignoring.. so..</p>
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-005/">Last Week in Code E005</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mkdown/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/grep/">Grep Fu Basics</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mkdown/but-my-password-is-correct/">Arch Faillock</a></li>
 		</ul>
 	</div>
 </div>
@@ -301,8 +376,6 @@ ignoring.. so..</p>
 	<h4 class="widget__title">Categories</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/computers/">Computers</a></li>
 			<li class="widget__item">
@@ -313,12 +386,6 @@ ignoring.. so..</p>
 				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/maths/">Maths</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/networking/">Networking</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
 			<li class="widget__item">
@@ -333,30 +400,24 @@ ignoring.. so..</p>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (14)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (9)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
 	</div>
 </div>

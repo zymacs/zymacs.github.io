@@ -9,4 +9,9 @@ menu:
 
 Quotes, Hot takes, Short Essays
 
-
+#+begin_quote
+ 6 months after graduation and sometime's I genuinely wonder if its all possibly a dream.
+ I hope it is one long ugly dream that will soon come to an end. But days later, I wake up
+ and I get the same thought again. I realize its just the new real. However much I hate to
+ admit.
+#+end_quote

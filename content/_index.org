@@ -16,28 +16,28 @@ Welcome to my site.
 I am Keith Henry Nambale. /(Zymacs is obviously a pseudo)/.
 I am a Software Engineer. A recent graduate as of 2026.
 And, I am currently looking for work.
-I daily drive Arch Linux and teach what I learn about DevOps related topics on instagram. Yes, on Instagram.
-That's Linux, Git, and all that I will learn that is related. I am always learning something new.
-Seriously. I log my weekly learning to in a weekly series of posts.
-I am into scripting, automation.
+I daily drive Linux and teach what I learn through articles on this site.
+That's Linux, Git, and everything I will learn in the future that's along the same lines.
+I do a lot of scripting like to automate what's repetitive.
 I am confident I would blend in fast as a Junior DevOps engineer in any environment.
-You could find my CV right [[cv][here]].
+You can find my CV right [[cv][here]].
 
 
-On here is, currently, where all my internet activity calls home.
+This site is, currently, where all my internet activity calls home.
 All my public posts first appeared here -- /at least that's what I am aiming towards/.
-I document a xlot both about what I am learning and how its changing me. I record some
-of that in my weekly blog series -: [[/lwic][lwic]]. The [[/notes][notes]] section is still in its infancy. But it hosts
-my notes after I feel they are somewhat good enough for public consumption. I also like to theorize about
-tech trends and think out loud about wild product ideas. My such articles can be found [[/rthots][here]]. 
+I document a lot both about what I am learning and how its changing me.
+I record some of that in my [[/lwic][weekly]] blog series. The [[/notes][notes]] section is still in its infancy. It hosts
+notes I publically make available.
+I also like to theorize about tech trends and [[think out loud about wild product ideas.
+My such articles can be found [[/rthots][here]]. 
 
-I keep [[/microblog][a section]] for recording short quotes and hot takes that stood out to me. Some from myself
-and some from other people's work. 
+I keep [[/microblog][a section]] for recording short quotes and hot takes that I find interesting.
+Some from myself and some from other people's work. 
 
-The site also includes a [[/now][/now]] section that broadcasts what major goals
-I am currently pursuing. Books I am reading, Movies I am watching, Projects I am working on.
+The site also includes a [[/now][/now]] section that broadcasts what major goals I'm currently pushing towards.
+Books I am reading, Movies I am watching, Projects I am working on.
 For documenting my problem solving process, that is,  me speaking out loud about how projects went from first line to
-usable program, I have this section.
+usable program, [[/how-i-built][I have this section]].
 
 All this is included in my [[/site-map][site map]].
 
@@ -51,13 +51,12 @@ All this is included in my [[/site-map][site map]].
 
 If contacting my for anything urgent, please reachout to me via any one of the following means
 and I will make sure to get to you soonest. 
-- Email
-  - [[0nkzhmhoq@mozmail.com][zymacs@zmail.com]] (Click to get email)
-- IRC
-  - zymacs_off OR zymacs on freenode
+
+- Email : [[0nkzhmhoq@mozmail.com][zymacs@zmail.com]] (Click to get email)
+- IRC : zymacs_off OR zymacs on freenode
 - [[https://bsky.app/profile/zymacs.bsky.social][Bluesky]]
 
-My public key right [[/media/pubkey.asc][here]].
+My public key is right [[/media/pubkey.asc][here]].
 
 
 

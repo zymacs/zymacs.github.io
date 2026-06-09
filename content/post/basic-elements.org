@@ -1,0 +1,402 @@
+The main purpose of this article is to make sure that all basic HTML
+Elements are decorated with CSS so as to not miss any possible elements
+when creating new themes for Hugo.
+
+** Headings
+:PROPERTIES:
+:CUSTOM_ID: headings
+:END:
+Let's start with all possible headings. The HTML =<h1>=---=<h6>=
+elements represent six levels of section headings. =<h1>= is the highest
+section level and =<h6>= is the lowest.
+
+* Heading 1
+:PROPERTIES:
+:CUSTOM_ID: heading-1
+:END:
+** Heading 2
+:PROPERTIES:
+:CUSTOM_ID: heading-2
+:END:
+*** Heading 3
+:PROPERTIES:
+:CUSTOM_ID: heading-3
+:END:
+**** Heading 4
+:PROPERTIES:
+:CUSTOM_ID: heading-4
+:END:
+***** Heading 5
+:PROPERTIES:
+:CUSTOM_ID: heading-5
+:END:
+****** Heading 6
+:PROPERTIES:
+:CUSTOM_ID: heading-6
+:END:
+
+--------------
+
+** Paragraph
+:PROPERTIES:
+:CUSTOM_ID: paragraph
+:END:
+According to the [[https://www.w3.org/TR/html5/dom.html#elements][HTML5
+specification]] by [[https://www.w3.org/][W3C]], *HTML documents consist
+of a tree of elements and text*. Each element is denoted in the source
+by a [[https://www.w3.org/TR/html5/syntax.html#syntax-start-tags][start
+tag]], such as =<body>=, and an
+[[https://www.w3.org/TR/html5/syntax.html#syntax-end-tags][end tag]],
+such as =</body>=. (/Certain start tags and end tags can in certain
+cases be omitted and are implied by other tags./)
+
+Elements can have attributes, which control how the elements work. For
+example, hyperlink are formed using the =a= element and its =href=
+attribute.
+
+** List Types
+:PROPERTIES:
+:CUSTOM_ID: list-types
+:END:
+*** Ordered List
+:PROPERTIES:
+:CUSTOM_ID: ordered-list
+:END:
+1. First item
+2. Second item
+3. Third item
+
+*** Unordered List
+:PROPERTIES:
+:CUSTOM_ID: unordered-list
+:END:
+- List item
+- Another item
+- And another item
+
+*** Nested list
+:PROPERTIES:
+:CUSTOM_ID: nested-list
+:END:
+
+#+begin_html
+  <ul>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+First item
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item
+
+#+begin_html
+  <ul>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item First subitem
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item second subitem
+
+#+begin_html
+  <ul>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item Second subitem First sub-subitem
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item Second subitem Second sub-subitem
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Second item Second subitem Third sub-subitem
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  </ul>
+#+end_html
+
+#+begin_example
+  </li>
+  <li>Second item Third subitem
+    <ol>
+      <li>Second item Third subitem First sub-subitem</li>
+      <li>Second item Third subitem Second sub-subitem</li>
+      <li>Second item Third subitem Third sub-subitem</li>
+    </ol>
+</ul>
+#+end_example
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  <li>
+#+end_html
+
+Third item
+
+#+begin_html
+  </li>
+#+end_html
+
+#+begin_html
+  </ul>
+#+end_html
+
+*** Definition List
+:PROPERTIES:
+:CUSTOM_ID: definition-list
+:END:
+HTML also supports definition lists.
+
+#+begin_html
+  <dl>
+#+end_html
+
+#+begin_html
+  <dt>
+#+end_html
+
+Blanco tequila
+
+#+begin_html
+  </dt>
+#+end_html
+
+#+begin_html
+  <dd>
+#+end_html
+
+The purest form of the blue agave spirit...
+
+#+begin_html
+  </dd>
+#+end_html
+
+#+begin_html
+  <dt>
+#+end_html
+
+Reposado tequila
+
+#+begin_html
+  </dt>
+#+end_html
+
+#+begin_html
+  <dd>
+#+end_html
+
+Typically aged in wooden barrels for between two and eleven months...
+
+#+begin_html
+  </dd>
+#+end_html
+
+#+begin_html
+  </dl>
+#+end_html
+
+** Blockquotes
+:PROPERTIES:
+:CUSTOM_ID: blockquotes
+:END:
+The blockquote element represents content that is quoted from another
+source, optionally with a citation which must be within a =footer= or
+=cite= element, and optionally with in-line changes such as annotations
+and abbreviations.
+
+#+begin_quote
+Quoted text. This line is part of the same quote. Also you can /put/
+*Markdown* into a blockquote.
+#+end_quote
+
+Blockquote with a citation.
+
+#+begin_html
+  <blockquote>
+#+end_html
+
+#+begin_html
+  <p>
+#+end_html
+
+My goal wasn't to make a ton of money. It was to build good computers. I
+only started the company when I realized I could be an engineer forever.
+
+#+begin_html
+  </p>
+#+end_html
+
+#+begin_html
+  <footer>
+#+end_html
+
+--- Steve Wozniak
+
+#+begin_html
+  </footer>
+#+end_html
+
+#+begin_html
+  </blockquote>
+#+end_html
+
+According to Mozilla's website, Firefox 1.0 was released in 2004 and
+became a big success.
+
+** Tables
+:PROPERTIES:
+:CUSTOM_ID: tables
+:END:
+Tables aren't part of the core Markdown spec, but Hugo supports them.
+
+| ID | Make    | Model   | Year |
+|----+---------+---------+------|
+| 1  | Honda   | Accord  | 2009 |
+| 2  | Toyota  | Camry   | 2012 |
+| 3  | Hyundai | Elantra | 2010 |
+
+Colons can be used to align columns.
+
+| Tables      | Are           | Cool         |
+|-------------+---------------+--------------|
+| align: left | align: center | align: right |
+| align: left | align: center | align: right |
+| align: left | align: center | align: right |
+
+You can also use inline Markdown.
+
+| Inline    | Markdown | In              | Table  |
+|-----------+----------+-----------------+--------|
+| /italics/ | *bold*   | +strikethrough+ | =code= |
+
+** Code
+:PROPERTIES:
+:CUSTOM_ID: code
+:END:
+#+begin_src html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+#+end_src
+
+{{< highlight html >}} <!DOCTYPE html>
+
+#+begin_html
+  <html lang="en">
+#+end_html
+
+#+begin_html
+  <head>
+#+end_html
+
+#+begin_html
+  <meta charset="UTF-8">
+#+end_html
+
+#+begin_html
+  <title>
+#+end_html
+
+Example HTML5 Document
+
+#+begin_html
+  </title>
+#+end_html
+
+#+begin_html
+  </head>
+#+end_html
+
+#+begin_html
+  <body>
+#+end_html
+
+#+begin_html
+  <p>
+#+end_html
+
+Test
+
+#+begin_html
+  </p>
+#+end_html
+
+#+begin_html
+  </body>
+#+end_html
+
+#+begin_html
+  </html>
+#+end_html
+
+{{< /highlight >}}
+
+** Other stuff --- abbr, sub, sup, kbd, etc.
+:PROPERTIES:
+:CUSTOM_ID: other-stuff-abbr-sub-sup-kbd-etc.
+:END:
+GIF is a bitmap image format.
+
+H2O
+
+C6H12O6
+
+Xn + Yn = Zn
+
+Press X to win. Or press CTRL+ALT+F to show FPS counter.
+
+As a unit of information in information theory, the bit has
+alternatively been called a shannon, named after Claude Shannon, the
+founder of field of information theory.
