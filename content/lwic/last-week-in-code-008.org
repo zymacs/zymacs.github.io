@@ -122,7 +122,10 @@ solution. Hence this site. Or this series.
 I did not do a lot of hacker news this week. I am drifting further
 and further away from the 24-hour news cycle. It was strange looking
 back at the news section links from [[/lwic/last-week-in-code-001][lwic e001]] . How mundane and useless
-they were from now's perspective. News relevance deserves an article
+they are from now's perspective. Who's talking about Mythos? Or, whatsapp
+ads? 
+
+The life time of news relevance really deserves an article
 of its own so I'll cut my rant short. Anyhow. Something interesting
 happened.
 
