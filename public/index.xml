@@ -121,6 +121,13 @@
       <description>&lt;p&gt;It&amp;rsquo;s four weeks already! I spent most of last week writing. I mean, I did give time to other projects beyond writing too but it was mostly writing.&#xA;I thought I had quite a lot to write about and that I was going to produce as much.&#xA;But that&amp;rsquo;s not really what happened. I only wrote 3 articles.  There was some lessons to learn from that still. And I&amp;rsquo;ll share those.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Grep Fu Basics</title>
+      <link>//localhost:1313/post/grep/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/grep/</guid>
+      <description>&lt;p&gt;&#xA;If you have used Linux before, you have most probably heard about Grep,&#xA;Awk and Sed. These are super useful text manipulation tools available on&#xA;all Unix and Unix-like systems. Learning all that each can do is an&#xA;insurmountable task and I&amp;#39;m sure you&amp;#39;d stand with me on that. But having&#xA;less than functional usage knowledge in at least one can waste you a lot&#xA;of time while you work with text in the terminal. Which is very often.&#xA;In this article we&amp;#39;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Last Week in Code 003</title>
       <link>//localhost:1313/lwic/last-week-in-code-003/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
@@ -139,7 +146,7 @@
       <link>//localhost:1313/post/the-cost-for-not-documenting-solutions/</link>
       <pubDate>Fri, 24 Apr 2026 20:08:02 +0300</pubDate>
       <guid>//localhost:1313/post/the-cost-for-not-documenting-solutions/</guid>
-      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;The cost of not documenting your solutions&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;&#xA;If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should&#xA;start thinking about making some sort of documentation system for the errors you run into.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I have been doing so&#xA;for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded&#xA;the solution. Same could be said of those for which I did not take time to write something down. &#xA;Those are very annoying. Its very annoying going through docs more than once to solve a problem you know&#xA;you solved in the past.&lt;/p&gt;</description>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;The cost of not documenting your solutions&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;&#xA;If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should&#xA;start thinking about making some sort of documentation system for the errors you run into.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Why we skip documentation&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We think we shall remember , surely its a small error, I will definitely remember&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If we remember, why return to the search engine in search for a solution to the same error.&lt;/li&gt;&#xA;&lt;li&gt;Yet its so hard to see this, even the recurrent returns.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We think we don&amp;#39;t need to understand.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Last Week In Code E002</title>
@@ -259,13 +266,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/git-ignore-files/</guid>
       <description>&lt;p&gt;So I&amp;#39;ve been trying to make my way through&#xA;&lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole&#xA;lot of information so far and I was afraid for how not so often I used&#xA;it. That I was going to forget it all. Hence my decision to share some&#xA;of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;In this post we&amp;#39;ll look at something you probably have never read about&#xA;in isolation, gitignore files.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>//localhost:1313/post/grep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/grep/</guid>
-      <description>&lt;p&gt;If you have used Linux before, you have most probably heard about Grep,&#xA;Awk and Sed. These are super useful text manipulation tools available on&#xA;all Unix and Unix-like systems. Learning all that each can do is an&#xA;insurmountable task and I&#39;m sure you&#39;d stand with me on that. But&#xA;having less than functional usage knowledge in at least one can waste&#xA;you a lot of time while you work with text in the terminal. Which is&#xA;very often. In this article we&#39;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

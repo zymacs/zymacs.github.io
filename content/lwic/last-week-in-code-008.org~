@@ -1,6 +1,135 @@
 ---
-title: "Last Week in Code 008"
+title: "Last Week in Code E008"
 date: 2026-06-10T19:39:17+03:00
-draft: true
+draft: false
+thumbnail: 'img/lwic.png'
+tags:
+ - lwic
+categories:
+ - WeeklySeries
 ---
+
+Wait, is that 8 weeks??! Yaay!!
+Interesting how few 56 days can be. I didn't see
+this coming this far.  Anyways.
+What has been rolling since the last post?
+
+A lot. Reshaping this site's structure to match my
+mind as I mentioned I would in [[/lwic/last-week-in-code-006][lwic e006]]. Started
+producing 'content'. Posted some of that on
+my [[https://www.instagram.com/devo.psbro/][instagram channel]]. I think there was no coding at
+all. Still, there was a lot of learning worth sharing.
+Let's get to that.
+
+*** Updates from me
+
+**** You don't have to opensource everything.
+Some personal projects should probably stay that way
+This thought crossed my mind. Going through a random
+project's readme. It read somethig like
+
+#+begin_quote
+No contributions accepted. This is a hobby project
+of mine. I am fine with it developing at the pace
+with which it is. I have a lot of plans for it.
+However, you can fork if you want to..
+#+end_quote
+
+I found that relatable in a sense. I recently gave up
+an idea I am working on with a team. And I like how
+its going. But I have lost interest in moving
+on with the older version. I still want to. But
+now feel like its forced. Like, if I hadn't given
+up the idea, I would have been more interested.
+
+My conclusion? Maybe some projects just ain't meant to
+be opensourced.  Some projects are meant to be
+toys. Soon they can be open sourced. But after soon
+passes, not before.
+
+
+**** See a big tech influencer? Fret not.
+Swiping through instagram, looking through the
+\#devops posts, its interesting what passes for
+'content'. I found it really interesting what
+metrics drove 'like' count.  If its the platform
+structure's incentives or the people or both is
+a different question.
+
+Popularity on instagram felt so much more skewed
+towards who was best at presentation of content
+no matter how shallow.
+
+Produce a well edited video on "3 grep commands
+every senior devops eng should know" .. yes , ain't
+making that up.. and sooner than later.. 7 days
+or so your follow count if you keep up with the
+style you will have thousands of followers.
+
+The site rewards what catches eye balls. The
+producers, most of them, do what the site rewards.
+
+So I was like, wait, bro, you got 134k followers
+and you are making a big deal out of
+=grep 'error' log.txt= ???
+
+But then....
+
+**** Publish on your own site, syndicate elsewhere.
+
+On creating information storage and sharing spaces that live
+with us. The more control, the better. 
+
+This is less about tech but I think its nevertheless
+worth sharing. In [[/lwic/last-week-in-code-006][lwic e006]]
+I talked briefly about my transition from Whatsapp to
+Hugo. One point I think I did not articulate well was
+on the feeling of ownership. I read an article that
+laid it out more clearly than I ever would have.
+
+Right here if you want to check it out. In the article
+he mentions an acronym [[https://joshblais.com/blog/the-canonical-point-of-truth][POSSE]].
+
+Mine was more an abstraction of the point he was making. 
+
+Kinda the same idea for why I started this. I was like..
+I have a lot to share every week. And I need a release valve.
+I am a human being. But the one I have now, I soon won't have
+it since I am changing locations soon.
+
+Well, let me build something that  will give me a permanent let out avenue for
+my week's experiences. An online presence seems like the perfect
+solution. Hence this site. Or this series.
+
+Sounds a bit niche but.. I thought i'd throw that out there.
+
+
+*** In the news.
+
+I did not do a lot of hacker news this week. I am drifting further
+and further away from the 24-hour news cycle. It was strange looking
+back at the news section links from [[/lwic/last-week-in-code-001][lwic e001]] . How mundane and useless
+they were from now's perspective. News relevance deserves an article
+of its own so I'll cut my rant short. Anyhow. Something interesting
+happened.
+
+So Meta is an attention company. It's whole business model is built
+around keeping eye balls for as long as is possible. And they do
+this very well. Instagram reels are conceptually indifferentiable
+from cigarrettes in the addictiveness sense.
+
+But what's your reaction when, as a drinker, asking for another round
+is met with... a "No, that's enough.. " from the one that makes the most
+off your drinking habit. Stuff of make believe.
+
+Whatever Instagram is up to I cannot tell. Countless times it's reminded
+me to choose between quitting the app and carrying on with the doom
+scroll.  All these times I've taken a screenshot in shock.  I wonder
+if this' been rolled out everywhere. 
+
+***** Extra news
+The Prime and Zig on AI usage.
+
+
+***** Random finds
 

@@ -3,17 +3,20 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> - Zymacs</title>
+	<title>Last Week in Code E008 - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:url" content="//localhost:1313/post/dd_disk_destroyer/">
+		<meta property="og:url" content="//localhost:1313/lwic/last-week-in-code-008/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Zymacs">
-  <meta property="og:description" content="The disk distroyer (DD) Operates directly on raw btes of file, partition or disk.
-Uses - Creating bootable drives dd if=/dev/sda of=/tmp/storage # transferred all thats in disk sda to storage # cool for cloning environments. # no need for count if you want to copy all thats in source to destination. - Backing up linux disks - Creating large blank files - Creating a swap file dd if=/dev/zero of=/tmp/swapfile bs=2048 count=500 # 1000 blocks of 2048 bytes to create 2 Gigs - Wiping by writing zeros dd if=/dev/zero of=/dev/sdX bs=16M - Wiping by writing random data dd if=/dev/urandom of=/dev/sdX bs=16M - Backup master boot record dd if=/dev/sda of=mbr_backup.bin bs=512 count=1 - Copy files, partitions or whole disks across networks or on the same computer. - Common options -skip=num # ignore num blocks at start of input or source -seek=num # ignore first num blocks at start of output or destination -conv=a,b,c - noerror: continue on error dd if=/dev/sdd of=/dev/sda conv=noerror - sync: pad every input block with /null char to match input block size - ascii, ebcdic, ibm: handle conversions between ascii , ebcic and ibm encodings - sparse: seek other than write null bytes to save space. - lcase,ucase: upper case to lower case and vice versa dd if=input.txt of=output.txt conv=ucase - excl: fail if output file already exists to prevent accidental overrites. -status= -iflag/oflag= -ibd/obs= # spearating input block size from output block size">
+  <meta property="og:title" content="Last Week in Code E008">
+  <meta property="og:description" content="Wait, is that 8 weeks??! Yaay!! Interesting how few 56 days can be. I didn&#39;t see this coming this far. Anyways. What has been rolling since the last post?
+A lot. Reshaping this site&#39;s structure to match my mind as I mentioned I would in lwic e006. Started producing &#39;content&#39;. Posted some of that on my instagram channel. I think there was no coding at all. Still, there was a lot of learning worth sharing. Let&#39;s get to that.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
+    <meta property="article:section" content="lwic">
+    <meta property="article:published_time" content="2026-06-10T19:39:17+03:00">
+    <meta property="article:modified_time" content="2026-06-10T19:39:17+03:00">
+    <meta property="article:tag" content="Lwic">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -72,7 +75,7 @@ Uses - Creating bootable drives dd if=/dev/sda of=/tmp/storage # transferred all
 				
 			</a>
 		</li>
-		<li class="menu__item">
+		<li class="menu__item menu__item--active">
 			<a class="menu__link" href="/lwic/">
 				
 				<span class="menu__text">Last-Week-In-Code</span>
@@ -119,43 +122,181 @@ Uses - Creating bootable drives dd if=/dev/sda of=/tmp/storage # transferred all
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title"></h1>
-			
+			<h1 class="post__title">Last Week in Code E008</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-06-10T19:39:17&#43;03:00">June 10, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	</span>
+</div></div>
 		</header>
 		<div class="content post__content clearfix
 			    ">
-			<p>The disk distroyer (DD) Operates directly on raw btes of file, partition
-or disk.</p>
+			
 <p>
-Uses - Creating bootable drives dd if=/dev/sda of=/tmp/storage #
-transferred all thats in disk sda to storage # cool for cloning
-environments. # no need for count if you want to copy all thats in
-source to destination. - Backing up linux disks - Creating large blank
-files - Creating a swap file dd if=/dev/zero of=/tmp/swapfile bs=2048
-count=500 # 1000 blocks of 2048 bytes to create 2 Gigs - Wiping by
-writing zeros dd if=/dev/zero of=/dev/sdX bs=16M - Wiping by writing
-random data dd if=/dev/urandom of=/dev/sdX bs=16M - Backup master boot
-record dd if=/dev/sda of=mbr_backup.bin bs=512 count=1 - Copy files,
-partitions or whole disks across networks or on the same computer. -
-Common options -skip=num # ignore num blocks at start of input or source
--seek=num # ignore first num blocks at start of output or destination
--conv=a,b,c - noerror: continue on error dd if=/dev/sdd of=/dev/sda
-conv=noerror - sync: pad every input block with /null char to match
-input block size - ascii, ebcdic, ibm: handle conversions between ascii
-, ebcic and ibm encodings - sparse: seek other than write null bytes to
-save space. - lcase,ucase: upper case to lower case and vice versa dd
-if=input.txt of=output.txt conv=ucase - excl: fail if output file
-already exists to prevent accidental overrites. -status= -iflag/oflag=
--ibd/obs= # spearating input block size from output block size</p>
+Wait, is that 8 weeks??! Yaay!!
+Interesting how few 56 days can be. I didn&#39;t see
+this coming this far.  Anyways.
+What has been rolling since the last post?</p>
+<p>
+A lot. Reshaping this site&#39;s structure to match my
+mind as I mentioned I would in <a href="/lwic/last-week-in-code-006">lwic e006</a>. Started
+producing &#39;content&#39;. Posted some of that on
+my <a href="https://www.instagram.com/devo.psbro/">instagram channel</a>. I think there was no coding at
+all. Still, there was a lot of learning worth sharing.
+Let&#39;s get to that.</p>
+<div id="outline-container-headline-1" class="outline-4">
+<h4 id="headline-1">
+Updates from me
+</h4>
+<div id="outline-text-headline-1" class="outline-text-4">
+<div id="outline-container-headline-2" class="outline-5">
+<h5 id="headline-2">
+You don&#39;t have to opensource everything.
+</h5>
+<div id="outline-text-headline-2" class="outline-text-5">
+<p>Some personal projects should probably stay that way
+This thought crossed my mind. Going through a random
+project&#39;s readme. It read somethig like</p>
+<blockquote>
+<p>No contributions accepted. This is a hobby project
+of mine. I am fine with it developing at the pace
+with which it is. I have a lot of plans for it.
+However, you can fork if you want to..</p>
+</blockquote>
+<p>
+I found that relatable in a sense. I recently gave up
+an idea I am working on with a team. And I like how
+its going. But I have lost interest in moving
+on with the older version. I still want to. But
+now feel like its forced. Like, if I hadn&#39;t given
+up the idea, I would have been more interested.</p>
+<p>
+My conclusion? Maybe some projects just ain&#39;t meant to
+be opensourced.  Some projects are meant to be
+toys. Soon they can be open sourced. But after soon
+passes, not before.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-5">
+<h5 id="headline-3">
+See a big tech influencer? Fret not.
+</h5>
+<div id="outline-text-headline-3" class="outline-text-5">
+<p>Swiping through instagram, looking through the
+\#devops posts, its interesting what passes for
+&#39;content&#39;. I found it really interesting what
+metrics drove &#39;like&#39; count.  If its the platform
+structure&#39;s incentives or the people or both is
+a different question.</p>
+<p>
+Popularity on instagram felt so much more skewed
+towards who was best at presentation of content
+no matter how shallow.</p>
+<p>
+Produce a well edited video on &#34;3 grep commands
+every senior devops eng should know&#34; .. yes , ain&#39;t
+making that up.. and sooner than later.. 7 days
+or so your follow count if you keep up with the
+style you will have thousands of followers.</p>
+<p>
+The site rewards what catches eye balls. The
+producers, most of them, do what the site rewards.</p>
+<p>
+So I was like, wait, bro, you got 134k followers
+and you are making a big deal out of
+<code class="verbatim">grep &#39;error&#39; log.txt</code> ???</p>
+<p>
+But then….</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-5">
+<h5 id="headline-4">
+Publish on your own site, syndicate elsewhere.
+</h5>
+<div id="outline-text-headline-4" class="outline-text-5">
+<p>
+On creating information storage and sharing spaces that live
+with us. The more control, the better. </p>
+<p>
+This is less about tech but I think its nevertheless
+worth sharing. In <a href="/lwic/last-week-in-code-006">lwic e006</a>
+I talked briefly about my transition from Whatsapp to
+Hugo. One point I think I did not articulate well was
+on the feeling of ownership. I read an article that
+laid it out more clearly than I ever would have.</p>
+<p>
+Right here if you want to check it out. In the article
+he mentions an acronym <a href="https://joshblais.com/blog/the-canonical-point-of-truth">POSSE</a>.</p>
+<p>
+Mine was more an abstraction of the point he was making. </p>
+<p>
+Kinda the same idea for why I started this. I was like..
+I have a lot to share every week. And I need a release valve.
+I am a human being. But the one I have now, I soon won&#39;t have
+it since I am changing locations soon.</p>
+<p>
+Well, let me build something that  will give me a permanent let out avenue for
+my week&#39;s experiences. An online presence seems like the perfect
+solution. Hence this site. Or this series.</p>
+<p>
+Sounds a bit niche but.. I thought i&#39;d throw that out there.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+In the news.
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p>
+I did not do a lot of hacker news this week. I am drifting further
+and further away from the 24-hour news cycle. It was strange looking
+back at the news section links from <a href="/lwic/last-week-in-code-001">lwic e001</a> . How mundane and useless
+they were from now&#39;s perspective. News relevance deserves an article
+of its own so I&#39;ll cut my rant short. Anyhow. Something interesting
+happened.</p>
+<p>
+So Meta is an attention company. It&#39;s whole business model is built
+around keeping eye balls for as long as is possible. And they do
+this very well. Instagram reels are conceptually indifferentiable
+from cigarrettes in the addictiveness sense.</p>
+<p>
+But what&#39;s your reaction when, as a drinker, asking for another round
+is met with… a &#34;No, that&#39;s enough.. &#34; from the one that makes the most
+off your drinking habit. Stuff of make believe.</p>
+<p>
+Whatever Instagram is up to I cannot tell. Countless times it&#39;s reminded
+me to choose between quitting the app and carrying on with the doom
+scroll.  All these times I&#39;ve taken a screenshot in shock.  I wonder
+if this&#39; been rolled out everywhere. </p>
+<div id="outline-container-headline-6" class="outline-6">
+<h6 id="headline-6">
+Extra news
+</h6>
+<div id="outline-text-headline-6" class="outline-text-6">
 <ul>
-<li>Sources</li>
-<li>Savvynik on DD: <a href="https://www.youtube.com/watch?v=KAuiHFbFE_o">https://www.youtube.com/watch?v=KAuiHFbFE_o</a></li>
-<li>CodeLucky on DD: <a href="https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U">https://youtu.be/xtlH44mYUXk?si=QxiTXOfke9nz-3_U</a></li>
-<li>Wikipedia article: <a href="https://en.wikipedia.org/wiki/Dd_(Unix)">https://en.wikipedia.org/wiki/Dd_(Unix)</a></li>
+<li><a href="https://youtu.be/pkndFYSTr0Y?si=EIlwzqZxtxxNxvZU">The Prime and Zig on AI usage.</a></li>
 </ul>
-<p>Forks</p>
+<p>
+As always, I hope you learnt something. </p>
+</div>
+</div>
+</div>
+</div>
 
 		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 
@@ -178,15 +319,9 @@ already exists to prevent accidental overrites. -status= -iflag/oflag=
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/five-days-no-ai/" rel="prev">
+		<a class="pager__link" href="/lwic/last-week-in-code-007/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title"></p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/post/curl/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title"></p>
+			<p class="pager__title">Last Week In Code 007</p>
 		</a>
 	</div>
 </nav>
@@ -253,7 +388,7 @@ already exists to prevent accidental overrites. -status= -iflag/oflag=
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (10)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>

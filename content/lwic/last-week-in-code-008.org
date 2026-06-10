@@ -1,7 +1,11 @@
 ---
 title: "Last Week in Code E008"
 date: 2026-06-10T19:39:17+03:00
-draft: true
+draft: false
+tags:
+ - lwic
+categories:
+ - WeeklySeries
 ---
 
 Wait, is that 8 weeks??! Yaay!!
@@ -123,8 +127,8 @@ scroll.  All these times I've taken a screenshot in shock.  I wonder
 if this' been rolled out everywhere. 
 
 ***** Extra news
-The Prime and Zig on AI usage.
+- [[https://youtu.be/pkndFYSTr0Y?si=EIlwzqZxtxxNxvZU][The Prime and Zig on AI usage.]]
 
 
-***** Random finds
+As always, I hope you learnt something. 
 
