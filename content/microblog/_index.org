@@ -9,6 +9,15 @@ menu:
 
 Quotes, Hot takes, Short Essays
 
+
+#+begin_quote
+ Past a certain stage or age, obsession about one's hobbies starts to look like an escape from life domains
+ that ain't set yet ought to have already been for that stage.. 
+#+end_quote
+
+-----
+
+
 #+begin_quote
 
 Its your choices, not your friends.
@@ -38,3 +47,4 @@ Its your choices, not your friends.
 /... And good luck trying../
 
 #+end_quote
+
