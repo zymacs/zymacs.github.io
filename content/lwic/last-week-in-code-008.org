@@ -15,7 +15,7 @@ this coming this far.  Anyways.
 What has been rolling since the last post?
 
 A lot. Reshaping this site's structure to match my
-mind as I mentioned I would in [[/lwic/last-week-in-code-006][lwic e006]]. Started
+mind's as I mentioned I would in [[/lwic/last-week-in-code-006][lwic e006]]. Started
 producing 'content'. Posted some of that on
 my [[https://www.instagram.com/devo.psbro/][instagram channel]]. I think there was no coding at
 all. Still, there was a lot of learning worth sharing.
@@ -79,11 +79,11 @@ So I was like.. /Wait, bro, you got 134k followers/
 /and you are making a big deal out of/
 / =grep 'error' log.txt= ???/
 
-But then....
 
-And don't get me wrong. There's people doing actual work though. And
-I'm trying to join the ranks of those. But, let's see how that
-will go.
+And don't get me wrong. There's people doing actual work though.
+
+Meanwhile, I'm trying to become one of those.
+But like everything else, lets see how that will go.
 
 
 **** Publish on your own site, syndicate elsewhere.
