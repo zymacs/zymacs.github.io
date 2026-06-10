@@ -34,7 +34,7 @@ Its your choices, not your friends.
 
  /Welcome to the **afteryouth**../
 
- So to yourself you say.. Alright.. now go on and try to make yourself feel 'AT HOME'. No one's coming to help you with that.
- ... And good luck trying.. 
+ So to yourself you say.. : /Alright.. now go on and try to make yourself feel 'AT HOME'. No one's coming to help you with that./
+/... And good luck trying../
 
 #+end_quote

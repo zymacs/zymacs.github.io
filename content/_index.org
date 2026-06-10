@@ -49,8 +49,8 @@ All this is included in my [[/site-map][site map]].
 - [[https://hackernoon.com/u/zymacs][Hackernoon]]
 - [[https://dev.to/zymacs][Dev.to]]
 
-If contacting my for anything urgent, please reachout to me via any one of the following means
-and I will make sure to get to you soonest. 
+If contacting me for anything urgent, please reach out  via any one of the following means
+and I will make sure to get to you soonest:
 
 - Email : [[0nkzhmhoq@mozmail.com][zymacs@zmail.com]] (Click to get email)
 - IRC : zymacs_off OR zymacs on freenode
