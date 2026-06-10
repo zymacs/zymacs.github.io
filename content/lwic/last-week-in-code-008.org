@@ -38,42 +38,53 @@ However, you can fork if you want to..
 I found that relatable in a sense. I recently gave up
 an idea I am working on with a team. And I like how
 its going. But I have lost interest in moving
-on with the older version. I still want to. But
-now feel like its forced. Like, if I hadn't given
-up the idea, I would have been more interested.
+on with the older version. I still want to. But,
+I now feel like any effort towards the old one's progress forced.
+Its as if, if I hadn't given up the idea,
+I would probably have been more interested.
 
 My conclusion? Maybe some projects just ain't meant to
-be opensourced.  Some projects are meant to be
-toys. Soon they can be open sourced. But after soon
+be opensourced. The ideas that birth them also.
+Some projects are meant to be toys.
+Soon they can be open sourced. But after soon
 passes, not before.
 
 
 **** See a big tech influencer? Fret not.
 Swiping through instagram, looking through the
-\#devops posts, its interesting what passes for
-'content'. I found it really interesting what
-metrics drove 'like' count.  If its the platform
+\#devops posts, you notice how
+interesting it is what passes for
+'content'.
+
+I found it really absurd what
+metrics drove 'like' count.  Whether this is for the platform
 structure's incentives or the people or both is
 a different question.
 
-Popularity on instagram felt so much more skewed
-towards who was best at presentation of content
-no matter how shallow.
+Popularity on instagram feels so much  skewed
+towards who is best at presentation of content
+no matter how shallow. 
 
 Produce a well edited video on "3 grep commands
-every senior devops eng should know" .. yes , ain't
-making that up.. and sooner than later.. 7 days
-or so your follow count if you keep up with the
-style you will have thousands of followers.
+every senior devops eng should know" -- /yes , ain't/
+/making that up..--/ and sooner than later,
+your follow count will be in the thousands.
+
 
 The site rewards what catches eye balls. The
 producers, most of them, do what the site rewards.
 
-So I was like, wait, bro, you got 134k followers
-and you are making a big deal out of
-=grep 'error' log.txt= ???
+
+So I was like.. /Wait, bro, you got 134k followers/
+/and you are making a big deal out of/
+/ =grep 'error' log.txt= ???/
 
 But then....
+
+And don't get me wrong. There's people doing actual work though. And
+I'm trying to join the ranks of those. But, let's see how that
+will go.
+
 
 **** Publish on your own site, syndicate elsewhere.
 
@@ -87,10 +98,10 @@ Hugo. One point I think I did not articulate well was
 on the feeling of ownership. I read an article that
 laid it out more clearly than I ever would have.
 
-Right here if you want to check it out. In the article
-he mentions an acronym [[https://joshblais.com/blog/the-canonical-point-of-truth][POSSE]].
+Right [[https://joshblais.com/blog/the-canonical-point-of-truth][here]] if you want to check it out. In the article
+he mentions an acronym /POSSE/.
 
-Mine was more an abstraction of the point he was making. 
+Mine on this however, more an abstraction of the point he was making. 
 
 Kinda the same idea for why I started this. I was like..
 I have a lot to share every week. And I need a release valve.
