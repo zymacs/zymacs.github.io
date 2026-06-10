@@ -6,8 +6,15 @@
     <description>Recent content in Index on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2026 10:10:06 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week in Code E008</title>
+      <link>//localhost:1313/lwic/last-week-in-code-008/</link>
+      <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
+      <guid>//localhost:1313/lwic/last-week-in-code-008/</guid>
+      <description>&lt;p&gt;&#xA;Wait, is that 8 weeks??! Yaay!!&#xA;Interesting how few 56 days can be. I didn&amp;#39;t see&#xA;this coming this far.  Anyways.&#xA;What has been rolling since the last post?&lt;/p&gt;&#xA;&lt;p&gt;&#xA;A lot. Reshaping this site&amp;#39;s structure to match my&#xA;mind as I mentioned I would in &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-006&#34;&gt;lwic e006&lt;/a&gt;. Started&#xA;producing &amp;#39;content&amp;#39;. Posted some of that on&#xA;my &lt;a href=&#34;https://www.instagram.com/devo.psbro/&#34;&gt;instagram channel&lt;/a&gt;. I think there was no coding at&#xA;all. Still, there was a lot of learning worth sharing.&#xA;Let&amp;#39;s get to that.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Intelligent keyword generation. Nothing more.</title>
       <link>//localhost:1313/rthots/intelligent_but_humble/</link>

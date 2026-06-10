@@ -5,7 +5,22 @@
     <loc>//localhost:1313/lwic/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/lwic/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/weeklyseries/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
@@ -20,9 +35,6 @@
     <loc>//localhost:1313/rthots/</loc>
     <lastmod>2026-06-02T10:10:06+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-06-02T10:10:06+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/cheatsheets/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -32,19 +44,10 @@
     <loc>//localhost:1313/notes/</loc>
     <lastmod>2026-05-31T10:29:40+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-007/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-007/</loc>
-    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/lwic/</loc>
-    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/weeklyseries/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/rthots/idea_hash/</loc>
