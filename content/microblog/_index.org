@@ -10,8 +10,32 @@ menu:
 Quotes, Hot takes, Short Essays
 
 #+begin_quote
- 6 months after graduation and sometime's I genuinely wonder if its all possibly a dream.
- I hope it is one long ugly dream that will soon come to an end. But days later, I wake up
- and I get the same thought again. I realize its just the new real. However much I hate to
- admit.
+
+Its your choices, not your friends.
+#+end_quote
+
+-----
+
+#+begin_quote
+  **Your earlier days:**
+  
+ ....We have a gift for you. /_Opens the gift box_/ .. Oh, bees.. Whyyy!!!..
+
+ YOU GET STUNG SO BAD BUT SOON ITS ALL AN OLD FUN STORY.
+
+
+ **After graduation:**
+ 
+ ....We have a gift for you. /_Opens the gift box_/ .. Oh wait seriously.... Thats the gift??? Adulthood??.. Naa... Wait.. Whhhhhyyyyyyyyyy..
+
+ No time for explanations so you are swallowed up by said giftbox.  YOU BEG TO GET OUT. YOU SCREAM BUT ONLY THE WALLS HEAR..
+ YOU THINK ITS PROBABLY A DREAM. a long bad dream. But.. soon....  You give up hoping for an exit. 
+ The reality that was becomes a memory. This takes its place. So you normalize living +"the dream+"  the nightmare. 
+
+ /Welcome to the **afteryouth**../
+
+ Alright..  transition time is over. Stop wailing.  Go on and make yourself feel 'AT HOME'.
+ Actually, you _might_ eventually feel so...
+
+ /*MIGHT../  
 #+end_quote

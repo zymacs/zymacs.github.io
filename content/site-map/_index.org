@@ -15,7 +15,8 @@ menu:
 | My sources                                  | [[/sources][/sources]]         |
 | How I built X                               | [[/how-i-built][/how-i-built]]     |
 | My study notes                              | [[/notes][/notes]]           |
-| Quotes, random short thoughts, hot-takes    | [[/quotes][/quotes]]          |
+| Photo Gallery                               | [[/photo-gallery/2026][/photo-gallery]]   |
+| Quotes, random short thoughts, hot-takes    | [[/microblog][/microblog]]       |
 | Weekly Dev Log Series LWIC                  | [[/lwic][/lwic]]            |
 | Installation guides                         | [[/how-to-setup][/how-to-setup]]    |
 | Thinking out loud, learning by teaching     | [[/let-me-explain][/let-me-explain]]  |

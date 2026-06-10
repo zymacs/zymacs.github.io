@@ -1,0 +1,16 @@
+---
+title: ''
+page_type:
+ - gallery
+menu:
+  main:
+   name: "Photo Gallery"
+   weight: 7
+authorbox: false
+sidebar: false
+draft: false
+---
+
+#+attr_html: :title Bees, Flowers, Cyprus
+[[bee_on_rose_20260301_095332.jpg]]
+

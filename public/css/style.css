@@ -1357,3 +1357,9 @@ html.js body.body div.container.container--outer div.wrapper.flex div.primary ma
     font-weight: bold;
     font-size: 17px;
 }
+
+.pt_gallery img {
+    height: 600px;
+    margin: auto;
+    
+}

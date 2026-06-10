@@ -3,12 +3,12 @@ title: ''
 ---
 
 *** Technical
-- C++ Programming Language
-- Progit
-- The Art of Unix Programming
-- Emacs Mastery
+- [[https://www.amazon.com/C-Programming-Language-4th/dp/0321563840][C++ Programming Language]]
+- [[https://git-scm.com/book/en/v2][Progit]]
+- [[https://www.catb.org/esr/writings/taoup/html/index.html][The Art of Unix Programming]]
+- [[https://www.masteringemacs.org/reading-guide][Mastering Emacs]]
 
 
 *** Self Help
-- Getting things done
-- Your Money Your Life
+- [[https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280][Getting Things Done]]
+- [[https://www.amazon.com/Your-Money-or-Your-Life-audiobook/dp/B07DLBZ5DW][Your Money Your Life]]
