@@ -10,16 +10,24 @@ draft: false
 If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should
 start thinking about making some sort of documentation system for the errors you run into.
 
-I have been doing so
-for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded
+Why we skip documentation
+- We think we shall remember , surely its a small error, I will definitely remember
+  - If we remember, why return to the search engine in search for a solution to the same error.
+  - Yet its so hard to see this, even the recurrent returns.
+- We think we don't need to understand.
+  - I don't have the time, I will come back later. Lets make it work and understand later.
+  - But then the solution fails to work and you don't understand why it is not working.
+- It feels like a chore
+  - It only takes five minutes. Really, 5 minutes to save a future 90. Isn't a future 90 a chore?
+    I don't know why most such small but real time saving sacrifices feel 'like a chore'
+    when they have to be taken. Yet we all get frustrated for not having done the 5 minutes of note taking.
+- No system to incentivise the habit.
+  
+
+I have been doing so for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded
 the solution. Same could be said of those for which I did not take time to write something down. 
 Those are very annoying. Its very annoying going through docs more than once to solve a problem you know
 you solved in the past.
-
-Its like, without docs,  all you have is dejavu about old occurences for the same problem:
-/I saw this error, I fixed it, but i don't remember how i did../. 
-You can't get yourself to remember what the solution was. If you somehow manage to get the primary source,
-you still don't remember how you uderstood the solution it presented. Quadruple work.
 
 Documentation can feel like a chore. But no one died from it. The one thats always gained from my notes is me.
 I always like it when I know something would have taken a lot of time to do but, because of some past sacrifice to
