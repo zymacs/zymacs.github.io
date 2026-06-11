@@ -1,3 +1,17 @@
+---
+thumbnail: "img/router.jpg"
+title: 'The anatomy of a download over TCP'
+date: 2026-05-07
+tags:
+ - http
+ - tcp
+draft: false
+categories:
+ - networking
+---
+
+
+
 Let's look at what happens from download instantiation by some download
 client to when all data in its completeness is transferred from the
 remote location to the downloader's storage.

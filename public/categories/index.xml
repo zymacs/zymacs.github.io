@@ -37,17 +37,31 @@
       <description></description>
     </item>
     <item>
+      <title>Maths</title>
+      <link>//localhost:1313/categories/maths/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/maths/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>//localhost:1313/categories/networking/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Setup</title>
+      <link>//localhost:1313/categories/linux-setup/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:1313/categories/linux-setup/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Linux Tools</title>
       <link>//localhost:1313/categories/linux-tools/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/categories/linux-tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>//localhost:1313/categories/security/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/categories/security/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +83,13 @@
       <link>//localhost:1313/categories/git/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/categories/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python3</title>
+      <link>//localhost:1313/categories/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/python3/</guid>
       <description></description>
     </item>
   </channel>

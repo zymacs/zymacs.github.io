@@ -1,3 +1,21 @@
+---
+title: "(Hu)go Template Primer"
+date: 2014-04-02
+thumbnail: "img/placeholder.png"
+draft: true
+tags:
+  - "go"
+  - "golang"
+  - "templates"
+  - "themes"
+  - "development"
+categories:
+  - "Development"
+  - "golang"
+---
+
+
+
 Hugo uses the excellent [[https://golang.org/][Go]]
 [[https://golang.org/pkg/html/template/][html/template]] library for its
 template engine. It is an extremely lightweight engine that provides a

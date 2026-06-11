@@ -16,32 +16,11 @@
       <description>&lt;p&gt;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Arch Faillock</title>
-      <link>//localhost:1313/post/mkdown/but-my-password-is-correct/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/mkdown/but-my-password-is-correct/</guid>
-      <description>&lt;p&gt;I guess you need a quick solution. If you do, here&amp;rsquo;s one.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;su&#xA;faillock --rest&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Okay, now the narrative.&lt;/p&gt;&#xA;&lt;p&gt;I have run into this issue quite a number of times.&#xA;I enter the wrong password, say once or twice, but do give in the right one on the next attempts.&#xA;But then,  all recurring attempts are flagged as incorrect entries.&#xA;It makes you confused if someone changed your password or if the system is actually faulty.&#xA;Before learning it was part of how Arch secured accounts, it was confusing and at times had me considering re installing the OS.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Defining a computer</title>
-      <link>//localhost:1313/post/mkdown/what_is_a_computer/</link>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/mkdown/what_is_a_computer/</guid>
-      <description>&lt;p&gt;While talking about what interview questions I&amp;rsquo;d been studying, I  mentioned to a non technical friend how interesting it was finding questions so basic included.&#xA;Why would you ask a Software Engineering graduate to define a computer? Such a waste of time right? My friend&amp;rsquo;s response was even more interesting: &lt;em&gt;&amp;ldquo;What is a computer?&amp;rdquo;&lt;/em&gt; he posed the question to me.  And there I was&amp;hellip; answering my own question. Remember? &amp;ldquo;&lt;em&gt;Why would you ask a Soft&amp;hellip;.&lt;/em&gt;&amp;rdquo;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Gitignore files</title>
       <link>//localhost:1313/post/mkdown/git-ignore-files/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/post/mkdown/git-ignore-files/</guid>
       <description>&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My first post with Hugo</title>
-      <link>//localhost:1313/post/mkdown/my-first-post/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/mkdown/my-first-post/</guid>
-      <description>&lt;p&gt;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;rsquo;s blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that caught my eye.&#xA;I thought I could learn some css building it myself. Feel good from &lt;code&gt;doing it myself from scratch&lt;/code&gt;.&#xA;But boy is CSS boring! And I only realized this after 4 hours of centering &lt;code&gt;divs&lt;/code&gt; and hunting for unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;Now the day had almost come to an end and I was feeling guilty for the waste that it&amp;rsquo;d been. So to alleviate the guilt , I decided to&#xA;setup Hugo. I mean why didn&amp;rsquo;t I do this in the first place? Anyways. After some googling I got it running&#xA;and hence this site.  It looks nice doesn&amp;rsquo;t it? I mean, I still have to remove some stock pages but I needed some lorem ipsum available before I&#xA;add content of my own.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

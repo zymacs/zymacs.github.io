@@ -1,3 +1,17 @@
+---
+title: "Curl: A Better PostMan"
+thumbnail: 'img/curl.png'
+date: 2026-05-22T15:43:01+03:00
+draft: true
+tags:
+ - tooling
+ - http
+categories:
+ - Linux Utils
+ - Networking
+---
+
+
 I recently had to test an api with a popular app called
 [[https://www.postman.com/][PostMan]] but did not like that it kept
 reminding me how limited the freemium version was. Not to mention the

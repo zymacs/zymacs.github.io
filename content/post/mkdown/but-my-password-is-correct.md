@@ -8,6 +8,7 @@ tags:
   - linux
 categories:
   - Security
+draft: true
 ---
 
 

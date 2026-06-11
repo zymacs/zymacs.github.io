@@ -1,3 +1,14 @@
+---
+thumbnail: "img/rabbit-hole.jpeg"
+title: Hunting For Exportable Android Usage Stats
+date: 2026-05-15
+tags:
+ - rabbit_holes
+categories:
+ - random
+---
+
+
 I am doing some public accountability challenge on instagram and on
 15.05.26 the theme was setting goals for improving my time management. I
 was planning on discussing my problems with AI usage and how much of a

@@ -8,6 +8,7 @@ tags:
   - "blogspot"
 categories:
   - "Random"
+draft: true
 ---
 
 I set up a site on [blogger](https://www.blogger.com/) (Google's blogspot) and dumped it for a [Hugo](https://gohugo.io/) design that caught my eye.

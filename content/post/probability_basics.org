@@ -1,3 +1,16 @@
+---
+title: 'Probability Intuition : The Basics'
+thumbnail: 'img/probability.jpg'
+date: 2026-05-08
+draft: false
+tags:
+  - probability
+categories:
+  - Maths
+---
+
+
+
 How likely it is that some outcome will be the outcome given some event.
 That is what probability is. Its a ratio. Given an event, there's many
 possible outcomes. The probability of some outcome being the outcome

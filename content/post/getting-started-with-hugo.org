@@ -1,3 +1,18 @@
+---
+title: Getting Started with Hugo
+date: 2014-04-02
+draft: true
+tags:
+  - "go"
+  - "golang"
+  - "hugo"
+  - "development"
+categories:
+  - "Development"
+  - "golang"
+---
+
+
 ** Step 1. Install Hugo
 :PROPERTIES:
 :CUSTOM_ID: step-1.-install-hugo

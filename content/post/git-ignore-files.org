@@ -1,3 +1,18 @@
+---
+title: Gitignore files
+thumbnail: "img/git_icon.png"
+date: 2026-04-17
+draft: false
+tags:
+  - git
+  - development
+categories:
+  - Development
+  - Git
+---
+
+
+
 So I've been trying to make my way through
 [[https://git-scm.com/book/en/v2][Progit]]. I have accumulated a whole
 lot of information so far and I was afraid for how not so often I used

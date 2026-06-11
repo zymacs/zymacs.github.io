@@ -1,3 +1,16 @@
+---
+title: 'Modding Alacritty'
+thumbnail: "img/alacritty_logo.png"
+date:  2026-05-03T20:56:47+03:00
+draft: false
+tags:
+  - ricing
+  - configs
+categories:
+  - linux-setup
+---
+
+
 If something in my surroundings looks too good I can't stop thinking how
 to make it look better. Maybe its ADHD but that's thrown around too much
 these days its hard to tell who's just making things up. But anyways. I

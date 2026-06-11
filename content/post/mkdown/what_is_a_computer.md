@@ -7,6 +7,7 @@ tags:
   - fundamentals
 categories:
   - Computers
+draft: true
 --- 
 
 While talking about what interview questions I'd been studying, I  mentioned to a non technical friend how interesting it was finding questions so basic included.

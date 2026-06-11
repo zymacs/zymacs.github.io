@@ -1,3 +1,16 @@
+---
+title: "Baye's Theorem: Informal Proof and an Example."
+thumbnail: "img/probability.jpg"
+date: 2026-05-14
+draft: false
+tags:
+  - Probability
+categories:
+  - Maths
+---
+
+
+
 Alright. I have tried to find the easiest way to explain Baye's. I have
 watched quite a number of videos and read quite a number of articles to
 suppliment what I already know and to get better devices for delivering

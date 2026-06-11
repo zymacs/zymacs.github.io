@@ -58,31 +58,45 @@
       <description></description>
     </item>
     <item>
+      <title>Probability</title>
+      <link>//localhost:1313/tags/probability/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/probability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>//localhost:1313/tags/http/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tcp</title>
+      <link>//localhost:1313/tags/tcp/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/tcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configs</title>
+      <link>//localhost:1313/tags/configs/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:1313/tags/configs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ricing</title>
+      <link>//localhost:1313/tags/ricing/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:1313/tags/ricing/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Text-Manipulation</title>
       <link>//localhost:1313/tags/text-manipulation/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/text-manipulation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arch</title>
-      <link>//localhost:1313/tags/arch/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/arch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>//localhost:1313/tags/linux/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>//localhost:1313/tags/security/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
@@ -132,6 +146,20 @@
       <link>//localhost:1313/tags/intro/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/intro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python3</title>
+      <link>//localhost:1313/tags/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/python3/</guid>
       <description></description>
     </item>
     <item>

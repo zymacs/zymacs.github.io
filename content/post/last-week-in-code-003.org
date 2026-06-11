@@ -1,3 +1,17 @@
+---
+title : 'Last Week in Code 003'
+thumbnail: "img/lwic.png"
+date : 2026-05-03
+draft: true
+tags:
+  - lwic
+categories:
+  - WeeklySeries
+---
+
+
+
+
 I like self hosting but have not yet gotten a hosting service to stick
 to so I have to go through the whole reinstall process every time I
 switch operating systems. Yes, I run my apps on my PC. So I spent most

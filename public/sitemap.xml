@@ -104,6 +104,9 @@
     <loc>//localhost:1313/lwic/last-week-in-code-005/</loc>
     <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/android_usage_stats/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/mkdown/android_usage_stats/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -113,8 +116,44 @@
     <loc>//localhost:1313/categories/random/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/bayes_theorem/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/maths/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/probability/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-004/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/probability_basics/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/http/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/networking/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/tcp/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/http_downloads/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/configs/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/linux-setup/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/modding-alacritty/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/ricing/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/grep/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
@@ -128,21 +167,6 @@
     <loc>//localhost:1313/tags/text-manipulation/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/arch/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/mkdown/but-my-password-is-correct/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/linux/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/security/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/security/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/post/the-cost-for-not-documenting-solutions/</loc>
     <lastmod>2026-04-24T20:08:02+03:00</lastmod>
   </url><url>
@@ -152,7 +176,7 @@
     <loc>//localhost:1313/categories/computers/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/mkdown/what_is_a_computer/</loc>
+    <loc>//localhost:1313/post/what_is_a_computer/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/definitions/</loc>
@@ -176,6 +200,9 @@
     <loc>//localhost:1313/tags/git/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/git-ignore-files/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/mkdown/git-ignore-files/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -188,8 +215,20 @@
     <loc>//localhost:1313/tags/intro/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/mkdown/my-first-post/</loc>
+    <loc>//localhost:1313/post/my-first-post/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/bio/about/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
@@ -213,30 +252,6 @@
   </url><url>
     <loc>//localhost:1313/photo-gallery/2026/</loc>
   </url><url>
-    <loc>//localhost:1313/post/android_usage_stats/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/basic-elements/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/bayes_theorem/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/but-my-password-is-correct/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/curl/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/dd_disk_destroyer/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/five-days-no-ai/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/getting-started-with-hugo/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/git-ignore-files/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/http_downloads/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/hugo-template-primer/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
-  </url><url>
     <loc>//localhost:1313/post/last-week-in-code-001/</loc>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-002/</loc>
@@ -246,26 +261,6 @@
     <loc>//localhost:1313/post/last-week-in-code-004/</loc>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-005/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/modding-alacritty/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/my-first-post/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/possibly-the-end-of-android-freedom/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/probability_basics/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/spam_filter_python/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/the-end-of-android-is-here/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/what_is_a_computer/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/what_is_cos/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/why_small_files_take_long_to_download/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/why_so_unfocused/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
   </url><url>

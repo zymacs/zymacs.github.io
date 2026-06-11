@@ -1,3 +1,19 @@
+---
+thumbnail: "img/router.jpg"
+title: 'Why smaller files take longer to download'
+date: 2026-05-06
+draft: true
+tags:
+ - tcp
+ - why_type
+ - research
+categories:
+ - Networks
+---
+
+
+
+
 This article is going to have two children since needs some prerequisite
 knowledge that would be too much to cram into one article. I mean I
 could have said go read up on X from someone else then come back but I

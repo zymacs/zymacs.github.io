@@ -1,3 +1,16 @@
+---
+title : '5 Days No AI'
+thumbnail: "img/no_ai.jpeg"
+date : 2026-04-20T12:12:03+03:00
+draft: false
+tags:
+  - AI
+  - Productivity
+categories:
+  - Challenges
+---
+
+
 I cannot say I am the heaviest user of AI since, I lack the stats to
 back that up. But I am sure anyone that uses it can tell if they are
 usage is getting out of hand. And for me, that sentiment is always

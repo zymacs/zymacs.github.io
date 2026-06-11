@@ -1,3 +1,12 @@
+---
+title: DD Linux
+tags:
+ - linux-core-utils
+draft: true
+---
+
+
+
 The disk distroyer (DD) Operates directly on raw btes of file, partition
 or disk.
 

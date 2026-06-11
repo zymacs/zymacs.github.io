@@ -1,3 +1,17 @@
+---
+title: 'Last Week in Code E004'
+thumbnail: 'img/lwic.png'
+date: 2026-05-11T17:41:08+03:00
+draft: true
+tags:
+ - lwic
+categories:
+ - WeeklySeries
+---
+
+
+
+
 It's four weeks already! I spent most of last week writing. I mean, I
 did give time to other projects beyond writing too but it was mostly
 writing. I thought I had quite a lot to write about and that I was going

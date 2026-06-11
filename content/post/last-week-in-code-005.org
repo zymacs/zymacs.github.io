@@ -1,3 +1,17 @@
+---
+title: 'Last Week in Code E005'
+thumbnail: 'img/lwic.png'
+date: 2026-05-18T22:49:48+03:00
+draft: true
+tags:
+ - lwic
+categories:
+ - weeklyseries
+---
+
+
+
+
 It's LWIC E005! Cool. So I was AFK for a huge proportion of last week.
 But for the later half of it (which was Thursday up until Sunday), I
 spent most of my time reading and making notes with not so much
