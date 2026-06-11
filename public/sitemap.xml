@@ -185,6 +185,15 @@
     <loc>//localhost:1313/tags/fundamentals/</loc>
     <lastmod>2026-04-22T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/five-days-no-ai/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/challenges/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/productivity/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-001/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -252,16 +261,6 @@
   </url><url>
     <loc>//localhost:1313/photo-gallery/2026/</loc>
   </url><url>
-    <loc>//localhost:1313/post/last-week-in-code-001/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/last-week-in-code-002/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/last-week-in-code-003/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/last-week-in-code-004/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/last-week-in-code-005/</loc>
-  </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
   </url><url>
     <loc>//localhost:1313/quotes/engineer_creativity/</loc>
@@ -283,8 +282,6 @@
     <loc>//localhost:1313/docs/</loc>
   </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/installing-arch/</loc>
   </url><url>
     <loc>//localhost:1313/rants/my_software_choices/</loc>
   </url><url>
