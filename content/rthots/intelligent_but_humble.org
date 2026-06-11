@@ -5,6 +5,7 @@ date: 2026-06-02T10:10:06+03:00
 draft: false
 tags:
  - AI
+authorbox: false
 ---
 
 So I haven't gotten over them yet but, soon after I find
@@ -131,3 +132,7 @@ studied all thats needed would implement this in a weekend.
 
 
 Alright.. that's it for this one.. 
+
+
+** (Update: 11.06.26)
+- Got some corroborating pieces [[https://hackernoon.com/ranked-1-on-google-why-28percent-of-ai-citations-bypass-you-completely][here]].
