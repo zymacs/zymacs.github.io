@@ -1,0 +1,41 @@
+---
+title: ''
+sidebar: false
+authorbox: false
+date: 
+---
+
+First post 2026.06.15
+- Setting the baseline for everything. A long dump.
+  - My average screen time.
+  - How much I accomplish daily.
+  - My morning and evening routines.
+    - Sleep routine
+    - Any journaling?
+  - My browser usage habits.
+  - Perceived time sinks or devices for self sabotage
+    - The browser
+    - The phone
+    - LLMs
+  - My current food diet
+  - My information diet
+  - My current financial habits
+  - My workout routine
+  - How much growth I do
+    - In tech towards my career.
+  - Financial status
+
+- The challenges
+
+Productivity
+- Screen time
+- Tasks accomplished
+- Articles read
+- Book progress
+- Browser usage (or just internet usage)
+  
+Career 
+- Applications sent out
+- Linked in posts
+- Scholarships applied for
+- Progress on that one project

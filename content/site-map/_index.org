@@ -21,6 +21,7 @@ menu:
 | Installation guides                         | [[/how-to-setup][/how-to-setup]]    |
 | Thinking out loud, learning by teaching     | [[/let-me-explain][/let-me-explain]]  |
 | Letters to self, reflections on my life     | [[/letters-to-self][/letters-to-self]] |
+| Challenges (X days of Y type challenges)    | [[/challenges][/challenges]]      |
 
 
 

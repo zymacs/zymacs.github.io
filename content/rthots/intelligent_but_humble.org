@@ -38,13 +38,14 @@ Semantic search might yield some  hits but the less direct
 your query gets, the poorer  the the result quality 
 will become. Some times you will get none.
 
-My test search engine was Google.  The difference between results from the
-AI used for the summarizer and the ordinary search engine url listing was
-not so big though. The query was not so fuzzy anyway. 
-It contained enough keyword text "history , car,  logo with v juxtaposed with w" 
-to return valid results without reliance on middleman translation.
+My test search engine was Google.  The difference between results from Gemini
+and the ordinary search engine url listing was
+not so big. The query was somewhat clear so that was expected. 
+It contained enough keyword text --"history , car,  logo with v juxtaposed with w"-- to
+return valid results without reliance on middleman translation.
 
-But how about this query: "Articles on that kind of knowledge 
+But then I tried a different  one:
+"Articles on that kind of knowledge 
 that you are sure you have but just don't have the means to explain."
 
 /AI results | Query: Articles on that kind of .../
@@ -63,6 +64,7 @@ the best results.
 
 /Query: tacit knowledge/
 [[best_results.png]]
+
 
 What I need.
 

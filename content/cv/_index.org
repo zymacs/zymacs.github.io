@@ -53,7 +53,7 @@ to be able to if the subject is undergraduate Statistics.
 ** Contacts
   + Email: [[mailto:0nkzhmhoq@mozmail.com][zymacs@zmail.com]]
 ** Links
-  + Github:  [[github.com/zymacs][github.com/zymacs]]
-  + Website: [[zymacs.github.io][zymacs.github.io]]
+  + Github:  [[https://github.com/zymacs][github.com/zymacs]]
+  + Website: [[https://zymacs.github.io][zymacs.github.io]]
 
 

@@ -245,6 +245,8 @@
     <loc>//localhost:1313/bio/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/challenges/</loc>
+  </url><url>
     <loc>//localhost:1313/cv/</loc>
   </url><url>
     <loc>//localhost:1313/how-i-built/</loc>
