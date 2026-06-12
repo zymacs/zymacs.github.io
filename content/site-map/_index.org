@@ -22,6 +22,7 @@ menu:
 | Thinking out loud, learning by teaching         | [[/let-me-explain][/let-me-explain]]  |
 | Letters to self, reflections on my life         | [[/letters-to-self][/letters-to-self]] |
 | Challenge updates (X days of Y type challenges) | [[/lwig][/lwig]]            |
+| Rants (random complaints about random things)   | [[/rants][/rants]]           |
 
 
 
