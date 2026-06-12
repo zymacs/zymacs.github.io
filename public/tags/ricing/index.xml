@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ricing on Zymacs</title>
+    <link>//localhost:35471/tags/ricing/</link>
+    <description>Recent content in Ricing on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2026 20:56:47 +0300</lastBuildDate>
+    <atom:link href="//localhost:35471/tags/ricing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modding Alacritty</title>
+      <link>//localhost:35471/post/modding-alacritty/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:35471/post/modding-alacritty/</guid>
+      <description>&lt;p&gt;&#xA;If something in my surroundings looks too good I can&amp;#39;t stop thinking how&#xA;to make it look better. Maybe its ADHD but that&amp;#39;s thrown around too much&#xA;these days its hard to tell who&amp;#39;s just making things up. But anyways. I&#xA;looked into modding my alacritty terminal just out of curiosity. I have&#xA;been using it as it was out of the box for a while. But I felt bored and&#xA;thought modding it would be a good pass time.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
