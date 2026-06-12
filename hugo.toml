@@ -1,7 +1,6 @@
 baseurl = "zymacs.github.io"
 title = "Zymacs"
 languageCode = "en-us"
-#paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your tracking id
@@ -13,14 +12,13 @@ googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your 
 [Params]
   description = "Zymac's  Personal blog on Programming and Random Tinkering Persuits Plus More." # Description of your site
   opengraph = true
+  rss = true
   twitter_cards = false
   readmore = true # Show "Read more" button in list if true
   authorbox = true
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
   mainSections = ["post", "docs"]
-
-
 
 
 [Params.socials]
@@ -51,7 +49,7 @@ googleAnalytics = "G-HTBNB5EN4Tyyyy" # Enable Google Analytics by entering your 
   tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
 
 
-[Parems.widgents.social]
+[Parems.widgets.social]
    facebook = "zymacs"
 
 

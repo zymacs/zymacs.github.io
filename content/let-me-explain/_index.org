@@ -1,0 +1,7 @@
+---
+sidebar: false
+---
+
+What better way to learn it than to teach it...?
+This section includes articles that are me trying to understand better the
+things I've read by teaching.

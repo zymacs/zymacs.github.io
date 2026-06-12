@@ -9,7 +9,7 @@
     <lastBuildDate>Tue, 02 Jun 2026 10:10:06 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Auto correct for circumlocution: AI translation w/out LLM chats</title>
+      <title>Intelligent keyword generation. Nothing more.</title>
       <link>//localhost:1313/rthots/intelligent_but_humble/</link>
       <pubDate>Tue, 02 Jun 2026 10:10:06 +0300</pubDate>
       <guid>//localhost:1313/rthots/intelligent_but_humble/</guid>
@@ -20,7 +20,7 @@
       <link>//localhost:1313/post/five-days-no-ai/</link>
       <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
       <guid>//localhost:1313/post/five-days-no-ai/</guid>
-      <description>&lt;p&gt;I cannot say I am the heaviest user of AI since, I lack the stats to back that up. But I am sure anyone that uses it can tell if they are usage is getting out of hand.&#xA;And for me, that sentiment is always strongest when I feel my productivity levels are dipping too much. When I feel simple tasks are becoming unusually harder to do.&#xA;So I was like, how about a simple challenge this week. &lt;strong&gt;5 Days No AI&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&#xA;I cannot say I am the heaviest user of AI since, I lack the stats to&#xA;back that up. But I am sure anyone that uses it can tell if they are&#xA;usage is getting out of hand. And for me, that sentiment is always&#xA;strongest when I feel my productivity levels are dipping too much. When&#xA;I feel simple tasks are becoming unusually harder to do. So I was like,&#xA;how about a simple challenge this week. &lt;strong&gt;5 Days No AI&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -11,11 +11,6 @@ categories:
  - Networking
 ---
 
-- Child nodes
- - The HTTP Protocol
- - Curl Flags Basics
- - Curl Authentication
-
 
 I recently had to test an api with a popular app called
 [[https://www.postman.com/][PostMan]] but did not like that it kept
@@ -66,17 +61,16 @@ Also, we'll need some api service we are going to use for practice.
 
 A list of PostMan features we'll cover
 
-
 Pycurl
 
 *** References
 :PROPERTIES:
 :CUSTOM_ID: references
 :END:
-| No. | Source          | Type  | Title             |
-|-----+-----------------+-------+-------------------|
-|  1. | Hackersploit 0  | Video | [[https://www.youtube.com/watch?v=Xy7fDxz39FM][Curl Fundamentals]] |
-|  2. | Daniel Stenberg | PDF   | [[https://daniel.haxx.se/everything-curl/everything-curl.pdf][Everything Curl]]   |
+| No. | Source          | Type  | Title                                                                           |
+|-----+-----------------+-------+---------------------------------------------------------------------------------|
+| 1.  | Hackersploit    | Video | [[https://www.youtube.com/watch?v=Xy7fDxz39FM][Curl Fundamentals]]              |
+| 2   | Daniel Stenberg | PDF   | [[https://daniel.haxx.se/everything-curl/everything-curl.pdf][Everything Curl]] |
 
 *** HTTP Curl Refcard
 :PROPERTIES:

@@ -1,5 +1,6 @@
 ---
 title: Curriculum Vitae
+draft: true
 ---
 
 * Whoami
@@ -47,7 +48,6 @@ I am also committed to long life learning and treat programming both as a form o
 
 * Links and contacts
 ** Contacts
-  + Phone Number: /+256782115487/
   + Email: [[mailto:0nkzhmhoq@mozmail.com][zymacs@zmail.com]]
 ** Links
   + Github:  [[github.com/zymacs][github.com/zymacs]]

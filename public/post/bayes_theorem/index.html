@@ -9,8 +9,8 @@
 		<meta property="og:url" content="//localhost:1313/post/bayes_theorem/">
   <meta property="og:site_name" content="Zymacs">
   <meta property="og:title" content="Baye&#39;s Theorem: Informal Proof and an Example.">
-  <meta property="og:description" content="Alright. I have tried to find the easiest way to explain Baye’s. I have watched quite a number of videos and read quite a number of articles to suppliment what I already know and to get better devices for delivering the explanation. At this point I think its now just me being a perfectionist. So I’ll teach it as best as I can get myself to: Using proofs.
-First let’s state it formally">
+  <meta property="og:description" content="Alright. I have tried to find the easiest way to explain Baye&#39;s. I have watched quite a number of videos and read quite a number of articles to suppliment what I already know and to get better devices for delivering the explanation. At this point I think its now just me being a perfectionist. So I&#39;ll teach it as best as I can get myself to: Using proofs.
+First let&#39;s state it formally">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
@@ -64,14 +64,21 @@ First let’s state it formally">
 		<li class="menu__item">
 			<a class="menu__link" href="/">
 				
-				<span class="menu__text">Home</span>
+				<span class="menu__text">Index</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/project_writeups/">
+			<a class="menu__link" href="/site-map/">
 				
-				<span class="menu__text">Project Walkthroughs</span>
+				<span class="menu__text">SiteMap</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/lwic/">
+				
+				<span class="menu__text">Last-Week-In-Code</span>
 				
 			</a>
 		</li>
@@ -83,23 +90,23 @@ First let’s state it formally">
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/quotes_and_excerpts/">
+			<a class="menu__link" href="/microblog/">
 				
-				<span class="menu__text">Quotes &amp; Excerpts</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/rthots/">
-				
-				<span class="menu__text">RTHOTS</span>
+				<span class="menu__text">MicroBlog</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/bio/about/">
+			<a class="menu__link" href="/photo-gallery/2026/">
 				
-				<span class="menu__text">About</span>
+				<span class="menu__text">Photo Gallery</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/now/">
+				
+				<span class="menu__text">Now</span>
 				
 			</a>
 		</li>
@@ -127,71 +134,120 @@ First let’s state it formally">
 		
 		<img class="thumbnail__image" src="/img/probability.jpg" alt="Baye&#39;s Theorem: Informal Proof and an Example.">
 		
-	</figure><div class="content post__content clearfix">
-			<p>Alright. I have tried to find the easiest way to explain Baye&rsquo;s. I have watched quite a number of
-videos and read quite a number of articles to suppliment what I already know and to get better
-devices for delivering the explanation. At this point I  think its now just me being a perfectionist.
-So I&rsquo;ll teach it as best as I can get myself to: Using proofs.</p>
-<p>First let&rsquo;s state it formally</p>
-<pre tabindex="0"><code>P(A | B)     = (P(B | A) x P(A))/P(B)
-</code></pre><p>Where P(A|B) means the probability of event A happening given event B has happened.
-In other words, in B&rsquo;s world, what is the probability of A happening.</p>
-<p>Now let&rsquo;s derive it.</p>
-<p>The point is clearer with a venn diagram. Say we have two circles A and B.
-A has 5 elements and B 6. The intersection has 2 elements. The probability of
-event A given the sample space (which is all elements in both A and B) is 5/9.
-Wait where does the 9 come from? A has 5 elements, some of which include B&rsquo;s (from the intersection).
-So to get the total number of unique elements with A and B combined, we add the elements
-in A only, those in the intersection then  those in B only. Those in A  only are (5-2) which is 3, those in B only are (6-2)
-which is 4, adding the 2 from the intersection brings us to 9.</p>
-<p>So P(A) = 5/9. P(B) is obviously 6/9. P(AnB) which is the intersection or number of elements in both A and B is 2/9.</p>
-<p>Now how about P(A|B)? We have already defined this to mean the probability of A in B&rsquo;s world or the chances of
-A happening given B having happened. In a venn diagram we would zoom in to assume only that which was in B is what
-existed and our total number of elements was the total number of elements in B. Our P(A|B) would then be
-tne number of elements in B that are also in A out of the B world sample space which is the number of elements in B.
-That would have been Num elements in (AnB) out of Num elements in (B).</p>
-<p>P(A|B) would therefore have been 2/6.
-Why over 6 not 9? We are in B&rsquo;s world. P(A|B) means, in a world were the bound&rsquo;s are B&rsquo;s bounds, what are the chances
-of A? Just like it was in the given sample space of 9 where the bounds are all elements in A and B and P(A) was actually
-<code>P(A| sample space = num elements in both B and A =  9)</code> , here we have <code>P(A | sample space  = num_elements in B =  6)</code>.</p>
-<p>But world B is subdivided into 2: The elements that belong to B only and those that appear both in B and in A.
-What&rsquo;s in the other world? What are the chances for B only? Thats a simple 1-2/6. The whole is world B.
-If one part is 2/6 then the balance can be easily inferred from subtracting the known part from the whole.
-P(B only | B) is 4/6.</p>
-<pre tabindex="0"><code>  P(B | B) = P(AnB | B) + P(B only | B) -- eq1
+	</figure><div class="content post__content clearfix
+			    ">
+			
+<p>
+Alright. I have tried to find the easiest way to explain Baye&#39;s. I have
+watched quite a number of videos and read quite a number of articles to
+suppliment what I already know and to get better devices for delivering
+the explanation. At this point I think its now just me being a
+perfectionist. So I&#39;ll teach it as best as I can get myself to: Using
+proofs.</p>
+<p>
+First let&#39;s state it formally</p>
+<pre class="example">
+P(A | B)     = (P(B | A) x P(A))/P(B)
+</pre>
+<p>
+Where P(A|B) means the probability of event A happening given event B
+has happened. In other words, in B&#39;s world, what is the probability of A
+happening.</p>
+<p>
+Now let&#39;s derive it.</p>
+<p>
+The point is clearer with a venn diagram. Say we have two circles A and</p>
+<ol>
+<li>A has 5 elements and B 6. The intersection has 2 elements. The</li>
+</ol>
+<p>probability of event A given the sample space (which is all elements in
+both A and B) is 5/9. Wait where does the 9 come from? A has 5 elements,
+some of which include B&#39;s (from the intersection). So to get the total
+number of unique elements with A and B combined, we add the elements in
+A only, those in the intersection then those in B only. Those in A only
+are (5-2) which is 3, those in B only are (6-2) which is 4, adding the 2
+from the intersection brings us to 9.</p>
+<p>
+So P(A) = 5/9. P(B) is obviously 6/9. P(AnB) which is the intersection
+or number of elements in both A and B is 2/9.</p>
+<p>
+Now how about P(A|B)? We have already defined this to mean the
+probability of A in B&#39;s world or the chances of A happening given B
+having happened. In a venn diagram we would zoom in to assume only that
+which was in B is what existed and our total number of elements was the
+total number of elements in B. Our P(A|B) would then be tne number of
+elements in B that are also in A out of the B world sample space which
+is the number of elements in B. That would have been Num elements in
+(AnB) out of Num elements in (B).</p>
+<p>
+P(A|B) would therefore have been 2/6. Why over 6 not 9? We are in B&#39;s
+world. P(A|B) means, in a world were the bound&#39;s are B&#39;s bounds, what
+are the chances of A? Just like it was in the given sample space of 9
+where the bounds are all elements in A and B and P(A) was actually
+<code class="verbatim">P(A| sample space = num elements in both B and A =  9)</code> , here we have
+<code class="verbatim">P(A | sample space  = num_elements in B =  6)</code>.</p>
+<p>
+But world B is subdivided into 2: The elements that belong to B only and
+those that appear both in B and in A. What&#39;s in the other world? What
+are the chances for B only? Thats a simple 1-2/6. The whole is world B.
+If one part is 2/6 then the balance can be easily inferred from
+subtracting the known part from the whole. P(B only | B) is 4/6.</p>
+<pre class="example">
+  P(B | B) = P(AnB | B) + P(B only | B) -- eq1
   P(A|B)  = num(AnB)/num(B)             -- eq1.1
 
   P(A | A) = P(AnB | A)+ P(A only | A)  -- eq2
   P(B|A) = num(AnB)/num(A)              -- eq2.1
-</code></pre><p>Notice the intersection is shared across both P(A|B) and P(B|A).</p>
-<p>It seems to me like we could use P(A|B) to get P(B|A). Since P(B|A) is <code>num(AnB)/sum(A)</code> and and multiplying P(A|B) by num(B)
-would give us num(AnB), a component of P(B|A)&rsquo;s numerator.  The same could be said of P(B|A).
-Multiplying P(B|A) by num(A) would give us num(AnB). In otherwords, num(AnB) is either P(A|B)*P(B) or P(B|A)*P(A).
-Based on that we can rewrite the above statements to have:</p>
-<pre tabindex="0"><code>  P(B|A) = (P(A|B) * num (B))/ num(A)
+</pre>
+<p>
+Notice the intersection is shared across both P(A|B) and P(B|A).</p>
+<p>
+It seems to me like we could use P(A|B) to get P(B|A). Since P(B|A) is
+<code class="verbatim">num(AnB)/sum(A)</code> and and multiplying P(A|B) by num(B) would give us
+num(AnB), a component of P(B|A)&#39;s numerator. The same could be said of
+P(B|A). Multiplying P(B|A) by num(A) would give us num(AnB). In
+otherwords, num(AnB) is either P(A|B)/P(B) or P(B|A)/P(A). Based on that
+we can rewrite the above statements to have:</p>
+<pre class="example">
+  P(B|A) = (P(A|B) * num (B))/ num(A)
   P(A|B) = (P(B|A) * num (A))/ num(B)
-</code></pre><p>But the theorem got P(B) and P(A) not num(A) and num(B). That ain&rsquo;t no prob. In the world of all elements in A and B,
-the number of elements in the sample space for P(A) and P(B) are the same. So if P(A) is 5/9 and P(B) is 6/9, dividing
-P(A) by P(B) is equivalent to dividing the number of A elements with the number of   B elements. The denominators
-cancel out. So the last two expressions could be re written as</p>
-<pre tabindex="0"><code>  P(B|A) = (P(A|B) * P(B))/ P(A)
+</pre>
+<p>
+But the theorem got P(B) and P(A) not num(A) and num(B). That ain&#39;t no
+prob. In the world of all elements in A and B, the number of elements in
+the sample space for P(A) and P(B) are the same. So if P(A) is 5/9 and
+P(B) is 6/9, dividing P(A) by P(B) is equivalent to dividing the number
+of A elements with the number of B elements. The denominators cancel
+out. So the last two expressions could be re written as</p>
+<pre class="example">
+  P(B|A) = (P(A|B) * P(B))/ P(A)
   P(A|B) = (P(B|A) * P(A))/ P(B)
-</code></pre><p>Now that the conceptual ground is laid, let&rsquo;s use the theorem.</p>
-<p>We have a popular Telegram channel called SureOdds that provides <code>sure odds</code> for soccer matches.
-This channel is right about its predictions 90% of the times. You want
-to place your bet on ManPity&rsquo;s match for tomorrow and sure odds said it&rsquo;d
-win this match. Would you bet a win or a loss for ManPity?</p>
-<p>I&rsquo;m guessing you&rsquo;d place your bet on ManPity winning since SureOdds said it
-would and, its right a huge <code>90%</code> of the times. So there&rsquo;s a 90% chance ManPity
-will win, right? Well.. not really.</p>
-<p>The stats we are given are useless for our usecase. We are interested in the probability of SureOdds
-being right about a ManPity win prediction. Not any other kind. We&rsquo;ll have to do some math to figure that out.
-ManPity&rsquo;s statistical chances for winning this particular style of match are at a 0.4.
-That puts the probability for loss at a 0.6. Also, looking at more statistics,
-the numbers for how often SureOdds has been right about a ManPity win given it actually won stand at
-a 0.15. And those that about it predicting a win when ManPitty actually lost stand at 0.2.
-Given the numbers, let&rsquo;s keep that 90% to the side and establish SureOdds actual credibility.</p>
-<pre tabindex="0"><code>  # our data
+</pre>
+<p>
+Now that the conceptual ground is laid, let&#39;s use the theorem.</p>
+<p>
+We have a popular Telegram channel called SureOdds that provides
+<code class="verbatim">sure odds</code> for soccer matches. This channel is right about its
+predictions 90% of the times. You want to place your bet on ManPity&#39;s
+match for tomorrow and sure odds said it&#39;d win this match. Would you bet
+a win or a loss for ManPity?</p>
+<p>
+I&#39;m guessing you&#39;d place your bet on ManPity winning since SureOdds said
+it would and, its right a huge <code class="verbatim">90%</code> of the times. So there&#39;s a 90%
+chance ManPity will win, right? Well.. not really.</p>
+<p>
+The stats we are given are useless for our usecase. We are interested in
+the probability of SureOdds being right about a ManPity win prediction.
+Not any other kind. We&#39;ll have to do some math to figure that out.
+ManPity&#39;s statistical chances for winning this particular style of match
+are at a 0.4. That puts the probability for loss at a 0.6. Also, looking
+at more statistics, the numbers for how often SureOdds has been right
+about a ManPity win given it actually won stand at a 0.15. And those
+that about it predicting a win when ManPitty actually lost stand at 0.2.
+Given the numbers, let&#39;s keep that 90% to the side and establish
+SureOdds actual credibility.</p>
+<pre class="example">
+  # our data
  
   P(W)   = Probability of ManPity winning = 0.4
   P(L)   = Probability of ManPity lossing = 0.6
@@ -200,30 +256,58 @@ Given the numbers, let&rsquo;s keep that 90% to the side and establish SureOdds 
   P(S) = P(S|W) * P(W) + P(S|L) * P(L) # predict win and pity wins OR predict win and pity loses = 0.15*0.4 + 0.2*0.6 = 0.18
   P(W|S) = What we need = Probability ManPity shall win given SureOdds said it will = (P(S|W)*P(W))/P(S)
          = (0.15*0.4)/0.18
-	 = 0.3
+     = 0.3
   # how about P(L|S)
   P(L|S) = P(S|L)*P(L) / P(S) = 0.2*0.6 / 0.18 = 0.67
-</code></pre><p>That means there&rsquo;s a 67% chance for loss, given prediction ManPitty will win, P(L|S)!
-And for a win, its a measly 30%!
-Interesting right? If this ain&rsquo;t fraud then I don&rsquo;t know what is.</p>
-<p>Well that&rsquo;s one example and I guess itll cut it. Coming up with these on my own ain&rsquo;t the easiest task.</p>
-<p><em>There&rsquo;s a lot of numbers flying around here and its likely I made an error somehow somewhere. If
-you spot one or want to talk about any of what&rsquo;s on here please reach out to me via my BluesSky or Email linked down in
-the footer section.</em></p>
-<p>If you want to consume more info on Baye&rsquo;s, here&rsquo;s some cool sources I found online.</p>
-<h3 id="sources-for-more-reading">Sources for more reading.</h3>
+</pre>
+<p>
+That means there&#39;s a 67% chance for loss, given prediction ManPitty will
+win, P(L|S)! And for a win, its a measly 30%! Interesting right? If this
+ain&#39;t fraud then I don&#39;t know what is.</p>
+<p>
+Well that&#39;s one example and I guess itll cut it. Coming up with these on
+my own ain&#39;t the easiest task.</p>
+<p>
+/There&#39;s a lot of numbers flying around here and its likely I made an
+error somehow somewhere. If you spot one or want to talk about any of
+what&#39;s on here please reach out to me via my BluesSky or Email linked
+down in the footer section./</p>
+<p>
+If you want to consume more info on Baye&#39;s, here&#39;s some cool sources I
+found online.</p>
+<div id="outline-container-sources-for-more-reading." class="outline-4">
+<h4 id="sources-for-more-reading.">
+Sources for more reading.
+</h4>
+<div id="outline-text-sources-for-more-reading." class="outline-text-4">
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Bayes%27_theorem">Wikipedia article on Baye&rsquo;s</a></li>
-<li><a href="https://www.youtube.com/watch?v=R13BD8qKeTg">Vertasium video on Baye&rsquo;s</a></li>
-<li><a href="https://www.lesswrong.com/posts/XTXWPQSEgoMkAupKt/an-intuitive-explanation-of-bayes-s-theorem">LessWrong&rsquo;s Eliezer on Baye&rsquo;s</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bayes%27_theorem">Wikipedia article on
+Baye&#39;s</a></li>
+<li><a href="https://www.youtube.com/watch?v=R13BD8qKeTg">Vertasium video on
+Baye&#39;s</a></li>
+<li><a href="https://www.lesswrong.com/posts/XTXWPQSEgoMkAupKt/an-intuitive-explanation-of-bayes-s-theorem">LessWrong&#39;s
+Eliezer on Baye&#39;s</a></li>
 </ul>
-<h3 id="bayes-in-the-news--bayes-in-practice">Baye&rsquo;s in the news , Baye&rsquo;s in practice</h3>
+</div>
+</div>
+<div id="outline-container-bayes-in-the-news-bayes-in-practice" class="outline-4">
+<h4 id="bayes-in-the-news-bayes-in-practice">
+Baye&#39;s in the news , Baye&#39;s in practice
+</h4>
+<div id="outline-text-bayes-in-the-news-bayes-in-practice" class="outline-text-4">
 <ul>
-<li><a href="https://adambear.me/post/2025-08-05-statistics-in-court/#fn2">Simpson&rsquo;s paradox</a></li>
-<li><a href="https://www.theguardian.com/law/2011/oct/02/formula-justice-bayes-theorem-miscarriage">Courts fighting Bayesian reasoning</a></li>
-<li><a href="https://www.math.kth.se/matstat/gru/godis/test.htm">Random piece on cancer stats</a></li>
+<li><a href="https://adambear.me/post/2025-08-05-statistics-in-court/#fn2">Simpson&#39;s
+paradox</a></li>
+<li><a href="https://www.theguardian.com/law/2011/oct/02/formula-justice-bayes-theorem-miscarriage">Courts
+fighting Bayesian reasoning</a></li>
+<li><a href="https://www.math.kth.se/matstat/gru/godis/test.htm">Random piece on
+cancer stats</a></li>
 </ul>
-<p>There&rsquo;s so many applications for Baye&rsquo;s in the news I hope to add more to those I&rsquo;ll list below when I collect them. But with that, I hope you learnt something and, see you in the next one.</p>
+<p>There&#39;s so many applications for Baye&#39;s in the news I hope to add more
+to those I&#39;ll list below when I collect them. But with that, I hope you
+learnt something and, see you in the next one.</p>
+</div>
+</div>
 
 		</div>
 		<footer class="post__footer">
@@ -259,9 +343,9 @@ the footer section.</em></p>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/post/last-week-in-code-004/" rel="prev">
+		<a class="pager__link" href="/post/probability_basics/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Last Week in Code E004</p>
+			<p class="pager__title">Probability Intuition : The Basics</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
@@ -285,11 +369,11 @@ the footer section.</em></p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week in Code E006</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/burning_ropes/">Q6 BT: Burning Ropes</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/card_game/">Q5 BT: Card Game</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/birthday_problem/">Q4 BT: Birthday Problem</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/river_crossing/">Q3 BT: River Crossing</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mkdown/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
 		</ul>
 	</div>
 </div>
@@ -316,11 +400,11 @@ the footer section.</em></p>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/networking/">Networking</a></li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/security/">Security</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
 		</ul>
@@ -330,28 +414,27 @@ the footer section.</em></p>
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/arch/" title="Arch">Arch (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (10)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/security/" title="Security">Security (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
 	</div>

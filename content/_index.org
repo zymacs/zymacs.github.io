@@ -1,0 +1,65 @@
+---
+title: Index
+menu:
+  main:
+   name: "Index"
+   weight: 1
+draft: false
+pager: false
+sidebar: false
+---
+
+
+Hi there!
+
+Welcome to my site.
+I am Keith Henry Nambale. /(Zymacs is obviously a pseudo)/.
+I am a Software Engineer. A recent graduate as of 2026.
+And, I am currently looking for work.
+I daily drive Linux and teach what I learn through articles on this site.
+That's Linux, Git, and everything I will learn in the future that's along the same lines.
+I do a lot of scripting like to automate what's repetitive.
+I am confident I would blend in fast as a Junior DevOps engineer in any environment.
+You can find my CV right [[cv][here]].
+
+
+This site is, currently, where all my internet activity calls home.
+All my public posts first appeared here -- /at least that's what I am aiming towards/.
+I document a lot both about what I am learning and how its changing me.
+I record some of that in my [[/lwic][weekly]] blog series. The [[/notes][notes]] section is still in its infancy. It hosts
+notes I publically make available.
+I also like to theorize about tech trends and [[think out loud about wild product ideas.
+My such articles can be found [[/rthots][here]]. 
+
+I keep [[/microblog][a section]] for recording short quotes and hot takes that I find interesting.
+Some from myself and some from other people's work. 
+
+The site also includes a [[/now][/now]] section that broadcasts what major goals I'm currently pushing towards.
+Books I am reading, Movies I am watching, Projects I am working on.
+For documenting my problem solving process, that is,  me speaking out loud about how projects went from first line to
+usable program, [[/how-i-built][I have this section]].
+
+All this is included in my [[/site-map][site map]].
+
+
+*** My distribution channels
+- [[https://www.youtube.com/@zymacs][Youtube]]
+- [[https://www.instagram.com/devo.psbro/][Instagram]]
+- [[https://medium.com/@zymacs][Medium]]
+- [[https://hackernoon.com/u/zymacs][Hackernoon]]
+- [[https://dev.to/zymacs][Dev.to]]
+
+If contacting me for anything urgent, please reach out  via any one of the following means
+and I will make sure to get to you soonest:
+
+- Email : [[0nkzhmhoq@mozmail.com][zymacs@zmail.com]] (Click to get email)
+- IRC : zymacs_off OR zymacs on freenode
+- [[https://bsky.app/profile/zymacs.bsky.social][Bluesky]]
+
+My public key is right [[/media/pubkey.asc][here]].
+
+
+
+/Alright.../
+/Hope you find something interesting../
+

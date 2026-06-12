@@ -1,0 +1,105 @@
+---
+title: Getting Started with Hugo
+date: 2014-04-02
+draft: true
+tags:
+  - "go"
+  - "golang"
+  - "hugo"
+  - "development"
+categories:
+  - "Development"
+  - "golang"
+---
+
+
+** Step 1. Install Hugo
+:PROPERTIES:
+:CUSTOM_ID: step-1.-install-hugo
+:END:
+Go to [[https://github.com/spf13/hugo/releases][Hugo releases]] and
+download the appropriate version for your OS and architecture.
+
+Save it somewhere specific as we will be using it in the next step.
+
+More complete instructions are available at
+[[https://gohugo.io/getting-started/installing/][Install Hugo]]
+
+** Step 2. Build the Docs
+:PROPERTIES:
+:CUSTOM_ID: step-2.-build-the-docs
+:END:
+Hugo has its own example site which happens to also be the documentation
+site you are reading right now.
+
+Follow the following steps:
+
+1. Clone the [[https://github.com/spf13/hugo][Hugo repository]]
+2. Go into the repo
+3. Run hugo in server mode and build the docs
+4. Open your browser to http://localhost:1313
+
+Corresponding pseudo commands:
+
+#+begin_example
+git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+> 29 pages created
+> 0 tags index created
+> in 27 ms
+> Web Server is available at http://localhost:1313
+> Press ctrl+c to stop
+#+end_example
+
+Once you've gotten here, follow along the rest of this page on your
+local build.
+
+** Step 3. Change the docs site
+:PROPERTIES:
+:CUSTOM_ID: step-3.-change-the-docs-site
+:END:
+Stop the Hugo process by hitting Ctrl+C.
+
+Now we are going to run hugo again, but this time with hugo in watch
+mode.
+
+#+begin_example
+/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+> 29 pages created
+> 0 tags index created
+> in 27 ms
+> Web Server is available at http://localhost:1313
+> Watching for changes in /Users/spf13/Code/hugo/docs/content
+> Press ctrl+c to stop
+#+end_example
+
+Open your [[http://vim.spf13.com][favorite editor]] and change one of
+the source content pages. How about changing this very file to /fix the
+typo/. How about changing this very file to /fix the typo/.
+
+Content files are found in =docs/content/=. Unless otherwise specified,
+files are located at the same relative location as the url, in our case
+=docs/content/overview/quickstart.md=.
+
+Change and save this file.. Notice what happened in your terminal.
+
+#+begin_example
+> Change detected, rebuilding site
+
+> 29 pages created
+> 0 tags index created
+> in 26 ms
+#+end_example
+
+Refresh the browser and observe that the typo is now fixed.
+
+Notice how quick that was. Try to refresh the site before it's finished
+building. I double dare you. Having nearly instant feedback enables you
+to have your creativity flow without waiting for long builds.
+
+** Step 4. Have fun
+:PROPERTIES:
+:CUSTOM_ID: step-4.-have-fun
+:END:
+The best way to learn something is to play with it.

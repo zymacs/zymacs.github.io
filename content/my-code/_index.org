@@ -1,0 +1,40 @@
+---
+title: 'My Code'
+---
+This document is a work still under construction. 
+My code is an ideal. I ain't the ideal. I strive to be. 
+
+* Time Management
+
+** Social Media Code
+- Instagram used on the weekend for reels uploads
+- Whatsapp capped under 50 minutes 
+  - 25 minutes check in the morning (7:30)
+  - 25 minutes check in the evening (7:30)
+  - Any activity outside this should be a call.
+    
+** Browser Usage
+*** Usecases
+- Programming help
+  - Stack overflow
+  - Documentation search
+- Software installation and updates
+- Youtube usage
+- Making updates to my site
+- LLM help
+- Reading news and blog articles
+- Research
+
+
+** Sleep time
+- Down by 11:50
+- Up by 23:20
+
+
+** Entertainment choices
+
+
+
+** Promises
+
+

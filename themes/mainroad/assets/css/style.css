@@ -14,9 +14,10 @@
 }
 
 
+
 /* -- #e22d30  --> */
 
-
+/* --#1a7a77-- (previous highlightcolor) */
 article,
 aside,
 dialog,
@@ -28,7 +29,7 @@ hgroup,
 main,
 nav,
 section {
-	display: block;
+    display: block;
 }
 
 :focus::-webkit-input-placeholder {
@@ -57,7 +58,7 @@ html {
 body {
 	margin: 0;
 	font-family: {{ $fontFamilyPrimary }};
-	font-size: 19px;
+	font-size: 16px;
 	line-height: 1.5625;
 	word-wrap: break-word;
 	background: #f7f7f7;
@@ -410,7 +411,7 @@ select {
 }
 
 .logo__img {
-	max-height: 256px;
+	max-height: 200px;
 }
 
 .logo__text {
@@ -422,8 +423,8 @@ select {
 }
 
 .logo--mixed .logo__img {
-	max-width: 128px;
-	max-height: 128px;
+	max-width: 75px;
+	max-height: 75px;
 	border-radius: 50%;
 }
 
@@ -432,19 +433,20 @@ select {
 }
 
 .logo__title {
-	font-size: 32px;
+	font-size: 23px;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1;
 	color: #000;
+	text-transform: lowercase;
 }
 
 .logo__tagline {
 	display: inline-block;
 	padding-top: 10px;
 	margin-top: 10px;
-	font-size: 14px;
-	font-size: .875rem;
+	 /*14px */
+	font-size: .6rem; /*.875*/
 	font-weight: 700;
 	line-height: 1;
 	color: {{ $highlightColor }};
@@ -512,6 +514,10 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	background: #2a2a2a;
 }
 
+.menu__list ul li {
+    font-style: 16px;
+}
+
 .menu__item:hover {
 	background: {{ $highlightColor }};
 }
@@ -529,7 +535,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: 10px 15px;
 	padding: .625rem .9375rem;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 12px;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -883,7 +889,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .list__header {
-	margin-bottom: 10px;
 	margin-bottom: .625rem;
 }
 
@@ -1360,4 +1365,10 @@ html.js body.body div.container.container--outer div.wrapper.flex div.primary ma
     color: white;
     font-weight: bold;
     font-size: 17px;
+}
+
+.pt_gallery img {
+    height: 600px;
+    margin: auto;
+    
 }

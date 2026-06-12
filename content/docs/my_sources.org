@@ -1,8 +1,7 @@
 ---
 title: My Sources
+authorbox: false
 ---
-
-
 
 ** *MEDIA ROLODEX* 
 
@@ -17,6 +16,8 @@ title: My Sources
   - [[https://online.stanford.edu/free-courses][Stanford Website]]
   - [[https://www.youtube.com/@stanfordonline][Standford Online Youtube]]
 
+* Lecturer Channels
+- [[https://www.youtube.com/@fromlanguagestoinformation4012][From languages to information: Stanford lecturer]]
   
 * Eng Challenges and competition
 ** Algorithms
@@ -72,7 +73,12 @@ title: My Sources
 
 
 * Top Reads (Must Read Recommendations from online sources)
-- [[https://web.mit.edu/6.001/6.037/sicp.pdf][SCIP]] (The Wizard Book for CS)
+** IT
+- [[https://web.mit.edu/6.001/6.037/sicp.pdf][SCIP]] (The Wizard Book)
+
+* Blog posts General
+- [[https://joshblais.com/][Joshau Blais]]
+- 
 
   
 * Refcards (AKA cheatsheets)
@@ -104,6 +110,7 @@ title: My Sources
 ** Tech News
   - [[https://news.ycombinator.com/][Hacker News]]
   - [[https://www.theregister.com/][The Register]]
+  - [[https://www.fastcompany.com/technology][Fast Company]]
 ** Math
    - [[https://www.youtube.com/@numberphile][Numberphile]]
    - [[https://www.youtube.com/@TheRandomProfessor][The Random Professor]]
@@ -140,11 +147,12 @@ title: My Sources
 
 ** Finance
  - [[https://www.mrmoneymustache.com/][Mr Money Mustache]]
+ - [[https://www.bogleheads.org/][Bogleheads]]
  - Odd Lots
    - [[https://www.bloomberg.com/OddLots][Odd Lots Bloomberg Website]]
    - [[https://www.youtube.com/@BloombergPodcasts/search?query=odd%20lots][Odd Lots Bloomberg Podcasts Youtube]]
  - Patrick Boyle
-   - [[https://www.onfinance.org/][On Finance Website]]
+ - [[https://www.onfinance.org/][On Finance Website]]
    - [[https://www.youtube.com/@PBoyle][Patrick Boyle Youtube]]
  - Accounting stuff
    - [[https://www.youtube.com/@AccountingStuff][Accounting Stuff Youtube]]
@@ -173,12 +181,15 @@ title: My Sources
 * Software 
 ** Managed self hosting
   - [[https://www.pikapods.com/apps][Pikapods]]
+
+** Image servers
+  - [[https://www.linuxserver.io/our-images][Linuxserver.io]]
 ** Secure and productive browsing
    + Extensions
-     - Ublock origin
-     - Unhook
-     - Dark reader
-     - LeechNG
+     - Ad blocker: Ublock origin
+     - Youtube time saver: Unhook
+     - Darkmode for all sites: Dark reader
+     - Site firewalling: LeechNG
      - [[https://addons.mozilla.org/en-US/firefox/addon/insight-track-your-time-online/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][Insight - Track and Optimize Your Time Online (Online time tracker)]]
      - Search engine
        - Startpage
@@ -192,7 +203,7 @@ title: My Sources
      - Tor
 
 
-** Archival software
+** Archival software 
   - Ktorrent
   - [[https://github.com/yt-dlp/yt-dlp][YTDLP]]
   - Httrack
@@ -245,8 +256,10 @@ title: My Sources
     - Navidrome Mobile Client: [[https://symfonium.app/][Symfomium]]
     - TV Shows and Movies: [[https://jellyfin.org/][Jellyfin]]
     - Music: [[https://www.navidrome.org/][Navidrome]]
-  - PDF Readers
+    - Self hosted radio: Azuracast
+  - Ebook Readers
     - [[https://readera.org/][Readera]]
+    - Mobireader (for .mobi files on linux)
   - Bluetooth managers
   - Youtube clients
     - [[https://newpipe.net/][NewPipe]]

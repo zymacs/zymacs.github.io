@@ -1,6 +1,6 @@
 ---
 title: "How to install Arch"
-draft: false
+draft: true
 ---
 
 

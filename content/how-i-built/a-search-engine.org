@@ -1,0 +1,25 @@
+---
+authorbox: false
+draft: false
+---
+
+*** Building a search engine Pt 1.
+
+Motivation
+
+
+Json file too big
+
+Redundant double search
+
+Worsening search with increasing search space.
+
+
+Initial state
+
+
+Moving to json
+
+
+
+Learning about perf stats

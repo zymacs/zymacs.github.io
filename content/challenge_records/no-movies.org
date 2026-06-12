@@ -1,0 +1,20 @@
+---
+title: 'No Movies Challenge'
+authorbox: false
+sidebar: false
+---
+
+** Details
+
+| Habit to replace | Replacement              | Single session duration (min) | Project runtime (d) | Total time saved |
+|------------------+--------------------------+-------------------------------+---------------------+------------------|
+| Watching movies  | [[/how-i-built/a-search-engine][Building a search engine]] |                            45 |                  30 |             1350 |
+
+
+** Logs
+*** [2026-06-12 Fri]
+
+
+  | Date             | Session start | Session end | Duration | Evidence (link) |
+  |------------------+---------------+-------------+----------+-----------------|
+  | [2026-06-12 Fri] |         02:30 |       02:41 |       11 | None            |
