@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lwigs on Zymacs</title>
-    <link>//localhost:1313/lwig/</link>
+    <link>//localhost:35471/lwig/</link>
     <description>Recent content in Lwigs on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/lwig/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:35471/lwig/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LWIG E001</title>
-      <link>//localhost:1313/lwig/last-week-in-growth-e001/</link>
+      <link>//localhost:35471/lwig/last-week-in-growth-e001/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/lwig/last-week-in-growth-e001/</guid>
-      <description>&lt;p&gt;&#xA;This is the first post in this series.&#xA;I have no idea if its the last. It could be.&#xA;My past experience doing such kinds of&#xA;challenges says it possibly is. But, who am I to&#xA;pull the plug on what could be.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Had the same sentinment for  &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-001&#34;&gt;lwic&lt;/a&gt; and &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-008&#34;&gt;8 weeks&lt;/a&gt; later,&#xA;it still stands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;May the force be with it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So in this series of posts, a weekly series,&#xA;I will be sharing updates on progress&#xA;getting better in a variety of life domains. Could be social,&#xA;spiritual, related to career,&#xA;intellect, any problem I have no issue making&#xA;a public record of.&lt;/p&gt;</description>
+      <guid>//localhost:35471/lwig/last-week-in-growth-e001/</guid>
+      <description>&lt;p&gt;&#xA;This is the first post in this series.&#xA;I have no idea if its the last. It could be.&#xA;My past experience doing such kinds of&#xA;challenges says it possibly is. But, who am I to&#xA;pull the plug on what could be.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Had the same sentinment for  &lt;a href=&#34;//localhost:35471/lwic/last-week-in-code-001&#34;&gt;lwic&lt;/a&gt; and &lt;a href=&#34;//localhost:35471/lwic/last-week-in-code-008&#34;&gt;8 weeks&lt;/a&gt; later,&#xA;it still stands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;May the force be with it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So in this series of posts, a weekly series,&#xA;I will be sharing updates on progress&#xA;getting better in a variety of life domains. Could be social,&#xA;spiritual, related to career,&#xA;intellect, any problem I have no issue making&#xA;a public record of.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
