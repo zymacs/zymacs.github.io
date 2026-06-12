@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zymacs</title>
+    <link>//localhost:35471/post/</link>
+    <description>Recent content on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2026 14:20:01 +0300</lastBuildDate>
+    <atom:link href="//localhost:35471/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week In Code 007</title>
+      <link>//localhost:35471/post/last-week-in-code-007/</link>
+      <pubDate>Sat, 30 May 2026 14:20:01 +0300</pubDate>
+      <guid>//localhost:35471/post/last-week-in-code-007/</guid>
+      <description>&lt;p&gt;&#xA;Its interesting how fast time flies. Its already 7 weeks? A whole 49 days or so since the &lt;a href=&#34;//localhost:35471/post/last-week-in-code-01&#34;&gt;first episode&lt;/a&gt;.  &lt;/p&gt;&#xA;&lt;p&gt;&#xA;So, I spent last week building small apps and writing. Reading and writing as usual. And erm.. yeah. I learnt quite a lot from&#xA;that. Here, I&amp;#39;ll share. &lt;/p&gt;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;What I learnt this week.&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-2&#34;&gt;&#xA;Evolution is from simple to complex. Not the other way round.&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&#xA;I recently took time off to build an app I have had in my projects folder for &#xA;ages. Its a cli-first finance app. Its like, you don&amp;#39;t open&#xA;and click and wait to get things done. You type short commands, press enter to get it all done.. More on that later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E006</title>
+      <link>//localhost:35471/post/last-week-in-code-006/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:35471/post/last-week-in-code-006/</guid>
+      <description>&lt;p&gt;&#xA;  Its E006. YAY. It has been a week and a half. I spent most of it doing archival work. The last part of the week I&#xA;  sunk into setting up mediawiki. I did some interview prep type questions also and I uploaded some of the solutions. But that wasn&amp;#39;t as serious as the archival tasks.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;  I am preparing to change locations. I am not so sure about my new location&amp;#39;s internet efficiency or its affordability.&#xA;  So I think I will so much need to have   local access to critical information sources. As usual, the whole process and other small tasks I did&#xA;  taught me certain things I&amp;#39;d like to record right here, for sharing and future reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hunting For Exportable Android Usage Stats</title>
+      <link>//localhost:35471/post/android_usage_stats/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/android_usage_stats/</guid>
+      <description>&lt;p&gt;&#xA;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
+      <link>//localhost:35471/post/bayes_theorem/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/bayes_theorem/</guid>
+      <description>&lt;p&gt;&#xA;Alright. I have tried to find the easiest way to explain Baye&amp;#39;s. I have&#xA;watched quite a number of videos and read quite a number of articles to&#xA;suppliment what I already know and to get better devices for delivering&#xA;the explanation. At this point I think its now just me being a&#xA;perfectionist. So I&amp;#39;ll teach it as best as I can get myself to: Using&#xA;proofs.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;First let&amp;#39;s state it formally&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Probability Intuition : The Basics</title>
+      <link>//localhost:35471/post/probability_basics/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/probability_basics/</guid>
+      <description>&lt;p&gt;&#xA;How likely it is that some outcome will be the outcome given some event.&#xA;That is what probability is. Its a ratio. Given an event, there&amp;#39;s many&#xA;possible outcomes. The probability of some outcome being the outcome&#xA;that happens is a ratio of how much of the outcome is represented in&#xA;total outcomes to the total number of possible outcomes. For unweighted&#xA;or equally likely outcomes at least.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Its a very important foundational concept in a lot of Computer Science&#xA;Fields. Without understanding how it works, you&amp;#39;ll have a hard time&#xA;understanding more advanced concepts like the Baye&amp;#39;s theorem, or&#xA;wrapping your head around what&amp;#39;s going on with Markov chains or, working&#xA;with the foundational concepts for most of modern AI i.e: Neural&#xA;Networks. I&amp;#39;ll try to explain my understanding of it to you here without&#xA;using any formal terms. So don&amp;#39;t be surprised if you don&amp;#39;t see a lot of&#xA;&lt;code class=&#34;verbatim&#34;&gt;P(A n B n C)&lt;/code&gt; or &lt;code class=&#34;verbatim&#34;&gt;posterior&lt;/code&gt; and the such. There will be time for that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The anatomy of a download over TCP</title>
+      <link>//localhost:35471/post/http_downloads/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/http_downloads/</guid>
+      <description>&lt;p&gt;&#xA;Let&amp;#39;s look at what happens from download instantiation by some download&#xA;client to when all data in its completeness is transferred from the&#xA;remote location to the downloader&amp;#39;s storage.&lt;/p&gt;&#xA;&lt;div id=&#34;outline-container-getting-a-uri-to-a-remote-resource&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;getting-a-uri-to-a-remote-resource&#34;&gt;&#xA;Getting a uri to a remote resource&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-getting-a-uri-to-a-remote-resource&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;You have been given some link of the form&#xA;&lt;code class=&#34;verbatim&#34;&gt;http://somesite.com:8031/file.txt&lt;/code&gt; to a remote file. From the URL we&#xA;can tell the remote file is located at the root folder &lt;code class=&#34;verbatim&#34;&gt;/&lt;/code&gt; on the&#xA;hosting server and that it is called &lt;code class=&#34;verbatim&#34;&gt;file.txt&lt;/code&gt;. This website is on some&#xA;server that supports the http protocol. Its hosted somewhere off your&#xA;system accessible via a network.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Modding Alacritty</title>
+      <link>//localhost:35471/post/modding-alacritty/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:35471/post/modding-alacritty/</guid>
+      <description>&lt;p&gt;&#xA;If something in my surroundings looks too good I can&amp;#39;t stop thinking how&#xA;to make it look better. Maybe its ADHD but that&amp;#39;s thrown around too much&#xA;these days its hard to tell who&amp;#39;s just making things up. But anyways. I&#xA;looked into modding my alacritty terminal just out of curiosity. I have&#xA;been using it as it was out of the box for a while. But I felt bored and&#xA;thought modding it would be a good pass time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grep Fu Basics</title>
+      <link>//localhost:35471/post/grep/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/grep/</guid>
+      <description>&lt;p&gt;&#xA;If you have used Linux before, you have most probably heard about Grep,&#xA;Awk and Sed. These are super useful text manipulation tools available on&#xA;all Unix and Unix-like systems. Learning all that each can do is an&#xA;insurmountable task and I&amp;#39;m sure you&amp;#39;d stand with me on that. But having&#xA;less than functional usage knowledge in at least one can waste you a lot&#xA;of time while you work with text in the terminal. Which is very often.&#xA;In this article we&amp;#39;ll look at one of the tools: &lt;em&gt;Grep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Cost for Not Documenting Solutions</title>
+      <link>//localhost:35471/post/the-cost-for-not-documenting-solutions/</link>
+      <pubDate>Fri, 24 Apr 2026 20:08:02 +0300</pubDate>
+      <guid>//localhost:35471/post/the-cost-for-not-documenting-solutions/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-1&#34;&gt;&#xA;The cost of not documenting your solutions&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;&#xA;If you ever found yourself visiting the same stack overflow solution twice, thrice, four times. Maybe you should&#xA;start thinking about making some sort of documentation system for the errors you run into.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Why we skip documentation&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We think we shall remember , surely its a small error, I will definitely remember&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If we remember, why return to the search engine in search for a solution to the same error.&lt;/li&gt;&#xA;&lt;li&gt;Yet its so hard to see this, even the recurrent returns.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We think we don&amp;#39;t need to understand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Defining a computer</title>
+      <link>//localhost:35471/post/what_is_a_computer/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/what_is_a_computer/</guid>
+      <description>&lt;p&gt;&#xA;While talking about what interview questions I&amp;#39;d been studying, I&#xA;mentioned to a non technical friend how interesting it was finding&#xA;questions so basic included. Why would you ask a Software Engineering&#xA;graduate to define a computer? Such a waste of time right? My friend&amp;#39;s&#xA;response was even more interesting: &lt;em&gt;&amp;#34;What is a computer?&amp;#34;&lt;/em&gt; he posed the&#xA;question to me. And there I was… answering my own question. Remember?&#xA;&amp;#34;&lt;em&gt;Why would you ask a Soft….&lt;/em&gt;&amp;#34;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>5 Days No AI</title>
+      <link>//localhost:35471/post/five-days-no-ai/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:35471/post/five-days-no-ai/</guid>
+      <description>&lt;p&gt;&#xA;I cannot say I am the heaviest user of AI since, I lack the stats to&#xA;back that up. But I am sure anyone that uses it can tell if they are&#xA;usage is getting out of hand. And for me, that sentiment is always&#xA;strongest when I feel my productivity levels are dipping too much. When&#xA;I feel simple tasks are becoming unusually harder to do. So I was like,&#xA;how about a simple challenge this week. &lt;strong&gt;5 Days No AI&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:35471/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/git-ignore-files/</guid>
+      <description>&lt;p&gt;&#xA;So I&amp;#39;ve been trying to make my way through&#xA;&lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole&#xA;lot of information so far and I was afraid for how not so often I used&#xA;it. That I was going to forget it all. Hence my decision to share some&#xA;of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;In this post we&amp;#39;ll look at something you probably have never read about&#xA;in isolation, gitignore files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My first post with Hugo</title>
+      <link>//localhost:35471/post/my-first-post/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/my-first-post/</guid>
+      <description>&lt;p&gt;&#xA;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;#39;s&#xA;blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that&#xA;caught my eye. I thought I could learn some css building it myself. Feel&#xA;good from &lt;code class=&#34;verbatim&#34;&gt;doing it myself from scratch&lt;/code&gt;. But boy is CSS boring! And I&#xA;only realized this after 4 hours of centering &lt;code class=&#34;verbatim&#34;&gt;divs&lt;/code&gt; and hunting for&#xA;unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Now the day had almost come to an end and I was feeling guilty for the&#xA;waste that it&amp;#39;d been. So to alleviate the guilt , I decided to setup&#xA;Hugo. I mean why didn&amp;#39;t I do this in the first place? Anyways. After&#xA;some googling I got it running and hence this site. It looks nice&#xA;doesn&amp;#39;t it? I mean, I still have to remove some stock pages but I needed&#xA;some lorem ipsum available before I add content of my own.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing Python3 on Linux</title>
+      <link>//localhost:35471/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/installing-python3-on-linux/</guid>
+      <description>&lt;p&gt;&#xA;Python comes pre-installed on most Linux distros. But if for whichever&#xA;reason it isn&amp;#39;t installed on yours, we&amp;#39;ll install it in the next&#xA;section.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;First, let&amp;#39;s update and upgrade your system&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If you are on Ubuntu, run:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA; sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;For Arch, run:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA;sudo pacman -Syu&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;Fedora:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA;sudo dnf upgrade&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;Now let&amp;#39;s install python (plus some extra packages you will most&#xA;definitely eventually need when using python)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

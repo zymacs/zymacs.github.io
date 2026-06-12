@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Zymacs</title>
+    <link>//localhost:35471/tags/</link>
+    <description>Recent content in Tags on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
+    <atom:link href="//localhost:35471/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lwic</title>
+      <link>//localhost:35471/tags/lwic/</link>
+      <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
+      <guid>//localhost:35471/tags/lwic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>//localhost:35471/tags/ai/</link>
+      <pubDate>Tue, 02 Jun 2026 10:10:06 +0300</pubDate>
+      <guid>//localhost:35471/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rthots</title>
+      <link>//localhost:35471/tags/rthots/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/rthots/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bdated</title>
+      <link>//localhost:35471/tags/bdated/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:35471/tags/bdated/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital_garden</title>
+      <link>//localhost:35471/tags/digital_garden/</link>
+      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
+      <guid>//localhost:35471/tags/digital_garden/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Brain_teasers</title>
+      <link>//localhost:35471/tags/brain_teasers/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:35471/tags/brain_teasers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rabbit_holes</title>
+      <link>//localhost:35471/tags/rabbit_holes/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/rabbit_holes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probability</title>
+      <link>//localhost:35471/tags/probability/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/probability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>//localhost:35471/tags/http/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tcp</title>
+      <link>//localhost:35471/tags/tcp/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/tcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configs</title>
+      <link>//localhost:35471/tags/configs/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:35471/tags/configs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ricing</title>
+      <link>//localhost:35471/tags/ricing/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:35471/tags/ricing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text-Manipulation</title>
+      <link>//localhost:35471/tags/text-manipulation/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/text-manipulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Definitions</title>
+      <link>//localhost:35471/tags/definitions/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/definitions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fundamentals</title>
+      <link>//localhost:35471/tags/fundamentals/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/fundamentals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>//localhost:35471/tags/productivity/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:35471/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>//localhost:35471/tags/development/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>//localhost:35471/tags/git/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blogspot</title>
+      <link>//localhost:35471/tags/blogspot/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/blogspot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>//localhost:35471/tags/hugo/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>//localhost:35471/tags/intro/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/intro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>//localhost:35471/tags/python/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python3</title>
+      <link>//localhost:35471/tags/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/python3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rant</title>
+      <link>//localhost:35471/tags/rant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/tags/rant/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

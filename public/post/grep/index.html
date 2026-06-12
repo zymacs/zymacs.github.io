@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35471&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grep Fu Basics - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:35471/post/grep/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Grep Fu Basics">
+  <meta property="og:description" content="If you have used Linux before, you have most probably heard about Grep, Awk and Sed. These are super useful text manipulation tools available on all Unix and Unix-like systems. Learning all that each can do is an insurmountable task and I&#39;m sure you&#39;d stand with me on that. But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often. In this article we&#39;ll look at one of the tools: Grep.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-03T00:00:00+00:00">
+    <meta property="article:tag" content="Text-Manipulation">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Index</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/site-map/">
+				
+				<span class="menu__text">SiteMap</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/lwic/">
+				
+				<span class="menu__text">Last-Week-In-Code</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/notes/">
+				
+				<span class="menu__text">Notes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/microblog/">
+				
+				<span class="menu__text">MicroBlog</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/photo-gallery/2026/">
+				
+				<span class="menu__text">Photo Gallery</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/now/">
+				
+				<span class="menu__text">Now</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Grep Fu Basics</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-03T00:00:00Z">May 03, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/linux-tools/" rel="category">Linux Tools</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/linux_penguin.jpg" alt="Grep Fu Basics">
+		
+	</figure><div class="content post__content clearfix
+			    ">
+			<p>
+If you have used Linux before, you have most probably heard about Grep,
+Awk and Sed. These are super useful text manipulation tools available on
+all Unix and Unix-like systems. Learning all that each can do is an
+insurmountable task and I&#39;m sure you&#39;d stand with me on that. But having
+less than functional usage knowledge in at least one can waste you a lot
+of time while you work with text in the terminal. Which is very often.
+In this article we&#39;ll look at one of the tools: <em>Grep</em>.</p>
+<p>
+Grep in full stands for <code class="verbatim">Global Regular Expression Print</code>. It&#39;s a text search
+tool that was made by Ken Thompson (in one night). Link to a story on
+that at the bottom.</p>
+<p>
+In this article we&#39;ll look at common problems you can run into that can
+be solved with Grep, including some regex solutions. I&#39;ll also attach a
+link to a resource that helped me understand how to use regexp at the
+end.</p>
+<p>
+The general synopsis is as follows</p>
+<pre class="example">
+grep [OPTION]... PATTERNS [FILE]...
+grep [OPTION]... -e PATTERNS ... [FILE]...
+grep [OPTION]... -f PATTERN_FILE ... [FILE]...
+</pre>
+<p>
+If the synopsis syntax feels cryptic, then just don&#39;t mind it. It&#39;s
+basic regex. And we&#39;ll touch upon that some in this article. Its common
+to find that type of info representation all over programs&#39; man entries
+so it helps to know how to read it.</p>
+<p>
+Okay, so we&#39;ll be using this sample text for demonstration, so you can
+go on and write it to some file say, grep_text.txt</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">bottle
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">pod
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">maker
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">plaster
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">polythene
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">boots
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">cops&#34;</span> &gt;&gt; grep_text.txt</span></span></code></pre></div>
+</div>
+<p>
+We&#39;ll start with a simple match. The following matches all instances of
+the substring <code class="verbatim">bo</code> anywhere in the file <code class="verbatim">grep_text.txt</code>.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep bo grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+</tbody>
+</table>
+<p>
+Now the output from the previous line is not numbered. We could be
+interested in opening an editor at the point where the match is. To get
+the line number for where a match is found, we use the <code class="verbatim">n</code> flag.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -n bo grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>2:bottle</td>
+</tr>
+<tr>
+<td>7:boots</td>
+</tr>
+</tbody>
+</table>
+<p>
+But what if we want to match all that does not conform to some defined
+pattern? Grep has means to do that, the <code class="verbatim">v</code> flag.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -nv bo grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>1:</td>
+</tr>
+<tr>
+<td>3:pod</td>
+</tr>
+<tr>
+<td>4:maker</td>
+</tr>
+<tr>
+<td>5:plaster</td>
+</tr>
+<tr>
+<td>6:polythene</td>
+</tr>
+<tr>
+<td>8:cops</td>
+</tr>
+</tbody>
+</table>
+<p>
+At times you could be interested in finding the number of times some
+pattern matches and nothing else. The next operation does that. It is
+kind of similar to what <code class="verbatim">wc -l</code> does. Actually, running
+<code class="verbatim">grep bo grep_text.txt | wc -l</code> would produce the same output. You can
+try that out for yourself to see.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c bo grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+2
+</pre>
+<p>
+For whichever reason you could want to have all matched text printed
+out. To do that you&#39;d pass in the <code class="verbatim">-o</code> flag.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -o bo grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bo</td>
+</tr>
+<tr>
+<td>bo</td>
+</tr>
+</tbody>
+</table>
+<p>
+Now how about passing in more than one pattern? There&#39;s more than one
+way to do that, the first one is here, the next will be in the regex
+section later in the article. Grep searches for all lines with text
+matching any of the supplied expressions.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -e pod -e ma grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+</tbody>
+</table>
+<p>
+That matches all lines with substrings <code class="verbatim">ma</code> and or <code class="verbatim">pod</code>.</p>
+<p>
+We&#39;ve so far done only case sensitive match operations, which is the
+default. To ignore case and have the pattern <code class="verbatim">bo</code> interpreted as <code class="verbatim">Bo</code> or
+<code class="verbatim">BO</code> would, (to performe case insensitive matches that is), we supply
+the <code class="verbatim">-i</code> or <code class="verbatim">--ignore-case</code> flag.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;BOB
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">boB&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>grep -i bob grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>BOB</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+</tbody>
+</table>
+<p>
+From the grep manual, a word is substring at the end of a line preceded
+by a non-word constituent character or, at the end of a line followed by
+a non-word constituent character. Word constituent characters : letters,
+digits, the underscore. To match a word, we&#39;d follow the syntax in the
+next command.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;match&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;matchman&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>  grep -w match grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+match
+</pre>
+<p>
+To find what text is in lines after the match you can specify the number
+of lines together with the <code class="verbatim">A</code> flag as in the example. That returns 2
+lines after every match containing line.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -w maker grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+</tbody>
+</table>
+<p>
+This works like the previous matching pattern except it returns lines
+appearing before the match.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -B2 -w maker grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+</tbody>
+</table>
+<p>
+Now to return lines appearing around the match line, that is before and
+after, we could combine the <code class="verbatim">A</code> and <code class="verbatim">B</code> flags in the same command as in
+the below example or use <code class="verbatim">C</code> with the numbers supplied to both A and B
+are the same.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -B2 -w maker grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+</tbody>
+</table>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c2 maker grep.txt 2&gt;&amp;<span style="color:#ae81ff">1</span></span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+grep: grep.txt: No such file or directory
+</pre>
+<p>
+<em>Regexp matching</em></p>
+<p>
+Now the regexp patterns. Regexp is short for regular expression. A
+regular expression as per the grep manual is a pattern that describes a
+set of strings. We&#39;ll look at some examples of text matching examples
+using regexp.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>^a-z<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>BOB</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+</tbody>
+</table>
+<p>
+The square brackets are used for <em>bracket expressions</em>. They declare a
+list of characters from which any is a valid match for a slot. Having
+the first character prepended with the carret symbol, <code class="verbatim">^</code>, negates the
+list&#39;s matching effect. So the pattern matches all text lines that don&#39;t
+have any of the characters in the list. The list can contain comma
+separated characters or characer ranges like <code class="verbatim">a-z</code> for all lower case
+chars, <code class="verbatim">A-Z</code> for all upper chase chars, <code class="verbatim">0-9</code> for all numbers. It could
+as well contain a combination of these say in the next example, which
+matches all alpha numeric characters.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>a-zA-Z0-9<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>:output</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+<tr>
+<td>cops</td>
+</tr>
+<tr>
+<td>BOB</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+</tbody>
+</table>
+<p>
+The same effect can be achieved with</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[[</span>:alnum:<span style="color:#f92672">]]</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+<tr>
+<td>cops</td>
+</tr>
+<tr>
+<td>BOB</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+</tbody>
+</table>
+<p>
+That there, the <code class="verbatim">[:alnum:]</code> is a grep named class of characters. Others
+include <code class="verbatim">[:blank:]</code> for blank space, <code class="verbatim">[:digit:]</code> for digit, <code class="verbatim">[:xdigit:]</code> for
+hexadecilal characters (a to f, 0 to 9), <code class="verbatim">[:punct:]</code>
+for matching punctuation as is in the next example and more in the grep
+manual.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;;,.&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>grep -E  <span style="color:#f92672">[[</span>:punct:<span style="color:#f92672">]]</span> grep_text.txt 2&gt;&amp;<span style="color:#ae81ff">1</span></span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+;,. 
+</pre>
+<p>
+The next pattern matches all strings with the character <code class="verbatim">a</code> appearing 2
+consecutive times. Anywhere with two consecutive <code class="verbatim">a</code> chars will provide
+a match. <code class="verbatim">aaa</code> will match in totality but the last a in <code class="verbatim">aaaba</code> won&#39;t
+match.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;aaabbfa&#34;</span> &gt;&gt; grep_text.txt
+</span></span><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+aaabbfa
+</pre>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span>+ grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+<tr>
+<td>aaabbfa</td>
+</tr>
+</tbody>
+</table>
+<p>
+Since its &#39;1&#39; char we are matching, we have the same effect with:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p>
+<em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+<tr>
+<td>aaabbfa</td>
+</tr>
+</tbody>
+</table>
+<p>
+But if it is 2 &#39;a&#39;s. Things differ</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+aaabbfa
+</pre>
+<p>
+ How about matching the all strings at the start of a line? The caret
+ symbol <code class="verbatim">^</code> is an <code class="verbatim">anchor</code> character used to match a line start. It has
+ an inverse, &#34;$&#34; that matches the end of a line. To match all patterns
+ that are at a line&#39;s start we&#39;d therefore do something like:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^c&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<pre class="example">
+cops
+</pre>
+<p>
+That&#39;d match all lines with <code class="verbatim">c</code> at line start.</p>
+<p>
+Contrast that with output from</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep c grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>cops</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+</tbody>
+</table>
+<p>
+All lines with <code class="verbatim">c</code> are marked regardless of line position. Matching a
+pattern at a line&#39;s end can be done with:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;e$&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+</tbody>
+</table>
+<p>
+That&#39;d match all lines ending with the char <code class="verbatim">e</code>.</p>
+<p>
+Suppose you want to match all text that starts with <code class="verbatim">a</code> or <code class="verbatim">b</code> in some
+file <code class="verbatim">target.txt</code>, what pattern would you use for that? There&#39;s more
+than one way to get the right effect. Let&#39;s examine one way to do
+this:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;^a|b&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+<tr>
+<td>aaabbfa</td>
+</tr>
+</tbody>
+</table>
+<p>
+It matches either a line starting with <code class="verbatim">a</code> , that <code class="verbatim">^a</code> that is, or , any
+line with the character <code class="verbatim">b</code>. The <code class="verbatim">|</code> is what&#39;s the <code class="verbatim">OR</code> operator when
+working with <code class="verbatim">grep</code> regexp. Back to the challenge. A sample effective
+answer would have been <code class="verbatim">grep -E &#39;^[a|b]&#39; grep_.txt</code>.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^[a|b]&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+<tr>
+<td>aaabbfa</td>
+</tr>
+</tbody>
+</table>
+<p>
+This matches all
+lines starting with either a or b, not all lines that either start with
+ <code class="verbatim">a</code> or have the character <code class="verbatim">b</code> as it was in the wrong answer example.</p>
+<p>
+How about matching all lines that have characters &#39;p or m&#39; or that end
+with <code class="verbatim">e</code>? That can be done with:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;p|m|e$&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p><em>output:</em></p>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+<tr>
+<td>cops</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+</tbody>
+</table>
+<p>
+There&#39;s many ways to arrive at the same answer. What I provided is how I
+arrived at the solution and you can find your own means to with other
+grep options.</p>
+<p>
+We just introduced the <code class="verbatim">|</code> operator with regex and I mentioned earlier
+in the article there was more than one way to provide alternative
+matching patterns than <code class="verbatim">grep -e pattern -e pattern ... file.txt</code>.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;pod|ma&#39;</span> grep_text.txt</span></span></code></pre></div>
+</div>
+<p>
+Now you possibly have a long list of patterns against which to match
+some file or files (yes you can match more than one file by supplying
+them all in succession after defining the patterns and or options
+<code class="verbatim">grep pattern file1 file2..</code>.).</p>
+<p>
+To do that, create a file and in it write all the patterns, one per
+line. For instance, this saved under any name say patterns.txt</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;^[a-d]e
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">^co
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">er</span>$<span style="color:#e6db74">&#34;</span> &gt; patterns.txt</span></span></code></pre></div>
+</div>
+<p>
+Then use the pattern file to find matches with the <code class="verbatim">-f</code> flag.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -f patterns.txt grep_text.txt</span></span></code></pre></div>
+</div>
+<table>
+<tbody>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>cops</td>
+</tr>
+</tbody>
+</table>
+<p>
+You can also add grep options to the file.</p>
+<p>
+Prepend the first line in <code class="verbatim">patterns.txt</code> with <code class="verbatim">-v</code> so it now looks like:</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-Ev &#39;^c&#39;&#34;</span> &gt;&gt; patterns.txt</span></span></code></pre></div>
+</div>
+<p>
+Now run</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -Ef patterns.txt grep_text.txt</span></span></code></pre></div>
+</div>
+<table>
+<tbody>
+<tr>
+<td>bottle</td>
+</tr>
+<tr>
+<td>pod</td>
+</tr>
+<tr>
+<td>maker</td>
+</tr>
+<tr>
+<td>plaster</td>
+</tr>
+<tr>
+<td>polythene</td>
+</tr>
+<tr>
+<td>boots</td>
+</tr>
+<tr>
+<td>cops</td>
+</tr>
+<tr>
+<td>BOB</td>
+</tr>
+<tr>
+<td>boB</td>
+</tr>
+<tr>
+<td>match</td>
+</tr>
+<tr>
+<td>matchman</td>
+</tr>
+<tr>
+<td>;,.</td>
+</tr>
+<tr>
+<td>aaabbfa</td>
+</tr>
+</tbody>
+</table>
+<p>
+In case you don&#39;t know what is is, pipelining is passing output from one
+program as input to the next. You could check out this
+<a href="https://www.youtube.com/watch?v=bKzonnwoR2I">ComputerPhile video</a> on
+the details of that. We have looked at how to provide alternative
+patterns against which to match but have not looked at how to match all
+supplied patterns. Say, how to match a text that satisfies pattern A and
+pattern B and .. .. as many as are supplied. That can be done with linux
+pipelining. Don&#39;t confuse the pipe operator here with the previously
+discussed <code class="verbatim">|</code> OR operation with regexp. Here&#39;s an example to match all
+lines that both start with the character <code class="verbatim">p</code> and end with the character
+<code class="verbatim">d</code>.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#39;^p&#39;</span> grep_text.txt | grep <span style="color:#e6db74">&#39;d$&#39;</span></span></span></code></pre></div>
+</div>
+<p>
+Some special characters can&#39;t be comprehended even with extended regex
+so you have to use -P. For instance, the special char for digits \d.</p>
+<div class="src src-sh">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;292 abacus&#39;</span> | grep -P <span style="color:#e6db74">&#39;\d{2}a&#39;</span></span></span></code></pre></div>
+</div>
+<p>
+You can look into other options like <code class="verbatim">-o</code> for getting grep to print out
+only the matching and nothing else.</p>
+<p>
+That&#39;s more than you need for basic grep usage. There&#39;ll probably be
+times when you need to get beyond the basics and I have attached a link
+to the GNU manual that you can ref for that. You can check out
+<code class="verbatim">man grep</code> too. Most of your usage of grep will not be as described
+here, with plain text that is. It&#39;ll usually be piping output other
+programs (at times including grep) depending on the situation. But with
+what you now have, you can make your own pattern combos and do all sorts
+of text matching with it.</p>
+<p>
+As an extra, here&#39;s a
+<a href="https://www.youtube.com/results?search_query=brian+kernighan+grep">ComputerPhile
+video</a> in which Brian Kernighan of the C programming language and AWK
+talks about how it came to be.</p>
+<p>
+I hope you learnt something.</p>
+<ul>
+<li><a href="https://youtu.be/sa-TUpSx1JA?si=kTbFEqZ0MuLdBtrI">Regexp tutorial</a></li>
+<li>
+<p>Article source refs</p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux/">Geeks for geeks: grep</a></li>
+<li><a href="https://man7.org/linux/man-pages/man1/grep.1.html">Man pages: grep</a></li>
+</ul>
+</li>
+<li>
+<p>Bookmark worthy refs</p>
+<ul>
+<li><a href="https://www.gnu.org/software/grep/manual/grep.html">Gnu man pages: grep</a></li>
+</ul>
+</li>
+<li>
+<p>Testing tool</p>
+<ul>
+<li><a href="https://www.regexpal.com">Regexpal</a></li>
+</ul>
+</li>
+<li>
+<p>Further exploration</p>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=lgHADH9ROsM&amp;t=457s">Comparing BRE, ERE and PCRE</a></p>
+<ul>
+<li>ERE could be buggy some times.</li>
+<li>BRE is but a subset of ERE.</li>
+<li>PRCE is safest. (though I used ERE the whole time in the article. Why? <em>for ..backward compatibility :XD</em>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/text-manipulation/" rel="tag">text-manipulation</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/the-cost-for-not-documenting-solutions/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">The Cost for Not Documenting Solutions</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/modding-alacritty/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Modding Alacritty</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:35471/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mkdown/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> <a href='/bio/cv'>Curriculam Vitae</a> </span>
+			<span class="footer__hireme-section"><a href='mailto:0nkzhmhoq@mozmail.com'> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35471&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>linux - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:35471/cheatsheets/linux/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="linux">
+  <meta property="og:description" content="1. FILE &amp; DIRECTORY NAVIGATION Basics File Basics ls List files and directories ls -l Long listing format (permissions, owner, size, date) ls -a Show hidden files (starting with a dot) ls -lh Human-readable sizes (e.g., 4K, 23M) pwd Print working directory Directory Navigation cd &lt;dir&gt; Change directory to &lt;dir&gt; cd .. Go up one directory level cd ~ Go to home directory cd - Go to previous directory File Management mkdir &lt;dir&gt; Create a new directory rmdir &lt;dir&gt; Remove empty directory 2. VIEWING &amp; FILTERING FILE CONTENT File Content Viewers cat &lt;file&gt; Display entire file content less &lt;file&gt; View file page by page (scrollable, press &#39;q&#39; to quit) more &lt;file&gt; View file (scroll scroll forward only) head &lt;file&gt; Show first 10 lines ? head -n 20 &lt;file&gt;:: Show first 20 lines tail &lt;file&gt; Show last 10 lines ? tail -n 20 &lt;file&gt;:: Show last 20 lines tail -f &lt;file&gt; Follow file updates in real-time (live log tracing) nl &lt;file&gt; Number all lines Content Statistics wc &lt;file&gt; Count lines, words, and bytes wc -l &lt;file&gt; Count lines only wc -w &lt;file&gt; Count words only wc -c &lt;file&gt; Count bytes only File Information stat &lt;file&gt; Show detailed file statistics and metadata file &lt;file&gt; Determine file/data type tree &lt;dir&gt; Show directory tree structure layout ls -R &lt;dir&gt; List files recursively realpath &lt;file&gt; Show full absolute path Text Filtering &amp; Search (grep, awk, sed) grep &#34;pattern&#34; &lt;file&gt; Search specific pattern in a file grep -i &#34;pattern&#34; &lt;file&gt; Ignore case sensitive details grep -r &#34;pattern&#34; &lt;dir&gt; Search recursively across directory paths grep -n &#34;pattern&#34; &lt;file&gt; Show line numbers alongside results grep -v &#34;pattern&#34; &lt;file&gt; Invert match (exclude lines matching pattern) awk &#39;{print $1}&#39; &lt;file&gt; Print first column of text data awk -F: &#39;{print $1}&#39; /etc/passwd Use &#34;:&#34; as field delimiter sed -n &#39;1,5p&#39; &lt;file&gt; Print lines 1 to 5 specifically sed &#39;s/old/new/g&#39; &lt;file&gt; Replace all instances of &#39;old&#39; with &#39;new&#39; cut -d: -f1 &lt;file&gt; Cut columns using custom delimiters sort &lt;file&gt; Sort text lines uniq &lt;file&gt; Remove duplicate duplicate lines uniq -c &lt;file&gt; Count duplicate lines tr &#39;a-z&#39; &#39;A-Z&#39; &lt;file&gt; Convert text strings from lowercase to UPPERCASE 3. PROCESS &amp; SYSTEM MANAGEMENT Process Management ps Show current active process shell instances ps aux All running processes across the active system (detailed layout) ps -ef Full system process format listing top Real-time interactive process monitor htop Enhanced interactive process viewer (highly readable) pstree Display processes organized as a visual branch tree ? pgrep &lt;name&gt;:: Find process ID by its string name ? pidof &lt;name&gt;:: Show PID of specific running process kill &lt;PID&gt; Terminate process gracefully using ID ? kill -9 &lt;PID&gt;:: Force kill a stubborn process instantly ? killall &lt;name&gt;:: Kill all active processes belonging to a named software nice -n 10 &lt;cmd&gt; Run command with a lower or specific assigned priority renice 5 &lt;PID&gt; Change active priority behavior on a live PID System Information uname -a Print all core system architectures and kernel info uname -r Output kernel release details hostname Display or set system host name hostname -I Display local network IP addresses of host whoami Show current active user identity id Print real user and group IDs date Show or configure system date/time parameters cal Display an terminal calendar layout w See who is logged in and what they are currently doing last Show history of last user logins lastlog Display last login timestamp statistics per user accounts uptime Check how long the host machine has been running continuously lscpu View complete CPU technical info specifications lsmem View system hardware memory layout segments dmidecode Dump system hardware info from BIOS tables dmesg Print out kernel ring buffer log errors/messages Hardware Metrics lspi List PCI devices lsusb List USB hardware devices lshw Detailed list summary of hardware configs 4. DISK USAGE &amp; FILESYSTEM df -h Check disk space available across partitions (human-readable) ? du -sh &lt;dir&gt;:: Show summary size of a specific directory folder path du -h –max-depth=1 Size of immediate subdirectory trees below target ncdu &lt;dir&gt; Interactive disk usage terminal analyzer interface (requires installation) mount View mounted filesystems on the server lsblk -f Block devices list structure including specific layout mappings blkid Fetch individual block device attribute tags (UUIDs, types) 5. JOB CONTROL Manage foreground/background shell operational jobs.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cheatsheets">
+    <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Index</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/site-map/">
+				
+				<span class="menu__text">SiteMap</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/lwic/">
+				
+				<span class="menu__text">Last-Week-In-Code</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/notes/">
+				
+				<span class="menu__text">Notes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/microblog/">
+				
+				<span class="menu__text">MicroBlog</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/photo-gallery/2026/">
+				
+				<span class="menu__text">Photo Gallery</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/now/">
+				
+				<span class="menu__text">Now</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">linux</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-06-01T00:00:00Z">June 01, 2026</time></div></div>
+		</header>
+		<div class="content post__content clearfix
+			    ">
+			
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+1. FILE &amp; DIRECTORY NAVIGATION Basics
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+File Basics
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<dl>
+<dt>
+ls      
+</dt>
+<dd>List files and directories</dd>
+<dt>
+ls -l   
+</dt>
+<dd>Long listing format (permissions, owner, size, date)</dd>
+<dt>
+ls -a   
+</dt>
+<dd>Show hidden files (starting with a dot)</dd>
+<dt>
+ls -lh  
+</dt>
+<dd>Human-readable sizes (e.g., 4K, 23M)</dd>
+<dt>
+pwd     
+</dt>
+<dd>Print working directory</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Directory Navigation
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<dl>
+<dt>
+cd &lt;dir&gt;
+</dt>
+<dd>Change directory to &lt;dir&gt;</dd>
+<dt>
+cd ..   
+</dt>
+<dd>Go up one directory level</dd>
+<dt>
+cd ~    
+</dt>
+<dd>Go to home directory</dd>
+<dt>
+cd -    
+</dt>
+<dd>Go to previous directory</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+File Management
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<dl>
+<dt>
+mkdir &lt;dir&gt;
+</dt>
+<dd>Create a new directory</dd>
+<dt>
+rmdir &lt;dir&gt;
+</dt>
+<dd>Remove empty directory</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+2. VIEWING &amp; FILTERING FILE CONTENT
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+File Content Viewers
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<dl>
+<dt>
+cat &lt;file&gt;      
+</dt>
+<dd>Display entire file content</dd>
+<dt>
+less &lt;file&gt;     
+</dt>
+<dd>View file page by page (scrollable, press &#39;q&#39; to quit)</dd>
+<dt>
+more &lt;file&gt;     
+</dt>
+<dd>View file (scroll scroll forward only)</dd>
+<dt>
+head &lt;file&gt;     
+</dt>
+<dd>Show first 10 lines</dd>
+<dt>
+?
+</dt>
+<dd>head -n 20 &lt;file&gt;:: Show first 20 lines</dd>
+<dt>
+tail &lt;file&gt;     
+</dt>
+<dd>Show last 10 lines</dd>
+<dt>
+?
+</dt>
+<dd>tail -n 20 &lt;file&gt;:: Show last 20 lines</dd>
+<dt>
+tail -f &lt;file&gt;  
+</dt>
+<dd>Follow file updates in real-time (live log tracing)</dd>
+<dt>
+nl &lt;file&gt;       
+</dt>
+<dd>Number all lines</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Content Statistics
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<dl>
+<dt>
+wc &lt;file&gt;   
+</dt>
+<dd>Count lines, words, and bytes</dd>
+<dt>
+wc -l &lt;file&gt;
+</dt>
+<dd>Count lines only</dd>
+<dt>
+wc -w &lt;file&gt;
+</dt>
+<dd>Count words only</dd>
+<dt>
+wc -c &lt;file&gt;
+</dt>
+<dd>Count bytes only</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+File Information
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<dl>
+<dt>
+stat &lt;file&gt;     
+</dt>
+<dd>Show detailed file statistics and metadata</dd>
+<dt>
+file &lt;file&gt;     
+</dt>
+<dd>Determine file/data type</dd>
+<dt>
+tree &lt;dir&gt;      
+</dt>
+<dd>Show directory tree structure layout</dd>
+<dt>
+ls -R &lt;dir&gt;     
+</dt>
+<dd>List files recursively</dd>
+<dt>
+realpath &lt;file&gt; 
+</dt>
+<dd>Show full absolute path</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Text Filtering &amp; Search (grep, awk, sed)
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<dl>
+<dt>
+grep &#34;pattern&#34; &lt;file&gt;      
+</dt>
+<dd>Search specific pattern in a file</dd>
+<dt>
+grep -i &#34;pattern&#34; &lt;file&gt;   
+</dt>
+<dd>Ignore case sensitive details</dd>
+<dt>
+grep -r &#34;pattern&#34; &lt;dir&gt;    
+</dt>
+<dd>Search recursively across directory paths</dd>
+<dt>
+grep -n &#34;pattern&#34; &lt;file&gt;   
+</dt>
+<dd>Show line numbers alongside results</dd>
+<dt>
+grep -v &#34;pattern&#34; &lt;file&gt;   
+</dt>
+<dd>Invert match (exclude lines matching pattern)</dd>
+<dt>
+awk &#39;{print $1}&#39; &lt;file&gt;    
+</dt>
+<dd>Print first column of text data</dd>
+<dt>
+awk -F: &#39;{print $1}&#39; /etc/passwd
+</dt>
+<dd>Use &#34;:&#34; as field delimiter</dd>
+<dt>
+sed -n &#39;1,5p&#39; &lt;file&gt;        
+</dt>
+<dd>Print lines 1 to 5 specifically</dd>
+<dt>
+sed &#39;s/old/new/g&#39; &lt;file&gt;    
+</dt>
+<dd>Replace all instances of &#39;old&#39; with &#39;new&#39;</dd>
+<dt>
+cut -d: -f1 &lt;file&gt;          
+</dt>
+<dd>Cut columns using custom delimiters</dd>
+<dt>
+sort &lt;file&gt;                 
+</dt>
+<dd>Sort text lines</dd>
+<dt>
+uniq &lt;file&gt;                 
+</dt>
+<dd>Remove duplicate duplicate lines</dd>
+<dt>
+uniq -c &lt;file&gt;              
+</dt>
+<dd>Count duplicate lines</dd>
+<dt>
+tr &#39;a-z&#39; &#39;A-Z&#39; &lt;file&gt;       
+</dt>
+<dd>Convert text strings from lowercase to UPPERCASE</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+3. PROCESS &amp; SYSTEM MANAGEMENT
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Process Management
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<dl>
+<dt>
+ps         
+</dt>
+<dd>Show current active process shell instances</dd>
+<dt>
+ps aux     
+</dt>
+<dd>All running processes across the active system (detailed layout)</dd>
+<dt>
+ps -ef     
+</dt>
+<dd>Full system process format listing</dd>
+<dt>
+top        
+</dt>
+<dd>Real-time interactive process monitor</dd>
+<dt>
+htop       
+</dt>
+<dd>Enhanced interactive process viewer (highly readable)</dd>
+<dt>
+pstree     
+</dt>
+<dd>Display processes organized as a visual branch tree</dd>
+<dt>
+?
+</dt>
+<dd>pgrep &lt;name&gt;:: Find process ID by its string name</dd>
+<dt>
+?
+</dt>
+<dd>pidof &lt;name&gt;:: Show PID of specific running process</dd>
+<dt>
+kill &lt;PID&gt; 
+</dt>
+<dd>Terminate process gracefully using ID</dd>
+<dt>
+?
+</dt>
+<dd>kill -9 &lt;PID&gt;:: Force kill a stubborn process instantly</dd>
+<dt>
+?
+</dt>
+<dd>killall &lt;name&gt;:: Kill all active processes belonging to a named software</dd>
+<dt>
+nice -n 10 &lt;cmd&gt;
+</dt>
+<dd>Run command with a lower or specific assigned priority</dd>
+<dt>
+renice 5 &lt;PID&gt;  
+</dt>
+<dd>Change active priority behavior on a live PID</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+System Information
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<dl>
+<dt>
+uname -a   
+</dt>
+<dd>Print all core system architectures and kernel info</dd>
+<dt>
+uname -r   
+</dt>
+<dd>Output kernel release details</dd>
+<dt>
+hostname   
+</dt>
+<dd>Display or set system host name</dd>
+<dt>
+hostname -I
+</dt>
+<dd>Display local network IP addresses of host</dd>
+<dt>
+whoami     
+</dt>
+<dd>Show current active user identity</dd>
+<dt>
+id         
+</dt>
+<dd>Print real user and group IDs</dd>
+<dt>
+date       
+</dt>
+<dd>Show or configure system date/time parameters</dd>
+<dt>
+cal        
+</dt>
+<dd>Display an terminal calendar layout</dd>
+<dt>
+w          
+</dt>
+<dd>See who is logged in and what they are currently doing</dd>
+<dt>
+last       
+</dt>
+<dd>Show history of last user logins</dd>
+<dt>
+lastlog    
+</dt>
+<dd>Display last login timestamp statistics per user accounts</dd>
+<dt>
+uptime     
+</dt>
+<dd>Check how long the host machine has been running continuously</dd>
+<dt>
+lscpu      
+</dt>
+<dd>View complete CPU technical info specifications</dd>
+<dt>
+lsmem      
+</dt>
+<dd>View system hardware memory layout segments</dd>
+<dt>
+dmidecode  
+</dt>
+<dd>Dump system hardware info from BIOS tables</dd>
+<dt>
+dmesg      
+</dt>
+<dd>Print out kernel ring buffer log errors/messages</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Hardware Metrics
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<dl>
+<dt>
+lspi       
+</dt>
+<dd>List PCI devices</dd>
+<dt>
+lsusb      
+</dt>
+<dd>List USB hardware devices</dd>
+<dt>
+lshw       
+</dt>
+<dd>Detailed list summary of hardware configs</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
+4. DISK USAGE &amp; FILESYSTEM
+</h2>
+<div id="outline-text-headline-14" class="outline-text-2">
+<dl>
+<dt>
+df -h      
+</dt>
+<dd>Check disk space available across partitions (human-readable)</dd>
+<dt>
+?
+</dt>
+<dd>du -sh &lt;dir&gt;:: Show summary size of a specific directory folder path</dd>
+<dt>
+du -h –max-depth=1
+</dt>
+<dd>Size of immediate subdirectory trees below target</dd>
+<dt>
+ncdu &lt;dir&gt; 
+</dt>
+<dd>Interactive disk usage terminal analyzer interface (requires installation)</dd>
+<dt>
+mount      
+</dt>
+<dd>View mounted filesystems on the server</dd>
+<dt>
+lsblk -f   
+</dt>
+<dd>Block devices list structure including specific layout mappings</dd>
+<dt>
+blkid      
+</dt>
+<dd>Fetch individual block device attribute tags (UUIDs, types)</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+5. JOB CONTROL
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>Manage foreground/background shell operational jobs.</p>
+<dl>
+<dt>
+command &amp;
+</dt>
+<dd>Run any given command in the background immediately</dd>
+<dt>
+jobs     
+</dt>
+<dd>List all active background job status states</dd>
+<dt>
+fg %1    
+</dt>
+<dd>Bring background job number 1 back to the foreground</dd>
+<dt>
+bg %1    
+</dt>
+<dd>Resume suspended job number 1 running in the background</dd>
+<dt>
+Ctrl + Z 
+</dt>
+<dd>Suspend current active foreground operational process</dd>
+<dt>
+Ctrl + C 
+</dt>
+<dd>Terminate current active foreground process</dd>
+<dt>
+kill %1  
+</dt>
+<dd>Kill background job number 1</dd>
+<dt>
+disown %1
+</dt>
+<dd>Remove background job number 1 from active shell oversight</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+6. REDIRECTION MASTERY &amp; PIPES
+</h2>
+<div id="outline-text-headline-16" class="outline-text-2">
+<p>Control standard input/output/error tracking paths ($0, $1, $2).</p>
+<dl>
+<dt>
+command &gt; file      
+</dt>
+<dd>Overwrite output to file destination</dd>
+<dt>
+command &gt;&gt; file     
+</dt>
+<dd>Append output to file destination</dd>
+<dt>
+command 2&gt; error.log
+</dt>
+<dd>Redirect standard error messages to file</dd>
+<dt>
+command 2&gt;&gt; err.log 
+</dt>
+<dd>Append error messages to log target</dd>
+<dt>
+command &amp;&gt; all.log  
+</dt>
+<dd>Redirect BOTH standard output and error output to file</dd>
+<dt>
+command &lt; input.txt 
+</dt>
+<dd>Input contents of file into command sequence</dd>
+<dt>
+command &lt;&lt; EOF      
+</dt>
+<dd>Here Document structure interface</dd>
+<dt>
+command1 | command2 
+</dt>
+<dd>Pipe connection: sends standard output of 1 as input to 2</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-2">
+<h2 id="headline-17">
+7. SERVICE MANAGEMENT (systemd)
+</h2>
+<div id="outline-text-headline-17" class="outline-text-2">
+<dl>
+<dt>
+systemctl list-units –type=service
+</dt>
+<dd>List all active systemd system services</dd>
+<dt>
+systemctl status &lt;service&gt;         
+</dt>
+<dd>Check real-time service operation status</dd>
+<dt>
+systemctl start &lt;service&gt;          
+</dt>
+<dd>Start service sequence instantly</dd>
+<dt>
+systemctl stop &lt;service&gt;           
+</dt>
+<dd>Stop service execution loops</dd>
+<dt>
+systemctl restart &lt;service&gt;        
+</dt>
+<dd>Restart service execution logs</dd>
+<dt>
+systemctl reload &lt;service&gt;         
+</dt>
+<dd>Reload internal configurations without stopping service</dd>
+<dt>
+systemctl enable &lt;service&gt;         
+</dt>
+<dd>Enable service autostart protocols during boot sequences</dd>
+<dt>
+systemctl disable &lt;service&gt;        
+</dt>
+<dd>Disable service autostart triggers</dd>
+<dt>
+systemctl is-enabled &lt;service&gt;     
+</dt>
+<dd>Verify if system service autostart flag is active</dd>
+<dt>
+journalctl -u &lt;service&gt;            
+</dt>
+<dd>View logs generated by a specific service</dd>
+<dt>
+journalctl -xe                     
+</dt>
+<dd>View recent system log errors with context hints</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-2">
+<h2 id="headline-18">
+8. NETWORKING &amp; CONNECTIVITY
+</h2>
+<div id="outline-text-headline-18" class="outline-text-2">
+<dl>
+<dt>
+ip a            
+</dt>
+<dd>Show all network interface details and IP addresses</dd>
+<dt>
+ip r            
+</dt>
+<dd>Print system routing tables</dd>
+<dt>
+ss -tulnp       
+</dt>
+<dd>List active listening ports and active sockets connections</dd>
+<dt>
+netstat -tulnp  
+</dt>
+<dd>Legacy utility variant to see open server ports</dd>
+<dt>
+lsof -i         
+</dt>
+<dd>List open network files and connection parameters</dd>
+<dt>
+lsof -i :80     
+</dt>
+<dd>Discover what service profile is running on network port 80</dd>
+<dt>
+ping &lt;host&gt;     
+</dt>
+<dd>Test network end-to-end connectivity via ICMP packets</dd>
+<dt>
+?
+</dt>
+<dd>traceroute &lt;host&gt;:: Trace structural network node path hops to destination</dd>
+<dt>
+curl -I &lt;url&gt;   
+</dt>
+<dd>Fetch HTTP header data details from target domain</dd>
+<dt>
+wget &lt;url&gt;      
+</dt>
+<dd>Download file direct from the web</dd>
+<dt>
+dig &lt;domain&gt;    
+</dt>
+<dd>Query structural DNS lookup details</dd>
+<dt>
+?
+</dt>
+<dd>nslookup &lt;domain&gt;:: Alternative DNS validation lookup resource</dd>
+<dt>
+nmap localhost  
+</dt>
+<dd>Scan active local network open port registries</dd>
+<dt>
+nmap -p 1-1000 &lt;host&gt;
+</dt>
+<dd>Scan port range 1 to 1000 on target IP</dd>
+<dt>
+scp &lt;file&gt; user@host:/path
+</dt>
+<dd>Copy files securely over SSH channels</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-2">
+<h2 id="headline-19">
+9. USER &amp; GROUP PERMISSIONS BASICS
+</h2>
+<div id="outline-text-headline-19" class="outline-text-2">
+<div id="outline-container-headline-20" class="outline-3">
+<h3 id="headline-20">
+Users
+</h3>
+<div id="outline-text-headline-20" class="outline-text-3">
+<dl>
+<dt>
+whoami          
+</dt>
+<dd>Show current user account session identity</dd>
+<dt>
+id              
+</dt>
+<dd>Show user &amp; group ID numbers (UID / GID)</dd>
+<dt>
+users           
+</dt>
+<dd>List logged in system users</dd>
+<dt>
+finger &lt;user&gt;   
+</dt>
+<dd>View detailed tracking statistics of target user account</dd>
+<dt>
+adduser &lt;name&gt;  
+</dt>
+<dd>Add a new user profile securely (Debian/Ubuntu native helper)</dd>
+<dt>
+useradd &lt;name&gt;  
+</dt>
+<dd>Add a low-level new user account standard utility</dd>
+<dt>
+useradd -m -s /bin/bash &lt;user&gt;
+</dt>
+<dd>Create a user with home directory and bash shell configuration</dd>
+<dt>
+passwd &lt;user&gt;   
+</dt>
+<dd>Update or assign account password keys</dd>
+<dt>
+deluser &lt;name&gt;  
+</dt>
+<dd>Delete user accounts (Debian/Ubuntu)</dd>
+<dt>
+userdel &lt;name&gt;  
+</dt>
+<dd>Remove user profile records (RHEL/CentOS)</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-3">
+<h3 id="headline-21">
+Groups
+</h3>
+<div id="outline-text-headline-21" class="outline-text-3">
+<dl>
+<dt>
+groups          
+</dt>
+<dd>Show group attachments for the active logged user</dd>
+<dt>
+groups &lt;user&gt;   
+</dt>
+<dd>Check specific group mapping permissions of target user</dd>
+<dt>
+groupadd &lt;group&gt;
+</dt>
+<dd>Create a new distinct group profile</dd>
+<dt>
+groupadd -g &lt;gid&gt; &lt;group&gt;
+</dt>
+<dd>Create group with an explicit GID assignment</dd>
+<dt>
+groupmod -n &lt;newname&gt; &lt;group&gt;
+</dt>
+<dd>Rename existing system group name</dd>
+<dt>
+groupdel &lt;group&gt;
+</dt>
+<dd>Delete system group profile safely</dd>
+<dt>
+usermod -aG &lt;group&gt; &lt;user&gt;
+</dt>
+<dd>Append a target user safely into a specific auxiliary group</dd>
+<dt>
+usermod -s /bin/zsh &lt;user&gt; 
+</dt>
+<dd>Alter a target user&#39;s default execution shell profile</dd>
+<dt>
+gpasswd -d &lt;user&gt; &lt;group&gt; 
+</dt>
+<dd>Remove a specific target user from group access mappings</dd>
+<dt>
+newgrp &lt;group&gt;  
+</dt>
+<dd>Temporarily switch primary active group setting assignment</dd>
+<dt>
+getent group &lt;group&gt;
+</dt>
+<dd>Show specific group structure entry list</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-3">
+<h3 id="headline-22">
+Account File Storage Records
+</h3>
+<div id="outline-text-headline-22" class="outline-text-3">
+<dl>
+<dt>
+/etc/passwd     
+</dt>
+<dd>Format reference: <code class="verbatim">username:x:UID:GID:comment:home:shell</code></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-23" class="outline-2">
+<h2 id="headline-23">
+10. FILE PERMISSIONS (rwx) &amp; OWNERSHIP
+</h2>
+<div id="outline-text-headline-23" class="outline-text-2">
+<div id="outline-container-headline-24" class="outline-3">
+<h3 id="headline-24">
+Understanding Formats
+</h3>
+<div id="outline-text-headline-24" class="outline-text-3">
+<ul>
+<li>File Types: <code class="verbatim">-[regular file]</code>, <code class="verbatim">d[directory]</code>, <code class="verbatim">l[symbolic link]</code></li>
+<li>Triad Blocks: <code class="verbatim">Owner (u)</code>, <code class="verbatim">Group (g)</code>, <code class="verbatim">Others (o)</code>, <code class="verbatim">All (a)</code></li>
+<li>Value Keys: <code class="verbatim">r = 4 (read)</code>, <code class="verbatim">w = 2 (write)</code>, <code class="verbatim">x = 1 (execute)</code>, <code class="verbatim">- = 0 (no permission)</code></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-3">
+<h3 id="headline-25">
+Numeric Mapping Examples
+</h3>
+<div id="outline-text-headline-25" class="outline-text-3">
+<dl>
+<dt>
+755
+</dt>
+<dd><code class="verbatim">rwxr-xr-x</code> (Full owner control, read/execute access for others)</dd>
+<dt>
+644
+</dt>
+<dd><code class="verbatim">rw-r----</code> (Read/Write owner privileges, read-only balance)</dd>
+<dt>
+700
+</dt>
+<dd><code class="verbatim">rwx------</code> (Full owner control isolated from everyone else)</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-3">
+<h3 id="headline-26">
+Change Permissions (chmod)
+</h3>
+<div id="outline-text-headline-26" class="outline-text-3">
+<dl>
+<dt>
+chmod u+x &lt;file&gt;  
+</dt>
+<dd>Add execute permission parameter to owner</dd>
+<dt>
+chmod g+w &lt;file&gt;  
+</dt>
+<dd>Add write permission tracking to group</dd>
+<dt>
+chmod o-r &lt;file&gt;  
+</dt>
+<dd>Remove read permissions from others</dd>
+<dt>
+chmod a+r &lt;file&gt;  
+</dt>
+<dd>Add read permissions to everyone globally</dd>
+<dt>
+chmod go=r &lt;file&gt; 
+</dt>
+<dd>Hard-set group and others to read-only access</dd>
+<dt>
+chmod 755 &lt;file&gt;  
+</dt>
+<dd>Explicitly apply 755 permissions</dd>
+<dt>
+chmod -R 755 &lt;dir&gt;
+</dt>
+<dd>Recursively change nested directory permissions layout</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-3">
+<h3 id="headline-27">
+Change Ownership (chown / chgrp)
+</h3>
+<div id="outline-text-headline-27" class="outline-text-3">
+<dl>
+<dt>
+chown &lt;user&gt; &lt;file&gt;         
+</dt>
+<dd>Reassign owner of a file</dd>
+<dt>
+chown &lt;user&gt;:&lt;group&gt; &lt;file&gt; 
+</dt>
+<dd>Reassign both user owner and group owner targets simultaneously</dd>
+<dt>
+?
+</dt>
+<dd>chown -R &lt;user&gt;:&lt;group&gt; &lt;dir&gt;:: Recursively cascade ownership over target directory trees</dd>
+<dt>
+chgrp &lt;group&gt; &lt;file&gt;        
+</dt>
+<dd>Reassign file group parameter</dd>
+<dt>
+chown –reference=&lt;file1&gt; &lt;file2&gt;
+</dt>
+<dd>Duplicate permission mappings from file1 onto file2</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-28" class="outline-3">
+<h3 id="headline-28">
+Special Bits Configuration
+</h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<dl>
+<dt>
+SetUID (4)    
+</dt>
+<dd>Executed with target file owner level privilege access. Syntax: <code class="verbatim">chmod u+s &lt;file&gt;</code></dd>
+<dt>
+SetGID (2)    
+</dt>
+<dd>Executed with directory/group assigned rights. Syntax: <code class="verbatim">chmod g+s &lt;dir&gt;</code></dd>
+<dt>
+Sticky Bit (1)
+</dt>
+<dd>Only file owners can erase files in target folder. Syntax: <code class="verbatim">chmod +t &lt;dir&gt;</code></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-29" class="outline-3">
+<h3 id="headline-29">
+Umask Configs
+</h3>
+<div id="outline-text-headline-29" class="outline-text-3">
+<ul>
+<li>Default security masks for establishing fresh filesystem entries.</li>
+<li>Files Calculation: <code class="verbatim">666 - umask = permissions</code></li>
+<li>Directories Calc: <code class="verbatim">777 - umask = permissions</code></li>
+<li>022 (Standard mask) -&gt; Files: 644, Dirs: 755</li>
+<li>077 (High restriction) -&gt; Files: 600, Dirs: 700</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-2">
+<h2 id="headline-30">
+11. AUTOMATE TASKS: CRON TASKS SCHEDULER
+</h2>
+<div id="outline-text-headline-30" class="outline-text-2">
+<div id="outline-container-headline-31" class="outline-3">
+<h3 id="headline-31">
+Syntax
+</h3>
+<div id="outline-text-headline-31" class="outline-text-3">
+<p>Format mapping fields: <code class="verbatim">* * * * * command</code></p>
+<ul>
+<li>Field 1: Minute (0-59)</li>
+<li>Field 2: Hour (0-23)</li>
+<li>Field 3: Day of month (1-31)</li>
+<li>Field 4: Month (1-12)</li>
+<li>Field 5: Day of week (0-7, where 0 and 7 indicate Sunday)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-32" class="outline-3">
+<h3 id="headline-32">
+Commands
+</h3>
+<div id="outline-text-headline-32" class="outline-text-3">
+<dl>
+<dt>
+crontab -e
+</dt>
+<dd>Edit or configure current user cron registry file</dd>
+<dt>
+crontab -l
+</dt>
+<dd>List active schedule tracking automation items</dd>
+<dt>
+crontab -r
+</dt>
+<dd>Wipe out all schedule configurations for active user</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-33" class="outline-3">
+<h3 id="headline-33">
+Execution Example
+</h3>
+<div id="outline-text-headline-33" class="outline-text-3">
+<p><code class="verbatim">0 2 * * * /home/alice/backup.sh</code> (Triggers daily backup routines at exactly 2:00 AM)</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-34" class="outline-2">
+<h2 id="headline-34">
+12. ARCHIVE &amp; COMPRESSION TOOLS
+</h2>
+<div id="outline-text-headline-34" class="outline-text-2">
+<div id="outline-container-headline-35" class="outline-3">
+<h3 id="headline-35">
+Tar Archiver (.tar)
+</h3>
+<div id="outline-text-headline-35" class="outline-text-3">
+<dl>
+<dt>
+tar -cvf archive.tar &lt;files&gt;
+</dt>
+<dd>Create an uncompressed tape archive</dd>
+<dt>
+tar -xvf archive.tar        
+</dt>
+<dd>Extract contents of an archive file container</dd>
+<dt>
+tar -tf archive.tar         
+</dt>
+<dd>List archive inventory manifest without full extraction</dd>
+<dt>
+tar -rf archive.tar &lt;file&gt;  
+</dt>
+<dd>Append files onto existing target archive container</dd>
+<dt>
+tar -uf archive.tar &lt;file&gt;  
+</dt>
+<dd>Update archive by including only newer files</dd>
+<dt>
+tar –delete -f archive.tar &lt;file&gt;
+</dt>
+<dd>Remove specified components from within archive container</dd>
+<dt>
+?
+</dt>
+<dd>tar -C /path -xvf archive.tar:: Extract contents into an explicit destination folder path</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-36" class="outline-3">
+<h3 id="headline-36">
+Gzip Compression (.gz)
+</h3>
+<div id="outline-text-headline-36" class="outline-text-3">
+<dl>
+<dt>
+gzip file.txt         
+</dt>
+<dd>Compress file instantly (wipes original element)</dd>
+<dt>
+gzip -k file.txt      
+</dt>
+<dd>Compress file while retaining the original reference copy</dd>
+<dt>
+gzip -d file.txt.gz   
+</dt>
+<dd>Decompress target gzip module</dd>
+<dt>
+gunzip file.txt.gz    
+</dt>
+<dd>Decompress utility alternative</dd>
+<dt>
+zcat file.txt.gz      
+</dt>
+<dd>Output contents of compressed archive directly to screen</dd>
+<dt>
+zgrep &#34;text&#34; file.gz  
+</dt>
+<dd>Filter content strings directly inside zipped files</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-37" class="outline-3">
+<h3 id="headline-37">
+Bzip2 Compression (.bz2)
+</h3>
+<div id="outline-text-headline-37" class="outline-text-3">
+<dl>
+<dt>
+bzip2 file.txt        
+</dt>
+<dd>Compress file into bz2 infrastructure format (slower but smaller)</dd>
+<dt>
+bzip2 -k file.txt     
+</dt>
+<dd>Compress file while retaining original copy </dd>
+<dt>
+bunzip2 file.txt.bz2  
+</dt>
+<dd>Decompress target bz2 format</dd>
+<dt>
+bzcat file.txt.bz2    
+</dt>
+<dd>View text content strings directly from bz2 zipped environments</dd>
+<dt>
+bzgrep &#34;text&#34; file.bz2
+</dt>
+<dd>Search contents inside bz2 zipped architecture modules</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-38" class="outline-3">
+<h3 id="headline-38">
+Zip / Unzip Utility
+</h3>
+<div id="outline-text-headline-38" class="outline-text-3">
+<dl>
+<dt>
+zip file.zip file1 file2      
+</dt>
+<dd>Create zip package container</dd>
+<dt>
+zip -r dir.zip folder/       
+</dt>
+<dd>Recursively zip comprehensive directory structures</dd>
+<dt>
+unzip file.zip                
+</dt>
+<dd>Extract standard zip architecture contents</dd>
+<dt>
+unzip -l file.zip             
+</dt>
+<dd>List directory manifest inside zipped structures</dd>
+<dt>
+zip -r -p secure.zip folder/  
+</dt>
+<dd>Generate encryption password protection on target zip file</dd>
+<dt>
+unzip -d <em>path</em> file.zip      
+</dt>
+<dd>Extract standard zip file directly to target destination path</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-39" class="outline-3">
+<h3 id="headline-39">
+Combined Tar Compression Best Practices
+</h3>
+<div id="outline-text-headline-39" class="outline-text-3">
+<dl>
+<dt>
+tar -czvf archive.tar.gz &lt;dir&gt;
+</dt>
+<dd>Create compressed GZIP archive bundle</dd>
+<dt>
+tar -xzvf archive.tar.gz      
+</dt>
+<dd>Extract compressed GZIP archive container structure</dd>
+<dt>
+?
+</dt>
+<dd>tar -cjvf archive.tar.bz2 &lt;dir&gt;:: Create compressed BZIP2 archive bundle</dd>
+<dt>
+tar -xjvf archive.tar.bz2     
+</dt>
+<dd>Extract compressed BZIP2 archive container structure</dd>
+<dt>
+tar -cJvf archive.tar.xz &lt;dir&gt;
+</dt>
+<dd>Create highly-compressed XZ format archive bundle</dd>
+<dt>
+tar -xJvf archive.tar.xz      
+</dt>
+<dd>Extract compressed XZ archive container structure</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-40" class="outline-2">
+<h2 id="headline-40">
+13. PACKAGE MANAGEMENT &amp; FIREWALL (Debian/Ubuntu)
+</h2>
+<div id="outline-text-headline-40" class="outline-text-2">
+<div id="outline-container-headline-41" class="outline-3">
+<h3 id="headline-41">
+APT Package Manager
+</h3>
+<div id="outline-text-headline-41" class="outline-text-3">
+<dl>
+<dt>
+sudo apt update            
+</dt>
+<dd>Synchronize package index repository manifests</dd>
+<dt>
+sudo apt upgrade           
+</dt>
+<dd>Update installed packages to newest safe configurations</dd>
+<dt>
+sudo apt install &lt;package&gt; 
+</dt>
+<dd>Download and set up specific software application components</dd>
+<dt>
+sudo apt remove &lt;package&gt;  
+</dt>
+<dd>Remove a target package tool while retaining custom user configs</dd>
+<dt>
+sudo apt purge &lt;package&gt;   
+</dt>
+<dd>Completely scrub package files and configurations from system</dd>
+<dt>
+sudo apt autoremove        
+</dt>
+<dd>Automatically eliminate orphan dependency tools no longer required</dd>
+<dt>
+apt search &lt;keyword&gt;       
+</dt>
+<dd>Scan database files for tracking specific package keywords</dd>
+<dt>
+apt show &lt;package&gt;         
+</dt>
+<dd>Display explicit information/dependency metrics for software </dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-42" class="outline-3">
+<h3 id="headline-42">
+Uncomplicated Firewall (UFW)
+</h3>
+<div id="outline-text-headline-42" class="outline-text-3">
+<dl>
+<dt>
+sudo ufw status            
+</dt>
+<dd>Check current firewall active routing rules</dd>
+<dt>
+sudo ufw enable            
+</dt>
+<dd>Toggle firewall operational state to ACTIVE</dd>
+<dt>
+sudo ufw disable           
+</dt>
+<dd>Toggle firewall operational state to DISABLED</dd>
+<dt>
+sudo ufw allow 22          
+</dt>
+<dd>Open network incoming port 22 access (SSH profile)</dd>
+<dt>
+sudo ufw allow 80/tcp      
+</dt>
+<dd>Open incoming port 80 strictly over TCP protocol (HTTP)</dd>
+<dt>
+sudo ufw allow from 192.168.1.10
+</dt>
+<dd>Permit inbound traffic originating from a specific target IP</dd>
+<dt>
+sudo ufw deny 23           
+</dt>
+<dd>Ban incoming connection traffic attempting port 23 access (Telnet)</dd>
+<dt>
+sudo ufw delete allow 22   
+</dt>
+<dd>Tear down active firewall rule permitting port 22 entry</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-43" class="outline-2">
+<h2 id="headline-43">
+14. SHELL SCRIPTING FUNDAMENTALS
+</h2>
+<div id="outline-text-headline-43" class="outline-text-2">
+<div id="outline-container-headline-44" class="outline-3">
+<h3 id="headline-44">
+Core Concepts
+</h3>
+<div id="outline-text-headline-44" class="outline-text-3">
+<dl>
+<dt>
+Shebang Line    
+</dt>
+<dd><code class="verbatim">#!/bin/bash</code> (First file line; tells system which interpreter to execute script)</dd>
+<dt>
+Script Execution
+</dt>
+<dd>Make executable using <code class="verbatim">chmod +x script.sh</code>, then initiate with <code class="verbatim">./script.sh</code></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-45" class="outline-3">
+<h3 id="headline-45">
+Input &amp; Read Management
+</h3>
+<div id="outline-text-headline-45" class="outline-text-3">
+<dl>
+<dt>
+read name                 
+</dt>
+<dd>Accept standard keyboard string input into variable &#39;$name&#39;</dd>
+<dt>
+read -p &#34;Enter Age: &#34; age 
+</dt>
+<dd>Prompt interactive user with string message during input sequence</dd>
+<dt>
+read n1 n2 n3             
+</dt>
+<dd>Gather multiple distinct data variables in sequence via single step</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-46" class="outline-3">
+<h3 id="headline-46">
+Variables Manipulation
+</h3>
+<div id="outline-text-headline-46" class="outline-text-3">
+<dl>
+<dt>
+Rules
+</dt>
+<dd>No spaces allowed around assignments (e.g., <code class="verbatim">msg</code>&#34;Hello&#34;= is valid; <code class="verbatim">msg = &#34;Hello&#34;</code> fails)</dd>
+<dt>
+Reference Usage
+</dt>
+<dd>Access variable values by prefixing string with dollar symbol identifier: <code class="verbatim">$msg</code></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-47" class="outline-3">
+<h3 id="headline-47">
+Command Substitution
+</h3>
+<div id="outline-text-headline-47" class="outline-text-3">
+<p>Capture execution outputs directly inside functional operational parameters.</p>
+<dl>
+<dt>
+Example 1
+</dt>
+<dd><code class="verbatim">date_=$(date)</code></dd>
+<dt>
+Example 2
+</dt>
+<dd><code class="verbatim">lines=$(wc -l &lt; file.txt)</code></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-48" class="outline-3">
+<h3 id="headline-48">
+Arithmetic Actions
+</h3>
+<div id="outline-text-headline-48" class="outline-text-3">
+<p>Perform math parameters using structural <code class="verbatim">$(( ))</code> wrapping syntax wrappers. No internal spacing required.</p>
+<dl>
+<dt>
+Example
+</dt>
+<dd><code class="verbatim">sum=$((a + b))</code></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-49" class="outline-3">
+<h3 id="headline-49">
+Positional &amp; Command Arguments
+</h3>
+<div id="outline-text-headline-49" class="outline-text-3">
+<dl>
+<dt>
+$0
+</dt>
+<dd>File name identity of execution script</dd>
+<dt>
+$1
+</dt>
+<dd>First argument input parameter fed to script engine</dd>
+<dt>
+$2
+</dt>
+<dd>Second argument input parameter fed to script engine</dd>
+<dt>
+$#
+</dt>
+<dd>Integer metric totaling number of arguments supplied to script interface</dd>
+<dt>
+$@
+</dt>
+<dd>Array string mapping capturing all argument parameters supplied to script interface</dd>
+<dt>
+shift
+</dt>
+<dd>Move positional arguments leftward by one structural index slot ($2 becomes $1)</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-50" class="outline-3">
+<h3 id="headline-50">
+Script Debugging &amp; Safety Directives
+</h3>
+<div id="outline-text-headline-50" class="outline-text-3">
+<dl>
+<dt>
+set -e       
+</dt>
+<dd>Halt execution sequence instantly if any script command reports error failures</dd>
+<dt>
+set -u       
+</dt>
+<dd>Treat unmapped unassigned variables as explicit structural code errors</dd>
+<dt>
+set -o pipefail
+</dt>
+<dd>Intercept and report errors tracking mid-stream inside pipe connections</dd>
+<dt>
+trap &#39;echo error&#39; ERR
+</dt>
+<dd>Event listener wrapper to trigger alert routines during error faults</dd>
+<dt>
+$?           
+</dt>
+<dd>Output exit check status state flag monitored from the last executed statement</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-51" class="outline-3">
+<h3 id="headline-51">
+Conditionals Syntax Block
+</h3>
+<div id="outline-text-headline-51" class="outline-text-3">
+<p>Always retain isolated spaces inside evaluation square brackets context layout structures: <code class="verbatim">[ ]</code>.</p>
+<dl>
+<dt>
+Evaluators
+</dt>
+<dd><code class="verbatim">-eq</code> (equal), <code class="verbatim">-ne</code> (not equal), <code class="verbatim">-gt</code> (greater than), <code class="verbatim">-lt</code> (less than)</dd>
+<dt>
+String Flags
+</dt>
+<dd><code class="verbatim">=</code> (equal strings), <code class="verbatim">!</code> (not equal strings)</dd>
+</dl>
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Zero&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Positive&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Negative&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-52" class="outline-3">
+<h3 id="headline-52">
+Loops Control Loops
+</h3>
+<div id="outline-text-headline-52" class="outline-text-3">
+<div id="outline-container-headline-53" class="outline-4">
+<h4 id="headline-53">
+For Loops
+</h4>
+<div id="outline-text-headline-53" class="outline-text-4">
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span> 5; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Number: </span>$i<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> file in *.txt; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;File: </span>$file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-54" class="outline-4">
+<h4 id="headline-54">
+While Loops
+</h4>
+<div id="outline-text-headline-54" class="outline-text-4">
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> $count -le <span style="color:#ae81ff">5</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Count: </span>$count<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    count<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>count+1<span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-55" class="outline-4">
+<h4 id="headline-55">
+Until Loops
+</h4>
+<div id="outline-text-headline-55" class="outline-text-4">
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>n<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">until</span> <span style="color:#f92672">[</span> $n -gt <span style="color:#ae81ff">5</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;N: </span>$n<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    n<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>n+1<span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-56" class="outline-3">
+<h3 id="headline-56">
+Advanced Shell Scripting Features
+</h3>
+<div id="outline-text-headline-56" class="outline-text-3">
+<div id="outline-container-headline-57" class="outline-4">
+<h4 id="headline-57">
+Functions
+</h4>
+<div id="outline-text-headline-57" class="outline-text-4">
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>greet<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Hello, </span>$1<span style="color:#e6db74">!&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>greet <span style="color:#e6db74">&#34;Alice&#34;</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-58" class="outline-4">
+<h4 id="headline-58">
+Arrays
+</h4>
+<div id="outline-text-headline-58" class="outline-text-4">
+<dl>
+<dt>
+Declare
+</dt>
+<dd><code class="verbatim">fruits=(apple banana cherry)</code></dd>
+<dt>
+Element Access
+</dt>
+<dd><code class="verbatim">echo ${fruits[0]}</code></dd>
+<dt>
+Extract All
+</dt>
+<dd><code class="verbatim">echo ${fruits[@]}</code></dd>
+<dt>
+Array Length
+</dt>
+<dd><code class="verbatim">echo ${#fruits[@]}</code></dd>
+<dt>
+Array Iteration
+</dt>
+<dd></dd>
+</dl>
+<div class="src src-bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> fruit in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>fruits[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Fruit: </span>$fruit<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-59" class="outline-4">
+<h4 id="headline-59">
+File Test Operators
+</h4>
+<div id="outline-text-headline-59" class="outline-text-4">
+<dl>
+<dt>
+-e &lt;file&gt;
+</dt>
+<dd>Check if target item file path actually exists</dd>
+<dt>
+-f &lt;file&gt;
+</dt>
+<dd>Verify if target element is a regular file item structure</dd>
+<dt>
+-d &lt;file&gt;
+</dt>
+<dd>Verify if target element is an established directory path</dd>
+<dt>
+-r &lt;file&gt;
+</dt>
+<dd>Confirm if target item permissions support read actions</dd>
+<dt>
+-w &lt;file&gt;
+</dt>
+<dd>Confirm if target item permissions support write actions</dd>
+<dt>
+-x &lt;file&gt;
+</dt>
+<dd>Confirm if target item permissions support execute actions</dd>
+<dt>
+-s &lt;file&gt;
+</dt>
+<dd>Check if file exists and contains data (Size &gt; 0)</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-60" class="outline-2">
+<h2 id="headline-60">
+15. MISCELLANEOUS UTILITIES &amp; SHORTCUTS
+</h2>
+<div id="outline-text-headline-60" class="outline-text-2">
+<div id="outline-container-headline-61" class="outline-3">
+<h3 id="headline-61">
+Command Utilities
+</h3>
+<div id="outline-text-headline-61" class="outline-text-3">
+<dl>
+<dt>
+echo &#34;text&#34;      
+</dt>
+<dd>Print string text onto standard console output</dd>
+<dt>
+alias ll=&#39;ls -l&#39; 
+</dt>
+<dd>Set custom alias shortcut configurations</dd>
+<dt>
+clear            
+</dt>
+<dd>Wipe terminal view window cleanly</dd>
+<dt>
+history          
+</dt>
+<dd>Render record inventory listing of previously entered shell statements</dd>
+<dt>
+history -c       
+</dt>
+<dd>Clear terminal history tracking buffer logs</dd>
+<dt>
+man &lt;command&gt;    
+</dt>
+<dd>Open comprehensive user manual documentation for command software</dd>
+<dt>
+which &lt;command&gt;  
+</dt>
+<dd>Output precise directory executable pathway map for program binary</dd>
+<dt>
+whereis &lt;command&gt;
+</dt>
+<dd>Discover binary, source files, and user manual documentation paths</dd>
+<dt>
+bc               
+</dt>
+<dd>Interactive basic calculator command prompt environment</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-62" class="outline-3">
+<h3 id="headline-62">
+Terminal Key Combinations
+</h3>
+<div id="outline-text-headline-62" class="outline-text-3">
+<dl>
+<dt>
+Ctrl + A
+</dt>
+<dd>Relocate text cursor positioning directly to start of command line</dd>
+<dt>
+Ctrl + E
+</dt>
+<dd>Relocate text cursor positioning directly to end of command line</dd>
+<dt>
+Ctrl + U
+</dt>
+<dd>Erase entire line input tracking back from current cursor position</dd>
+<dt>
+Ctrl + K
+</dt>
+<dd>Cut all line content trailing forward from current cursor location</dd>
+<dt>
+Ctrl + W
+</dt>
+<dd>Delete last word immediately preceding text cursor positioning</dd>
+<dt>
+Ctrl + R
+</dt>
+<dd>Initiate backward interactive history search pattern tracker</dd>
+<dt>
+Ctrl + L
+</dt>
+<dd>Clear standard screen layout interface views</dd>
+<dt>
+Ctrl + D
+</dt>
+<dd>Exit current terminal session environment loop / Log out</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+		</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Zymacs avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Zymacs</span>
+	</div>
+	<div class="authorbox__description">
+		Programmer | Learner | Tinkerer
+	</div>
+	<div class="authorbox__socials">
+	  <span><a href="https://bsky.app/profile/zymacs.bsky.social"><i class="fa-brands fa-bluesky"></i></a></span>
+	  <span><a href="https://github.com/zymacs"><i class="fa-brands fa-github"></i></a></span>
+	</div>
+</div>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:35471/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mkdown/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rant/" title="Rant">Rant (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> <a href='/bio/cv'>Curriculam Vitae</a> </span>
+			<span class="footer__hireme-section"><a href='mailto:0nkzhmhoq@mozmail.com'> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
