@@ -8,6 +8,7 @@ tags:
   - lwic
 categories:
   - WeeklySeries
+authorbox: false
 ---
 
 

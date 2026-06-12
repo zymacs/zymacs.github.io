@@ -1,6 +1,7 @@
 ---
 title: ''
 sidebar: false
+authorbox: false
 ---
 
 

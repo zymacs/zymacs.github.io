@@ -8,20 +8,20 @@ menu:
 ---
 
 
-| What                                        | Where            |
-|---------------------------------------------+------------------|
-| CV (Curriculum Vitae)                       | [[/cv][/cv]]              |
-| What I am up to (Reading, movies, projects) | [[/now][/now]]             |
-| My sources                                  | [[/sources][/sources]]         |
-| How I built X                               | [[/how-i-built][/how-i-built]]     |
-| My study notes                              | [[/notes][/notes]]           |
-| Photo Gallery                               | [[/photo-gallery/2026][/photo-gallery]]   |
-| Quotes, random short thoughts, hot-takes    | [[/microblog][/microblog]]       |
-| Weekly Dev Log Series LWIC                  | [[/lwic][/lwic]]            |
-| Installation guides                         | [[/how-to-setup][/how-to-setup]]    |
-| Thinking out loud, learning by teaching     | [[/let-me-explain][/let-me-explain]]  |
-| Letters to self, reflections on my life     | [[/letters-to-self][/letters-to-self]] |
-| Challenges (X days of Y type challenges)    | [[/challenges][/challenges]]      |
+| What                                            | Where            |
+|-------------------------------------------------+------------------|
+| CV (Curriculum Vitae)                           | [[/cv][/cv]]              |
+| What I am up to (Reading, movies, projects)     | [[/now][/now]]             |
+| My sources                                      | [[/sources][/sources]]         |
+| How I built X                                   | [[/how-i-built][/how-i-built]]     |
+| My study notes                                  | [[/notes][/notes]]           |
+| Photo Gallery                                   | [[/photo-gallery/2026][/photo-gallery]]   |
+| Quotes, random short thoughts, hot-takes        | [[/microblog][/microblog]]       |
+| Weekly Dev Log Series LWIC                      | [[/lwic][/lwic]]            |
+| Installation guides                             | [[/how-to-setup][/how-to-setup]]    |
+| Thinking out loud, learning by teaching         | [[/let-me-explain][/let-me-explain]]  |
+| Letters to self, reflections on my life         | [[/letters-to-self][/letters-to-self]] |
+| Challenge updates (X days of Y type challenges) | [[/lwig][/lwig]]            |
 
 
 
