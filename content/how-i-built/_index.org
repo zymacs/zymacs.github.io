@@ -1,6 +1,8 @@
 ---
 title: ''
+sidebar: false
 ---
 
 Nothing that I'm ready to share yet. But soon there will be..
 Soon...
+-----

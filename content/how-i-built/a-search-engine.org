@@ -1,6 +1,7 @@
 ---
 authorbox: false
 draft: false
+sidebar: false
 ---
 
 *** Building a search engine Pt 1.
