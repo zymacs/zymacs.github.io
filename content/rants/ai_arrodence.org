@@ -3,15 +3,14 @@ title: "LLM's might lie sometimes"
 draft: false
 authorbox: false
 sidebar: false
+thumbnail: '/img/shh-quiet.gif'
 ---
 
-#+attr_html: :title SSH...
-[[shh-quiet.gif]]
 
 
-
-
-It seems  there’s things which after you learn they are dangerous, you grow to avoid them for ever. The burning effect fire has on physical contact for instance. You only have to get burnt once. The memory will be for ever effective. However, for some others, even after multiple learning lessons, we keep returning to put our hands in the proverbial fire. Since, the fire is not consistently what earlier lessons say it is.
+It seems  there’s things which after you learn they are dangerous, you grow to avoid them for ever. The burning effect fire has on physical contact for instance. You only have to get burnt once.
+The memory will for ever be effective. However, for some others, even after multiple learning lessons, we keep returning to put our hands in the metaphorical fire.
+Since, the fire is not consistently what earlier lessons say it is.
 
 That’s LLMs. LLMs makes mistakes. The chat clients consistently flash that ‘information might be wrong’ warning. But is this warning really meant to protect the user, or as some form of legal shield against what the LLMs companies know will go wrong?
 
