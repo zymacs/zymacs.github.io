@@ -2,10 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Site-Map on Zymacs</title>
+<<<<<<< HEAD
     <link>//localhost:41287/site-map/</link>
     <description>Recent content in Site-Map on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="//localhost:41287/site-map/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <link>//localhost:35471/site-map/</link>
+    <description>Recent content in Site-Map on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:35471/site-map/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> drafts/rthots
   </channel>
 </rss>

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "LLM's might lie sometimes"
 draft: false
 authorbox: false
@@ -55,3 +56,73 @@ This too, I think contributes to the same kind of addiction.
 A solution? I have none. I just wanted to rant about it. I use LLM's for key word generation though. They seem to be good at that.
 For everything else, I think its safest to pass. 
 
+=======
+title: 'AI confidence'
+draft: true
+---
+
+
+It seems  there's things which after you learn they are dangerous, you
+grow to avoid them for ever. Fire burns. You only have to get burnt
+once. The memory will be for ever effective. However, for certain things,
+even after multiple learning lessons, we keep returning to put our
+hands in the proverbial fire.
+
+AI. AI makes mistakes. The chat clients consistently flash that
+'information might be wrong' warning. But I think its useless.  And
+I think, for how much money these companies have, they can afford the brains
+to tell it is psycyologically upside down to hope that warning would be
+as effective as a fire burn would in deterring one from fire.
+
+After you send your first message, that warning is already forgotten.
+These things respond with a kind of confidence that's hard to see
+through. Even when sometimes, for topics about which we
+are proficient, we catch them lying and tell ourselves we shall
+forever be skeptical, a few minutes later, we are confidently
+self diagonising with Bixonimania.
+
+And trusting we really have it because the huge
+AI company's chat bot would never lie. I mean, it
+has read millions of books. It is very fluent. And
+one can only be fluent if they know their stuff .. right???
+
+I thought we just caught the fluent AI's lie a few minutes a go and
+make up our minds we
+would forever be skeptical..
+LLMs, the asbestos of the information architecture.
+LLM warnings are like warnings on cigarette boxes.
+Catch my drift?
+
+What solution then to this kind of tool. Which after you realise its
+faulty, continuing to use it erases your memory about the realisation.
+So you have to wait to realise again. And again.. And..
+
+Avoidance.
+
+I am very sure anyone that is not me. Since I am not popular at all
+so only I know who I am, searched for Zymacs, they would leave
+Gemini with a very warped impression. Zymacs is a mathematician
+interested in algorithms and Computer Science. (with a few links
+that since Gemini has already summarized them, its very unlikely
+the reader will click them).. I mean, the reader has learnt to
+just trust the first summary.. right.. but then.. the links
+lead to random linked in profiles that aint Zymacs (aint me). The info from
+which Gemini is building its case is two half written posts I did on
+Probability. Yet its profile of me reads like a wikipedia
+entry on Isaac Newton.
+
+Its the thief with a toy arm in a supermarket..
+convincing all there lives are on the line if they dont comply..
+
+You have to know the gun is 100 percent a sham to call the bluff.
+
+
+I use LLMs a lot btw. I'd gone a few days without using them at
+all but for certain tasks it seems I its going to take more will
+power than I have now. But what I use them for? Key word search.
+
+There's nothing Luddite about that. I am a Software Engineer. I
+have AI project plans. AI not LLM.
+
+See what Gemini has to say about 'Zymacs' 
+>>>>>>> drafts/rthots

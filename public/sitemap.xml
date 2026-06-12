@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+<<<<<<< HEAD
     <loc>//localhost:41287/lwic/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
   </url><url>
@@ -43,6 +44,52 @@
   </url><url>
     <loc>//localhost:41287/notes/</loc>
     <lastmod>2026-05-31T10:29:40+03:00</lastmod>
+=======
+    <loc>//localhost:1313/lwic/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/lwic/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/weeklyseries/</loc>
+    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/ai/</loc>
+    <lastmod>2026-06-02T10:10:06+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/rthots/intelligent_but_humble/</loc>
+    <lastmod>2026-06-02T10:10:06+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/rthots/</loc>
+    <lastmod>2026-06-02T10:10:06+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/cheatsheets/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/cheatsheets/linux/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-007/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-007/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+>>>>>>> drafts/rthots
   </url><url>
     <loc>//localhost:41287/post/last-week-in-code-007/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
@@ -53,6 +100,7 @@
     <loc>//localhost:41287/rthots/idea_hash/</loc>
     <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/tags/rthots/</loc>
     <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -75,17 +123,43 @@
     <lastmod>2026-05-22T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/tags/brain_teasers/</loc>
+=======
+    <loc>//localhost:1313/tags/rthots/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/bdated/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/digital_garden/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-006/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-006/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/</loc>
+    <lastmod>2026-05-21T19:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/brain_teasers/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/categories/interview-prep/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/let-me-explain/puzzels/burning_ropes/</loc>
+=======
+    <loc>//localhost:1313/let-me-explain/puzzels/burning_ropes/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/categories/quant-finance/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/let-me-explain/puzzels/card_game/</loc>
     <lastmod>2026-05-21T15:43:01+03:00</lastmod>
   </url><url>
@@ -102,12 +176,40 @@
     <lastmod>2026-05-19T19:48:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/lwic/last-week-in-code-005/</loc>
+=======
+    <loc>//localhost:1313/let-me-explain/puzzels/card_game/</loc>
+    <lastmod>2026-05-21T15:43:01+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/puzzels/birthday_problem/</loc>
+    <lastmod>2026-05-20T18:12:54+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/puzzels/river_crossing/</loc>
+    <lastmod>2026-05-20T15:49:44+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/puzzels/tiger_and_sheep/</loc>
+    <lastmod>2026-05-20T15:09:36+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/puzzels/screwy_pirates/</loc>
+    <lastmod>2026-05-19T19:48:27+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-005/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/post/android_usage_stats/</loc>
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/post/mkdown/android_usage_stats/</loc>
+=======
+    <loc>//localhost:1313/post/mkdown/android_usage_stats/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/mkdown/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/rabbit_holes/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/tags/rabbit_holes/</loc>
@@ -125,7 +227,11 @@
     <loc>//localhost:41287/tags/probability/</loc>
     <lastmod>2026-05-14T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/lwic/last-week-in-code-004/</loc>
+=======
+    <loc>//localhost:1313/lwic/last-week-in-code-004/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/post/probability_basics/</loc>
@@ -158,7 +264,11 @@
     <loc>//localhost:41287/post/grep/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/lwic/last-week-in-code-003/</loc>
+=======
+    <loc>//localhost:1313/lwic/last-week-in-code-003/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/categories/linux-tools/</loc>
@@ -167,10 +277,17 @@
     <loc>//localhost:41287/tags/text-manipulation/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/post/the-cost-for-not-documenting-solutions/</loc>
     <lastmod>2026-04-24T20:08:02+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/lwic/last-week-in-code-002/</loc>
+=======
+    <loc>//localhost:1313/post/the-cost-for-not-documenting-solutions/</loc>
+    <lastmod>2026-04-24T20:08:02+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-002/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/categories/computers/</loc>
@@ -188,6 +305,7 @@
     <loc>//localhost:41287/post/five-days-no-ai/</loc>
     <lastmod>2026-04-20T12:12:03+03:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/categories/challenges/</loc>
     <lastmod>2026-04-20T12:12:03+03:00</lastmod>
   </url><url>
@@ -195,6 +313,15 @@
     <lastmod>2026-04-20T12:12:03+03:00</lastmod>
   </url><url>
     <loc>//localhost:41287/lwic/last-week-in-code-001/</loc>
+=======
+    <loc>//localhost:1313/categories/challenges/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/productivity/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-001/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/categories/development/</loc>
@@ -212,10 +339,17 @@
     <loc>//localhost:41287/post/git-ignore-files/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/post/mkdown/git-ignore-files/</loc>
     <lastmod>2026-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/tags/blogspot/</loc>
+=======
+    <loc>//localhost:1313/post/mkdown/git-ignore-files/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/blogspot/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/tags/hugo/</loc>
@@ -227,6 +361,7 @@
     <loc>//localhost:41287/post/my-first-post/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/post/installing-python3-on-linux/</loc>
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -240,41 +375,105 @@
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/bio/about/</loc>
+=======
+    <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/bio/about/</loc>
+>>>>>>> drafts/rthots
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:41287/bio/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/challenge_records/</loc>
   </url><url>
     <loc>//localhost:41287/cv/</loc>
+=======
+    <loc>//localhost:1313/challenge_records/</loc>
+  </url><url>
+    <loc>//localhost:1313/cv/</loc>
+  </url><url>
+    <loc>//localhost:1313/how-i-built/</loc>
+  </url><url>
+    <loc>//localhost:1313/how-i-built/a-search-engine/</loc>
+  </url><url>
+    <loc>//localhost:1313/how-to-setup/</loc>
+  </url><url>
+    <loc>//localhost:1313/letters-to-self/</loc>
+  </url><url>
+    <loc>//localhost:1313/microblog/</loc>
+  </url><url>
+    <loc>//localhost:1313/misc./source_index/</loc>
+  </url><url>
+    <loc>//localhost:1313/now/</loc>
+  </url><url>
+    <loc>//localhost:1313/photo-gallery/2026/</loc>
+>>>>>>> drafts/rthots
   </url><url>
     <loc>//localhost:41287/how-i-built/</loc>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/how-i-built/a-search-engine/</loc>
   </url><url>
     <loc>//localhost:41287/how-to-setup/</loc>
   </url><url>
     <loc>//localhost:41287/letters-to-self/</loc>
+=======
+    <loc>//localhost:1313/quotes/engineer_creativity/</loc>
+  </url><url>
+    <loc>//localhost:1313/quotes/self_supporting/</loc>
+  </url><url>
+    <loc>//localhost:1313/quotes/what_the_hell/</loc>
+>>>>>>> drafts/rthots
   </url><url>
     <loc>//localhost:41287/microblog/</loc>
   </url><url>
     <loc>//localhost:41287/misc./source_index/</loc>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/now/</loc>
+=======
+    <loc>//localhost:1313/reading-lists/2026/</loc>
+  </url><url>
+    <loc>//localhost:1313/reading-lists/</loc>
+  </url><url>
+    <loc>//localhost:1313/sources/</loc>
+  </url><url>
+    <loc>//localhost:1313/challenges_index/</loc>
+>>>>>>> drafts/rthots
   </url><url>
     <loc>//localhost:41287/photo-gallery/2026/</loc>
   </url><url>
     <loc>//localhost:41287/project_writeups/cleaning_duplicates/</loc>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/quotes/engineer_creativity/</loc>
   </url><url>
     <loc>//localhost:41287/quotes/self_supporting/</loc>
+=======
+    <loc>//localhost:1313/lwig/last-week-in-growth-e001/</loc>
+  </url><url>
+    <loc>//localhost:1313/lwig/</loc>
+  </url><url>
+    <loc>//localhost:1313/my-code/</loc>
+>>>>>>> drafts/rthots
   </url><url>
     <loc>//localhost:41287/quotes/what_the_hell/</loc>
   </url><url>
     <loc>//localhost:41287/rants/</loc>
   </url><url>
+<<<<<<< HEAD
     <loc>//localhost:41287/reading-lists/2026/</loc>
   </url><url>
     <loc>//localhost:41287/reading-lists/</loc>
@@ -302,5 +501,16 @@
     <loc>//localhost:41287/project_writeups/</loc>
   </url><url>
     <loc>//localhost:41287/site-map/</loc>
+=======
+    <loc>//localhost:1313/challenge_records/no-movies/</loc>
+  </url><url>
+    <loc>//localhost:1313/notes/</loc>
+  </url><url>
+    <loc>//localhost:1313/project_writeups/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/rant/</loc>
+  </url><url>
+    <loc>//localhost:1313/site-map/</loc>
+>>>>>>> drafts/rthots
   </url>
 </urlset>

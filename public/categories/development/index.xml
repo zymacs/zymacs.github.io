@@ -2,38 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Zymacs</title>
+<<<<<<< HEAD
     <link>//localhost:41287/categories/development/</link>
+=======
+    <link>//localhost:35471/categories/development/</link>
+>>>>>>> drafts/rthots
     <description>Recent content in Development on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+<<<<<<< HEAD
     <atom:link href="//localhost:41287/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gitignore files</title>
       <link>//localhost:41287/post/git-ignore-files/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/post/git-ignore-files/</guid>
+=======
+    <atom:link href="//localhost:35471/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitignore files</title>
+      <link>//localhost:35471/post/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/git-ignore-files/</guid>
+>>>>>>> drafts/rthots
       <description>&lt;p&gt;&#xA;So I&amp;#39;ve been trying to make my way through&#xA;&lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole&#xA;lot of information so far and I was afraid for how not so often I used&#xA;it. That I was going to forget it all. Hence my decision to share some&#xA;of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;In this post we&amp;#39;ll look at something you probably have never read about&#xA;in isolation, gitignore files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gitignore files</title>
+<<<<<<< HEAD
       <link>//localhost:41287/post/mkdown/git-ignore-files/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/post/mkdown/git-ignore-files/</guid>
+=======
+      <link>//localhost:35471/post/mkdown/git-ignore-files/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/mkdown/git-ignore-files/</guid>
+>>>>>>> drafts/rthots
       <description>&lt;p&gt;So I&amp;rsquo;ve been trying to make my way through &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;. I have accumulated a whole lot of information so far and I was afraid&#xA;for how not so often I used it. That I was going to forget it all.&#xA;Hence my decision to share some of that with you, and with my future self.&lt;/p&gt;&#xA;&lt;p&gt;In this post we&amp;rsquo;ll look at something you probably have never read about in isolation, gitignore files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installing Python3 on Linux</title>
+<<<<<<< HEAD
       <link>//localhost:41287/post/installing-python3-on-linux/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/post/installing-python3-on-linux/</guid>
+=======
+      <link>//localhost:35471/post/installing-python3-on-linux/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/post/installing-python3-on-linux/</guid>
+>>>>>>> drafts/rthots
       <description>&lt;p&gt;&#xA;Python comes pre-installed on most Linux distros. But if for whichever&#xA;reason it isn&amp;#39;t installed on yours, we&amp;#39;ll install it in the next&#xA;section.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;First, let&amp;#39;s update and upgrade your system&lt;/p&gt;&#xA;&lt;p&gt;&#xA;If you are on Ubuntu, run:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA; sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;For Arch, run:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA;sudo pacman -Syu&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;Fedora:&lt;/p&gt;&#xA;&lt;pre class=&#34;example&#34;&gt;&#xA;sudo dnf upgrade&#xA;&lt;/pre&gt;&#xA;&lt;p&gt;&#xA;Now let&amp;#39;s install python (plus some extra packages you will most&#xA;definitely eventually need when using python)&lt;/p&gt;</description>
     </item>
     <item>
       <title>GIT</title>
+<<<<<<< HEAD
       <link>//localhost:41287/notes/git_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/notes/git_notes/</guid>
+=======
+      <link>//localhost:35471/notes/git_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/notes/git_notes/</guid>
+>>>>>>> drafts/rthots
       <description>&lt;p&gt;&#xA;The following is a collection of notes I took from reading the book on Git, &lt;a href=&#34;https://git-scm.com/book/en/v2&#34;&gt;Progit&lt;/a&gt;.&#xA;Its a page I am still growing. &lt;em&gt;(I got enough of the book to use Git with reasonable ease and have for long not updated the page)&lt;/em&gt;.&#xA;I am still sure it can be a good starting point or reference for most of the basics and more.&#xA;I also include links to articles from Atlassian that I used for deep dives where&#xA;I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter&#xA;of the book Progit. I haven&amp;#39;t added notes for it yet but it sure is an interesting read. It&amp;#39;s on&#xA;git internals and how the core commands work on the inside. &lt;em&gt;(The &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain&#34;&gt;plumbing commands&lt;/a&gt; that is)&lt;/em&gt;. &lt;/p&gt;</description>
     </item>
   </channel>

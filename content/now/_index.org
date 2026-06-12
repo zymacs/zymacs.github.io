@@ -7,8 +7,21 @@ menu:
     weight: 8
 ---
 
+<<<<<<< HEAD
 - Getting a masters degree scholarship
 - Increasing my chances for getting my dream job
 
+=======
+
+
+** Project's I'm working on
+- Search Engine
+
+** Books I'm reading 
+- The C++ Programming Language
+- Progit
+- Getting things done
+- History of evolution
+>>>>>>> drafts/rthots
 - [[/reading-lists/2026][See my 2026 reading list]]
   

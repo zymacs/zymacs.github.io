@@ -2,101 +2,186 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Zymacs</title>
+<<<<<<< HEAD
     <link>//localhost:41287/categories/</link>
+=======
+    <link>//localhost:35471/categories/</link>
+>>>>>>> drafts/rthots
     <description>Recent content in Categories on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
+<<<<<<< HEAD
     <atom:link href="//localhost:41287/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WeeklySeries</title>
       <link>//localhost:41287/categories/weeklyseries/</link>
       <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
       <guid>//localhost:41287/categories/weeklyseries/</guid>
+=======
+    <atom:link href="//localhost:35471/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WeeklySeries</title>
+      <link>//localhost:35471/categories/weeklyseries/</link>
+      <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
+      <guid>//localhost:35471/categories/weeklyseries/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Interview Prep</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/interview-prep/</link>
       <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
       <guid>//localhost:41287/categories/interview-prep/</guid>
+=======
+      <link>//localhost:35471/categories/interview-prep/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:35471/categories/interview-prep/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Quant Finance</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/quant-finance/</link>
       <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
       <guid>//localhost:41287/categories/quant-finance/</guid>
+=======
+      <link>//localhost:35471/categories/quant-finance/</link>
+      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
+      <guid>//localhost:35471/categories/quant-finance/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Random</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/random/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/random/</guid>
+=======
+      <link>//localhost:35471/categories/random/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/random/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Maths</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/maths/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/maths/</guid>
+=======
+      <link>//localhost:35471/categories/maths/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/maths/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Networking</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/networking/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/networking/</guid>
+=======
+      <link>//localhost:35471/categories/networking/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/networking/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Linux-Setup</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/linux-setup/</link>
       <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
       <guid>//localhost:41287/categories/linux-setup/</guid>
+=======
+      <link>//localhost:35471/categories/linux-setup/</link>
+      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
+      <guid>//localhost:35471/categories/linux-setup/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Linux Tools</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/linux-tools/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/linux-tools/</guid>
+=======
+      <link>//localhost:35471/categories/linux-tools/</link>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/linux-tools/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Computers</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/computers/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/computers/</guid>
+=======
+      <link>//localhost:35471/categories/computers/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/computers/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Challenges</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/challenges/</link>
       <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
       <guid>//localhost:41287/categories/challenges/</guid>
+=======
+      <link>//localhost:35471/categories/challenges/</link>
+      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
+      <guid>//localhost:35471/categories/challenges/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Development</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/development/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/development/</guid>
+=======
+      <link>//localhost:35471/categories/development/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/development/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Git</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/git/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/git/</guid>
+=======
+      <link>//localhost:35471/categories/git/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/git/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
     <item>
       <title>Python3</title>
+<<<<<<< HEAD
       <link>//localhost:41287/categories/python3/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:41287/categories/python3/</guid>
+=======
+      <link>//localhost:35471/categories/python3/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:35471/categories/python3/</guid>
+>>>>>>> drafts/rthots
       <description></description>
     </item>
   </channel>
