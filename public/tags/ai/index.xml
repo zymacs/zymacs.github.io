@@ -6,8 +6,15 @@
     <description>Recent content in AI on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 12:12:03 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 10:10:06 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auto correct for circumlocution: AI translation w/out LLM chats</title>
+      <link>//localhost:1313/rthots/intelligent_but_humble/</link>
+      <pubDate>Tue, 02 Jun 2026 10:10:06 +0300</pubDate>
+      <guid>//localhost:1313/rthots/intelligent_but_humble/</guid>
+      <description>&lt;p&gt;&#xA;So I haven&amp;#39;t gotten over them yet but, soon after I find&#xA;replacements for the most important services, I will. &#xA;I for have long been thinking about &#xA;all I use LLMs for. Thinking about  extracting alternative &#xA;providers for all LLM provided services. Services that I will then&#xA;turn into standalone products. All of which won&amp;#39;t &#xA;need the dreaded LLM chat box to work. &lt;/p&gt;&#xA;&lt;p&gt;&#xA;And, one of these services, one I think LLMs are really good&#xA;at, is, turning long fuzzy explanations for what you would like&#xA;to search for into relevant keywords that would yield the results you&#xA;actually need (with any browser). &lt;/p&gt;</description>
+    </item>
     <item>
       <title>5 Days No AI</title>
       <link>//localhost:1313/post/five-days-no-ai/</link>
