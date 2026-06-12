@@ -47,5 +47,11 @@ The result is , we just get in hoping we shall catch it on those few times when 
 
 How interesting. 
 
-I am personally still making rules about how to most effectively use this tool. Or how to constantly reinforce in my head the idea that it is that, a tool. I use it for converting my fuzzy queries to key words then do the rest of my search with the usual search engine. I am hoping someone will develop some browser that strips out the best of the LLM and integrates that into normal browsing experience, which was already good.  Which I think includes the key word search. Not the summary. Not the citations. 
+Also, there's a fascinating kind of addiction that arises out of a tool's reward system being unpredictable. The same reason
+for why slot machines and chat platforms designed like Omegle was are addictive. Articles have been written about this. Most however talk about
+LLM's giving a near accurate answer so the user can keep prompting for the perfect that never comes.
+This too, I think contributes to the same kind of addiction.
+
+A solution? I have none. I just wanted to rant about it. I use LLM's for key word generation though. They seem to be good at that.
+For everything else, I think its safest to pass. 
 
