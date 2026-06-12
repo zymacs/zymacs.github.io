@@ -2,39 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Random on Zymacs</title>
-    <link>//localhost:35471/categories/random/</link>
+    <link>//localhost:41287/categories/random/</link>
     <description>Recent content in Random on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:35471/categories/random/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:41287/categories/random/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hunting For Exportable Android Usage Stats</title>
-      <link>//localhost:35471/post/android_usage_stats/</link>
+      <link>//localhost:41287/post/android_usage_stats/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/android_usage_stats/</guid>
+      <guid>//localhost:41287/post/android_usage_stats/</guid>
       <description>&lt;p&gt;&#xA;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hunting For Exportable Android Usage Stats</title>
-      <link>//localhost:35471/post/mkdown/android_usage_stats/</link>
+      <link>//localhost:41287/post/mkdown/android_usage_stats/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/mkdown/android_usage_stats/</guid>
+      <guid>//localhost:41287/post/mkdown/android_usage_stats/</guid>
       <description>&lt;p&gt;I am doing some public accountability challenge on instagram and on&#xA;15.05.26 the theme was setting goals for improving my time management. I&#xA;was planning on discussing my problems with AI usage and how much of a&#xA;time sink my phone was. I needed to show some initial stats based on&#xA;which comparisons would be made in later updates to show improvement or&#xA;a lack thereof. I already have a dirty script for checking my AI usage&#xA;even when its not so understandable. What I did not have at all was&#xA;access to raw mobile screen time data on my PC.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My first post with Hugo</title>
-      <link>//localhost:35471/post/my-first-post/</link>
+      <link>//localhost:41287/post/my-first-post/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/my-first-post/</guid>
+      <guid>//localhost:41287/post/my-first-post/</guid>
       <description>&lt;p&gt;&#xA;I set up a site on &lt;a href=&#34;https://www.blogger.com/&#34;&gt;blogger&lt;/a&gt; (Google&amp;#39;s&#xA;blogspot) and dumped it for a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; design that&#xA;caught my eye. I thought I could learn some css building it myself. Feel&#xA;good from &lt;code class=&#34;verbatim&#34;&gt;doing it myself from scratch&lt;/code&gt;. But boy is CSS boring! And I&#xA;only realized this after 4 hours of centering &lt;code class=&#34;verbatim&#34;&gt;divs&lt;/code&gt; and hunting for&#xA;unclosed tags.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Now the day had almost come to an end and I was feeling guilty for the&#xA;waste that it&amp;#39;d been. So to alleviate the guilt , I decided to setup&#xA;Hugo. I mean why didn&amp;#39;t I do this in the first place? Anyways. After&#xA;some googling I got it running and hence this site. It looks nice&#xA;doesn&amp;#39;t it? I mean, I still have to remove some stock pages but I needed&#xA;some lorem ipsum available before I add content of my own.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My Computing Environment &amp; My Software Choices</title>
-      <link>//localhost:35471/rants/my_software_choices/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/rants/my_software_choices/</guid>
-      <description>&lt;p&gt;This&amp;rsquo;ll be a long mostly unstructured monologue about what OS I use, what software choices I&amp;rsquo;ve made and the some brief reasoning for those. A second draft that I decided to make live for reasons I mention at the end of the article. First on using Arch then onto software choices.&lt;/p&gt;&#xA;&lt;p&gt;So I use Linux. Arch Linux. And for a window manager; i3.&lt;/p&gt;&#xA;&lt;p&gt;Now I did&amp;rsquo;t start here. I went through the common natural evolution of the Linux User.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

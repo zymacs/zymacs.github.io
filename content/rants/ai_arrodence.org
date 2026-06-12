@@ -1,69 +1,51 @@
 ---
-title: 'AI confidence'
-draft: true
+title: "LLM's might lie sometimes"
+draft: false
+authorbox: false
+sidebar: false
 ---
 
-
-It seems  there's things which after you learn they are dangerous, you
-grow to avoid them for ever. Fire burns. You only have to get burnt
-once. The memory will be for ever effective. However, for certain things,
-even after multiple learning lessons, we keep returning to put our
-hands in the proverbial fire.
-
-AI. AI makes mistakes. The chat clients consistently flash that
-'information might be wrong' warning. But I think its useless.  And
-I think, for how much money these companies have, they can afford the brains
-to tell it is psycyologically upside down to hope that warning would be
-as effective as a fire burn would in deterring one from fire.
-
-After you send your first message, that warning is already forgotten.
-These things respond with a kind of confidence that's hard to see
-through. Even when sometimes, for topics about which we
-are proficient, we catch them lying and tell ourselves we shall
-forever be skeptical, a few minutes later, we are confidently
-self diagonising with Bixonimania.
-
-And trusting we really have it because the huge
-AI company's chat bot would never lie. I mean, it
-has read millions of books. It is very fluent. And
-one can only be fluent if they know their stuff .. right???
-
-I thought we just caught the fluent AI's lie a few minutes a go and
-make up our minds we
-would forever be skeptical..
-LLMs, the asbestos of the information architecture.
-LLM warnings are like warnings on cigarette boxes.
-Catch my drift?
-
-What solution then to this kind of tool. Which after you realise its
-faulty, continuing to use it erases your memory about the realisation.
-So you have to wait to realise again. And again.. And..
-
-Avoidance.
-
-I am very sure anyone that is not me. Since I am not popular at all
-so only I know who I am, searched for Zymacs, they would leave
-Gemini with a very warped impression. Zymacs is a mathematician
-interested in algorithms and Computer Science. (with a few links
-that since Gemini has already summarized them, its very unlikely
-the reader will click them).. I mean, the reader has learnt to
-just trust the first summary.. right.. but then.. the links
-lead to random linked in profiles that aint Zymacs (aint me). The info from
-which Gemini is building its case is two half written posts I did on
-Probability. Yet its profile of me reads like a wikipedia
-entry on Isaac Newton.
-
-Its the thief with a toy arm in a supermarket..
-convincing all there lives are on the line if they dont comply..
-
-You have to know the gun is 100 percent a sham to call the bluff.
+#+attr_html: :title SSH...
+[[shh-quiet.gif]]
 
 
-I use LLMs a lot btw. I'd gone a few days without using them at
-all but for certain tasks it seems I its going to take more will
-power than I have now. But what I use them for? Key word search.
 
-There's nothing Luddite about that. I am a Software Engineer. I
-have AI project plans. AI not LLM.
 
-See what Gemini has to say about 'Zymacs' 
+It seems  there’s things which after you learn they are dangerous, you grow to avoid them for ever. The burning effect fire has on physical contact for instance. You only have to get burnt once. The memory will be for ever effective. However, for some others, even after multiple learning lessons, we keep returning to put our hands in the proverbial fire. Since, the fire is not consistently what earlier lessons say it is.
+
+That’s LLMs. LLMs makes mistakes. The chat clients consistently flash that ‘information might be wrong’ warning. But is this warning really meant to protect the user, or as some form of legal shield against what the LLMs companies know will go wrong?
+
+Back to the fire metaphor. 
+
+If LLMs is the fire that we are warned against, that is with  “this LLM might spew out lies sometimes”, it is an interestingly different kind of fire.  LLMs are the kind of fire that is burning hot now and perceptibly  warm the next time you touch it.
+
+Emphasis on perceptibly. Its a fire that will burn you like you are a leper. Till it touches a part that still got some nerves: your domain of expertise, or any topic you are knowledgeable about.
+
+And sadly, that’s only a very small fraction of the surface area it has to burn. You won’t be sure its still burning till it returns to burn another one of those topics you know something about. 
+
+If you get what am saying.
+
+Such warnings as “This LLM sometimes makes mistakes.”  are utterly ineffective for getting humans to not trust AI.  But its just how humans function. You can’t be skeptical 24/7. Its a lot of work. You’d rather use a tool that you are sure you have more chances to catch if its lying, even on topics about which you ain’t an expert.
+
+And its gotten worse with the forced integration of AI with the browser search interface. SEO driven top results weren’t always right. But I’d say, people interacted more with the primary sources and for that, for those that were skeptical, there was more incentive to confirm if a source was speaking truth or not.
+
+With AI summaries however, that incentive has been destroyed. The first result is a summary that’s covered in what looks like correct citations. This screams credibility. I mean, the AI scrapped “THE WHOLE INTERNET” the information is already well synthesized. Why bother scrolling down to do the boring useless work of selecting sources you have already vetted.
+
+The path of least resistance is to, even for one that would have been more skeptical otherwise, take it as face value that what’s presented is truth.
+
+Just a few days back I searched for my pseudonym on Google and the Gemini summary of who I was read like some Wikipedia entry on an established Computer professional.  It sourced its summary from two articles, half written articles I’d published on probability and blew things out of proportion. But here’s what was worse. The source links, the credibility markers,  led to some random LinkedIn  posts that had nothing to do with the summary it had presented me with. 
+
+Now am wondering, what reaction would I have had if I’d instead searched for someone I did not know anything about?
+
+I’d most likely have confidently shared my /well cited/ findings. Now think about how many people are falling for this. For how so unpredictably inaccurate these results can be.
+
+Talking to someone about this they, they in their defense for AI, said that “But it is true most of the times”. This was a wrong but very good response. It pointed to exactly what the problem was.  And it made me rethink if the warning , however ineffective, was as effective as needed for its authors. 
+
+How many know it of the top of their heads that something that is predictably wrong is safer than something that is perceptibly more than often accurate yet unpredictably wrong? The warning is actually as well stated as it can be. It does not say “This LLM is always wrong”. It says “This LLM is sometimes wrong”. But who knows what this means? For a tool as seductive as an LLM.  
+
+The result is , we just get in hoping we shall catch it on those few times when it is wrong, which we don’t know when they will be. And what they get, the companies that is, is the engagement from growing blind trust in the AI that almost never tells lies. 
+
+How interesting. 
+
+I am personally still making rules about how to most effectively use this tool. Or how to constantly reinforce in my head the idea that it is that, a tool. I use it for converting my fuzzy queries to key words then do the rest of my search with the usual search engine. I am hoping someone will develop some browser that strips out the best of the LLM and integrates that into normal browsing experience, which was already good.  Which I think includes the key word search. Not the summary. Not the citations. 
+

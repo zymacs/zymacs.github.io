@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zymacs</title>
-    <link>//localhost:35471/microblog/</link>
+    <link>//localhost:41287/microblog/</link>
     <description>Recent content on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:35471/microblog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:41287/microblog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

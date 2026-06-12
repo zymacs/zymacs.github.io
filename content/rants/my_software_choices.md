@@ -1,7 +1,7 @@
 ---
 title: "My Computing Environment & My Software Choices"
 thumbnail: "img/terminal.png"
-draft: false
+draft: true
 pager: false
 tags:
  - rant
