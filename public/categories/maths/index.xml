@@ -2,43 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maths on Zymacs</title>
-<<<<<<< HEAD
-    <link>//localhost:41287/categories/maths/</link>
-=======
-    <link>//localhost:35471/categories/maths/</link>
->>>>>>> drafts/rthots
+    <link>//localhost:1313/categories/maths/</link>
     <description>Recent content in Maths on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate>
-<<<<<<< HEAD
-    <atom:link href="//localhost:41287/categories/maths/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/maths/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
-      <link>//localhost:41287/post/bayes_theorem/</link>
+      <link>//localhost:1313/post/bayes_theorem/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/post/bayes_theorem/</guid>
-=======
-    <atom:link href="//localhost:35471/categories/maths/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Baye&#39;s Theorem: Informal Proof and an Example.</title>
-      <link>//localhost:35471/post/bayes_theorem/</link>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/bayes_theorem/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/post/bayes_theorem/</guid>
       <description>&lt;p&gt;&#xA;Alright. I have tried to find the easiest way to explain Baye&amp;#39;s. I have&#xA;watched quite a number of videos and read quite a number of articles to&#xA;suppliment what I already know and to get better devices for delivering&#xA;the explanation. At this point I think its now just me being a&#xA;perfectionist. So I&amp;#39;ll teach it as best as I can get myself to: Using&#xA;proofs.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;First let&amp;#39;s state it formally&lt;/p&gt;</description>
     </item>
     <item>
       <title>Probability Intuition : The Basics</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/post/probability_basics/</link>
+      <link>//localhost:1313/post/probability_basics/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/post/probability_basics/</guid>
-=======
-      <link>//localhost:35471/post/probability_basics/</link>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/probability_basics/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/post/probability_basics/</guid>
       <description>&lt;p&gt;&#xA;How likely it is that some outcome will be the outcome given some event.&#xA;That is what probability is. Its a ratio. Given an event, there&amp;#39;s many&#xA;possible outcomes. The probability of some outcome being the outcome&#xA;that happens is a ratio of how much of the outcome is represented in&#xA;total outcomes to the total number of possible outcomes. For unweighted&#xA;or equally likely outcomes at least.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Its a very important foundational concept in a lot of Computer Science&#xA;Fields. Without understanding how it works, you&amp;#39;ll have a hard time&#xA;understanding more advanced concepts like the Baye&amp;#39;s theorem, or&#xA;wrapping your head around what&amp;#39;s going on with Markov chains or, working&#xA;with the foundational concepts for most of modern AI i.e: Neural&#xA;Networks. I&amp;#39;ll try to explain my understanding of it to you here without&#xA;using any formal terms. So don&amp;#39;t be surprised if you don&amp;#39;t see a lot of&#xA;&lt;code class=&#34;verbatim&#34;&gt;P(A n B n C)&lt;/code&gt; or &lt;code class=&#34;verbatim&#34;&gt;posterior&lt;/code&gt; and the such. There will be time for that.&lt;/p&gt;</description>
     </item>
   </channel>

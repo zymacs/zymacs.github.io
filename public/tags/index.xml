@@ -2,325 +2,171 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Zymacs</title>
-<<<<<<< HEAD
-    <link>//localhost:41287/tags/</link>
-=======
-    <link>//localhost:35471/tags/</link>
->>>>>>> drafts/rthots
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
-<<<<<<< HEAD
-    <atom:link href="//localhost:41287/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lwic</title>
-      <link>//localhost:41287/tags/lwic/</link>
+      <link>//localhost:1313/tags/lwic/</link>
       <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
-      <guid>//localhost:41287/tags/lwic/</guid>
-=======
-    <atom:link href="//localhost:35471/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Lwic</title>
-      <link>//localhost:35471/tags/lwic/</link>
-      <pubDate>Wed, 10 Jun 2026 19:39:17 +0300</pubDate>
-      <guid>//localhost:35471/tags/lwic/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/lwic/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/ai/</link>
+      <link>//localhost:1313/tags/ai/</link>
       <pubDate>Tue, 02 Jun 2026 10:10:06 +0300</pubDate>
-      <guid>//localhost:41287/tags/ai/</guid>
-=======
-      <link>//localhost:35471/tags/ai/</link>
-      <pubDate>Tue, 02 Jun 2026 10:10:06 +0300</pubDate>
-      <guid>//localhost:35471/tags/ai/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Rthots</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/rthots/</link>
+      <link>//localhost:1313/tags/rthots/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/rthots/</guid>
-=======
-      <link>//localhost:35471/tags/rthots/</link>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/rthots/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/rthots/</guid>
       <description></description>
     </item>
     <item>
       <title>Bdated</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/bdated/</link>
+      <link>//localhost:1313/tags/bdated/</link>
       <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
-      <guid>//localhost:41287/tags/bdated/</guid>
-=======
-      <link>//localhost:35471/tags/bdated/</link>
-      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
-      <guid>//localhost:35471/tags/bdated/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/bdated/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital_garden</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/digital_garden/</link>
+      <link>//localhost:1313/tags/digital_garden/</link>
       <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
-      <guid>//localhost:41287/tags/digital_garden/</guid>
-=======
-      <link>//localhost:35471/tags/digital_garden/</link>
-      <pubDate>Mon, 25 May 2026 22:49:48 +0300</pubDate>
-      <guid>//localhost:35471/tags/digital_garden/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/digital_garden/</guid>
       <description></description>
     </item>
     <item>
       <title>Brain_teasers</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/brain_teasers/</link>
+      <link>//localhost:1313/tags/brain_teasers/</link>
       <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
-      <guid>//localhost:41287/tags/brain_teasers/</guid>
-=======
-      <link>//localhost:35471/tags/brain_teasers/</link>
-      <pubDate>Thu, 21 May 2026 19:43:01 +0300</pubDate>
-      <guid>//localhost:35471/tags/brain_teasers/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/brain_teasers/</guid>
       <description></description>
     </item>
     <item>
       <title>Rabbit_holes</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/rabbit_holes/</link>
+      <link>//localhost:1313/tags/rabbit_holes/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/rabbit_holes/</guid>
-=======
-      <link>//localhost:35471/tags/rabbit_holes/</link>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/rabbit_holes/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/rabbit_holes/</guid>
       <description></description>
     </item>
     <item>
       <title>Probability</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/probability/</link>
+      <link>//localhost:1313/tags/probability/</link>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/probability/</guid>
-=======
-      <link>//localhost:35471/tags/probability/</link>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/probability/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/probability/</guid>
       <description></description>
     </item>
     <item>
       <title>Http</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/http/</link>
+      <link>//localhost:1313/tags/http/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/http/</guid>
-=======
-      <link>//localhost:35471/tags/http/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/http/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/http/</guid>
       <description></description>
     </item>
     <item>
       <title>Tcp</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/tcp/</link>
+      <link>//localhost:1313/tags/tcp/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/tcp/</guid>
-=======
-      <link>//localhost:35471/tags/tcp/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/tcp/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/tcp/</guid>
       <description></description>
     </item>
     <item>
       <title>Configs</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/configs/</link>
+      <link>//localhost:1313/tags/configs/</link>
       <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:41287/tags/configs/</guid>
-=======
-      <link>//localhost:35471/tags/configs/</link>
-      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:35471/tags/configs/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/configs/</guid>
       <description></description>
     </item>
     <item>
       <title>Ricing</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/ricing/</link>
+      <link>//localhost:1313/tags/ricing/</link>
       <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:41287/tags/ricing/</guid>
-=======
-      <link>//localhost:35471/tags/ricing/</link>
-      <pubDate>Sun, 03 May 2026 20:56:47 +0300</pubDate>
-      <guid>//localhost:35471/tags/ricing/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/ricing/</guid>
       <description></description>
     </item>
     <item>
       <title>Text-Manipulation</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/text-manipulation/</link>
+      <link>//localhost:1313/tags/text-manipulation/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/text-manipulation/</guid>
-=======
-      <link>//localhost:35471/tags/text-manipulation/</link>
-      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/text-manipulation/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/text-manipulation/</guid>
       <description></description>
     </item>
     <item>
       <title>Definitions</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/definitions/</link>
+      <link>//localhost:1313/tags/definitions/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/definitions/</guid>
-=======
-      <link>//localhost:35471/tags/definitions/</link>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/definitions/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/definitions/</guid>
       <description></description>
     </item>
     <item>
       <title>Fundamentals</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/fundamentals/</link>
+      <link>//localhost:1313/tags/fundamentals/</link>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/fundamentals/</guid>
-=======
-      <link>//localhost:35471/tags/fundamentals/</link>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/fundamentals/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/fundamentals/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/productivity/</link>
+      <link>//localhost:1313/tags/productivity/</link>
       <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
-      <guid>//localhost:41287/tags/productivity/</guid>
-=======
-      <link>//localhost:35471/tags/productivity/</link>
-      <pubDate>Mon, 20 Apr 2026 12:12:03 +0300</pubDate>
-      <guid>//localhost:35471/tags/productivity/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Development</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/development/</link>
+      <link>//localhost:1313/tags/development/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/development/</guid>
-=======
-      <link>//localhost:35471/tags/development/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/development/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/development/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/git/</link>
+      <link>//localhost:1313/tags/git/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/git/</guid>
-=======
-      <link>//localhost:35471/tags/git/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/git/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Blogspot</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/blogspot/</link>
+      <link>//localhost:1313/tags/blogspot/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/blogspot/</guid>
-=======
-      <link>//localhost:35471/tags/blogspot/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/blogspot/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/blogspot/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/hugo/</link>
+      <link>//localhost:1313/tags/hugo/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/hugo/</guid>
-=======
-      <link>//localhost:35471/tags/hugo/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/hugo/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Intro</title>
-<<<<<<< HEAD
-      <link>//localhost:41287/tags/intro/</link>
+      <link>//localhost:1313/tags/intro/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/intro/</guid>
+      <guid>//localhost:1313/tags/intro/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>//localhost:41287/tags/python/</link>
+      <link>//localhost:1313/tags/python/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/python/</guid>
+      <guid>//localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Python3</title>
-      <link>//localhost:41287/tags/python3/</link>
+      <link>//localhost:1313/tags/python3/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/tags/python3/</guid>
-=======
-      <link>//localhost:35471/tags/intro/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/intro/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>//localhost:35471/tags/python/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python3</title>
-      <link>//localhost:35471/tags/python3/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/python3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rant</title>
-      <link>//localhost:35471/tags/rant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/tags/rant/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/tags/python3/</guid>
       <description></description>
     </item>
   </channel>

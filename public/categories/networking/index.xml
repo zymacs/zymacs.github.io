@@ -2,30 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Zymacs</title>
-<<<<<<< HEAD
-    <link>//localhost:41287/categories/networking/</link>
-=======
-    <link>//localhost:35471/categories/networking/</link>
->>>>>>> drafts/rthots
+    <link>//localhost:1313/categories/networking/</link>
     <description>Recent content in Networking on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate>
-<<<<<<< HEAD
-    <atom:link href="//localhost:41287/categories/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The anatomy of a download over TCP</title>
-      <link>//localhost:41287/post/http_downloads/</link>
+      <link>//localhost:1313/post/http_downloads/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:41287/post/http_downloads/</guid>
-=======
-    <atom:link href="//localhost:35471/categories/networking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The anatomy of a download over TCP</title>
-      <link>//localhost:35471/post/http_downloads/</link>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:35471/post/http_downloads/</guid>
->>>>>>> drafts/rthots
+      <guid>//localhost:1313/post/http_downloads/</guid>
       <description>&lt;p&gt;&#xA;Let&amp;#39;s look at what happens from download instantiation by some download&#xA;client to when all data in its completeness is transferred from the&#xA;remote location to the downloader&amp;#39;s storage.&lt;/p&gt;&#xA;&lt;div id=&#34;outline-container-getting-a-uri-to-a-remote-resource&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;getting-a-uri-to-a-remote-resource&#34;&gt;&#xA;Getting a uri to a remote resource&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-getting-a-uri-to-a-remote-resource&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;You have been given some link of the form&#xA;&lt;code class=&#34;verbatim&#34;&gt;http://somesite.com:8031/file.txt&lt;/code&gt; to a remote file. From the URL we&#xA;can tell the remote file is located at the root folder &lt;code class=&#34;verbatim&#34;&gt;/&lt;/code&gt; on the&#xA;hosting server and that it is called &lt;code class=&#34;verbatim&#34;&gt;file.txt&lt;/code&gt;. This website is on some&#xA;server that supports the http protocol. Its hosted somewhere off your&#xA;system accessible via a network.&lt;/p&gt;</description>
     </item>
   </channel>

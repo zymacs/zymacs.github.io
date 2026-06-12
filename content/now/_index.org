@@ -7,21 +7,18 @@ menu:
     weight: 8
 ---
 
-<<<<<<< HEAD
-- Getting a masters degree scholarship
-- Increasing my chances for getting my dream job
 
-=======
+*** My current priorities
+-  Getting a masters degree scholarship
+-  Increasing my chances for getting my dream job
+-  Growing my spiritual and intellectual muscles
 
 
-** Project's I'm working on
-- Search Engine
+*** What am doing now
+- Reading and studying for intellectual, spiritual and career reasons
+- Searching and applying for masters degree scholarships
+- Working on projects to improve my programming skills
 
-** Books I'm reading 
-- The C++ Programming Language
-- Progit
-- Getting things done
-- History of evolution
->>>>>>> drafts/rthots
-- [[/reading-lists/2026][See my 2026 reading list]]
+
+/[[/reading-lists/2026][See my 2026 reading list]]/
   
