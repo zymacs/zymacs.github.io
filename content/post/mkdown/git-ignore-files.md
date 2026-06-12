@@ -2,6 +2,7 @@
 title: Gitignore files
 thumbnail: "img/git_icon.png"
 date: 2026-04-17
+draft: true
 tags:
   - git
   - development
