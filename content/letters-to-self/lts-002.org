@@ -1,16 +1,17 @@
 ---
-title: It's going to hurt, like it should
+title: "002: It's going to hurt, like it should"
 authorbox: false
 thumbnail: 'img/letter.png'
 ---
 
 Even if it will soon be over like the platitude states, it is going to hurt.
-Yes it will. You can optimize and hack around all you want to, but
-for some of what you want to achieve, there's no way to the goal but through the fire.
+Yes, it will. You can optimize and hack around all you want to. But,
+for some of what you want to achieve, there's not going to be any other way to the
+goal than through the fire.
 
-And don't complain about it like it's a bad thing. It's by design.
+And don't complain about it like it's a bad thing. It's that way by design.
 
-The reward would not be anywhere close to as valuable as it is, if getting it
+The reward would not be anywhere close to as valuable as it is if getting it
 did not involve some hurdles.
 
 Bite onto something. This isn't the pain that kills. This is the pain that

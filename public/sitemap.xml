@@ -281,6 +281,10 @@
   </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
+    <loc>//localhost:1313/letters-to-self/lts-002/</loc>
+  </url><url>
+    <loc>//localhost:1313/letters-to-self/lts-001/</loc>
+  </url><url>
     <loc>//localhost:1313/rants/ai_arrodence/</loc>
   </url><url>
     <loc>//localhost:1313/lwig/last-week-in-growth-e001/</loc>
@@ -296,5 +300,7 @@
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>
     <loc>//localhost:1313/site-map/</loc>
+  </url><url>
+    <loc>//localhost:1313/letters-to-self/lts-003/</loc>
   </url>
 </urlset>
