@@ -12,13 +12,11 @@ categories:
 
 
 3 months old is it? Last week in code episode 9. How coool!.
-So what was flying last week. Well, I was out on holiday so there wasn't
-a lot of coding. And most of what I write in these uploads is my experiences
-from the past week's coding activity.
+So what was flying last week? Well, I was out on holiday so there wasn't
+much coding going on.
 
-However, that time off gave me space to think about
-a number of issues. Some of which I'd like to share about.
-
+However, that time off gave me space to reflect on a number of issues.
+Some of which I'd like to share about.
 
 *** What I learnt this week.
 
