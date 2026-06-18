@@ -87,7 +87,7 @@ You could check out this article [[https://lizargall.github.io/blog/community-lo
 Nothing relevant crossed my radar. 
 
 **** Cool article
-Starting with [[lwic/last-week-in-code-008][lwic e008]],  I have been experimenting with getting one
+I have been experimenting with getting one
 update or cool article and ranting about it in this section. Sharing my thoughts on it.
 I am still figuring out how to structure my thoughts to keep it brief. I guess I am
 going to be that starting next episode. 
