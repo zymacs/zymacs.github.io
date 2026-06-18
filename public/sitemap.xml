@@ -2,25 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/lwic/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+    <loc>//localhost:1313/let-me-explain/</loc>
+    <lastmod>2026-06-18T08:09:50+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+    <loc>//localhost:1313/let-me-explain/the_binomial_theorem/</loc>
+    <lastmod>2026-06-18T08:09:50+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+    <lastmod>2026-06-18T08:09:50+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/lwic/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+    <loc>//localhost:1313/tags/maths/</loc>
+    <lastmod>2026-06-18T08:09:50+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+    <lastmod>2026-06-18T08:09:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/what-is-a-combination/</loc>
+    <lastmod>2026-06-18T07:09:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/what_a_permutation_is/</loc>
+    <lastmod>2026-06-18T06:09:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-009/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/lwic/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/weeklyseries/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/math-definitions/</loc>
+    <lastmod>2026-06-17T15:09:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/what_a_factorial_is/</loc>
+    <lastmod>2026-06-17T15:09:50+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/let-me-explain/what_a_logarithm_is/</loc>
+    <lastmod>2026-06-17T15:09:36+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
@@ -67,9 +94,6 @@
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-006/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/let-me-explain/</loc>
-    <lastmod>2026-05-23T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/mkdown/</loc>
     <lastmod>2026-05-22T15:43:01+03:00</lastmod>
@@ -245,8 +269,6 @@
   </url><url>
     <loc>//localhost:1313/how-i-built/</loc>
   </url><url>
-    <loc>//localhost:1313/how-i-built/a-search-engine/</loc>
-  </url><url>
     <loc>//localhost:1313/how-to-setup/</loc>
   </url><url>
     <loc>//localhost:1313/letters-to-self/</loc>
@@ -281,6 +303,8 @@
   </url><url>
     <loc>//localhost:1313/letters-to-self/lts-003/</loc>
   </url><url>
+    <loc>//localhost:1313/how-i-built/a-search-engine/</loc>
+  </url><url>
     <loc>//localhost:1313/challenges_index/</loc>
   </url><url>
     <loc>//localhost:1313/docs/</loc>
@@ -300,6 +324,8 @@
     <loc>//localhost:1313/challenge_records/no-movies/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/search-engine/</loc>
   </url><url>
     <loc>//localhost:1313/site-map/</loc>
   </url>
