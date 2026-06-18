@@ -86,15 +86,15 @@ You could check out this article [[https://lizargall.github.io/blog/community-lo
 **** News updates
 Nothing relevant crossed my radar. 
 
-**** Cool article
-I have been experimenting with getting one
-update or cool article and ranting about it in this section. Sharing my thoughts on it.
-I am still figuring out how to structure my thoughts to keep it brief. I guess I am
-going to be that starting next episode. 
+**** Cool articles
+
+/I have been experimenting with getting one/
+/update or cool article and ranting about it in this section. Sharing my thoughts on it./
+/I am still figuring out how to structure my thoughts to keep it brief. I guess the next
+episode will have that/
 
 - [[https://www.thesignalist.io/s/the-dialogue-dividend/][The dialogue dividend]]
-In this article the author makes a case for spontaneous conversation and thinking
-out loud. 
+
 
 *** Random finds
 - [[https://www.youtube.com/playlist?list=PLDbgk_jPPZaDvtbw9USUw91AV85y0xX2S][The famous Karparthy's LLM course]]
