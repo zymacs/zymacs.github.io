@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math Definitions on Zymacs</title>
+    <link>//localhost:1313/tags/math-definitions/</link>
+    <description>Recent content in Math Definitions on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/math-definitions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a factorial</title>
+      <link>//localhost:1313/let-me-explain/what_a_factorial_is/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/let-me-explain/what_a_factorial_is/</guid>
+      <description>&lt;p&gt;&#xA;You have 3 seats. Seat A, B and C. You need to find out how many ways you can arrange sitting order for&#xA;your friends friend 1 through 3 given seats A, B and C. Let&amp;#39;s say you choose a seat for a friend at a time.&#xA;And you follow the order 1 through 3. Friend 1 has 3 seat choices. After you choose one of the 3, 2 are left.&#xA;So friend 2 has 2 choices. Lastly, friend 3 has 1 choice.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

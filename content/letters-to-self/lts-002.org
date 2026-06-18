@@ -2,6 +2,7 @@
 title: "002: It's going to hurt, like it should"
 authorbox: false
 thumbnail: 'img/letter.png'
+sidebar: false
 ---
 
 Even if it will soon be over like the platitude states, it is going to hurt.

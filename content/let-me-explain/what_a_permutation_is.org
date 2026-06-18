@@ -1,0 +1,39 @@
+---
+title: 'What is a permutation'
+date: 2026-06-18T06:09:50+03:00
+tags:
+ - maths
+authorbox: false
+---
+
+
+In a previous post I wrote about what a factorial is. Its the number of ways n distinct
+positions can be filled. Or, the number of ways n distinct elements can be arranged in
+n distinct positions.
+
+Now the permutation. The number of elements is more than the number of positions to be filled
+or vice versa. If given 6 distinct elements, we need to find out how many ways
+we can fill up 4 distinct positions, that is a permutation.
+
+The problem is similar to the factorial but in this case we only care about 4 of the 6
+elements. The factorial solution only works when the number of positions to be filled
+coincides with the number of elements to fill up the positions. Otherwise, we need
+a different formula.
+
+So we find the number of ways to distinctly fill 6 positions. Then from that
+we take off the number of ways to fill 2 positions. Since filling 6 evaluates
+to 6x5x4x3x2x1 but we only care about the first four positions. The trailing (2x1) is cut
+off by dividing 6! by (6-4)!.
+
+The formula hence becomes:
+
+#+begin_src math
+  P(n,r) = n!/(n-r)!
+#+end_src
+
+Where n is the total number of slots to fill or the total number of elements and r
+is what number out of the total we shall be working with.
+
+
+Some interesting applications of permutations
+- Binomial theorem (Pascal's triangle)

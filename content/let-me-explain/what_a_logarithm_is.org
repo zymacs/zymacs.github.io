@@ -1,0 +1,36 @@
+---
+title: "What is a logarithm"
+date: 2026-06-17T15:09:36+03:00
+tags:
+ - maths
+authorbox: false
+---
+
+This one will be simple.
+A logarithm is how many times you have to repeatedly divide some number
+by the denominator until the quotient is a one.
+
+You have a number =a= that you divide by =b= and use the quotient as the next
+division operation's numerator. Carry on with the pattern till you get
+to a quotient which when divided by =b= you get one. The number of division
+operations is the logarithm to the base =b= of the number =a=.
+
+For instance, log base 2 of 8 is 3. Since 8/2 is 4 and 4/2 is 2 then finally,
+3rd division operation, 2/2 gives us a 1.
+
+That's it. Ain't magic.
+
+/Assume all logs are to base 2 from hence forth/
+
+*Some common laws of logarithms.*
+
+- log(b) = x implies 2^x = b
+- log(b^2) = 2xlog(b)
+- log(bxc) = log(b) + log(c)
+- log(b/c) = log(b) - log(c)
+
+  
+*Applications of logarithms*
+
+- Compression
+- Differentiation

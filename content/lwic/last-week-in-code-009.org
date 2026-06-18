@@ -1,0 +1,105 @@
+---
+title: Last Week In Code E009
+thumbnail: 'img/lwic.png'
+draft: false
+authorbox: false
+date: 2026-06-18
+tags:
+ - lwic
+categories:
+ - WeeklySeries
+---
+
+
+3 months old is it? Last week in code episode 9. How coool!.
+So what was flying last week. Well, I was out on holiday so there wasn't
+a lot of coding. And most of what I write in these uploads is my experiences
+from the past week's coding activity.
+
+However, that time off gave me space to think about
+a number of issues. Some of which I'd like to share about.
+
+
+*** What I learnt this week.
+
+**** Your skills are more perishable than you think
+
+If you work at your computer , programming and solving problems daily,
+it soon becomes the norm. The intensity of it starts to weigh low in your brain.
+But after just a few days AFK, it is common to experience a level of  friction the getting
+back to speed. The longer the holiday, the more intense the friction.
+
+I experienced this when I returned from 3 days of mental holiday.  I also remember
+experiencing the same when I'd spend a bigger number days off doing non-computer related
+tasks. To a point it  felt I was out of touch even before I had the reintergration friction
+remind me. Like I was losing a core part of my professional identity.
+Makes you understand why some code on holiday.
+
+All this made me more conscious of the danger I'd be setting my self for if I chose any kind
+of long term work that did not utilise or grow my core professional skills.
+The more detached from my profession's core task, the harder it would be to return.
+
+For some, there's reports claiming, they bail out of their profession completely just
+for this reason. I think its the same underlying issue with long periods of AI reliance,
+or part of the underlying why for licence renewal policies.
+
+This is actually a topic that's bigger than the space I have for it so if you are interested
+you could start your reading with this article here.
+
+
+**** Find ways to form a community of practice.
+And, you don't have to be popular to make it work.
+
+I like this blog. So very much so.
+I mentioned in [[/lwic/last-week-in-code-001][lwic e001]] I needed an outlet for my experiences and how that birthed this
+series. Well I was thinking about the concept of it.
+
+When persuing some goal or doing work within some mainstream domain, you usually, as a human , would like
+to talk about your experiences and listen to others in a space where you won't have
+to do a lot of explaining since every one in the space speaks the domain language. One way
+to get this is to have a club you meet with on a fixed schedule. Interesting there is actually
+a formal term for this: /Communities of practice/. But there's a problem
+with this physical meeting area model:
+
+Suppose you change locations to an area where no one is interested in what you are pursuing,
+what do you do for this kind of connection? Is it now gone? Well often, it is. Which I think is undesirable. And I noticed this
+affected all such Communities of practice that were dependent on a physical meet up location.
+Work out groups, codig groups, financial development groups. All affected the same.
+But it hit niche communities hardest. 
+
+Now I was thinking of a solution. Or trying to establish if I already had one.
+A means to share experiences that did not depend on
+if a certain group of people was available. Only on if I had the means.
+
+Enter blogging. I can blog from anywhere. Soon when I have a comments section, I will  include
+other's thoughts. But I am already gaining from the perception someone (doesn't matter if
+its real, only the perception does), is reading what am putting out. I also have a form
+of driver to progress in this domain so to have something to write about come next post.
+
+If you have been double thinking starting your own blog, putting it off because you
+thought probably no one would read it, this is probably for you. You don't need
+readers to gain from it. Those could come after. All that is extra imo.
+
+You could check out this article [[https://lizargall.github.io/blog/community-love/][here]] to learn more about Communities of practice. 
+
+*** In other news
+**** News updates
+Nothing relevant crossed my radar. 
+
+**** Cool article
+Starting with [[lwic/last-week-in-code-008][lwic e008]],  I have been experimenting with getting one
+update or cool article and ranting about it in this section. Sharing my thoughts on it.
+I am still figuring out how to structure my thoughts to keep it brief. I guess I am
+going to be that starting next episode. 
+
+- [[https://www.thesignalist.io/s/the-dialogue-dividend/][The dialogue dividend]]
+In this article the author makes a case for spontaneous conversation and thinking
+out loud. 
+
+*** Random finds
+- [[https://www.youtube.com/playlist?list=PLDbgk_jPPZaDvtbw9USUw91AV85y0xX2S][The famous Karparthy's LLM course]]
+- [[https://www.youtube.com/playlist?list=PLaZQkZp6WhWwoDuD6pQCmgVyDbUWl_ZUi][Information retrieval course]]
+
+
+
+As always, I hope you learnt something. 

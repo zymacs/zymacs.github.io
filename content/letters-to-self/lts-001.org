@@ -2,6 +2,7 @@
 title: "001: Life's events, like life, are nothing but a vapor."
 authorbox: false
 thumbnail: 'img/letter.png'
+sidebar: false
 ---
 
 It appears and its sooner than later, it's nothing. Gone. A memory. A forgotten memory.

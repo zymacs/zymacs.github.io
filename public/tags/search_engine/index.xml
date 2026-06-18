@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search_engine on Zymacs</title>
+    <link>//localhost:1313/tags/search_engine/</link>
+    <description>Recent content in Search_engine on Zymacs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/search_engine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Search Engine: Part 1</title>
+      <link>//localhost:1313/how-i-built/a-search-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/how-i-built/a-search-engine/</guid>
+      <description>&lt;p&gt;&#xA;I don&amp;#39;t have a file browser. Browsing and finding files within the terminal using  basic linux utils is fine for me.&#xA;But I have this folder with many books. It&amp;#39;s hard to find a book by name.&#xA;Theere&amp;#39;s just so many folders. Each labelled under the a book author&amp;#39;s name.&#xA;I mean, I could have used a simple &amp;#39;find&amp;#39; or &amp;#39;fzf&amp;#39; but there&amp;#39;s all&#xA;these ideas I needed to explore with search engines that I thought, this project would give me the opportunity to do so.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

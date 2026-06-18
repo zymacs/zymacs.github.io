@@ -6,8 +6,50 @@
     <description>Recent content in Index on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 08:09:50 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binomial theorem</title>
+      <link>//localhost:1313/let-me-explain/the_binomial_theorem/</link>
+      <pubDate>Thu, 18 Jun 2026 08:09:50 +0300</pubDate>
+      <guid>//localhost:1313/let-me-explain/the_binomial_theorem/</guid>
+      <description>&lt;p&gt;&#xA;Given the math problem (a+b)^2. You are required to expand it to its terms. There&amp;#39;s different ways to&#xA;go about this. One way is to multiply (a+b) into (a+b). That would give us a(a) + a(b) + b(a) + b(b)&#xA;which would result in &lt;code class=&#34;verbatim&#34;&gt;a^2 + ab + ba + b^2&lt;/code&gt; which essentially is &lt;code class=&#34;verbatim&#34;&gt;a^2 + 2ab + b^2&lt;/code&gt;. But&#xA;what if we replace the power 2 with some bigger number, say, 4. It becomes an impractical task solving this with rudimentary expansion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a combination</title>
+      <link>//localhost:1313/let-me-explain/what-is-a-combination/</link>
+      <pubDate>Thu, 18 Jun 2026 07:09:50 +0300</pubDate>
+      <guid>//localhost:1313/let-me-explain/what-is-a-combination/</guid>
+      <description>&lt;p&gt;&#xA;In previous posts I defined a permutation and a factorial. A combination is somewhat similar&#xA;to a permutation. With a permutation, the order of arrangements matters. Which isn&amp;#39;t the&#xA;case with combinations. A combination 121 is the same as the combination 211 and 112.&#xA;But those are three different  permutations.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;In some problems , the order of elements in an arrangement makes sense while in others&#xA;it does not. Permutations matter for passwords. But if we are dealing with food mixtures,&#xA;meat, chicken and beans would make up the same mixture as chicken, meat and beans.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a permutation</title>
+      <link>//localhost:1313/let-me-explain/what_a_permutation_is/</link>
+      <pubDate>Thu, 18 Jun 2026 06:09:50 +0300</pubDate>
+      <guid>//localhost:1313/let-me-explain/what_a_permutation_is/</guid>
+      <description>&lt;p&gt;&#xA;In a previous post I wrote about what a factorial is. Its the number of ways n distinct&#xA;positions can be filled. Or, the number of ways n distinct elements can be arranged in&#xA;n distinct positions.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Now the permutation. The number of elements is more than the number of positions to be filled&#xA;or vice versa. If given 6 distinct elements, we need to find out how many ways&#xA;we can fill up 4 distinct positions, that is a permutation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Code E009</title>
+      <link>//localhost:1313/lwic/last-week-in-code-009/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/lwic/last-week-in-code-009/</guid>
+      <description>&lt;p&gt;&#xA;3 months old is it? Last week in code episode 9. How coool!.&#xA;So what was flying last week. Well, I was out on holiday so there wasn&amp;#39;t&#xA;a lot of coding. And most of what I write in these uploads is my experiences&#xA;from the past week&amp;#39;s coding activity.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;However, that time off gave me space to think about&#xA;a number of issues. Some of which I&amp;#39;d like to share about.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a factorial</title>
+      <link>//localhost:1313/let-me-explain/what_a_factorial_is/</link>
+      <pubDate>Wed, 17 Jun 2026 15:09:50 +0300</pubDate>
+      <guid>//localhost:1313/let-me-explain/what_a_factorial_is/</guid>
+      <description>&lt;p&gt;&#xA;You have 3 seats. Seat A, B and C. You need to find out how many ways you can arrange sitting order for&#xA;your friends friend 1 through 3 given seats A, B and C. Let&amp;#39;s say you choose a seat for a friend at a time.&#xA;And you follow the order 1 through 3. Friend 1 has 3 seat choices. After you choose one of the 3, 2 are left.&#xA;So friend 2 has 2 choices. Lastly, friend 3 has 1 choice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a logarithm</title>
+      <link>//localhost:1313/let-me-explain/what_a_logarithm_is/</link>
+      <pubDate>Wed, 17 Jun 2026 15:09:36 +0300</pubDate>
+      <guid>//localhost:1313/let-me-explain/what_a_logarithm_is/</guid>
+      <description>&lt;p&gt;&#xA;This one will be simple.&#xA;A logarithm is how many times you have to repeatedly divide some number&#xA;by the denominator until the quotient is a one.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;You have a number &lt;code class=&#34;verbatim&#34;&gt;a&lt;/code&gt; that you divide by &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; and use the quotient as the next&#xA;division operation&amp;#39;s numerator. Carry on with the pattern till you get&#xA;to a quotient which when divided by &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; you get one. The number of division&#xA;operations is the logarithm to the base &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; of the number &lt;code class=&#34;verbatim&#34;&gt;a&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week in Code E008</title>
       <link>//localhost:1313/lwic/last-week-in-code-008/</link>
@@ -234,13 +276,6 @@
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/how-i-built/a-search-engine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-i-built/a-search-engine/</guid>
-      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;Building a search engine Pt 1.&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;p&gt;&#xA;Motivation&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Json file too big&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Redundant double search&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Worsening search with increasing search space.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Initial state&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Moving to json&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Learning about perf stats&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
       <link>//localhost:1313/misc./source_index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/misc./source_index/</guid>
@@ -308,6 +343,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/letters-to-self/lts-003/</guid>
       <description>&lt;p&gt;&#xA;Does fear help? I mean, its a good emotion. It gets you active. Makes&#xA;you more conscious of and ready to deal with possible threat.&#xA;But, could it often be why  you see more threat than there is?&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Beyond a certain threshold, I would say, your fear has shown you to be&#xA;clinically insane.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Most of what you refrain yourself from doing, most of what you humble yourself to&#xA;do out of fear, has been not for what is known to happen out of doing otherwise.&#xA;But rather for what  for what you thought might happen.&#xA;Which your own actions after you faced some of the fears you did have shown over and over&#xA;again, you were being too creative with your imaginations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Search Engine: Part 1</title>
+      <link>//localhost:1313/how-i-built/a-search-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/how-i-built/a-search-engine/</guid>
+      <description>&lt;p&gt;&#xA;I don&amp;#39;t have a file browser. Browsing and finding files within the terminal using  basic linux utils is fine for me.&#xA;But I have this folder with many books. It&amp;#39;s hard to find a book by name.&#xA;Theere&amp;#39;s just so many folders. Each labelled under the a book author&amp;#39;s name.&#xA;I mean, I could have used a simple &amp;#39;find&amp;#39; or &amp;#39;fzf&amp;#39; but there&amp;#39;s all&#xA;these ideas I needed to explore with search engines that I thought, this project would give me the opportunity to do so.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GIT</title>

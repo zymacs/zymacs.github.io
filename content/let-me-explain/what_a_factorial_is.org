@@ -1,0 +1,42 @@
+---
+title: "What is a factorial"
+date: 2026-06-17T15:09:50+03:00
+tags:
+ - math definitions
+---
+
+
+You have 3 seats. Seat A, B and C. You need to find out how many ways you can arrange sitting order for
+your friends friend 1 through 3 given seats A, B and C. Let's say you choose a seat for a friend at a time.
+And you follow the order 1 through 3. Friend 1 has 3 seat choices. After you choose one of the 3, 2 are left.
+So friend 2 has 2 choices. Lastly, friend 3 has 1 choice.
+
+How about we bring it down to two seats A and B. How many ways can these seats be arranged?
+We have AB and BA. First one can choose from first or second position. Second only has one positin
+to choose from. That is A_ or B_ then AB or BA.
+
+How about we bring it down to one seat. How many ways can this be arranged? 1 time.
+
+Then zero? How many times can we arrange 0 seats. One time. The arrangement is no arrangement.
+
+So back to three seats. A, B and C.
+
+Take one. We have 3 gaps. We need to fill the first one. Three ways to fill it.
+A,_,_ or B,_,_ or  C,_,_
+
+Take two. We have two gaps. We need to fill the second.  Two ways to fill it.
+[if we chose A for step 1] A,B,_ or  A,C,_ [if we chose B for step 1]  B,A,_ or  B,C,_ [if we chose C step 1]
+C,A,_ or C,B,_
+ 
+Take three (one way to feel each gap)
+
+[if we chose AB for slot 1 and 2] A,B,C [if we chose AC for slot 1 and 2] A,C,B [if we chose BA for slot 1 and 2]
+B,A,C, [if we chose BC for slot 1 and 2] B,C,A [if we chose CA]  C,A,B [if we chose CB] C,B,A
+
+So we have 3 ways to fill the first of the 3 empty slots. After which, for each of the three, there's two ways
+to fill the next slot. And finally we have 1 way to fill the remainder slot for each of the 3x2
+That is 3x2x1. That is 3!
+
+A factorial therefore is the number of ways a given number of distinct elements can be arranged.
+
+It is mathematically denoted by the exclamation. A factorial for a number x is =x!=.

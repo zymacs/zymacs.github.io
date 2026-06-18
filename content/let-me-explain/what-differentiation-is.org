@@ -1,0 +1,20 @@
+---
+title: 'What is differentiation'
+tags:
+ - maths
+draft: true
+---
+
+
+
+Rates of change
+Instantaneous change
+
+
+
+
+Applications
+- Machine Learning
+- Speed calculation
+- All that's got to do with establishing the rate at which some given measurable entitiy
+  is changing with respect to something else.

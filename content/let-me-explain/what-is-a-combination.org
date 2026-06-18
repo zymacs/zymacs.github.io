@@ -1,0 +1,43 @@
+---
+title: 'What is a combination'
+date: 2026-06-18T07:09:50+03:00
+tags:
+ - maths
+authorbox: false
+---
+
+
+In previous posts I defined a permutation and a factorial. A combination is somewhat similar
+to a permutation. With a permutation, the order of arrangements matters. Which isn't the
+case with combinations. A combination 121 is the same as the combination 211 and 112.
+But those are three different  permutations.
+
+In some problems , the order of elements in an arrangement makes sense while in others
+it does not. Permutations matter for passwords. But if we are dealing with food mixtures,
+meat, chicken and beans would make up the same mixture as chicken, meat and beans.
+
+So a combination is an unordered arrangement.
+
+So given a stack of 5 pencils. Pencils A, B, C, D,E  and you need to pick up 3.
+You want to figure out how many ways you can do this. It obviously does not matter
+if you pick ABC or BAC. We'd first calculate how many ways we can arrange the 3 from
+the 5 (something I covered in the permutation article).
+
+#+begin_src math
+  P(5,3) = 5!/(5-3)!
+#+end_src
+
+Then we would divide by 3! to collapse all similar arrangements of 3 into 1.
+Say for 3 distinct elements, we can have 3! different arrangements. Dividing by
+the number of arrangements gives a group (which is what we are interested in
+for permutations) and thus eliminate all repetitions.
+It would collapse (123, 132, 213, 231, 312, 321) to 1 for instance.
+
+The formula hence becomes
+
+#+begin_src math
+  C(n,r) = n!/((n-r)!)r!
+#+end_src
+
+Where C stands for combination, n for the total number of elements to choose from,
+r for the number of elements to be chosen.

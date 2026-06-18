@@ -1,26 +1,62 @@
 ---
+title: 'A Search Engine: Part 1'
 authorbox: false
 draft: false
 sidebar: false
+tags:
+ - search engine
 ---
 
-*** Building a search engine Pt 1.
-
-Motivation
 
 
-Json file too big
+I don't have a file browser. Browsing and finding files within the terminal using  basic linux utils is fine for me.
+But I have this folder with many books. It's hard to find a book by name.
+Theere's just so many folders. Each labelled under the a book author's name.
+I mean, I could have used a simple 'find' or 'fzf' but there's all
+these ideas I needed to explore with search engines that I thought, this project would give me the opportunity to do so.
 
-Redundant double search
+So I created a basic script to recursively search through the
+folder and return a list of matches given some query.
 
-Worsening search with increasing search space.
+The search was basic. It used path lib to find all regular files and checked each's name for if it contained my query as a substring.
+This worked better than the manual search I was doing but it still had issues.
+The search slowed down with increased search space and I thought it was a waste of time having to go through the whole
+regular file extraction and query matching more than once over the same search space.
+
+So the next iteration, version 2,  included caching. I used json to create an index of search key, search space, results. Say If i searched for git in the folder /Library,
+I'd keep a key 'Git' with an entry that's also a dictionary: '/library' then a value for the '/library' key that's all regular files whose names contain
+the substring 'git'.
+
+This was levels better than the previous version. Search got faster for repeated search tasks. Since old search work was cached and used in recurrent queries.
+But there was still a problem. If I queried for a term that had no search history over some search space, I had to wait until the next such search task to get
+the caching gains.
+
+So in version three, I created an indexing searvice that given search space, it went through all documents with defined extension, grabbed,
+their file names, tokenized them and created search an index as from the previous version.
+This time, even initial file search benefitted from the speed of caching if the search
+space was configured for indexing.
+
+Then came the next problem. The cache only included entries for regular files that were available during when the indexing happened. Also, for nested search spaces like /Library and /Library/Books, the program for the same search query, carried out two separate search tasks, one
+for /library and one for /library/books which was double work. An index over /library includes all thats in  /library/books .
+
+So version four included means to skip search space for some query if it was a subset of an already indexed search space.
+Say trying to index /library/books for some search query when /library is already indexed for that query.
+It also included a trigger that re indexed defined search space every time a target space got a new indexable document. 
 
 
-Initial state
+Still more problems to solve. The index was becoming bigger and bigger. And I was sure it was going to become impractical
+having to search through or maintain an index this size. I was avoiding databases but I was sure they could solve most
+of the problems that were to arise from the growing size of the json index. 
+
+At this point I got interested in the concept of search and indexing in general and read some about B-trees. I remembered that topic
+was mentioned in some material I'd read on database indexing. But I learnt what I was doing was more search engine related than
+data base related so I started to look more on the search engine side of things.
+
+*To be covered in Part 2.*
+
+- Moving from json to databases
+- On reducing index sizes 
+- Dealing with duplicate files
+- Briefly on solving the ranking problem
 
 
-Moving to json
-
-
-
-Learning about perf stats

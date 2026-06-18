@@ -1,5 +1,6 @@
 ---
 title: ''
+sidebar: false
 ---
 
 Letters to self... 

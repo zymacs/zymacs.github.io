@@ -2,6 +2,7 @@
 title: '003: The lion of your fears is a cat.'
 thumbnail: 'img/letter.png'
 authorbox: false
+sidebar: false
 ---
 
 Does fear help? I mean, its a good emotion. It gets you active. Makes

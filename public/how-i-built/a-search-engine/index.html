@@ -3,22 +3,17 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> - Zymacs</title>
+	<title>A Search Engine: Part 1 - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/how-i-built/a-search-engine/">
   <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Zymacs">
-  <meta property="og:description" content="Building a search engine Pt 1. Motivation
-Json file too big
-Redundant double search
-Worsening search with increasing search space.
-Initial state
-Moving to json
-Learning about perf stats">
+  <meta property="og:title" content="A Search Engine: Part 1">
+  <meta property="og:description" content="I don&#39;t have a file browser. Browsing and finding files within the terminal using basic linux utils is fine for me. But I have this folder with many books. It&#39;s hard to find a book by name. Theere&#39;s just so many folders. Each labelled under the a book author&#39;s name. I mean, I could have used a simple &#39;find&#39; or &#39;fzf&#39; but there&#39;s all these ideas I needed to explore with search engines that I thought, this project would give me the opportunity to do so.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="how-i-built">
+    <meta property="article:tag" content="Search Engine">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -124,35 +119,74 @@ Learning about perf stats">
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title"></h1>
+			<h1 class="post__title">A Search Engine: Part 1</h1>
 			
 		</header>
 		<div class="content post__content clearfix
 			    ">
-			
-<div id="outline-container-headline-1" class="outline-4">
-<h4 id="headline-1">
-Building a search engine Pt 1.
-</h4>
-<div id="outline-text-headline-1" class="outline-text-4">
+			<p>
+I don&#39;t have a file browser. Browsing and finding files within the terminal using  basic linux utils is fine for me.
+But I have this folder with many books. It&#39;s hard to find a book by name.
+Theere&#39;s just so many folders. Each labelled under the a book author&#39;s name.
+I mean, I could have used a simple &#39;find&#39; or &#39;fzf&#39; but there&#39;s all
+these ideas I needed to explore with search engines that I thought, this project would give me the opportunity to do so.</p>
 <p>
-Motivation</p>
+So I created a basic script to recursively search through the
+folder and return a list of matches given some query.</p>
 <p>
-Json file too big</p>
+The search was basic. It used path lib to find all regular files and checked each&#39;s name for if it contained my query as a substring.
+This worked better than the manual search I was doing but it still had issues.
+The search slowed down with increased search space and I thought it was a waste of time having to go through the whole
+regular file extraction and query matching more than once over the same search space.</p>
 <p>
-Redundant double search</p>
+So the next iteration, version 2,  included caching. I used json to create an index of search key, search space, results. Say If i searched for git in the folder /Library,
+I&#39;d keep a key &#39;Git&#39; with an entry that&#39;s also a dictionary: &#39;/library&#39; then a value for the &#39;/library&#39; key that&#39;s all regular files whose names contain
+the substring &#39;git&#39;.</p>
 <p>
-Worsening search with increasing search space.</p>
+This was levels better than the previous version. Search got faster for repeated search tasks. Since old search work was cached and used in recurrent queries.
+But there was still a problem. If I queried for a term that had no search history over some search space, I had to wait until the next such search task to get
+the caching gains.</p>
 <p>
-Initial state</p>
+So in version three, I created an indexing searvice that given search space, it went through all documents with defined extension, grabbed,
+their file names, tokenized them and created search an index as from the previous version.
+This time, even initial file search benefitted from the speed of caching if the search
+space was configured for indexing.</p>
 <p>
-Moving to json</p>
+Then came the next problem. The cache only included entries for regular files that were available during when the indexing happened. Also, for nested search spaces like /Library and /Library/Books, the program for the same search query, carried out two separate search tasks, one
+for /library and one for /library/books which was double work. An index over /library includes all thats in  /library/books .</p>
 <p>
-Learning about perf stats</p>
-</div>
-</div>
+So version four included means to skip search space for some query if it was a subset of an already indexed search space.
+Say trying to index /library/books for some search query when /library is already indexed for that query.
+It also included a trigger that re indexed defined search space every time a target space got a new indexable document. </p>
+<p>
+Still more problems to solve. The index was becoming bigger and bigger. And I was sure it was going to become impractical
+having to search through or maintain an index this size. I was avoiding databases but I was sure they could solve most
+of the problems that were to arise from the growing size of the json index. </p>
+<p>
+At this point I got interested in the concept of search and indexing in general and read some about B-trees. I remembered that topic
+was mentioned in some material I&#39;d read on database indexing. But I learnt what I was doing was more search engine related than
+data base related so I started to look more on the search engine side of things.</p>
+<p>
+<strong>To be covered in Part 2.</strong></p>
+<ul>
+<li>Moving from json to databases</li>
+<li>On reducing index sizes </li>
+<li>Dealing with duplicate files</li>
+<li>Briefly on solving the ranking problem</li>
+</ul>
 
 		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/search-engine/" rel="tag">search engine</a>
+		</li>
+	</ul>
+</div>
+		</footer>
 	</article>
 </main>
 

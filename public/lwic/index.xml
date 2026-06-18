@@ -6,8 +6,15 @@
     <description>Recent content on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 19:39:17 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/lwic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week In Code E009</title>
+      <link>//localhost:1313/lwic/last-week-in-code-009/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/lwic/last-week-in-code-009/</guid>
+      <description>&lt;p&gt;&#xA;3 months old is it? Last week in code episode 9. How coool!.&#xA;So what was flying last week. Well, I was out on holiday so there wasn&amp;#39;t&#xA;a lot of coding. And most of what I write in these uploads is my experiences&#xA;from the past week&amp;#39;s coding activity.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;However, that time off gave me space to think about&#xA;a number of issues. Some of which I&amp;#39;d like to share about.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week in Code E008</title>
       <link>//localhost:1313/lwic/last-week-in-code-008/</link>

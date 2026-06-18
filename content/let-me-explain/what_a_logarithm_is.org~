@@ -1,0 +1,12 @@
+---
+title: "What is a logarithm"
+---
+
+This one will be simple.
+A logarithm is how many times you have to repeatedly divide some number
+by the denominator until the quotient is a one.
+
+You have a number =a= that you divide by =b= and use the quotient as the next
+division operation's numerator. Carry on with the pattern till you get
+to a quotient which when divided by =b= you get one. The number of division
+operations is the logarithm to the base =b= of the number =a=. 
