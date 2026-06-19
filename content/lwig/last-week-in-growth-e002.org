@@ -1,6 +1,7 @@
 ---
 title: 'Last Week In Growth E002'
 date: 2026-06-18
+authorbox: false
 ---
 
 So last week I posted the first episode in the series and made some ambitious promises. I
