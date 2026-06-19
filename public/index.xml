@@ -37,6 +37,13 @@
       <description>&lt;p&gt;&#xA;3 months old is it? Last week in code episode 9. How coool!.&#xA;So what was flying last week? Well, I was out on holiday so there wasn&amp;#39;t&#xA;much coding going on.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;However, that time off gave me space to reflect on a number of issues.&#xA;Some of which I&amp;#39;d like to share about.&lt;/p&gt;&#xA;&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-4&#34;&gt;&#xA;&lt;h4 id=&#34;headline-1&#34;&gt;&#xA;What I learnt this week.&#xA;&lt;/h4&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-4&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-5&#34;&gt;&#xA;&lt;h5 id=&#34;headline-2&#34;&gt;&#xA;Your skills are more perishable than you think&#xA;&lt;/h5&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-5&#34;&gt;&#xA;&lt;p&gt;&#xA;If you work at your computer , programming and solving problems daily,&#xA;it soon becomes the norm. The intensity of it starts to weigh low on your brain.&#xA;But after just a few days AFK, it is common to experience a level of  friction getting&#xA;back to speed. The longer the holiday, the more intense the friction.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Last Week In Growth E002</title>
+      <link>//localhost:1313/lwig/last-week-in-growth-e002/</link>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/lwig/last-week-in-growth-e002/</guid>
+      <description>&lt;p&gt;&#xA;So last week I posted the first episode in the series and made some ambitious promises. I&#xA;did not keep my word for most of them. But, that&amp;#39;s why I have this blog. I like that I have&#xA;the evidence for my progress or lack thereof now publically available. Let&amp;#39;s see if&#xA;next week can be better.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I&amp;#39;ve resolved to give this blog a similar structure as &lt;a href=&#34;//localhost:1313/lwic&#34;&gt;/lwic&lt;/a&gt;. I&amp;#39;ll be writing some&#xA;updates from me. Then in the last section linking to some articles I read for self&#xA;growth and productivity. The separation is becoming a bit of a problem. It seems&#xA;there&amp;#39;s noticeable overlap between /lwic and /lwig. But I&amp;#39;m hoping differentiation&#xA;will arise as I write more uploads.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What is a factorial</title>
       <link>//localhost:1313/let-me-explain/what_a_factorial_is/</link>
       <pubDate>Wed, 17 Jun 2026 15:09:50 +0300</pubDate>
@@ -49,6 +56,13 @@
       <pubDate>Wed, 17 Jun 2026 15:09:36 +0300</pubDate>
       <guid>//localhost:1313/let-me-explain/what_a_logarithm_is/</guid>
       <description>&lt;p&gt;&#xA;This one will be simple.&#xA;A logarithm is how many times you have to repeatedly divide some number&#xA;by the denominator until the quotient is a one.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;You have a number &lt;code class=&#34;verbatim&#34;&gt;a&lt;/code&gt; that you divide by &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; and use the quotient as the next&#xA;division operation&amp;#39;s numerator. Carry on with the pattern till you get&#xA;to a quotient which when divided by &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; you get one. The number of division&#xA;operations is the logarithm to the base &lt;code class=&#34;verbatim&#34;&gt;b&lt;/code&gt; of the number &lt;code class=&#34;verbatim&#34;&gt;a&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Last Week In Growth E001</title>
+      <link>//localhost:1313/lwig/last-week-in-growth-e001/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/lwig/last-week-in-growth-e001/</guid>
+      <description>&lt;p&gt;&#xA;This is the first post in this series.&#xA;I have no idea if its the last. It could be.&#xA;My past experience doing such kinds of&#xA;challenges says it possibly is. But, who am I to&#xA;pull the plug on what could be.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Had the same sentinment for  &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-001&#34;&gt;lwic&lt;/a&gt; and &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-008&#34;&gt;8 weeks&lt;/a&gt; later,&#xA;it still stands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;May the force be with it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So in this series of posts, a weekly series,&#xA;I will be sharing updates on progress&#xA;getting better in a variety of life domains. Could be social,&#xA;spiritual, related to career,&#xA;intellect, any problem I have no issue making&#xA;a public record of.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Last Week in Code E008</title>
@@ -283,6 +297,13 @@
     </item>
     <item>
       <title></title>
+      <link>//localhost:1313/now/next_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/now/next_up/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Indie app development and solopreneurship&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Learning React, Tailwind and all that goes with it.&lt;/li&gt;&#xA;&lt;li&gt;Compiling actionable business ideas.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>//localhost:1313/photo-gallery/2026/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/photo-gallery/2026/</guid>
@@ -364,13 +385,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/rants/ai_arrodence/</guid>
       <description>&lt;p&gt;&#xA;It seems  there’s things which after you learn they are dangerous, you grow to avoid them for ever. The burning effect fire has on physical contact for instance. You only have to get burnt once.&#xA;The memory will for ever be effective. However, for some others, even after multiple learning lessons, we keep returning to put our hands in the metaphorical fire.&#xA;Since, the fire is not consistently what earlier lessons say it is.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>LWIG E001</title>
-      <link>//localhost:1313/lwig/last-week-in-growth-e001/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/lwig/last-week-in-growth-e001/</guid>
-      <description>&lt;p&gt;&#xA;This is the first post in this series.&#xA;I have no idea if its the last. It could be.&#xA;My past experience doing such kinds of&#xA;challenges says it possibly is. But, who am I to&#xA;pull the plug on what could be.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Had the same sentinment for  &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-001&#34;&gt;lwic&lt;/a&gt; and &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-008&#34;&gt;8 weeks&lt;/a&gt; later,&#xA;it still stands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;May the force be with it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So in this series of posts, a weekly series,&#xA;I will be sharing updates on progress&#xA;getting better in a variety of life domains. Could be social,&#xA;spiritual, related to career,&#xA;intellect, any problem I have no issue making&#xA;a public record of.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Sources</title>

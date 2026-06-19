@@ -1,0 +1,132 @@
+---
+title: 'Last Week In Growth E002'
+date: 2026-06-18
+---
+
+So last week I posted the first episode in the series and made some ambitious promises. I
+did not keep my word for most of them. But, that's why I have this blog. I like that I have
+the evidence for my progress or lack thereof now publically available. Let's see if
+next week can be better.
+
+I've resolved to give this blog a similar structure as [[/lwic][/lwic]]. I'll be writing some
+updates from me. Then in the last section linking to some articles I read for self
+growth and productivity. The separation is becoming a bit of a problem. It seems
+there's noticeable overlap between /lwic and /lwig. But I'm hoping differentiation
+will arise as I write more uploads.
+
+This first one will be me listing all areas that I think need to be worked on. I have no
+plan yet. Just a list of what needs work. Over the next series a plan and means to track
+progress will emerge I am hoping. 
+
+*** Updates from me
+
+**** Time management
+
+*The movies problem*
+
+I was writing a few days back about how short time is. Yet how easy it is, when wanting to
+waste it, to have a skewed estimate for how much for it is left. I spend around 2.5 hours a day
+on movies every day. Sometimes when I get hooked this can go as high as 8 hours. You can see there's obviously
+an issue. My self control is not so good. Watch that I ain't saying watching movies is bad.
+What I'm saying is any activity that's taking more time than it should is not good. This for me is more
+time than I can afford to allot to movies.
+
+And I think replacing it and anything else with alternative leisure that fast paces
+me towards my goals is something that I should easily do. It is possible for one to change
+their taste palates for what's entertaining if they put in the work.  But I have for all my attempts
+at doing that  kept on failing. Or, bailing out before my taste palates changed. Well, I
+haven't completely given up. I am trying again. Maybe differently this time.
+
+I have tried reading for a replacement before. But it usually is the case around movie watching time my brain
+can't take on reading tasks. So I just shut down on paragraph one. Then go through the frustrating task
+of figuring out at what point in the book that happened come next reading session. The other replacement
+was leisurely programming. But this only worked when I had a comfortable working environment. Maybe it's a
+different reason for why its hard now. But I'll let that wait for when I improve my working environment.
+
+I think the only option I have left now is sleeping early. Not doing a thing past 11:15 pm.  Taking
+that as an op to wake up early. It's going to be quite a busy week this coming one, with prep to relocate
+but I think that won't affect my sleep schedule or planned schedule much. I can start on the sleep
+at 11:15 pm plan this week.  Let's see how it goes. Sleep at 11:15, wake up  at 5:45 in the morning.
+
+How about a release? I shall set aside Friday night for a single movie. I will be taking an off from shows
+for a while then. My goals need a level of sacrifice and I guess watching shows is one of those things I will lay
+up as that. 
+
+**** Financial health
+Another area that needs work. I can't write all that I need to change about my financial life in one
+paragraph so I'll go one problem at a time. Maybe every now and then introduce another. So I'd like
+to start with awareness. Keeping log for what is spent. What other means to be conscious of waste
+than to have a track record for where it all goes. I have a cli app to help with that already. So
+the problem is using the app.
+
+I was thinking about why I would find such a simple but desirable task as logging my own expenses
+would turn out to be so hard. But I guess that does not help make it any easier so I'll stick to
+thought that helps. Well, I have realized that for most of what seems hard that actually isn't, after
+consistently forcing oneself to do it, it eventually becomes easy. But takes time.
+
+I was also thinking of starting a public fin log. I have seen some do it. I probably only have 30 bucs in
+my account but wouldn't it be fun to see that explode.. In I don't know how many years. But that's for later.
+
+Other areas I plan to talk about
+- Budgetting
+- Consistent financial education
+
+**** Physical health
+Workouts. I have plans, have had plans for a long time to get into calisthenics and martial arts. But before
+I stick to a basic pushups regimen, that will for ever be a pipe dream. I am restarting that challenge this week.
+More about physical health in the next updates. I am thinking some of these sections could gain from having
+their own dedicated sections for the sheer volume of how much I have to write on them.
+
+
+**** Core vision alignment
+Is what I am doing bringing me closer to my current core goals?
+I a while a go added a [[/now][/now]] section to the blog to help align all or most of what I did towards
+my current major goals. But did that help? No. Why did it not.
+
+I mean, it did. I thought more about the major goals than I usually do. So that's a plus.
+But I had no actionable plan for what I was going to have to do daily to achieve those
+goals. I therefore kept doing whatever it is I was doing. Productive work that did not
+get me what I wanted long term but.. felt productive.
+
+Also, I think I don't know what I want to become. I am not sure if my /now defined well enough if at all.
+Do I want to become anything? Or to make
+money? As in, am i really interested in becoming a Systems Engineer or in making enough
+money to push me out of the rat race. Fastest most efficient way, top way. 
+
+#+begin_quote
+/If you have to choose, and this is an important decision to make:/
+/Is it getting huge sums of money and checking out so as to do what you are *really* 
+interested in or.. becoming "someone" in your slow growing profession that you are interested in./
+#+end_quote
+
+Speaking of financial freedom over profession.
+I was looking at Marc Lou's blog a few minutes ago. Indie dev is what I think he does.
+I rememeber looking into the same after I just left school and making up my mind
+to learn app development just for that. Where that goal fell I don't rememeber.
+
+Problem? Consistency. How about I create a list of items to stick to. Commit to a sinking ship
+just so to rip the gains from being consistent.  I've created a section that ain't public
+called 'next_up' with what I will do next after what's on the 'doing now' section of the [[/now][/now]] page
+is cleared.
+
+**** Mental health
+Mental health. What does that mean? What makes for good mental health. Here's what I think. Yeah, first what
+I think then in later episodes, I will read more and share info from external sources. Following one's plan.
+The perception of progress. A good night's sleep. Good feeding. Excercise. Socializing. Hobbies. Good
+feeding. All contribute a better mental state.
+
+**** Spiritual, Intellectual growth
+See spiritual section. 
+
+
+
+**** Future of this blog
+That is a lot for a single upload. Its too much to sustain weekly output. I should have some means to put out
+something thats more brief next week. 
+
+
+*** In other news
+Not yet figured out what to add to this section. 
+
+
+I hope you learn't something and, I should see you in the next one.

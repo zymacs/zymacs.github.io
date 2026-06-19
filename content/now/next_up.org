@@ -1,0 +1,8 @@
+---
+draft: false
+---
+
+
+- Indie app development and solopreneurship
+  - Learning React, Tailwind and all that goes with it.
+  - Compiling actionable business ideas.

@@ -36,9 +36,9 @@ Alternative terms
 - Term 4: a^1(b^3)  (choose 1 a  ,  3 b)
 - Term 5: a^0(b^4)  (choose 0 a  ,  4 b)
 
-- How many ways can we get term 1? That's a 4 choose 4 which is a 1.
-- How many ways for term 2? That's a 4 choose 3 (C(4,3)), which is 4
-- How many ways for term 3? That's a 4 choose 2, which is 6
+- How many ways to choose 4 'a's? That's a 4 choose 4 which is a 1.
+- How many ways to choose 3 'a's? That's a 4 choose 3 (P(4,3)), which is 4
+- How many ways to choose 2 'a's? That's a 4 choose 2, which is 6
 - ... 
 =(a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4=
 

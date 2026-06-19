@@ -26,10 +26,16 @@
     <loc>//localhost:1313/lwic/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwig/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-009/</loc>
+    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/lwig/last-week-in-growth-e002/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/lwic/</loc>
@@ -47,8 +53,14 @@
     <loc>//localhost:1313/let-me-explain/what_a_logarithm_is/</loc>
     <lastmod>2026-06-17T15:09:36+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwig/last-week-in-growth-e001/</loc>
+    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2026-06-07T12:17:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/ai/</loc>
     <lastmod>2026-06-02T10:10:06+03:00</lastmod>
@@ -65,8 +77,8 @@
     <loc>//localhost:1313/cheatsheets/linux/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
+    <loc>//localhost:1313/notes/</loc>
+    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-007/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
@@ -91,6 +103,9 @@
   </url><url>
     <loc>//localhost:1313/post/last-week-in-code-006/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/mkdown/</loc>
+    <lastmod>2026-05-22T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
@@ -267,8 +282,6 @@
   </url><url>
     <loc>//localhost:1313/letters-to-self/</loc>
   </url><url>
-    <loc>//localhost:1313/lwig/</loc>
-  </url><url>
     <loc>//localhost:1313/microblog/</loc>
   </url><url>
     <loc>//localhost:1313/misc./source_index/</loc>
@@ -309,17 +322,11 @@
   </url><url>
     <loc>//localhost:1313/rants/ai_arrodence/</loc>
   </url><url>
-    <loc>//localhost:1313/lwig/last-week-in-growth-e001/</loc>
-  </url><url>
     <loc>//localhost:1313/my-code/</loc>
   </url><url>
     <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
     <loc>//localhost:1313/challenge_records/no-movies/</loc>
-  </url><url>
-    <loc>//localhost:1313/notes/</loc>
-  </url><url>
-    <loc>//localhost:1313/post/mkdown/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>

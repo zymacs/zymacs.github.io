@@ -1,6 +1,7 @@
 ---
-title: LWIG E001
+title: Last Week In Growth E001
 authorbox: false
+date: 2026-06-11
 ---
 
 
