@@ -21,7 +21,6 @@ menu:
 | Installation guides                             | [[/how-to-setup][/how-to-setup]]    |
 | Thinking out loud, learning by teaching         | [[/let-me-explain][/let-me-explain]]  |
 | Letters to self, reflections on my life         | [[/letters-to-self][/letters-to-self]] |
-| Weekly Productivity Series LWIG                 | [[/lwig][/lwig]]            |
 | Rants (random complaints about random things)   | [[/rants][/rants]]           |
 
 

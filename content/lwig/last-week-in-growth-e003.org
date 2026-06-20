@@ -1,0 +1,32 @@
+---
+title: "Last Week in Growth E003"
+date: 2026-06-20T09:00:30+03:00
+draft: true
+---
+
+
+Started journaling
+Started tracking my sleep
+Started doing pushups every morning
+Sleeping at 11 for 4 days out of 7
+I know with reasonable accuracy how much money I have. I plan to
+post figures soon. Need a section dedicated to that.
+I also got a tentative budget for my new location.
+Listed time sinks
+- Eliminated some
+- Turned some into hobby time
+  - Politics rabbit holes have 2.5 a week. There's a list of topics to look into.
+  - News got 20 minutes.
+Hobbies
+ - Recreational programming 
+ - Writing about applications of science in real life. Lying with statistics, app design, dysotopian imaginations about what common apps could become,
+   productitivy and philosopy
+Created time for spiritual growth
+Started Khanemman summariez. 1 page a day. Yes, just 1 page.
+Developed a morning and evening routine. Aint yet habitualized but they are something.
+
+
+All this is managed by a calendar. Thunderbird. I stopped waiting to learn
+emacs calendar mgt. Realized i was more interested in being organized than using an app.
+
+Have a small note book I am using as a TODO list.
