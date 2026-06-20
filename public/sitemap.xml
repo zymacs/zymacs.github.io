@@ -288,6 +288,8 @@
   </url><url>
     <loc>//localhost:1313/now/</loc>
   </url><url>
+    <loc>//localhost:1313/now/next_up/</loc>
+  </url><url>
     <loc>//localhost:1313/photo-gallery/2026/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
