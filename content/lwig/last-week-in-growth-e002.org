@@ -150,7 +150,10 @@ week's update.
 
 
 *** In other news
-Not yet figured out what to add to this section. 
+
+**** Videos
+- [[https://www.youtube.com/watch?v=_8-zCT752eM][Jordan P On incremental improvement (first 15 minutes or so)]]
+
 
 
 I hope you learn't something and, I should see you in the next one.

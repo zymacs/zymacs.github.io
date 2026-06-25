@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Last Week In Code E010: Reflection - Zymacs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="//localhost:1313/lwic/last-week-in-code-010/">
+  <meta property="og:site_name" content="Zymacs">
+  <meta property="og:title" content="Last Week In Code E010: Reflection">
+  <meta property="og:description" content="Last Week In Code E010 &amp; Last Week in Cyprus
+I like how the series&#39; name somehow saw this coming. I had no idea the same acronym to mean what happened last week in my world of code I was going to be able to use for refrence to my &#39;last week in Cyprus&#39;. Which, it now is. How cool… !
+So what was I doing this week? Well, like the week before the last one, not much. A lot of packing and prep for my next destination. I should be writing my next update from there. I&#39;m guessing you too notice that&#39;s a very long time not actively programming. And I notice too. I am actually starting to feel the toll of it. But settling I hope should some how fix that.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="lwic">
+    <meta property="article:published_time" content="2026-06-25T09:21:15+03:00">
+    <meta property="article:modified_time" content="2026-06-25T09:21:15+03:00">
+    <meta property="article:tag" content="Lwic">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/brands.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTBNB5EN4T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTBNB5EN4T');
+</script>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Zymacs" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/avatar.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Zymacs</div>
+					<div class="logo__tagline">Programming. Tinkering. Talking. More.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Index</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/site-map/">
+				
+				<span class="menu__text">SiteMap</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/notes/">
+				
+				<span class="menu__text">Notes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/microblog/">
+				
+				<span class="menu__text">MicroBlog</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/photo-gallery/2026/">
+				
+				<span class="menu__text">Photo Gallery</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/now/">
+				
+				<span class="menu__text">Now</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Last Week In Code E010: Reflection</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-06-25T09:21:15&#43;03:00">June 25, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/lwic.png" alt="Last Week In Code E010: Reflection">
+		
+	</figure><div class="content post__content clearfix
+			    ">
+			
+<p>
+<em>Last Week In Code E010 &amp; Last Week in Cyprus</em></p>
+<p>
+I like how the series&#39; name somehow saw this coming. I had no idea the same
+acronym to mean what happened last week in my world of code I was going
+to be able to use for refrence to my  &#39;last week in Cyprus&#39;.
+Which, it now is. How  cool… !</p>
+<p>
+So what was I doing this week? Well, like the week before the last one,
+not much. A lot of packing and prep for my next destination. I should be writing
+my next update from there. I&#39;m guessing you too notice that&#39;s a very
+long time not actively programming. And I notice too.
+I am actually starting to feel the toll of it. But settling I hope should
+some how fix that. </p>
+<p>
+Still as usual, that did not affect availability for what to share.
+A lot has happened since <a href="/lwic/last-week-in-code-001">e001</a>.</p>
+<p>
+<strong>The good</strong></p>
+<ul>
+<li>I have been consistently posting every week for 10 weeks.</li>
+</ul>
+<p><strong>The bad</strong></p>
+<div id="outline-container-headline-1" class="outline-5">
+<h5 id="headline-1">
+No fixed upload day.
+</h5>
+<div id="outline-text-headline-1" class="outline-text-5">
+<ul>
+<li>Some uploads come in on Thursday, some Wednesday, some Tuesday.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-5">
+<h5 id="headline-2">
+Wordiness and unnecessary detail
+</h5>
+<div id="outline-text-headline-2" class="outline-text-5">
+<ul>
+<li>I think I use a lot of words. The problem could be a lack of editing or
+a lack of time to edit. Which could be because I write every episode
+the very day when I upload it.</li>
+<li>Also, there&#39;s details added that I think are better left out or
+spoken about more abstractly. But that&#39;s for problem number next. <em>devolving</em>
+<em>structure</em>. </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-5">
+<h5 id="headline-3">
+Devolving structure.
+</h5>
+<div id="outline-text-headline-3" class="outline-text-5">
+<ul>
+<li>From writing for an audience to writing for self. Building on the previous
+point.  I interestingly had solid structure for episodes 001 and 002 but  as
+time past lost the plot. Started to ramble about all sorts of things.
+The series has since been devolving into some form of public stream of consciousness
+style diary. I think I will use the next 10 weeks to fix that. I like
+the benefits from writing for self. But I guess I can get the best of both
+worlds. The lack of pressure from the perception I have no audience and
+the structure from the perception I do. </li>
+<li>Also, this reflection I am doing right now about the site&#39;s future and
+structure will have to move to somewhere else. Until 10 weeks since
+a reflection post. I have done some market research and found others
+have separate sections for this type of writing. And with good reasons.
+You have no business constantly following what challenges I am fixing. Only
+to see the results of it.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-5">
+<h5 id="headline-4">
+No contacts.
+</h5>
+<div id="outline-text-headline-4" class="outline-text-5">
+<ul>
+<li>Have you ever noticed I almost never add a contact me section at the end of
+my uploads?  </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-5">
+<h5 id="headline-5">
+Summary
+</h5>
+<div id="outline-text-headline-5" class="outline-text-5">
+<ul>
+<li>I won&#39;t fix the all the issues in a single update but will keep this somewhere
+to slowly eat away at them with continuous improvement.  I hope to come
+back to this in e020 to check on progress.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
+<h4 id="headline-6">
+More plans for the next 10 weeks.
+</h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p>
+It&#39;s so unreal a while back I wasn&#39;t sure if I was going to last past episode
+two and now here I am.  So confidently planning the next 10 weeks. But anyways.</p>
+<div id="outline-container-headline-7" class="outline-5">
+<h5 id="headline-7">
+Podcasting.
+</h5>
+<div id="outline-text-headline-7" class="outline-text-5">
+<p>
+Now this is going to be a somewhat ambitious undertaking. If I may share, I&#39;d
+like to have this evolve into something that sounds professional and technical
+by around e040. I am still really behind on that schedule. But one step
+at a time. </p>
+<p>
+I have no prior success podcasting but I guess I got to start somewhere.
+The name will obviously be &#39;Last Week In Code&#39;. The content and all other items
+are still issues I am researching.</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-5">
+<h5 id="headline-8">
+Building a community
+</h5>
+<div id="outline-text-headline-8" class="outline-text-5">
+<p>
+I could have talked about building a community but I guess I can only
+think about that if all goes well past e060 or so. That means doing some
+publicity and having site structure that is worth the publicity.</p>
+<p>
+But this seems so early to start thinking about community so I guess I
+will just leave this tab open in my mind till I return to it.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+Closing
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p>Its been 10 weeks. I have no means to know who&#39;s been following since e001.
+And that is by design. But if that&#39;s been you, thaanks. I am hoping to see
+you around over the next 10 weeks also.</p>
+<p>
+<strong>Contact Me</strong></p>
+<ul>
+<li><a href="https://bsky.app/profile/zymacs.bsky.social">BlueSky: zymacs</a></li>
+<li><a href="https://t.me/@zymacs_1">Telegram: zymacs_1</a></li>
+</ul>
+</div>
+</div>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lwic/" rel="tag">lwic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/lwic/last-week-in-code-009/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Last Week In Code E009</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://duckduckgo.com">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sites" value="zymacs.github.io //localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/probability_basics/">Probability Intuition : The Basics</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/computers/">Computers</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/development/">Development</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/git/">Git</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/maths/">Maths</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/python3/">Python3</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/math-definitions/" title="Math Definitions">Math Definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/maths/" title="Maths">Maths (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/search-engine/" title="Search Engine">Search Engine (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		
+<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 Zymacs.
+			
+			<span class="footer__cv-section"> <a href='/bio/cv'>Curriculam Vitae</a> </span>
+			<span class="footer__hireme-section"><a href='mailto:0nkzhmhoq@mozmail.com'> HIRE ME</a></span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

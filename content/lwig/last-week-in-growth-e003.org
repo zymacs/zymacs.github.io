@@ -5,6 +5,48 @@ draft: true
 ---
 
 
+Morning routine
+- Up
+- Pray
+- Lay bed
+- Pushups
+- Shower
+- Journal, Tea, logs
+-- logs
+  - sleep
+  - workouts
+  - entertainment  (movies)
+  - reading
+    - Khaneman
+    - Emacs
+    - C++
+- Grab item one on todo list
+
+
+Pre evening routine
+- Evening walk
+- Light workout (rop skipping)
+- Shower
+- Cooking
+
+
+Evening routine
+- Clean all utensils
+- Clean up room
+- Prep clothes for next day
+
+Bi weekly routine
+- Clean ups
+  - Gadgets
+  - Clothing
+  - Hair
+  - Nails
+
+Review routine
+- Budget for next week
+- Topic for next week politics
+- Listing for what article to write for the week (leisurely)
+
 Started journaling
 Started tracking my sleep
 Started doing pushups every morning

@@ -11,6 +11,15 @@ sidebar: false
 Quotes, Excerpts, Short Essays that got leaked.
 
 #+begin_quote
+ It's an interesting thing how a lot of people that have bad blood between each other often forget all about their differences when one
+ falls sick or... gets into similar kind of trouble. Its like, if we, as enemies now, are going to be
+ friends when am sick, what's the point in being enemies now? 
+#+end_quote
+
+
+-----
+
+#+begin_quote
  You know that quote from The Office? */I wish we knew we were in the good old days when it was the good old days/*"?
  Well, these are the /good old days/. These are the very good old days we shall soon be looking back on with nostalgia. So  we gotta make the most out of them while they still last.
 /--- A random insta reel./
