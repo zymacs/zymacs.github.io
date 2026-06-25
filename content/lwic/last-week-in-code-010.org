@@ -68,9 +68,19 @@ A lot has happened since [[/lwic/last-week-in-code-001][e001]].
   my uploads?  
 
 **** Summary
-- I won't fix the all the issues in a single update but will keep this somewhere
-  to slowly eat away at them with continuous improvement.  I hope to come
-  back to this in e020 to check on progress.
+- A central problem underlying all from the previous posts is: there's
+  been a meta spiral going on. From writing about what I was doing
+  to writing about productivity and myself as a form of escape, even
+  when most of the points I made were valid.
+
+  I am possibly going to have an anchor project about which I will
+  write over a span of 8 weeks. It is more fun to follow and ensure's there's
+  always something to write about, something solid to learn. Also makes
+  sure I am not constantly rambling abount all sorts of randomness.
+  
+  I won't fix the all the issues in a single update but will keep this somewhere
+  to slowly eat away at them with continuous improvement.  I am
+  hoping e011's tone is going to be vastly different.
 
 *** More plans for the next 10 weeks.
 

@@ -6,8 +6,15 @@
     <description>Recent content in WeeklySeries on Zymacs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 09:21:15 +0300</lastBuildDate>
     <atom:link href="//localhost:1313/categories/weeklyseries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Last Week In Code E010: Reflection</title>
+      <link>//localhost:1313/lwic/last-week-in-code-010/</link>
+      <pubDate>Thu, 25 Jun 2026 09:21:15 +0300</pubDate>
+      <guid>//localhost:1313/lwic/last-week-in-code-010/</guid>
+      <description>&lt;p&gt;&#xA;&lt;em&gt;Last Week In Code E010 &amp;amp; Last Week in Cyprus&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I like how the series&amp;#39; name somehow saw this coming. I had no idea the same&#xA;acronym to mean what happened last week in my world of code I was going&#xA;to be able to use for refrence to my  &amp;#39;last week in Cyprus&amp;#39;.&#xA;Which, it now is. How  cool… !&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So what was I doing this week? Well, like the week before the last one,&#xA;not much. A lot of packing and prep for my next destination. I should be writing&#xA;my next update from there. I&amp;#39;m guessing you too notice that&amp;#39;s a very&#xA;long time not actively programming. And I notice too.&#xA;I am actually starting to feel the toll of it. But settling I hope should&#xA;some how fix that. &lt;/p&gt;</description>
+    </item>
     <item>
       <title>Last Week In Code E009</title>
       <link>//localhost:1313/lwic/last-week-in-code-009/</link>
