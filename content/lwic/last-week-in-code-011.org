@@ -10,7 +10,7 @@ categories:
   - WeeklySeries
 ---
 
-Yelllow .... Relocated and it's taken me for ever to settle in
+ .... Relocated and it's taken me for ever to settle in
 but here I am. Left my computer cable behind and it has no battery so that's kept me back
 for a while among other reasons. I'm typing this out on a 13 year old Surface Tablet /running Debian 12/. Yes, Linux on
 a Microsoft tab. Any how, straight to business.
