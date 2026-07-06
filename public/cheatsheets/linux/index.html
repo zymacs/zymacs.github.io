@@ -6,15 +6,12 @@
 	<title>linux - Zymacs</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:url" content="//localhost:1313/cheatsheets/linux/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="linux">
-  <meta property="og:description" content="1. FILE &amp; DIRECTORY NAVIGATION Basics File Basics ls List files and directories ls -l Long listing format (permissions, owner, size, date) ls -a Show hidden files (starting with a dot) ls -lh Human-readable sizes (e.g., 4K, 23M) pwd Print working directory Directory Navigation cd &lt;dir&gt; Change directory to &lt;dir&gt; cd .. Go up one directory level cd ~ Go to home directory cd - Go to previous directory File Management mkdir &lt;dir&gt; Create a new directory rmdir &lt;dir&gt; Remove empty directory 2. VIEWING &amp; FILTERING FILE CONTENT File Content Viewers cat &lt;file&gt; Display entire file content less &lt;file&gt; View file page by page (scrollable, press &#39;q&#39; to quit) more &lt;file&gt; View file (scroll scroll forward only) head &lt;file&gt; Show first 10 lines ? head -n 20 &lt;file&gt;:: Show first 20 lines tail &lt;file&gt; Show last 10 lines ? tail -n 20 &lt;file&gt;:: Show last 20 lines tail -f &lt;file&gt; Follow file updates in real-time (live log tracing) nl &lt;file&gt; Number all lines Content Statistics wc &lt;file&gt; Count lines, words, and bytes wc -l &lt;file&gt; Count lines only wc -w &lt;file&gt; Count words only wc -c &lt;file&gt; Count bytes only File Information stat &lt;file&gt; Show detailed file statistics and metadata file &lt;file&gt; Determine file/data type tree &lt;dir&gt; Show directory tree structure layout ls -R &lt;dir&gt; List files recursively realpath &lt;file&gt; Show full absolute path Text Filtering &amp; Search (grep, awk, sed) grep &#34;pattern&#34; &lt;file&gt; Search specific pattern in a file grep -i &#34;pattern&#34; &lt;file&gt; Ignore case sensitive details grep -r &#34;pattern&#34; &lt;dir&gt; Search recursively across directory paths grep -n &#34;pattern&#34; &lt;file&gt; Show line numbers alongside results grep -v &#34;pattern&#34; &lt;file&gt; Invert match (exclude lines matching pattern) awk &#39;{print $1}&#39; &lt;file&gt; Print first column of text data awk -F: &#39;{print $1}&#39; /etc/passwd Use &#34;:&#34; as field delimiter sed -n &#39;1,5p&#39; &lt;file&gt; Print lines 1 to 5 specifically sed &#39;s/old/new/g&#39; &lt;file&gt; Replace all instances of &#39;old&#39; with &#39;new&#39; cut -d: -f1 &lt;file&gt; Cut columns using custom delimiters sort &lt;file&gt; Sort text lines uniq &lt;file&gt; Remove duplicate duplicate lines uniq -c &lt;file&gt; Count duplicate lines tr &#39;a-z&#39; &#39;A-Z&#39; &lt;file&gt; Convert text strings from lowercase to UPPERCASE 3. PROCESS &amp; SYSTEM MANAGEMENT Process Management ps Show current active process shell instances ps aux All running processes across the active system (detailed layout) ps -ef Full system process format listing top Real-time interactive process monitor htop Enhanced interactive process viewer (highly readable) pstree Display processes organized as a visual branch tree ? pgrep &lt;name&gt;:: Find process ID by its string name ? pidof &lt;name&gt;:: Show PID of specific running process kill &lt;PID&gt; Terminate process gracefully using ID ? kill -9 &lt;PID&gt;:: Force kill a stubborn process instantly ? killall &lt;name&gt;:: Kill all active processes belonging to a named software nice -n 10 &lt;cmd&gt; Run command with a lower or specific assigned priority renice 5 &lt;PID&gt; Change active priority behavior on a live PID System Information uname -a Print all core system architectures and kernel info uname -r Output kernel release details hostname Display or set system host name hostname -I Display local network IP addresses of host whoami Show current active user identity id Print real user and group IDs date Show or configure system date/time parameters cal Display an terminal calendar layout w See who is logged in and what they are currently doing last Show history of last user logins lastlog Display last login timestamp statistics per user accounts uptime Check how long the host machine has been running continuously lscpu View complete CPU technical info specifications lsmem View system hardware memory layout segments dmidecode Dump system hardware info from BIOS tables dmesg Print out kernel ring buffer log errors/messages Hardware Metrics lspi List PCI devices lsusb List USB hardware devices lshw Detailed list summary of hardware configs 4. DISK USAGE &amp; FILESYSTEM df -h Check disk space available across partitions (human-readable) ? du -sh &lt;dir&gt;:: Show summary size of a specific directory folder path du -h –max-depth=1 Size of immediate subdirectory trees below target ncdu &lt;dir&gt; Interactive disk usage terminal analyzer interface (requires installation) mount View mounted filesystems on the server lsblk -f Block devices list structure including specific layout mappings blkid Fetch individual block device attribute tags (UUIDs, types) 5. JOB CONTROL Manage foreground/background shell operational jobs.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="cheatsheets">
-    <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
+		<meta property="og:title" content="linux" />
+<meta property="og:description" content="1. FILE &amp; DIRECTORY NAVIGATION Basics File Basics ls List files and directories ls -l Long listing format (permissions, owner, size, date) ls -a Show hidden files (starting with a dot) ls -lh Human-readable sizes (e.g., 4K, 23M) pwd Print working directory Directory Navigation cd &lt;dir&gt; Change directory to &lt;dir&gt; cd .. Go up one directory level cd ~ Go to home directory cd - Go to previous directory File Management mkdir &lt;dir&gt; Create a new directory rmdir &lt;dir&gt; Remove empty directory 2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/cheatsheets/linux/" /><meta property="article:section" content="cheatsheets" />
+<meta property="article:published_time" content="2026-06-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-06-01T00:00:00+00:00" />
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -84,13 +81,6 @@
 			<a class="menu__link" href="/microblog/">
 				
 				<span class="menu__text">MicroBlog</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/photo-gallery/2026/">
-				
-				<span class="menu__text">Photo Gallery</span>
 				
 			</a>
 		</li>
@@ -1804,11 +1794,7 @@ Ctrl + D
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-007/">Last Week In Code 007</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/last-week-in-code-006/">Last Week In Code E006</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/android_usage_stats/">Hunting For Exportable Android Usage Stats</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/bayes_theorem/">Baye&#39;s Theorem: Informal Proof and an Example.</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/probability_basics/">Probability Intuition : The Basics</a></li>
+			<li class="widget__item"><a class="widget__link" href="/docs/my_sources/">My Sources</a></li>
 		</ul>
 	</div>
 </div>
@@ -1817,29 +1803,11 @@ Ctrl + D
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/challenges/">Challenges</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/computers/">Computers</a></li>
-			<li class="widget__item">
 				<a class="widget__link" href="/categories/development/">Development</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/git/">Git</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/interview-prep/">Interview Prep</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/linux-tools/">Linux Tools</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/linux-setup/">Linux-Setup</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/maths/">Maths</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/networking/">Networking</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/python3/">Python3</a></li>
-			<li class="widget__item">
 				<a class="widget__link" href="/categories/quant-finance/">Quant Finance</a></li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
 		</ul>
@@ -1848,32 +1816,16 @@ Ctrl + D
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="Bdated">Bdated (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/blogspot/" title="Blogspot">Blogspot (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="Brain_teasers">Brain_teasers (6)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/configs/" title="Configs">Configs (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/definitions/" title="Definitions">Definitions (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/development/" title="Development">Development (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="Digital_garden">Digital_garden (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="Fundamentals">Fundamentals (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="Git">Git (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="Http">Http (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/intro/" title="Intro">Intro (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="Lwic">Lwic (12)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/math-definitions/" title="Math Definitions">Math Definitions (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/maths/" title="Maths">Maths (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/probability/" title="Probability">Probability (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/productivity/" title="Productivity">Productivity (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/python3/" title="Python3">Python3 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rabbit_holes/" title="Rabbit_holes">Rabbit_holes (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ricing/" title="Ricing">Ricing (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="Rthots">Rthots (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/search-engine/" title="Search Engine">Search Engine (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="Tcp">Tcp (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/text-manipulation/" title="Text-Manipulation">Text-Manipulation (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="AI">AI (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bdated/" title="bdated">bdated (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brain_teasers/" title="brain_teasers">brain_teasers (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digital_garden/" title="digital_garden">digital_garden (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lwic/" title="lwic">lwic (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/math-definitions/" title="math definitions">math definitions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/maths/" title="maths">maths (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rthots/" title="rthots">rthots (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/search-engine/" title="search engine">search engine (1)</a>
 	</div>
 </div>
 </aside>

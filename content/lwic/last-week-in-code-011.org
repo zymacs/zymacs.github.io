@@ -3,6 +3,11 @@ date: 2026-07-06
 title: LWIC E011
 thumbnail: 'img/lwic.png'
 draft: false
+authorbox: false
+tags:
+  - lwic
+categories:
+  - WeeklySeries
 ---
 
 Yelllow .... Relocated and it's taken me for ever to settle in
