@@ -1,0 +1,122 @@
+---
+date: 2026-07-06
+title: LWIC E011
+thumbnail: 'img/lwic.png'
+---
+
+Yelllow .... Relocated and it's taken me for ever to settle in
+but here I am. Left my computer cable behind and it has no battery so that's kept me back
+for a while among other reasons. I'm typing this out on a 13 year old Surface Tablet /running Debian 12/. Yes, Linux on
+a Microsoft tab. Any how, straight to business.
+
+
+*** Building a local search engine based on the paper : /The Anatomy of a large-scale hypertextual web search engine./
+
+In the next 10 weeks we'll build a search engine.
+We shall extract theory from the Google paper (The anatomy of a large scale
+hypertextual search engine). It's the paper based
+on which the earliest version of Google was built.
+
+I am hoping by the end of week 20 we shall have
+the MVP. This shall be fun. Or, I hope it will be.
+
+*** What you will gain
+Just so to share in my excitement about the project, I thought this section was necessary.
+
+Most of what we'll be covering in this project is applicable to many areas outside building
+search engines. We'll essentially be covering an Information Retrieval course project. We'll learn
+about inverted indexing , vector space & idf/bm25 for more search result precision, real world
+applications of graph theory (nodes == urls, edges == links). Since I aim to possibly
+scale this to more than just one user, we'll look also at some systems engineering concpepts.
+We'll look at caching anc compression, latency and other techniques to save space like
+document sharding. Also, if you follow along, you will have a good portfolio project that
+proves you understand all it takes to build a search engine.
+
+*** My motivation
+I have for long wanted to build a search engine
+of my own and already have a similar project running.
+I thought this might be some means to make it
+so I see myself through to the end of the project.
+
+
+*** Current position
+My first approach (before the paper that is) was
+discovering what problems I had to solve while building a local search engine as well as I knew how.
+But I guess I am going to change that a little. Solve the
+challenges listed in the paper then any others after.
+
+I'd recommend that if you are following, you get a copy
+of the paper  (link at the bottom) and read through
+it yourself as there's parts I think ain't so relevant
+to this 10 week project. Maybe relevant in future
+projects. Section 1.3.2 for example.
+
+We'll be covering as much as I can in a single post
+every week.
+
+*** An alternative to search engines
+
+What do search engines do? Conceptually that is. The concept of search applies way beyond the internet.
+The same principles behind efficient document look up on the internet apply to document look up on
+a local machine. Search engines simply do that: help return relevant results from some given search
+space based on some given query.
+
+Now let's look at alternatives to search engines. Or, alternative ways to find documents on a computer.
+
+**** Manual search
+
+This is the default. If you navigate your File system with commands 'ls, cd' like I currently do,
+this is what you are using. You manually look through folder structure for what you need.
+But this has problems
+
+*The problems with manual search*
+
+You have to remember where every thing is. You have to keep track of names
+in your head. This definitely does not scale well as search space grows. If we are talking about an internet for
+instance, imagine how it would be if you had to memorize all websites. If you had to know what the exact location
+is that had results relevant to your query.That would have been a lot of work. As a solution to that we have
+indices.
+
+**** Indices
+Here you maintain a list of names each mapping to a perticular resource.
+For instance, we'd have a script that runs through a target search space, generates
+key words and for each key word a mapping for all locations where it's included.
+An index is something of a TOC for the web, if I may over simplify. These can
+be created either manually or automatically. Manually created indices map nicely
+to book TOC's. They are however hard to maintain. Source names change. Sources are
+many. One's TOC is only good for them (that is, a given TOC may not contain sources relevant to
+generate certain results about esoteric topics).
+
+Also, results based on key word to source index mappings could be irrelevant to the search query.
+Generating results that contextualize the search query needs more than manually maintained indices.
+
+More sophisticated indices (as I hope we shall look at) are how modern search engines filter and sort
+results to show at the top what you are most likely interested in.
+
+We shall talk more about this when we look at result optimization.
+
+
+I usually work only on personal projects but thought this could be an opportunity to build for
+scale so that will be put into consideration. Building a fast search engine , local or for the internet
+is no trivial task. Building one that will be used by thousands of people needs even more work.
+We shall have to deal with efficient document storage both for the documents (local search engine) and
+the index.
+
+*** Closing
+This episode of the 10 week series is the intro. A short summary of what we covered follows below:
+
+**** Summary (Part 1/10)
+- Alternatives to search engines and their downsides
+- Indices (Manual and Auto generated)
+
+**** In the next episode (Part 2/10)
+- Briefly on information retrieval (A course relevant to building search engines)
+
+
+*** Relevant resources
+- Information retrieval (see youtube)
+- [[https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/][The anatomy of a large scale hypertextual web search engine]]
+
+
+Ayt...
+See you in E012.
