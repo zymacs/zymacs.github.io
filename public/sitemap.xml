@@ -26,6 +26,9 @@
     <loc>//localhost:1313/lwic/last-week-in-code-010/</loc>
     <lastmod>2026-06-25T09:21:15+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/lwig/</loc>
+    <lastmod>2026-06-20T09:00:30+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/let-me-explain/</loc>
     <lastmod>2026-06-18T08:09:50+03:00</lastmod>
   </url><url>
@@ -40,9 +43,6 @@
   </url><url>
     <loc>//localhost:1313/let-me-explain/what_a_permutation_is/</loc>
     <lastmod>2026-06-18T06:09:50+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/lwig/</loc>
-    <lastmod>2026-06-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-009/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
@@ -65,6 +65,9 @@
     <loc>//localhost:1313/lwic/last-week-in-code-008/</loc>
     <lastmod>2026-06-10T19:39:17+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2026-06-07T12:17:27+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/ai/</loc>
     <lastmod>2026-06-02T10:10:06+03:00</lastmod>
   </url><url>
@@ -79,6 +82,12 @@
   </url><url>
     <loc>//localhost:1313/cheatsheets/linux/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/notes/</loc>
+    <lastmod>2026-05-31T10:29:40+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-007/</loc>
+    <lastmod>2026-05-30T14:20:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-007/</loc>
     <lastmod>2026-05-30T14:20:01+03:00</lastmod>
@@ -97,6 +106,12 @@
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-006/</loc>
     <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/last-week-in-code-006/</loc>
+    <lastmod>2026-05-25T22:49:48+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/mkdown/</loc>
+    <lastmod>2026-05-22T15:43:01+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/brain_teasers/</loc>
     <lastmod>2026-05-21T19:43:01+03:00</lastmod>
@@ -128,17 +143,134 @@
     <loc>//localhost:1313/lwic/last-week-in-code-005/</loc>
     <lastmod>2026-05-18T22:49:48+03:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/post/android_usage_stats/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/rabbit_holes/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/random/</loc>
+    <lastmod>2026-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/bayes_theorem/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/maths/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/probability/</loc>
+    <lastmod>2026-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-004/</loc>
     <lastmod>2026-05-11T17:41:08+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/probability_basics/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/http/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/networking/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/tcp/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/http_downloads/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/configs/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/linux-setup/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/modding-alacritty/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/ricing/</loc>
+    <lastmod>2026-05-03T20:56:47+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/grep/</loc>
+    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-003/</loc>
     <lastmod>2026-05-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/linux-tools/</loc>
+    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/text-manipulation/</loc>
+    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/the-cost-for-not-documenting-solutions/</loc>
+    <lastmod>2026-04-24T20:08:02+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-002/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/categories/computers/</loc>
+    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/what_is_a_computer/</loc>
+    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/definitions/</loc>
+    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/fundamentals/</loc>
+    <lastmod>2026-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/five-days-no-ai/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/challenges/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/productivity/</loc>
+    <lastmod>2026-04-20T12:12:03+03:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/lwic/last-week-in-code-001/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/development/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/development/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/git/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/git/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/git-ignore-files/</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/blogspot/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/hugo/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/intro/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/my-first-post/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/installing-python3-on-linux/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/python3/</loc>
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/bio/about/</loc>
     <lastmod>2026-01-25T14:00:00+00:00</lastmod>
@@ -158,14 +290,23 @@
   </url><url>
     <loc>//localhost:1313/microblog/</loc>
   </url><url>
+    <loc>//localhost:1313/misc./source_index/</loc>
+  </url><url>
     <loc>//localhost:1313/now/</loc>
   </url><url>
     <loc>//localhost:1313/now/next_up/</loc>
   </url><url>
+    <loc>//localhost:1313/photo-gallery/2026/</loc>
+  </url><url>
     <loc>//localhost:1313/project_writeups/cleaning_duplicates/</loc>
   </url><url>
+    <loc>//localhost:1313/quotes/engineer_creativity/</loc>
+  </url><url>
+    <loc>//localhost:1313/quotes/self_supporting/</loc>
+  </url><url>
+    <loc>//localhost:1313/quotes/what_the_hell/</loc>
+  </url><url>
     <loc>//localhost:1313/rants/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>//localhost:1313/reading-lists/2026/</loc>
   </url><url>
@@ -183,11 +324,7 @@
   </url><url>
     <loc>//localhost:1313/challenges_index/</loc>
   </url><url>
-    <loc>//localhost:1313/categories/development/</loc>
-  </url><url>
     <loc>//localhost:1313/docs/</loc>
-  </url><url>
-    <loc>//localhost:1313/tags/git/</loc>
   </url><url>
     <loc>//localhost:1313/notes/git_notes/</loc>
   </url><url>
@@ -198,8 +335,6 @@
     <loc>//localhost:1313/docs/my_sources/</loc>
   </url><url>
     <loc>//localhost:1313/challenge_records/no-movies/</loc>
-  </url><url>
-    <loc>//localhost:1313/notes/</loc>
   </url><url>
     <loc>//localhost:1313/project_writeups/</loc>
   </url><url>

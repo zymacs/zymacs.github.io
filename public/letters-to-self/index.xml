@@ -4,40 +4,29 @@
     <title>Zymacs</title>
     <link>//localhost:1313/letters-to-self/</link>
     <description>Recent content on Zymacs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//localhost:1313/letters-to-self/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/letters-to-self/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>001: Life&#39;s events, like life, are nothing but a vapor.</title>
       <link>//localhost:1313/letters-to-self/lts-001/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>//localhost:1313/letters-to-self/lts-001/</guid>
-      <description>It appears and its sooner than later, it&amp;#39;s nothing. Gone. A memory. A forgotten memory.
-There&amp;#39;s many such vapors in your life. Divisions over events that are soon over after they start. What then?
-Put in your all. Be present in every moment however mundane. Because soon, it will be over. And all that&amp;#39;ll be left will be memories for what you did. Or regrets about what you chose not to.</description>
+      <description>&lt;p&gt;&#xA;It appears and its sooner than later, it&amp;#39;s nothing. Gone. A memory. A forgotten memory.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;There&amp;#39;s many such vapors in your life. Divisions over events that are soon over&#xA;after they start. What then?&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Put in your all. Be present in every moment however mundane.&#xA;Because soon, it will be over.&#xA;And all that&amp;#39;ll be left will be memories for what you did.&#xA;Or regrets about what you chose not to.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>002: It&#39;s going to hurt, like it should</title>
       <link>//localhost:1313/letters-to-self/lts-002/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>//localhost:1313/letters-to-self/lts-002/</guid>
-      <description>Even if it will soon be over like the platitude states, it is going to hurt. Yes, it will. You can optimize and hack around all you want to. But, for some of what you want to achieve, there&amp;#39;s not going to be any other way to the goal than through the fire.
-And don&amp;#39;t complain about it like it&amp;#39;s a bad thing. It&amp;#39;s that way by design.
-The reward would not be anywhere close to as valuable as it is if getting it did not involve some hurdles.</description>
+      <description>&lt;p&gt;&#xA;Even if it will soon be over like the platitude states, it is going to hurt.&#xA;Yes, it will. You can optimize and hack around all you want to. But,&#xA;for some of what you want to achieve, there&amp;#39;s not going to be any other way to the&#xA;goal than through the fire.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;And don&amp;#39;t complain about it like it&amp;#39;s a bad thing. It&amp;#39;s that way by design.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The reward would not be anywhere close to as valuable as it is if getting it&#xA;did not involve some hurdles.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>003: The lion of your fears is a cat.</title>
       <link>//localhost:1313/letters-to-self/lts-003/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>//localhost:1313/letters-to-self/lts-003/</guid>
-      <description>Does fear help? I mean, its a good emotion. It gets you active. Makes you more conscious of and ready to deal with possible threat. But, could it often be why you see more threat than there is?
-Beyond a certain threshold, I would say, your fear has shown you to be clinically insane.
-Most of what you refrain yourself from doing, most of what you humble yourself to do out of fear, has been not for what is known to happen out of doing otherwise.</description>
+      <description>&lt;p&gt;&#xA;Does fear help? I mean, its a good emotion. It gets you active. Makes&#xA;you more conscious of and ready to deal with possible threat.&#xA;But, could it often be why  you see more threat than there is?&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Beyond a certain threshold, I would say, your fear has shown you to be&#xA;clinically insane.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Most of what you refrain yourself from doing, most of what you humble yourself to&#xA;do out of fear, has been not for what is known to happen out of doing otherwise.&#xA;But rather for what  for what you thought might happen.&#xA;Which your own actions after you faced some of the fears you did have shown over and over&#xA;again, you were being too creative with your imaginations.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,30 +4,23 @@
     <title>Zymacs</title>
     <link>//localhost:1313/lwig/</link>
     <description>Recent content on Zymacs</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/lwig/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/lwig/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Last Week In Growth E002</title>
       <link>//localhost:1313/lwig/last-week-in-growth-e002/</link>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      
       <guid>//localhost:1313/lwig/last-week-in-growth-e002/</guid>
-      <description>So last week I posted the first episode in the series and made some ambitious promises. I did not keep my word for most of them. But, that&amp;#39;s why I have this blog. I like that I have the evidence for my progress or lack thereof now publically available. Let&amp;#39;s see if next week can be better.
-I&amp;#39;ve resolved to give this blog a similar structure as /lwic. I&amp;#39;ll be writing some updates from me.</description>
+      <description>&lt;p&gt;&#xA;So last week I posted the first episode in the series and made some ambitious promises. I&#xA;did not keep my word for most of them. But, that&amp;#39;s why I have this blog. I like that I have&#xA;the evidence for my progress or lack thereof now publically available. Let&amp;#39;s see if&#xA;next week can be better.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I&amp;#39;ve resolved to give this blog a similar structure as &lt;a href=&#34;//localhost:1313/lwic&#34;&gt;/lwic&lt;/a&gt;. I&amp;#39;ll be writing some&#xA;updates from me. Then in the last section linking to some articles I read for self&#xA;growth and productivity. The separation is becoming a bit of a problem. It seems&#xA;there&amp;#39;s noticeable overlap between /lwic and /lwig. But I&amp;#39;m hoping differentiation&#xA;will arise as I write more uploads.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Last Week In Growth E001</title>
       <link>//localhost:1313/lwig/last-week-in-growth-e001/</link>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      
       <guid>//localhost:1313/lwig/last-week-in-growth-e001/</guid>
-      <description>This is the first post in this series. I have no idea if its the last. It could be. My past experience doing such kinds of challenges says it possibly is. But, who am I to pull the plug on what could be.
-Had the same sentinment for lwic and 8 weeks later, it still stands.
-May the force be with it.
-So in this series of posts, a weekly series, I will be sharing updates on progress getting better in a variety of life domains.</description>
+      <description>&lt;p&gt;&#xA;This is the first post in this series.&#xA;I have no idea if its the last. It could be.&#xA;My past experience doing such kinds of&#xA;challenges says it possibly is. But, who am I to&#xA;pull the plug on what could be.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Had the same sentinment for  &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-001&#34;&gt;lwic&lt;/a&gt; and &lt;a href=&#34;//localhost:1313/lwic/last-week-in-code-008&#34;&gt;8 weeks&lt;/a&gt; later,&#xA;it still stands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;em&gt;May the force be with it.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;So in this series of posts, a weekly series,&#xA;I will be sharing updates on progress&#xA;getting better in a variety of life domains. Could be social,&#xA;spiritual, related to career,&#xA;intellect, any problem I have no issue making&#xA;a public record of.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

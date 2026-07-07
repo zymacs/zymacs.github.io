@@ -4,7 +4,8 @@
     <title>Challenge Records Index on Zymacs</title>
     <link>//localhost:1313/challenges_index/</link>
     <description>Recent content in Challenge Records Index on Zymacs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//localhost:1313/challenges_index/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/challenges_index/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

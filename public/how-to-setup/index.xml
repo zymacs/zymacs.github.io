@@ -4,7 +4,8 @@
     <title>Zymacs</title>
     <link>//localhost:1313/how-to-setup/</link>
     <description>Recent content on Zymacs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//localhost:1313/how-to-setup/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/how-to-setup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
