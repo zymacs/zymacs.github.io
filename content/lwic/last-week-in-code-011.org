@@ -124,5 +124,8 @@ This episode of the 10 week series is the intro. A short summary of what we cove
 - [[https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/][The anatomy of a large scale hypertextual web search engine]]
 
 
+/Lwic is a name I'd like to retain. the new series content however does not align well with the name. Maybe I could talk about
+what I covered the previous week for some given project, say the current one for instance. We'll see about that in the next./
+
 Ayt...
 See you in E012.
