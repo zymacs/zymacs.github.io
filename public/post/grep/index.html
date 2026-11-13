@@ -7,15 +7,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/post/grep/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Grep Fu Basics">
-  <meta property="og:description" content="If you have used Linux before, you have most probably heard about Grep, Awk and Sed. These are super useful text manipulation tools available on all Unix and Unix-like systems. Learning all that each can do is an insurmountable task and I&#39;m sure you&#39;d stand with me on that. But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often. In this article we&#39;ll look at one of the tools: Grep.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-05-03T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-05-03T00:00:00+00:00">
-    <meta property="article:tag" content="Text-Manipulation">
+	<meta property="og:site_name" content="Zymacs">
+	<meta property="og:title" content="Grep Fu Basics">
+	<meta property="og:description" content="If you have used Linux before, you have most probably heard about Grep, Awk and Sed. These are super useful text manipulation tools available on all Unix and Unix-like systems. Learning all that each can do is an insurmountable task and I&#39;m sure you&#39;d stand with me on that. But having less than functional usage knowledge in at least one can waste you a lot of time while you work with text in the terminal. Which is very often. In this article we&#39;ll look at one of the tools: Grep.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2026-05-03T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-05-03T00:00:00+00:00">
+		<meta property="article:tag" content="Text-Manipulation">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -161,7 +161,7 @@ so it helps to know how to read it.</p>
 Okay, so we&#39;ll be using this sample text for demonstration, so you can
 go on and write it to some file say, grep_text.txt</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">bottle
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">pod
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">maker
@@ -174,7 +174,7 @@ go on and write it to some file say, grep_text.txt</p>
 We&#39;ll start with a simple match. The following matches all instances of
 the substring <code class="verbatim">bo</code> anywhere in the file <code class="verbatim">grep_text.txt</code>.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep bo grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep bo grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -192,7 +192,7 @@ Now the output from the previous line is not numbered. We could be
 interested in opening an editor at the point where the match is. To get
 the line number for where a match is found, we use the <code class="verbatim">n</code> flag.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -n bo grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -n bo grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -209,7 +209,7 @@ the line number for where a match is found, we use the <code class="verbatim">n<
 But what if we want to match all that does not conform to some defined
 pattern? Grep has means to do that, the <code class="verbatim">v</code> flag.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -nv bo grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -nv bo grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -241,7 +241,7 @@ kind of similar to what <code class="verbatim">wc -l</code> does. Actually, runn
 <code class="verbatim">grep bo grep_text.txt | wc -l</code> would produce the same output. You can
 try that out for yourself to see.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c bo grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c bo grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <pre class="example">
@@ -251,7 +251,7 @@ try that out for yourself to see.</p>
 For whichever reason you could want to have all matched text printed
 out. To do that you&#39;d pass in the <code class="verbatim">-o</code> flag.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -o bo grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -o bo grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -270,7 +270,7 @@ way to do that, the first one is here, the next will be in the regex
 section later in the article. Grep searches for all lines with text
 matching any of the supplied expressions.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -e pod -e ma grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -e pod -e ma grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -291,7 +291,7 @@ default. To ignore case and have the pattern <code class="verbatim">bo</code> in
 <code class="verbatim">BO</code> would, (to performe case insensitive matches that is), we supply
 the <code class="verbatim">-i</code> or <code class="verbatim">--ignore-case</code> flag.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;BOB
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;BOB
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">boB&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>grep -i bob grep_text.txt</span></span></code></pre></div>
 </div>
@@ -313,7 +313,7 @@ a non-word constituent character. Word constituent characters : letters,
 digits, the underscore. To match a word, we&#39;d follow the syntax in the
 next command.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;match&#34;</span> &gt;&gt; grep_text.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;match&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;matchman&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>  grep -w match grep_text.txt</span></span></code></pre></div>
 </div>
@@ -326,7 +326,7 @@ To find what text is in lines after the match you can specify the number
 of lines together with the <code class="verbatim">A</code> flag as in the example. That returns 2
 lines after every match containing line.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -w maker grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -w maker grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -346,7 +346,7 @@ lines after every match containing line.</p>
 This works like the previous matching pattern except it returns lines
 appearing before the match.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -B2 -w maker grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -B2 -w maker grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -368,7 +368,7 @@ after, we could combine the <code class="verbatim">A</code> and <code class="ver
 the below example or use <code class="verbatim">C</code> with the numbers supplied to both A and B
 are the same.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -B2 -w maker grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -A2 -B2 -w maker grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -391,7 +391,7 @@ are the same.</p>
 </tbody>
 </table>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c2 maker grep.txt 2&gt;&amp;<span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -c2 maker grep.txt 2&gt;&amp;<span style="color:#ae81ff">1</span></span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <pre class="example">
@@ -405,7 +405,7 @@ regular expression as per the grep manual is a pattern that describes a
 set of strings. We&#39;ll look at some examples of text matching examples
 using regexp.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>^a-z<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>^a-z<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -429,7 +429,7 @@ chars, <code class="verbatim">A-Z</code> for all upper chase chars, <code class=
 as well contain a combination of these say in the next example, which
 matches all alpha numeric characters.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>a-zA-Z0-9<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[</span>a-zA-Z0-9<span style="color:#f92672">]</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>:output</em></p>
 <table>
@@ -472,7 +472,7 @@ matches all alpha numeric characters.</p>
 <p>
 The same effect can be achieved with</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[[</span>:alnum:<span style="color:#f92672">]]</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#f92672">[[</span>:alnum:<span style="color:#f92672">]]</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -519,7 +519,7 @@ hexadecilal characters (a to f, 0 to 9), <code class="verbatim">[:punct:]</code>
 for matching punctuation as is in the next example and more in the grep
 manual.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;;,.&#34;</span> &gt;&gt; grep_text.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;;,.&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>grep -E  <span style="color:#f92672">[[</span>:punct:<span style="color:#f92672">]]</span> grep_text.txt 2&gt;&amp;<span style="color:#ae81ff">1</span></span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
@@ -532,7 +532,7 @@ consecutive times. Anywhere with two consecutive <code class="verbatim">a</code>
 a match. <code class="verbatim">aaa</code> will match in totality but the last a in <code class="verbatim">aaaba</code> won&#39;t
 match.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;aaabbfa&#34;</span> &gt;&gt; grep_text.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;aaabbfa&#34;</span> &gt;&gt; grep_text.txt
 </span></span><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
@@ -540,7 +540,7 @@ match.</p>
 aaabbfa
 </pre>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span>+ grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span>+ grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -565,7 +565,7 @@ aaabbfa
 <p>
 Since its &#39;1&#39; char we are matching, we have the same effect with:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>1<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p>
 <em>output:</em></p>
@@ -591,7 +591,7 @@ Since its &#39;1&#39; char we are matching, we have the same effect with:</p>
 <p>
 But if it is 2 &#39;a&#39;s. Things differ</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">{</span>2<span style="color:#f92672">}</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <pre class="example">
@@ -603,7 +603,7 @@ aaabbfa
  an inverse, &#34;$&#34; that matches the end of a line. To match all patterns
  that are at a line&#39;s start we&#39;d therefore do something like:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^c&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^c&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <pre class="example">
@@ -614,7 +614,7 @@ That&#39;d match all lines with <code class="verbatim">c</code> at line start.</
 <p>
 Contrast that with output from</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep c grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep c grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -634,7 +634,7 @@ Contrast that with output from</p>
 All lines with <code class="verbatim">c</code> are marked regardless of line position. Matching a
 pattern at a line&#39;s end can be done with:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;e$&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;e$&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -655,7 +655,7 @@ file <code class="verbatim">target.txt</code>, what pattern would you use for th
 than one way to get the right effect. Let&#39;s examine one way to do
 this:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;^a|b&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;^a|b&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -680,7 +680,7 @@ line with the character <code class="verbatim">b</code>. The <code class="verbat
 working with <code class="verbatim">grep</code> regexp. Back to the challenge. A sample effective
 answer would have been <code class="verbatim">grep -E &#39;^[a|b]&#39; grep_.txt</code>.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^[a|b]&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  grep -E <span style="color:#e6db74">&#39;^[a|b]&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -707,7 +707,7 @@ lines starting with either a or b, not all lines that either start with
 How about matching all lines that have characters &#39;p or m&#39; or that end
 with <code class="verbatim">e</code>? That can be done with:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;p|m|e$&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;p|m|e$&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p><em>output:</em></p>
 <table>
@@ -747,7 +747,7 @@ We just introduced the <code class="verbatim">|</code> operator with regex and I
 in the article there was more than one way to provide alternative
 matching patterns than <code class="verbatim">grep -e pattern -e pattern ... file.txt</code>.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;pod|ma&#39;</span> grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -E <span style="color:#e6db74">&#39;pod|ma&#39;</span> grep_text.txt</span></span></code></pre></div>
 </div>
 <p>
 Now you possibly have a long list of patterns against which to match
@@ -758,14 +758,14 @@ them all in succession after defining the patterns and or options
 To do that, create a file and in it write all the patterns, one per
 line. For instance, this saved under any name say patterns.txt</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;^[a-d]e
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;^[a-d]e
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">^co
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">er</span>$<span style="color:#e6db74">&#34;</span> &gt; patterns.txt</span></span></code></pre></div>
 </div>
 <p>
 Then use the pattern file to find matches with the <code class="verbatim">-f</code> flag.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -f patterns.txt grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -f patterns.txt grep_text.txt</span></span></code></pre></div>
 </div>
 <table>
 <tbody>
@@ -785,12 +785,12 @@ You can also add grep options to the file.</p>
 <p>
 Prepend the first line in <code class="verbatim">patterns.txt</code> with <code class="verbatim">-v</code> so it now looks like:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-Ev &#39;^c&#39;&#34;</span> &gt;&gt; patterns.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;-Ev &#39;^c&#39;&#34;</span> &gt;&gt; patterns.txt</span></span></code></pre></div>
 </div>
 <p>
 Now run</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -Ef patterns.txt grep_text.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep -Ef patterns.txt grep_text.txt</span></span></code></pre></div>
 </div>
 <table>
 <tbody>
@@ -848,13 +848,13 @@ discussed <code class="verbatim">|</code> OR operation with regexp. Here&#39;s a
 lines that both start with the character <code class="verbatim">p</code> and end with the character
 <code class="verbatim">d</code>.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#39;^p&#39;</span> grep_text.txt | grep <span style="color:#e6db74">&#39;d$&#39;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#39;^p&#39;</span> grep_text.txt | grep <span style="color:#e6db74">&#39;d$&#39;</span></span></span></code></pre></div>
 </div>
 <p>
 Some special characters can&#39;t be comprehended even with extended regex
 so you have to use -P. For instance, the special char for digits \d.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;292 abacus&#39;</span> | grep -P <span style="color:#e6db74">&#39;\d{2}a&#39;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;292 abacus&#39;</span> | grep -P <span style="color:#e6db74">&#39;\d{2}a&#39;</span></span></span></code></pre></div>
 </div>
 <p>
 You can look into other options like <code class="verbatim">-o</code> for getting grep to print out
@@ -993,7 +993,7 @@ I hope you learnt something.</p>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+				<a class="widget__link" href="/categories/weeklyseries/">Weeklyseries</a></li>
 		</ul>
 	</div>
 </div>

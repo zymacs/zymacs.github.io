@@ -7,11 +7,11 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/post/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Zymacs">
-  <meta property="og:description" content="Zymac&#39;s  Personal blog on Programming and Random Tinkering Persuits Plus More.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Zymacs">
+	<meta property="og:title" content="Zymacs">
+	<meta property="og:description" content="Zymac&#39;s  Personal blog on Programming and Random Tinkering Persuits Plus More.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="website">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -123,7 +123,7 @@
 		</h2>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-30T14:20:01&#43;03:00">May 30, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-30T14:20:01&#43;03:00">May 30, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">Weeklyseries</a>
 	</span>
 </div></div>
 	</header>
@@ -147,6 +147,118 @@ Evolution is from simple to complex. Not the other way round.
 I recently took time off to build an app I have had in my projects folder for 
 ages. Its a cli-first finance app. Its like, you don&#39;t open
 and click and wait to get things done. You type short commands, press enter to get it all done.. More on that later.</p>
+<p>
+Anyways, I created an empty folder for the project and a main.py file. Since I knew what it was going to become, I wrote
+a skeleton for exactly that. A lot of empty functions all over. Most if not all of which weren&#39;t central to the basic task
+that was keeping track of my expenses. </p>
+<p>
+The initial excitement started to wear off. And I started to feel impatient. How long till I use this thing. It seems I have
+to connect this to that then that to this then learn about that to work on this. </p>
+<p>
+So I closed the project. And I was like, oh that famous unix line. Keep things simple. 
+So I returned but this time built a simple expense calculator. It felt good I could already use it.
+Then I added a simple cli. Then one command, then the next. Then the next. And before I knew it, I 
+had everything I was really using out of firefly (well that&#39;s obviously me using hyperbole but I guess you get my point).</p>
+<p>
+Its a hard principle to follow. The mind seems to like to like to get the whole thing in one sitting.
+Oh, and about the choice of interface. The CLI. </p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+CLI workflow usage time savings are High. Like, reallly high.
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>
+Whenever I logged an expense with firefly, the workflow went something like:</p>
+<ul>
+<li>Open a browser</li>
+<li>Visit Firefly&#39;s url</li>
+<li>Wait for the network to return a page </li>
+<li>Use eyes to locate the transaction button.</li>
+<li>Click button</li>
+<li>If successfully went through all the above steps, fill in the form correctly then press &#39;Submit&#39;. </li>
+<li>Wait for the page to re… ah..  </li>
+</ul>
+<p>To some that seems noraml. But if you have used the terminal for a while, you learn most of these steps is the UI making
+you dance around what you want to get done. Its all unneccesary. A simple command or two should get this done. </p>
+<p>
+The said script&#39;s workflow:</p>
+<ul>
+<li>Open the terminal. </li>
+<li>Launch ledger cli with &#39;ledger&#39; </li>
+<li>Type  <code class="verbatim">mv ac1 ac2 amt metadata</code> then hit ENTER. </li>
+</ul>
+<p>Boom! That it. Money moved from account one to account two of amount <em>amt</em> with  notes <em>metadata</em>.
+Super instant. Less than one percent of the time it took me for Firefly. </p>
+<p>
+Combine that with a bit of scripting and workflows that take 100 minutes are brought down to 4 or 5. </p>
+<p>
+I&#39;m sure the same gains would apply to almost everywhere where as a result of  swapping GUI for CLI. 
+A lot could be said on this topic but I guess I&#39;ll leave that for another article. </p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
+<h4 id="headline-4">
+Solving the problem of transfer. 
+</h4>
+<div id="outline-text-headline-4" class="outline-text-4">
+<p>
+What does Git do? Version Control. But is it that obvious? It seems it is. Until it isn&#39;t.</p>
+<p>
+So this site is a static site. Uploads are via pushing changes to the site&#39;s repo. 
+It is hosted on Github&#39;s servers. I quite a while back had a problem I thought I did not know how to solve.
+I wanted to serve older versions of certain articles or certain versions of the site as I worked locally on others. </p>
+<p>
+But then, I don&#39;t know how it happened .. kinda like a Eureka Moment it was. I was like../Wait, Version Control? Isn&#39;t that the stuff of Git./  </p>
+<p>
+Its crazy that its only after a long time thinking that I arrived at an aswer so obvious. Its like , &#34;Oh, so I can use a Version 
+Control System for Version Controlling Articles?&#34; level crazy. I found this real interesting and had to look up the underlying
+phenomenon. I was sure it was happening in a whole lot of other domains, for others as well.
+Its the <a href="https://www.scotthyoung.com/blog/2023/04/18/skill-transfer-explained/">problem of transfer</a>. </p>
+<p>
+My brain seemed to have associated Git Version Control to Programming Environments.
+Outside a programming environment, any version control problem seemed novel. Needing novel solutions. Here&#39;s 
+another scenario. </p>
+<p>
+Recently I was watching a candidate do a mock interview. She had to solve some gambling related problem. 
+She only had a few minutes to solve it. And she did. But its interesting that the math concept she used, 
+a math concept I already knew, seemed so obviously applicable to the problem.. yet somehow I just couldn&#39;t make the connection. 
+Just like I missed the connection between Version Controlling articles and Git Version Control. </p>
+<p>
+A question I try to ask myself these days is how I can apply a new skill to fields outside the primary operations environment.
+What is the conceptual problem this tool is solving.. type of questions. Pr if faced with a problem, asking what the conceptual
+common problem is that can be solved with already available solutions. This happens quite a lot when writing a program. You 
+run into some challenge that looks so familiar to some question from algorithm class. </p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+Ideation for its own sake?
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p>
+I find I always have a lot of ideas. Some unreal. Some real. Some more elaborate than others. 
+Some about areas which ,even if they are IT related, are way over my current proficiency level. 
+I used to keep  a note book for them.  Until I stopped. I recently oppend a section I labelled <a href="/rthots">rthots</a> for (random thoughts) just for this. </p>
+<p>
+I have found after some time collecting ideas and not working on them that I don&#39;t really have to turn every idea I come up with into a project. </p>
+<p>
+Its like, sometimes, the ideation itself is the gain. 
+Say I think of a project to solve some problem. Then I look up info on what would be needed to make it work and
+to write down my thoughts on a high level solution. I then leave it without implementing a thing and move on to another one. Any 
+conceptual problem similar to those from previous ideas won&#39;t take up much of my time. </p>
+<p>
+Eventually I&#39;ll come to a project whose core componets I have already studied about. And I still don&#39;t have to build it. 
+But if I do, all the previous ideations will have paid off. 
+Sounds all made up. And I can&#39;t point you to any sources to corroborate this. 
+I usually use LLMs for that and am trying to refrain. </p>
+<p>
+But I guess you have to try it to believe it. </p>
+</div>
+</div>
+</div>
+</div>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/post/last-week-in-code-007/">Read more…</a>
@@ -166,7 +278,7 @@ and click and wait to get things done. You type short commands, press enter to g
 		</h2>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-25T22:49:48&#43;03:00">May 25, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">WeeklySeries</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-25T22:49:48&#43;03:00">May 25, 2026</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/weeklyseries/" rel="category">Weeklyseries</a>
 	</span>
 </div></div>
 	</header>
@@ -323,6 +435,12 @@ can tell the remote file is located at the root folder <code class="verbatim">/<
 hosting server and that it is called <code class="verbatim">file.txt</code>. This website is on some
 server that supports the http protocol. Its hosted somewhere off your
 system accessible via a network.</p>
+<p>
+So you open your browser or , lets say, you just click the link to
+instantiate the download action. Let&#39;s assume the handler app for
+downloads is a browser.</p>
+</div>
+</div>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/post/http_downloads/">Read more…</a>
@@ -428,9 +546,37 @@ Why we skip documentation</p>
 </li>
 <li>
 <p>We think we don&#39;t need to understand.</p>
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/post/the-cost-for-not-documenting-solutions/">Read more…</a>
+<ul>
+<li>I don&#39;t have the time, I will come back later. Lets make it work and understand later.</li>
+<li>But then the solution fails to work and you don&#39;t understand why it is not working.</li>
+</ul>
+</li>
+<li>
+<p>It feels like a chore</p>
+<ul>
+<li>It only takes five minutes. Really, 5 minutes to save a future 90. Isn&#39;t a future 90 a chore?
+I don&#39;t know why most such small but real time saving sacrifices feel &#39;like a chore&#39;
+when they have to be taken. Yet we all get frustrated for not having done the 5 minutes of note taking.</li>
+</ul>
+</li>
+<li>No system to incentivise the habit.</li>
+</ul>
+<p>
+I have been doing so for quite a while now and boy is it refreshing to run into an old error that sunk a load of my time for which I now have a recorded
+the solution. Same could be said of those for which I did not take time to write something down. 
+Those are very annoying. Its very annoying going through docs more than once to solve a problem you know
+you solved in the past.</p>
+<p>
+Documentation can feel like a chore. But no one died from it. The one thats always gained from my notes is me.
+I always like it when I know something would have taken a lot of time to do but, because of some past sacrifice to
+take notes, it takes less than a fraction of standard time.</p>
+<p>
+I have no standardized wiki yet. Org roam notes accessible with a <em>C-x C-f</em> for now. But its something I am
+definitely looking into. </p>
+<p>
+Hope you picked something from that that saves you some time in the future. </p>
+</div>
+</div>
 	</div>
 </article><article class="list__item post">
 	
@@ -522,7 +668,7 @@ question to me. And there I was… answering my own question. Remember?
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+				<a class="widget__link" href="/categories/weeklyseries/">Weeklyseries</a></li>
 		</ul>
 	</div>
 </div>

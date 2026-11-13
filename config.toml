@@ -11,6 +11,10 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
 
+[security]
+  allowContent = ['.*']
+
+
 [Params]
   description = "John Doe's Personal blog about everything" # Description of your site
   opengraph = true

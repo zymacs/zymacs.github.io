@@ -7,15 +7,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/post/android_usage_stats/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Hunting For Exportable Android Usage Stats">
-  <meta property="og:description" content="I am doing some public accountability challenge on instagram and on 15.05.26 the theme was setting goals for improving my time management. I was planning on discussing my problems with AI usage and how much of a time sink my phone was. I needed to show some initial stats based on which comparisons would be made in later updates to show improvement or a lack thereof. I already have a dirty script for checking my AI usage even when its not so understandable. What I did not have at all was access to raw mobile screen time data on my PC.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2026-05-15T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-05-15T00:00:00+00:00">
-    <meta property="article:tag" content="Rabbit_holes">
+	<meta property="og:site_name" content="Zymacs">
+	<meta property="og:title" content="Hunting For Exportable Android Usage Stats">
+	<meta property="og:description" content="I am doing some public accountability challenge on instagram and on 15.05.26 the theme was setting goals for improving my time management. I was planning on discussing my problems with AI usage and how much of a time sink my phone was. I needed to show some initial stats based on which comparisons would be made in later updates to show improvement or a lack thereof. I already have a dirty script for checking my AI usage even when its not so understandable. What I did not have at all was access to raw mobile screen time data on my PC.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2026-05-15T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-05-15T00:00:00+00:00">
+		<meta property="article:tag" content="Rabbit_holes">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -154,7 +154,7 @@ doing the needful with the developer settings. I already had adb
 installed on my system obviously. I&#39;d already connnected my phone and
 made the first dump with :</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell dumpsys usagestats &gt; full_usage_stats.txt</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell dumpsys usagestats &gt; full_usage_stats.txt</span></span></code></pre></div>
 </div>
 <p>
 The dump looked like a dump: Martian all over the place if you ain&#39;t an
@@ -184,7 +184,7 @@ intereted in</li>
 </ol>
 <p>Here&#39;s a sample package data line.</p>
 <div class="src src-txt">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>package=com.instagram.android u=0 bucket=40 reason=f used=+4h18m16s641ms usedByUser=+4h19m28s143ms\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>package=com.instagram.android u=0 bucket=40 reason=f used=+4h18m16s641ms usedByUser=+4h19m28s143ms\
 </span></span><span style="display:flex;"><span>usedScr=+892d14h28m24s823ms lastPred=&lt;uninitialized&gt; expiryTimes=&lt;none&gt;\
 </span></span><span style="display:flex;"><span>lastJob=+52m49s437ms lastInformedBucket=-1 nextEstimatedLaunchTime=+3d7h47m12s335ms idle=y</span></span></code></pre></div>
 </div>
@@ -201,7 +201,7 @@ nothing I could work with. It did mention each &#34;service&#34; had a detailed
 help page but the &#34;usagestats&#34; service didn&#39;t. Supplying `-h` to dumpsys
 stats gave the same output as it did when I supplied nothing.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell dumpsys  usagestats --help &gt; output_1.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell dumpsys  usagestats --help &gt; output_1.txt
 </span></span><span style="display:flex;"><span>adb shell dumpsys  usagestats &gt; output_2.txt
 </span></span><span style="display:flex;"><span>diff output_1.txt output_2.txt</span></span></code></pre></div>
 </div>
@@ -456,7 +456,7 @@ Sources
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+				<a class="widget__link" href="/categories/weeklyseries/">Weeklyseries</a></li>
 		</ul>
 	</div>
 </div>

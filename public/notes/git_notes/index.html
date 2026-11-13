@@ -7,13 +7,13 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/notes/git_notes/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="GIT">
-  <meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git with reasonable ease and have for long not updated the page). I am still sure it can be a good starting point or reference for most of the basics and more. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on git internals and how the core commands work on the inside. (The plumbing commands that is).">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="notes">
-    <meta property="article:tag" content="Git">
+	<meta property="og:site_name" content="Zymacs">
+	<meta property="og:title" content="GIT">
+	<meta property="og:description" content="The following is a collection of notes I took from reading the book on Git, Progit. Its a page I am still growing. (I got enough of the book to use Git with reasonable ease and have for long not updated the page). I am still sure it can be a good starting point or reference for most of the basics and more. I also include links to articles from Atlassian that I used for deep dives where I felt I needed more explanation. Hope this helps. Also, you should really check out the last chapter of the book Progit. I haven&#39;t added notes for it yet but it sure is an interesting read. It&#39;s on git internals and how the core commands work on the inside. (The plumbing commands that is).">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="notes">
+		<meta property="article:tag" content="Git">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -201,7 +201,7 @@ The different kinds of version control
 <li>
 <p>How it works and why it ain&#39;t cool (or any VCS like it)</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>1. User A locks the file – Before editing
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>1. User A locks the file – Before editing
 </span></span><span style="display:flex;"><span>2. User A runs a command <span style="color:#f92672">(</span>e.g., co -l file.txt<span style="color:#f92672">)</span> to “check out” the file with a lock.
 </span></span><span style="display:flex;"><span>3. RCS marks the file as locked by User A in the repository.
 </span></span><span style="display:flex;"><span>4. User B tries to check out the same file
@@ -247,7 +247,7 @@ The different kinds of version control
 </li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> As in:  git clone --depth <span style="color:#ae81ff">1</span> &lt;url&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> As in:  git clone --depth <span style="color:#ae81ff">1</span> &lt;url&gt;</span></span></code></pre></div>
 </div>
 <ul>
 <li>
@@ -291,7 +291,7 @@ The different kinds of version control
 <li>Explained and demonstrated later in the book when talking about <a href="https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows">Workflows</a>.</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> <span style="color:#75715e"># an example of this is the lieutenant workflow used by the linux kernel</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> <span style="color:#75715e"># an example of this is the lieutenant workflow used by the linux kernel</span>
 </span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>Blessed/Main Repo<span style="color:#f92672">]</span>        ← <span style="color:#e6db74">&#34;truth&#34;</span> / official release
 </span></span><span style="display:flex;"><span> ↑
 </span></span><span style="display:flex;"><span> <span style="color:#f92672">[</span>Integration Repo<span style="color:#f92672">]</span>          ← lieutenants merge &amp; verify
@@ -475,7 +475,7 @@ A brief summary on git configs
 </dd>
 </dl>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global ...</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global ...</span></span></code></pre></div>
 </div>
 <dl>
 <dt>
@@ -492,7 +492,7 @@ A brief summary on git configs
 <li>
 <p>For viewing settings origins</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list --show-origin</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list --show-origin</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -512,7 +512,7 @@ Identity configs
 </h5>
 <div id="outline-text-headline-17" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global user.name ...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global user.name ...
 </span></span><span style="display:flex;"><span>  git config --global user.email ...</span></span></code></pre></div>
 </div>
 </div>
@@ -523,7 +523,7 @@ Editor configs
 </h5>
 <div id="outline-text-headline-18" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   git config --global core.editor vim</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   git config --global core.editor vim</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@ Default initial branch for repos
 </h5>
 <div id="outline-text-headline-19" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global init.defaultBranch branch_name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global init.defaultBranch branch_name</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -543,7 +543,7 @@ Listing settings
 </h5>
 <div id="outline-text-headline-20" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --list</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -553,7 +553,7 @@ Finding rogue config values origins
 </h5>
 <div id="outline-text-headline-21" class="outline-text-5">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --show-origin config_value.autoUpdate</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --show-origin config_value.autoUpdate</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -567,7 +567,7 @@ Getting help with git
 </h3>
 <div id="outline-text-headline-22" class="outline-text-3">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git help _subcommand_for_which_you_need_help_
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git help _subcommand_for_which_you_need_help_
 </span></span><span style="display:flex;"><span> git _command_ -h <span style="color:#75715e"># for summrized help</span></span></span></code></pre></div>
 </div>
 </div>
@@ -632,7 +632,7 @@ On Git Commits
 </li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1 file2 file3
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1 file2 file3
 </span></span><span style="display:flex;"><span>  git add .
 </span></span><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># this puts 5 files .git/objects</span>
@@ -652,7 +652,7 @@ On repository creation
 <li>
 <p>Creating a local directory and turning it into a repo</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd dir_that_will_be_repo_name
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd dir_that_will_be_repo_name
 </span></span><span style="display:flex;"><span>git init
 </span></span><span style="display:flex;"><span>  git add *.c <span style="color:#75715e"># assuming all files are .c files</span>
 </span></span><span style="display:flex;"><span>git add LICENSE <span style="color:#75715e"># assuming you have a licence file</span>
@@ -662,7 +662,7 @@ On repository creation
 <li>
 <p>Cloning a repo from some other location</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone repo_url <span style="color:#75715e"># creates a dir with the cloned repo name and initializes a .git dir then pulls data from url to dir</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone repo_url <span style="color:#75715e"># creates a dir with the cloned repo name and initializes a .git dir then pulls data from url to dir</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># to clone into a different dir</span>
 </span></span><span style="display:flex;"><span>  git clone repo_url desired_dir_name</span></span></code></pre></div>
 </div>
@@ -712,7 +712,7 @@ More on Git file types
 <li>
 <p>Unmodified files can be moved to the untracked state.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm --cached &lt;file&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm --cached &lt;file&gt;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># for recursive removal</span>
 </span></span><span style="display:flex;"><span>  git rm --cached -r directory
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># to prevent retracking</span>
@@ -724,7 +724,7 @@ More on Git file types
 <li>
 <p>File status can be checked with the command &#39;git status&#39;.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git status <span style="color:#75715e"># run in a repo</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git status <span style="color:#75715e"># run in a repo</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>The output shows any untracked files (not in the .gitignore file) or tells if the tree is clean (no new modifications, everything commited)</li>
@@ -734,13 +734,13 @@ More on Git file types
 <li>
 <p>Files can be added to tracked status with the `git add` command.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add filename <span style="color:#75715e"># this will eliminate the file from the list of untracked files in the repo listed when git status is run. it will be included in the next commit.</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add filename <span style="color:#75715e"># this will eliminate the file from the list of untracked files in the repo listed when git status is run. it will be included in the next commit.</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>A modification to a tracked file is recorded as an unstaged change that can be staged with:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add file-name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add file-name</span></span></code></pre></div>
 </div>
 </li>
 <li>
@@ -753,7 +753,7 @@ More on Git file types
 <p>A more simplified version of status is achievable with `git status -s`. Below is explanation for this command&#39;s
 output:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>- ?? : New files not yet tracked
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>- ?? : New files not yet tracked
 </span></span><span style="display:flex;"><span>- M  : Modified tracked files <span style="color:#f92672">(</span>Modified twice is shown with <span style="color:#ae81ff">2</span> M<span style="color:#960050;background-color:#1e0010">&#39;</span>s<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>added <span style="color:#66d9ef">then</span> modified before a commit<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>- A  : New files in staging area</span></span></code></pre></div>
 </div>
@@ -775,7 +775,7 @@ Ignoring files in Git
 <li>
 <p>A sample .gitignore file can look like so.</p>
 <div class="src src-txt">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>  .a*
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>  .a*
 </span></span><span style="display:flex;"><span>  !lib.a # even if ignoring .a files, make this an exception
 </span></span><span style="display:flex;"><span>  /TODO # ignore TODO file in current dir not subdir/TODO
 </span></span><span style="display:flex;"><span>  build/ # ignore files in dir named build
@@ -807,13 +807,13 @@ Working with staged files and file changes
 <li>
 <p>Viewing staged and unstaged changes</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git status</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git status</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Viewing what&#39;s changed but not yet staged</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git diff <span style="color:#75715e"># Compares what&#39;s in working directory with what&#39;s in staging area.</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git diff <span style="color:#75715e"># Compares what&#39;s in working directory with what&#39;s in staging area.</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
@@ -835,7 +835,7 @@ by symbol &#39;+&#39;, 8 lines have been extracted.</li>
 <li>
 <p>Viewing staged changes ready for next commit (these are in staging area)</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff --staged <span style="color:#75715e"># comparing whats staged with what&#39;s commited (or whats in local repo)</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff --staged <span style="color:#75715e"># comparing whats staged with what&#39;s commited (or whats in local repo)</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
@@ -872,7 +872,7 @@ Removing files from Git
 <li>
 <p>Removing files from git is removing them from Git&#39;s staging area.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  rm projects.md <span style="color:#75715e"># assuming projects.md was new to staging area </span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  rm projects.md <span style="color:#75715e"># assuming projects.md was new to staging area </span>
 </span></span><span style="display:flex;"><span>  git status <span style="color:#75715e"># will show the removal &#39;change&#39; is unstaged</span>
 </span></span><span style="display:flex;"><span>  git rm projects.md <span style="color:#75715e"># remove from staging area. (stage removal of file from repo: happens on next commit)</span></span></span></code></pre></div>
 </div>
@@ -880,7 +880,7 @@ Removing files from Git
 <li>
 <p>Removing a staged file by force</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm -f file_name <span style="color:#75715e"># deletes file from local too (ignores if there was any uncommited changes relating</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm -f file_name <span style="color:#75715e"># deletes file from local too (ignores if there was any uncommited changes relating</span>
 </span></span><span style="display:flex;"><span>  to the file<span style="color:#f92672">)</span>.
 </span></span><span style="display:flex;"><span>  git rm --cached file_name <span style="color:#75715e"># deletes file only from git, file still appears under untracked</span></span></span></code></pre></div>
 </div>
@@ -888,7 +888,7 @@ Removing files from Git
 <li>
 <p>Dealing with Git&#39;s special  globbing syntax quirks during removal</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm log/<span style="color:#ae81ff">\*</span>.log <span style="color:#75715e"># git does its own filename expansion, so that backslash behind the &#34;*&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rm log/<span style="color:#ae81ff">\*</span>.log <span style="color:#75715e"># git does its own filename expansion, so that backslash behind the &#34;*&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># escapes shell expansion</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># passes * as is to the git command</span>
 </span></span><span style="display:flex;"><span>  git rm <span style="color:#ae81ff">\*</span>~ <span style="color:#75715e"># same concept, remove all ending in ~</span></span></span></code></pre></div>
@@ -903,7 +903,7 @@ Renaming files in Git.
 </h3>
 <div id="outline-text-headline-33" class="outline-text-3">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git mv README.md README
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git mv README.md README
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># equivalent to the 3 commands below</span>
 </span></span><span style="display:flex;"><span>  mv REAME.md README
 </span></span><span style="display:flex;"><span>  git rm README.md
@@ -917,7 +917,7 @@ Viewing Git commit history
 </h3>
 <div id="outline-text-headline-34" class="outline-text-3">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log <span style="color:#75715e"># in a repo to show commit history from last commit (at top) downwards</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log <span style="color:#75715e"># in a repo to show commit history from last commit (at top) downwards</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># lines of output are: commit hash, commit author, commit date, commit message, space</span></span></span></code></pre></div>
 </div>
 <div id="outline-container-headline-35" class="outline-4">
@@ -929,13 +929,13 @@ Some common git log options
 <li>Show difference introduced with -p and limiting entries displayed with -n</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log -p -2 <span style="color:#75715e"># limit to 2 lines of output</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log -p -2 <span style="color:#75715e"># limit to 2 lines of output</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>
 <p>See abbreviated stats for each commit</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --stat</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --stat</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -943,7 +943,7 @@ Some common git log options
 <li>
 <p>The pretty option: prettify output as per arguments passed to the –pretty flag</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
 </span></span><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h - %an, %ar : %s&#34;</span> <span style="color:#75715e"># hash, author name, avg age relative, subject or commit message</span></span></span></code></pre></div>
 </div>
 <ul>
@@ -953,21 +953,21 @@ Some common git log options
 <li>
 <p>Combine single line output with graph</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h %s&#34;</span> --graph
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>format:<span style="color:#e6db74">&#34;%h %s&#34;</span> --graph
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># branch merge graph, history of commits with hashes and subjects</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>
 <p>More options</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  - -p  --stat, --shortstat, --name-only, --name-status, --abbrev-commit, --relative-date
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  - -p  --stat, --shortstat, --name-only, --name-status, --abbrev-commit, --relative-date
 </span></span><span style="display:flex;"><span>  --graph, --oneline, --pretty <span style="color:#f92672">(</span>oneline, short, full, fuller<span style="color:#f92672">)</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Limit log output by date</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log --since<span style="color:#f92672">=</span>2.weeks <span style="color:#75715e"># date can follow the format: &#34;2008-01-15&#34; or &#34;2 years 1 day 3 minutes ago&#34;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log --since<span style="color:#f92672">=</span>2.weeks <span style="color:#75715e"># date can follow the format: &#34;2008-01-15&#34; or &#34;2 years 1 day 3 minutes ago&#34;</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>An alternative time specification flag can be &#39;–until&#39;, &#39;–after&#39;</li>
@@ -975,19 +975,19 @@ Some common git log options
 <li>Git&#39;s pick axe (see what changes happened related to some string)</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log -S string</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git log -S string</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>View only changes that affected some folder&#39;s files</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git log -- path/to/file</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git log -- path/to/file</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Sample complex logging command (there&#39;s notes on git command aliases down below if the length feels overwhelming).</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git log pretty=&#34;%h - %s&#34; --author=&#39;name&#39; --since=&#39;&#39; --before=&#39;&#39; --no-merges -- t/</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git log pretty=&#34;%h - %s&#34; --author=&#39;name&#39; --since=&#39;&#39; --before=&#39;&#39; --no-merges -- t/</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1014,7 +1014,7 @@ When you commit but forget something behind
 <li>
 <p>git commit –amed # takes staging area and uses that for replacing latest commit</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git commit -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
 </span></span><span style="display:flex;"><span>  git add forgotten file
 </span></span><span style="display:flex;"><span>  git commit --amend <span style="color:#75715e"># ends up with 1 commt replacing previous one</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># helps clean out useless commit messages &#39;opps last commit&#39;</span>
@@ -1030,7 +1030,7 @@ When wanting to unstage some file
 </h4>
 <div id="outline-text-headline-38" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add *
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git add *
 </span></span><span style="display:flex;"><span>  git status
 </span></span><span style="display:flex;"><span>  git reset HEAD file_that_should_be_reset <span style="color:#75715e"># git restore --staged filename</span></span></span></code></pre></div>
 </div>
@@ -1042,7 +1042,7 @@ When &#39;unmodifying&#39; modified files.
 </h4>
 <div id="outline-text-headline-39" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git checkout -- filename <span style="color:#75715e"># git restore filename</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git checkout -- filename <span style="color:#75715e"># git restore filename</span>
 </span></span><span style="display:flex;"><span>  git status <span style="color:#75715e"># above command replaces filename from latest commit version or from the staging area</span></span></span></code></pre></div>
 </div>
 <ul>
@@ -1078,13 +1078,13 @@ Showing remotes
 <li>
 <p>Displaying remote names</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Displaying each available remote&#39;s urls</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1096,7 +1096,7 @@ Adding new remotes to a project repo
 </h4>
 <div id="outline-text-headline-42" class="outline-text-4">
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote add &lt;shortname&gt; &lt;url&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git remote add &lt;shortname&gt; &lt;url&gt;</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -1106,7 +1106,7 @@ Getting all info on remotes that ain&#39;t  in local repo
 </h4>
 <div id="outline-text-headline-43" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git fetch remote</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git fetch remote</span></span></code></pre></div>
 </div>
 <div id="outline-container-headline-44" class="outline-5">
 <h5 id="headline-44">
@@ -1122,7 +1122,7 @@ in later sections)</li>
 <li>This can be configured with :</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --global pull.rebase true <span style="color:#f92672">(</span>to auto merge on pull<span style="color:#f92672">)</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git config --global pull.rebase true <span style="color:#f92672">(</span>to auto merge on pull<span style="color:#f92672">)</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -1134,7 +1134,7 @@ Pushing changes to Upstream
 </h4>
 <div id="outline-text-headline-45" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push &lt;remote_name: often origin&gt; &lt;branch to push&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push &lt;remote_name: often origin&gt; &lt;branch to push&gt;
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># This  works only if pusher has write access on remote.</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># if branch to push does not exist on target remote, it will be created then written to.</span></span></span></code></pre></div>
 </div>
@@ -1146,7 +1146,7 @@ Seeing more info about a remote
 </h4>
 <div id="outline-text-headline-46" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote show &lt;remotename&gt; <span style="color:#75715e"># ignore last param to get more detailed info on all remotes</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote show &lt;remotename&gt; <span style="color:#75715e"># ignore last param to get more detailed info on all remotes</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -1156,7 +1156,7 @@ Renaming and removing remotes
 </h4>
 <div id="outline-text-headline-47" class="outline-text-4">
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote rename original new <span style="color:#75715e"># Changes auto propagate across repos (local and others)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git remote rename original new <span style="color:#75715e"># Changes auto propagate across repos (local and others)</span>
 </span></span><span style="display:flex;"><span> git remote remove paul <span style="color:#75715e"># Deletes remote paul</span></span></span></code></pre></div>
 </div>
 </div>
@@ -1182,13 +1182,13 @@ A quick summary on tagging
 <li>
 <p>listing existing tags</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>listing tags matching some pattern</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag -l &#39;v1.8.5.*&#39; # -l or --list mandatory for wildcard tag search</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git tag -l &#39;v1.8.5.*&#39; # -l or --list mandatory for wildcard tag search</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1233,7 +1233,7 @@ Tag creation
 <li>
 <p>Creation</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git tag -a v1.4 -m <span style="color:#e6db74">&#39;my version 1.4&#39;</span> <span style="color:#75715e"># if msg unspecified, editor spawned to collect it.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git tag -a v1.4 -m <span style="color:#e6db74">&#39;my version 1.4&#39;</span> <span style="color:#75715e"># if msg unspecified, editor spawned to collect it.</span>
 </span></span><span style="display:flex;"><span> git tag <span style="color:#75715e"># will list v1.4 among tags</span></span></span></code></pre></div>
 </div>
 </li>
@@ -1261,7 +1261,7 @@ Tag creation
 the version&#39;s end, the commit&#39;s hash can be used.</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git log --pretty<span style="color:#f92672">=</span>oneline
 </span></span><span style="display:flex;"><span>  git tag -a v1.2 shorthashfromprevcommand</span></span></code></pre></div>
 </div>
 </li>
@@ -1275,13 +1275,13 @@ the version&#39;s end, the commit&#39;s hash can be used.</li>
 <li>
 <p>Pushing multiple tags</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin --tags</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin --tags</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Pushing ony annotated tags</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git push &lt;remote&gt; --follow-tags</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git push &lt;remote&gt; --follow-tags</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1289,7 +1289,7 @@ the version&#39;s end, the commit&#39;s hash can be used.</li>
 <li>
 <p><strong>Tag deletion</strong></p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git tag -d v1.4-lw # not removed from remote</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git tag -d v1.4-lw # not removed from remote</span></span></code></pre></div>
 </div>
 <ul>
 <li>
@@ -1312,7 +1312,7 @@ the version&#39;s end, the commit&#39;s hash can be used.</li>
 <li>A solution to that is naming a branch during checkout.</li>
 </ul>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git checkout -b version_name v2.0.2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git checkout -b version_name v2.0.2
 </span></span><span style="display:flex;"><span># creates branch called version_name , placed at commit pointed to by v2.0.2</span></span></code></pre></div>
 </div>
 </li>
@@ -1333,7 +1333,7 @@ Git aliases
 <li>Git aliasing is a  means to shorten commonly used but painstakingly long git commands</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global alias.co checkout
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global alias.co checkout
 </span></span><span style="display:flex;"><span>  git config --global alias.br branch
 </span></span><span style="display:flex;"><span>  git config --global alias.ci commit
 </span></span><span style="display:flex;"><span>  git config --global alias.st status</span></span></code></pre></div>
@@ -1342,7 +1342,7 @@ Git aliases
 <li>Some of Git&#39;s inbuilt aliases</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global alias.unstage <span style="color:#e6db74">&#39;reset HEAD --&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git config --global alias.unstage <span style="color:#e6db74">&#39;reset HEAD --&#39;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># the two below are one in the same</span>
 </span></span><span style="display:flex;"><span>  git unstage fileA
 </span></span><span style="display:flex;"><span>  git reset HEAD -- fileA
@@ -1370,7 +1370,7 @@ What happens on branch creation?
 <p>A new pointer in .git/refs/heads is created. It points to current the commit. It&#39;s the branch displayed
 when the command &#39;git branch&#39; is run. </p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch</span></span></code></pre></div>
 </div>
 </li>
 <li>If no commits at all have been made in a repo, there&#39;s no concept of a branch since
@@ -1379,7 +1379,7 @@ a branch is simply a pointer to a commit checkum, a snapshot in the project hist
 <li>
 <p>Switching branches</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git switch branchname
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git switch branchname
 </span></span><span style="display:flex;"><span> <span style="color:#75715e"># The above only works if the branch &#39;branchname&#39; exists. To create one if it does not, use.</span>
 </span></span><span style="display:flex;"><span> git checkout - b branchname
 </span></span><span style="display:flex;"><span> <span style="color:#75715e">#OR</span>
@@ -1391,7 +1391,7 @@ a branch is simply a pointer to a commit checkum, a snapshot in the project hist
 <li>
 <p>Commits are 41 chars long: 40 chars for the sha-1 hash and a <em>n\/</em> char</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  ls .git/objects/e1 | wc -c <span style="color:#75715e"># where e1 is the first 2 chars of the commit</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  ls .git/objects/e1 | wc -c <span style="color:#75715e"># where e1 is the first 2 chars of the commit</span></span></span></code></pre></div>
 </div>
 <ul>
 <li>When you switch to a branch, git resets wdir to look like it did the last
@@ -1421,7 +1421,7 @@ A brief intro
 <li>
 <p>Merging in Git is done with the git merge command.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># in branch to receive merge</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># in branch to receive merge</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> git merge branch_whose_changes_to_pull_in</span></span></code></pre></div>
 </div>
@@ -1440,7 +1440,7 @@ commit. There was no divergent work. One branch is basically only behind the oth
 <li>
 <p>The divergent merge (merge by recursive strategy Or 3-way merge). Example below.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  touch file1.txt
 </span></span><span style="display:flex;"><span>  git init . <span style="color:#75715e"># on branch master</span>
 </span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#39;some&#39;</span> &gt; file1.txt
 </span></span><span style="display:flex;"><span>  git commit -a -m <span style="color:#e6db74">&#39;initial commit&#39;</span>
@@ -1503,13 +1503,13 @@ Some common merge and branch related commands
 <li>
 <p>See last commit on each branch</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git branch -v</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git branch -v</span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>See merged branches</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch --merged <span style="color:#75715e"># ignore unmerged branches</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch --merged <span style="color:#75715e"># ignore unmerged branches</span>
 </span></span><span style="display:flex;"><span>git branch --no-merged <span style="color:#75715e"># show unmerged branches</span>
 </span></span><span style="display:flex;"><span>git branch -D branchname <span style="color:#75715e"># delete unmerged branch , -d is for normal deletion</span>
 </span></span><span style="display:flex;"><span>git branch --no-merged branchname <span style="color:#75715e"># include branches that aint merged into branchname</span></span></span></code></pre></div>
@@ -1523,25 +1523,25 @@ Some common merge and branch related commands
 </li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git branch --move bad-branch-name new-branch-name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git branch --move bad-branch-name new-branch-name</span></span></code></pre></div>
 </div>
 <ul>
 <li>Pushing name change to remote (its like creating a new branch then setting it as default tracker)</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git push --set-upstream remote_name new-branch-name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>       git push --set-upstream remote_name new-branch-name</span></span></code></pre></div>
 </div>
 <ul>
 <li>Deleting old branch from remote</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete bad-branch-name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin --delete bad-branch-name</span></span></code></pre></div>
 </div>
 <ul>
 <li>Renaming branch</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>        git branch --move oldname newname
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>        git branch --move oldname newname
 </span></span><span style="display:flex;"><span>       <span style="color:#75715e"># Pushing change:</span>
 </span></span><span style="display:flex;"><span>        git push <span style="color:#f92672">[</span>origin<span style="color:#f92672">]</span> --set-upstream remote_name newname
 </span></span><span style="display:flex;"><span>       <span style="color:#75715e"># some intermediary actions after taking this action</span>
@@ -1553,7 +1553,7 @@ Some common merge and branch related commands
 <li>
 <p>Viewing all branches, both local and remote</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch --all</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git branch --all</span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1624,7 +1624,7 @@ Remote branches
 <li>
 <p>Viewing all remote references can be done with:</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-remote remote_short_name
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git ls-remote remote_short_name
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#or</span>
 </span></span><span style="display:flex;"><span>git remote show remote_name</span></span></code></pre></div>
 </div>
@@ -1659,14 +1659,14 @@ same commit at this instant.</li>
 <li>
 <p>Your master</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd .git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd .git
 </span></span><span style="display:flex;"><span>cat HEAD <span style="color:#75715e"># outputs /refs/heads/master</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>Origin/master: A remote tracking branch</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls /refs/remotes/origin <span style="color:#75715e"># contains an entry for master</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls /refs/remotes/origin <span style="color:#75715e"># contains an entry for master</span></span></span></code></pre></div>
 </div>
 </li>
 </ul>
@@ -1676,7 +1676,7 @@ the next pull will update origin/master to reflect the changes.</li>
 <li>
 <p>Changing default remote name on clone from `origin` can be done with</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git clone -o local_remote_name</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> git clone -o local_remote_name</span></span></code></pre></div>
 </div>
 <ul>
 <li>Remote tracking branches will then be under local_remote_name/branch_name (say: origin/master)</li>
@@ -1689,7 +1689,7 @@ the next pull will update origin/master to reflect the changes.</li>
 <li>
 <p>Doing remote synchronization for remote tracking branches</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git fetch &lt;remote&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git fetch &lt;remote&gt;
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># git fetch local_remote_name</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">#This evaluates the server local_remote_name points to and</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># fetches any new data from it then updates local refs.</span></span></span></code></pre></div>
@@ -1698,7 +1698,7 @@ the next pull will update origin/master to reflect the changes.</li>
 <li>
 <p>Adding remotes to a repo</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add remote_name remote_url
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add remote_name remote_url
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#Sets a local tracking branch under remote_name for the remote at  url: remote_url</span></span></span></code></pre></div>
 </div>
 </li>
@@ -1717,7 +1717,7 @@ Pushing branches
 <li>
 <p>If there&#39;s no copy of the branch on the remote repo yet,it will be created during the push.</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin serverfix
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git push origin serverfix
 </span></span><span style="display:flex;"><span># serverfix remote is  internally expanded to : refs/heads/serverfix:refs/remotes/serverfix
 </span></span><span style="display:flex;"><span># Use my serverfix and update remote&#39;s serverfix
 </span></span><span style="display:flex;"><span># another way to get the same work done would be
@@ -1735,7 +1735,7 @@ branches. Remote tracking branches can be referenced via the syntax <em>remotena
 branch. (An upstream branch is what the remote tracking branch is
 to the branch checked out of it.)</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b serverfix origin/serverfix
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b serverfix origin/serverfix
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#OR: git checkout serverfix</span></span></span></code></pre></div>
 </div>
 </li>
@@ -1757,7 +1757,7 @@ Git automatically deduces the origin for pulling and pushing.</li>
 <li>
 <p>Manually setting upstreams (default origins for pull and push that is)</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git branch -u origin/upstreambranchname
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git branch -u origin/upstreambranchname
 </span></span><span style="display:flex;"><span>  # sets branch head&#39;s pointing to to track upstreambranchname</span></span></code></pre></div>
 </div>
 </li>
@@ -1767,13 +1767,13 @@ Git automatically deduces the origin for pulling and pushing.</li>
 <li>@{u} means: upstream</li>
 </ul>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git merge @<span style="color:#f92672">{</span>u<span style="color:#f92672">}</span> <span style="color:#75715e"># Merge upstream changes into tracking branch</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git merge @<span style="color:#f92672">{</span>u<span style="color:#f92672">}</span> <span style="color:#75715e"># Merge upstream changes into tracking branch</span></span></span></code></pre></div>
 </div>
 </li>
 <li>
 <p>See tracking information based off last fetch action</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git fetch --all; git branch -vv</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span> git fetch --all; git branch -vv</span></span></code></pre></div>
 </div>
 </li>
 <li>Fetching does not merge downloaded changes with tracking branches, pulling tries to.
@@ -1781,7 +1781,7 @@ Git automatically deduces the origin for pulling and pushing.</li>
 <li>
 <p>Deleting remote branches</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push remotename --delete branchname</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push remotename --delete branchname</span></span></code></pre></div>
 </div>
 <ul>
 <li>
@@ -1833,7 +1833,7 @@ And in need of switching C&#39;s base branch from B to A</li>
 <li>
 <p>Rebasing synopsis</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase  --onto third what_to_skip what_to_rebase
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase  --onto third what_to_skip what_to_rebase
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># for the above example</span>
 </span></span><span style="display:flex;"><span>  git rebase --onto A B C</span></span></code></pre></div>
 </div>
@@ -1841,7 +1841,7 @@ And in need of switching C&#39;s base branch from B to A</li>
 <li>
 <p>Rebasing arbitrary branches</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase basebranch topicbranch <span style="color:#75715e"># moves topicbranch&#39;s base to basebranch&#39;s tip</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git rebase basebranch topicbranch <span style="color:#75715e"># moves topicbranch&#39;s base to basebranch&#39;s tip</span></span></span></code></pre></div>
 </div>
 </li>
 <li>After a successul rebase, the merge between the rebase base branch and the new tip  is a fast forward
@@ -1863,7 +1863,7 @@ on your work. It can lead to really messy effects when your team mates pull the 
 <p>Rebase local changes before pushing to clean up your work. But never rebase
 anything that you&#39;ve pushed somewhere.</p>
 <div class="src src-sh">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git pull --rebase <span style="color:#f92672">(</span>to fetch and rebase vs fetch and merge<span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>  git pull --rebase <span style="color:#f92672">(</span>to fetch and rebase vs fetch and merge<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>  git config --global pull.rebase true <span style="color:#75715e"># to default to rebasing on bull vs the default that is merging</span></span></span></code></pre></div>
 </div>
 </li>
@@ -1988,7 +1988,7 @@ References: past, current and future
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+				<a class="widget__link" href="/categories/weeklyseries/">Weeklyseries</a></li>
 		</ul>
 	</div>
 </div>

@@ -7,11 +7,11 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="//localhost:1313/cheatsheets/">
-  <meta property="og:site_name" content="Zymacs">
-  <meta property="og:title" content="Cheatsheets">
-  <meta property="og:description" content="Cheatsheets You could use the site webtopdf to convert any of these to a pdf">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Zymacs">
+	<meta property="og:title" content="Cheatsheets">
+	<meta property="og:description" content="Cheatsheets You could use the site webtopdf to convert any of these to a pdf">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="website">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -584,6 +584,42 @@ blkid
 </h2>
 <div id="outline-text-headline-15" class="outline-text-2">
 <p>Manage foreground/background shell operational jobs.</p>
+<dl>
+<dt>
+command &amp;
+</dt>
+<dd>Run any given command in the background immediately</dd>
+<dt>
+jobs     
+</dt>
+<dd>List all active background job status states</dd>
+<dt>
+fg %1    
+</dt>
+<dd>Bring background job number 1 back to the foreground</dd>
+<dt>
+bg %1    
+</dt>
+<dd>Resume suspended job number 1 running in the background</dd>
+<dt>
+Ctrl + Z 
+</dt>
+<dd>Suspend current active foreground operational process</dd>
+<dt>
+Ctrl + C 
+</dt>
+<dd>Terminate current active foreground process</dd>
+<dt>
+kill %1  
+</dt>
+<dd>Kill background job number 1</dd>
+<dt>
+disown %1
+</dt>
+<dd>Remove background job number 1 from active shell oversight</dd>
+</dl>
+</div>
+</div>
 	</div>
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/cheatsheets/linux/">Read more…</a>
@@ -642,7 +678,7 @@ blkid
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/random/">Random</a></li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/weeklyseries/">WeeklySeries</a></li>
+				<a class="widget__link" href="/categories/weeklyseries/">Weeklyseries</a></li>
 		</ul>
 	</div>
 </div>
