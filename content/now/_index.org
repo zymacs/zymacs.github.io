@@ -20,10 +20,7 @@ menu:
 *** Prototyping and building
 **** H/W
 - Item counter using IR
-
-*** Past projects
-**** H/W
-
+  
 
 
   
