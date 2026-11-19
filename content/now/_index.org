@@ -19,9 +19,13 @@ menu:
 - Test Driven Development For Embedded C  
 - Emacs mastery
   
-**** Building
+**** Prototyping and building
+***** H/W
 - Item counter using IR
 
+**** Past projects
+***** H/W
+- 
 
 /[[/reading-lists/2026][See my 2026 reading list]]/
   
