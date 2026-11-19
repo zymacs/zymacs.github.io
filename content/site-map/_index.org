@@ -10,7 +10,6 @@ menu:
 
 | What                                            | Where            |
 |-------------------------------------------------+------------------|
-| CV (Curriculum Vitae)                           | [[/cv][/cv]]              |
 | What I am up to (Reading, movies, projects)     | [[/now][/now]]             |
 | My sources                                      | [[/sources][/sources]]         |
 | How I built X                                   | [[/how-i-built][/how-i-built]]     |

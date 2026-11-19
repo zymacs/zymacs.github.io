@@ -9,15 +9,18 @@ menu:
 
 
 *** My current priorities
--  Getting a masters degree scholarship
--  Increasing my chances for getting my dream job
--  Growing my spiritual and intellectual muscles
+-  My embedded systems engineering apprenticeship
 
 
 *** What am doing now
-- Reading and studying for intellectual, spiritual and career reasons
-- Searching and applying for masters degree scholarships
-- Working on projects to improve my programming skills
+**** Reading
+***** Non fiction
+- Walden
+- Test Driven Development For Embedded C  
+- Emacs mastery
+  
+**** Building
+- Item counter using IR
 
 
 /[[/reading-lists/2026][See my 2026 reading list]]/
