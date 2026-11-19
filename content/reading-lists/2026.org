@@ -4,6 +4,9 @@ sidebar: false
 authorbox: false
 ---
 
+
+** Projected
+
 *** Technical
 - [[https://www.amazon.com/C-Programming-Language-4th/dp/0321563840][C++ Programming Language]]
 - [[https://git-scm.com/book/en/v2][Progit]]
@@ -24,3 +27,9 @@ authorbox: false
 - Month 3: Progit
 - Month 4: Your money your life
 - Month 5-6: The Art of Unix Programming
+
+
+
+** Actual
+
+- TBF

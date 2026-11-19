@@ -42,13 +42,13 @@ dangerous since got things right most of the times. This was an interesting
 response. However, this someone was just helping me make my point.
 And it made me rethink if the warning , however ineffective, was as effective as needed for its authors. 
 
-How many can intuitively tell that if something is predictably wrong it's a
-alternative safer than something what is perceptibly more
-than often accurate yet unpredictably wrong? The warnings  are actually as well stated as they can be.
+How many can intuitively tell that if something is predictably wrong? For a tool that is often accurate yet unpredictably wrong?
+
+The AI warnings  are actually doing their intended job.
 They do not claim “The LLM is always wrong”. They rather say “The LLM is sometimes wrong”.
 But who knows or cares to constantly be on the watch for when it is? And why is this sold as an adequate warning? For a tool as seductive as an LLM.  
 
-Interesting. 
+Interesting, right?
 
 Also, there's a fascinating kind of addiction that arises out of a tool's reward system being unpredictable. The same reason
 for why slot machines and chat platforms designed like Omegle  are
